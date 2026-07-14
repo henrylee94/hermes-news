@@ -165,9 +165,9 @@ HTTP_TIMEOUT = 15
 MAX_WORKERS = 8
 CATEGORIES = ["us_stocks", "my_stocks", "ai", "macro"]
 
-OPENROUTER_BASE = "https://openrouter.ai/api/v1"
-RANK_MODEL = "deepseek/deepseek-v4-flash"
-DETAIL_MODEL = "deepseek/deepseek-v4-flash"
+OPENROUTER_BASE = os.environ.get("LLM_API_BASE", "https://openrouter.ai/api/v1")
+RANK_MODEL = os.environ.get("LLM_MODEL", "deepseek/deepseek-v4-flash")
+DETAIL_MODEL = os.environ.get("LLM_MODEL", "deepseek/deepseek-v4-flash")
 RANK_MAX_INPUT = 8000
 RANK_MAX_OUTPUT = 4000
 DETAIL_MAX_INPUT = 10000
@@ -193,7 +193,7 @@ _KLSE_SKIP = {'2605','DFJSP','RULER','FBMKLCI','FBM','KLSE','CNBC','CIMB','MAYBA
               'ACL','CCT','CORS','LLM','ML','SVG','TDRC','URIEL','URL','FMT','OCK'}
 
 def _load_openrouter_key() -> str:
-    key = os.environ.get("OPENROUTER_API_KEY", "")
+    key = os.environ.get("LLM_API_KEY", os.environ.get("OPENROUTER_API_KEY", ""))
     if key: return key
     env_path = Path.home() / ".hermes" / ".env"
     if env_path.exists():

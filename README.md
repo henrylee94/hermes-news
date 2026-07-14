@@ -27,7 +27,9 @@ Output: `2026/MM/DD.html` + `DD.json` + root `index.html` (SPA)
 
 | Env var | Default | Description |
 |---------|---------|-------------|
-| `OPENROUTER_API_KEY` | (required) | LLM API key for story extraction |
+| `LLM_API_KEY` | (required) | API key for LLM calls (fallback: `OPENROUTER_API_KEY`, then `~/.hermes/.env`) |
+| `LLM_API_BASE` | `https://openrouter.ai/api/v1` | OpenAI-compatible API endpoint |
+| `LLM_MODEL` | `deepseek/deepseek-v4-flash` | Model name for story extraction |
 | `HERMES_WORKSPACE` | `~/geewoni-workspace` | Workspace root |
 | `NEWS_OUTPUT_DIR` | `{workspace}/vault/News` | Where daily files are written |
 | `NEWS_CONFIG_DIR` | `{workspace}/vault/Config` | Where sources.md and templates live |
