@@ -1,40 +1,70 @@
-# Hermes Daily
+# Hermes Daily News
 
-A minimalist daily news aggregator with a clean, magazine-style reading experience.
+A daily news aggregator that pulls from 20+ RSS sources, uses LLM to extract key insights, and renders a clean dark-themed slideshow.
 
-## Overview
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?style=flat&logo=vercel)](https://portfolio-website-three-henna-93.vercel.app)
 
-Hermes Daily collects and renders curated news stories as a dark-themed slideshow, organized by date. Designed for quick morning scanning — key takeaways, metrics, and support/resistance levels at a glance.
+## What It Does
 
-### Pages
+1. **Collect** — Fetches articles from RSS feeds (WSJ, MarketWatch, BBC, FT, TechCrunch, Arxiv, etc.)
+2. **Rank & Detail** — LLM extracts key takeaways, metrics, support/resistance levels
+3. **Render** — Generates static HTML pages + JSON data per day
+4. **Deliver** — Pushes to Telegram, optional PDF weekly archive
 
-- **US Stocks** — Market movers, earnings, macro events
-- **MY Stocks** — Bursa Malaysia highlights
-- **AI & Tech** — AI developments, GitHub trending repos
-- **Macro** — Global economic indicators
+4 categories: 🇺🇸 US Stocks · 🇲🇾 MY Stocks · 🤖 AI · 🌐 Macro
 
-## Tech Stack
+## Quick Start
 
-- Static HTML/CSS/JS — no build step
-- JSON data files per date
-- Dark/light theme via `prefers-color-scheme`
+```bash
+pip install -r requirements.txt
+export OPENROUTER_API_KEY=sk-...
+python pipeline/news_pipeline.py daily
+```
 
-## Structure
+Output: `2026/MM/DD.html` + `DD.json` + root `index.html` (SPA)
+
+## Configuration
+
+| Env var | Default | Description |
+|---------|---------|-------------|
+| `OPENROUTER_API_KEY` | (required) | LLM API key for story extraction |
+| `HERMES_WORKSPACE` | `~/geewoni-workspace` | Workspace root |
+| `NEWS_OUTPUT_DIR` | `{workspace}/vault/News` | Where daily files are written |
+| `NEWS_CONFIG_DIR` | `{workspace}/vault/Config` | Where sources.md and templates live |
+
+## Project Structure
 
 ```
-index.html              — Main slideshow (today's stories)
-2026/
-  05/
-    29.html             — Daily page
-    29.json             — Daily story data
-  06/ ...
-  07/ ...
+├── pipeline/
+│   ├── news_pipeline.py    — Main 5-layer pipeline (965 lines)
+│   ├── run.py              — Simple wrapper
+│   └── (local dev copy)
+├── config/
+│   └── sources.md          — RSS source definitions (20+ feeds)
+├── templates/
+│   └── news-template.html  — Jinja2 HTML template
+├── 2026/                   — Daily output (year/month/day)
+│   ├── 05/
+│   ├── 06/
+│   └── 07/
+├── index.html              — SPA with all dates embedded
+├── requirements.txt
+└── README.md
 ```
+
+## Data Sources
+
+- **US Stocks**: WSJ Markets, MarketWatch, Google News
+- **MY Stocks**: FMT Business, EdgeProp, Bursa Malaysia
+- **AI**: HuggingFace Papers, Simon Willison, Arxiv ML, TechCrunch, The Verge, MIT Tech Review
+- **Macro**: BBC World, FT World, WSJ World, CNBC Politics
+
+Source definitions: `config/sources.md`
 
 ## Local Development
 
 ```bash
-python3 -m http.server 8080
+python -m http.server 8080
 # Open http://localhost:8080
 ```
 
