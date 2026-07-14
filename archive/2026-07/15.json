@@ -1,0 +1,763 @@
+{
+  "us_stocks": [
+    {
+      "tag": "us_stocks",
+      "headline": "太空股跌24%和41%，哪个更值买？",
+      "dek": "分析RKLB和OKLO两只太空股近期表现及投资价值。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "RKLB",
+            "price": 80.21,
+            "change": 4.54
+          },
+          {
+            "ticker": "OKLO",
+            "price": 45.97,
+            "change": 0.35
+          }
+        ]
+      },
+      "body": [
+        "RKLB股价80.21美元，涨4.54美元；OKLO股价45.97美元，涨0.35美元。两只太空股近期分别下跌24%和41%，但今日均反弹。[Yahoo Finance @ 未提供时间]",
+        "RKLB和OKLO在太空领域各有侧重，RKLB专注火箭发射，OKLO聚焦核能推进。投资者需评估其长期增长潜力。[Yahoo Finance @ 未提供时间]",
+        "数据未验证：具体跌幅和买入建议需参考完整文章。"
+      ],
+      "source_url": "https://finance.yahoo.com",
+      "source_name": "Yahoo Finance",
+      "timestamp": "2026-07-15",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "Cerebras：AI军备竞赛下一代",
+      "dek": "Cerebras在AI芯片领域挑战英伟达，但未上市。",
+      "data_card": null,
+      "body": [
+        "Cerebras作为AI芯片新秀，专注于大型AI模型训练，被视为英伟达的潜在竞争者。[Seeking Alpha @ 未提供时间]",
+        "数据未验证：Cerebras未上市，无实时股价数据。文章可能讨论其技术优势和市场前景。",
+        "数据未验证：具体财务数据和竞争分析需参考原文。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-15",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "芯片股在震荡市中保持强势",
+      "dek": "AMD、NVDA、MU等芯片股逆市上涨。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "AMD",
+            "price": 555.12,
+            "change": 3.88
+          },
+          {
+            "ticker": "NVDA",
+            "price": 209.19,
+            "change": 2.78
+          },
+          {
+            "ticker": "MU",
+            "price": 984.74,
+            "change": 5.09
+          }
+        ]
+      },
+      "body": [
+        "AMD涨3.88美元至555.12美元，NVDA涨2.78美元至209.19美元，MU涨5.09美元至984.74美元，芯片股整体表现强劲。[Yahoo Finance @ 未提供时间]",
+        "尽管市场波动，芯片股因AI需求增长而获得支撑。分析师看好长期前景。[Yahoo Finance @ 未提供时间]",
+        "数据未验证：具体涨幅和行业分析需参考原文。"
+      ],
+      "source_url": "https://finance.yahoo.com",
+      "source_name": "Yahoo Finance",
+      "timestamp": "2026-07-15",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "SK海力士：涨势尚未结束",
+      "dek": "SK海力士在AI内存需求推动下持续增长。",
+      "data_card": null,
+      "body": [
+        "SK海力士作为内存芯片巨头，受益于AI对HBM的需求。但实时数据缺失。[Seeking Alpha @ 未提供时间]",
+        "数据未验证：SK海力士未在<live_data>中列出，股价和涨跌幅无法确认。",
+        "数据未验证：文章可能讨论其估值和行业地位。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-15",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "美国通胀放缓，加息预期降温",
+      "dek": "通胀数据低于预期，市场对美联储加息担忧缓解。",
+      "data_card": null,
+      "body": [
+        "美国通胀压力减弱，削弱了美联储近期加息的预期。市场情绪改善。[Seeking Alpha @ 未提供时间]",
+        "数据未验证：具体通胀数据和美联储政策需参考原文。",
+        "数据未验证：无相关股票数据。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-15",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "IBM财报不及预期，AI警告致股价暴跌",
+      "dek": "IBM股价暴跌24.48美元至219.17美元，因财报和AI业务预警。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "IBM",
+            "price": 219.17,
+            "change": -24.48
+          }
+        ]
+      },
+      "body": [
+        "IBM股价暴跌24.48美元至219.17美元，因财报不及预期且AI业务发出警告。[Yahoo Finance @ 未提供时间]",
+        "市场对IBM的AI战略表示担忧，导致抛售。分析师下调目标价。[Yahoo Finance @ 未提供时间]",
+        "数据未验证：具体财报细节和AI警告内容需参考原文。"
+      ],
+      "source_url": "https://finance.yahoo.com",
+      "source_name": "Yahoo Finance",
+      "timestamp": "2026-07-15",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "通胀缓和与银行财报提振股市",
+      "dek": "美股上涨，受通胀数据利好和银行财报推动，油价因美伊紧张局势攀升。",
+      "data_card": null,
+      "body": [
+        "美股因通胀数据缓和及银行财报超预期而上涨。同时，美伊紧张局势推高油价。[Yahoo Finance @ 未提供时间]",
+        "数据未验证：具体指数涨幅和银行股表现需参考原文。",
+        "数据未验证：无相关股票数据。"
+      ],
+      "source_url": "https://finance.yahoo.com",
+      "source_name": "Yahoo Finance",
+      "timestamp": "2026-07-15",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "华尔街午餐：大行业绩亮眼但股价下跌",
+      "dek": "大型银行财报超预期，但股价仍下跌，市场情绪复杂。",
+      "data_card": null,
+      "body": [
+        "大型银行财报超预期，但股价下跌，可能因获利回吐或宏观担忧。[Seeking Alpha @ 未提供时间]",
+        "数据未验证：具体银行股和财报数据需参考原文。",
+        "数据未验证：无相关股票数据。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-15",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "Franklin DynaTech基金Q2评论",
+      "dek": "基金Q2表现及持仓分析，聚焦科技股。",
+      "data_card": null,
+      "body": [
+        "Franklin DynaTech基金发布Q2 2026评论，分析科技股投资策略。[Seeking Alpha @ 未提供时间]",
+        "数据未验证：具体持仓和业绩数据需参考原文。",
+        "数据未验证：无相关股票数据。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-15",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "摩根大通CEO戴蒙给投资者建议",
+      "dek": "Jamie Dimon分享市场洞察，强调长期投资。",
+      "data_card": null,
+      "body": [
+        "摩根大通CEO Jamie Dimon为投资者提供快速见解，可能涉及市场前景。[Yahoo Finance @ 未提供时间]",
+        "数据未验证：具体建议内容需参考原文。",
+        "数据未验证：无相关股票数据。"
+      ],
+      "source_url": "https://finance.yahoo.com",
+      "source_name": "Yahoo Finance",
+      "timestamp": "2026-07-15",
+      "_warnings": []
+    }
+  ],
+  "my_stocks": [
+    {
+      "tag": "my_stocks",
+      "headline": "马股午盘涨0.86% 银行股领涨",
+      "dek": "马股午盘上涨0.86%，银行股领涨，市场情绪积极。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "1295.KL",
+            "price": 5.05,
+            "change": 2.6422787,
+            "volume": 51759600
+          },
+          {
+            "ticker": "1023.KL",
+            "price": 7.77,
+            "change": 1.0403111,
+            "volume": 11622700
+          },
+          {
+            "ticker": "1066.KL",
+            "price": 8.44,
+            "change": 0.59593844,
+            "volume": 2812300
+          }
+        ]
+      },
+      "body": [
+        "马股午盘上涨0.86%，银行股如马来亚银行（1295.KL）涨2.64%至5.05令吉，大众银行（1023.KL）涨1.04%至7.77令吉，联昌国际（1066.KL）涨0.60%至8.44令吉，推动大盘走高。[Malay Mail @ 未提供时间]",
+        "能源和银行股领涨，中东紧张局势和石油供应担忧提振能源板块，银行股因经济复苏预期走强。[Focus Malaysia @ 未提供时间]",
+        "分析师指出，地缘政治风险加剧，但马股在银行和能源股支撑下保持积极势头。[Free Malaysia Today @ 未提供时间]"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPRDJPNDNGV0E3dG5oTG41UHpMZUtOYzJuaXRjclJRN1BtZUNrMVBzUzFSQVAzX1Q3N18teldtVVp4UFpqeFZUeVh3bkhmQURkNzVBb2JjVVBGUm1UeVlCN1M2eldrbVdieTBrOC1kVG",
+      "source_name": "Malay Mail",
+      "timestamp": "2026-07-15T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "my_stocks",
+      "headline": "能源银行股推高马股逾1%",
+      "dek": "能源和银行股上涨，推动马股涨幅超过1%。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "1295.KL",
+            "price": 5.05,
+            "change": 2.6422787,
+            "volume": 51759600
+          },
+          {
+            "ticker": "1023.KL",
+            "price": 7.77,
+            "change": 1.0403111,
+            "volume": 11622700
+          },
+          {
+            "ticker": "1066.KL",
+            "price": 8.44,
+            "change": 0.59593844,
+            "volume": 2812300
+          }
+        ]
+      },
+      "body": [
+        "能源和银行股领涨，马股涨幅超过1%。马来亚银行（1295.KL）涨2.64%至5.05令吉，大众银行（1023.KL）涨1.04%至7.77令吉，联昌国际（1066.KL）涨0.60%至8.44令吉。[Focus Malaysia @ 未提供时间]",
+        "中东紧张局势和石油供应担忧提振能源板块，银行股因经济复苏预期走强。[Free Malaysia Today @ 未提供时间]",
+        "分析师表示，地缘政治风险加剧，但马股在银行和能源股支撑下保持积极势头。[Free Malaysia Today @ 未提供时间]"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNVmMyMHJ0aU4zbUNTSXppNTdRbG5hbkdlS2F0OFZyWlVpbDVuMjZ6VlVZWWVlbnZHTXFKaFBsVzREbFdGWmRTSHo4NHl6bDFYUHg3Ymc5Tm11MGNIdGpnWkJZaVlmeEVieDZJZmFQaG",
+      "source_name": "Focus Malaysia",
+      "timestamp": "2026-07-15T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "my_stocks",
+      "headline": "能源银行股推高马股",
+      "dek": "能源和银行股上涨，推动马股走高。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "1295.KL",
+            "price": 5.05,
+            "change": 2.6422787,
+            "volume": 51759600
+          },
+          {
+            "ticker": "1023.KL",
+            "price": 7.77,
+            "change": 1.0403111,
+            "volume": 11622700
+          },
+          {
+            "ticker": "1066.KL",
+            "price": 8.44,
+            "change": 0.59593844,
+            "volume": 2812300
+          }
+        ]
+      },
+      "body": [
+        "能源和银行股领涨，马股涨幅超过1%。马来亚银行（1295.KL）涨2.64%至5.05令吉，大众银行（1023.KL）涨1.04%至7.77令吉，联昌国际（1066.KL）涨0.60%至8.44令吉。[Free Malaysia Today @ 未提供时间]",
+        "中东紧张局势和石油供应担忧提振能源板块，银行股因经济复苏预期走强。[Free Malaysia Today @ 未提供时间]",
+        "分析师表示，地缘政治风险加剧，但马股在银行和能源股支撑下保持积极势头。[Free Malaysia Today @ 未提供时间]"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQa0x2TEk4R1BxbGNRbmFjaXpnbGl6MXJ3Tk9WN3l5Skt1QktqWUFBSUpndFMyNndFTFpyUFJ0VTF4Zl9PcFd3N3U1Ny02dzdoV2VDd0JORWNRbWZPR3p3SzhyQmFKX25BSjBQcDRsb1",
+      "source_name": "Free Malaysia Today",
+      "timestamp": "2026-07-15T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "my_stocks",
+      "headline": "能源银行股推高马股",
+      "dek": "能源和银行股上涨，推动马股走高。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "1295.KL",
+            "price": 5.05,
+            "change": 2.6422787,
+            "volume": 51759600
+          },
+          {
+            "ticker": "1023.KL",
+            "price": 7.77,
+            "change": 1.0403111,
+            "volume": 11622700
+          },
+          {
+            "ticker": "1066.KL",
+            "price": 8.44,
+            "change": 0.59593844,
+            "volume": 2812300
+          }
+        ]
+      },
+      "body": [
+        "能源和银行股领涨，马股涨幅超过1%。马来亚银行（1295.KL）涨2.64%至5.05令吉，大众银行（1023.KL）涨1.04%至7.77令吉，联昌国际（1066.KL）涨0.60%至8.44令吉。[Free Malaysia Today @ 未提供时间]",
+        "中东紧张局势和石油供应担忧提振能源板块，银行股因经济复苏预期走强。[Free Malaysia Today @ 未提供时间]",
+        "分析师表示，地缘政治风险加剧，但马股在银行和能源股支撑下保持积极势头。[Free Malaysia Today @ 未提供时间]"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQa0x2TEk4R1BxbGNRbmFjaXpnbGl6MXJ3Tk9WN3l5Skt1QktqWUFBSUpndFMyNndFTFpyUFJ0VTF4Zl9PcFd3N3U1Ny02dzdoV2VDd0JORWNRbWZPR3p3SzhyQmFKX25BSjBQcDRsb1",
+      "source_name": "Free Malaysia Today (FMT)",
+      "timestamp": "2026-07-15T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "my_stocks",
+      "headline": "令吉兑美元收低 市场谨慎",
+      "dek": "令吉兑美元收低，投资者在美国通胀数据和中东局势前保持谨慎。",
+      "data_card": null,
+      "body": [
+        "令吉兑美元收低，投资者在美国通胀数据和中东局势前保持谨慎。[Free Malaysia Today @ 未提供时间]",
+        "分析师指出，市场等待美国6月通胀数据，同时中东地缘政治紧张持续。[Free Malaysia Today @ 未提供时间]",
+        "令吉汇率数据未在实时数据中提供，具体变动未验证。[Free Malaysia Today @ 未提供时间]"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQa0x2TEk4R1BxbGNRbmFjaXpnbGl6MXJ3Tk9WN3l5Skt1QktqWUFBSUpndFMyNndFTFpyUFJ0VTF4Zl9PcFd3N3U1Ny02dzdoV2VDd0JORWNRbWZPR3p3SzhyQmFKX25BSjBQcDRsb1",
+      "source_name": "Free Malaysia Today (FMT)",
+      "timestamp": "2026-07-15T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "my_stocks",
+      "headline": "棕油上涨 原油涨提振生物燃料",
+      "dek": "棕油期货上涨，原油涨势和印尼B50生物柴油计划提振需求前景。",
+      "data_card": null,
+      "body": [
+        "棕油期货上涨，原油涨势和印尼B50生物柴油计划提振需求前景。[Free Malaysia Today @ 未提供时间]",
+        "中东战争和印尼B50、马来西亚B15生物柴油混合计划预计收紧棕油供应，推高价格。[Free Malaysia Today @ 未提供时间]",
+        "棕油价格数据未在实时数据中提供，具体变动未验证。[Free Malaysia Today @ 未提供时间]"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQa0x2TEk4R1BxbGNRbmFjaXpnbGl6MXJ3Tk9WN3l5Skt1QktqWUFBSUpndFMyNndFTFpyUFJ0VTF4Zl9PcFd3N3U1Ny02dzdoV2VDd0JORWNRbWZPR3p3SzhyQmFKX25BSjBQcDRsb1",
+      "source_name": "Free Malaysia Today (FMT)",
+      "timestamp": "2026-07-15T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "my_stocks",
+      "headline": "马股高开 医疗房产股买盘",
+      "dek": "马股高开，医疗和房产股买盘推动指数至1700.85点。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "1295.KL",
+            "price": 5.05,
+            "change": 2.6422787,
+            "volume": 51759600
+          },
+          {
+            "ticker": "1023.KL",
+            "price": 7.77,
+            "change": 1.0403111,
+            "volume": 11622700
+          },
+          {
+            "ticker": "1066.KL",
+            "price": 8.44,
+            "change": 0.59593844,
+            "volume": 2812300
+          }
+        ]
+      },
+      "body": [
+        "马股高开，医疗和房产股买盘推动指数至1700.85点。[Free Malaysia Today @ 未提供时间]",
+        "银行股如马来亚银行（1295.KL）涨2.64%至5.05令吉，大众银行（1023.KL）涨1.04%至7.77令吉，联昌国际（1066.KL）涨0.60%至8.44令吉，也提供支撑。[Free Malaysia Today @ 未提供时间]",
+        "分析师表示，市场情绪积极，但需关注中东局势和美国数据。[Free Malaysia Today @ 未提供时间]"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQa0x2TEk4R1BxbGNRbmFjaXpnbGl6MXJ3Tk9WN3l5Skt1QktqWUFBSUpndFMyNndFTFpyUFJ0VTF4Zl9PcFd3N3U1Ny02dzdoV2VDd0JORWNRbWZPR3p3SzhyQmFKX25BSjBQcDRsb1",
+      "source_name": "Free Malaysia Today (FMT)",
+      "timestamp": "2026-07-15T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "my_stocks",
+      "headline": "油价创四周新高 美伊冲突升级",
+      "dek": "油价创四周新高，美伊冲突升级引发供应担忧。",
+      "data_card": null,
+      "body": [
+        "油价创四周新高，美伊冲突升级引发供应担忧。[Free Malaysia Today @ 未提供时间]",
+        "市场担心和平协议短暂，地缘政治风险加剧。[Free Malaysia Today @ 未提供时间]",
+        "油价数据未在实时数据中提供，具体变动未验证。[Free Malaysia Today @ 未提供时间]"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQa0x2TEk4R1BxbGNRbmFjaXpnbGl6MXJ3Tk9WN3l5Skt1QktqWUFBSUpndFMyNndFTFpyUFJ0VTF4Zl9PcFd3N3U1Ny02dzdoV2VDd0JORWNRbWZPR3p3SzhyQmFKX25BSjBQcDRsb1",
+      "source_name": "Free Malaysia Today (FMT)",
+      "timestamp": "2026-07-15T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "my_stocks",
+      "headline": "油价创一个月新高 美伊霍尔木兹攻击",
+      "dek": "油价创一个月新高，美伊在霍尔木兹海峡攻击升级。",
+      "data_card": null,
+      "body": [
+        "油价创一个月新高，美伊在霍尔木兹海峡攻击升级。[Free Malaysia Today @ 未提供时间]",
+        "美国封锁和伊朗回应注入新的市场风险。[Free Malaysia Today @ 未提供时间]",
+        "油价数据未在实时数据中提供，具体变动未验证。[Free Malaysia Today @ 未提供时间]"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQa0x2TEk4R1BxbGNRbmFjaXpnbGl6MXJ3Tk9WN3l5Skt1QktqWUFBSUpndFMyNndFTFpyUFJ0VTF4Zl9PcFd3N3U1Ny02dzdoV2VDd0JORWNRbWZPR3p3SzhyQmFKX25BSjBQcDRsb1",
+      "source_name": "Free Malaysia Today (FMT)",
+      "timestamp": "2026-07-15T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "my_stocks",
+      "headline": "令吉兑美元高开 中东不确定",
+      "dek": "令吉兑美元高开，中东不确定性支撑避险情绪。",
+      "data_card": null,
+      "body": [
+        "令吉兑美元高开至4.0675/4.0730，周一收盘为4.0680/4.0730。[Free Malaysia Today @ 未提供时间]",
+        "中东不确定性支撑避险情绪，但令吉汇率数据未在实时数据中提供，具体变动未验证。[Free Malaysia Today @ 未提供时间]",
+        "分析师表示，市场关注美国通胀数据和地缘政治发展。[Free Malaysia Today @ 未提供时间]"
+      ],
+      "source_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQa0x2TEk4R1BxbGNRbmFjaXpnbGl6MXJ3Tk9WN3l5Skt1QktqWUFBSUpndFMyNndFTFpyUFJ0VTF4Zl9PcFd3N3U1Ny02dzdoV2VDd0JORWNRbWZPR3p3SzhyQmFKX25BSjBQcDRsb1",
+      "source_name": "Free Malaysia Today (FMT)",
+      "timestamp": "2026-07-15T12:00:00Z",
+      "_warnings": []
+    }
+  ],
+  "ai": [
+    {
+      "tag": "ai",
+      "headline": "纽约州暂停新建数据中心",
+      "dek": "纽约州成为全美首个暂停大型数据中心审批的州，州长霍楚称AI建设热潮不应推高电价。",
+      "data_card": null,
+      "body": [
+        "纽约州州长凯西·霍楚签署法案，暂停新建超大规模数据中心审批，为期最长一年，成为全美首个实施此类禁令的州。霍楚表示，AI驱动的建设热潮不应以居民电费上涨为代价。",
+        "该禁令针对大型数据中心，旨在评估其对电网和电价的影响。法案由州议会通过，霍楚已签署生效。",
+        "此举可能影响多家科技公司的扩张计划，但具体受影响企业尚未明确。数据未验证 [TechCrunch AI @ 未提供时间]"
+      ],
+      "source_url": "https://techcrunch.com/2026/07/15/new-york-state-halts-construction-of-all-new-data-centers/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-15T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Reflection与Nebius签10亿算力协议",
+      "dek": "Reflection AI与Nebius签署10亿美元算力协议，该公司成立于2024年，专注开源AI技术。",
+      "data_card": null,
+      "body": [
+        "Reflection AI与Nebius签署价值10亿美元的算力合作协议，以获取Nebius的计算资源。Reflection成立于2024年，致力于开发开源AI技术。",
+        "该交易凸显AI初创公司对算力的巨大需求。Nebius作为算力提供商，将支持Reflection的模型训练和推理。",
+        "具体财务条款未披露，但协议金额为10亿美元。数据未验证 [TechCrunch AI @ 未提供时间]"
+      ],
+      "source_url": "https://techcrunch.com/2026/07/15/reflection-inks-1b-compute-deal-with-nebius/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-15T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "纽约州数据中心禁令全美首例",
+      "dek": "纽约州长签署全美首个州级数据中心禁令，超大规模数据中心一年内不得新建。",
+      "data_card": null,
+      "body": [
+        "纽约州州长凯西·霍楚签署法案，禁止新建超大规模数据中心，为期一年，成为全美首个实施此类禁令的州。该法案由州议会通过。",
+        "禁令旨在应对AI建设热潮对电网和电价的压力。霍楚表示，数据中心扩张不应牺牲居民利益。",
+        "该禁令可能影响多家科技公司，但具体受影响企业尚未明确。数据未验证 [The Verge AI @ 未提供时间]"
+      ],
+      "source_url": "https://www.theverge.com/2026/07/15/new-york-becomes-the-first-state-to-enact-a-data-center-moratorium/",
+      "source_name": "The Verge AI",
+      "timestamp": "2026-07-15T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Nous Research融资估值达15亿",
+      "dek": "Hermes代理开发商Nous Research正进行新一轮融资，至少筹集7500万美元，估值15亿美元。",
+      "data_card": null,
+      "body": [
+        "Nous Research正进行新一轮融资，至少筹集7500万美元，由Robot Ventures领投，USV等知名投资者参与。公司估值达15亿美元。",
+        "该公司开发了Hermes代理系统，专注于AI代理技术。融资将用于产品开发和市场拓展。",
+        "具体财务条款未披露，但融资额至少7500万美元。数据未验证 [TechCrunch AI @ 未提供时间]"
+      ],
+      "source_url": "https://techcrunch.com/2026/07/15/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-15T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Anthropic AI内部机制揭秘",
+      "dek": "今日下载版报道Anthropic最新AI发现及其对世界模型未来的影响。",
+      "data_card": null,
+      "body": [
+        "本期《下载》通讯聚焦Anthropic的最新AI发现，探讨其内部工作机制及对世界模型发展的意义。文章分析了Claude模型的运作原理。",
+        "Anthropic的研究揭示了AI模型的可解释性进展，可能影响未来AI安全与透明度。",
+        "具体技术细节未披露。数据未验证 [MIT Tech Review @ 未提供时间]"
+      ],
+      "source_url": "https://www.technologyreview.com/2026/07/15/the-download-claudes-inner-workings-and-the-future-of-world-models/",
+      "source_name": "MIT Tech Review",
+      "timestamp": "2026-07-15T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "多跳代理中消息格式影响研究",
+      "dek": "arXiv论文研究LLM代理间消息格式对信息传递的影响，发现格式效应因层级而异。",
+      "data_card": null,
+      "body": [
+        "arXiv:2607.09678v1研究LLM代理间消息格式对信息传递的影响。两种文献观点相左：格式优化工作认为格式重要，而其他研究则认为不重要。",
+        "研究发现，消息格式效应因代理层级而异，提示在构建多跳代理系统时需考虑格式选择。",
+        "该论文为AI代理协作提供了新见解。数据未验证 [Arxiv ML @ 未提供时间]"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.09678",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-15T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Boltzmann MapReduce新框架",
+      "dek": "arXiv论文提出Boltzmann MapReduce框架，用于可分叉沙箱中的分区函数归约。",
+      "data_card": null,
+      "body": [
+        "arXiv:2607.09689v1提出Boltzmann MapReduce框架，在局部渐近正态性下，工作者对大小为n的数据块的置信密度服从吉布斯-玻尔兹曼测度。",
+        "该框架为分布式计算中的分区函数归约提供了新方法，适用于可分叉沙箱环境。",
+        "论文为理论贡献，无直接市场影响。数据未验证 [Arxiv ML @ 未提供时间]"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.09689",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-15T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "PixVerse融资4.39亿估值超20亿",
+      "dek": "视频生成初创公司PixVerse完成4.39亿美元融资，估值超20亿美元，将拓展世界模型业务。",
+      "data_card": null,
+      "body": [
+        "视频生成初创公司PixVerse完成4.39亿美元融资，估值超过20亿美元。公司计划利用资金拓展世界模型产品并覆盖更多地区客户。",
+        "该轮融资显示投资者对AI视频生成领域的持续兴趣。PixVerse将扩大团队和研发投入。",
+        "具体投资者未披露。数据未验证 [TechCrunch AI @ 未提供时间]"
+      ],
+      "source_url": "https://techcrunch.com/2026/07/15/video-generation-startup-pixverse-raises-439m-valuation-soars-past-2b/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-15T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Meta高管称AI代币预算或受限",
+      "dek": "Instagram负责人Mosseri预测公司将对工程师的AI代币使用设置上限，类似薪资管理。",
+      "data_card": null,
+      "body": [
+        "Instagram负责人亚当·莫塞里表示，公司未来可能需要对工程师的AI代币使用设置上限，就像管理薪资或其他运营费用一样。他认为AI代币预算将成为企业成本控制的一部分。",
+        "莫塞里预测，随着AI工具普及，企业将需要更精细地管理AI资源消耗，避免过度使用。",
+        "该言论反映科技公司对AI成本上升的担忧。数据未验证 [TechCrunch AI @ 未提供时间]"
+      ],
+      "source_url": "https://techcrunch.com/2026/07/15/metas-adam-mosseri-says-ai-token-budgets-could-soon-be-capped-per-engineer/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-15T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "格式敏感性指数研究LLM基准",
+      "dek": "arXiv论文提出格式敏感性指数，研究提示包装器格式变化对LLM基准测试分数的影响。",
+      "data_card": null,
+      "body": [
+        "arXiv:2607.09665v1提出格式敏感性指数，研究提示包装器格式变化对LLM基准测试分数的影响。研究发现，仅格式差异即可改变模型分数，甚至翻转排行榜结论。",
+        "该指数可用于评估提示包装器对模型性能的稳健性，为基准测试设计提供指导。",
+        "论文为AI评估方法学贡献。数据未验证 [Arxiv ML @ 未提供时间]"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.09665",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-15T00:00:00Z",
+      "_warnings": []
+    }
+  ],
+  "macro": [
+    {
+      "tag": "macro",
+      "headline": "美国通胀超预期下降",
+      "dek": "交易员减少对美联储加息的押注，能源成本下降抑制了中东战争引发的价格飙升。",
+      "data_card": null,
+      "body": [
+        "美国6月通胀率数据未验证，低于预期。",
+        "汽油价格数据未验证大幅下跌，缓解了价格压力。",
+        "交易员预计美联储7月加息可能性降低，市场情绪转向宽松。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-07-15 12:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "油价因霍尔木兹海峡紧张上涨",
+      "dek": "布伦特原油上涨，美国对伊朗袭击油轮进行打击。",
+      "data_card": null,
+      "body": [
+        "油价数据未验证，因霍尔木兹海峡局势紧张。",
+        "美国发动新一轮打击回应伊朗袭击油轮。",
+        "能源市场担忧供应中断，避险情绪升温。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-07-15 12:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "通胀温和使美联储7月加息无望",
+      "dek": "核心通胀和整体通胀均低于预期。",
+      "data_card": null,
+      "body": [
+        "美国6月通胀数据未验证低于预期。",
+        "分析师认为美联储7月加息可能性降低。",
+        "市场关注后续政策路径，预计维持当前利率。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-07-15 12:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "沃什承诺坚定对抗通胀",
+      "dek": "美联储主席称对持续高通胀零容忍。",
+      "data_card": null,
+      "body": [
+        "凯文·沃什表示美联储将坚定对抗通胀。",
+        "他称对持续高通胀零容忍，维护物价稳定。",
+        "市场预期美联储将维持紧缩立场，直至通胀回落。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-07-15 12:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "特朗普重返对伊朗施压",
+      "dek": "今日简讯：林赛·格雷厄姆突然去世震动华盛顿。",
+      "data_card": null,
+      "body": [
+        "特朗普再次升级对伊朗的施压，恢复强硬立场。",
+        "参议员格雷厄姆突然去世，华盛顿政治格局生变。",
+        "中东局势与国内政治交织，不确定性增加。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-07-15 12:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "美伊互相导弹警告",
+      "dek": "两国处于自四月停火以来最危险的对抗期。",
+      "data_card": null,
+      "body": [
+        "华盛顿和德黑兰互相发射导弹进行警告。",
+        "许多打击旨在传递信号，而非直接冲突。",
+        "双方冲突风险升级，国际社会密切关注。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-07-15 12:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "特朗普放弃拟议海峡通行费",
+      "dek": "总统称将以海湾国家投资替代该计划。",
+      "data_card": null,
+      "body": [
+        "特朗普宣布放弃拟议的霍尔木兹海峡货物通行费。",
+        "他表示将用海湾国家投资替代该计划，吸引资本。",
+        "该计划原本旨在增加收入，现被搁置。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-07-15 12:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "英国借贷成本升至2.13%",
+      "dek": "10年期收益率当前为2.13%，油市波动加剧市场担忧。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "UK10Y",
+            "price": "2.13",
+            "change": "-0.47",
+            "source": "FT World @ 12:00 MYT"
+          }
+        ]
+      },
+      "body": [
+        "英国借贷成本数据未验证上升至5月以来最高。",
+        "安迪·伯纳姆即将成为首相，市场关注政策变化。",
+        "油价数据未验证上涨，加剧了对通胀和利率的担忧。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-07-15 12:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "乌克兰无人机袭击俄罗斯航运",
+      "dek": "过去一周，基辅以比1980年代两伊战争更快的速度袭击亚速海船只。",
+      "data_card": null,
+      "body": [
+        "乌克兰对俄罗斯航运发动前所未有的无人机袭击。",
+        "过去一周袭击速度加快，类比1980年代油轮战。",
+        "黑海航运安全受到威胁，全球供应链风险上升。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-07-15 12:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "美联储和英国央行面临信任危机",
+      "dek": "对央行的信任丧失可能推高长期通胀预期。",
+      "data_card": null,
+      "body": [
+        "美联储和英国央行面临信任赤字，市场信心下降。",
+        "对央行的信任丧失可能推高长期通胀预期。",
+        "央行政策有效性受到质疑，需重建公信力。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-07-15 12:00 MYT",
+      "_warnings": []
+    }
+  ]
+}

@@ -22,11 +22,11 @@ Hermes Daily collects and renders curated news stories as a dark-themed slidesho
 ## Structure
 
 ```
-index.html              — Main app shell + date navigation
-YYYY-MM-DD/
-  index.html            — Daily page
-  stories.json          — Daily story data
-portfolio/              — Embedded portfolio section
+index.html                  — Main slideshow (today's stories)
+archive/
+  YYYY-MM/
+    DD.html                 — Daily page
+    DD.json                 — Daily story data
 ```
 
 ## Local Development
