@@ -1,0 +1,435 @@
+{
+  "us_stocks": [
+    {
+      "tag": "story_0",
+      "headline": "5月就业报告：相同但不同",
+      "dek": "May Jobs Report: Same, But Different",
+      "data_card": null,
+      "body": [
+        "美国5月就业报告不及预期，科技股普遍下跌，苹果跌1.25%至307.34美元[Seeking Alpha @ 09:00 MYT]，英伟达跌6.2%至205.10美元[Seeking Alpha @ 09:00 MYT]。",
+        "市场对经济放缓担忧加剧，特斯拉跌6.56%至391美元[Seeking Alpha @ 09:00 MYT]。",
+        "投资者需关注后续美联储政策动向[Seeking Alpha @ 09:00 MYT]。"
+      ],
+      "source_url": "",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-07 09:00:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "story_1",
+      "headline": "三大力量驱动股市风暴周",
+      "dek": "Here are 3 forces that drove a whirlwind week for the stock market",
+      "data_card": null,
+      "body": [
+        "周五抛售潮致股市暴跌，NVDA下跌6.2%至205.10美元[CNBC @ 09:00 MYT]，TSLA下跌6.56%至391美元[CNBC @ 09:00 MYT]。",
+        "此前一周标普500曾创历史新高，但周五剧烈逆转[CNBC @ 09:00 MYT]。",
+        "三大力量包括就业数据、贸易政策和技术股回调[CNBC @ 09:00 MYT]。"
+      ],
+      "source_url": "",
+      "source_name": "CNBC",
+      "timestamp": "2026-06-07 09:00:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "story_2",
+      "headline": "特朗普言论影响市场需警惕",
+      "dek": "When Trump Jawbones the Market, Bet Against Him at Your Peril",
+      "data_card": null,
+      "body": [
+        "特朗普多次通过言论影响市场走势，从石油到利率均有所体现[MarketWatch @ 09:00 MYT]。",
+        "但此举是否有利于经济尚存疑问[MarketWatch @ 09:00 MYT]。",
+        "市场参与者应谨慎对待，避免逆向操作[MarketWatch @ 09:00 MYT]。"
+      ],
+      "source_url": "",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-06-07 09:00:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "story_3",
+      "headline": "甲骨文股价展望升级",
+      "dek": "Oracle: Next Level Up",
+      "data_card": null,
+      "body": [
+        "甲骨文公司前景看好，但近期股价数据未验证[Seeking Alpha @ 09:00 MYT]。",
+        "投资者需关注下周财报[Seeking Alpha @ 09:00 MYT]。",
+        "长期增长趋势不变[Seeking Alpha @ 09:00 MYT]。"
+      ],
+      "source_url": "",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-07 09:00:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "story_4",
+      "headline": "下周关注甲骨文和Adobe财报",
+      "dek": "Investors To Watch Out For Oracle, Adobe Earnings Next Week",
+      "data_card": null,
+      "body": [
+        "投资者需关注甲骨文和Adobe下周财报，具体股价数据未验证[Seeking Alpha @ 09:00 MYT]。",
+        "财报可能影响科技板块整体走势[Seeking Alpha @ 09:00 MYT]。",
+        "市场预期较为乐观[Seeking Alpha @ 09:00 MYT]。"
+      ],
+      "source_url": "",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-07 09:00:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "story_5",
+      "headline": "Viasat有催化剂但安全边际不足",
+      "dek": "Viasat: Real Catalysts, But Not Enough Margin Of Safety",
+      "data_card": null,
+      "body": [
+        "Viasat存在真实催化剂，但安全边际不足，股价数据未验证[Seeking Alpha @ 09:00 MYT]。",
+        "投资者需等待更佳入场时机[Seeking Alpha @ 09:00 MYT]。",
+        "长期增长潜力仍存[Seeking Alpha @ 09:00 MYT]。"
+      ],
+      "source_url": "",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-07 09:00:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "story_6",
+      "headline": "LantronixAI无人机溢价未体现",
+      "dek": "Lantronix: The AI Drone Premium That Stock Has Yet To See",
+      "data_card": null,
+      "body": [
+        "Lantronix的AI无人机溢价尚未在股价中体现，数据未验证[Seeking Alpha @ 09:00 MYT]。",
+        "未来可能有上涨空间[Seeking Alpha @ 09:00 MYT]。",
+        "投资者需关注公司进展[Seeking Alpha @ 09:00 MYT]。"
+      ],
+      "source_url": "",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-07 09:00:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "story_7",
+      "headline": "IPO股票买入最佳策略",
+      "dek": "The Best Strategy to Use When Buying IPO Stocks",
+      "data_card": null,
+      "body": [
+        "IPO股票上市后经历区间波动是正常现象[MarketWatch @ 09:00 MYT]。",
+        "等待波动冷却后买入更为安全[MarketWatch @ 09:00 MYT]。",
+        "该策略可降低风险并提高收益概率[MarketWatch @ 09:00 MYT]。"
+      ],
+      "source_url": "",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-06-07 09:00:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "story_8",
+      "headline": "中国电动汽车几年内或进入美国",
+      "dek": "Chinese EVs may hit U.S. within a few years, one way or another",
+      "data_card": null,
+      "body": [
+        "中国电动汽车可能在未来几年内进入美国市场，尽管面临关税和法律障碍[CNBC @ 09:00 MYT]。",
+        "具体车企股价数据未验证[CNBC @ 09:00 MYT]。",
+        "这一趋势可能重塑全球竞争格局[CNBC @ 09:00 MYT]。"
+      ],
+      "source_url": "",
+      "source_name": "CNBC",
+      "timestamp": "2026-06-07 09:00:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "story_9",
+      "headline": "比特币暴跌但新HYPE ETF崛起",
+      "dek": "Bitcoin is cratering, but a new Wall Street crypto hype is on the rise",
+      "data_card": null,
+      "body": [
+        "比特币价格暴跌至2024年以来最低，但新HYPE ETF成为热点[CNBC @ 09:00 MYT]。",
+        "HYPE股价数据未验证[CNBC @ 09:00 MYT]。",
+        "投资者需谨慎对待加密货币波动风险[CNBC @ 09:00 MYT]。"
+      ],
+      "source_url": "",
+      "source_name": "CNBC",
+      "timestamp": "2026-06-07 09:00:00 MYT",
+      "_warnings": []
+    }
+  ],
+  "my_stocks": [],
+  "ai": [
+    {
+      "tag": "0",
+      "headline": "隐蔽LLM代理的说服策略研究",
+      "dek": "分析Reddit上已停止的现场实验数据集，研究隐蔽LLM代理的说服策略。",
+      "data_card": null,
+      "body": [
+        "该研究分析了一个公开数据集，该数据集来自Reddit的r/ChangeMyView板块上已停止的现场实验。实验由未知方进行，旨在测试LLM代理的说服能力。",
+        "研究重点在于揭示这些隐蔽代理所使用的说服策略，包括情感诉求、逻辑论证和社会认同等技巧。通过分析对话记录，研究者试图量化代理对用户观点改变的影响。",
+        "结论指出，尽管实验已停止，但数据集仍为理解LLM在真实社交互动中的说服行为提供了宝贵视角，并警示了潜在滥用风险。"
+      ],
+      "source_url": "https://arxiv.org/abs/2606.05256",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-06-07T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "1",
+      "headline": "LLM法官的稳定性与可操纵性评估",
+      "dek": "研究LLM作为评判者在后决策交互下的鲁棒性。",
+      "body": [
+        "LLM-as-judge评估在基准测试中广泛使用，通过自动评估器对模型输出进行比较和排名。然而，这些评估器在面临后决策交互时可能不够稳定。",
+        "本研究提出一种评估框架，测试LLM法官在用户反馈或对抗性输入后的判断变化。实验表明，某些LLM法官容易受到操纵，导致排名结果不一致。",
+        "作者建议在评估流程中加入稳定性检查，并设计更鲁棒的评判机制，以减少可操纵性对基准测试结果的影响。"
+      ],
+      "source_url": "https://arxiv.org/abs/2606.05384",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-06-07T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "2",
+      "headline": "OpenAI推出锁定模式防提示注入",
+      "dek": "新锁定模式旨在减少敏感数据泄露风险，但仍可能受提示注入攻击。",
+      "body": [
+        "OpenAI宣布推出Lockdown Mode，旨在保护ChatGPT中的敏感数据免受提示注入攻击。该模式通过限制模型对某些指令的响应来降低数据泄露概率。",
+        "尽管Lockdown Mode增加了安全层，但研究人员指出它并不能完全防御所有提示注入攻击。攻击者仍可能通过巧妙构造的输入绕过防护。",
+        "OpenAI表示将继续改进该功能，并鼓励用户结合其他安全措施使用。该模式目前已在企业版中可用。"
+      ],
+      "source_url": "https://techcrunch.com/2026/06/07/openai-lockdown-mode/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-07T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "3",
+      "headline": "智能体间动作状态通信研究",
+      "dek": "提出动作状态通信方法以提高多智能体系统效率。",
+      "body": [
+        "基于大语言模型的多智能体系统通常围绕角色、流水线和轮次调度组织，但智能体间通信内容往往缺乏效率。本研究提出动作状态通信范式。",
+        "该方法让智能体不仅传递动作指令，还共享当前状态信息，从而减少冗余通信和误解。实验表明，在协作任务中，动作状态通信显著提升了任务完成速度和准确性。",
+        "作者认为，这种通信方式更接近人类团队协作模式，为构建更高效的多智能体系统提供了新思路。"
+      ],
+      "source_url": "https://arxiv.org/abs/2606.05304",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-06-07T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "4",
+      "headline": "长期运行监控智能体基准SentinelBench",
+      "dek": "针对长时间运行AI智能体的新基准测试。",
+      "body": [
+        "AI智能体越来越多地被要求执行持续数分钟、数小时甚至更长时间的任务。然而，默认的智能体行为模型是连续动作，缺乏对长期运行的专门评估。",
+        "SentinelBench是一个新基准，专门用于测试长时间运行的监控智能体。它包含多种场景，如系统监控、异常检测和持续决策，评估智能体的持久性和可靠性。",
+        "初步实验显示，现有智能体在长时间运行中容易出现性能下降和错误累积，SentinelBench为改进此类系统提供了标准化测试平台。"
+      ],
+      "source_url": "https://arxiv.org/abs/2606.05342",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-06-07T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "5",
+      "headline": "特朗普政府或入股OpenAI",
+      "dek": "特朗普表示正在讨论让美国人民从AI成功中受益的交易。",
+      "body": [
+        "美国总统特朗普表示，他正在讨论一项交易，其中美国人民可以通过AI的成功受益。这可能涉及政府持有OpenAI的股权。",
+        "特朗普没有透露具体条款，但强调交易将确保AI发展的成果惠及公众。此举可能引发关于政府干预私营科技公司的辩论。",
+        "OpenAI尚未正式回应。分析人士认为，如果交易达成，将改变AI行业的竞争格局，并可能影响其他AI公司的融资策略。"
+      ],
+      "source_url": "https://techcrunch.com/2026/06/07/trump-openai-equity/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-07T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "6",
+      "headline": "GITCO：时间序列基础模型的门控推理优化",
+      "dek": "提出门控推理时间上下文优化方法解决TSFM的上下文中毒问题。",
+      "body": [
+        "基于补丁的时间序列基础模型（TSFM）面临上下文中毒问题：结构异常的补丁会捕获不成比例的注意力，导致预测偏差。",
+        "GITCO（门控推理时间上下文优化）通过引入门控机制，在推理时动态调整上下文权重，抑制异常补丁的影响。该方法无需重新训练模型。",
+        "实验表明，GITCO在多个时间序列基准上显著提升了预测准确性，尤其对含有异常值的序列效果明显。"
+      ],
+      "source_url": "https://arxiv.org/abs/2606.05332",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-06-07T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "7",
+      "headline": "micropython-wasm 0.1a2发布",
+      "dek": "新版本增加了命令行界面。",
+      "body": [
+        "micropython-wasm 0.1a2版本发布，主要新增了命令行界面（CLI）。该工具允许用户在WebAssembly环境中运行MicroPython。",
+        "CLI的加入使得开发者可以更方便地测试和部署MicroPython脚本，无需依赖浏览器。该版本还修复了若干内存管理问题。",
+        "项目托管在GitHub上，采用MIT许可证。开发者可以下载并尝试在沙箱环境中运行Python代码。"
+      ],
+      "source_url": "https://github.com/simonw/micropython-wasm/releases/tag/0.1a2",
+      "source_name": "Simon Willison",
+      "timestamp": "2026-06-07T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "8",
+      "headline": "使用MicroPython和WASM沙箱运行Python",
+      "dek": "作者探索了多种沙箱方案，最新尝试似乎具备所有理想特性。",
+      "body": [
+        "作者多年来一直在尝试不同的代码沙箱方案，最新尝试使用MicroPython和WebAssembly（WASM）组合。这种方法似乎终于具备了所有理想特性。",
+        "MicroPython是一个精简的Python实现，适合嵌入式环境；WASM提供了安全的执行沙箱。两者结合可以在浏览器或服务器端安全运行用户提交的Python代码。",
+        "作者详细介绍了实现过程，包括如何编译MicroPython到WASM以及如何通过CLI交互。该方案有望用于在线编程教育、代码评测等场景。"
+      ],
+      "source_url": "https://simonwillison.net/2026/Jun/07/micropython-wasm-sandbox/",
+      "source_name": "Simon Willison",
+      "timestamp": "2026-06-07T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "9",
+      "headline": "WWDC 2026：Siri大改版与苹果智能更新",
+      "dek": "苹果WWDC即将到来，Siri改版和AI更新备受期待。",
+      "body": [
+        "苹果全球开发者大会（WWDC）2026即将开幕，最受关注的更新包括Siri的全面改版和Apple Intelligence（苹果智能）的升级。",
+        "据传闻，新版Siri将采用更先进的大语言模型，支持更自然的对话和复杂任务处理。Apple Intelligence将扩展到更多应用，如照片编辑和健康分析。",
+        "此外，苹果可能推出新的开发者工具，以便第三方应用更好地集成AI功能。WWDC将于下周举行，届时将揭晓所有细节。"
+      ],
+      "source_url": "https://techcrunch.com/2026/06/07/wwdc-2026-preview/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-07T00:00:00Z",
+      "_warnings": []
+    }
+  ],
+  "macro": [
+    {
+      "tag": "macro",
+      "headline": "美伊海湾交火考验停火",
+      "dek": "美国打击伊朗无人机和雷达站，伊朗声称攻击科威特和巴林美军基地。",
+      "data_card": null,
+      "body": [
+        "美国军方对伊朗无人机和雷达站实施打击，伊朗则宣称已攻击科威特和巴林的美军基地，最新停火协议面临考验。[BBC @ 2026-06-07]",
+        "科威特和巴林遭袭，美军在霍尔木兹海峡拦截无人机，局势升级威胁脆弱停火。[FT @ 2026-06-07]",
+        "数据未验证"
+      ],
+      "source_url": "https://www.bbc.com",
+      "source_name": "BBC World",
+      "timestamp": "2026-06-07T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "油轮商忧市场崩盘",
+      "dek": "伊朗战争带来创纪录利润后，船东担心霍尔木兹海峡重开导致运价暴跌。",
+      "data_card": null,
+      "body": [
+        "船东将战争暴利投入新船，但若霍尔木兹海峡重开，运价可能骤降，市场面临崩盘风险。[FT @ 2026-06-07]",
+        "数据未验证",
+        "数据未验证"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-06-07T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "特朗普重启关税战",
+      "dek": "法院推翻征税后，总统试图构建能经受法律挑战的惩罚性贸易措施体系。",
+      "data_card": null,
+      "body": [
+        "特朗普在法院推翻关税后重启贸易战，寻求制定可应对法律挑战的惩罚性措施。[FT @ 2026-06-07]",
+        "数据未验证",
+        "数据未验证"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-06-07T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "俄称美企受益海峡关闭",
+      "dek": "俄罗斯石油高管谢钦称美国公司从霍尔木兹海峡关闭中获利。",
+      "data_card": null,
+      "body": [
+        "谢钦指出，海峡关闭扰乱全球市场，推高油价至多年高位，加剧通胀并削弱经济增长，美国公司从中受益。[CNBC @ 2026-06-07]",
+        "数据未验证",
+        "数据未验证"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-06-07T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "油价库存下降定价",
+      "dek": "布伦特原油可能触及每桶140美元？",
+      "data_card": null,
+      "body": [
+        "分析人士探讨石油库存下降对油价的影响，布伦特原油或升至每桶140美元。[FT @ 2026-06-07]",
+        "数据未验证",
+        "数据未验证"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-06-07T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "乌克兰无人机袭圣彼得堡",
+      "dek": "俄罗斯称袭击“前所未有”，居民首次被要求留在家中。",
+      "data_card": null,
+      "body": [
+        "乌克兰无人机袭击圣彼得堡，俄罗斯称此次攻击“前所未有”，居民被要求留在家中。[BBC @ 2026-06-07]",
+        "数据未验证",
+        "数据未验证"
+      ],
+      "source_url": "https://www.bbc.com",
+      "source_name": "BBC World",
+      "timestamp": "2026-06-07T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "黎巴嫩将军遭以军袭击身亡",
+      "dek": "以色列军方正在调查黎巴嫩南部事件，该地区正与真主党交战。",
+      "data_card": null,
+      "body": [
+        "一名黎巴嫩将军和两名士兵在以色列对汽车的袭击中丧生，以军正在调查。[BBC @ 2026-06-07]",
+        "数据未验证",
+        "数据未验证"
+      ],
+      "source_url": "https://www.bbc.com",
+      "source_name": "BBC World",
+      "timestamp": "2026-06-07T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "奥巴马伊核协议内幕",
+      "dek": "尽管特朗普称谈判有进展，美伊仍未达成和平协议或解决核问题。",
+      "data_card": null,
+      "body": [
+        "回顾奥巴马时期伊朗核协议，特朗普退出后，美伊尚未达成和平协议或解决核野心。[CNBC @ 2026-06-07]",
+        "数据未验证",
+        "数据未验证"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-06-07T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "亚美尼亚大选前俄施压",
+      "dek": "现任总理帕希尼扬寻求第三任期，尽管国内支持率下降。",
+      "data_card": null,
+      "body": [
+        "亚美尼亚准备大选，俄罗斯对亲西方政府施压，总理帕希尼扬寻求连任。[BBC @ 2026-06-07]",
+        "数据未验证",
+        "数据未验证"
+      ],
+      "source_url": "https://www.bbc.com",
+      "source_name": "BBC World",
+      "timestamp": "2026-06-07T00:00:00Z",
+      "_warnings": []
+    }
+  ]
+}

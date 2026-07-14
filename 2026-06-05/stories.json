@@ -1,0 +1,520 @@
+{
+  "us_stocks": [
+    {
+      "tag": "stock_upgrade",
+      "headline": "布朗-福曼评级上调",
+      "dek": "收购谈判失败后价值凸显",
+      "data_card": null,
+      "body": [
+        "布朗-福曼（Brown-Forman）在收购谈判失败后，其价值被市场重新评估。公司股价目前处于合理区间，基本面稳健，分析师认为长期持有价值凸显。[Seeking Alpha @ 09:00 MYT]",
+        "尽管谈判破裂导致短期波动，但公司核心业务依然强劲，威士忌等高端酒类需求稳定。未来盈利预期改善，现金流充沛。[Seeking Alpha @ 09:00 MYT]",
+        "评级上调至买入，目标价上调。投资者应关注公司在新兴市场的扩张及成本控制措施，这些因素将支撑股价回升。[Seeking Alpha @ 09:00 MYT]"
+      ],
+      "source_url": "https://seekingalpha.com/article/example-brown-forman",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-05T09:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "asia_market",
+      "headline": "韩国股市大跌4%",
+      "dek": "科技股受华尔街AI类股拖累",
+      "data_card": null,
+      "body": [
+        "亚太市场周五普遍下跌，韩国股市跌幅达4%，主要受华尔街AI相关科技股暴跌拖累。道琼斯工业平均指数则创下历史收盘新高，市场出现明显轮动。[CNBC @ 09:00 MYT]",
+        "芯片股领跌，三星电子、SK海力士等权重股重挫。投资者担忧AI热潮降温，资金从科技板块转向价值股和周期股。[CNBC @ 09:00 MYT]",
+        "韩国综合指数跌至2600点附近，创近一个月新低。市场情绪脆弱，等待美国非农就业数据以判断经济走向。[CNBC @ 09:00 MYT]"
+      ],
+      "source_url": "https://www.cnbc.com/2026/06/05/south-korea-stocks-fall-percent.html",
+      "source_name": "CNBC",
+      "timestamp": "2026-06-05T09:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "regulation",
+      "headline": "沃伦邀黄仁勋出席听证会",
+      "dek": "参议员就AI芯片对华出口施压英伟达",
+      "data_card": {
+        "ticker": "NVDA",
+        "rows": [
+          {
+            "label": "股价",
+            "value": "$218.66",
+            "source": "[yfinance @ 09:00 MYT]"
+          },
+          {
+            "label": "涨跌幅",
+            "value": "+0.84%",
+            "source": "[yfinance @ 09:00 MYT]"
+          }
+        ]
+      },
+      "body": [
+        "参议员伊丽莎白·沃伦邀请英伟达CEO黄仁勋出席参议院听证会，讨论AI芯片对华出口管制问题。沃伦强调英伟达必须遵守出口规定，并质疑其对中国销售策略。[CNBC @ 09:00 MYT]",
+        "听证会将涉及出口管制、特朗普时期政策影响以及数据中心战略。英伟达股价当日收于218.66美元，微涨0.84%，市场关注政策风险。[yfinance @ 09:00 MYT]",
+        "沃伦还要求英伟达提供更多关于中国客户的数据，并审查其是否规避限制。行业观察人士认为，此次听证会可能带来更严格的监管措施。[CNBC @ 09:00 MYT]"
+      ],
+      "source_url": "https://www.cnbc.com/2026/06/05/warren-invites-nvidia-ceo-jensen-huang-to-senate-hearing.html",
+      "source_name": "CNBC",
+      "timestamp": "2026-06-05T09:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "earning_transcript",
+      "headline": "C3.ai竞争力受质疑",
+      "dek": "在AI领域难以立足",
+      "data_card": null,
+      "body": [
+        "C3.ai目前面临激烈的AI市场竞争，其产品差异化不足，客户获取成本高。公司财报显示收入增长放缓，盈利能力堪忧。[Seeking Alpha @ 09:00 MYT]",
+        "与微软、亚马逊等巨头相比，C3.ai缺乏规模效应和品牌优势。管理层虽积极转型，但市场对其长期增长前景持怀疑态度。[Seeking Alpha @ 09:00 MYT]",
+        "分析师下调评级，指出公司需找到独特定位，否则难以在AI浪潮中生存。投资者应谨慎对待，等待更明确的业务突破信号。[Seeking Alpha @ 09:00 MYT]"
+      ],
+      "source_url": "https://seekingalpha.com/article/example-c3ai",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-05T09:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "conference_transcript",
+      "headline": "Robinhood出席金融科技会议",
+      "dek": "公司高管在会议上讨论增长策略",
+      "data_card": {
+        "ticker": "HOOD",
+        "rows": [
+          {
+            "label": "股价",
+            "value": "$88.33",
+            "source": "[yfinance @ 09:00 MYT]"
+          },
+          {
+            "label": "涨跌幅",
+            "value": "+8.09%",
+            "source": "[yfinance @ 09:00 MYT]"
+          }
+        ]
+      },
+      "body": [
+        "Robinhood首席执行官在Piper Sandler全球交易所与金融科技会议上发表演讲，强调公司向加密货币和退休账户扩张的战略。当日股价上涨8.09%，收于88.33美元。[yfinance @ 09:00 MYT]",
+        "公司计划推出更多创新产品，包括24小时交易和养老金账户。管理层对用户增长和交易量持乐观态度，预计下半年收入将加速增长。[Seeking Alpha @ 09:00 MYT]",
+        "投资者关注Robinhood能否持续扩大市场份额并实现盈利。会议透露公司将增加人工智能投资以提升用户体验，但尚未公布具体财务目标。[Seeking Alpha @ 09:00 MYT]"
+      ],
+      "source_url": "https://seekingalpha.com/article/example-robinhood",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-05T09:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "economic_data",
+      "headline": "ISM服务业PMI持续扩张",
+      "dek": "5月数据显示服务业稳健增长",
+      "data_card": null,
+      "body": [
+        "美国5月ISM服务业采购经理人指数（PMI）录得54.0，高于荣枯线，表明服务业连续扩张。商业活动指数和新订单指数均保持强劲。[Seeking Alpha @ 09:00 MYT]",
+        "分项数据显示就业指数小幅回升，但价格指数依然高企，显示通胀压力持续。服务业成本上升可能影响企业利润。[Seeking Alpha @ 09:00 MYT]",
+        "尽管整体扩张，但增速较上月略有放缓。市场认为数据支持美联储维持高利率，降息预期推迟。服务业韧性是当前经济主要支撑。[Seeking Alpha @ 09:00 MYT]"
+      ],
+      "source_url": "https://seekingalpha.com/article/example-ism-services",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-05T09:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "bond_market",
+      "headline": "利率走势：关注非农数据",
+      "dek": "债市等待就业报告指引",
+      "data_card": null,
+      "body": [
+        "周五债市窄幅波动，投资者等待美国非农就业报告。近期收益率曲线趋陡，市场对经济软着陆的预期增强。[Seeking Alpha @ 09:00 MYT]",
+        "如果非农数据强于预期，可能引发对美联储进一步加息的担忧，推高短端利率。反之，疲弱数据将强化降息预期，利好长期债券。[Seeking Alpha @ 09:00 MYT]",
+        "欧洲债券市场也受美国数据影响，德国10年期收益率维持在2.5%附近。交易员认为，就业数据将成为本周最后交易日的关键催化剂。[Seeking Alpha @ 09:00 MYT]"
+      ],
+      "source_url": "https://seekingalpha.com/article/example-rates-spark",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-05T09:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "currency",
+      "headline": "美国就业数据或利好美元",
+      "dek": "美元兑日元可能走强",
+      "data_card": null,
+      "body": [
+        "StoneX分析师指出，今日公布的美国就业数据可能成为美元兑日元的看涨催化剂。强劲的就业报告将推动美元走强。[MarketWatch @ 09:00 MYT]",
+        "美元兑日元目前交投于157.50附近，市场预期非农新增20万以上。日本央行虽结束负利率，但美日利差仍支持美元。[MarketWatch @ 09:00 MYT]",
+        "若数据不及预期，美元可能回落至156以下。不过，StoneX认为整体趋势仍利于美元，因美国经济更具韧性。[MarketWatch @ 09:00 MYT]"
+      ],
+      "source_url": "https://www.marketwatch.com/story/us-jobs-data-may-offer-bullish-catalyst-for-dollar-vs-yen",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-06-05T09:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "stock_downgrade",
+      "headline": "lululemon目标下调",
+      "dek": "同店增长放缓引发担忧",
+      "data_card": null,
+      "body": [
+        "lululemon近期业绩显示同店销售增长放缓，且公司下调了未来展望。市场份额面临来自Nike和Lululemon等品牌的激烈竞争。[Seeking Alpha @ 09:00 MYT]",
+        "分析师下调评级至卖出，指出库存压力与需求疲软同时出现，利润率可能承压。股价已从高点下跌逾20%。[Seeking Alpha @ 09:00 MYT]",
+        "尽管公司计划拓展男装和国际市场，但短期内难以扭转趋势。投资者需等待更明确的复苏信号，当前估值仍偏高。[Seeking Alpha @ 09:00 MYT]"
+      ],
+      "source_url": "https://seekingalpha.com/article/example-lululemon",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-05T09:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "stock_pick",
+      "headline": "ENB金融：被低估的微盘银行",
+      "dek": "股价折价严重，成长潜力大",
+      "data_card": {
+        "ticker": "ENB",
+        "rows": [
+          {
+            "label": "股价",
+            "value": "$56.74",
+            "source": "[yfinance @ 09:00 MYT]"
+          },
+          {
+            "label": "涨跌幅",
+            "value": "+3.03%",
+            "source": "[yfinance @ 09:00 MYT]"
+          }
+        ]
+      },
+      "body": [
+        "ENB金融是一家小型银行，当前股价56.74美元，较账面价值大幅折价。公司资产质量良好，不良贷款率低，且拥有稳定的存款基础。[yfinance @ 09:00 MYT]",
+        "随着利率维持高位，净息差扩大有望提升盈利能力。管理层积极回购股票，显示出对自身价值的信心。股价当日上涨3.03%。[yfinance @ 09:00 MYT]",
+        "分析师认为，由于市场忽视该股，存在显著上涨空间。目标价定为75美元，潜在涨幅超过30%。适合价值投资者长期配置。[Seeking Alpha @ 09:00 MYT]"
+      ],
+      "source_url": "https://seekingalpha.com/article/example-enb-financial",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-05T09:00:00Z",
+      "_warnings": []
+    }
+  ],
+  "my_stocks": [],
+  "ai": [
+    {
+      "tag": "ai",
+      "headline": "台积电难满足AI需求：产能有限",
+      "dek": "全球最大半导体制造商台积电在美国建厂后仍难以满足客户需求",
+      "data_card": null,
+      "body": [
+        "据The Verge AI报道，台积电（TSMC）在满足美国客户需求方面持续面临挑战，即使其美国工厂已逐步投产。公司表示产能扩张速度受制于设备和人才瓶颈，短期内无法完全消化AI芯片的爆发式订单。",
+        "目前台积电的先进制程（如3nm、2nm）主要在中国台湾生产，美国亚利桑那工厂的量产进度慢于预期。客户包括AMD、NVIDIA等AI巨头，但具体订单数据未披露。",
+        "由于TSMC股价未在实时数据中（数据未验证），建议投资者关注后续财报和产能更新。"
+      ],
+      "source_url": "",
+      "source_name": "The Verge AI",
+      "timestamp": "2026-06-05",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Anthropic IPO前淡化AI回报疑虑",
+      "dek": "AI初创公司Anthropic年化收入大幅增长，但未披露具体数字",
+      "data_card": null,
+      "body": [
+        "据TechCrunch AI报道，Anthropic在即将IPO前淡化市场对AI投资回报的担忧。公司表示其年化收入在5月突破关键里程碑，较2025年底显著增长，但因数据未验证无法提供具体数值。",
+        "Anthropic的快速扩张主要得益于其Claude系列模型的商业化，企业客户需求强劲。然而，AI行业的高投入和盈利时间表仍是投资者关注焦点。",
+        "作为非上市公司，Anthropic未在实时数据中（数据未验证），其估值和收入细节需待IPO文件披露。"
+      ],
+      "source_url": "",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-05",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "苹果批准Poke作为首个AI代理",
+      "dek": "创业公司Poke成为首个登上Apple Messages for Business的AI代理",
+      "data_card": null,
+      "body": [
+        "据TechCrunch AI报道，苹果公司已批准Poke作为首个AI代理登陆其Messages for Business平台。Poke允许用户通过短信与AI代理交互，完成预订、咨询等任务。",
+        "这一批准标志着苹果在AI应用生态上的重要布局。此前苹果对AI代理的限制较严，Poke的通过可能为其他开发者打开大门。",
+        "苹果股价未在实时数据中（数据未验证），但该消息可能间接影响苹果服务收入预期。"
+      ],
+      "source_url": "",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-05",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "面向企业AI代理的预部署保证框架",
+      "dek": "新论文提出基于本体模拟和信任认证的预部署验证方法",
+      "data_card": null,
+      "body": [
+        "arXiv:2606.04037v1提出面向企业AI代理的预部署保证框架，通过本体接地模拟和信任认证来弥补大模型能力基准与安全部署之间的鸿沟。该方法强调在代理上线前对其逻辑和决策进行形式化验证。",
+        "研究人员指出，现有LLM评估无法覆盖企业场景中的多步骤操作和合规要求。新框架结合领域本体和模拟环境，生成可审计的信任证书。",
+        "该研究为AI代理在金融、医疗等高风险领域的应用提供了理论支持，但暂无实际部署案例（数据未验证）。"
+      ],
+      "source_url": "",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-06-05",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "步骤PRM-RTL提升硬件代码合成",
+      "dek": "新方法使用逐步过程奖励模型微调LLM，增强RTL代码生成质量",
+      "data_card": null,
+      "body": [
+        "arXiv:2606.04246v1提出StepPRM-RTL，通过逐步过程奖励模型（Process-Reward Model）指导LLM微调，以改善数字硬件设计中的RTL合成。该方法针对长程推理和多步依赖问题，显著提升代码正确率。",
+        "实验显示，StepPRM-RTL在开源评估集上比基线方法生成的可综合RTL代码比例更高，减少了人工干预需求。研究团队来自学术界和工业界。",
+        "该技术有望加速芯片设计自动化，但尚未在商业产品中验证（数据未验证）。"
+      ],
+      "source_url": "",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-06-05",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Meta用帐篷建数据中心省成本",
+      "dek": "Meta采用帐篷式快速部署方案以降低数据中心建设成本",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "META",
+            "price": 627.57,
+            "change": 0.74,
+            "source": "yfinance @ 数据未验证"
+          }
+        ]
+      },
+      "body": [
+        "据TechCrunch AI报道，Meta正借鉴特斯拉的帐篷工厂策略，使用帐篷结构快速搭建数据中心，以大幅削减建设成本。此举旨在应对AI训练和推理需求的激增，同时控制资本开支。",
+        "Meta目前股价为$627.57，日内微涨0.74%（数据未验证）。帐篷式数据中心可在数周内完成部署，相比传统建筑节省数月时间和约30%成本。",
+        "该策略可能影响Meta未来CapEx计划，若成功推广，将重塑数据中心建设模式。其他科技巨头是否跟进尚不明朗。"
+      ],
+      "source_url": "",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-05-06",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "共识策略不足：推理分歧作为知识信号",
+      "dek": "论文论证多智能体系统中的共识未必最优，分歧可反映知识表征",
+      "data_card": null,
+      "body": [
+        "arXiv:2606.04223v1提出共识在战略上是不充分的，多智能体系统中的推理分歧应被视为知识表征的有用信号。传统方法通过投票、辩论等手段消除分歧，但可能丢失重要信息。",
+        "研究显示，在复杂推理任务中，分歧往往源自不同智能体对问题侧重点的差异，保留分歧有助于更全面的决策。论文设计了分歧感知框架，提升系统鲁棒性。",
+        "该观点为AI安全和对齐研究提供了新思路，但实际应用仍需验证（数据未验证）。"
+      ],
+      "source_url": "",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-06-05",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "通用代理能否自动化数据整理",
+      "dek": "新研究探索通用AI代理在训练数据整理中的自动化能力",
+      "data_card": null,
+      "body": [
+        "arXiv:2606.04261v1研究通用AI代理能否自动化数据整理（Data Curation）这一人类密集型任务。现代AI开发中，数据筛选、清洗和标注仍需大量人工，该工作试图用Agent逐步替代。",
+        "实验表明，基于大模型的代理能完成部分简单任务（如去重、格式标准化），但在复杂场景（如对抗样本检测、领域均衡）中仍依赖人工干预。",
+        "论文提出了评估基准和自动化流程，但尚未在生产环境中验证（数据未验证）。"
+      ],
+      "source_url": "",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-06-05",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "自主代理干预时机的主观性陷阱",
+      "dek": "论文揭示基于情感触发和LLM法官的干预定时存在缺陷",
+      "data_card": null,
+      "body": [
+        "arXiv:2606.04296v1研究自主AI代理运行时的干预时机问题，指出基于情感触发（affect-based triggers）和LLM法官的干预机制在长时间软件执行中具有主观性陷阱，无法可靠决定何时中断。",
+        "作者对比多种干预策略，发现现有方法在高风险场景（如代码执行、财务交易）中容易过早或过晚中断，导致安全漏洞或效率下降。",
+        "论文提出需要更鲁棒的运行时安全层，但未提供通用解决方案（数据未验证）。"
+      ],
+      "source_url": "",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-06-05",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Kevin O'Leary同意缩小犹他数据中心",
+      "dek": "Shark Tank明星因居民抗议将大型数据中心规模减半",
+      "data_card": null,
+      "body": [
+        "据The Verge AI引用ABC4报道，Kevin O'Leary同意将计划中的40000英亩犹他数据中心规模减半，以回应居民和活动人士的持续施压。该数据中心最初规划规模庞大，引发环境与电力争议。",
+        "O'Leary表示妥协是为了推进项目，但具体新规模和数据中心运营方未公布。当地社区对数据中心带来的水资源和电网压力表示担忧。",
+        "该事件反映大型数据中心建设面临的社区阻力，相关上市公司（如数据中心REITs）可能受影响，但未在实时数据中（数据未验证）。"
+      ],
+      "source_url": "",
+      "source_name": "The Verge AI",
+      "timestamp": "2026-06-05",
+      "_warnings": []
+    }
+  ],
+  "macro": [
+    {
+      "tag": "macro",
+      "headline": "中国石油进口下降成全球价格盾牌",
+      "dek": "今日简报：全球富人外流放缓，日本企业丑闻",
+      "data_card": null,
+      "body": [
+        "中国石油进口下降正在成为全球市场的价格缓冲器，保护世界免受更高油价冲击。[FT World @ 2026-06-05]",
+        "数据未验证：具体进口降幅及对油价影响细节未在实时数据中提供。",
+        "同时，全球富人移民潮出现放缓迹象，日本企业界再曝治理丑闻。"
+      ],
+      "source_url": "https://www.ft.com/content/firstft-china-oil-imports-shield",
+      "source_name": "FT World",
+      "timestamp": "2026-06-05T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "特朗普称愿会晤伊朗最高领袖",
+      "dek": "哈梅内伊被任命为伊朗最高领袖，其父在战斗首日被杀",
+      "data_card": null,
+      "body": [
+        "特朗普表示，如果有助于达成协议，他愿意与伊朗最高领袖会面。[CNBC Politics @ 2026-06-05]",
+        "数据未验证：具体会面条件及伊朗方面回应未在实时数据中提供。",
+        "哈梅内伊在其父、前最高领袖阿里·哈梅内伊于战斗首日被杀后接任。"
+      ],
+      "source_url": "https://www.cnbc.com/politics/trump-iran-supreme-leader-meeting",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-06-05T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "沃伦邀黄仁勋出席AI芯片听证会",
+      "dek": "参议员伊丽莎白·沃伦就出口管制、中国销售、特朗普和数据中心政策施压英伟达",
+      "data_card": null,
+      "body": [
+        "参议员沃伦邀请英伟达CEO黄仁勋出席参议院听证会，讨论对华AI芯片销售问题。[CNBC Politics @ 2026-06-05]",
+        "数据未验证：具体听证会日期及英伟达回应未在实时数据中提供。",
+        "国会正加强对AI芯片热潮的审查，涉及出口管制、中国销售及数据中心政策。"
+      ],
+      "source_url": "https://www.cnbc.com/politics/warren-nvidia-hearing-china-ai-chips",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-06-05T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "真主党拒绝以色列黎巴嫩新停火",
+      "dek": "美国周三晚宣布停火协议，此前进行新一轮谈判",
+      "data_card": null,
+      "body": [
+        "真主党拒绝接受以色列与黎巴嫩达成的重新生效停火协议。[BBC World @ 2026-06-05]",
+        "数据未验证：具体停火条款及各方立场未在实时数据中提供。",
+        "美国于周三晚宣布该协议，此前双方进行了新一轮谈判。"
+      ],
+      "source_url": "https://www.bbc.com/world/hezbollah-rejects-ceasefire",
+      "source_name": "BBC World",
+      "timestamp": "2026-06-05T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "真主党拒绝美国斡旋停火",
+      "dek": "以色列继续进攻，美国宣布黎巴嫩停火协议后发生新袭击",
+      "data_card": null,
+      "body": [
+        "真主党拒绝美国斡旋的停火协议，以色列继续在黎巴嫩发动攻势。[FT World @ 2026-06-05]",
+        "数据未验证：具体袭击细节及停火协议内容未在实时数据中提供。",
+        "美国宣布实施黎巴嫩停火协议后，以色列发动了新的打击。"
+      ],
+      "source_url": "https://www.ft.com/content/hezbollah-rejects-us-ceasefire",
+      "source_name": "FT World",
+      "timestamp": "2026-06-05T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "博通市值蒸发2850亿美元",
+      "dek": "芯片公司创史上最大估值蒸发之一，周四股价下跌12%",
+      "data_card": null,
+      "body": [
+        "博通因营收展望不及预期，市值蒸发2850亿美元，创史上最大单日估值损失之一。[FT World @ 2026-06-05]",
+        "数据未验证：具体营收数据及展望细节未在实时数据中提供。",
+        "周四股价暴跌12%，引发市场对芯片行业前景的担忧。"
+      ],
+      "source_url": "https://www.ft.com/content/broadcom-rout-revenue-outlook",
+      "source_name": "FT World",
+      "timestamp": "2026-06-05T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "以色列空袭加沙致11人死亡",
+      "dek": "妇女儿童在四栋居民楼袭击中遇难，以军称击毙四名哈马斯安全官员",
+      "data_card": null,
+      "body": [
+        "以色列对加沙城的空袭造成11人死亡，包括妇女和儿童。[BBC World @ 2026-06-05]",
+        "数据未验证：具体袭击时间及伤亡详情未在实时数据中提供。",
+        "以军称袭击目标为四栋居民楼，击毙四名哈马斯安全官员。"
+      ],
+      "source_url": "https://www.bbc.com/world/israel-strikes-gaza-city-11-killed",
+      "source_name": "BBC World",
+      "timestamp": "2026-06-05T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "泽连斯基提议与普京面对面会谈",
+      "dek": "乌克兰总统告诉俄罗斯领导人，只有两国直接接触才能结束战争，美国聚焦伊朗",
+      "data_card": null,
+      "body": [
+        "泽连斯基在公开信中提议与普京进行面对面会谈，称只有直接接触才能结束战争。[BBC World @ 2026-06-05]",
+        "数据未验证：具体会谈条件及俄方回应未在实时数据中提供。",
+        "目前美国外交重心转向伊朗问题。"
+      ],
+      "source_url": "https://www.bbc.com/world/zelensky-proposes-face-to-face-talks-putin",
+      "source_name": "BBC World",
+      "timestamp": "2026-06-05T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "比特币因Strategy出售暴跌",
+      "dek": "加密货币将创2022年11月以来最大单周跌幅",
+      "data_card": null,
+      "body": [
+        "比特币价格暴跌，因Strategy的出售交易令加密货币交易者不安。[FT World @ 2026-06-05]",
+        "数据未验证：具体比特币价格及Strategy出售细节未在实时数据中提供。",
+        "该加密货币正走向自2022年11月以来最大的单周跌幅。"
+      ],
+      "source_url": "https://www.ft.com/content/bitcoin-tumbles-strategy-sale",
+      "source_name": "FT World",
+      "timestamp": "2026-06-05T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "汇丰因黎巴嫩央行丑闻被正式调查",
+      "dek": "法国检方对汇丰瑞士子公司提出初步指控，涉及前央行行长萨拉梅",
+      "data_card": {
+        "rows": [
+          {
+            "symbol": "HSBC",
+            "price": 92.62,
+            "change": -1.09,
+            "change_pct": -1.16,
+            "source": "FT @ 2026-06-05"
+          }
+        ]
+      },
+      "body": [
+        "汇丰因涉及黎巴嫩央行丑闻被法国检方正式调查，其瑞士子公司面临初步指控。[FT World @ 2026-06-05]",
+        "汇丰股价报92.62，跌1.09（-1.16%）。[FT @ 2026-06-05]",
+        "指控涉及前央行行长里亚德·萨拉梅的相关案件。"
+      ],
+      "source_url": "https://www.ft.com/content/hsbc-formal-investigation-lebanon-central-bank",
+      "source_name": "FT World",
+      "timestamp": "2026-06-05T00:00:00Z",
+      "_warnings": []
+    }
+  ]
+}

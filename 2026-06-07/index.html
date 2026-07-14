@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>Hermes Daily · 2026-06-07</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;900&family=Noto+Serif+SC:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --bg: #ffffff; --ink: #1d1d1f; --ink-soft: #424245; --ink-light: #86868b;
+    --divider: #d2d2d7; --accent-red: #c8102e; --accent-blue: #0066cc;
+    --accent-amber: #d97706; --accent-green: #00855b; --card-bg: #fafafa;
+    --nav-bg: rgba(255,255,255,0.85);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1a1a1c; --ink: #f5f5f7; --ink-soft: #c7c7cc; --ink-light: #8e8e93;
+      --divider: #38383a; --card-bg: #2c2c2e; --nav-bg: rgba(26,26,28,0.85);
+    }
+  }
+
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: var(--bg); color: var(--ink); line-height: 1.5;
+    -webkit-font-smoothing: antialiased; overflow-x: hidden;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+  .topbar { position: sticky; top: 0; z-index: 100; background: var(--nav-bg); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid var(--divider); }
+  .topbar-inner { max-width: 720px; margin: 0 auto; padding: 11px 24px; display: flex; align-items: center; justify-content: space-between; }
+  .brand { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 900; letter-spacing: -0.5px; }
+
+  .date-picker { display: flex; align-items: center; gap: 8px; }
+  .date-picker button { background: none; border: none; color: var(--ink-light); font-size: 20px; cursor: pointer; padding: 0 2px; line-height: 1; }
+  .date-picker button:hover { color: var(--accent-blue); }
+  .date-picker button:disabled { opacity: 0.25; cursor: default; }
+  .date-display { position: relative; font-size: 13px; font-weight: 600; color: var(--ink); font-variant-numeric: tabular-nums; cursor: pointer; padding: 5px 10px; border-radius: 8px; background: var(--card-bg); display: flex; align-items: center; gap: 6px; }
+  .date-display:hover { color: var(--accent-blue); }
+  .date-display input[type="date"] { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%; }
+  .date-display .cal-icon { font-size: 12px; }
+
+  .tabs { position: sticky; top: 47px; z-index: 99; background: var(--nav-bg); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid var(--divider); }
+  .tabs-inner { max-width: 720px; margin: 0 auto; padding: 0 12px; display: flex; gap: 2px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .tabs-inner::-webkit-scrollbar { display: none; }
+  .tab { flex: 1 0 auto; min-width: 72px; text-align: center; padding: 13px 14px; font-size: 14px; font-weight: 600; color: var(--ink-light); border-bottom: 2.5px solid transparent; cursor: pointer; white-space: nowrap; transition: color .15s, border-color .15s; background: none; font-family: inherit; }
+  .tab.active { color: var(--ink); }
+  .tab[data-cat="us_stocks"].active { border-bottom-color: var(--accent-red); }
+  .tab[data-cat="my_stocks"].active { border-bottom-color: var(--accent-amber); }
+  .tab[data-cat="ai"].active { border-bottom-color: var(--accent-blue); }
+  .tab[data-cat="macro"].active { border-bottom-color: var(--accent-green); }
+  .tab .count { display: inline-block; min-width: 18px; padding: 1px 5px; margin-left: 3px; font-size: 11px; font-weight: 600; border-radius: 9px; background: var(--card-bg); color: var(--ink-light); }
+  .tab.active .count { background: var(--ink); color: var(--bg); }
+
+  .masthead { padding: 28px 0 4px; }
+  .masthead-title { font-family: 'Playfair Display','Noto Serif SC',serif; font-size: 44px; font-weight: 900; letter-spacing: -1px; line-height: 1; }
+  .masthead-sub { font-size: 12px; color: var(--ink-light); margin-top: 8px; text-transform: uppercase; letter-spacing: 1.2px; }
+
+  .panel { display: none; }
+  .panel.active { display: block; animation: fade .25s ease; }
+  @keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+  .panel-head { margin: 32px 0 22px; padding-bottom: 12px; border-bottom: 1px solid var(--divider); display: flex; align-items: baseline; justify-content: space-between; }
+  .panel-title { font-family: 'Playfair Display','Noto Serif SC',serif; font-size: 26px; font-weight: 700; }
+  .panel-count { font-size: 11px; color: var(--ink-light); text-transform: uppercase; letter-spacing: 1.2px; }
+
+  .story { margin-bottom: 40px; padding-bottom: 40px; border-bottom: 1px solid var(--divider); }
+  .story:last-child { border-bottom: none; }
+  .story-meta { display: flex; gap: 10px; align-items: center; font-size: 11px; color: var(--ink-light); text-transform: uppercase; letter-spacing: 1.1px; margin-bottom: 11px; }
+  .story-meta .dot { color: var(--divider); }
+  .tag-us_stocks { color: var(--accent-red); font-weight: 600; }
+  .tag-my_stocks { color: var(--accent-amber); font-weight: 600; }
+  .tag-ai { color: var(--accent-blue); font-weight: 600; }
+  .tag-macro { color: var(--accent-green); font-weight: 600; }
+
+  .story-headline { font-family: 'Playfair Display','Noto Serif SC',serif; font-size: 28px; font-weight: 700; line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 10px; }
+  .story.lead .story-headline { font-size: 34px; }
+  .story-dek { font-size: 16px; color: var(--ink-soft); line-height: 1.55; margin-bottom: 16px; }
+
+  .story-hero { width: 100%; height: 210px; border-radius: 8px; margin-bottom: 16px; display: flex; align-items: center; justify-content: center; color: var(--ink-light); font-size: 11px; letter-spacing: 1px; text-transform: uppercase; overflow: hidden; background: linear-gradient(135deg,#f5f5f7,#e8e8ed 50%,#d8d8df); }
+  .story-hero img { width: 100%; height: 100%; object-fit: cover; }
+
+  .data-card { background: var(--card-bg); border-left: 3px solid var(--accent-red); padding: 13px 17px; margin: 16px 0; border-radius: 0 6px 6px 0; }
+  .data-card.my_stocks { border-left-color: var(--accent-amber); }
+  .data-card.ai { border-left-color: var(--accent-blue); }
+  .data-card.macro { border-left-color: var(--accent-green); }
+  .data-card-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--ink-light); margin-bottom: 7px; }
+  .data-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px; font-size: 14px; }
+  .data-row .num { font-weight: 600; font-variant-numeric: tabular-nums; }
+  .data-row .up { color: var(--accent-red); }
+  .data-row .down { color: #00a35c; }
+  .data-citation { font-size: 10px; color: var(--ink-light); margin-top: 7px; font-style: italic; }
+
+  .story-body p { font-size: 15px; line-height: 1.65; margin-bottom: 13px; }
+  .story-body p:first-of-type::first-letter { font-family: 'Playfair Display',serif; font-size: 36px; font-weight: 900; line-height: 1; color: var(--accent-red); padding-right: 2px; }
+
+  .story-warning { background: #fff3cd; border-left: 3px solid #d97706; padding: 11px 15px; margin: 14px 0; color: #856404; font-size: 13px; border-radius: 0 4px 4px 0; }
+  @media (prefers-color-scheme: dark) { .story-warning { background: #3a2e10; color: #fde68a; } }
+
+  .story-source { margin-top: 18px; padding-top: 13px; border-top: 1px dotted var(--divider); font-size: 12px; color: var(--ink-light); display: flex; justify-content: space-between; align-items: center; }
+  .source-pill { display: inline-flex; align-items: center; padding: 4px 12px; background: var(--card-bg); border-radius: 12px; font-weight: 500; color: var(--ink-soft); text-decoration: none; min-height: 30px; }
+
+  .empty { padding: 60px 20px; text-align: center; color: var(--ink-light); font-size: 14px; }
+  .doc-footer { margin: 48px 0 60px; padding-top: 28px; border-top: 2px solid var(--ink); text-align: center; font-size: 11px; color: var(--ink-light); letter-spacing: 1.5px; text-transform: uppercase; }
+
+  @media (max-width: 640px) {
+    .wrap { padding: 0 18px; }
+    .topbar-inner { padding-left: 18px; padding-right: 18px; }
+    .brand { font-size: 17px; }
+    .date-display { font-size: 12px; }
+    .masthead-title { font-size: 32px; }
+    .tab { font-size: 13px; padding: 12px 12px; min-width: 64px; }
+    .story-headline { font-size: 23px; }
+    .story.lead .story-headline { font-size: 27px; }
+    .story-hero { height: 170px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <span class="brand">Hermes Daily</span>
+    <div class="date-picker">
+      <button id="prevDay" title="前一天">‹</button>
+      <label class="date-display">
+        <span class="cal-icon">📅</span>
+        <span id="dateText">6月7日 周日</span>
+        <input type="date" id="datePick" value="2026-06-07" max="2026-06-07">
+      </label>
+      <button id="nextDay" title="后一天" disabled>›</button>
+    </div>
+  </div>
+</div>
+
+<div class="tabs">
+  <div class="tabs-inner">
+    
+    <button class="tab active" data-cat="us_stocks">🇺🇸 美股<span class="count">10</span></button>
+    
+    <button class="tab " data-cat="my_stocks">🇲🇾 马股<span class="count">0</span></button>
+    
+    <button class="tab " data-cat="ai">🤖 AI<span class="count">10</span></button>
+    
+    <button class="tab " data-cat="macro">🌐 宏观<span class="count">9</span></button>
+    
+  </div>
+</div>
+
+<div class="wrap">
+  <header class="masthead">
+    <div class="masthead-title">Hermes Daily</div>
+    <div class="masthead-sub">2026-06-07 · 周日 · 09:03 MYT · For Henry</div>
+  </header>
+
+  
+  <div class="panel active" data-cat="us_stocks">
+    <div class="panel-head">
+      <div class="panel-title">美股 · US Markets</div>
+      <div class="panel-count">10 stories</div>
+    </div>
+
+    
+
+    
+    <article class="story lead">
+      <div class="story-meta">
+        <span class="tag-us_stocks">story_0</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">5月就业报告：相同但不同</h2>
+      <p class="story-dek">May Jobs Report: Same, But Different</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美国5月就业报告不及预期，科技股普遍下跌，苹果跌1.25%至307.34美元[Seeking Alpha @ 09:00 MYT]，英伟达跌6.2%至205.10美元[Seeking Alpha @ 09:00 MYT]。</p><p>市场对经济放缓担忧加剧，特斯拉跌6.56%至391美元[Seeking Alpha @ 09:00 MYT]。</p><p>投资者需关注后续美联储政策动向[Seeking Alpha @ 09:00 MYT]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-07 09:00:00 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">story_1</span>
+        <span class="dot">·</span>
+        <span>CNBC</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">三大力量驱动股市风暴周</h2>
+      <p class="story-dek">Here are 3 forces that drove a whirlwind week for the stock market</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>周五抛售潮致股市暴跌，NVDA下跌6.2%至205.10美元[CNBC @ 09:00 MYT]，TSLA下跌6.56%至391美元[CNBC @ 09:00 MYT]。</p><p>此前一周标普500曾创历史新高，但周五剧烈逆转[CNBC @ 09:00 MYT]。</p><p>三大力量包括就业数据、贸易政策和技术股回调[CNBC @ 09:00 MYT]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-07 09:00:00 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">story_2</span>
+        <span class="dot">·</span>
+        <span>MarketWatch</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">特朗普言论影响市场需警惕</h2>
+      <p class="story-dek">When Trump Jawbones the Market, Bet Against Him at Your Peril</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>特朗普多次通过言论影响市场走势，从石油到利率均有所体现[MarketWatch @ 09:00 MYT]。</p><p>但此举是否有利于经济尚存疑问[MarketWatch @ 09:00 MYT]。</p><p>市场参与者应谨慎对待，避免逆向操作[MarketWatch @ 09:00 MYT]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-07 09:00:00 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">story_3</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">甲骨文股价展望升级</h2>
+      <p class="story-dek">Oracle: Next Level Up</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>甲骨文公司前景看好，但近期股价数据未验证[Seeking Alpha @ 09:00 MYT]。</p><p>投资者需关注下周财报[Seeking Alpha @ 09:00 MYT]。</p><p>长期增长趋势不变[Seeking Alpha @ 09:00 MYT]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-07 09:00:00 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">story_4</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">下周关注甲骨文和Adobe财报</h2>
+      <p class="story-dek">Investors To Watch Out For Oracle, Adobe Earnings Next Week</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>投资者需关注甲骨文和Adobe下周财报，具体股价数据未验证[Seeking Alpha @ 09:00 MYT]。</p><p>财报可能影响科技板块整体走势[Seeking Alpha @ 09:00 MYT]。</p><p>市场预期较为乐观[Seeking Alpha @ 09:00 MYT]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-07 09:00:00 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">story_5</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Viasat有催化剂但安全边际不足</h2>
+      <p class="story-dek">Viasat: Real Catalysts, But Not Enough Margin Of Safety</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Viasat存在真实催化剂，但安全边际不足，股价数据未验证[Seeking Alpha @ 09:00 MYT]。</p><p>投资者需等待更佳入场时机[Seeking Alpha @ 09:00 MYT]。</p><p>长期增长潜力仍存[Seeking Alpha @ 09:00 MYT]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-07 09:00:00 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">story_6</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">LantronixAI无人机溢价未体现</h2>
+      <p class="story-dek">Lantronix: The AI Drone Premium That Stock Has Yet To See</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Lantronix的AI无人机溢价尚未在股价中体现，数据未验证[Seeking Alpha @ 09:00 MYT]。</p><p>未来可能有上涨空间[Seeking Alpha @ 09:00 MYT]。</p><p>投资者需关注公司进展[Seeking Alpha @ 09:00 MYT]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-07 09:00:00 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">story_7</span>
+        <span class="dot">·</span>
+        <span>MarketWatch</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">IPO股票买入最佳策略</h2>
+      <p class="story-dek">The Best Strategy to Use When Buying IPO Stocks</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>IPO股票上市后经历区间波动是正常现象[MarketWatch @ 09:00 MYT]。</p><p>等待波动冷却后买入更为安全[MarketWatch @ 09:00 MYT]。</p><p>该策略可降低风险并提高收益概率[MarketWatch @ 09:00 MYT]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-07 09:00:00 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">story_8</span>
+        <span class="dot">·</span>
+        <span>CNBC</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">中国电动汽车几年内或进入美国</h2>
+      <p class="story-dek">Chinese EVs may hit U.S. within a few years, one way or another</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>中国电动汽车可能在未来几年内进入美国市场，尽管面临关税和法律障碍[CNBC @ 09:00 MYT]。</p><p>具体车企股价数据未验证[CNBC @ 09:00 MYT]。</p><p>这一趋势可能重塑全球竞争格局[CNBC @ 09:00 MYT]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-07 09:00:00 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">story_9</span>
+        <span class="dot">·</span>
+        <span>CNBC</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">比特币暴跌但新HYPE ETF崛起</h2>
+      <p class="story-dek">Bitcoin is cratering, but a new Wall Street crypto hype is on the rise</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>比特币价格暴跌至2024年以来最低，但新HYPE ETF成为热点[CNBC @ 09:00 MYT]。</p><p>HYPE股价数据未验证[CNBC @ 09:00 MYT]。</p><p>投资者需谨慎对待加密货币波动风险[CNBC @ 09:00 MYT]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-07 09:00:00 MYT</span>
+      </div>
+    </article>
+    
+  </div>
+  
+  <div class="panel " data-cat="my_stocks">
+    <div class="panel-head">
+      <div class="panel-title">马股 · Bursa Malaysia</div>
+      <div class="panel-count">0 stories</div>
+    </div>
+
+    
+    <div class="empty">今日暂无 马股 新闻</div>
+    
+
+    
+  </div>
+  
+  <div class="panel " data-cat="ai">
+    <div class="panel-head">
+      <div class="panel-title">AI · 人工智能</div>
+      <div class="panel-count">10 stories</div>
+    </div>
+
+    
+
+    
+    <article class="story lead">
+      <div class="story-meta">
+        <span class="tag-ai">0</span>
+        <span class="dot">·</span>
+        <span>Arxiv ML</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">隐蔽LLM代理的说服策略研究</h2>
+      <p class="story-dek">分析Reddit上已停止的现场实验数据集，研究隐蔽LLM代理的说服策略。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>该研究分析了一个公开数据集，该数据集来自Reddit的r/ChangeMyView板块上已停止的现场实验。实验由未知方进行，旨在测试LLM代理的说服能力。</p><p>研究重点在于揭示这些隐蔽代理所使用的说服策略，包括情感诉求、逻辑论证和社会认同等技巧。通过分析对话记录，研究者试图量化代理对用户观点改变的影响。</p><p>结论指出，尽管实验已停止，但数据集仍为理解LLM在真实社交互动中的说服行为提供了宝贵视角，并警示了潜在滥用风险。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://arxiv.org/abs/2606.05256" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">1</span>
+        <span class="dot">·</span>
+        <span>Arxiv ML</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">LLM法官的稳定性与可操纵性评估</h2>
+      <p class="story-dek">研究LLM作为评判者在后决策交互下的鲁棒性。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>LLM-as-judge评估在基准测试中广泛使用，通过自动评估器对模型输出进行比较和排名。然而，这些评估器在面临后决策交互时可能不够稳定。</p><p>本研究提出一种评估框架，测试LLM法官在用户反馈或对抗性输入后的判断变化。实验表明，某些LLM法官容易受到操纵，导致排名结果不一致。</p><p>作者建议在评估流程中加入稳定性检查，并设计更鲁棒的评判机制，以减少可操纵性对基准测试结果的影响。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://arxiv.org/abs/2606.05384" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">2</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">OpenAI推出锁定模式防提示注入</h2>
+      <p class="story-dek">新锁定模式旨在减少敏感数据泄露风险，但仍可能受提示注入攻击。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>OpenAI宣布推出Lockdown Mode，旨在保护ChatGPT中的敏感数据免受提示注入攻击。该模式通过限制模型对某些指令的响应来降低数据泄露概率。</p><p>尽管Lockdown Mode增加了安全层，但研究人员指出它并不能完全防御所有提示注入攻击。攻击者仍可能通过巧妙构造的输入绕过防护。</p><p>OpenAI表示将继续改进该功能，并鼓励用户结合其他安全措施使用。该模式目前已在企业版中可用。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/2026/06/07/openai-lockdown-mode/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">3</span>
+        <span class="dot">·</span>
+        <span>Arxiv ML</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">智能体间动作状态通信研究</h2>
+      <p class="story-dek">提出动作状态通信方法以提高多智能体系统效率。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>基于大语言模型的多智能体系统通常围绕角色、流水线和轮次调度组织，但智能体间通信内容往往缺乏效率。本研究提出动作状态通信范式。</p><p>该方法让智能体不仅传递动作指令，还共享当前状态信息，从而减少冗余通信和误解。实验表明，在协作任务中，动作状态通信显著提升了任务完成速度和准确性。</p><p>作者认为，这种通信方式更接近人类团队协作模式，为构建更高效的多智能体系统提供了新思路。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://arxiv.org/abs/2606.05304" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">4</span>
+        <span class="dot">·</span>
+        <span>Arxiv ML</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">长期运行监控智能体基准SentinelBench</h2>
+      <p class="story-dek">针对长时间运行AI智能体的新基准测试。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>AI智能体越来越多地被要求执行持续数分钟、数小时甚至更长时间的任务。然而，默认的智能体行为模型是连续动作，缺乏对长期运行的专门评估。</p><p>SentinelBench是一个新基准，专门用于测试长时间运行的监控智能体。它包含多种场景，如系统监控、异常检测和持续决策，评估智能体的持久性和可靠性。</p><p>初步实验显示，现有智能体在长时间运行中容易出现性能下降和错误累积，SentinelBench为改进此类系统提供了标准化测试平台。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://arxiv.org/abs/2606.05342" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">5</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">特朗普政府或入股OpenAI</h2>
+      <p class="story-dek">特朗普表示正在讨论让美国人民从AI成功中受益的交易。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美国总统特朗普表示，他正在讨论一项交易，其中美国人民可以通过AI的成功受益。这可能涉及政府持有OpenAI的股权。</p><p>特朗普没有透露具体条款，但强调交易将确保AI发展的成果惠及公众。此举可能引发关于政府干预私营科技公司的辩论。</p><p>OpenAI尚未正式回应。分析人士认为，如果交易达成，将改变AI行业的竞争格局，并可能影响其他AI公司的融资策略。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/2026/06/07/trump-openai-equity/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">6</span>
+        <span class="dot">·</span>
+        <span>Arxiv ML</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">GITCO：时间序列基础模型的门控推理优化</h2>
+      <p class="story-dek">提出门控推理时间上下文优化方法解决TSFM的上下文中毒问题。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>基于补丁的时间序列基础模型（TSFM）面临上下文中毒问题：结构异常的补丁会捕获不成比例的注意力，导致预测偏差。</p><p>GITCO（门控推理时间上下文优化）通过引入门控机制，在推理时动态调整上下文权重，抑制异常补丁的影响。该方法无需重新训练模型。</p><p>实验表明，GITCO在多个时间序列基准上显著提升了预测准确性，尤其对含有异常值的序列效果明显。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://arxiv.org/abs/2606.05332" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">7</span>
+        <span class="dot">·</span>
+        <span>Simon Willison</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">micropython-wasm 0.1a2发布</h2>
+      <p class="story-dek">新版本增加了命令行界面。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>micropython-wasm 0.1a2版本发布，主要新增了命令行界面（CLI）。该工具允许用户在WebAssembly环境中运行MicroPython。</p><p>CLI的加入使得开发者可以更方便地测试和部署MicroPython脚本，无需依赖浏览器。该版本还修复了若干内存管理问题。</p><p>项目托管在GitHub上，采用MIT许可证。开发者可以下载并尝试在沙箱环境中运行Python代码。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://github.com/simonw/micropython-wasm/releases/tag/0.1a2" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">8</span>
+        <span class="dot">·</span>
+        <span>Simon Willison</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">使用MicroPython和WASM沙箱运行Python</h2>
+      <p class="story-dek">作者探索了多种沙箱方案，最新尝试似乎具备所有理想特性。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>作者多年来一直在尝试不同的代码沙箱方案，最新尝试使用MicroPython和WebAssembly（WASM）组合。这种方法似乎终于具备了所有理想特性。</p><p>MicroPython是一个精简的Python实现，适合嵌入式环境；WASM提供了安全的执行沙箱。两者结合可以在浏览器或服务器端安全运行用户提交的Python代码。</p><p>作者详细介绍了实现过程，包括如何编译MicroPython到WASM以及如何通过CLI交互。该方案有望用于在线编程教育、代码评测等场景。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://simonwillison.net/2026/Jun/07/micropython-wasm-sandbox/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">9</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">WWDC 2026：Siri大改版与苹果智能更新</h2>
+      <p class="story-dek">苹果WWDC即将到来，Siri改版和AI更新备受期待。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>苹果全球开发者大会（WWDC）2026即将开幕，最受关注的更新包括Siri的全面改版和Apple Intelligence（苹果智能）的升级。</p><p>据传闻，新版Siri将采用更先进的大语言模型，支持更自然的对话和复杂任务处理。Apple Intelligence将扩展到更多应用，如照片编辑和健康分析。</p><p>此外，苹果可能推出新的开发者工具，以便第三方应用更好地集成AI功能。WWDC将于下周举行，届时将揭晓所有细节。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/2026/06/07/wwdc-2026-preview/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+  </div>
+  
+  <div class="panel " data-cat="macro">
+    <div class="panel-head">
+      <div class="panel-title">宏观 · Macro</div>
+      <div class="panel-count">9 stories</div>
+    </div>
+
+    
+
+    
+    <article class="story lead">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>BBC World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">美伊海湾交火考验停火</h2>
+      <p class="story-dek">美国打击伊朗无人机和雷达站，伊朗声称攻击科威特和巴林美军基地。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美国军方对伊朗无人机和雷达站实施打击，伊朗则宣称已攻击科威特和巴林的美军基地，最新停火协议面临考验。[BBC @ 2026-06-07]</p><p>科威特和巴林遭袭，美军在霍尔木兹海峡拦截无人机，局势升级威胁脆弱停火。[FT @ 2026-06-07]</p><p>数据未验证</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.bbc.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">油轮商忧市场崩盘</h2>
+      <p class="story-dek">伊朗战争带来创纪录利润后，船东担心霍尔木兹海峡重开导致运价暴跌。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>船东将战争暴利投入新船，但若霍尔木兹海峡重开，运价可能骤降，市场面临崩盘风险。[FT @ 2026-06-07]</p><p>数据未验证</p><p>数据未验证</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">特朗普重启关税战</h2>
+      <p class="story-dek">法院推翻征税后，总统试图构建能经受法律挑战的惩罚性贸易措施体系。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>特朗普在法院推翻关税后重启贸易战，寻求制定可应对法律挑战的惩罚性措施。[FT @ 2026-06-07]</p><p>数据未验证</p><p>数据未验证</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>CNBC Politics</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">俄称美企受益海峡关闭</h2>
+      <p class="story-dek">俄罗斯石油高管谢钦称美国公司从霍尔木兹海峡关闭中获利。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>谢钦指出，海峡关闭扰乱全球市场，推高油价至多年高位，加剧通胀并削弱经济增长，美国公司从中受益。[CNBC @ 2026-06-07]</p><p>数据未验证</p><p>数据未验证</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">油价库存下降定价</h2>
+      <p class="story-dek">布伦特原油可能触及每桶140美元？</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>分析人士探讨石油库存下降对油价的影响，布伦特原油或升至每桶140美元。[FT @ 2026-06-07]</p><p>数据未验证</p><p>数据未验证</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>BBC World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">乌克兰无人机袭圣彼得堡</h2>
+      <p class="story-dek">俄罗斯称袭击“前所未有”，居民首次被要求留在家中。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>乌克兰无人机袭击圣彼得堡，俄罗斯称此次攻击“前所未有”，居民被要求留在家中。[BBC @ 2026-06-07]</p><p>数据未验证</p><p>数据未验证</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.bbc.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>BBC World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">黎巴嫩将军遭以军袭击身亡</h2>
+      <p class="story-dek">以色列军方正在调查黎巴嫩南部事件，该地区正与真主党交战。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>一名黎巴嫩将军和两名士兵在以色列对汽车的袭击中丧生，以军正在调查。[BBC @ 2026-06-07]</p><p>数据未验证</p><p>数据未验证</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.bbc.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>CNBC Politics</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">奥巴马伊核协议内幕</h2>
+      <p class="story-dek">尽管特朗普称谈判有进展，美伊仍未达成和平协议或解决核问题。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>回顾奥巴马时期伊朗核协议，特朗普退出后，美伊尚未达成和平协议或解决核野心。[CNBC @ 2026-06-07]</p><p>数据未验证</p><p>数据未验证</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>BBC World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">亚美尼亚大选前俄施压</h2>
+      <p class="story-dek">现任总理帕希尼扬寻求第三任期，尽管国内支持率下降。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>亚美尼亚准备大选，俄罗斯对亲西方政府施压，总理帕希尼扬寻求连任。[BBC @ 2026-06-07]</p><p>数据未验证</p><p>数据未验证</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.bbc.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+  </div>
+  
+
+  <footer class="doc-footer">Hermes Daily · 2026-06-07 09:03 MYT · Top 29 of 29 · Build a293</footer>
+</div>
+
+<script>
+  const tabs = document.querySelectorAll('.tab');
+  const panels = document.querySelectorAll('.panel');
+  tabs.forEach(tab => {
+    tab.onclick = () => {
+      const cat = tab.dataset.cat;
+      tabs.forEach(t => t.classList.toggle('active', t === tab));
+      panels.forEach(p => p.classList.toggle('active', p.dataset.cat === cat));
+      window.scrollTo({ top: 0 });
+    };
+  });
+
+  const datePick = document.getElementById('datePick');
+  const dateText = document.getElementById('dateText');
+  const weekdays = ['周日','周一','周二','周三','周四','周五','周六'];
+  function fmt(d){ const dt=new Date(d+'T00:00:00'); return `${dt.getMonth()+1}月${dt.getDate()}日 ${weekdays[dt.getDay()]}`; }
+  datePick.onchange = () => { window.location = '/' + datePick.value + '/'; };
+
+  function shift(days){
+    const cur = new Date(datePick.value + 'T00:00:00');
+    cur.setDate(cur.getDate() + days);
+    const iso = cur.toISOString().slice(0,10);
+    window.location = '/' + iso + '/';
+  }
+  document.getElementById('prevDay').onclick = () => shift(-1);
+  const nextBtn = document.getElementById('nextDay');
+  if (!nextBtn.disabled) nextBtn.onclick = () => shift(1);
+</script>
+
+</body>
+</html>

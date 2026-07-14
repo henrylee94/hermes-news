@@ -1,0 +1,479 @@
+{
+  "us_stocks": [
+    {
+      "tag": "📈 个股",
+      "headline": "Jim Cramer says tech remains the",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From CNBC.",
+        "Extraction failed.",
+        "Source: https://www.cnbc.com/2026/07/13/jim-cramer-tech-best-place-find-big-winners.html"
+      ],
+      "source_url": "https://www.cnbc.com/2026/07/13/jim-cramer-tech-best-place-find-big-winners.html",
+      "source_name": "CNBC",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "📈 个股",
+      "headline": "Data Center Builders Are Racing ",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From MarketWatch.",
+        "Extraction failed.",
+        "Source: https://www.wsj.com/finance/investing/data-center-builders-are-racing-to-offload-stakes-worth-billions-1a7d92f8?mod=rss_markets_main"
+      ],
+      "source_url": "https://www.wsj.com/finance/investing/data-center-builders-are-racing-to-offload-stakes-worth-billions-1a7d92f8?mod=rss_markets_main",
+      "source_name": "MarketWatch",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "📈 个股",
+      "headline": "Oil Surges Most Since 2020, Refl",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From MarketWatch.",
+        "Extraction failed.",
+        "Source: https://www.wsj.com/finance/commodities-futures/oil-surges-most-since-2020-reflecting-bet-that-strait-wont-go-back-to-normal-9aa1639f?mod=rss_markets_main"
+      ],
+      "source_url": "https://www.wsj.com/finance/commodities-futures/oil-surges-most-since-2020-reflecting-bet-that-strait-wont-go-back-to-normal-9aa1639f?mod=rss_markets_main",
+      "source_name": "MarketWatch",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "📈 个股",
+      "headline": "Trump proposes 20% toll on cargo",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From CNBC.",
+        "Extraction failed.",
+        "Source: https://www.cnbc.com/2026/07/13/trump-iran-hormuz-strait-charge-reimburse.html"
+      ],
+      "source_url": "https://www.cnbc.com/2026/07/13/trump-iran-hormuz-strait-charge-reimburse.html",
+      "source_name": "CNBC",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "📈 个股",
+      "headline": "ROBO, The Global Robotics ETF Fo",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From Seeking Alpha.",
+        "Extraction failed.",
+        "Source: https://seekingalpha.com/article/4921708-robo-the-global-robotics-etf-for-a-future-perhaps-already-priced-in?source=feed_all_articles"
+      ],
+      "source_url": "https://seekingalpha.com/article/4921708-robo-the-global-robotics-etf-for-a-future-perhaps-already-priced-in?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "📈 个股",
+      "headline": "Oil Rises Amid Escalating Mideas",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From MarketWatch.",
+        "Extraction failed.",
+        "Source: https://www.wsj.com/finance/commodities-futures/oil-rises-amid-escalating-mideast-conflict-53395748?mod=rss_markets_main"
+      ],
+      "source_url": "https://www.wsj.com/finance/commodities-futures/oil-rises-amid-escalating-mideast-conflict-53395748?mod=rss_markets_main",
+      "source_name": "MarketWatch",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "📈 个股",
+      "headline": "YASKAWA Electric Corporation 202",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From Seeking Alpha.",
+        "Extraction failed.",
+        "Source: https://seekingalpha.com/article/4921720-yaskawa-electric-corporation-2027-q1-results-earnings-call-presentation?source=feed_all_articles"
+      ],
+      "source_url": "https://seekingalpha.com/article/4921720-yaskawa-electric-corporation-2027-q1-results-earnings-call-presentation?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "📈 个股",
+      "headline": "JGBs Mixed; May be Weighed by De",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From MarketWatch.",
+        "Extraction failed.",
+        "Source: https://www.wsj.com/finance/investing/jgbs-mixed-may-be-weighed-by-declines-in-u-s-treasurys-a3a67b11?mod=rss_markets_main"
+      ],
+      "source_url": "https://www.wsj.com/finance/investing/jgbs-mixed-may-be-weighed-by-declines-in-u-s-treasurys-a3a67b11?mod=rss_markets_main",
+      "source_name": "MarketWatch",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "📈 个股",
+      "headline": "Gold Declines Amid Broad Rise in",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From MarketWatch.",
+        "Extraction failed.",
+        "Source: https://www.wsj.com/finance/commodities-futures/gold-declines-amid-broad-rise-in-yields-monetary-policy-concerns-9177a1be?mod=rss_markets_main"
+      ],
+      "source_url": "https://www.wsj.com/finance/commodities-futures/gold-declines-amid-broad-rise-in-yields-monetary-policy-concerns-9177a1be?mod=rss_markets_main",
+      "source_name": "MarketWatch",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "📈 个股",
+      "headline": "World Markets Watchlist: July 13",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From Seeking Alpha.",
+        "Extraction failed.",
+        "Source: https://seekingalpha.com/article/4921725-world-markets-watchlist-july-13-2026?source=feed_all_articles"
+      ],
+      "source_url": "https://seekingalpha.com/article/4921725-world-markets-watchlist-july-13-2026?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    }
+  ],
+  "my_stocks": [],
+  "ai": [
+    {
+      "tag": "ai",
+      "headline": "KV-PRM：KV缓存传递多智能体测试时缩放",
+      "dek": "arXiv:2607.09153v1 提出通过KV缓存传递实现高效过程奖励建模，用于多智能体测试时缩放。",
+      "data_card": null,
+      "body": [
+        "arXiv:2607.09153v1 提出KV-PRM方法，通过KV缓存传递实现多智能体测试时缩放。",
+        "该方法利用过程奖励模型引导测试时缩放，显著提升推理能力。",
+        "数据未验证。"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.09153",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-14T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "GATS：图增强树搜索高效智能体规划",
+      "dek": "arXiv:2607.08894v1 提出图增强树搜索与分层世界模型，用于高效智能体规划。",
+      "data_card": null,
+      "body": [
+        "arXiv:2607.08894v1 提出GATS方法，结合图增强树搜索与分层世界模型。",
+        "该方法在多步规划任务中优于LATS等现有方法。",
+        "数据未验证。"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.08894",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-14T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "CogniConsole：推理时控制形式化抽象",
+      "dek": "arXiv:2607.08774v1 提出将推理时控制外部化为形式化抽象，提升LLM可靠性。",
+      "data_card": null,
+      "body": [
+        "arXiv:2607.08774v1 提出CogniConsole，将推理时控制作为形式化抽象。",
+        "该方法挑战了可靠性仅依赖模型能力的传统观点。",
+        "数据未验证。"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.08774",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-14T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "ARCANA：反射式多智能体程序合成框架",
+      "dek": "arXiv:2607.09059v1 提出ARCANA框架，用于ARC-AGI-2任务下的反射式多智能体程序合成。",
+      "data_card": null,
+      "body": [
+        "arXiv:2607.09059v1 提出ARCANA，一个协作多智能体框架。",
+        "该框架在严格测试时间和硬件约束下解决ARC-AGI-2任务。",
+        "数据未验证。"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.09059",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-14T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Nous Research获新一轮融资",
+      "dek": "Nous Research正在融资，由Robot Ventures领投，USV等参与。",
+      "data_card": null,
+      "body": [
+        "Nous Research正在以数据未验证估值进行新一轮融资。",
+        "本轮融资由Robot Ventures领投，USV等知名机构参与。",
+        "数据未验证。"
+      ],
+      "source_url": "数据未验证",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-14T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "长时终端任务基准测试",
+      "dek": "arXiv:2607.08964v1 提出长时终端任务基准，用于测试智能体在密集奖励下的长期规划能力。",
+      "data_card": null,
+      "body": [
+        "arXiv:2607.08964v1 提出Long-Horizon-Terminal-Bench基准。",
+        "该基准聚焦于长时终端任务，采用密集奖励评分。",
+        "数据未验证。"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.08964",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-14T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Anthropic在印度本地化Claude定价",
+      "dek": "Anthropic开始为印度用户提供卢比计价的Claude订阅计划。",
+      "data_card": null,
+      "body": [
+        "Anthropic在印度推出卢比计价的Claude订阅计划。",
+        "印度是Anthropic在美国之外的最大市场。",
+        "数据未验证。"
+      ],
+      "source_url": "数据未验证",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-14T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "神经智能体控制框架",
+      "dek": "arXiv:2607.09076v1 提出基于深度学习的LLM驱动智能体框架，用于控制安全控制。",
+      "data_card": null,
+      "body": [
+        "arXiv:2607.09076v1 提出Neuro-Agentic Control框架。",
+        "该框架利用LLM智能体应对OT网络攻击。",
+        "数据未验证。"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.09076",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-14T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Anthropic最新AI发现解读",
+      "dek": "MIT Tech Review 分析Anthropic最新AI发现的意义与局限。",
+      "data_card": null,
+      "body": [
+        "Anthropic作为全球最有价值的AI公司，其最新发现引发关注。",
+        "该发现展示了AI能力的进步，但也存在局限性。",
+        "数据未验证。"
+      ],
+      "source_url": "数据未验证",
+      "source_name": "MIT Tech Review",
+      "timestamp": "2026-07-14T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "PixVerse完成新一轮融资",
+      "dek": "视频生成初创公司PixVerse完成融资，估值数据未验证。",
+      "data_card": null,
+      "body": [
+        "PixVerse完成新一轮融资，用于扩展世界模型和全球客户。",
+        "该公司估值数据未验证。",
+        "数据未验证。"
+      ],
+      "source_url": "数据未验证",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-14T00:00:00Z",
+      "_warnings": []
+    }
+  ],
+  "macro": [
+    {
+      "tag": "🌐 宏观",
+      "headline": "Trump proposes 20% toll on cargo",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From CNBC Politics.",
+        "Extraction failed.",
+        "Source: https://www.cnbc.com/2026/07/13/trump-iran-hormuz-strait-charge-reimburse.html"
+      ],
+      "source_url": "https://www.cnbc.com/2026/07/13/trump-iran-hormuz-strait-charge-reimburse.html",
+      "source_name": "CNBC Politics",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🌐 宏观",
+      "headline": "Oil surges past $80 on Trump thr",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From FT World.",
+        "Extraction failed.",
+        "Source: https://www.ft.com/content/b1ab6ab2-b893-4605-b2b1-571ba9f46bd1"
+      ],
+      "source_url": "https://www.ft.com/content/b1ab6ab2-b893-4605-b2b1-571ba9f46bd1",
+      "source_name": "FT World",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🌐 宏观",
+      "headline": "Top Fed official warns ‘hot’ inf",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From FT World.",
+        "Extraction failed.",
+        "Source: https://www.ft.com/content/74ced145-3cc2-42f7-873a-84d2764b0b4d"
+      ],
+      "source_url": "https://www.ft.com/content/74ced145-3cc2-42f7-873a-84d2764b0b4d",
+      "source_name": "FT World",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🌐 宏观",
+      "headline": "US launches air strikes as Iran ",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From FT World.",
+        "Extraction failed.",
+        "Source: https://www.ft.com/content/34f93b7e-b1a7-40c3-8e6e-a5cac7dbaa9c"
+      ],
+      "source_url": "https://www.ft.com/content/34f93b7e-b1a7-40c3-8e6e-a5cac7dbaa9c",
+      "source_name": "FT World",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🌐 宏观",
+      "headline": "Stocks and bonds drop as mountin",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From FT World.",
+        "Extraction failed.",
+        "Source: https://www.ft.com/content/54be872f-c0a2-46dd-9337-5cad9124e734"
+      ],
+      "source_url": "https://www.ft.com/content/54be872f-c0a2-46dd-9337-5cad9124e734",
+      "source_name": "FT World",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🌐 宏观",
+      "headline": "UAE condemns Iran's 'brazen' att",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From BBC World.",
+        "Extraction failed.",
+        "Source: https://www.bbc.co.uk/news/articles/c8d2vn38dy1o?at_medium=RSS&at_campaign=rss"
+      ],
+      "source_url": "https://www.bbc.co.uk/news/articles/c8d2vn38dy1o?at_medium=RSS&at_campaign=rss",
+      "source_name": "BBC World",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🌐 宏观",
+      "headline": "Yemen’s Houthis fire missiles at",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From FT World.",
+        "Extraction failed.",
+        "Source: https://www.ft.com/content/cf774813-aed0-486d-be4e-c2c4174d8161"
+      ],
+      "source_url": "https://www.ft.com/content/cf774813-aed0-486d-be4e-c2c4174d8161",
+      "source_name": "FT World",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🌐 宏观",
+      "headline": "FirstFT: Investors cut back bets",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From FT World.",
+        "Extraction failed.",
+        "Source: https://www.ft.com/content/0ba42c5c-c097-4584-9387-a211d5234275"
+      ],
+      "source_url": "https://www.ft.com/content/0ba42c5c-c097-4584-9387-a211d5234275",
+      "source_name": "FT World",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🌐 宏观",
+      "headline": "Shell sells Indian wind and sola",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From FT World.",
+        "Extraction failed.",
+        "Source: https://www.ft.com/content/e9a826a4-db60-458b-8886-a94a3a111cff"
+      ],
+      "source_url": "https://www.ft.com/content/e9a826a4-db60-458b-8886-a94a3a111cff",
+      "source_name": "FT World",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🌐 宏观",
+      "headline": "Trump calls for Congress to pass",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From CNBC Politics.",
+        "Extraction failed.",
+        "Source: https://www.cnbc.com/2026/07/13/trump-congress-clarity-act-crypto-bill-lindsey-graham.html"
+      ],
+      "source_url": "https://www.cnbc.com/2026/07/13/trump-congress-clarity-act-crypto-bill-lindsey-graham.html",
+      "source_name": "CNBC Politics",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    }
+  ]
+}

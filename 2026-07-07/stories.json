@@ -1,0 +1,502 @@
+{
+  "us_stocks": [
+    {
+      "tag": "us_stocks",
+      "headline": "SOXS对冲半导体策略需谨慎",
+      "dek": "SOXS作为半导体反向ETF，需结合市场时机与仓位管理，避免长期持有损耗。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "SOXS",
+            "price": 4.17,
+            "change": -7.54,
+            "source": "Finnhub @ 2026-07-07"
+          }
+        ]
+      },
+      "body": [
+        "SOXS（三倍做空半导体ETF）当前价格4.17美元，日内下跌7.54%，反映市场对半导体板块短期看多情绪 [Finnhub @ 2026-07-07]。",
+        "该ETF适合作为对冲工具，但需注意杠杆ETF的时间衰减特性，仅适合短线操作 [Seeking Alpha @ 2026-07-07]。",
+        "投资者应结合NVDA（195.55美元）、AMD（552.05美元）等成分股走势制定策略，避免单边押注 [Finnhub @ 2026-07-07]。"
+      ],
+      "source_url": "https://seekingalpha.com/article/soxs-hedge-semiconductor",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-07T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "DRAM：AI内存瓶颈加剧",
+      "dek": "AI需求推动DRAM价格飙升，但供应瓶颈或限制涨幅。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "DRAM",
+            "price": 64.76,
+            "change": 6.81,
+            "source": "Finnhub @ 2026-07-07"
+          }
+        ]
+      },
+      "body": [
+        "DRAM价格报64.76美元，日内上涨6.81%，受AI训练与推理需求激增推动 [Finnhub @ 2026-07-07]。",
+        "三星电子（未上市）二季度利润创纪录，但股价下跌，反映市场对供应过剩的担忧 [CNBC @ 2026-07-07]。",
+        "MU（美光）股价984.75美元，微涨0.94%，显示内存板块整体强势但分化 [Finnhub @ 2026-07-07]。"
+      ],
+      "source_url": "https://seekingalpha.com/article/dram-ai-memory-bottleneck",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-07T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "三星电子利润创新高股价反跌",
+      "dek": "二季度营业利润同比增145%，但市场担忧内存价格见顶。",
+      "data_card": null,
+      "body": [
+        "三星电子公布二季度初步利润创历史新高，但股价下跌，因投资者担忧DRAM/NAND价格周期见顶 [CNBC @ 2026-07-07]。",
+        "DRAM价格64.76美元，日内涨6.81%，但三星股价反应显示市场对持续性存疑 [Finnhub @ 2026-07-07]。",
+        "MU（美光）微涨0.94%至984.75美元，内存板块内部分化明显 [Finnhub @ 2026-07-07]。"
+      ],
+      "source_url": "https://www.cnbc.com/samsung-electronics-record-profit",
+      "source_name": "CNBC",
+      "timestamp": "2026-07-07T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "摩根大通等探索支付网络交易",
+      "dek": "多家银行拟联合打造新卡网络，以挑战Visa/Mastercard，但内部存分歧。",
+      "data_card": null,
+      "body": [
+        "摩根大通、美国银行等大型银行正探索组建新卡网络，旨在提高交易手续费收入 [MarketWatch @ 2026-07-07]。",
+        "部分银行高管担忧此举可能引发监管反弹及消费者抵制，内部意见不一 [MarketWatch @ 2026-07-07]。",
+        "Visa（未上市）股价未受影响，但若交易落地，将重塑支付行业格局 [MarketWatch @ 2026-07-07]。"
+      ],
+      "source_url": "https://www.marketwatch.com/story/jpmorgan-bofa-payments-deal",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-07-07T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "阿里巴巴禁止员工使用Anthropic AI",
+      "dek": "指控Anthropic Claude Code被用于“蒸馏攻击”，列入高风险软件清单。",
+      "data_card": null,
+      "body": [
+        "阿里巴巴将Anthropic的Claude Code列入高风险软件清单，禁止员工使用，指控其被用于“蒸馏攻击”窃取模型知识 [CNBC @ 2026-07-07]。",
+        "此举反映中美AI企业竞争加剧，数据安全与知识产权保护成为焦点 [CNBC @ 2026-07-07]。",
+        "Anthropic尚未回应，但事件可能影响其企业客户拓展 [CNBC @ 2026-07-07]。"
+      ],
+      "source_url": "https://www.cnbc.com/alibaba-bans-anthropic-ai",
+      "source_name": "CNBC",
+      "timestamp": "2026-07-07T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "ISM服务业PMI显示6月持续扩张",
+      "dek": "ISM服务业PMI数据未提供，但报告称服务业活动继续增长。",
+      "data_card": null,
+      "body": [
+        "ISM服务业PMI数据未提供，报告称6月服务业活动继续扩张，但增速放缓 [Seeking Alpha @ 2026-07-07]。",
+        "具体数值未在数据源中列出，无法验证 [数据未验证]。",
+        "服务业韧性支撑经济，但市场关注美联储后续政策路径 [Seeking Alpha @ 2026-07-07]。"
+      ],
+      "source_url": "https://seekingalpha.com/article/ism-services-pmi-june",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-07T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "Visa将挑战转化为机遇",
+      "dek": "Visa通过技术创新与合作伙伴关系，应对支付行业变革。",
+      "data_card": null,
+      "body": [
+        "Visa正通过区块链、跨境支付等创新应对新兴支付网络挑战 [Seeking Alpha @ 2026-07-07]。",
+        "公司加强与银行合作，巩固其卡网络主导地位 [Seeking Alpha @ 2026-07-07]。",
+        "Visa股价未在数据中提供，但策略调整或影响长期竞争力 [数据未验证]。"
+      ],
+      "source_url": "https://seekingalpha.com/article/visa-disruption-opportunity",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-07T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "微软裁员4800人 Xbox部门重组",
+      "dek": "微软裁减商业与Xbox部门员工，并计划分拆四个游戏工作室。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "MSFT",
+            "price": 386.74,
+            "change": -0.96,
+            "source": "Finnhub @ 2026-07-07"
+          }
+        ]
+      },
+      "body": [
+        "微软宣布裁员4800人，主要集中在商业业务与Xbox游戏部门，后者收入持续下滑 [CNBC @ 2026-07-07]。",
+        "公司计划分拆四个游戏工作室，以优化资源配置 [CNBC @ 2026-07-07]。",
+        "MSFT股价报386.74美元，微跌0.96%，市场对重组反应平淡 [Finnhub @ 2026-07-07]。"
+      ],
+      "source_url": "https://www.cnbc.com/microsoft-layoffs-xbox",
+      "source_name": "CNBC",
+      "timestamp": "2026-07-07T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "金价下跌 市场等待美联储纪要",
+      "dek": "黄金在亚洲早盘走低，连续上涨后面临回调压力。",
+      "data_card": null,
+      "body": [
+        "黄金价格在亚洲早盘下跌，因投资者在美联储会议纪要公布前获利了结 [MarketWatch @ 2026-07-07]。",
+        "Hola Prime表示，金价连续上涨后存在回调风险 [MarketWatch @ 2026-07-07]。",
+        "具体金价数据未在数据源中提供 [数据未验证]。"
+      ],
+      "source_url": "https://www.marketwatch.com/story/gold-falls-fed-minutes",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-07-07T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "日元兑美元横盘整理",
+      "dek": "日元在多重因素影响下窄幅波动，市场等待新催化剂。",
+      "data_card": null,
+      "body": [
+        "日元兑美元及其他货币在亚洲盘整，因市场消化日本央行政策信号与全球经济数据 [MarketWatch @ 2026-07-07]。",
+        "具体汇率数据未在数据源中提供 [数据未验证]。",
+        "投资者关注美联储纪要及日本央行后续行动 [MarketWatch @ 2026-07-07]。"
+      ],
+      "source_url": "https://www.marketwatch.com/story/yen-consolidates",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-07-07T00:00:00Z",
+      "_warnings": []
+    }
+  ],
+  "my_stocks": [],
+  "ai": [
+    {
+      "tag": "ai",
+      "headline": "SK海力士赴美IPO",
+      "dek": "AI热潮推动SK海力士美国上市",
+      "data_card": null,
+      "body": [
+        "SK海力士借助AI热潮实现增长，即将进行数十亿美元美国IPO，预计本周五上市。",
+        "该公司是内存制造商，与英伟达等AI芯片厂商紧密合作。",
+        "此次IPO将扩大美国投资者对亚洲存储器巨头的直接参与。"
+      ],
+      "source_url": "https://techcrunch.com/2026/07/07/sk-hynix-ipo/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-07T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Fables编写GPU内核与自动化",
+      "dek": "Import AI 464期：GPU内核、AI自动化与模拟计算",
+      "data_card": null,
+      "body": [
+        "本期Import AI聚焦Fables自动编写GPU内核技术。",
+        "探讨AI自动化如何改变编程范式，以及模拟计算的最新进展。",
+        "内容未涉及具体上市公司数据。"
+      ],
+      "source_url": "https://jack-clark.net/2026/07/07/import-ai-464/",
+      "source_name": "Import AI",
+      "timestamp": "2026-07-07T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "OpenAI家庭投资计划",
+      "dek": "美国家庭300美元入股OpenAI的讨论",
+      "data_card": null,
+      "body": [
+        "OpenAI CEO Sam Altman曾提及美国人投资OpenAI的可能性。",
+        "本文探讨家庭以300美元参与AI公司的设想与影响。",
+        "目前OpenAI尚未上市，无公开股价数据。"
+      ],
+      "source_url": "https://www.technologyreview.com/2026/07/07/openai-family-investment/",
+      "source_name": "MIT Tech Review",
+      "timestamp": "2026-07-07T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Vercel CEO谈模型与代理分离",
+      "dek": "Guillermo Rauch强调生产环境中价格/性能权衡",
+      "data_card": null,
+      "body": [
+        "Vercel CEO Guillermo Rauch表示，生产优化需考虑价格/性能比。",
+        "他主张将模型与AI代理解耦以提升灵活性。",
+        "未引用具体股票价格数据。"
+      ],
+      "source_url": "https://techcrunch.com/2026/07/07/vercel-model-agent/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-07T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "2026年科技公司AI相关裁员",
+      "dek": "年度盘点：大型科技公司以AI为由的裁员",
+      "data_card": null,
+      "body": [
+        "本文按时间倒序列举2026年以AI为因素的重大科技裁员。",
+        "多家企业将AI自动化作为重组理由。",
+        "具体公司未在数据源中提供股价信息。"
+      ],
+      "source_url": "https://techcrunch.com/2026/07/07/ai-layoffs-2026/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-07T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Station F成欧洲AI创业跳板",
+      "dek": "巴黎创业中心F/ai加速器新一期启动",
+      "data_card": null,
+      "body": [
+        "Station F由法国亿万富翁Xavier Niel创立，正加强F/ai加速器项目。",
+        "旨在成为欧洲AI初创公司的重要孵化平台。",
+        "该消息不涉及具体上市公司股票。"
+      ],
+      "source_url": "https://techcrunch.com/2026/07/07/station-f-ai/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-07T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "微软裁员4800人",
+      "dek": "微软新财年首日裁减约4800名员工",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "MSFT",
+            "price": 386.74,
+            "change": -0.96
+          }
+        ]
+      },
+      "body": [
+        "微软在新财年首日宣布裁员约4800人，占全球员工2.1%。",
+        "此次裁员紧随去年9100人削减之后，涉及Xbox和商业销售部门。",
+        "目前微软股价为386.74美元（数据来源：Live Data @ 2026-07-07）。"
+      ],
+      "source_url": "https://www.theverge.com/2026/07/07/microsoft-layoffs-4800/",
+      "source_name": "The Verge AI",
+      "timestamp": "2026-07-07T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "韩国芯片员工成婚恋热门",
+      "dek": "SK海力士等芯片公司员工在韩国婚恋市场走俏",
+      "data_card": null,
+      "body": [
+        "35岁的SK海力士经理Baek加入首尔婚介公司Sunoo一年。",
+        "韩国父母焦虑子女婚姻，芯片行业员工因高薪稳定受青睐。",
+        "SK海力士股票数据未在实时数据表中提供。"
+      ],
+      "source_url": "https://www.technologyreview.com/2026/07/07/korea-chip-workers-marriage/",
+      "source_name": "MIT Tech Review",
+      "timestamp": "2026-07-07T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "微软裁近5000人涉及Xbox",
+      "dek": "微软裁员约4800人，Xbox和商业销售受冲击",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "MSFT",
+            "price": 386.74,
+            "change": -0.96
+          }
+        ]
+      },
+      "body": [
+        "微软周一裁员约4800人，相当于全球员工2.1%，系新一轮AI替代担忧。",
+        "裁员波及Xbox和商业销售部门，引发AI取代人类工作的讨论。",
+        "微软当前股价386.74美元（数据来源：Live Data @ 2026-07-07）。"
+      ],
+      "source_url": "https://techcrunch.com/2026/07/07/microsoft-layoffs-xbox/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-07T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "首次AI勒索攻击仍靠人类",
+      "dek": "AI代理首次执行勒索攻击，但人类仍不可或缺",
+      "data_card": null,
+      "body": [
+        "AI代理首次在真实攻击中执行技术环节，但人类选择目标并设置基础设施。",
+        "这表明AI辅助攻击仍需人类参与决策与准备。",
+        "该事件不直接涉及上市公司股票数据。"
+      ],
+      "source_url": "https://techcrunch.com/2026/07/07/first-ai-ransomware/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-07T00:00:00Z",
+      "_warnings": []
+    }
+  ],
+  "macro": [
+    {
+      "tag": "macro",
+      "headline": "德国借债8000亿欧元重整军备",
+      "dek": "Chancellor Friedrich Merz’s debt-fuelled spending not seen since German reunification",
+      "data_card": null,
+      "body": [
+        "德国总理默茨计划通过举债8000亿欧元进行重整军备，规模为两德统一以来首次。",
+        "这一历史性转变旨在加强德国国防能力，应对地缘政治挑战。",
+        "然而，债务融资策略可能引发财政可持续性担忧，市场反应尚待观察。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-07-07T06:30:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "美联储官员支持沃什改革前瞻指引",
+      "dek": "Christopher Waller sides with central bank’s new chair in call for revamping communication to market",
+      "data_card": null,
+      "body": [
+        "美联储理事沃勒支持新主席沃什对前瞻指引的改革立场，强调市场沟通需更新。",
+        "此举可能改变美联储未来政策信号的传递方式，影响利率预期。",
+        "目前市场仍在评估这一变动对货币政策路径的具体影响。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-07-07T06:30:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "中国趁油价下跌增加中东石油进口",
+      "dek": "Move comes as Saudi Arabia cuts pricing on exports to Asia to 6-year low",
+      "data_card": null,
+      "body": [
+        "中国利用油价下跌之机加大从中东进口原油，尤其增加沙特采购。",
+        "沙特将面向亚洲的出口价格降至六年低点，刺激了中国买盘。",
+        "这一举动有助于中国降低能源成本，同时增强与中东产油国的合作。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-07-07T06:30:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "乌克兰称导弹短缺致23人死",
+      "dek": "President Zelensky says Sunday's 'massive Russian attack' on Kyiv consisted of 68 missiles and 351 strike drones.",
+      "data_card": null,
+      "body": [
+        "乌克兰总统泽连斯基警告拦截导弹短缺，周日俄罗斯大规模袭击基辅地区导致23人死亡。",
+        "俄方发射68枚导弹和351架攻击无人机，乌方防空系统不堪重负。",
+        "乌克兰呼吁盟友紧急提供更多防空武器以应对持续空袭。"
+      ],
+      "source_url": "https://www.bbc.com",
+      "source_name": "BBC World",
+      "timestamp": "2026-07-07T06:30:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "中国向太平洋核禁区试射弹道导弹",
+      "dek": "Submarine-launched projectile carrying dummy warhead draws condemnation from Japan, Australia and New Zealand",
+      "data_card": null,
+      "body": [
+        "中国从潜艇向太平洋核武禁试区发射携带模拟弹头的弹道导弹，引发日本、澳大利亚和新西兰谴责。",
+        "此举被认为违反地区无核化倡议，加剧印太紧张局势。",
+        "中国国防部尚未正式回应，国际社会呼吁保持克制。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-07-07T06:30:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "equities",
+      "headline": "霍尼韦尔拆分后145亿美元收购Element",
+      "dek": "Deal will create a leading advanced materials company with a combined enterprise value of roughly $29bn",
+      "data_card": null,
+      "body": [
+        "霍尼韦尔分拆后以145亿美元收购Element，合并后企业价值约290亿美元。",
+        "新公司将专注于先进材料领域，有望成为行业领导者。",
+        "该交易是霍尼韦尔战略重组的一部分，旨在提升股东价值。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-07-07T06:30:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "equities",
+      "headline": "三星连续三季度创纪录盈利",
+      "dek": "High memory chip prices fuel April to June earnings",
+      "data_card": null,
+      "body": [
+        "三星凭借高内存芯片价格实现连续第三个季度创纪录盈利，4月至6月业绩强劲。",
+        "AI需求持续推动存储芯片价格上涨，三星利润大幅增长。",
+        "市场预计下半年需求仍将旺盛，但供应端竞争加剧可能带来压力。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-07-07T06:30:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "tech",
+      "headline": "中国能否复制电动汽车成功于无人出租车？",
+      "dek": "China's self-driving car firms have been given a headstart by the country's EV supply chain as they expand globally.",
+      "data_card": null,
+      "body": [
+        "中国无人驾驶出租车公司借助成熟的电动汽车供应链在全球扩张，试图复制电动汽车的成功。",
+        "百度、小马智行等企业已在多个城市开展商业运营，但监管和技术挑战犹存。",
+        "分析师认为，低成本供应链和庞大市场是中国企业的核心优势。"
+      ],
+      "source_url": "https://www.bbc.com",
+      "source_name": "BBC World",
+      "timestamp": "2026-07-07T06:30:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "equities",
+      "headline": "前OpenAI研究员基金押注SK海力士美国IPO",
+      "dek": "Situational Awareness joins UK investor Baillie Gifford backing the South Korean memory maker’s American debut",
+      "data_card": null,
+      "body": [
+        "前OpenAI研究员创立的Situational Awareness基金与英国Baillie Gifford共同支持SK海力士美国IPO。",
+        "SK海力士作为韩国存储芯片巨头，此次上市备受AI供应链关注。",
+        "市场对SK海力士估值预期较高，但具体发行细节尚未公布。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-07-07T06:30:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "特朗普委内瑞拉战略的缺陷",
+      "dek": "The US-backed socialist regime has botched its response to the earthquakes",
+      "data_card": null,
+      "body": [
+        "文章指出特朗普政府对委内瑞拉的战略存在根本缺陷，未能有效应对地震危机。",
+        "美国支持的社会主义政权在地震救援中表现拙劣，人道主义局势恶化。",
+        "分析认为，缺乏连贯外交政策使得美国在委内瑞拉的影响力下降。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-07-07T06:30:00Z",
+      "_warnings": []
+    }
+  ]
+}

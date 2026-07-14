@@ -1,0 +1,387 @@
+{
+  "us_stocks": [
+    {
+      "tag": "us_stocks",
+      "headline": "美光AI客户协议支撑看涨",
+      "dek": "美光科技因代理AI和战略客户协议获看涨理由。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "MU",
+            "price": 1043.19,
+            "change": 2.2,
+            "source": "yfinance @ 2026-06-18"
+          }
+        ]
+      },
+      "body": [
+        "美光科技（MU）受益于代理AI趋势和战略客户协议，股价上涨2.2%至1043.19美元[yfinance @ 2026-06-18]。",
+        "分析师认为，AI内存需求增长和客户合作将推动长期增长，但具体协议细节未披露。",
+        "投资者需关注AI芯片市场动态，但当前数据未验证其他关键指标。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-18T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "沃什首次会议利率按兵不动",
+      "dek": "美联储主席沃什首次会议维持利率不变，市场关注后续政策。",
+      "data_card": null,
+      "body": [
+        "美联储主席凯文·沃什在首次会议上维持利率不变，符合市场预期[CNBC @ 2026-06-18]。",
+        "会议未提及具体经济数据，但强调通胀和就业平衡，数据未验证。",
+        "市场对后续加息预期升温，但具体路径未明确。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-06-18T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "FOMC波动溢价：NDX跨式期权",
+      "dek": "研究显示FOMC事件前1天NDX跨式期权存在波动溢价。",
+      "data_card": null,
+      "body": [
+        "研究分析FOMC会议前1天纳斯达克100指数（NDX）跨式期权的波动溢价，数据未验证。",
+        "该策略利用事件驱动波动，但具体收益数据未提供。",
+        "投资者需注意期权风险，当前无实时NDX价格数据。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-18T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "实际工资连续两月下降",
+      "dek": "通胀飙升导致实际工资连续第二个月下降，消费者购买力承压。",
+      "data_card": null,
+      "body": [
+        "实际工资连续第二个月下降，因价格通胀飙升，但具体数据未验证。",
+        "通胀压力可能影响消费支出，但当前无CPI或工资数据。",
+        "投资者需关注美联储政策应对，但数据未验证。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-18T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "NDX期权应对市场狂热",
+      "dek": "使用NDX期权在狂热市场中保持纪律，策略基于类型2原则。",
+      "data_card": null,
+      "body": [
+        "文章建议使用纳斯达克100指数（NDX）期权在市场狂热中保持纪律，但具体数据未验证。",
+        "策略强调类型2原则，但无实时NDX价格或期权数据。",
+        "投资者需谨慎评估，当前无NDX数据。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-18T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "我错了关于沃什的观点",
+      "dek": "作者承认此前对美联储主席沃什的判断有误，并更新看法。",
+      "data_card": null,
+      "body": [
+        "作者承认此前对凯文·沃什作为美联储主席的判断错误，但具体细节未验证。",
+        "文章可能涉及政策预期调整，但无实时经济数据支持。",
+        "投资者需关注后续政策变化，但数据未验证。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-18T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "亚洲货币承压于加息预期",
+      "dek": "亚洲货币兑美元盘整，美联储加息预期可能施压。",
+      "data_card": null,
+      "body": [
+        "亚洲货币兑美元在早盘交易中盘整，但可能受美联储加息预期打压[MarketWatch @ 2026-06-18]。",
+        "美元资产吸引力增强，但具体汇率数据未验证。",
+        "投资者需关注美联储政策动向，但当前无亚洲货币数据。"
+      ],
+      "source_url": "https://www.marketwatch.com",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-06-18T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "日债跟随美债下跌",
+      "dek": "日本国债早盘下跌，追随隔夜美国国债跌势。",
+      "data_card": null,
+      "body": [
+        "日本国债（JGBs）在早盘交易中下跌，跟随隔夜美国国债价格下跌[MarketWatch @ 2026-06-18]。",
+        "具体收益率数据未提供，但美债下跌可能反映加息预期。",
+        "投资者需关注全球债券市场联动，但数据未验证。"
+      ],
+      "source_url": "https://www.marketwatch.com",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-06-18T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "油价因霍尔木兹海峡重开下跌",
+      "dek": "霍尔木兹海峡可能快速重开，导致油价早盘下跌。",
+      "data_card": null,
+      "body": [
+        "油价在亚洲早盘下跌，因霍尔木兹海峡可能快速重开[MarketWatch @ 2026-06-18]。",
+        "具体油价数据未提供，但供应恢复预期打压价格。",
+        "投资者需关注地缘政治风险，但数据未验证。"
+      ],
+      "source_url": "https://www.marketwatch.com",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-06-18T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "CME将起诉CFTC永久期货",
+      "dek": "CME CEO称将起诉CFTC批准永久期货的决定。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "CME",
+            "price": 252.54,
+            "change": -3.46,
+            "source": "yfinance @ 2026-06-18"
+          }
+        ]
+      },
+      "body": [
+        "CME CEO特伦斯·达菲表示，交易所将起诉CFTC批准永久期货的决定[CNBC @ 2026-06-18]。",
+        "CME股价下跌3.46%至252.54美元[yfinance @ 2026-06-18]，市场担忧监管风险。",
+        "诉讼可能影响衍生品市场格局，但具体进展数据未验证。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-06-18T00:00:00Z",
+      "_warnings": []
+    }
+  ],
+  "my_stocks": [],
+  "ai": [
+    {
+      "tag": "ai",
+      "headline": "AI代理搜索新范式：多样查询初始化",
+      "dek": "超越并行采样，提出多样查询初始化方法，提升代理搜索效率",
+      "data_card": null,
+      "body": [
+        "arXiv:2606.17209v1提出，测试时扩展代理搜索通常增加深度（更多轮次和每轨迹令牌）或广度（更多并行展开），但该研究引入多样查询初始化方法。",
+        "该方法旨在通过更高效的初始查询策略，提升代理搜索在复杂任务中的表现，无需依赖大规模并行采样。",
+        "数据未验证：具体性能提升指标未在摘要中提供。"
+      ],
+      "source_url": "https://arxiv.org/abs/2606.17209",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-06-18",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Z.ai发布最强开源文本模型GLM-5.2",
+      "dek": "中国AI实验室Z.ai发布GLM-5.2，号称最强大文本仅开源权重模型",
+      "data_card": null,
+      "body": [
+        "中国AI实验室Z.ai于6月13日向编码计划订阅者发布GLM-5.2，并于昨日公开，号称最强大文本仅开源权重LLM。",
+        "该模型在文本处理任务上表现突出，但具体性能指标未在摘要中提供。",
+        "数据未验证：模型参数、基准测试结果等细节未披露。"
+      ],
+      "source_url": "https://simonwillison.net/2026/Jun/18/glm-52/",
+      "source_name": "Simon Willison",
+      "timestamp": "2026-06-18",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "NEA谈AI IPO与ROI：企业仍在摸索",
+      "dek": "NEA合伙人Tiffany Luck讨论AI IPO、个人代理及企业ROI计算挑战",
+      "data_card": null,
+      "body": [
+        "NEA合伙人Tiffany Luck指出，今年硅谷‘Tokenmaxxing’热潮后，企业面临AI成本账单，如Uber等公司开始重新评估AI投资回报。",
+        "她强调，AI IPO和个人代理成为焦点，但企业仍在摸索如何量化AI的ROI，尤其在敏感领域如法律和药物发现。",
+        "数据未验证：具体ROI数据或企业案例未在摘要中提供。"
+      ],
+      "source_url": "https://techcrunch.com/2026/06/18/nea-tiffany-luck-ai-ipos/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-18",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Pramaana Labs获2700万美元种子轮融资",
+      "dek": "Khosla Ventures领投，将形式验证引入AI，聚焦法律、药物发现等高敏感领域",
+      "data_card": null,
+      "body": [
+        "Pramaana Labs完成2700万美元种子轮融资，由Khosla Ventures领投，旨在将形式验证技术引入AI，确保高可靠性。",
+        "公司聚焦法律、药物发现和税务准备等高敏感垂直领域，这些领域错误成本高，对可靠性要求极高。",
+        "数据未验证：具体估值或收入数据未在摘要中提供。"
+      ],
+      "source_url": "https://techcrunch.com/2026/06/18/pramaana-labs-27m-seed/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-18",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "自进化代理：法律案例检索新方法",
+      "dek": "提出自进化代理，通过规则学习优化法律案例检索，应对语言复杂性",
+      "data_card": null,
+      "body": [
+        "arXiv:2606.17220v1提出自进化代理，用于法律案例检索，通过规则学习实现查询与相关案例的精确词汇对齐。",
+        "该方法应对法律语言复杂性，无需手动调整，代理可自我进化以提升检索精度。",
+        "数据未验证：具体检索性能提升指标未在摘要中提供。"
+      ],
+      "source_url": "https://arxiv.org/abs/2606.17220",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-06-18",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "NEA：企业仍在摸索AI投资回报",
+      "dek": "NEA合伙人Tiffany Luck称企业面临AI成本账单，ROI计算仍是挑战",
+      "data_card": null,
+      "body": [
+        "NEA合伙人Tiffany Luck指出，Tokenmaxxing热潮后，企业如Uber面临AI成本账单，但ROI计算仍不明确。",
+        "她强调，企业需在敏感领域如法律和药物发现中平衡AI使用与成本，但ROI量化尚在早期。",
+        "数据未验证：具体企业案例或ROI数据未在摘要中提供。"
+      ],
+      "source_url": "https://techcrunch.com/2026/06/18/nea-enterprise-ai-roi/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-18",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "世界模型公司Odyssey获14.5亿美元估值",
+      "dek": "获亚马逊等巨头投资，估值14.5亿美元，成世界模型领域明星初创",
+      "data_card": null,
+      "body": [
+        "世界模型初创Odyssey完成新一轮融资，估值达14.5亿美元，由亚马逊等知名投资者支持。",
+        "世界模型被视为AI下一大方向，超越LLM，Odyssey借此轮融资巩固其领先地位。",
+        "数据未验证：具体融资轮次或投资者细节未在摘要中提供。"
+      ],
+      "source_url": "https://techcrunch.com/2026/06/18/odyssey-1-45b-valuation/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-18",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "加拿大养老金巨头投资印度AI数据中心",
+      "dek": "收购CtrlS 8.2%股权，参与印度AI驱动数据中心扩张",
+      "data_card": null,
+      "body": [
+        "加拿大养老金巨头将收购CtrlS 8.2%股权，该公司运营印度超15个数据中心，助力AI驱动数据需求。",
+        "此举显示全球资本对印度AI基础设施投资的兴趣，尤其在美国AI出口限制背景下。",
+        "数据未验证：具体投资金额或交易细节未在摘要中提供。"
+      ],
+      "source_url": "https://techcrunch.com/2026/06/18/canada-pension-india-data-centers/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-18",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "SkillChain-Gym：技能重塑生产控制基准",
+      "dek": "提出基准，应对生产中断下技能认证与劳动力能力动态调整",
+      "data_card": null,
+      "body": [
+        "arXiv:2606.17266v1提出SkillChain-Gym基准，用于生产规划中劳动力能力作为决策变量，应对技能认证失效。",
+        "该基准关注生产中断下，通过技能重塑优化生产库存控制，确保劳动力能力持续。",
+        "数据未验证：具体性能指标或基准测试结果未在摘要中提供。"
+      ],
+      "source_url": "https://arxiv.org/abs/2606.17266",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-06-18",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "全球领袖担忧美国AI可被切断",
+      "dek": "G7峰会法印领导人担忧美国AI出口控制，Anthropic黑屏事件加剧恐惧",
+      "data_card": null,
+      "body": [
+        "法国总统马克龙和印度总理莫迪在G7峰会上警告，美国可能一夜之间切断AI访问，Anthropic黑屏事件证实此风险。",
+        "他们呼吁全球AI供应多元化，减少对单一国家依赖，以保障AI应用安全。",
+        "数据未验证：具体政策或协议细节未在摘要中提供。"
+      ],
+      "source_url": "https://techcrunch.com/2026/06/18/world-leaders-ai-access/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-18",
+      "_warnings": []
+    }
+  ],
+  "macro": [
+    {
+      "tag": "macro",
+      "headline": "美联储维持利率 鹰派预测",
+      "dek": "Kevin Warsh首次主持美联储会议，声明简短但预测显示至少需加息一次。",
+      "data_card": null,
+      "body": [
+        "美联储在Kevin Warsh主持的首次会议上维持利率不变，但鹰派预测暗示未来可能加息。声明中取消了前瞻指引，标志着政策转向。",
+        "伊朗战争引发的通胀冲击使通胀率接近目标的两倍，美联储承诺控制物价。美国国债收益率下跌，市场对加息预期升温。",
+        "Warsh表示开启‘新篇章’，承诺进行广泛改革。分析认为其特别工作组将重塑美联储运作方式。"
+      ],
+      "source_url": "https://www.ft.com/content/fed-decision-kevin-warsh-era",
+      "source_name": "FT World",
+      "timestamp": "2026-06-18T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "美伊协议未解核心分歧",
+      "dek": "特朗普称协议确保伊朗无核武，但文本未达此目标，遗留3000亿美元问题。",
+      "data_card": null,
+      "body": [
+        "美国与伊朗签署协议，特朗普承诺解冻资金并放松制裁，但承认伊朗保留弹道导弹。核心分歧未解决。",
+        "协议文本未明确禁止伊朗发展核武器，专家指出存在3000亿美元的不确定性。伊朗将根据‘行为’获得激励。",
+        "市场对伊朗危机反应平淡，油价未现暴涨，焦点转向供应过剩。"
+      ],
+      "source_url": "https://www.bbc.com/news/us-iran-deal-2026",
+      "source_name": "BBC World",
+      "timestamp": "2026-06-18T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "Warsh时代美联储改革启幕",
+      "dek": "新主席获特朗普信任，利率维持不变但长期变革空间打开。",
+      "data_card": null,
+      "body": [
+        "Kevin Warsh首次美联储会议维持利率不变，但声明简短且取消前瞻指引，预示政策框架重塑。",
+        "特朗普对Warsh的信任使其能推进长期改革，包括特别工作组机制。分析认为这比利率决策更重要。",
+        "市场关注Warsh如何通过任务组重新布线美联储，通胀数据未验证。"
+      ],
+      "source_url": "https://www.cnbc.com/politics/warsh-fed-reform",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-06-18T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "伊朗危机后油价未飙升",
+      "dek": "市场从担忧夏季短缺转向关注供应过剩，油价反应平淡。",
+      "data_card": null,
+      "body": [
+        "尽管美伊协议未解决核心分歧，但油价未如预期飙升。市场焦点从伊朗危机转向全球供应过剩。",
+        "此前担忧夏季短缺和200美元油价的情景被库存增加取代。分析师指出地缘政治溢价消退。",
+        "原油价格数据未验证，但趋势显示供需基本面主导市场。"
+      ],
+      "source_url": "https://www.ft.com/content/oil-market-iran-crisis",
+      "source_name": "FT World",
+      "timestamp": "2026-06-18T12:00:00Z",
+      "_warnings": []
+    }
+  ]
+}

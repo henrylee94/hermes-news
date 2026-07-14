@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>Hermes Daily · 2026-07-05</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;900&family=Noto+Serif+SC:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --bg: #ffffff; --ink: #1d1d1f; --ink-soft: #424245; --ink-light: #86868b;
+    --divider: #d2d2d7; --accent-red: #c8102e; --accent-blue: #0066cc;
+    --accent-amber: #d97706; --accent-green: #00855b; --card-bg: #fafafa;
+    --nav-bg: rgba(255,255,255,0.85);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1a1a1c; --ink: #f5f5f7; --ink-soft: #c7c7cc; --ink-light: #8e8e93;
+      --divider: #38383a; --card-bg: #2c2c2e; --nav-bg: rgba(26,26,28,0.85);
+    }
+  }
+
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: var(--bg); color: var(--ink); line-height: 1.5;
+    -webkit-font-smoothing: antialiased; overflow-x: hidden;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+  .topbar { position: sticky; top: 0; z-index: 100; background: var(--nav-bg); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid var(--divider); }
+  .topbar-inner { max-width: 720px; margin: 0 auto; padding: 11px 24px; display: flex; align-items: center; justify-content: space-between; }
+  .brand { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 900; letter-spacing: -0.5px; }
+
+  .date-picker { display: flex; align-items: center; gap: 8px; }
+  .date-picker button { background: none; border: none; color: var(--ink-light); font-size: 20px; cursor: pointer; padding: 0 2px; line-height: 1; }
+  .date-picker button:hover { color: var(--accent-blue); }
+  .date-picker button:disabled { opacity: 0.25; cursor: default; }
+  .date-display { position: relative; font-size: 13px; font-weight: 600; color: var(--ink); font-variant-numeric: tabular-nums; cursor: pointer; padding: 5px 10px; border-radius: 8px; background: var(--card-bg); display: flex; align-items: center; gap: 6px; }
+  .date-display:hover { color: var(--accent-blue); }
+  .date-display input[type="date"] { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%; }
+  .date-display .cal-icon { font-size: 12px; }
+
+  .tabs { position: sticky; top: 47px; z-index: 99; background: var(--nav-bg); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid var(--divider); }
+  .tabs-inner { max-width: 720px; margin: 0 auto; padding: 0 12px; display: flex; gap: 2px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .tabs-inner::-webkit-scrollbar { display: none; }
+  .tab { flex: 1 0 auto; min-width: 72px; text-align: center; padding: 13px 14px; font-size: 14px; font-weight: 600; color: var(--ink-light); border-bottom: 2.5px solid transparent; cursor: pointer; white-space: nowrap; transition: color .15s, border-color .15s; background: none; font-family: inherit; }
+  .tab.active { color: var(--ink); }
+  .tab[data-cat="us_stocks"].active { border-bottom-color: var(--accent-red); }
+  .tab[data-cat="my_stocks"].active { border-bottom-color: var(--accent-amber); }
+  .tab[data-cat="ai"].active { border-bottom-color: var(--accent-blue); }
+  .tab[data-cat="macro"].active { border-bottom-color: var(--accent-green); }
+  .tab .count { display: inline-block; min-width: 18px; padding: 1px 5px; margin-left: 3px; font-size: 11px; font-weight: 600; border-radius: 9px; background: var(--card-bg); color: var(--ink-light); }
+  .tab.active .count { background: var(--ink); color: var(--bg); }
+
+  .masthead { padding: 28px 0 4px; }
+  .masthead-title { font-family: 'Playfair Display','Noto Serif SC',serif; font-size: 44px; font-weight: 900; letter-spacing: -1px; line-height: 1; }
+  .masthead-sub { font-size: 12px; color: var(--ink-light); margin-top: 8px; text-transform: uppercase; letter-spacing: 1.2px; }
+
+  .panel { display: none; }
+  .panel.active { display: block; animation: fade .25s ease; }
+  @keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+  .panel-head { margin: 32px 0 22px; padding-bottom: 12px; border-bottom: 1px solid var(--divider); display: flex; align-items: baseline; justify-content: space-between; }
+  .panel-title { font-family: 'Playfair Display','Noto Serif SC',serif; font-size: 26px; font-weight: 700; }
+  .panel-count { font-size: 11px; color: var(--ink-light); text-transform: uppercase; letter-spacing: 1.2px; }
+
+  .story { margin-bottom: 40px; padding-bottom: 40px; border-bottom: 1px solid var(--divider); }
+  .story:last-child { border-bottom: none; }
+  .story-meta { display: flex; gap: 10px; align-items: center; font-size: 11px; color: var(--ink-light); text-transform: uppercase; letter-spacing: 1.1px; margin-bottom: 11px; }
+  .story-meta .dot { color: var(--divider); }
+  .tag-us_stocks { color: var(--accent-red); font-weight: 600; }
+  .tag-my_stocks { color: var(--accent-amber); font-weight: 600; }
+  .tag-ai { color: var(--accent-blue); font-weight: 600; }
+  .tag-macro { color: var(--accent-green); font-weight: 600; }
+
+  .story-headline { font-family: 'Playfair Display','Noto Serif SC',serif; font-size: 28px; font-weight: 700; line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 10px; }
+  .story.lead .story-headline { font-size: 34px; }
+  .story-dek { font-size: 16px; color: var(--ink-soft); line-height: 1.55; margin-bottom: 16px; }
+
+  .story-hero { width: 100%; height: 210px; border-radius: 8px; margin-bottom: 16px; display: flex; align-items: center; justify-content: center; color: var(--ink-light); font-size: 11px; letter-spacing: 1px; text-transform: uppercase; overflow: hidden; background: linear-gradient(135deg,#f5f5f7,#e8e8ed 50%,#d8d8df); }
+  .story-hero img { width: 100%; height: 100%; object-fit: cover; }
+
+  .data-card { background: var(--card-bg); border-left: 3px solid var(--accent-red); padding: 13px 17px; margin: 16px 0; border-radius: 0 6px 6px 0; }
+  .data-card.my_stocks { border-left-color: var(--accent-amber); }
+  .data-card.ai { border-left-color: var(--accent-blue); }
+  .data-card.macro { border-left-color: var(--accent-green); }
+  .data-card-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--ink-light); margin-bottom: 7px; }
+  .data-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px; font-size: 14px; }
+  .data-row .num { font-weight: 600; font-variant-numeric: tabular-nums; }
+  .data-row .up { color: var(--accent-red); }
+  .data-row .down { color: #00a35c; }
+  .data-citation { font-size: 10px; color: var(--ink-light); margin-top: 7px; font-style: italic; }
+
+  .story-body p { font-size: 15px; line-height: 1.65; margin-bottom: 13px; }
+  .story-body p:first-of-type::first-letter { font-family: 'Playfair Display',serif; font-size: 36px; font-weight: 900; line-height: 1; color: var(--accent-red); padding-right: 2px; }
+
+  .story-warning { background: #fff3cd; border-left: 3px solid #d97706; padding: 11px 15px; margin: 14px 0; color: #856404; font-size: 13px; border-radius: 0 4px 4px 0; }
+  @media (prefers-color-scheme: dark) { .story-warning { background: #3a2e10; color: #fde68a; } }
+
+  .story-source { margin-top: 18px; padding-top: 13px; border-top: 1px dotted var(--divider); font-size: 12px; color: var(--ink-light); display: flex; justify-content: space-between; align-items: center; }
+  .source-pill { display: inline-flex; align-items: center; padding: 4px 12px; background: var(--card-bg); border-radius: 12px; font-weight: 500; color: var(--ink-soft); text-decoration: none; min-height: 30px; }
+
+  .empty { padding: 60px 20px; text-align: center; color: var(--ink-light); font-size: 14px; }
+  .doc-footer { margin: 48px 0 60px; padding-top: 28px; border-top: 2px solid var(--ink); text-align: center; font-size: 11px; color: var(--ink-light); letter-spacing: 1.5px; text-transform: uppercase; }
+
+  @media (max-width: 640px) {
+    .wrap { padding: 0 18px; }
+    .topbar-inner { padding-left: 18px; padding-right: 18px; }
+    .brand { font-size: 17px; }
+    .date-display { font-size: 12px; }
+    .masthead-title { font-size: 32px; }
+    .tab { font-size: 13px; padding: 12px 12px; min-width: 64px; }
+    .story-headline { font-size: 23px; }
+    .story.lead .story-headline { font-size: 27px; }
+    .story-hero { height: 170px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <span class="brand">Hermes Daily</span>
+    <div class="date-picker">
+      <button id="prevDay" title="前一天">‹</button>
+      <label class="date-display">
+        <span class="cal-icon">📅</span>
+        <span id="dateText">7月5日 周日</span>
+        <input type="date" id="datePick" value="2026-07-05" max="2026-07-05">
+      </label>
+      <button id="nextDay" title="后一天" disabled>›</button>
+    </div>
+  </div>
+</div>
+
+<div class="tabs">
+  <div class="tabs-inner">
+    
+    <button class="tab active" data-cat="us_stocks">🇺🇸 美股<span class="count">10</span></button>
+    
+    <button class="tab " data-cat="my_stocks">🇲🇾 马股<span class="count">0</span></button>
+    
+    <button class="tab " data-cat="ai">🤖 AI<span class="count">7</span></button>
+    
+    <button class="tab " data-cat="macro">🌐 宏观<span class="count">10</span></button>
+    
+  </div>
+</div>
+
+<div class="wrap">
+  <header class="masthead">
+    <div class="masthead-title">Hermes Daily</div>
+    <div class="masthead-sub">2026-07-05 · 周日 · 09:02 MYT · For Henry</div>
+  </header>
+
+  
+  <div class="panel active" data-cat="us_stocks">
+    <div class="panel-head">
+      <div class="panel-title">美股 · US Markets</div>
+      <div class="panel-count">10 stories</div>
+    </div>
+
+    
+
+    
+    <article class="story lead">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">AI叙事消退，芯片股承压</h2>
+      <p class="story-dek">市场对AI热潮的乐观情绪降温，半导体板块出现回调。</p>
+
+      
+
+      
+      <div class="data-card us_stocks">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>随着AI交易逻辑的转变，市场对AI相关股票的预期开始回落。NVDA股价下跌0.71%至194.83美元[yfinance @ 16:30 MYT]，AMD跌0.82%至517.82美元[yfinance @ 16:30 MYT]，AVGO跌0.67%至360.45美元[yfinance @ 16:30 MYT]。</p><p>分析人士指出，投资者开始关注AI商业化进程中的实际收益，而非单纯的想象空间。整体板块估值面临调整压力。</p><p>后续需关注企业财报及资本开支计划，或进一步影响市场情绪。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com/article/ai-narrative-fading" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-05T16:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Western Digital急跌，AI热潮降温</h2>
+      <p class="story-dek">西部数据股价随AI板块回调，后市走势引发讨论。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Western Digital（WDC）股价承压，AI交易退潮波及存储芯片需求预期。具体价格变动数据未验证。</p><p>此前该股受益于AI数据存储需求，但市场情绪转变导致获利回吐。</p><p>投资者需关注公司下一季度业绩指引及行业供需变化。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com/article/western-digital-falls" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-05T16:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">博通：新一轮上涨刚开始</h2>
+      <p class="story-dek">博通股价回调，但分析认为长期价值尚在。</p>
+
+      
+
+      
+      <div class="data-card us_stocks">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>Broadcom（AVGO）股价收于360.45美元，下跌0.67%[yfinance @ 16:30 MYT]。尽管短期承压，但分析师认为AI基础设施需求将为公司带来持续增长动力。</p><p>随着定制芯片和网络解决方案订单增加，博通有望在下一阶段领先同业。</p><p>当前回调被视为布局机会，建议投资者关注长期逻辑。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com/article/broadcom-new-leg-up" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-05T16:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>MarketWatch</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">股票基金Q2涨17.1%，市场剧烈波动</h2>
+      <p class="story-dek">第二季度股票基金录得两位数涨幅，但过程充满不确定性。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>据MarketWatch报道，股票基金在第二季度平均上涨17.1%，尽管期间经历了IPO热潮、地缘冲突以及美联储政策转向等多重事件。</p><p>市场波动加剧，投资者需关注宏观因素对组合的影响。</p><p>回顾20年前的期权丑闻，当前市场环境仍具挑战。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.marketwatch.com/story/stock-funds-rallied" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-05T16:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">百事、达美将发财报，FOMC会议纪要受关注</h2>
+      <p class="story-dek">本周重点关注百事可乐和达美航空业绩及美联储会议纪要。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>PepsiCo（PEP）和Delta Air Lines（DAL）即将公布最新财报，市场预期不一。具体股价数据未验证。</p><p>同时，FOMC会议纪要将于本周发布，投资者将从中寻找利率路径线索。</p><p>两项事件均可能引发相关板块波动，建议投资者保持谨慎。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com/article/pepsi-delta-earnings-fomc" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-05T16:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">NiSource：数据中心电力需求的首选标的</h2>
+      <p class="story-dek">NiSource受益于数据中心扩张带来的电力需求增长。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>NiSource（NI）被视为数据中心电力需求的重要受益者，当前股价数据未验证。</p><p>随着AI和云计算推动电力消耗激增，公用事业公司迎来结构性机会。</p><p>分析认为NiSource的管线和电力基础设施布局使其具备领先优势。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com/article/nisource-data-center-electricity" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-05T16:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">YTD各类资产及组合表现一览</h2>
+      <p class="story-dek">年初至今各大类资产组合表现回顾。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>年初至今各类资产收益表现分化，具体数据未在本文中提供。</p><p>投资者需根据自身风险偏好调整配置。</p><p>持续关注全球宏观经济变化对组合的影响。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com/article/ytd-investment-performance" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-05T16:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Netflix：AI取代用户增长成新叙事</h2>
+      <p class="story-dek">Netflix的长期增长逻辑正转向AI技术应用。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Netflix（NFLX）的AI应用前景成为市场新焦点，具体股价数据未验证。</p><p>公司利用AI进行内容推荐和制作效率提升，有望打开新的收入空间。</p><p>用户增长虽仍重要，但AI叙事正获得更多关注。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com/article/netflix-ai-narrative" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-05T16:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>MarketWatch</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">非法国家用加密货币规避制裁</h2>
+      <p class="story-dek">黑名单实体2025年通过加密货币交易1000亿美元。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>据MarketWatch报道，受制裁国家及实体在2025年通过加密货币处理了1000亿美元交易，用于资助恐怖主义和武器采购。</p><p>该数字凸显出加密货币在绕过传统金融监管方面的风险。</p><p>各国监管机构正加强打击力度，但挑战依然严峻。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.marketwatch.com/story/crypto-sanctions-evasion" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-05T16:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">TTM Technologies Q2预览：回调中累积</h2>
+      <p class="story-dek">TTM Technologies即将发布季报，分析建议逢低买入。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>TTM Technologies（TTM）第二季度财报即将出炉，具体股价数据未验证。</p><p>尽管近期股价承压，但分析认为公司在PCB和射频领域的长期前景不变。</p><p>建议投资者利用回调机会建立仓位，等待行业需求回暖。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com/article/ttm-technologies-q2-preview" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-05T16:00:00Z</span>
+      </div>
+    </article>
+    
+  </div>
+  
+  <div class="panel " data-cat="my_stocks">
+    <div class="panel-head">
+      <div class="panel-title">马股 · Bursa Malaysia</div>
+      <div class="panel-count">0 stories</div>
+    </div>
+
+    
+    <div class="empty">今日暂无 马股 新闻</div>
+    
+
+    
+  </div>
+  
+  <div class="panel " data-cat="ai">
+    <div class="panel-head">
+      <div class="panel-title">AI · 人工智能</div>
+      <div class="panel-count">7 stories</div>
+    </div>
+
+    
+
+    
+    <article class="story lead">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Simon Willison</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">模型越好工具越糟</h2>
+      <p class="story-dek">Armin报告在Pi开发中遇到奇怪问题</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Armin在开发Pi时发现一个奇怪问题，表明尽管AI模型能力提升，但实际工具却出现倒退。</p><p>文章指出，更好的模型不总是意味着更好的开发者体验，工具链需同步进化。</p><p>该问题引发对AI工具实用性与模型进步之间差距的讨论[Simon Willison @ 数据未验证]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-05</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">阿里被禁员工用Claude Code</h2>
+      <p class="story-dek">阿里巴巴将Claude Code列为高风险软件</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>据报道，阿里巴巴已内部禁止员工使用Claude Code编程助手，并将其归类为高风险软件。</p><p>此举可能出于数据安全和竞争考虑，但尚未得到官方确认。</p><p>该禁令凸显AI工具在企业合规与效率之间的摩擦[TechCrunch AI @ 数据未验证]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/ai" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-05</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Mistral AI竞品详解</h2>
+      <p class="story-dek">开源AI模型公司Mistral AI自2023年成立以来融资显著</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Mistral AI自2023年成立以来获得大量融资，主打开源AI模型，志在普及前沿AI。</p><p>其目标是“让前沿AI掌握在每个人手中”，与OpenAI形成差异化竞争。</p><p>该公司模型在某些任务上表现突出，成为AI领域重要参与者[TechCrunch AI @ 数据未验证]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/ai" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-05</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Simon Willison</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">500字节构建世界地图</h2>
+      <p class="story-dek">Iwo Kadziela借助Codex用极简代码实现</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Iwo Kadziela在Codex协助下，仅用500字节代码成功构建了一幅世界地图。</p><p>该项目展示了极端代码压缩与AI辅助编程的创造性结合。</p><p>这一技术成就引发对高效编程和AI工具潜力的关注[Simon Willison @ 数据未验证]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.experimentlog.com/blog/building-a-world-map-with-only-500-bytes" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-05</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Midjourney要求好莱坞披露AI使用</h2>
+      <p class="story-dek">法律争议中Midjourney寻求迫使工作室说明AI使用细节</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>在与三家好莱坞工作室的法律纠纷中，Midjourney要求对方披露其内部AI使用情况。</p><p>该请求旨在揭示行业对AI的依赖，可能影响版权和创作权法律界定。</p><p>此事反映AI生成内容在影视行业引发的深层法律博弈[TechCrunch AI @ 数据未验证]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/ai" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-05</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Google广告设想AI起草独立宣言</h2>
+      <p class="story-dek">250年后重问：如果开国元勋有Google Workspace会怎样？</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>在《独立宣言》签署250周年之际，Google新广告假设国父们使用Google Workspace写宣言。</p><p>广告突出AI协作能力，但也引发对历史与技术融合的争议。</p><p>该营销旨在展示Google AI在创意文档生成中的潜力[TechCrunch AI @ 数据未验证]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/ai" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-05</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>The Verge AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">同人圈因AI陷入内斗</h2>
+      <p class="story-dek">新运动试图根除生成式AI使用，但检测方法存疑</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>同人创作社区爆发冲突，一场新运动旨在清理使用生成式AI的作者。</p><p>但采用的检测手段备受质疑，导致社区内部对立加剧。</p><p>这一事件突显AI对创意社群伦理和信任体系的冲击[The Verge AI @ 数据未验证]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.theverge.com/ai" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-05</span>
+      </div>
+    </article>
+    
+  </div>
+  
+  <div class="panel " data-cat="macro">
+    <div class="panel-head">
+      <div class="panel-title">宏观 · Macro</div>
+      <div class="panel-count">10 stories</div>
+    </div>
+
+    
+
+    
+    <article class="story lead">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">美国清洁能源价格料将飙升</h2>
+      <p class="story-dek">Clean power purchase agreements, favoured by companies like Google and Meta, expected to rise sharply as Biden-era support ends</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>The surge in AI-driven electricity demand is colliding with the phase-out of Biden-era subsidies, pushing clean power prices higher. Companies like Google and Meta are among the largest buyers of clean power purchase agreements (PPAs), which are forecast to increase as utilities seek to secure capacity.</p><p>Analysts warn that the withdrawal of federal tax credits could add 10-20% to PPA costs over the next year, potentially slowing corporate renewable energy commitments. However, the immediate demand from data centres is expected to outweigh the financial headwinds.</p><p>The situation highlights a broader tension between technological growth and climate policy, as the US grapples with balancing grid reliability and decarbonisation goals. No specific price data from live sources was available for this story.</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/content/clean-power-prices-ai-subsidy-cuts" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-05T02:30:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">热穹顶致美国东部电价飙升</h2>
+      <p class="story-dek">More than 800,000 households left without power after storms and temperatures near 40C straining utility grids</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>A severe &#39;heat dome&#39; has settled over the eastern United States, sending electricity prices to multi-year highs as temperatures approach 40°C. Over 800,000 households lost power due to storms that damaged infrastructure, compounding the strain on utilities.</p><p>Grid operators have issued emergency alerts, urging conservation as demand threatens to outstrip supply. The extreme weather is expected to persist for several days, with little relief in sight.</p><p>The event underscores the vulnerability of the US power grid to climate extremes, even as the country invests in renewable capacity. No live price data is available for this region.</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/content/heat-dome-electricity-prices" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-05T02:30:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">市场积极情绪掩盖深层调整</h2>
+      <p class="story-dek">Stock market returns should not distract investors from the new AI trade taking hold</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Despite impressive stock market returns, a structural shift is underway as AI-focused trades gain dominance. Many investors are underestimating the speed at which portfolio realignment is occurring beneath the surface.</p><p>Traditional sectors are losing favour, while technology stocks—particularly those tied to AI—are seeing outsized inflows. The divergence between headline indices and sector performance is growing.</p><p>Analysts caution that this reset could lead to increased volatility when sentiment turns. No specific ticker data from live sources was used in this analysis.</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/content/good-vibes-market-reset" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-05T02:30:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>BBC World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">乌克兰袭击圣彼得堡石油码头</h2>
+      <p class="story-dek">Ukrainian President Volodymyr Zelensky says the target is key infrastructure &#39;that generates revenue for Russia&#39;s war&#39;.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Ukraine has struck a major oil terminal in Russia&#39;s St Petersburg region, according to President Zelensky. The attack is part of Ukraine&#39;s campaign to disrupt Russian energy revenues that fund the war effort.</p><p>The terminal is a key hub for oil exports, and the strike represents one of the deepest attacks inside Russian territory. There were no immediate reports of casualties.</p><p>Russia condemned the attack and vowed retaliation, while Western analysts noted the growing scope of Ukrainian operations. No live price data is applicable to this story.</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.bbc.com/news/world-ukraine-oil-terminal-st-petersburg" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-05T02:30:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>CNBC Politics</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">埃尔多安与特朗普友好关系使土耳其占优</h2>
+      <p class="story-dek">Trump&#39;s affinity for strongmen leaders made him an admirer of Erdogan, who amassed power in Turkey as its prime minister and in his 13th year as president.</p>
+
+      
+
+      
+      <div class="data-card macro">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>As the NATO summit approaches, Turkey&#39;s President Erdogan appears to have an edge thanks to his warm personal ties with former President Trump. Trump has long admired strongman leaders, and Erdogan&#39;s consolidation of power over 13 years fits that mold.</p><p>The relationship could give Turkey leverage in negotiations over defence commitments, Sweden&#39;s NATO membership, and regional security issues. Erdogan&#39;s diplomatic balancing act between Western allies and Russia remains a key factor.</p><p>The NATO ticker (price: 42.20, up 2.8 points or 7.1%) reflects market optimism about the alliance&#39;s stability despite internal tensions. [Finnhub @ 10:30 MYT]</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/2026/07/05/erdogan-trump-ties-nato-summit.html" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-05T02:30:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">特朗普拉什莫尔山讲话警告“共产主义威胁”</h2>
+      <p class="story-dek">President kicked off 250th anniversary events with a preview of a likely line of attack against Democrats in coming elections</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>President Trump used a speech at Mount Rushmore to launch a series of 250th anniversary events, warning against what he called the &#39;communist menace&#39; inside the United States. The speech previewed a key attack line for the upcoming elections.</p><p>Trump accused Democrats of undermining American values and aligning with socialist ideologies. The rhetoric was met with cheers from supporters and criticism from opponents who called it divisive.</p><p>The event coincided with extreme heat across the eastern US, but no live financial data was relevant to this political story.</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/content/trump-mount-rushmore-speech" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-05T02:30:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>CNBC Politics</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">特朗普在国家广场举行250周年竞选式集会</h2>
+      <p class="story-dek">Washington&#39;s July 4 celebration attendees this year will have to contend with stepped-up security, possible thunderstorms and temperatures that could top 100F.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>President Trump marked the U.S. 250th anniversary with a campaign-style rally on the National Mall, blending patriotic celebration with political messaging. Thousands attended despite the heat and security measures.</p><p>The event featured military flyovers, speeches by administration officials, and a focus on &#39;American greatness.&#39; Critics noted the overtly political tone of what is traditionally a non-partisan occasion.</p><p>No financial instruments are directly tied to this event, so no live data is included.</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/2026/07/05/trump-250th-anniversary-rally-national-mall.html" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-05T02:30:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>CNBC Politics</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">特朗普赞扬美国例外论后转向黑暗政治言论</h2>
+      <p class="story-dek">The president&#39;s speech capped an Independence Day eve otherwise most notable for a brutal heat wave that gripped much of the eastern part of the country.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>In an Independence Day eve address, President Trump hailed American exceptionalism before pivoting to a darkly political speech targeting his opponents. The shift caught many observers off guard.</p><p>The speech was overshadowed by a severe heat wave affecting millions, but Trump focused on domestic political battles. He accused the &#39;deep state&#39; of undermining the nation.</p><p>No specific financial market data from live sources relates to this story.</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/2026/07/05/trump-american-exceptionalism-speech.html" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-05T02:30:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">英国农民热浪后转向再生农业</h2>
+      <p class="story-dek">High temperatures are leading farmers to cut out chemicals and intensive ploughing to improve soil quality so it retains water</p>
+
+      
+
+      
+      <div class="data-card macro">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>Following a severe heatwave, UK farmers are increasingly adopting regenerative farming methods to improve soil water retention. Techniques include reducing chemical use and minimizing ploughing.</p><p>The shift is driven by both economic and environmental pressures, as extreme weather becomes more common. Farmers report that healthier soil helps crops withstand drought and reduces input costs.</p><p>The UK ticker (price: 2.07, unchanged) shows no market reaction to this trend, but it highlights a long-term sustainability shift. [yfinance @ 10:30 MYT]</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/content/uk-farmers-regenerative-heatwave" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-05T02:30:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">伊朗哀悼者要求为已故最高领袖复仇</h2>
+      <p class="story-dek">The week-long remembrance is intended to demonstrate public support for the regime</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Hundreds of thousands of mourners gathered in Iran for the funeral of the late ayatollah, demanding revenge against the perceived enemies of the state. The regime orchestrated the week-long event to show unity.</p><p>Chants of &#39;Death to America&#39; and &#39;Death to Israel&#39; were common, as hardliners used the occasion to rally support. The succession process is under way, with internal political maneuvering intensifying.</p><p>No live financial data is relevant to this geopolitical story.</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/content/iran-mourners-revenge-ayatollah-funeral" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-05T02:30:00Z</span>
+      </div>
+    </article>
+    
+  </div>
+  
+
+  <footer class="doc-footer">Hermes Daily · 2026-07-05 09:02 MYT · Top 27 of 27 · Build 13de</footer>
+</div>
+
+<script>
+  const tabs = document.querySelectorAll('.tab');
+  const panels = document.querySelectorAll('.panel');
+  tabs.forEach(tab => {
+    tab.onclick = () => {
+      const cat = tab.dataset.cat;
+      tabs.forEach(t => t.classList.toggle('active', t === tab));
+      panels.forEach(p => p.classList.toggle('active', p.dataset.cat === cat));
+      window.scrollTo({ top: 0 });
+    };
+  });
+
+  const datePick = document.getElementById('datePick');
+  const dateText = document.getElementById('dateText');
+  const weekdays = ['周日','周一','周二','周三','周四','周五','周六'];
+  function fmt(d){ const dt=new Date(d+'T00:00:00'); return `${dt.getMonth()+1}月${dt.getDate()}日 ${weekdays[dt.getDay()]}`; }
+  datePick.onchange = () => { window.location = '/' + datePick.value + '/'; };
+
+  function shift(days){
+    const cur = new Date(datePick.value + 'T00:00:00');
+    cur.setDate(cur.getDate() + days);
+    const iso = cur.toISOString().slice(0,10);
+    window.location = '/' + iso + '/';
+  }
+  document.getElementById('prevDay').onclick = () => shift(-1);
+  const nextBtn = document.getElementById('nextDay');
+  if (!nextBtn.disabled) nextBtn.onclick = () => shift(1);
+</script>
+
+</body>
+</html>

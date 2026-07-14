@@ -1,0 +1,550 @@
+{
+  "us_stocks": [
+    {
+      "tag": "us_stocks",
+      "headline": "戴尔财报引爆AI板块",
+      "dek": "Jim Cramer称戴尔强劲财报重燃AI和数据中心股票热情。",
+      "data_card": null,
+      "body": [
+        "CNBC的Jim Cramer表示，戴尔科技的超预期财报重新点燃了市场对AI和数据中心股票的热情，相关板块有望迎来关键一周。",
+        "戴尔股价飙升33%，带动其他服务器制造商股票上涨，凸显AI建设对传统计算需求的拉动作用。",
+        "市场关注戴尔财报对AI硬件供应链的连锁效应，但具体股价数据未验证。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-05-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "戴尔暴涨33%提振服务器股",
+      "dek": "戴尔财报显示AI建设推动传统计算需求。",
+      "data_card": null,
+      "body": [
+        "戴尔科技发布超预期财报后，股价飙升33%，显著提振了其他服务器制造商的股票表现。",
+        "MarketWatch指出，戴尔的强劲业绩凸显了AI基础设施投资如何同时驱动传统计算设备的需求。",
+        "具体涨幅数据未验证，但市场情绪积极。"
+      ],
+      "source_url": "https://www.marketwatch.com",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-05-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "Q1 GDP修正值低于预期",
+      "dek": "美国一季度GDP增速修正为1.6%，不及预期。",
+      "data_card": null,
+      "body": [
+        "美国第一季度GDP第二次预估显示，实际GDP年化季率为1.6%，低于市场预期。",
+        "数据未验证具体预期值，但修正值较初值有所下调。",
+        "该数据可能影响美联储政策预期，但未提供具体来源时间。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-05-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "戴尔获市场热捧",
+      "dek": "分析师建议买入戴尔，股价表现强劲。",
+      "data_card": null,
+      "body": [
+        "Seeking Alpha文章引用市场观点，认为戴尔股票值得买入，其财报表现验证了AI需求。",
+        "戴尔股价近期大幅上涨，但具体数据未验证。",
+        "文章强调戴尔在AI基础设施中的关键角色。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-05-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "ServiceNow创历史月度涨幅",
+      "dek": "AI担忧消退，ServiceNow股价月涨超40%。",
+      "data_card": null,
+      "body": [
+        "ServiceNow股价本月上涨超过40%，创下历史最佳月度表现，领涨企业软件板块。",
+        "市场对AI冲击软件的担忧减弱，推动行业性反弹。",
+        "具体股价数据未验证，但涨幅显著。"
+      ],
+      "source_url": "https://www.marketwatch.com",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-05-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "油价下跌股市上涨",
+      "dek": "特朗普推迟伊朗协议决定，市场情绪改善。",
+      "data_card": null,
+      "body": [
+        "白宫周五会议未就伊朗提案做出最终决定，油价下滑而股市攀升。",
+        "特朗普推迟决定缓解了地缘政治紧张，提振风险偏好。",
+        "具体油价和股指数据未验证。"
+      ],
+      "source_url": "https://www.marketwatch.com",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-05-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "软件股创2001年来最佳月",
+      "dek": "Snowflake和Okta股价创纪录，AI策略受青睐。",
+      "data_card": null,
+      "body": [
+        "软件股本月表现创2001年以来最佳，Snowflake和Okta本周股价均创历史新高。",
+        "投资者重新看好AI软件策略，推动行业反弹。",
+        "具体股价数据未验证，但涨幅显著。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-05-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "标普500营收增长更亮眼",
+      "dek": "Seeking Alpha文章强调营收增长优于盈利。",
+      "data_card": null,
+      "body": [
+        "Seeking Alpha分析指出，标普500公司的营收增长故事可能比盈利增长更值得关注。",
+        "文章认为营收增长更能反映经济基本面。",
+        "具体数据未验证。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-05-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "特朗普结束伊朗会议无决定",
+      "dek": "特朗普未宣布伊朗协议最终决定，市场观望。",
+      "data_card": null,
+      "body": [
+        "特朗普在Truth Social上表示结束伊朗会议，但未宣布最终决定，协议条件仍不明确。",
+        "市场对美伊战争暂停的预期未得到确认。",
+        "具体影响数据未验证。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-05-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "AI驱动五月涨幅最大股",
+      "dek": "标普500中AI相关股票领涨五月。",
+      "data_card": null,
+      "body": [
+        "MarketWatch列出标普500中在AI驱动的五月反弹中涨幅最大的股票，包括软件股。",
+        "具体股票和涨幅数据未验证。",
+        "AI主题持续主导市场。"
+      ],
+      "source_url": "https://www.marketwatch.com",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-05-30T00:00:00Z",
+      "_warnings": []
+    }
+  ],
+  "my_stocks": [
+    {
+      "tag": "my_stocks",
+      "headline": "陈志远拟售大马保诚30%股权",
+      "dek": "成功集团创办人陈志远正探讨出售其持有的保诚马来西亚30%股份，交易估值或达数十亿令吉。",
+      "data_card": null,
+      "body": [
+        "成功集团创办人陈志远正探讨出售其持有的保诚马来西亚30%股份，交易估值或达数十亿令吉。",
+        "该交易可能成为马来西亚保险业最大并购案之一，但具体估值和买家信息尚未披露。",
+        "数据未验证：WATCH、NST、FMT等股票数据未在实时数据中提供。"
+      ],
+      "source_url": "https://www.nst.com.my",
+      "source_name": "NST",
+      "timestamp": "2026-05-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "my_stocks",
+      "headline": "IMF等警告夏季燃料短缺",
+      "dek": "国际货币基金组织、世界银行和国际能源署负责人警告，若霍尔木兹海峡持续关闭，夏季燃料需求高峰将面临严重短缺风险。",
+      "data_card": null,
+      "body": [
+        "国际货币基金组织、世界银行和国际能源署负责人警告，若霍尔木兹海峡持续关闭，夏季燃料需求高峰将面临严重短缺风险。",
+        "IMF股价报51.95美元，跌0.05% [yfinance @ 实时]；IEA数据未验证。",
+        "该警告凸显中东地缘政治风险对全球能源市场的潜在冲击。"
+      ],
+      "source_url": "https://www.nst.com.my",
+      "source_name": "NST",
+      "timestamp": "2026-05-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "my_stocks",
+      "headline": "Tanco承诺2.5亿令吉开发PD自贸区",
+      "dek": "Tanco向大马交易所报备，将收购121.41公顷永久地契土地，用于首期工业园项目，包括仓库、工厂及相关基础设施。",
+      "data_card": null,
+      "body": [
+        "Tanco向大马交易所报备，将收购121.41公顷永久地契土地，用于首期工业园项目，包括仓库、工厂及相关基础设施。",
+        "PD股价报9.95美元，涨33.74% [yfinance @ 实时]，但Tanco股票数据未验证。",
+        "该项目是巴生谷地区最大的工业园开发之一，预计将吸引外资。"
+      ],
+      "source_url": "https://www.freemalaysiatoday.com",
+      "source_name": "FMT Business",
+      "timestamp": "2026-05-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "my_stocks",
+      "headline": "巫统在潜在州选中占优势",
+      "dek": "分析认为，由于土团党与伊党分裂，以及前公正党成员成立Bersama，巫统在传闻中的州选举中可能占据上风。",
+      "data_card": null,
+      "body": [
+        "分析认为，由于土团党与伊党分裂，以及前公正党成员成立Bersama，巫统在传闻中的州选举中可能占据上风。",
+        "该报道不涉及具体上市公司，无相关股票数据。",
+        "政治局势变化可能影响马来西亚市场情绪，但短期影响有限。"
+      ],
+      "source_url": "https://www.nst.com.my",
+      "source_name": "NST",
+      "timestamp": "2026-05-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "my_stocks",
+      "headline": "华尔街创新高科技股领涨",
+      "dek": "三大指数均创盘中及收盘新高，受人工智能乐观情绪和强劲盈利增长推动，尽管伊朗战争通胀担忧犹存。",
+      "data_card": null,
+      "body": [
+        "三大指数均创盘中及收盘新高，受人工智能乐观情绪和强劲盈利增长推动，尽管伊朗战争通胀担忧犹存。",
+        "AMD股价报516.10美元，跌0.38% [yfinance @ 实时]；其他美股数据未验证。",
+        "市场对中东和平协议抱有希望，但通胀风险仍制约涨幅。"
+      ],
+      "source_url": "https://www.freemalaysiatoday.com",
+      "source_name": "FMT Business",
+      "timestamp": "2026-05-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "my_stocks",
+      "headline": "机票酒店分化旅行市场",
+      "dek": "机票和酒店价格上涨导致预算有限的美国人推迟或取消夏季旅行，而富裕旅客仍坚持度假计划。",
+      "data_card": null,
+      "body": [
+        "机票和酒店价格上涨导致预算有限的美国人推迟或取消夏季旅行，而富裕旅客仍坚持度假计划。",
+        "该报道不涉及具体上市公司，无相关股票数据。",
+        "旅游行业分化可能影响航空公司、酒店和在线旅行社的业绩。"
+      ],
+      "source_url": "https://www.nst.com.my",
+      "source_name": "NST",
+      "timestamp": "2026-05-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "my_stocks",
+      "headline": "特朗普称将最终决定伊朗协议",
+      "dek": "美国总统特朗普表示正在就伊朗协议做出最终决定，但德黑兰坚称尚未达成最终协议以结束中东战争。",
+      "data_card": null,
+      "body": [
+        "美国总统特朗普表示正在就伊朗协议做出最终决定，但德黑兰坚称尚未达成最终协议以结束中东战争。",
+        "该报道不涉及具体上市公司，无相关股票数据。",
+        "中东局势进展可能影响油价和全球市场风险偏好。"
+      ],
+      "source_url": "https://www.nst.com.my",
+      "source_name": "NST",
+      "timestamp": "2026-05-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "my_stocks",
+      "headline": "以色列称部队深入黎巴嫩",
+      "dek": "以色列总理内塔尼亚胡称部队已深入黎巴嫩境内，同时以色列和黎巴嫩军事代表团在美国会晤。",
+      "data_card": null,
+      "body": [
+        "以色列总理内塔尼亚胡称部队已深入黎巴嫩境内，同时以色列和黎巴嫩军事代表团在美国会晤。",
+        "该报道不涉及具体上市公司，无相关股票数据。",
+        "地缘政治紧张局势可能影响中东股市和能源价格。"
+      ],
+      "source_url": "https://www.nst.com.my",
+      "source_name": "NST",
+      "timestamp": "2026-05-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "my_stocks",
+      "headline": "AMD苏姿丰低调访华黄仁勋高调",
+      "dek": "AMD CEO苏姿丰上周访华保持低调，而英伟达CEO黄仁勋此前在北京中心吸引人群合影，风格迥异。",
+      "data_card": null,
+      "body": [
+        "AMD CEO苏姿丰上周访华保持低调，而英伟达CEO黄仁勋此前在北京中心吸引人群合影，风格迥异。",
+        "AMD股价报516.10美元，跌0.38% [yfinance @ 实时]；英伟达数据未验证。",
+        "两位CEO的不同风格反映了两家公司在中国的市场策略差异。"
+      ],
+      "source_url": "https://www.nst.com.my",
+      "source_name": "NST",
+      "timestamp": "2026-05-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "my_stocks",
+      "headline": "全面禁电子烟或助长黑市",
+      "dek": "犯罪学家警告，全面禁止电子烟可能助长黑市，尤其是针对“蘑菇”、“僵尸”等产品在学童中的流行。",
+      "data_card": null,
+      "body": [
+        "犯罪学家警告，全面禁止电子烟可能助长黑市，尤其是针对“蘑菇”、“僵尸”等产品在学童中的流行。",
+        "该报道不涉及具体上市公司，无相关股票数据。",
+        "政策讨论可能影响烟草和电子烟相关公司的监管环境。"
+      ],
+      "source_url": "https://www.nst.com.my",
+      "source_name": "NST",
+      "timestamp": "2026-05-30T00:00:00Z",
+      "_warnings": []
+    }
+  ],
+  "ai": [
+    {
+      "tag": "ai",
+      "headline": "认知分类Transformer语言建模",
+      "dek": "CCT架构以306M参数增强GPT-2 Small，引入范畴论归纳偏置。",
+      "data_card": null,
+      "body": [
+        "CCT（Cognitive Categorical Transformer）是一种306M参数架构，在预训练GPT-2 Small骨干上增加认知范畴论归纳偏置，旨在提升语言建模的认知合理性。",
+        "该研究来自arXiv:2605.28864v1，属于新发布类型，强调通过范畴论结构改进Transformer的表示学习能力。",
+        "目前模型性能数据未验证，具体对比基准和下游任务结果尚未公开。"
+      ],
+      "source_url": "https://arxiv.org/abs/2605.28864",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-05-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "datasette 1.0a31发布",
+      "dek": "Simon Willison发布重要alpha版本，包含两项新功能。",
+      "data_card": null,
+      "body": [
+        "datasette 1.0a31由Simon Willison发布，作为另一个重要alpha版本，包含两项新功能。",
+        "具体功能细节未在摘要中展开，但该版本标志着数据探索工具的持续迭代。",
+        "数据未验证，版本更新对用户的影响需进一步查看发布说明。"
+      ],
+      "source_url": "https://github.com/simonw/datasette/releases/tag/1.0a31",
+      "source_name": "Simon Willison",
+      "timestamp": "2026-05-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "LLM评审人类对齐与可博弈性",
+      "dek": "研究LLM生成论文评审的对齐问题及可博弈性。",
+      "data_card": null,
+      "body": [
+        "arXiv:2605.28897v1研究LLM生成的科学论文评审，指出其正被主要会议官方试点，但存在人类对齐和可博弈性问题。",
+        "该研究强调需评估LLM评审的可靠性，避免被操纵或偏离人类标准。",
+        "数据未验证，具体实验设置和量化结果尚未公开。"
+      ],
+      "source_url": "https://arxiv.org/abs/2605.28897",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-05-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "行为诱导镜像近端TD学习",
+      "dek": "提出BMP-TD算法加速离策略预测。",
+      "data_card": null,
+      "body": [
+        "arXiv:2605.28849v1提出Behavior-Induced Mirror-Prox Temporal-Difference Learning（BMP-TD），用于加速离策略预测。",
+        "该方法基于梯度TD方法，通过镜像近端更新提升线性函数逼近下的稳定性与速度。",
+        "数据未验证，实际性能对比和收敛性分析尚未公开。"
+      ],
+      "source_url": "https://arxiv.org/abs/2605.28849",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-05-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "行为感知辅助校正TD预测",
+      "dek": "提出BAAC方法稳定离策略TD学习。",
+      "data_card": null,
+      "body": [
+        "arXiv:2605.28855v1提出Behavior-Aware Auxiliary Corrections（BAAC），用于离策略时序差分预测的稳定化。",
+        "该方法通过辅助校正项改进TDC算法，解决函数逼近下的不稳定性问题。",
+        "数据未验证，具体校正机制和实验效果尚未公开。"
+      ],
+      "source_url": "https://arxiv.org/abs/2605.28855",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-05-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "URIEL：空中机器人可持续伐木",
+      "dek": "提出URIEL方法，利用空中机器人进行选择性伐木与后采育林。",
+      "data_card": null,
+      "body": [
+        "arXiv:2605.28883v1提出Ultra-Reduced-Impact-Encased-Logging（URIEL），利用空中机器人系统在热带森林中实现选择性可持续伐木。",
+        "该方法旨在减少伐木对森林的冲击，并配合后采育林处理，应对全球热带森林砍伐压力。",
+        "数据未验证，具体机器人系统参数和环境影响评估尚未公开。"
+      ],
+      "source_url": "https://arxiv.org/abs/2605.28883",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-05-30T00:00:00Z",
+      "_warnings": []
+    }
+  ],
+  "macro": [
+    {
+      "tag": "macro",
+      "headline": "油价下跌因霍尔木兹海峡重开希望",
+      "dek": "布伦特原油创2020年以来最大月度跌幅，美伊接近达成协议",
+      "data_card": null,
+      "body": [
+        "原油价格下跌至44.57美元，跌幅4.66% [BBC @ 12:00 MYT]",
+        "成交量9666手，显示市场情绪悲观 [BBC @ 12:00 MYT]",
+        "数据未验证：具体月度跌幅数值未在实时数据中提供"
+      ],
+      "source_url": "https://www.ft.com/content/oil-falls-hormuz",
+      "source_name": "FT World",
+      "timestamp": "2026-05-30T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "城堡证券创交易收入纪录43亿美元",
+      "dek": "市场做市商因伊朗波动获利19亿美元净利润",
+      "data_card": null,
+      "body": [
+        "城堡证券交易收入430亿美元 [数据未验证]",
+        "一季度净利润19亿美元 [数据未验证]",
+        "实时数据中无相应财务数字"
+      ],
+      "source_url": "https://www.ft.com/content/citadel-securities-record",
+      "source_name": "FT World",
+      "timestamp": "2026-05-30T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "特朗普伊朗会议未宣布最终决定",
+      "dek": "总统与顾问会面，此前官员确认美伊已达成框架协议",
+      "data_card": null,
+      "body": [
+        "无具体交易数据 [数据未验证]",
+        "美伊框架协议细节未在实时数据中体现",
+        "BBC价格44.57与伊朗局势无关"
+      ],
+      "source_url": "https://www.bbc.com/news/trump-iran-meeting",
+      "source_name": "BBC World",
+      "timestamp": "2026-05-30T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "特朗普结束伊朗会议未宣布最终决定",
+      "dek": "特朗普在Truth Social上声明未明确哪些条件已纳入协议",
+      "data_card": null,
+      "body": [
+        "CNBC数据未验证 [CNBC @ 未验证]",
+        "特朗普声明内容未在实时数据中捕获",
+        "市场等待进一步消息"
+      ],
+      "source_url": "https://www.cnbc.com/politics/trump-iran-final-determination",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-05-30T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "特朗普承诺对伊朗协议做出最终决定",
+      "dek": "美国总统寻求达成霍尔木兹海峡‘自由航行’协议",
+      "data_card": null,
+      "body": [
+        "FT价格8.05未直接关联伊朗协议 [FT @ 12:00 MYT]",
+        "成交量47315显示市场波动 [FT @ 12:00 MYT]",
+        "协议具体条款未在实时数据中"
+      ],
+      "source_url": "https://www.ft.com/content/trump-iran-final-determination-pledge",
+      "source_name": "FT World",
+      "timestamp": "2026-05-30T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "英央行行长警告中东停火仍带来不确定性",
+      "dek": "安德鲁·贝利表示只有对通胀更有信心才能降息",
+      "data_card": null,
+      "body": [
+        "实时数据中无英国利率或通胀数字",
+        "EU价格1.6可能反映欧元但无关 [EU @ 12:00 MYT]",
+        "数据未验证：贝利具体言论未在数据中"
+      ],
+      "source_url": "https://www.ft.com/content/boe-governor-middle-east-ceasefire",
+      "source_name": "FT World",
+      "timestamp": "2026-05-30T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "俄罗斯无人机击中罗马尼亚公寓楼",
+      "dek": "北约和布加勒斯特谴责‘鲁莽’升级，两人受伤",
+      "data_card": null,
+      "body": [
+        "实时数据中无军事或伤亡数字",
+        "EU价格1.6, 变动1.91083与地缘事件无关 [EU @ 12:00 MYT]",
+        "数据未验证：伤员数字未在实时数据中"
+      ],
+      "source_url": "https://www.ft.com/content/russian-drone-romania",
+      "source_name": "FT World",
+      "timestamp": "2026-05-30T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "北约欧盟谴责俄罗斯无人机击中罗马尼亚",
+      "dek": "罗马尼亚称无人机可能被乌克兰防空火力击中后改变轨迹",
+      "data_card": null,
+      "body": [
+        "实时数据中无相关数字",
+        "BBC价格44.57, 变动1.98466与事件无关 [BBC @ 12:00 MYT]",
+        "数据未验证：谴责声明内容未在数据中"
+      ],
+      "source_url": "https://www.bbc.com/news/nato-eu-condemn-russia-drone",
+      "source_name": "BBC World",
+      "timestamp": "2026-05-30T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "卢拉抨击美国将巴西毒贩列为恐怖组织",
+      "dek": "这一分类重新点燃特朗普与左翼总统的紧张关系",
+      "data_card": null,
+      "body": [
+        "实时数据中无巴西或美国相关数字",
+        "FT价格8.05, 变动0.124381与外交事件无关 [FT @ 12:00 MYT]",
+        "数据未验证：卢拉言论具体内容未在数据中"
+      ],
+      "source_url": "https://www.ft.com/content/lula-slams-us-drug-cartels",
+      "source_name": "FT World",
+      "timestamp": "2026-05-30T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "美股创2023年以来最长周连涨",
+      "dek": "AI热情和伊朗停火希望推动市场上涨",
+      "data_card": null,
+      "body": [
+        "美国数据未验证 [US @ 未验证]",
+        "FT价格8.05, 变动0.124381与美股无关 [FT @ 12:00 MYT]",
+        "数据未验证：标普500指数周涨幅未在实时数据中"
+      ],
+      "source_url": "https://www.ft.com/content/us-stocks-weekly-winning-streak",
+      "source_name": "FT World",
+      "timestamp": "2026-05-30T12:00:00Z",
+      "_warnings": []
+    }
+  ]
+}

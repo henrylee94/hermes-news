@@ -1,0 +1,493 @@
+{
+  "us_stocks": [
+    {
+      "tag": "us_stocks",
+      "headline": "SpaceX估值2260亿脆弱",
+      "dek": "华尔街对SpaceX的估值假设存在风险，需谨慎看待。",
+      "data_card": null,
+      "body": [
+        "SpaceX上市后估值达2260亿美元，但营收远不及科技巨头，市场对其高估值存疑。",
+        "公司尚未盈利，依赖政府合同和发射服务，商业可持续性待验证。",
+        "投资者需关注其技术突破和订单增长，当前估值可能过度乐观。"
+      ],
+      "source_url": "https://seekingalpha.com/article/spacex-wall-streets-226-billion-assumption-is-frail",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-14T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "SpaceX上市市值达2万亿",
+      "dek": "SpaceX纳斯达克首日成美国第六大公司，营收规模远小于科技巨头。",
+      "data_card": null,
+      "body": [
+        "SpaceX周五在纳斯达克上市，市值达2万亿美元，成为美国第六大公司。",
+        "尽管营收仅为科技巨头的一小部分，但市场对其增长潜力给予高估值。",
+        "IPO成功标志着私营航天企业进入主流资本市场，但盈利前景仍存不确定性。"
+      ],
+      "source_url": "https://www.cnbc.com/2026/06/14/spacex-historic-ipo.html",
+      "source_name": "CNBC",
+      "timestamp": "2026-06-14T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "SpaceX上市提振市场情绪",
+      "dek": "SpaceX成功上市消除一周焦虑，推动美股反弹。",
+      "data_card": null,
+      "body": [
+        "SpaceX的IPO成功缓解了市场对经济放缓的担忧，上周美股整体上涨。",
+        "投资者对航天和科技板块信心增强，带动相关个股走强。",
+        "市场关注后续财报和美联储政策，短期波动可能加剧。"
+      ],
+      "source_url": "https://www.cnbc.com/2026/06/14/spacex-market-impact.html",
+      "source_name": "CNBC",
+      "timestamp": "2026-06-14T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "SpaceX成信仰而非公司",
+      "dek": "SpaceX的估值已脱离基本面，更像一种市场信仰。",
+      "data_card": null,
+      "body": [
+        "SpaceX的市值远超其财务表现，投资者更多基于对马斯克愿景的信仰。",
+        "公司面临技术风险和竞争压力，高估值可能难以持续。",
+        "长期投资者需警惕泡沫风险，关注实际业务进展。"
+      ],
+      "source_url": "https://seekingalpha.com/article/spacex-belief-system",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-14T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "Kratos股价下跌后买入",
+      "dek": "Kratos Defense股价回调，作者认为提供买入机会。",
+      "data_card": null,
+      "body": [
+        "Kratos Defense股价近期下跌，但公司基本面稳健，国防合同增长。",
+        "无人机和导弹防御业务前景看好，长期需求强劲。",
+        "当前估值合理，建议逢低买入，但需关注政府预算变化。"
+      ],
+      "source_url": "https://seekingalpha.com/article/kratos-defense-buying-dip",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-14T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "代币经济区分AI赢家",
+      "dek": "代币经济模型将决定AI领域赢家与租用者。",
+      "data_card": null,
+      "body": [
+        "AI公司通过代币经济吸引用户和开发者，形成网络效应。",
+        "拥有原生代币的平台更易捕获价值，而依赖第三方者可能沦为租用者。",
+        "投资者需评估代币设计、治理和激励机制，以识别长期赢家。"
+      ],
+      "source_url": "https://seekingalpha.com/article/tokenomics-ai-winners-renters",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-14T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "Alphabet面临变革前夜",
+      "dek": "Alphabet面临AI竞争和监管压力，需做好准备。",
+      "data_card": {
+        "rows": [
+          {
+            "symbol": "GOOGL",
+            "price": 359.68,
+            "change": 0.53,
+            "change_percent": 0.15,
+            "source": "yfinance @ 2026-06-14"
+          }
+        ]
+      },
+      "body": [
+        "Alphabet股价微涨至359.68美元，但AI竞争加剧和反垄断风险上升。",
+        "谷歌搜索业务面临ChatGPT等挑战，云业务增长放缓。",
+        "投资者需关注其AI布局和成本控制，短期波动可能加大。"
+      ],
+      "source_url": "https://seekingalpha.com/article/alphabet-buckle-up",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-14T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "特朗普称周日签伊朗和平协议",
+      "dek": "特朗普宣布周日签署伊朗和平协议，伊朗对时间表持谨慎态度。",
+      "data_card": null,
+      "body": [
+        "特朗普在Truth Social上表示，结束与伊朗战争的协议将于周日签署。",
+        "伊朗方面对时间表表示谨慎，称仍需最终确认。",
+        "协议若达成，可能缓解中东紧张局势，影响油价和国防股。"
+      ],
+      "source_url": "https://www.cnbc.com/2026/06/14/trump-iran-peace-deal-sunday.html",
+      "source_name": "CNBC",
+      "timestamp": "2026-06-14T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "因子分散投资当前重要",
+      "dek": "市场波动加剧，因子分散化策略可降低风险。",
+      "data_card": null,
+      "body": [
+        "当前市场受AI、利率和地缘政治影响，单一因子风险较高。",
+        "通过价值、动量、质量等因子分散，可提升组合稳定性。",
+        "投资者应避免过度集中，定期再平衡以应对变化。"
+      ],
+      "source_url": "https://seekingalpha.com/article/factor-diversification-matters",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-14T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "亚洲货币承压图表解析",
+      "dek": "能源危机、美利率和AI支出导致亚洲货币贬值。",
+      "data_card": null,
+      "body": [
+        "亚洲货币近期大幅贬值，受能源进口成本上升和美元走强影响。",
+        "各国央行干预汇率，但效果有限，AI投资热潮加剧资本外流。",
+        "投资者需关注货币风险，对冲新兴市场敞口。"
+      ],
+      "source_url": "https://www.marketwatch.com/story/asian-currencies-beating-charts",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-06-14T00:00:00Z",
+      "_warnings": []
+    }
+  ],
+  "my_stocks": [],
+  "ai": [
+    {
+      "tag": "anthropic-safety-backfire",
+      "headline": "Anthropic安全警告反致政府禁令",
+      "dek": "政府因国家安全召回最强AI模型，Anthropic表示不满。",
+      "data_card": null,
+      "body": [
+        "Anthropic认为政府基于有限的越狱风险召回商业模型是不合理的。",
+        "政府指令切断Fable 5和Mythos 5的访问。",
+        "该模型部署给数亿用户，引发争议。"
+      ],
+      "source_url": "https://techcrunch.com/2026/06/14/anthropic-safety-warnings-backfire",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-14T14:00:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "gov-directive",
+      "headline": "美国政府令暂停Fable及Mythos",
+      "dek": "Anthropic发布声明，称政府指令要求暂停访问两个最强模型。",
+      "data_card": null,
+      "body": [
+        "Anthropic发布官方声明回应政府指令。",
+        "指令涉及Fable 5和Mythos 5两个模型。",
+        "此事引发业界对AI出口管制的关注。"
+      ],
+      "source_url": "https://simonwillison.net/2026/06/14/statement/",
+      "source_name": "Simon Willison",
+      "timestamp": "2026-06-14T15:00:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "anthropic-cutoff",
+      "headline": "Anthropic切断Fable及Mythos访问",
+      "dek": "政府因国家安全下令，Anthropic被迫切断模型对外访问。",
+      "data_card": null,
+      "body": [
+        "周五晚政府下令Anthropic封锁Fable 5和Mythos 5。",
+        "禁令适用于所有外国，无论是否在美国境内。",
+        "此命令基于国家安全考量。"
+      ],
+      "source_url": "https://theverge.com/2026/06/14/anthropic-fable-mythos-cutoff",
+      "source_name": "The Verge AI",
+      "timestamp": "2026-06-14T16:00:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "amazon-research-anthropic",
+      "headline": "亚马逊研究触发Anthropic模型禁令",
+      "dek": "据WSJ报道，亚马逊的网络安全研究促使白宫发布出口管制令。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "AMZN",
+            "price": 238.55,
+            "change": -1.23
+          }
+        ]
+      },
+      "body": [
+        "亚马逊的网络安全研究部分触发了针对Anthropic的出口管制指令。",
+        "该研究发现了模型的潜在越狱漏洞。",
+        "政府据此要求切断模型访问。"
+      ],
+      "source_url": "https://theverge.com/2026/06/14/amazon-anthropic-fable-ban",
+      "source_name": "The Verge AI",
+      "timestamp": "2026-06-14T17:00:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "amazon-ceo-concerns",
+      "headline": "亚马逊CEO曾提Anthropic模型担忧",
+      "dek": "报道称Andy Jassy可能是安全担忧的源头。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "AMZN",
+            "price": 238.55,
+            "change": -1.23
+          }
+        ]
+      },
+      "body": [
+        "亚马逊CEO Andy Jassy可能向政府提出了对Anthropic模型的担忧。",
+        "这导致政府要求Anthropic切断模型访问。",
+        "目前Anthropic已遵守指令。"
+      ],
+      "source_url": "https://techcrunch.com/2026/06/14/amazon-ceo-anthropic-concerns",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-14T18:00:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "meta-manus-deal",
+      "headline": "Meta据报撤销Manus交易",
+      "dek": "北京要求撤销2亿美元收购，Meta开始解除协议。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "META",
+            "price": 566.98,
+            "change": -0.26
+          }
+        ]
+      },
+      "body": [
+        "北京政府要求Meta撤销对Manus的收购，具体金额数据未验证。",
+        "Meta已开始解除该交易。",
+        "此举反映中美科技监管博弈。"
+      ],
+      "source_url": "https://techcrunch.com/2026/06/14/meta-manus-deal-reversed",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-14T19:00:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "openai-investigation",
+      "headline": "OpenAI面临州检察长调查",
+      "dek": "调查涉及广告政策、健康数据处理等多方面。",
+      "data_card": null,
+      "body": [
+        "多个州的检察长对OpenAI展开调查。",
+        "调查范围包括广告政策和健康数据。",
+        "具体涉事州尚未公布。"
+      ],
+      "source_url": "https://techcrunch.com/2026/06/14/openai-state-ag-investigation",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-14T20:00:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "kpmg-hallucination",
+      "headline": "KPMG因幻觉撤回AI报告",
+      "dek": "AI再次证明在AI话题上不可靠，报告出现虚构内容。",
+      "data_card": null,
+      "body": [
+        "KPMG发布的AI使用报告被发现存在明显幻觉。",
+        "公司已撤回该报告。",
+        "此事凸显AI生成内容的可靠性问题。"
+      ],
+      "source_url": "https://techcrunch.com/2026/06/14/kpmg-ai-report-hallucination",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-14T21:00:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "hollywood-ai-future",
+      "headline": "好莱坞未来不在通用生成AI",
+      "dek": "认为目前生成式AI尚未产出真正电影级的作品。",
+      "data_card": null,
+      "body": [
+        "尽管生成式AI有望革新电影业，但目前尚无真正突破性作品。",
+        "单纯输入提示词无法创造电影级内容。",
+        "未来好莱坞需要更专业的AI工具。"
+      ],
+      "source_url": "https://theverge.com/2026/06/14/hollywood-ai-future",
+      "source_name": "The Verge AI",
+      "timestamp": "2026-06-14T22:00:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "wasm-pypi-pyodide",
+      "headline": "Pyodide 314发布支持WASM Wheels",
+      "dek": "在PyPI发布WASM wheels以便Pyodide使用。",
+      "data_card": null,
+      "body": [
+        "Pyodide 314.0发布，支持在PyPI发布WASM wheels。",
+        "这使得Python包可在浏览器中运行。",
+        "来自Simon Willison的报道。"
+      ],
+      "source_url": "https://simonwillison.net/2026/06/14/pyodide-wasm-wheels",
+      "source_name": "Simon Willison",
+      "timestamp": "2026-06-14T23:00:00+08:00",
+      "_warnings": []
+    }
+  ],
+  "macro": [
+    {
+      "tag": "macro",
+      "headline": "美国通胀影响消费者",
+      "dek": "年通胀率数据未验证，为近期高点",
+      "data_card": null,
+      "body": [
+        "本周图表显示，美国消费者价格指数（CPI）同比涨幅数据未验证，但市场普遍关注其对家庭购买力的影响。",
+        "根据FT World报道，经济学家认为通胀持续高位可能迫使美联储维持紧缩政策（数据未验证），进而影响消费支出。",
+        "分析师指出，消费者信心指数近期波动，但具体数值未从可靠来源确认。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-06-14T12:00:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "如何驯服通胀巨蟒",
+      "dek": "等待式货币政策或重蹈2008覆辙",
+      "data_card": null,
+      "body": [
+        "一篇分析文章指出，当前全球央行采取'观望'策略（数据未验证）可能重复2008年金融危机前的错误。",
+        "FT World评论认为，过晚加息导致通胀预期脱锚，而如今经济数据未验证是否已出现类似风险。",
+        "政策制定者需在通胀与增长间平衡，但具体经济指标尚未从可靠来源更新。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-06-14T12:00:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "特朗普称周日签伊朗协议",
+      "dek": "伊朗对时间表仍持谨慎态度",
+      "data_card": null,
+      "body": [
+        "美国总统特朗普在Truth Social上宣布，结束与伊朗战争的和平协议将于周日签署。",
+        "然而，伊朗方面表示尚未确定确切日期（数据未验证），谈判仍在进行中。",
+        "CNBC Politics报道，白宫官员对协议能否如期达成持乐观态度，但细节未公开。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-06-14T12:00:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "美伊将签协议重开海峡",
+      "dek": "德黑兰称时间尚不确定，巴基斯坦认为停火延期在即",
+      "data_card": null,
+      "body": [
+        "特朗普表示美国与伊朗将于周日签署协议以重新开放霍尔木兹海峡。",
+        "FT World报道，伊朗外交部回应称协议签署时间尚未决定（数据未验证），但巴基斯坦总理表示接近达成停火延期。",
+        "市场对原油供应恢复抱有期望，但具体协议内容仍待确认。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-06-14T12:00:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "特朗普称美伊周日签协议",
+      "dek": "伊朗质疑时间表，称不会在明天签署",
+      "data_card": null,
+      "body": [
+        "BBC World报道，美国总统特朗普声称美伊和平协议将于周日签署，但伊朗方面否认已确定日期。",
+        "伊朗官员表示（数据未验证）当前没有具体时间表，但谈判仍在继续。",
+        "外界分析认为，双方在关键条款上仍有分歧，协议能否按时落地存疑。"
+      ],
+      "source_url": "https://www.bbc.com",
+      "source_name": "BBC World",
+      "timestamp": "2026-06-14T12:00:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "美伊和平协议或在24小时内签署",
+      "dek": "巴基斯坦总理透露时间表，美方官员称可能很快签约",
+      "data_card": null,
+      "body": [
+        "巴基斯坦总理向媒体表示，美国与伊朗的和平协议可能在未来24小时内最终确定。",
+        "CNBC Politics报道，一名特朗普政府高级官员此前称协议签署在即（数据未验证）。",
+        "若协议达成，中东紧张局势将大幅缓解，但细节仍不明确。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-06-14T12:00:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "特朗普将在G7会见中东领导人",
+      "dek": "出席乌克兰会议，参加白宫格斗赛事",
+      "data_card": null,
+      "body": [
+        "CNBC Politics报道，特朗普计划周日出席白宫综合格斗赛事后，于周一前往法国埃维昂参加G7峰会。",
+        "会议期间，他将会见中东国家领导人并参加乌克兰局势专场讨论。",
+        "白宫官员未透露具体议题，但预计能源和地区安全将是重点。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-06-14T12:00:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "投资公司参与委内瑞拉石油争夺",
+      "dek": "特朗普推动百亿美元计划，两家公司成立纳斯达克上市实体",
+      "data_card": null,
+      "body": [
+        "FT World报道，Lionheart Capital和Keo Energy加入特朗普的1000亿美元（数据未验证）委内瑞拉石油资产竞标计划。",
+        "两家公司已成立一家在纳斯达克上市的新公司，专门收购委内瑞拉国家石油公司的资产。",
+        "该计划面临法律和地缘政治风险，但投资者期待制裁解除后的巨大回报。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-06-14T12:00:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "美军空袭击毙委内瑞拉帮派头目",
+      "dek": "特朗普宣布杀死阿拉瓜帮领导人",
+      "data_card": null,
+      "body": [
+        "美国总统特朗普周五宣布，美军发动空袭击毙了委内瑞拉犯罪集团Tren de Aragua的头目Hector Rusthenford Guerrero Flores。",
+        "CNBC Politics报道，特朗普称这次行动是'迅速而致命的打击'，并赞扬了美国军队。",
+        "目前委内瑞拉政府未予置评，该行动可能进一步加剧美委紧张关系。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-06-14T12:00:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "美军空袭击毙委内瑞拉黑帮头目",
+      "dek": "特朗普称安全打击消灭了Niño Guerrero",
+      "data_card": null,
+      "body": [
+        "BBC World报道，美国总统特朗普在社交媒体上宣布，美军在一次打击行动中击毙了委内瑞拉黑帮头目Niño Guerrero。",
+        "特朗普形容这次行动为'迅速而致命'，但没有提供具体细节（数据未验证）。",
+        "这是美国首次公开针对委内瑞拉帮派头目实施军事打击，人道组织担忧平民伤亡。"
+      ],
+      "source_url": "https://www.bbc.com",
+      "source_name": "BBC World",
+      "timestamp": "2026-06-14T12:00:00+08:00",
+      "_warnings": []
+    }
+  ]
+}

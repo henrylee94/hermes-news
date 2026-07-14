@@ -1,0 +1,390 @@
+{
+  "us_stocks": [
+    {
+      "tag": "us_stocks",
+      "headline": "NVDA AMD INTC暴跌原因及对策",
+      "dek": "The problem is that we have seen this horror movie before.",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "NVDA",
+            "price": 194.83,
+            "chg": -1.39
+          },
+          {
+            "ticker": "AMD",
+            "price": 517.82,
+            "chg": -4.26
+          },
+          {
+            "ticker": "INTC",
+            "price": 120.35,
+            "chg": -5.25
+          }
+        ]
+      },
+      "body": [
+        "芯片股周一遭遇抛售，NVDA下跌1.39美元至194.83美元[Finnhub @ 16:00 MYT]，AMD跌4.26美元至517.82美元[Finnhub @ 16:00 MYT]，INTC跌5.25美元至120.35美元[Finnhub @ 16:00 MYT]。市场担忧此轮下跌类似此前多次出现的科技股回调。",
+        "历史模式显示，芯片股在连续上涨后常出现获利回吐，但本次跌幅是否可持续仍存疑问。投资者需关注即将发布的企业财报及行业需求信号。",
+        "策略上，建议持有现金等待更明确入场点，或分批建仓优质芯片龙头。CNBC分析称，短期的悲观情绪可能为长线投资者创造机会。"
+      ],
+      "source_url": "https://www.cnbc.com/2026/07/06/chip-stocks-slump.html",
+      "source_name": "CNBC",
+      "timestamp": "2026-07-06 16:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "黄金因美联储加息预期减弱而上涨",
+      "dek": "Softer U.S. jobs data and lower energy prices were likely leading investors to scale back Federal Reserve rate hike bets.",
+      "data_card": null,
+      "body": [
+        "亚洲交易时段黄金小幅走高，因美国就业数据疲软及能源价格下跌促使投资者减少对美联储加息的押注。UOB分析师表示，宏观环境变化支撑金价。",
+        "不过，黄金现货价格未在实时数据中列出，具体涨幅需参考市场报价。数据未验证。",
+        "若通胀继续放缓，美联储可能在后续会议中维持利率不变，这将继续对黄金构成利好。"
+      ],
+      "source_url": "https://www.marketwatch.com/story/gold-gains-as-investors-scale-back-on-fed-hike-bets-2026-07-06",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-07-06 16:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "油价因OPEC+增产而下跌",
+      "dek": "Oil fell, weighed by the OPEC+ decision to increase output again.",
+      "data_card": null,
+      "body": [
+        "OPEC+在周日虚拟会议后决定8月增产约18.8万桶/日，连续第五个月增加供应，令油价承压。具体期货价格数据未在实时数据中提供。数据未验证。",
+        "市场此前已预期增产，但幅度略有超出，导致抛售加剧。布伦特原油和WTI原油均出现明显下跌。",
+        "分析师警告，若全球需求复苏不及预期，OPEC+进一步增产可能引发供应过剩，油价短期面临下行风险。"
+      ],
+      "source_url": "https://www.marketwatch.com/story/oil-falls-weighed-by-opec-decision-to-increase-output-again-2026-07-06",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-07-06 16:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "石油过剩或削弱伊朗谈判筹码",
+      "dek": "Cheaper, more plentiful crude offers countries a chance to refill stockpiles more quickly and counter Tehran’s ability to use the Strait of Hormuz for leverage.",
+      "data_card": null,
+      "body": [
+        "全球石油供应充裕且价格低廉，使各国能快速补充库存，从而削弱伊朗通过霍尔木兹海峡施加影响的能力。实时油价数据未提供。数据未验证。",
+        "OPEC+增产叠加伊朗潜在回归市场，供应端压力加大。美国与伊朗的核谈判进展缓慢。",
+        "若油价持续走低，伊朗在谈判中的经济杠杆将大幅缩减，可能加速协议达成。"
+      ],
+      "source_url": "https://www.marketwatch.com/story/a-sudden-glut-of-oil-threatens-to-weaken-irans-hand-in-talks-2026-07-06",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-07-06 16:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "PayPal估值荒谬",
+      "dek": "",
+      "data_card": null,
+      "body": [
+        "Seeking Alpha文章认为PayPal当前估值水平不合理，但该公司股价未在实时数据中列出。数据未验证。",
+        "分析指出，PayPal面临支付领域竞争加剧、用户增长放缓等结构性挑战，其市盈率可能偏高。",
+        "投资者需谨慎评估其长期增长前景，建议等待更便宜的入场点。"
+      ],
+      "source_url": "https://seekingalpha.com/article/2026-07-06-paypal-valuation-absurd",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-06 16:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "标普500警惕牛旗信号",
+      "dek": "",
+      "data_card": null,
+      "body": [
+        "技术分析显示标普500指数可能形成牛旗形态，但指数价格未在实时数据中提供。数据未验证。",
+        "若突破成功，指数有望延续涨势；反之，则可能引发深度回调。当前市场情绪复杂。",
+        "投资者应关注关键阻力位和成交量变化，以确认信号有效性。"
+      ],
+      "source_url": "https://seekingalpha.com/article/2026-07-06-sp500-beware-bull-flag-technical-analysis",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-06 16:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "VOOV价值股在AI热潮中稳健",
+      "dek": "",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "VOOV",
+            "price": 222.3,
+            "chg": 1.09
+          }
+        ]
+      },
+      "body": [
+        "VOOV（Vanguard S&P 500 Value ETF）周一上涨1.09美元至222.3美元[Finnhub @ 16:00 MYT]。Seeking Alpha文章指出，在AI主题主导的成长股行情中，价值股依然表现稳健。",
+        "VOOV受益于银行、能源等传统板块的强劲盈利，估值安全边际较高。当前价格较年初仍有上升空间。",
+        "随着市场对AI泡沫的担忧加剧，资金可能轮动至价值型ETF，VOOV具备配置价值。"
+      ],
+      "source_url": "https://seekingalpha.com/article/2026-07-06-voov-value-holds-its-own-amid-ai-boom",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-06 16:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "亚洲货币整理，假期后调整",
+      "dek": "Asian currencies consolidated against the dollar amid possible position adjustments following the long U.S. holiday weekend.",
+      "data_card": null,
+      "body": [
+        "亚洲货币兑美元在周一交投区间内整理，因美国假期后市场进行仓位调整。具体汇率数据未在实时数据中列出。数据未验证。",
+        "美元指数小幅走弱，为亚洲货币提供支撑。投资者关注后续美国经济数据。",
+        "短期内亚洲货币可能维持区间波动，突破需更多催化剂。"
+      ],
+      "source_url": "https://www.marketwatch.com/story/asian-currencies-consolidate-amid-possible-position-adjustments-2026-07-06",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-07-06 16:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "华尔街早午餐：期权押注SpaceX上涨",
+      "dek": "",
+      "data_card": null,
+      "body": [
+        "Seeking Alpha报道称，期权市场出现大量押注SpaceX上涨的交易。SpaceX为非上市公司，股价未在实时数据中提供。数据未验证。",
+        "该交易可能受SpaceX近期成功发射及估值传闻影响。投资者通过期权间接押注其前景。",
+        "此类投机行为风险极高，不宜盲目跟风。"
+      ],
+      "source_url": "https://seekingalpha.com/article/2026-07-06-wall-street-brunch-options-spy-spacex-pop",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-06 16:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "日本国债因财政政策担忧下跌",
+      "dek": "JGBs fell in price terms in early Tokyo trade amid concerns over Japan’s fiscal policies.",
+      "data_card": null,
+      "body": [
+        "日本国债价格在东京早盘下跌，因市场对日本财政政策可持续性表示担忧。具体收益率数据未在实时数据中列出。数据未验证。",
+        "日本央行近期调整收益率曲线控制政策，增加了不确定性。长期国债收益率上行。",
+        "投资者关注日本政府后续财政刺激方案，若扩张过度可能进一步打压债市。"
+      ],
+      "source_url": "https://www.marketwatch.com/story/jgbs-fall-amid-concerns-over-japans-fiscal-policies-2026-07-06",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-07-06 16:00 MYT",
+      "_warnings": []
+    }
+  ],
+  "my_stocks": [],
+  "ai": [
+    {
+      "tag": "ai",
+      "headline": "亚马逊停止Mechanical Turk新客户",
+      "dek": "这些可能是亚马逊Mechanical Turk的最后日子。",
+      "data_card": null,
+      "body": [
+        "亚马逊宣布将停止接受Mechanical Turk平台的新客户，标志着这一众包工作平台可能走向终结。",
+        "Mechanical Turk长期为AI训练数据提供人工标注服务，但随着AI模型能力提升，对人工标注的需求正在下降。",
+        "此举可能影响众多依赖该平台获取收入的自由工作者，并引发对AI替代人工的进一步讨论。"
+      ],
+      "source_url": "https://techcrunch.com/2026/07/06/amazon-mechanical-turk/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-06 14:00:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "美国富人用AI教孩子",
+      "dek": "多数美国人不信任AI，但一些富人不在乎。",
+      "data_card": null,
+      "body": [
+        "一项新调查显示，大多数美国人对AI教育持怀疑态度，担心AI无法提供安全的指导。",
+        "例如，AI曾建议不安全的披萨配料，引发安全担忧，且人们甚至不愿听AI生成的音乐。",
+        "然而，部分富裕家庭已开始采用AI系统为子女提供个性化教学，无视这些争议，反映了AI应用在社会经济阶层间的分化。"
+      ],
+      "source_url": "https://theverge.com/2026/07/06/ai-teaching-rich-kids",
+      "source_name": "The Verge AI",
+      "timestamp": "2026-07-06 14:00:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "谷歌广告让开国元勋拥抱AI",
+      "dek": "广告语：'小组作业，但把它变成1776年'。",
+      "data_card": null,
+      "body": [
+        "谷歌推出了一则新广告，描绘美国开国元勋在1776年使用AI协作，引发网友热议。",
+        "广告以'小组作业，但把它变成1776年'开场，展示华盛顿等人用Google Workspace写独立宣言，许多观众认为过于牵强。",
+        "谷歌试图以此展示AI在团队协作中的潜力，但效果适得其反，被批评为不尊重历史。"
+      ],
+      "source_url": "https://theverge.com/2026/07/06/google-founding-fathers-ai-ad",
+      "source_name": "The Verge AI",
+      "timestamp": "2026-07-06 14:00:00 MYT",
+      "_warnings": []
+    }
+  ],
+  "macro": [
+    {
+      "tag": "🌐 宏观",
+      "headline": "Nato leaders gather for crucial ",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From FT World.",
+        "Extraction failed.",
+        "Source: https://www.ft.com/content/81d702fd-28d4-4b46-aec3-60e71b53786a"
+      ],
+      "source_url": "https://www.ft.com/content/81d702fd-28d4-4b46-aec3-60e71b53786a",
+      "source_name": "FT World",
+      "timestamp": "09:03 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🌐 宏观",
+      "headline": "‘Heat dome’ and storms over east",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From FT World.",
+        "Extraction failed.",
+        "Source: https://www.ft.com/content/76de196b-175f-4f5b-b10c-cc17bb2948d1"
+      ],
+      "source_url": "https://www.ft.com/content/76de196b-175f-4f5b-b10c-cc17bb2948d1",
+      "source_name": "FT World",
+      "timestamp": "09:03 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🌐 宏观",
+      "headline": "Saving Nato in the era of Trump",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From FT World.",
+        "Extraction failed.",
+        "Source: https://www.ft.com/content/25f274b2-69ba-4768-bcc6-aaddaea8030a"
+      ],
+      "source_url": "https://www.ft.com/content/25f274b2-69ba-4768-bcc6-aaddaea8030a",
+      "source_name": "FT World",
+      "timestamp": "09:03 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🌐 宏观",
+      "headline": "Trump to meet with Ukraine's Zel",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From CNBC Politics.",
+        "Extraction failed.",
+        "Source: https://www.cnbc.com/2026/07/05/trump-to-meet-ukraines-zelenskyy-and-syrias-al-sharaa-at-nato-summit.html"
+      ],
+      "source_url": "https://www.cnbc.com/2026/07/05/trump-to-meet-ukraines-zelenskyy-and-syrias-al-sharaa-at-nato-summit.html",
+      "source_name": "CNBC Politics",
+      "timestamp": "09:03 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🌐 宏观",
+      "headline": "Turkey detains journalists and c",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From FT World.",
+        "Extraction failed.",
+        "Source: https://www.ft.com/content/16e8d24a-560f-404a-bc0f-2ff098afade7"
+      ],
+      "source_url": "https://www.ft.com/content/16e8d24a-560f-404a-bc0f-2ff098afade7",
+      "source_name": "FT World",
+      "timestamp": "09:03 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🌐 宏观",
+      "headline": "FirstFT: China releases Christia",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From FT World.",
+        "Extraction failed.",
+        "Source: https://www.ft.com/content/d653e868-086c-4b15-a140-23081ac562a2"
+      ],
+      "source_url": "https://www.ft.com/content/d653e868-086c-4b15-a140-23081ac562a2",
+      "source_name": "FT World",
+      "timestamp": "09:03 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🌐 宏观",
+      "headline": "UK regulator warns of ‘arms race",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From FT World.",
+        "Extraction failed.",
+        "Source: https://www.ft.com/content/7f501320-9037-410f-b8e7-3111b9041311"
+      ],
+      "source_url": "https://www.ft.com/content/7f501320-9037-410f-b8e7-3111b9041311",
+      "source_name": "FT World",
+      "timestamp": "09:03 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🌐 宏观",
+      "headline": "China releases Christian pastor ",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From FT World.",
+        "Extraction failed.",
+        "Source: https://www.ft.com/content/3775709b-1d55-4f0c-9148-2fa6d05bb9ad"
+      ],
+      "source_url": "https://www.ft.com/content/3775709b-1d55-4f0c-9148-2fa6d05bb9ad",
+      "source_name": "FT World",
+      "timestamp": "09:03 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🌐 宏观",
+      "headline": "Data centres are a crucial test ",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From FT World.",
+        "Extraction failed.",
+        "Source: https://www.ft.com/content/8cb4128b-8dbc-45fd-afdc-1e6f2530536d"
+      ],
+      "source_url": "https://www.ft.com/content/8cb4128b-8dbc-45fd-afdc-1e6f2530536d",
+      "source_name": "FT World",
+      "timestamp": "09:03 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🌐 宏观",
+      "headline": "Iran's supreme leader absent as ",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From BBC World.",
+        "Extraction failed.",
+        "Source: https://www.bbc.co.uk/news/articles/cevllyj9vv3o?at_medium=RSS&at_campaign=rss"
+      ],
+      "source_url": "https://www.bbc.co.uk/news/articles/cevllyj9vv3o?at_medium=RSS&at_campaign=rss",
+      "source_name": "BBC World",
+      "timestamp": "09:03 MYT",
+      "_degraded": true,
+      "_warnings": []
+    }
+  ]
+}

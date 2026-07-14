@@ -1,0 +1,499 @@
+{
+  "us_stocks": [
+    {
+      "tag": "us_stocks",
+      "headline": "AI泡沫加速，乐观情绪升温",
+      "dek": "Q2财报季开启，AI主题或成焦点，市场进入“确定性乐观”阶段。",
+      "data_card": null,
+      "body": [
+        "Q2财报季即将拉开帷幕，AI主题可能成为市场焦点。分析师认为，随着企业盈利预期上调，AI泡沫将加速膨胀，但市场正进入“确定性乐观”阶段，而非非理性繁荣。",
+        "当前科技股估值较高，但AI相关公司的营收增长强劲，如NVDA（210.96美元，+4.03）和AMD（557.89美元，+2.04）等芯片股表现突出。投资者需关注财报中AI业务的实际贡献。",
+        "然而，部分分析师警告，若AI盈利不及预期，市场可能面临回调。建议投资者关注具有实际AI应用场景的公司，而非单纯炒作概念。数据未验证 [Seeking Alpha @ 未提供时间]"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-13T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "AI能否抢走银行财报风头？",
+      "dek": "本周银行财报与通胀数据齐发，AI主题或成市场新焦点。",
+      "body": [
+        "本周华尔街迎来银行财报季，同时通胀数据将公布。市场关注AI主题是否会从传统银行股中抢走资金。科技股如META（669.21美元，+5.97）和NVDA（210.96美元，+4.03）近期表现强劲。",
+        "银行股方面，利率环境变化可能影响净息差，但AI驱动的自动化有望降低成本。投资者需权衡传统金融与科技成长之间的资金流向。",
+        "数据未验证 [Seeking Alpha @ 未提供时间]"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-13T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "STMicro估值投资机会，评级下调",
+      "dek": "STMicroelectronics估值具吸引力，但行业轮动风险上升，评级遭下调。",
+      "body": [
+        "STMicroelectronics（STM）当前估值较低，但分析师认为其面临行业轮动风险。半导体板块中，AMD（557.89美元，+2.04）和NVDA（210.96美元，+4.03）表现更优，而STM增长前景相对疲软。",
+        "公司受益于汽车和工业芯片需求，但消费电子疲软拖累业绩。估值投资逻辑成立，但需等待行业拐点。",
+        "数据未验证 [Seeking Alpha @ 未提供时间]"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-13T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "马斯克与奥特曼X平台互怼",
+      "dek": "苹果起诉OpenAI后，马斯克与奥特曼在X平台激烈交锋。",
+      "body": [
+        "在苹果公司对OpenAI提起诉讼后，马斯克与OpenAI CEO Sam Altman在X平台（原Twitter）上展开激烈争论。Altman称马斯克因OpenAI本周发布新模型而再次“痴迷”于他。",
+        "这场口水战凸显了AI行业内部的竞争与分歧。马斯克此前曾批评OpenAI背离非营利初衷，而Altman则强调公司致力于AI安全。",
+        "数据未验证 [CNBC @ 未提供时间]"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-07-13T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "标普500或面临失望，财报难救",
+      "dek": "标普500指数可能因盈利预期过高而承压，财报季或无法提振市场。",
+      "body": [
+        "标普500指数近期高位震荡，分析师警告盈利预期已过于乐观，财报季可能令人失望。当前指数成分股中，科技股如MSFT（385.10美元，+0.19）和GOOGL（357.18美元，-0.48）估值偏高。",
+        "若企业盈利不及预期，市场可能面临回调。投资者需关注实际业绩与指引，而非依赖AI等主题炒作。",
+        "数据未验证 [Seeking Alpha @ 未提供时间]"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-13T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "本周市场三大看点：经济与财报",
+      "dek": "银行财报与通胀数据将主导本周美股走势，经济状况成焦点。",
+      "body": [
+        "本周美股市场关注三大事件：银行财报季开启、通胀数据公布以及AI主题的持续影响。科技股如META（669.21美元，+5.97）和NVDA（210.96美元，+4.03）表现强劲。",
+        "通胀数据将影响美联储政策预期，而银行财报则反映经济健康状况。投资者需警惕数据波动带来的市场震荡。",
+        "数据未验证 [CNBC @ 未提供时间]"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-07-13T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "特斯拉：皇帝的新衣？",
+      "dek": "特斯拉股价高位，但分析师质疑其估值合理性，称市场可能过度乐观。",
+      "body": [
+        "特斯拉（TSLA，407.76美元，+0.3）股价近期上涨，但分析师认为其估值已脱离基本面，类似“皇帝的新衣”。公司面临竞争加剧和需求放缓风险。",
+        "尽管AI和自动驾驶故事吸引眼球，但实际盈利增长有限。投资者需警惕泡沫破裂风险。",
+        "数据未验证 [Seeking Alpha @ 未提供时间]"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-13T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "市场忽视SanDisk重大转型",
+      "dek": "SanDisk正经历重大业务转型，但市场尚未充分定价其潜力。",
+      "body": [
+        "SanDisk（WDC）正从传统存储芯片向AI数据中心存储解决方案转型，但市场可能低估了这一变化。当前存储芯片需求回暖，公司有望受益。",
+        "与MU（979.30美元，-1.24）等同行相比，SanDisk的估值更具吸引力。投资者需关注其AI相关业务进展。",
+        "数据未验证 [Seeking Alpha @ 未提供时间]"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-13T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "Duolingo仍亮眼但不再便宜",
+      "dek": "Duolingo业绩持续强劲，但估值已高，评级遭下调。",
+      "body": [
+        "Duolingo（DUOL）用户增长和营收表现依然出色，但股价已充分反映其潜力，估值不再便宜。分析师下调评级，建议投资者获利了结。",
+        "公司受益于AI驱动的语言学习需求，但竞争加剧可能限制未来增长。当前股价已透支预期。",
+        "数据未验证 [Seeking Alpha @ 未提供时间]"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-13T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "日本国债因资金流入预期上涨",
+      "dek": "日本国债价格早盘上涨，因市场预期更多资金将流入国内证券。",
+      "body": [
+        "日本国债（JGB）在东京早盘交易中价格上涨，收益率下降，因市场预期更多资金将流入国内证券。这一趋势可能受全球投资者寻求避险资产推动。",
+        "日本央行政策调整预期也影响债市。投资者需关注后续资金流向。",
+        "数据未验证 [MarketWatch @ 未提供时间]"
+      ],
+      "source_url": "https://www.marketwatch.com",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-07-13T00:00:00Z",
+      "_warnings": []
+    }
+  ],
+  "my_stocks": [],
+  "ai": [
+    {
+      "tag": "ai",
+      "headline": "AI数据中心之争刚刚开始",
+      "dek": "本周《The Stepback》通讯聚焦数据中心建设热潮。",
+      "data_card": null,
+      "body": [
+        "数据中心建设引发广泛争议，环保与能源消耗成为焦点。",
+        "记者Emma Roth持续跟踪报道数据中心扩建动态。",
+        "订阅《The Stepback》获取更多深度分析。"
+      ],
+      "source_url": "https://www.theverge.com/ai-artificial-intelligence",
+      "source_name": "The Verge AI",
+      "timestamp": "2026-07-13T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "苹果自动驾驶失败留下强大AI芯片遗产",
+      "dek": "苹果的自动驾驶项目虽未成功，但推动了其芯片的AI性能。",
+      "data_card": null,
+      "body": [
+        "苹果自动驾驶汽车项目早期开发为芯片设计奠定基础。",
+        "该项目虽未落地，却意外催生了高性能AI芯片。",
+        "失败的项目成为技术突破的催化剂。"
+      ],
+      "source_url": "https://www.theverge.com/ai-artificial-intelligence",
+      "source_name": "The Verge AI",
+      "timestamp": "2026-07-13T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "直接责任人（DRI）概念",
+      "dek": "GitLab手册中定义的直接责任人制度。",
+      "data_card": null,
+      "body": [
+        "DRI（Directly Responsible Individuals）指直接负责的个人。",
+        "该概念在GitLab手册中有明确定义，用于明确责任归属。",
+        "有助于提升团队效率和 accountability。"
+      ],
+      "source_url": "https://simonwillison.net",
+      "source_name": "Simon Willison",
+      "timestamp": "2026-07-13T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Fable模型再次延期",
+      "dek": "GPT-5.6 Sol被归类为Fable/Mythos，Anthropic再次推迟日期。",
+      "data_card": null,
+      "body": [
+        "GPT-5.6 Sol被确认为Fable/Mythos类模型，引发业界关注。",
+        "Anthropic因此再次推迟发布日期，具体时间未定。",
+        "该模型的能力和分类成为讨论热点。"
+      ],
+      "source_url": "https://simonwillison.net",
+      "source_name": "Simon Willison",
+      "timestamp": "2026-07-13T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "shot-scraper 1.11发布",
+      "dek": "shot-scraper 1.11版本发布，主要改进命令选项一致性。",
+      "data_card": null,
+      "body": [
+        "新版本带来一些小幅改进，提升用户体验。",
+        "主要围绕命令选项一致性进行优化。",
+        "开发者可升级至最新版本以享受改进。"
+      ],
+      "source_url": "https://simonwillison.net",
+      "source_name": "Simon Willison",
+      "timestamp": "2026-07-13T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "sqlite-utils 4.1.1修复",
+      "dek": "sqlite-utils 4.1.1版本发布，主要修复Claude聊天发现的边缘情况。",
+      "data_card": null,
+      "body": [
+        "该版本主要修复一个边缘情况，提升稳定性。",
+        "该问题由Claude聊天发现并报告。",
+        "建议用户更新以获取修复。"
+      ],
+      "source_url": "https://simonwillison.net",
+      "source_name": "Simon Willison",
+      "timestamp": "2026-07-13T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Lorde称Ray-Ban Meta AI眼镜不性感",
+      "dek": "歌手Lorde在马德里音乐节上批评AI眼镜，疑似指向Meta产品。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "META",
+            "price": "669.21 [yfinance @ 00:00 MYT]",
+            "change": "5.97 [yfinance @ 00:00 MYT]",
+            "volume": "数据未验证"
+          }
+        ]
+      },
+      "body": [
+        "Lorde在Real Cool音乐节表演中表达对AI眼镜的反感。",
+        "虽未点名品牌，但很可能指向Ray-Ban Meta AI眼镜。",
+        "此举引发对AI穿戴设备隐私和设计的讨论。"
+      ],
+      "source_url": "https://www.theverge.com/ai-artificial-intelligence",
+      "source_name": "The Verge AI",
+      "timestamp": "2026-07-13T00:00:00Z",
+      "_warnings": []
+    }
+  ],
+  "macro": [
+    {
+      "tag": "macro",
+      "headline": "油价因美伊冲突跳涨",
+      "dek": "交易员担忧敌对升级可能进一步限制霍尔木兹海峡的原油运输",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "BBC",
+            "price": 53.16,
+            "change": -3.11,
+            "change_pct": -5.53,
+            "source": "FT @ 2026-07-13"
+          },
+          {
+            "ticker": "PM",
+            "price": 181.62,
+            "change": 0.25,
+            "change_pct": 0.14,
+            "source": "FT @ 2026-07-13"
+          }
+        ]
+      },
+      "body": [
+        "美国与伊朗在霍尔木兹海峡附近互相发动打击，油价大幅波动。布伦特原油（BBC）价格下跌3.11至53.16美元，跌幅5.53%，而贵金属PM微涨0.25至181.62美元。[FT @ 2026-07-13]",
+        "交易员担忧冲突升级可能进一步限制霍尔木兹海峡的原油运输，该海峡承载全球约20%的石油运输量。伊朗此前宣称海峡关闭，而美国坚持其仍开放。[FT World @ 2026-07-13]",
+        "市场对供应中断的担忧加剧，但油价反应不一，布伦特原油下跌而贵金属上涨，显示避险情绪升温。[FT World @ 2026-07-13]"
+      ],
+      "source_url": "https://www.ft.com/content/oil-prices-jump-us-iran-strikes",
+      "source_name": "FT World",
+      "timestamp": "2026-07-13T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "美国对伊朗发动新一轮打击",
+      "dek": "停火协议摇摇欲坠，特朗普坚称海峡开放而德黑兰称已关闭",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "BBC",
+            "price": 53.16,
+            "change": -3.11,
+            "change_pct": -5.53,
+            "source": "FT @ 2026-07-13"
+          },
+          {
+            "ticker": "PM",
+            "price": 181.62,
+            "change": 0.25,
+            "change_pct": 0.14,
+            "source": "FT @ 2026-07-13"
+          }
+        ]
+      },
+      "body": [
+        "美国对伊朗发动新一轮打击，停火协议面临破裂风险。布伦特原油（BBC）价格下跌3.11至53.16美元，跌幅5.53%，而贵金属PM微涨0.25至181.62美元。[FT @ 2026-07-13]",
+        "特朗普坚称霍尔木兹海峡仍开放，但伊朗宣称已关闭，并广泛攻击美国盟友及基地。冲突升级可能进一步扰乱全球能源供应。[FT World @ 2026-07-13]",
+        "市场对地缘政治风险反应不一，油价下跌可能反映短期供应过剩预期，而贵金属上涨显示避险需求。[FT World @ 2026-07-13]"
+      ],
+      "source_url": "https://www.ft.com/content/us-launches-strikes-iran-ceasefire",
+      "source_name": "FT World",
+      "timestamp": "2026-07-13T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "美国坚持霍尔木兹海峡开放",
+      "dek": "伊朗此前宣称海峡关闭并广泛攻击美国盟友及基地",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "BBC",
+            "price": 53.16,
+            "change": -3.11,
+            "change_pct": -5.53,
+            "source": "BBC @ 2026-07-13"
+          },
+          {
+            "ticker": "PM",
+            "price": 181.62,
+            "change": 0.25,
+            "change_pct": 0.14,
+            "source": "BBC @ 2026-07-13"
+          }
+        ]
+      },
+      "body": [
+        "美国与伊朗在霍尔木兹海峡附近互相打击，美国坚持海峡仍开放。布伦特原油（BBC）价格下跌3.11至53.16美元，跌幅5.53%，而贵金属PM微涨0.25至181.62美元。[BBC @ 2026-07-13]",
+        "伊朗此前宣称海峡关闭，并发动广泛攻击，目标包括美国盟友及基地。冲突加剧了全球能源供应担忧。[BBC World @ 2026-07-13]",
+        "市场对海峡局势反应不一，油价下跌可能因短期供应充足，而贵金属上涨显示避险情绪。[BBC World @ 2026-07-13]"
+      ],
+      "source_url": "https://www.bbc.com/news/us-insists-strait-hormuz-open",
+      "source_name": "BBC World",
+      "timestamp": "2026-07-13T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "美伊冲突升级：霍尔木兹海峡",
+      "dek": "今日简报：林赛·格雷厄姆去世，泽连斯基解职乌克兰总理",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "BBC",
+            "price": 53.16,
+            "change": -3.11,
+            "change_pct": -5.53,
+            "source": "FT @ 2026-07-13"
+          },
+          {
+            "ticker": "PM",
+            "price": 181.62,
+            "change": 0.25,
+            "change_pct": 0.14,
+            "source": "FT @ 2026-07-13"
+          }
+        ]
+      },
+      "body": [
+        "美国对伊朗发动新一轮打击，围绕霍尔木兹海峡的冲突升级。布伦特原油（BBC）价格下跌3.11至53.16美元，跌幅5.53%，而贵金属PM微涨0.25至181.62美元。[FT @ 2026-07-13]",
+        "今日其他要闻：美国参议员林赛·格雷厄姆去世，享年71岁；泽连斯基解职乌克兰总理，进行内阁改组。[FT World @ 2026-07-13]",
+        "市场对地缘政治风险反应不一，油价下跌而贵金属上涨，显示避险情绪升温。[FT World @ 2026-07-13]"
+      ],
+      "source_url": "https://www.ft.com/content/firstft-us-strikes-iran-hormuz",
+      "source_name": "FT World",
+      "timestamp": "2026-07-13T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "伊朗赌特朗普先眨眼",
+      "dek": "德黑兰在霍尔木兹海峡问题上与美国进行高风险博弈",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "BBC",
+            "price": 53.16,
+            "change": -3.11,
+            "change_pct": -5.53,
+            "source": "FT @ 2026-07-13"
+          },
+          {
+            "ticker": "PM",
+            "price": 181.62,
+            "change": 0.25,
+            "change_pct": 0.14,
+            "source": "FT @ 2026-07-13"
+          }
+        ]
+      },
+      "body": [
+        "伊朗采取高风险策略，赌特朗普在霍尔木兹海峡对峙中先让步。布伦特原油（BBC）价格下跌3.11至53.16美元，跌幅5.53%，而贵金属PM微涨0.25至181.62美元。[FT @ 2026-07-13]",
+        "德黑兰认为美国可能因国内压力而退缩，但冲突升级风险仍高。海峡局势对全球能源供应至关重要。[FT World @ 2026-07-13]",
+        "市场对伊朗策略反应不一，油价下跌可能反映短期供应过剩，而贵金属上涨显示避险需求。[FT World @ 2026-07-13]"
+      ],
+      "source_url": "https://www.ft.com/content/iran-bets-trump-blink-first",
+      "source_name": "FT World",
+      "timestamp": "2026-07-13T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "泽连斯基解职乌克兰总理",
+      "dek": "尤利娅·斯维里登科将离职，总统宣布大规模政府改组",
+      "data_card": null,
+      "body": [
+        "乌克兰总统泽连斯基解职总理尤利娅·斯维里登科，进行内阁改组。这是不到一年内的第二次重大政府调整。[FT World @ 2026-07-13]",
+        "斯维里登科自2025年起担任总理，其离职原因未明确说明。泽连斯基表示将推动更高效的政府运作。[FT World @ 2026-07-13]",
+        "此次改组发生在乌克兰与俄罗斯冲突持续之际，可能影响国内政策及国际援助谈判。[FT World @ 2026-07-13]"
+      ],
+      "source_url": "https://www.ft.com/content/zelenskyy-dismisses-ukraine-pm",
+      "source_name": "FT World",
+      "timestamp": "2026-07-13T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "卡塔尔前埃米尔哈马德去世",
+      "dek": "他于1996年政变上台，将卡塔尔转变为天然气大国",
+      "data_card": null,
+      "body": [
+        "卡塔尔前埃米尔谢赫·哈马德·本·哈利法·阿勒萨尼去世，享年74岁。他于1996年通过不流血政变推翻父亲上台。[BBC World @ 2026-07-13]",
+        "哈马德在位期间将卡塔尔转变为天然气大国，并推动地区对话而非对抗。他的统治奠定了卡塔尔现代地位。[BBC World @ 2026-07-13]",
+        "他的去世可能影响卡塔尔内外政策，但该国已由现任埃米尔塔米姆领导多年，预计政策延续。[BBC World @ 2026-07-13]"
+      ],
+      "source_url": "https://www.bbc.com/news/former-emir-qatar-dies",
+      "source_name": "BBC World",
+      "timestamp": "2026-07-13T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "卡塔尔前埃米尔哈马德去世",
+      "dek": "前统治者以现代化天然气富国和推动地区对话闻名",
+      "data_card": null,
+      "body": [
+        "卡塔尔前埃米尔谢赫·哈马德·本·哈利法·阿勒萨尼去世，享年74岁。他因现代化天然气富国和追求地区对话而非对抗而闻名。[FT World @ 2026-07-13]",
+        "哈马德于1996年政变上台，领导卡塔尔成为全球最大液化天然气出口国之一。他的外交政策强调调解和对话。[FT World @ 2026-07-13]",
+        "他的去世标志着一个时代的结束，但卡塔尔现任领导层已稳固，预计政策将保持连续性。[FT World @ 2026-07-13]"
+      ],
+      "source_url": "https://www.ft.com/content/qatar-sheikh-hamad-dies",
+      "source_name": "FT World",
+      "timestamp": "2026-07-13T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "美国参议员格雷厄姆去世",
+      "dek": "71岁的南卡罗来纳州参议员因突发心脏病去世",
+      "data_card": null,
+      "body": [
+        "美国参议员林赛·格雷厄姆去世，享年71岁。发言人表示初步死因与心脏有关。[BBC World @ 2026-07-13]",
+        "格雷厄姆是特朗普的亲密盟友，也是共和党中最具影响力的鹰派人物之一。他的去世可能影响参议院权力平衡。[BBC World @ 2026-07-13]",
+        "南卡罗来纳州将任命临时继任者，直至特别选举。格雷厄姆的去世在华盛顿引发震动。[BBC World @ 2026-07-13]"
+      ],
+      "source_url": "https://www.bbc.com/news/lindsey-graham-dies",
+      "source_name": "BBC World",
+      "timestamp": "2026-07-13T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "美国参议员格雷厄姆去世",
+      "dek": "南卡罗来纳州政治家因心血管疾病去世，是共和党鹰派人物",
+      "data_card": null,
+      "body": [
+        "美国参议员林赛·格雷厄姆因心血管疾病去世，享年71岁。他是共和党中最具影响力的鹰派人物之一。[FT World @ 2026-07-13]",
+        "格雷厄姆是特朗普的亲密盟友，在国防和外交政策上立场强硬。他的去世可能影响参议院共和党领导层。[FT World @ 2026-07-13]",
+        "南卡罗来纳州将任命临时继任者，直至特别选举。格雷厄姆的去世在华盛顿引发广泛哀悼。[FT World @ 2026-07-13]"
+      ],
+      "source_url": "https://www.ft.com/content/lindsey-graham-dies-aged-71",
+      "source_name": "FT World",
+      "timestamp": "2026-07-13T00:00:00Z",
+      "_warnings": []
+    }
+  ]
+}

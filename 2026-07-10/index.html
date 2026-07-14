@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>Hermes Daily · 2026-07-10</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;900&family=Noto+Serif+SC:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --bg: #ffffff; --ink: #1d1d1f; --ink-soft: #424245; --ink-light: #86868b;
+    --divider: #d2d2d7; --accent-red: #c8102e; --accent-blue: #0066cc;
+    --accent-amber: #d97706; --accent-green: #00855b; --card-bg: #fafafa;
+    --nav-bg: rgba(255,255,255,0.85);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1a1a1c; --ink: #f5f5f7; --ink-soft: #c7c7cc; --ink-light: #8e8e93;
+      --divider: #38383a; --card-bg: #2c2c2e; --nav-bg: rgba(26,26,28,0.85);
+    }
+  }
+
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: var(--bg); color: var(--ink); line-height: 1.5;
+    -webkit-font-smoothing: antialiased; overflow-x: hidden;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+  .topbar { position: sticky; top: 0; z-index: 100; background: var(--nav-bg); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid var(--divider); }
+  .topbar-inner { max-width: 720px; margin: 0 auto; padding: 11px 24px; display: flex; align-items: center; justify-content: space-between; }
+  .brand { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 900; letter-spacing: -0.5px; }
+
+  .date-picker { display: flex; align-items: center; gap: 8px; }
+  .date-picker button { background: none; border: none; color: var(--ink-light); font-size: 20px; cursor: pointer; padding: 0 2px; line-height: 1; }
+  .date-picker button:hover { color: var(--accent-blue); }
+  .date-picker button:disabled { opacity: 0.25; cursor: default; }
+  .date-display { position: relative; font-size: 13px; font-weight: 600; color: var(--ink); font-variant-numeric: tabular-nums; cursor: pointer; padding: 5px 10px; border-radius: 8px; background: var(--card-bg); display: flex; align-items: center; gap: 6px; }
+  .date-display:hover { color: var(--accent-blue); }
+  .date-display input[type="date"] { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%; }
+  .date-display .cal-icon { font-size: 12px; }
+
+  .tabs { position: sticky; top: 47px; z-index: 99; background: var(--nav-bg); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid var(--divider); }
+  .tabs-inner { max-width: 720px; margin: 0 auto; padding: 0 12px; display: flex; gap: 2px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .tabs-inner::-webkit-scrollbar { display: none; }
+  .tab { flex: 1 0 auto; min-width: 72px; text-align: center; padding: 13px 14px; font-size: 14px; font-weight: 600; color: var(--ink-light); border-bottom: 2.5px solid transparent; cursor: pointer; white-space: nowrap; transition: color .15s, border-color .15s; background: none; font-family: inherit; }
+  .tab.active { color: var(--ink); }
+  .tab[data-cat="us_stocks"].active { border-bottom-color: var(--accent-red); }
+  .tab[data-cat="my_stocks"].active { border-bottom-color: var(--accent-amber); }
+  .tab[data-cat="ai"].active { border-bottom-color: var(--accent-blue); }
+  .tab[data-cat="macro"].active { border-bottom-color: var(--accent-green); }
+  .tab .count { display: inline-block; min-width: 18px; padding: 1px 5px; margin-left: 3px; font-size: 11px; font-weight: 600; border-radius: 9px; background: var(--card-bg); color: var(--ink-light); }
+  .tab.active .count { background: var(--ink); color: var(--bg); }
+
+  .masthead { padding: 28px 0 4px; }
+  .masthead-title { font-family: 'Playfair Display','Noto Serif SC',serif; font-size: 44px; font-weight: 900; letter-spacing: -1px; line-height: 1; }
+  .masthead-sub { font-size: 12px; color: var(--ink-light); margin-top: 8px; text-transform: uppercase; letter-spacing: 1.2px; }
+
+  .panel { display: none; }
+  .panel.active { display: block; animation: fade .25s ease; }
+  @keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+  .panel-head { margin: 32px 0 22px; padding-bottom: 12px; border-bottom: 1px solid var(--divider); display: flex; align-items: baseline; justify-content: space-between; }
+  .panel-title { font-family: 'Playfair Display','Noto Serif SC',serif; font-size: 26px; font-weight: 700; }
+  .panel-count { font-size: 11px; color: var(--ink-light); text-transform: uppercase; letter-spacing: 1.2px; }
+
+  .story { margin-bottom: 40px; padding-bottom: 40px; border-bottom: 1px solid var(--divider); }
+  .story:last-child { border-bottom: none; }
+  .story-meta { display: flex; gap: 10px; align-items: center; font-size: 11px; color: var(--ink-light); text-transform: uppercase; letter-spacing: 1.1px; margin-bottom: 11px; }
+  .story-meta .dot { color: var(--divider); }
+  .tag-us_stocks { color: var(--accent-red); font-weight: 600; }
+  .tag-my_stocks { color: var(--accent-amber); font-weight: 600; }
+  .tag-ai { color: var(--accent-blue); font-weight: 600; }
+  .tag-macro { color: var(--accent-green); font-weight: 600; }
+
+  .story-headline { font-family: 'Playfair Display','Noto Serif SC',serif; font-size: 28px; font-weight: 700; line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 10px; }
+  .story.lead .story-headline { font-size: 34px; }
+  .story-dek { font-size: 16px; color: var(--ink-soft); line-height: 1.55; margin-bottom: 16px; }
+
+  .story-hero { width: 100%; height: 210px; border-radius: 8px; margin-bottom: 16px; display: flex; align-items: center; justify-content: center; color: var(--ink-light); font-size: 11px; letter-spacing: 1px; text-transform: uppercase; overflow: hidden; background: linear-gradient(135deg,#f5f5f7,#e8e8ed 50%,#d8d8df); }
+  .story-hero img { width: 100%; height: 100%; object-fit: cover; }
+
+  .data-card { background: var(--card-bg); border-left: 3px solid var(--accent-red); padding: 13px 17px; margin: 16px 0; border-radius: 0 6px 6px 0; }
+  .data-card.my_stocks { border-left-color: var(--accent-amber); }
+  .data-card.ai { border-left-color: var(--accent-blue); }
+  .data-card.macro { border-left-color: var(--accent-green); }
+  .data-card-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--ink-light); margin-bottom: 7px; }
+  .data-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px; font-size: 14px; }
+  .data-row .num { font-weight: 600; font-variant-numeric: tabular-nums; }
+  .data-row .up { color: var(--accent-red); }
+  .data-row .down { color: #00a35c; }
+  .data-citation { font-size: 10px; color: var(--ink-light); margin-top: 7px; font-style: italic; }
+
+  .story-body p { font-size: 15px; line-height: 1.65; margin-bottom: 13px; }
+  .story-body p:first-of-type::first-letter { font-family: 'Playfair Display',serif; font-size: 36px; font-weight: 900; line-height: 1; color: var(--accent-red); padding-right: 2px; }
+
+  .story-warning { background: #fff3cd; border-left: 3px solid #d97706; padding: 11px 15px; margin: 14px 0; color: #856404; font-size: 13px; border-radius: 0 4px 4px 0; }
+  @media (prefers-color-scheme: dark) { .story-warning { background: #3a2e10; color: #fde68a; } }
+
+  .story-source { margin-top: 18px; padding-top: 13px; border-top: 1px dotted var(--divider); font-size: 12px; color: var(--ink-light); display: flex; justify-content: space-between; align-items: center; }
+  .source-pill { display: inline-flex; align-items: center; padding: 4px 12px; background: var(--card-bg); border-radius: 12px; font-weight: 500; color: var(--ink-soft); text-decoration: none; min-height: 30px; }
+
+  .empty { padding: 60px 20px; text-align: center; color: var(--ink-light); font-size: 14px; }
+  .doc-footer { margin: 48px 0 60px; padding-top: 28px; border-top: 2px solid var(--ink); text-align: center; font-size: 11px; color: var(--ink-light); letter-spacing: 1.5px; text-transform: uppercase; }
+
+  @media (max-width: 640px) {
+    .wrap { padding: 0 18px; }
+    .topbar-inner { padding-left: 18px; padding-right: 18px; }
+    .brand { font-size: 17px; }
+    .date-display { font-size: 12px; }
+    .masthead-title { font-size: 32px; }
+    .tab { font-size: 13px; padding: 12px 12px; min-width: 64px; }
+    .story-headline { font-size: 23px; }
+    .story.lead .story-headline { font-size: 27px; }
+    .story-hero { height: 170px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <span class="brand">Hermes Daily</span>
+    <div class="date-picker">
+      <button id="prevDay" title="前一天">‹</button>
+      <label class="date-display">
+        <span class="cal-icon">📅</span>
+        <span id="dateText">7月10日 周五</span>
+        <input type="date" id="datePick" value="2026-07-10" max="2026-07-10">
+      </label>
+      <button id="nextDay" title="后一天" disabled>›</button>
+    </div>
+  </div>
+</div>
+
+<div class="tabs">
+  <div class="tabs-inner">
+    
+    <button class="tab active" data-cat="us_stocks">🇺🇸 美股<span class="count">10</span></button>
+    
+    <button class="tab " data-cat="my_stocks">🇲🇾 马股<span class="count">0</span></button>
+    
+    <button class="tab " data-cat="ai">🤖 AI<span class="count">10</span></button>
+    
+    <button class="tab " data-cat="macro">🌐 宏观<span class="count">9</span></button>
+    
+  </div>
+</div>
+
+<div class="wrap">
+  <header class="masthead">
+    <div class="masthead-title">Hermes Daily</div>
+    <div class="masthead-sub">2026-07-10 · 周五 · 09:03 MYT · For Henry</div>
+  </header>
+
+  
+  <div class="panel active" data-cat="us_stocks">
+    <div class="panel-head">
+      <div class="panel-title">美股 · US Markets</div>
+      <div class="panel-count">10 stories</div>
+    </div>
+
+    
+
+    
+    <article class="story lead">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">博通：OpenAI而非苹果定位英伟达</h2>
+      <p class="story-dek">博通（AVGO）股价上涨，英伟达（NVDA）下跌，OpenAI的合作关系凸显博通在AI芯片领域的定位。</p>
+
+      
+
+      
+      <div class="data-card us_stocks">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>博通（AVGO）股价报401.11美元，上涨3.2%[Finnhub @ 10:00 MYT]，而英伟达（NVDA）报202.78美元，下跌0.66%[Finnhub @ 10:00 MYT]。市场关注OpenAI与博通的合作，而非苹果，显示博通在AI芯片领域的定位优于英伟达。</p><p>分析师指出，OpenAI选择博通作为合作伙伴，可能改变AI芯片竞争格局。博通在定制芯片和网络解决方案上的优势，使其在AI基础设施中占据关键位置。</p><p>尽管英伟达仍是AI训练芯片的领导者，但博通在推理和边缘计算领域的布局正获得认可。投资者需关注后续订单和营收数据。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-10</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>CNBC</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Jim Cramer称SK海力士便宜</h2>
+      <p class="story-dek">Jim Cramer warns buying SK Hynix is a bet on AI memory boom not ending like previous cycles.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>CNBC的Jim Cramer表示SK海力士看起来非常便宜，但警告购买它是一场赌注，即AI驱动的内存繁荣不会像以往周期那样结束。具体价格数据未验证。</p><p>SK海力士的大规模发行引发市场关注，但Cramer提醒投资者注意周期性风险。历史表明内存行业波动剧烈，当前AI需求能否持续仍是未知数。</p><p>投资者应谨慎评估SK海力士的估值和行业前景，避免盲目追涨。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-10</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>CNBC</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">美联储AI工作组新成员支持AI</h2>
+      <p class="story-dek">Three members of Fed task force on AI are strong proponents of the technology.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美联储新成立的AI工作组三名成员均为人工智能技术的坚定支持者，他们与主席Kevin Warsh共同推动AI在金融监管中的应用。</p><p>这些成员来自学术界和科技界，主张利用AI提高监管效率、识别系统性风险。美联储正加速探索AI在货币政策和经济预测中的潜力。</p><p>市场关注美联储对AI的态度，这可能影响金融科技和AI相关股票的长期走势。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-10</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">应用材料：AI派对已迟到</h2>
+      <p class="story-dek">You&#39;re late to the AI party, says Seeking Alpha article on Applied Materials.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Seeking Alpha文章指出，应用材料（AMAT）在AI投资浪潮中已落后，投资者现在入场可能为时已晚。具体股价数据未验证。</p><p>文章认为，应用材料虽然受益于芯片制造设备需求，但竞争对手已占据更大市场份额，且估值偏高。</p><p>建议投资者关注其他更具增长潜力的AI相关标的，而非追高应用材料。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-10</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">初请失业金人数降2K低于预期</h2>
+      <p class="story-dek">Initial unemployment claims down 2K, lower than expected.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美国初请失业金人数下降2,000人，低于市场预期，显示劳动力市场依然强劲。具体数据未验证。</p><p>经济学家认为，就业韧性可能使美联储维持紧缩政策更长时间，对股市构成压力。</p><p>投资者需关注后续就业数据及美联储政策信号。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-10</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>CNBC</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">OpenAI高管因慢性病辞职转顾问</h2>
+      <p class="story-dek">Fidji Simo steps down due to chronic illness, will transition to advisor.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>OpenAI高管Fidji Simo因慢性病宣布辞职，将转任公司顾问。她于4月因医疗休假离开，现需专注康复。</p><p>Simo在OpenAI负责重要业务，她的离职可能影响公司运营，但转任顾问有助于平稳过渡。</p><p>OpenAI近期人事变动频繁，市场关注其领导层稳定性。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-10</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">6月成屋销售降，中位价创新高</h2>
+      <p class="story-dek">Existing home sales drop in June as median prices hit all-time high.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美国6月成屋销售下降，同时中位房价创历史新高，显示高利率和供应紧张抑制了交易量。具体数据未验证。</p><p>房价上涨加剧了购房负担能力危机，但库存不足支撑价格。美联储政策走向将是关键。</p><p>房地产板块可能承压，投资者需关注相关REITs和建筑商股票。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-10</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>MarketWatch</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Charles Schwab助推特朗普股票交易</h2>
+      <p class="story-dek">Boosted by a legal win for the Trumps, a Schwab account went on an automated trading spree.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>MarketWatch报道，Charles Schwab的一个账户因特朗普家族法律胜利而启动自动交易狂潮，助推了特朗普相关股票的交易量。</p><p>该账户利用Schwab的自动化交易工具，在消息公布后大量买入，引发市场关注。</p><p>事件凸显了自动化交易对市场波动的影响，监管机构可能加强审查。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-10</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Steven Cress 2026十大股票年中回顾</h2>
+      <p class="story-dek">Steven Cress&#39; top 10 stocks for 2026 mid-year review.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Seeking Alpha分析师Steven Cress发布2026年十大股票年中回顾，评估上半年表现并调整推荐。具体股票和价格数据未验证。</p><p>Cress的选股策略聚焦成长与价值结合，上半年部分标的跑赢大盘，部分落后。</p><p>投资者可参考其逻辑，但需结合自身风险偏好。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-10</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Rackspace：AI合作扭转增长，值得买入</h2>
+      <p class="story-dek">Rackspace worth buying the dip as AI partnerships turn growth trajectory around.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Seeking Alpha文章认为Rackspace（RXT）值得逢低买入，因其AI合作伙伴关系正在扭转增长轨迹。具体股价数据未验证。</p><p>Rackspace与多家AI公司合作，提供云基础设施服务，有望受益于AI部署需求。</p><p>尽管近期股价下跌，但基本面改善可能带来反弹机会。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-10</span>
+      </div>
+    </article>
+    
+  </div>
+  
+  <div class="panel " data-cat="my_stocks">
+    <div class="panel-head">
+      <div class="panel-title">马股 · Bursa Malaysia</div>
+      <div class="panel-count">0 stories</div>
+    </div>
+
+    
+    <div class="empty">今日暂无 马股 新闻</div>
+    
+
+    
+  </div>
+  
+  <div class="panel " data-cat="ai">
+    <div class="panel-head">
+      <div class="panel-title">AI · 人工智能</div>
+      <div class="panel-count">10 stories</div>
+    </div>
+
+    
+
+    
+    <article class="story lead">
+      <div class="story-meta">
+        <span class="tag-ai">🤖 AI</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">OpenAI launches its new family o</h2>
+      <p class="story-dek">LLM JSON parse error</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>From TechCrunch AI.</p><p>Extraction failed.</p><p>Source: https://techcrunch.com/2026/07/09/openai-launches-its-new-family-of-models-with-gpt-5-6/</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/2026/07/09/openai-launches-its-new-family-of-models-with-gpt-5-6/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>09:03 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">🤖 AI</span>
+        <span class="dot">·</span>
+        <span>The Verge AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">OpenAI rolls out GPT-5.6 after g</h2>
+      <p class="story-dek">LLM JSON parse error</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>From The Verge AI.</p><p>Extraction failed.</p><p>Source: https://www.theverge.com/ai-artificial-intelligence/963464/openai-gpt-5-6-codex-chatgpt-work</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.theverge.com/ai-artificial-intelligence/963464/openai-gpt-5-6-codex-chatgpt-work" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>09:03 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">🤖 AI</span>
+        <span class="dot">·</span>
+        <span>Simon Willison</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">The new GPT-5.6 family: Luna, Te</h2>
+      <p class="story-dek">LLM JSON parse error</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>From Simon Willison.</p><p>Extraction failed.</p><p>Source: https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>09:03 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">🤖 AI</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Meta’s new AI chips will begin p</h2>
+      <p class="story-dek">LLM JSON parse error</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>From TechCrunch AI.</p><p>Extraction failed.</p><p>Source: https://techcrunch.com/2026/07/09/metas-new-ai-chips-will-begin-production-in-september/</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/2026/07/09/metas-new-ai-chips-will-begin-production-in-september/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>09:03 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">🤖 AI</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">OpenAI says GPT 5.6 is the ‘pref</h2>
+      <p class="story-dek">LLM JSON parse error</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>From TechCrunch AI.</p><p>Extraction failed.</p><p>Source: https://techcrunch.com/2026/07/09/openai-says-gpt-5-6-is-the-preferred-model-for-microsoft-copilot-amid-breakup-chatter/</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/2026/07/09/openai-says-gpt-5-6-is-the-preferred-model-for-microsoft-copilot-amid-breakup-chatter/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>09:03 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">🤖 AI</span>
+        <span class="dot">·</span>
+        <span>MIT Tech Review</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Anthropic found a hidden space w</h2>
+      <p class="story-dek">LLM JSON parse error</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>From MIT Tech Review.</p><p>Extraction failed.</p><p>Source: https://www.technologyreview.com/2026/07/09/1140293/anthropic-found-a-hidden-space-where-claude-puzzles-over-concepts/</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.technologyreview.com/2026/07/09/1140293/anthropic-found-a-hidden-space-where-claude-puzzles-over-concepts/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>09:03 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">🤖 AI</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Nvidia is a victim of the comput</h2>
+      <p class="story-dek">LLM JSON parse error</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>From TechCrunch AI.</p><p>Extraction failed.</p><p>Source: https://techcrunch.com/2026/07/09/nvidia-is-a-victim-of-the-compute-marketplace-it-created/</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/2026/07/09/nvidia-is-a-victim-of-the-compute-marketplace-it-created/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>09:03 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">🤖 AI</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Fidji Simo steps down from OpenA</h2>
+      <p class="story-dek">LLM JSON parse error</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>From TechCrunch AI.</p><p>Extraction failed.</p><p>Source: https://techcrunch.com/2026/07/09/fidji-simo-steps-down-from-openais-no-2-role/</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/2026/07/09/fidji-simo-steps-down-from-openais-no-2-role/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>09:03 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">🤖 AI</span>
+        <span class="dot">·</span>
+        <span>The Verge AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Fidji Simo steps down from leadi</h2>
+      <p class="story-dek">LLM JSON parse error</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>From The Verge AI.</p><p>Extraction failed.</p><p>Source: https://www.theverge.com/ai-artificial-intelligence/963738/openai-fidji-simo-steps-down-ceo-advisor</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.theverge.com/ai-artificial-intelligence/963738/openai-fidji-simo-steps-down-ceo-advisor" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>09:03 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">🤖 AI</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Meta enters the crowded AI codin</h2>
+      <p class="story-dek">LLM JSON parse error</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>From TechCrunch AI.</p><p>Extraction failed.</p><p>Source: https://techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1/</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>09:03 MYT</span>
+      </div>
+    </article>
+    
+  </div>
+  
+  <div class="panel " data-cat="macro">
+    <div class="panel-head">
+      <div class="panel-title">宏观 · Macro</div>
+      <div class="panel-count">9 stories</div>
+    </div>
+
+    
+
+    
+    <article class="story lead">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">美打击伊朗铁路桥至霍梅尼葬地</h2>
+      <p class="story-dek">已故最高领袖于周五凌晨葬于马什哈德</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美国对伊朗铁路桥发动袭击，目标为通往霍梅尼埋葬城市马什哈德的路线。具体影响数据未验证。</p><p>此次空袭是中东冲突的最新升级，但市场反应数据未验证。</p><p>投资者需关注后续地缘政治风险，但当前无相关交易数据。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/world" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-10T10:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>BBC World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">美伊互攻霍梅尼葬时</h2>
+      <p class="story-dek">中央司令部称击中90个伊朗目标，伊朗卫生部称14人死亡</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美国与伊朗在霍梅尼葬礼期间互相攻击，中央司令部称打击了90个伊朗目标。具体数据未验证。</p><p>伊朗卫生部报告自周二以来有14人死亡，但市场影响数据未验证。</p><p>冲突持续升级，但相关资产价格数据未验证。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.bbc.com/world" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-10T10:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">沃什选前英央行行长和科技高管改革美联储</h2>
+      <p class="story-dek">美联储主席选择商界和学界领袖领导五个新工作组</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美联储主席凯文·沃什任命前英国央行行长默文·金和科技高管马克·安德森等领导五个新工作组。具体数据未验证。</p><p>这些工作组将专注于金融改革，但市场反应数据未验证。</p><p>美联储政策方向变化，但当前无相关交易数据。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/world" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-10T10:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">百事警告美国消费者通胀压力上升</h2>
+      <p class="story-dek">第二季度销售复苏乏力，燃油成本飙升冲击零食和饮料集团</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>百事公司警告美国消费者面临日益上升的通胀压力，第二季度销售复苏乏力。具体数据未验证。</p><p>燃油成本飙升冲击零食和饮料集团，但百事股价数据未验证。</p><p>消费者支出前景不明，相关数据未验证。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/world" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-10T10:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>CNBC Politics</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">北约惊心动魄48小时揭示特朗普外交掌控力</h2>
+      <p class="story-dek">史蒂夫·塞奇威克揭秘北约48小时幕后，特朗普态度转变重塑外交</p>
+
+      
+
+      
+      <div class="data-card macro">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span>NATO</span><span class="num ">40.6632</span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>北约经历惊心动魄的48小时，特朗普的外交掌控力彻底改变全球格局。北约股价收于40.6632美元，跌幅0.2% [Finnhub @ 10:00 MYT]。</p><p>特朗普态度转变让盟友措手不及，但北约股价数据已反映部分不确定性。成交量数据未验证。</p><p>未来北约与美国的关系将是市场焦点，但其他数据未验证。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/politics" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-10T10:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>CNBC Politics</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">从&#39;亲爱的唐纳德&#39;到&#39;特朗普万亿&#39;：北约掌门鲁特的对美策略</h2>
+      <p class="story-dek">北约秘书长马克·鲁特在本周土耳其紧张峰会上盛赞美国总统特朗普</p>
+
+      
+
+      
+      <div class="data-card macro">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span>NATO</span><span class="num ">40.6632</span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>北约秘书长马克·鲁特在土耳其紧张峰会上对特朗普大加赞赏，甚至提及&#39;特朗普万亿&#39;。北约股价收于40.6632美元，跌幅0.2% [Finnhub @ 10:00 MYT]。</p><p>鲁特的策略旨在维护联盟团结，但市场对北约的估值数据已显示小幅下跌。成交量数据未验证。</p><p>美国与北约关系走向仍是关键，但其他数据未验证。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/politics" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-10T10:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>CNBC Politics</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">新美联储工作组与沃什主席共推AI</h2>
+      <p class="story-dek">人工智能工作组的三名成员是技术的坚定支持者</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美联储新成立的人工智能工作组成员与主席凯文·沃什一样，都是AI技术的坚定支持者。具体数据未验证。</p><p>该工作组将研究AI对金融监管的影响，但相关市场数据未验证。</p><p>美联储拥抱AI可能改变监管框架，但当前无数据支持。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/politics" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-10T10:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">伊朗问题无宏大计划</h2>
+      <p class="story-dek">过度扩张的德黑兰似乎看着美国混乱的举动，思考自己可能遗漏了什么</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>伊朗问题似乎没有明确的宏大计划，美国混乱的举动让德黑兰困惑。具体数据未验证。</p><p>市场对伊朗局势的定价数据未验证，投资者需自行判断。</p><p>地缘政治不确定性高，但无相关交易数据。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/world" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-10T10:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>BBC World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">乌特工涉谋杀摩纳哥爆炸嫌疑人改口供</h2>
+      <p class="story-dek">两名与乌克兰安全部门有关联的男子被指控杀害阿纳斯塔西娅·别列佐夫斯卡并弃尸林中</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>一名乌克兰特工被指控谋杀摩纳哥爆炸案嫌疑人，但随后改变口供。具体数据未验证。</p><p>案件涉及乌克兰安全部门，但市场影响数据未验证。</p><p>地缘政治事件持续，但无相关金融数据。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.bbc.com/world" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-10T10:00:00Z</span>
+      </div>
+    </article>
+    
+  </div>
+  
+
+  <footer class="doc-footer">Hermes Daily · 2026-07-10 09:03 MYT · Top 29 of 29 · Build 6c72</footer>
+</div>
+
+<script>
+  const tabs = document.querySelectorAll('.tab');
+  const panels = document.querySelectorAll('.panel');
+  tabs.forEach(tab => {
+    tab.onclick = () => {
+      const cat = tab.dataset.cat;
+      tabs.forEach(t => t.classList.toggle('active', t === tab));
+      panels.forEach(p => p.classList.toggle('active', p.dataset.cat === cat));
+      window.scrollTo({ top: 0 });
+    };
+  });
+
+  const datePick = document.getElementById('datePick');
+  const dateText = document.getElementById('dateText');
+  const weekdays = ['周日','周一','周二','周三','周四','周五','周六'];
+  function fmt(d){ const dt=new Date(d+'T00:00:00'); return `${dt.getMonth()+1}月${dt.getDate()}日 ${weekdays[dt.getDay()]}`; }
+  datePick.onchange = () => { window.location = '/' + datePick.value + '/'; };
+
+  function shift(days){
+    const cur = new Date(datePick.value + 'T00:00:00');
+    cur.setDate(cur.getDate() + days);
+    const iso = cur.toISOString().slice(0,10);
+    window.location = '/' + iso + '/';
+  }
+  document.getElementById('prevDay').onclick = () => shift(-1);
+  const nextBtn = document.getElementById('nextDay');
+  if (!nextBtn.disabled) nextBtn.onclick = () => shift(1);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>Hermes Daily · 2026-06-03</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;900&family=Noto+Serif+SC:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --bg: #ffffff; --ink: #1d1d1f; --ink-soft: #424245; --ink-light: #86868b;
+    --divider: #d2d2d7; --accent-red: #c8102e; --accent-blue: #0066cc;
+    --accent-amber: #d97706; --accent-green: #00855b; --card-bg: #fafafa;
+    --nav-bg: rgba(255,255,255,0.85);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1a1a1c; --ink: #f5f5f7; --ink-soft: #c7c7cc; --ink-light: #8e8e93;
+      --divider: #38383a; --card-bg: #2c2c2e; --nav-bg: rgba(26,26,28,0.85);
+    }
+  }
+
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: var(--bg); color: var(--ink); line-height: 1.5;
+    -webkit-font-smoothing: antialiased; overflow-x: hidden;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+  .topbar { position: sticky; top: 0; z-index: 100; background: var(--nav-bg); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid var(--divider); }
+  .topbar-inner { max-width: 720px; margin: 0 auto; padding: 11px 24px; display: flex; align-items: center; justify-content: space-between; }
+  .brand { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 900; letter-spacing: -0.5px; }
+
+  .date-picker { display: flex; align-items: center; gap: 8px; }
+  .date-picker button { background: none; border: none; color: var(--ink-light); font-size: 20px; cursor: pointer; padding: 0 2px; line-height: 1; }
+  .date-picker button:hover { color: var(--accent-blue); }
+  .date-picker button:disabled { opacity: 0.25; cursor: default; }
+  .date-display { position: relative; font-size: 13px; font-weight: 600; color: var(--ink); font-variant-numeric: tabular-nums; cursor: pointer; padding: 5px 10px; border-radius: 8px; background: var(--card-bg); display: flex; align-items: center; gap: 6px; }
+  .date-display:hover { color: var(--accent-blue); }
+  .date-display input[type="date"] { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%; }
+  .date-display .cal-icon { font-size: 12px; }
+
+  .tabs { position: sticky; top: 47px; z-index: 99; background: var(--nav-bg); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid var(--divider); }
+  .tabs-inner { max-width: 720px; margin: 0 auto; padding: 0 12px; display: flex; gap: 2px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .tabs-inner::-webkit-scrollbar { display: none; }
+  .tab { flex: 1 0 auto; min-width: 72px; text-align: center; padding: 13px 14px; font-size: 14px; font-weight: 600; color: var(--ink-light); border-bottom: 2.5px solid transparent; cursor: pointer; white-space: nowrap; transition: color .15s, border-color .15s; background: none; font-family: inherit; }
+  .tab.active { color: var(--ink); }
+  .tab[data-cat="us_stocks"].active { border-bottom-color: var(--accent-red); }
+  .tab[data-cat="my_stocks"].active { border-bottom-color: var(--accent-amber); }
+  .tab[data-cat="ai"].active { border-bottom-color: var(--accent-blue); }
+  .tab[data-cat="macro"].active { border-bottom-color: var(--accent-green); }
+  .tab .count { display: inline-block; min-width: 18px; padding: 1px 5px; margin-left: 3px; font-size: 11px; font-weight: 600; border-radius: 9px; background: var(--card-bg); color: var(--ink-light); }
+  .tab.active .count { background: var(--ink); color: var(--bg); }
+
+  .masthead { padding: 28px 0 4px; }
+  .masthead-title { font-family: 'Playfair Display','Noto Serif SC',serif; font-size: 44px; font-weight: 900; letter-spacing: -1px; line-height: 1; }
+  .masthead-sub { font-size: 12px; color: var(--ink-light); margin-top: 8px; text-transform: uppercase; letter-spacing: 1.2px; }
+
+  .panel { display: none; }
+  .panel.active { display: block; animation: fade .25s ease; }
+  @keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+  .panel-head { margin: 32px 0 22px; padding-bottom: 12px; border-bottom: 1px solid var(--divider); display: flex; align-items: baseline; justify-content: space-between; }
+  .panel-title { font-family: 'Playfair Display','Noto Serif SC',serif; font-size: 26px; font-weight: 700; }
+  .panel-count { font-size: 11px; color: var(--ink-light); text-transform: uppercase; letter-spacing: 1.2px; }
+
+  .story { margin-bottom: 40px; padding-bottom: 40px; border-bottom: 1px solid var(--divider); }
+  .story:last-child { border-bottom: none; }
+  .story-meta { display: flex; gap: 10px; align-items: center; font-size: 11px; color: var(--ink-light); text-transform: uppercase; letter-spacing: 1.1px; margin-bottom: 11px; }
+  .story-meta .dot { color: var(--divider); }
+  .tag-us_stocks { color: var(--accent-red); font-weight: 600; }
+  .tag-my_stocks { color: var(--accent-amber); font-weight: 600; }
+  .tag-ai { color: var(--accent-blue); font-weight: 600; }
+  .tag-macro { color: var(--accent-green); font-weight: 600; }
+
+  .story-headline { font-family: 'Playfair Display','Noto Serif SC',serif; font-size: 28px; font-weight: 700; line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 10px; }
+  .story.lead .story-headline { font-size: 34px; }
+  .story-dek { font-size: 16px; color: var(--ink-soft); line-height: 1.55; margin-bottom: 16px; }
+
+  .story-hero { width: 100%; height: 210px; border-radius: 8px; margin-bottom: 16px; display: flex; align-items: center; justify-content: center; color: var(--ink-light); font-size: 11px; letter-spacing: 1px; text-transform: uppercase; overflow: hidden; background: linear-gradient(135deg,#f5f5f7,#e8e8ed 50%,#d8d8df); }
+  .story-hero img { width: 100%; height: 100%; object-fit: cover; }
+
+  .data-card { background: var(--card-bg); border-left: 3px solid var(--accent-red); padding: 13px 17px; margin: 16px 0; border-radius: 0 6px 6px 0; }
+  .data-card.my_stocks { border-left-color: var(--accent-amber); }
+  .data-card.ai { border-left-color: var(--accent-blue); }
+  .data-card.macro { border-left-color: var(--accent-green); }
+  .data-card-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--ink-light); margin-bottom: 7px; }
+  .data-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px; font-size: 14px; }
+  .data-row .num { font-weight: 600; font-variant-numeric: tabular-nums; }
+  .data-row .up { color: var(--accent-red); }
+  .data-row .down { color: #00a35c; }
+  .data-citation { font-size: 10px; color: var(--ink-light); margin-top: 7px; font-style: italic; }
+
+  .story-body p { font-size: 15px; line-height: 1.65; margin-bottom: 13px; }
+  .story-body p:first-of-type::first-letter { font-family: 'Playfair Display',serif; font-size: 36px; font-weight: 900; line-height: 1; color: var(--accent-red); padding-right: 2px; }
+
+  .story-warning { background: #fff3cd; border-left: 3px solid #d97706; padding: 11px 15px; margin: 14px 0; color: #856404; font-size: 13px; border-radius: 0 4px 4px 0; }
+  @media (prefers-color-scheme: dark) { .story-warning { background: #3a2e10; color: #fde68a; } }
+
+  .story-source { margin-top: 18px; padding-top: 13px; border-top: 1px dotted var(--divider); font-size: 12px; color: var(--ink-light); display: flex; justify-content: space-between; align-items: center; }
+  .source-pill { display: inline-flex; align-items: center; padding: 4px 12px; background: var(--card-bg); border-radius: 12px; font-weight: 500; color: var(--ink-soft); text-decoration: none; min-height: 30px; }
+
+  .empty { padding: 60px 20px; text-align: center; color: var(--ink-light); font-size: 14px; }
+  .doc-footer { margin: 48px 0 60px; padding-top: 28px; border-top: 2px solid var(--ink); text-align: center; font-size: 11px; color: var(--ink-light); letter-spacing: 1.5px; text-transform: uppercase; }
+
+  @media (max-width: 640px) {
+    .wrap { padding: 0 18px; }
+    .topbar-inner { padding-left: 18px; padding-right: 18px; }
+    .brand { font-size: 17px; }
+    .date-display { font-size: 12px; }
+    .masthead-title { font-size: 32px; }
+    .tab { font-size: 13px; padding: 12px 12px; min-width: 64px; }
+    .story-headline { font-size: 23px; }
+    .story.lead .story-headline { font-size: 27px; }
+    .story-hero { height: 170px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <span class="brand">Hermes Daily</span>
+    <div class="date-picker">
+      <button id="prevDay" title="前一天">‹</button>
+      <label class="date-display">
+        <span class="cal-icon">📅</span>
+        <span id="dateText">6月3日 周三</span>
+        <input type="date" id="datePick" value="2026-06-03" max="2026-06-03">
+      </label>
+      <button id="nextDay" title="后一天" disabled>›</button>
+    </div>
+  </div>
+</div>
+
+<div class="tabs">
+  <div class="tabs-inner">
+    
+    <button class="tab active" data-cat="us_stocks">🇺🇸 美股<span class="count">10</span></button>
+    
+    <button class="tab " data-cat="my_stocks">🇲🇾 马股<span class="count">0</span></button>
+    
+    <button class="tab " data-cat="ai">🤖 AI<span class="count">10</span></button>
+    
+    <button class="tab " data-cat="macro">🌐 宏观<span class="count">10</span></button>
+    
+  </div>
+</div>
+
+<div class="wrap">
+  <header class="masthead">
+    <div class="masthead-title">Hermes Daily</div>
+    <div class="masthead-sub">2026-06-03 · 周三 · 09:02 MYT · For Henry</div>
+  </header>
+
+  
+  <div class="panel active" data-cat="us_stocks">
+    <div class="panel-head">
+      <div class="panel-title">美股 · US Markets</div>
+      <div class="panel-count">10 stories</div>
+    </div>
+
+    
+
+    
+    <article class="story lead">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>CNBC</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">鲁比奥称伊朗已布满霍尔木兹海峡水雷</h2>
+      <p class="story-dek">鲁比奥在参议院外交关系委员会作证时称伊朗行为非法。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美国国务卿鲁比奥表示伊朗已在霍尔木兹海峡“大片区域”布雷，此举非法。</p><p>该言论是在参议院外交关系委员会作证时发表的。</p><p>霍尔木兹海峡是重要石油运输通道。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-03T12:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>CNBC</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">沃什首批招聘含“2025计划”作者</h2>
+      <p class="story-dek">新任美联储主席沃什进行了首批招聘，其中一人曾参与撰写保守派政策蓝图“2025计划”的联储章节。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美联储新主席沃什宣布了首批人事任命。</p><p>其中包括一位曾撰写政策蓝图“2025计划”中联储章节的作者。</p><p>此举引发市场关注。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-03T12:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">4月职位空缺数跃升至近两年新高</h2>
+      <p class="story-dek">美国4月职位空缺数据显著上升，创近两年高位。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美国4月职位空缺数跃升，达到近两年最高水平。</p><p>数据显示劳动力市场依然强劲。</p><p>经济学家认为这可能影响美联储政策。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-03T12:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>CNBC</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">美伊冲突加剧推高油价 特朗普称谈判进行中</h2>
+      <p class="story-dek">美国中央司令部称击落多枚伊朗弹道导弹，特朗普表示仍在与伊朗谈判。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美国中央司令部周二宣布挫败了伊朗的“攻击企图”，击落多枚导弹。</p><p>与此同时，特朗普称与伊朗的谈判仍在进行。</p><p>受此影响，油价走高。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-03T12:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>CNBC</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">中国收紧散户投资美股渠道 谁将获益</h2>
+      <p class="story-dek">中国监管机构近期加强对富途证券、老虎证券等离岸券商的审查。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>中国监管机构加大对离岸券商的监管力度，限制散户投资美股。</p><p>此举将影响富途和老虎等券商。</p><p>分析师认为本土券商或将受益。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-03T12:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>MarketWatch</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">美伊和谈遇阻 油价延续涨势</h2>
+      <p class="story-dek">油价上涨，因市场担忧美国与伊朗的和平谈判可能无法取得进展。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>油价延续上涨，原因是美伊和谈信号显示谈判可能陷入僵局。</p><p>投资者担心霍尔木兹海峡供应中断风险。</p><p>市场密切关注后续发展。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.marketwatch.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-03T12:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>CNBC</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Palo Alto业绩强劲 AI担忧消散 目标价上调</h2>
+      <p class="story-dek">Palo Alto Networks的强劲业绩打消了人工智能颠覆的担忧，股价创新高，分析师上调目标价。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Palo Alto Networks最新财报表现强劲，消除了市场对AI威胁的担忧。</p><p>公司业务势头明显，股价回升至历史高位。</p><p>我们因此上调其目标价。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-03T12:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>MarketWatch</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">亚洲货币盘整 市场关注中东局势</h2>
+      <p class="story-dek">亚洲货币兑美元呈现盘整走势，交易员评估中东局势发展。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>亚洲货币兑美元汇率窄幅波动，市场处于盘整状态。</p><p>交易员正评估中东地区的最新动态。</p><p>地缘政治不确定性抑制了汇率波动。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.marketwatch.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-03T12:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>CNBC</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">日经指数创新高 亚洲市场中东担忧中走高</h2>
+      <p class="story-dek">亚太股市周二开盘上涨，日经指数触及纪录高位，尽管中东局势引发油价波动担忧。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>亚太市场开盘上涨，日本日经指数创下历史新高。</p><p>投资者关注中东局势，尤其是霍尔木兹海峡关闭对油价的影响。</p><p>但市场情绪仍偏乐观。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-03T12:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>MarketWatch</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">日本国债因技术性回调下跌</h2>
+      <p class="story-dek">日本国债价格在东京早盘下跌，似乎是此前连续上涨后的技术性回调。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>日本国债价格在周二上午交易中下跌。</p><p>分析人士认为这是对过去几个交易日大幅上涨的技术性修正。</p><p>多数日本主权债券此前均录得稳健涨幅。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.marketwatch.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-03T12:00:00Z</span>
+      </div>
+    </article>
+    
+  </div>
+  
+  <div class="panel " data-cat="my_stocks">
+    <div class="panel-head">
+      <div class="panel-title">马股 · Bursa Malaysia</div>
+      <div class="panel-count">0 stories</div>
+    </div>
+
+    
+    <div class="empty">今日暂无 马股 新闻</div>
+    
+
+    
+  </div>
+  
+  <div class="panel " data-cat="ai">
+    <div class="panel-head">
+      <div class="panel-title">AI · 人工智能</div>
+      <div class="panel-count">10 stories</div>
+    </div>
+
+    
+
+    
+    <article class="story lead">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>The Verge AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">微软发布旗舰AI模型MAI-Thinking-1</h2>
+      <p class="story-dek">微软在Build 2026上宣布了多款自研AI模型，包括旗舰模型MAI-Thinking-1，标志其自研模型开发迈出重要一步。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>微软在Build 2026大会上发布多款自研AI模型，其中旗舰模型MAI-Thinking-1主打高级推理能力，这是微软首次推出此类模型。该模型旨在与其他顶级AI模型竞争，但具体性能数据未公布。[The Verge AI @ 2026-06-03]</p><p>MAI-Thinking-1的推出是微软自研AI战略的里程碑，此前微软主要依赖OpenAI的模型。微软表示，该模型将首先集成到其Azure AI平台和Copilot服务中，但具体上线时间未确认。[The Verge AI @ 2026-06-03]</p><p>值得注意的是，MAI模型名称与Ambarella的股票代码MAI相同，但两者无关联。Ambarella的股价数据未验证，报表中无最新数据。[数据未验证]</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.theverge.com/ai/2026/6/3/microsoft-mai-thinking-1" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-03T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Anthropic扩展Claude Mythos至关键基础设施</h2>
+      <p class="story-dek">Anthropic将其安全漏洞计划Project Glasswing及模型Mythos扩展至15个国家150家组织，覆盖电力、水务、医疗等关键基础设施。</p>
+
+      
+
+      
+      <div class="data-card ai">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>Anthropic宣布将安全漏洞计划Project Glasswing和模型Mythos扩展至15个国家的150家组织，重点覆盖电力、水务、医疗等关键基础设施。此前该计划仅在美国和欧盟运作，但未提供具体财务影响。[TechCrunch AI @ 2026-06-03]</p><p>Mythos模型将用于安全检测和基础设施保护，但Anthropic未透露这是否会带来直接收入。其提供商微软和亚马逊的股价今日均下跌，MSFT报441.31美元（-4.17），AMZN报256.52美元（-1.81）。[yfinance @ 2026-06-03]</p><p>Anthropic作为未上市公司，其股价数据不可得。市场分析认为，此次扩张可能提升其未来估值，但目前无具体数据验证。[数据未验证]</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/2026/06/03/anthropic-claude-mythos-critical-infrastructure/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-03T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>The Verge AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">特朗普签署AI模型预审行政令</h2>
+      <p class="story-dek">特朗普签署行政令，要求AI公司在发布前沿模型前自愿提交联邦政府审查，以促进安全创新。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美国总统特朗普签署行政令，建立‘自愿框架’，要求AI公司在发布前沿模型前与联邦政府共享。该行政令旨在促进‘有益创新’，但未强制要求，只是框架性政策。[The Verge AI @ 2026-06-03]</p><p>行政令未指定具体处罚措施，也未涉及医疗或金融等特定行业模型。受影响公司包括OpenAI、Google等，但未提供具体股价影响数据。[数据未验证]</p><p>此前有报道称行政令范围更窄，但最终版本仍为自愿性质。微软、谷歌等公司未立即回应，但股票市场整体反应平淡。[数据未验证]</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.theverge.com/2026/6/3/trump-ai-executive-order-review" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-03T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">特朗普修订AI行政令改自愿审查</h2>
+      <p class="story-dek">因行业反对，特朗普签署修订版AI行政令，仅要求对先进模型进行自愿预发布政府审查。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>特朗普签署修订版AI行政令，将先前的强制预审改为自愿框架。行业此前反对强制审查，认为会抑制创新。[TechCrunch AI @ 2026-06-03]</p><p>修订后行政令仅鼓励而非强制公司分享前沿模型。受影响的公司如微软和谷歌的股价今日波动不大，MSFT下跌4.17美元至441.31美元，但与行政令无直接关联。[yfinance @ 2026-06-03]</p><p>该行政令与The Verge报道的版本一致，均为自愿性质。未提供具体公司应对数据。[数据未验证]</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/2026/06/03/trump-narrower-ai-executive-order/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-03T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">OpenAI发布白领工作Codex插件</h2>
+      <p class="story-dek">OpenAI推出六款面向数据分析、创意、销售、设计、投资等白领工作的Codex插件，已在Codex App内可用。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>OpenAI发布六款针对特定白领工作的Codex插件，涵盖数据分析、创意制作、销售、产品设计、股权投资和投资银行。这些插件可在Codex App内直接使用，但未披露定价或使用量。[TechCrunch AI @ 2026-06-03]</p><p>插件旨在自动化白领工作流程，可能影响相关行业就业。OpenAI未提供财务影响预测，也未提及与传统AI公司的竞争关系。[数据未验证]</p><p>相关公司如微软（MSFT）股价下跌4.17美元至441.31美元，但与此次发布无直接关联。[yfinance @ 2026-06-03]</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/2026/06/03/openai-codex-white-collar-tools/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-03T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Simon Willison</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">微软发布七款新MAI模型</h2>
+      <p class="story-dek">微软今晨发布两款新文本LLM，作为七款新MAI模型的一部分，具体细节尚未完全公开。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>微软发布七款新MAI模型，包括两款文本LLM。这些模型是微软自研AI战略的一部分，但具体名称和性能细节尚未全部公开。[Simon Willison @ 2026-06-03]</p><p>此次发布与Build 2026大会相关，但未提供价格或部署信息。微软股价今日下跌4.17美元至441.31美元，但整体市场波动较大。[yfinance @ 2026-06-03]</p><p>MAI模型名称与Ambarella股票代码MAI无关，后者无最新数据。[数据未验证]</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://simonwillison.net/2026/6/3/microsoft-mai-models/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-03T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>The Verge AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">微软推出AI代理操作系统Project Solara</h2>
+      <p class="story-dek">微软在Build 2026上宣布Project Solara，一款专为运行AI代理的设备打造的底层操作系统。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>微软在Build 2026上发布Project Solara，这是一款专为AI代理设备打造的OS，旨在从零构建代理驱动体验。但未提供具体硬件合作伙伴或发布时间。[The Verge AI @ 2026-06-03]</p><p>Project Solara可能影响未来智能设备市场，但今日无直接财务数据。微软股价下跌4.17美元至441.31美元。[yfinance @ 2026-06-03]</p><p>该OS是否与现有硬件兼容未说明，相关供应链公司如AMD（521.54美元）未提及。[数据未验证]</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.theverge.com/2026/6/3/microsoft-project-solara-ai-os" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-03T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>The Verge AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Gemini Spark展现最震撼AI体验</h2>
+      <p class="story-dek">评测称Gemini Spark是迄今最令人印象深刻的AI体验，但同时也最令人担忧，尤其在旅行规划场景中表现惊人。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>The Verge编辑体验了Google的Gemini Spark，描述其为‘最令人印象深刻且最恐怖的AI体验’。该产品在旅行规划演示中表现出色，但评测未提供具体技术细节。[The Verge AI @ 2026-06-03]</p><p>Gemini Spark是Google AI产品线的一部分，但Google母公司Alphabet股价今日下跌3.86美元至361.85美元。[yfinance @ 2026-06-03]</p><p>评测未提及发布计划或价格，也未提供与竞争对手如ChatGPT的比较数据。[数据未验证]</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.theverge.com/2026/6/3/google-gemini-spark-review" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-03T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>The Verge AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">微软Build 2026七大重磅发布</h2>
+      <p class="story-dek">微软Build 2026大会主题演讲涵盖新Surface硬件、随时在线AI系统及多项AI更新，微软股价微跌。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>微软Build 2026开幕，CEO纳德拉发表主题演讲，宣布七项重要发布，包括新Surface硬件和持续在线AI。具体细节未逐一披露。[The Verge AI @ 2026-06-03]</p><p>微软股价今日下跌4.17美元至441.31美元，但与大会无直接关联。其他科技股如NVDA（222.82美元）和META（597.63美元）也下跌。[yfinance @ 2026-06-03]</p><p>硬件发布未列出价格或上市日期，AI相关更新包括MAI模型和Project Solara。[数据未验证]</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.theverge.com/2026/6/3/microsoft-build-2026-announcements" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-03T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">微软推出AI代理行为控制新规</h2>
+      <p class="story-dek">微软发布新规范，允许开发、合规和安全团队通过可移植政策文件定义AI代理行为。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>微软发布新规范，让开发者、合规及安全团队在便携式政策文件中定义AI代理行为策略。这有助于企业更精细地控制AI应用，但未提供采用数据。[TechCrunch AI @ 2026-06-03]</p><p>此举可能降低企业部署AI代理的风险，但相关财务影响未量化。微软股价下跌4.17美元至441.31美元。[yfinance @ 2026-06-03]</p><p>该规范与Project Solara等产品协同，但具体实施时间未公布。[数据未验证]</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/2026/06/03/microsoft-ai-agent-behavior-control/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-03T00:00:00Z</span>
+      </div>
+    </article>
+    
+  </div>
+  
+  <div class="panel " data-cat="macro">
+    <div class="panel-head">
+      <div class="panel-title">宏观 · Macro</div>
+      <div class="panel-count">10 stories</div>
+    </div>
+
+    
+
+    
+    <article class="story lead">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>BBC World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">美国对伊朗岛屿实施自卫打击</h2>
+      <p class="story-dek">美军称打击系回应伊朗在中东的袭击企图</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美国军方宣布对伊朗的格什姆岛发动“自卫”打击，称这是对伊朗在中东多次袭击企图的回应。地缘政治紧张局势加剧，BBC股价下跌4.9%至41.71 [BBC @ 14:30 MYT]。</p><p>此次打击发生在霍尔木兹海峡附近，该海峡是全球石油运输的关键通道。分析师警告，冲突升级可能推高能源价格并影响全球供应链。</p><p>市场目前关注伊朗的下一步反应，以及美国是否会在该地区采取进一步军事行动。数据未验证显示，国际油价波动性可能增加。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.bbc.com/news" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-03T14:30:00+08:00</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">politics</span>
+        <span class="dot">·</span>
+        <span>CNBC Politics</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">特朗普称与伊朗谈判仍在继续</h2>
+      <p class="story-dek">总统对伊朗媒体否认谈判表示不在乎</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美国总统特朗普表示，尽管伊朗媒体声称谈判破裂，美国与德黑兰之间的对话仍在进行。特朗普对CNBC称“我真的不关心”，显得不屑一顾。BBC股价下跌4.9%至41.71 [BBC @ 14:30 MYT]，市场对不确定性反应谨慎。</p><p>伊朗官方媒体此前报道称，伊朗已终止与美国的所有谈判，但特朗普的言论暗示双方仍有沟通渠道。分析人士认为，这种矛盾信号增加了外交前景的不可预测性。</p><p>投资者密切关注中东局势，任何外交突破或崩溃都可能影响油价和避险资产走势。数据未验证显示，近期黄金等避险资产需求上升。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/politics" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-03T14:30:00+08:00</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">geopolitics</span>
+        <span class="dot">·</span>
+        <span>BBC World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">以色列打击黎巴嫩南部，停火暂保</h2>
+      <p class="story-dek">以色列未袭击贝鲁特，美国宣布的部分停火协议似乎维持</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>以色列继续对黎巴嫩南部进行军事打击，但并未袭击贝鲁特，与美国宣布的部分停火协议保持一致。BBC股价下跌4.9%至41.71 [BBC @ 14:30 MYT]，反映市场对地区稳定的担忧。</p><p>该停火协议由美国斡旋，旨在防止以色列与真主党之间爆发全面战争。目前，黎巴嫩南部冲突仍在继续，但局势相对受控。</p><p>投资者评估该地区冲突对能源安全和金融市场的影响。数据未验证显示，以色列和黎巴嫩资产面临压力。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.bbc.com/news" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-03T14:30:00+08:00</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">finance</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Cliffwater旗舰私募信贷基金赎回率达17%</h2>
+      <p class="story-dek">资产310亿美元基金限制赎回，显示资金外流趋势</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Cliffwater旗下旗舰私募信贷基金面临高达17%的赎回请求，净资产约310亿美元。该基金以零售投资者为目标，但近期限制提款。FT价格下跌0.13%至7.96 [FT @ 14:30 MYT]，反映市场对私募信贷流动性的担忧。</p><p>该基金的最新限制措施是私人信贷行业资金外流的又一信号。投资者担心，在利率上升和经济放缓背景下，私人信贷资产估值可能承压。</p><p>分析人士指出，赎回比例数据未验证，但行业趋势表明私人信贷正面临流动性压力。FT媒体相关报道进一步打击市场情绪。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/world" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-03T14:30:00+08:00</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">trade</span>
+        <span class="dot">·</span>
+        <span>BBC World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">加拿大请求延长北美自贸协定16年</h2>
+      <p class="story-dek">加拿大贸易部长致信美墨，提议续签USMCA</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>加拿大正式请求将北美自由贸易协定（USMCA）续签16年。加拿大贸易部长多米尼克·勒布朗在致美国和墨西哥同行的信中提出这一建议。USMCA相关数据未验证，但该协议对北美经济一体化至关重要。</p><p>此举旨在确保贸易稳定，减少不确定性。美国尚未正式回应，但特朗普政府此前曾批评该协议的部分条款。</p><p>市场对贸易续签前景持谨慎乐观态度。BBC股价下跌4.9%至41.71 [BBC @ 14:30 MYT]，显示地缘政治风险仍影响投资者信心。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.bbc.com/news" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-03T14:30:00+08:00</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">diplomacy</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">墨西哥斥责美国大使，外交摩擦升级</h2>
+      <p class="story-dek">总统谢因鲍姆要求华盛顿尊重内政，回应美国起诉政客</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>墨西哥总统克劳迪娅·谢因鲍姆谴责美国大使，称华盛顿必须“尊重”墨西哥内部事务。此举源于美国对墨西哥政客的起诉，导致双边关系紧张。FT价格下跌0.13%至7.96 [FT @ 14:30 MYT]，反映贸易不确定性。</p><p>这场外交争端可能影响USMCA框架下的合作，以及两国在毒品走私等议题上的联合行动。墨西哥是主要贸易伙伴，矛盾升级可能波及跨境供应链。</p><p>投资者担忧贸易摩擦将增加商业成本。数据未验证显示，墨西哥比索和墨西哥股市近期波动加剧。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/world" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-03T14:30:00+08:00</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">politics</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">特朗普任命房地产继承人当情报主管</h2>
+      <p class="story-dek">比尔·普尔特将代理国家情报总监一职</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美国总统特朗普任命房地产大亨比尔·普尔特为代理国家情报总监。普尔特是住房金融局负责人，也是特朗普的坚定盟友。FT价格下跌0.13%至7.96 [FT @ 14:30 MYT]，市场对意外任命反应平淡。</p><p>该任命引发争议，因为普尔特此前利用抵押记录针对特朗普的反对者。批评者担心他会将情报机构政治化，而支持者认为他带来改革。</p><p>参议院确认程序尚未明确，普尔特将在代理角色中执掌美国情报界“皇冠上的明珠”。数据未验证显示，相关政治风险可能影响国防承包商股价。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/world" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-03T14:30:00+08:00</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">politics</span>
+        <span class="dot">·</span>
+        <span>CNBC Politics</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">普尔特任间谍首脑：攻击犬获情报密钥</h2>
+      <p class="story-dek">住房金融官将用职权对付特朗普反对者，专家忧虑</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>比尔·普尔特被特朗普任命为代理国家情报总监，他作为住房金融局负责人曾利用抵押记录将特朗普的对手移交起诉。BBC股价下跌4.9%至41.71 [BBC @ 14:30 MYT]，市场对情报机构政治化感到不安。</p><p>情报界官员担心普尔特会将情报用于政治目的。前官员称，这一任命可能损害美国情报机构的独立性。</p><p>普尔特在住房领域的强硬作风可能延续至情报工作。数据未验证表明，此类人事变动往往引发国家安全与商业信心的连锁反应。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/politics" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-03T14:30:00+08:00</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">politics</span>
+        <span class="dot">·</span>
+        <span>BBC World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">特朗普选住房官员为美情报总监</h2>
+      <p class="story-dek">比尔·普尔特将代理国家情报总监，此前推动起诉特朗普对手</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美国总统特朗普选择联邦住房金融局局长比尔·普尔特担任代理国家情报总监。普尔特因对特朗普的批评者提起刑事指控而闻名。BBC股价下跌4.9%至41.71 [BBC @ 14:30 MYT]，市场担忧情报政治化。</p><p>这一任命无需参议院确认，普尔特立即生效。他曾在住房领域推行激进改革，现在将掌管美国16个情报机构。</p><p>分析人士指出，普尔特的忠诚度可能优先于客观性。数据未验证显示，此类高层变动通常增加政策不确定性。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.bbc.com/news" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-03T14:30:00+08:00</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">geopolitics</span>
+        <span class="dot">·</span>
+        <span>BBC World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">俄袭基辅，居民心灵创伤难愈</h2>
+      <p class="story-dek">俄罗斯大规模攻击后，基辅郊区满目疮痍</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>俄罗斯对乌克兰首都基辅发动大规模导弹袭击，一个安静的居民区遭到重创。居民从地下掩体出来后，看到一片废墟。BBC股价下跌4.9%至41.71 [BBC @ 14:30 MYT]，市场对冲突长期化感到沮丧。</p><p>“他们会修好建筑，但修复不了我们的灵魂。”一位居民说。袭击造成多人伤亡，并破坏了关键基础设施。</p><p>战争持续消耗乌克兰经济，国际社会对援助的疲劳感加剧。数据未验证显示，冲突对全球粮食和能源市场仍有深远影响。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.bbc.com/news" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-03T14:30:00+08:00</span>
+      </div>
+    </article>
+    
+  </div>
+  
+
+  <footer class="doc-footer">Hermes Daily · 2026-06-03 09:02 MYT · Top 30 of 30 · Build 7c09</footer>
+</div>
+
+<script>
+  const tabs = document.querySelectorAll('.tab');
+  const panels = document.querySelectorAll('.panel');
+  tabs.forEach(tab => {
+    tab.onclick = () => {
+      const cat = tab.dataset.cat;
+      tabs.forEach(t => t.classList.toggle('active', t === tab));
+      panels.forEach(p => p.classList.toggle('active', p.dataset.cat === cat));
+      window.scrollTo({ top: 0 });
+    };
+  });
+
+  const datePick = document.getElementById('datePick');
+  const dateText = document.getElementById('dateText');
+  const weekdays = ['周日','周一','周二','周三','周四','周五','周六'];
+  function fmt(d){ const dt=new Date(d+'T00:00:00'); return `${dt.getMonth()+1}月${dt.getDate()}日 ${weekdays[dt.getDay()]}`; }
+  datePick.onchange = () => { window.location = '/' + datePick.value + '/'; };
+
+  function shift(days){
+    const cur = new Date(datePick.value + 'T00:00:00');
+    cur.setDate(cur.getDate() + days);
+    const iso = cur.toISOString().slice(0,10);
+    window.location = '/' + iso + '/';
+  }
+  document.getElementById('prevDay').onclick = () => shift(-1);
+  const nextBtn = document.getElementById('nextDay');
+  if (!nextBtn.disabled) nextBtn.onclick = () => shift(1);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>Geewoni Daily · 2026-05-29</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;900&family=Noto+Serif+SC:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --bg: #ffffff; --ink: #1d1d1f; --ink-soft: #424245; --ink-light: #86868b;
+    --divider: #d2d2d7; --accent-red: #c8102e; --accent-blue: #0066cc;
+    --accent-amber: #d97706; --accent-green: #00855b; --card-bg: #fafafa;
+    --nav-bg: rgba(255,255,255,0.85);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1a1a1c; --ink: #f5f5f7; --ink-soft: #c7c7cc; --ink-light: #8e8e93;
+      --divider: #38383a; --card-bg: #2c2c2e; --nav-bg: rgba(26,26,28,0.85);
+    }
+  }
+
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: var(--bg); color: var(--ink); line-height: 1.5;
+    -webkit-font-smoothing: antialiased; overflow-x: hidden;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+  .topbar { position: sticky; top: 0; z-index: 100; background: var(--nav-bg); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid var(--divider); }
+  .topbar-inner { max-width: 720px; margin: 0 auto; padding: 11px 24px; display: flex; align-items: center; justify-content: space-between; }
+  .brand { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 900; letter-spacing: -0.5px; }
+
+  .date-picker { display: flex; align-items: center; gap: 8px; }
+  .date-picker button { background: none; border: none; color: var(--ink-light); font-size: 20px; cursor: pointer; padding: 0 2px; line-height: 1; }
+  .date-picker button:hover { color: var(--accent-blue); }
+  .date-picker button:disabled { opacity: 0.25; cursor: default; }
+  .date-display { position: relative; font-size: 13px; font-weight: 600; color: var(--ink); font-variant-numeric: tabular-nums; cursor: pointer; padding: 5px 10px; border-radius: 8px; background: var(--card-bg); display: flex; align-items: center; gap: 6px; }
+  .date-display:hover { color: var(--accent-blue); }
+  .date-display input[type="date"] { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%; }
+  .date-display .cal-icon { font-size: 12px; }
+
+  .tabs { position: sticky; top: 47px; z-index: 99; background: var(--nav-bg); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid var(--divider); }
+  .tabs-inner { max-width: 720px; margin: 0 auto; padding: 0 12px; display: flex; gap: 2px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .tabs-inner::-webkit-scrollbar { display: none; }
+  .tab { flex: 1 0 auto; min-width: 72px; text-align: center; padding: 13px 14px; font-size: 14px; font-weight: 600; color: var(--ink-light); border-bottom: 2.5px solid transparent; cursor: pointer; white-space: nowrap; transition: color .15s, border-color .15s; background: none; font-family: inherit; }
+  .tab.active { color: var(--ink); }
+  .tab[data-cat="us_stocks"].active { border-bottom-color: var(--accent-red); }
+  .tab[data-cat="my_stocks"].active { border-bottom-color: var(--accent-amber); }
+  .tab[data-cat="ai"].active { border-bottom-color: var(--accent-blue); }
+  .tab[data-cat="macro"].active { border-bottom-color: var(--accent-green); }
+  .tab .count { display: inline-block; min-width: 18px; padding: 1px 5px; margin-left: 3px; font-size: 11px; font-weight: 600; border-radius: 9px; background: var(--card-bg); color: var(--ink-light); }
+  .tab.active .count { background: var(--ink); color: var(--bg); }
+
+  .masthead { padding: 28px 0 4px; }
+  .masthead-title { font-family: 'Playfair Display','Noto Serif SC',serif; font-size: 44px; font-weight: 900; letter-spacing: -1px; line-height: 1; }
+  .masthead-sub { font-size: 12px; color: var(--ink-light); margin-top: 8px; text-transform: uppercase; letter-spacing: 1.2px; }
+
+  .panel { display: none; }
+  .panel.active { display: block; animation: fade .25s ease; }
+  @keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+  .panel-head { margin: 32px 0 22px; padding-bottom: 12px; border-bottom: 1px solid var(--divider); display: flex; align-items: baseline; justify-content: space-between; }
+  .panel-title { font-family: 'Playfair Display','Noto Serif SC',serif; font-size: 26px; font-weight: 700; }
+  .panel-count { font-size: 11px; color: var(--ink-light); text-transform: uppercase; letter-spacing: 1.2px; }
+
+  .story { margin-bottom: 40px; padding-bottom: 40px; border-bottom: 1px solid var(--divider); }
+  .story:last-child { border-bottom: none; }
+  .story-meta { display: flex; gap: 10px; align-items: center; font-size: 11px; color: var(--ink-light); text-transform: uppercase; letter-spacing: 1.1px; margin-bottom: 11px; }
+  .story-meta .dot { color: var(--divider); }
+  .tag-us_stocks { color: var(--accent-red); font-weight: 600; }
+  .tag-my_stocks { color: var(--accent-amber); font-weight: 600; }
+  .tag-ai { color: var(--accent-blue); font-weight: 600; }
+  .tag-macro { color: var(--accent-green); font-weight: 600; }
+
+  .story-headline { font-family: 'Playfair Display','Noto Serif SC',serif; font-size: 28px; font-weight: 700; line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 10px; }
+  .story.lead .story-headline { font-size: 34px; }
+  .story-dek { font-size: 16px; color: var(--ink-soft); line-height: 1.55; margin-bottom: 16px; }
+
+  .story-hero { width: 100%; height: 210px; border-radius: 8px; margin-bottom: 16px; display: flex; align-items: center; justify-content: center; color: var(--ink-light); font-size: 11px; letter-spacing: 1px; text-transform: uppercase; overflow: hidden; background: linear-gradient(135deg,#f5f5f7,#e8e8ed 50%,#d8d8df); }
+  .story-hero img { width: 100%; height: 100%; object-fit: cover; }
+
+  .data-card { background: var(--card-bg); border-left: 3px solid var(--accent-red); padding: 13px 17px; margin: 16px 0; border-radius: 0 6px 6px 0; }
+  .data-card.my_stocks { border-left-color: var(--accent-amber); }
+  .data-card.ai { border-left-color: var(--accent-blue); }
+  .data-card.macro { border-left-color: var(--accent-green); }
+  .data-card-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--ink-light); margin-bottom: 7px; }
+  .data-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px; font-size: 14px; }
+  .data-row .num { font-weight: 600; font-variant-numeric: tabular-nums; }
+  .data-row .up { color: var(--accent-red); }
+  .data-row .down { color: #00a35c; }
+  .data-citation { font-size: 10px; color: var(--ink-light); margin-top: 7px; font-style: italic; }
+
+  .story-body p { font-size: 15px; line-height: 1.65; margin-bottom: 13px; }
+  .story-body p:first-of-type::first-letter { font-family: 'Playfair Display',serif; font-size: 36px; font-weight: 900; line-height: 1; color: var(--accent-red); padding-right: 2px; }
+
+  .story-warning { background: #fff3cd; border-left: 3px solid #d97706; padding: 11px 15px; margin: 14px 0; color: #856404; font-size: 13px; border-radius: 0 4px 4px 0; }
+  @media (prefers-color-scheme: dark) { .story-warning { background: #3a2e10; color: #fde68a; } }
+
+  .story-source { margin-top: 18px; padding-top: 13px; border-top: 1px dotted var(--divider); font-size: 12px; color: var(--ink-light); display: flex; justify-content: space-between; align-items: center; }
+  .source-pill { display: inline-flex; align-items: center; padding: 4px 12px; background: var(--card-bg); border-radius: 12px; font-weight: 500; color: var(--ink-soft); text-decoration: none; min-height: 30px; }
+
+  .empty { padding: 60px 20px; text-align: center; color: var(--ink-light); font-size: 14px; }
+  .doc-footer { margin: 48px 0 60px; padding-top: 28px; border-top: 2px solid var(--ink); text-align: center; font-size: 11px; color: var(--ink-light); letter-spacing: 1.5px; text-transform: uppercase; }
+
+  @media (max-width: 640px) {
+    .wrap { padding: 0 18px; }
+    .topbar-inner { padding-left: 18px; padding-right: 18px; }
+    .brand { font-size: 17px; }
+    .date-display { font-size: 12px; }
+    .masthead-title { font-size: 32px; }
+    .tab { font-size: 13px; padding: 12px 12px; min-width: 64px; }
+    .story-headline { font-size: 23px; }
+    .story.lead .story-headline { font-size: 27px; }
+    .story-hero { height: 170px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <span class="brand">Geewoni Daily</span>
+    <div class="date-picker">
+      <button id="prevDay" title="前一天">‹</button>
+      <label class="date-display">
+        <span class="cal-icon">📅</span>
+        <span id="dateText">5月29日 周五</span>
+        <input type="date" id="datePick" value="2026-05-29" max="2026-05-30">
+      </label>
+      <button id="nextDay" title="后一天" >›</button>
+    </div>
+  </div>
+</div>
+
+<div class="tabs">
+  <div class="tabs-inner">
+    
+    <button class="tab active" data-cat="us_stocks">🇺🇸 美股<span class="count">10</span></button>
+    
+    <button class="tab " data-cat="my_stocks">🇲🇾 马股<span class="count">10</span></button>
+    
+    <button class="tab " data-cat="ai">🤖 AI<span class="count">10</span></button>
+    
+    <button class="tab " data-cat="macro">🌐 宏观<span class="count">10</span></button>
+    
+  </div>
+</div>
+
+<div class="wrap">
+  <header class="masthead">
+    <div class="masthead-title">Geewoni Daily</div>
+    <div class="masthead-sub">2026-05-29 · 周五 · 16:23 MYT · For Henry</div>
+  </header>
+
+  
+  <div class="panel active" data-cat="us_stocks">
+    <div class="panel-head">
+      <div class="panel-title">美股 · US Markets</div>
+      <div class="panel-count">10 stories</div>
+    </div>
+
+    
+
+    
+    <article class="story lead">
+      <div class="story-meta">
+        <span class="tag-us_stocks">chip_sector</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">芯片板块暴涨后展望</h2>
+      <p class="story-dek">After a massive rally, the chip sector faces a potential pullback. Key stocks show mixed signals.</p>
+
+      
+
+      
+      <div class="data-card us_stocks">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>芯片板块近期涨势惊人，但NVDA股价仅报214.25美元[yfinance @ 最新]，涨幅0.78%，显示动能减弱。AMD表现强劲，收于518.09美元[yfinance @ 最新]，涨4.55美元，但波动风险仍存。</p><p>英特尔INTC下跌0.72%至120.89美元[yfinance @ 最新]，美光MU同步走弱，收923.52美元[yfinance @ 最新]，跌幅0.53%。板块内部分化明显，投资者需警惕高位回调。</p><p>整体来看，芯片股估值已高，后市需关注需求变化与地缘因素。数据未验证其他潜在催化剂，建议谨慎操作。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com/article/2026-05-29-rampocalypse-chip-sector" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">fed_policy</span>
+        <span class="dot">·</span>
+        <span>CNBC Top News</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">美联储鲍曼警告勿加息</h2>
+      <p class="story-dek">Fed Governor Bowman warns against hiking rates amid inflation spike driven by energy and tariffs.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美联储理事米歇尔·鲍曼警告称，由能源价格和关税推动的通胀飙升不应通过加息应对，历史证明此举无效。市场对此反应平静，数据未验证具体影响。</p><p>鲍曼指出，加息可能加剧经济下行风险，当前通胀更多是供给端因素。美元指数及美债收益率均数据未验证，但市场隐含利率预期已回落。</p><p>投资者需关注后续美联储官员讲话。数据未验证其他经济指标，建议保持观望。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/2026/05/29/fed-bowman-warns-against-rate-hikes.html" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">data_center</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">五大力量塑造数据中心投资</h2>
+      <p class="story-dek">Five forces shaping the data center investment landscape include AI demand, chip supply, and energy constraints.</p>
+
+      
+
+      
+      <div class="data-card us_stocks">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>数据中心投资受AI算力需求驱动，NVDA股价214.25美元[yfinance @ 最新]，涨幅0.78%，反映市场对其GPU在数据中心主导地位的信心。AMD同样受益，涨4.55美元至518.09美元[yfinance @ 最新]。</p><p>英特尔INTC则承压，下跌0.72%至120.89美元[yfinance @ 最新]，其数据中心业务转型面临挑战。能源成本与监管政策也是关键变量，数据未验证具体影响。</p><p>长期看，数据中心建设需芯片、能源、土地等多要素配合。当前板块估值不低，建议关注头部企业订单进展。数据未验证其他个股。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com/article/2026-05-29-data-center-forces" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">ai_policy</span>
+        <span class="dot">·</span>
+        <span>CNBC Top News</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">欧盟寻求加强美方AI模型谈判</h2>
+      <p class="story-dek">EU seeks to intensify talks with US on advanced cyber AI models amid concerns over Anthropic&#39;s Mythos.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>欧盟官员表示希望与美国加强先进网络AI模型谈判，担忧Anthropic的Mythos模型具备强大网络能力。数据未验证具体谈判细节。</p><p>此次争议引发科技股波动，但主要AI相关公司如META和GOOGL股价未见异常，META报635.29美元[yfinance @ 最新]，涨幅0.01%；GOOGL报390.13美元[yfinance @ 最新]，涨0.33%。</p><p>监管不确定性可能影响AI投资节奏，但短期市场反应有限。数据未验证其他政策进展。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/2026/05/29/eu-ai-cyber-model-talks.html" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">space_stocks</span>
+        <span class="dot">·</span>
+        <span>MarketWatch Top</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">航天股因火箭爆炸与估值质疑下挫</h2>
+      <p class="story-dek">Space stocks sink after Blue Origin rocket explosion and SpaceX valuation concerns.</p>
+
+      
+
+      
+      <div class="data-card us_stocks">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>航天板块周五承压，蓝源火箭爆炸与SpaceX估值问题引发抛售。RKLB股价下跌1.46美元至148.03美元[yfinance @ 最新]，成为板块领跌。</p><p>OKLO逆势微涨0.40美元至68.09美元[yfinance @ 最新]，但整体市场情绪偏空。BMNR等其他小盘股数据未验证，波动较大。</p><p>短期风险释放后，长期投资者可关注基本面扎实的企业。数据未验证SpaceX估值调整影响，建议保持谨慎。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.marketwatch.com/story/2026-05-29-space-stocks-sink" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">spacex_ipo</span>
+        <span class="dot">·</span>
+        <span>CNBC Top News</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">SpaceX估值争议因马斯克言论加剧</h2>
+      <p class="story-dek">Elon Musk&#39;s comments on X diverge from the IPO prospectus, adding skepticism.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>马斯克在社交媒体上透露SpaceX与Anthropic的交易细节，与IPO招股书内容不符，引发投资者质疑。数据未验证具体估值影响。</p><p>SpaceX自身未上市，但市场关注其IPO估值。相关火箭股如RKLB受情绪影响下跌1.46%至148.03美元[yfinance @ 最新]，OKLO则微涨0.40美元。</p><p>后续需关注SEC是否介入调查。数据未验证其他SpaceX合作伙伴的股价反应。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/2026/05/29/spacex-musk-ipo-diverge.html" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">oil_market</span>
+        <span class="dot">·</span>
+        <span>MarketWatch Top</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">伊朗战争或结束但油价难回60美元</h2>
+      <p class="story-dek">The Iran war may wind down but oil prices may not return to $60 per barrel.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>伊朗战争接近尾声，但油价可能不会跌回60美元。能源股及原油期货数据未验证，市场预期供给端受损难以短期修复。</p><p>地缘风险溢价下降，但OPEC+政策与需求变化仍是焦点。数据未验证其他大宗商品走势。</p><p>投资者需关注美国页岩油产量及制裁动向。当前国际油价数据未验证，建议观望。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.marketwatch.com/story/2026-05-29-iran-war-oil-prices" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">downgrade</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">戴尔财报亮眼但建议获利了结</h2>
+      <p class="story-dek">Dell posts impressive Q1 numbers but analyst recommends taking profits now.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>戴尔Q1财报超预期，但分析师建议获利了结。数据中心需求强劲，但股价已消化利好。戴尔本身未在实时数据中，无法引用具体股价。</p><p>同行惠普等相关个股数据未验证，整体科技板块MSFT上涨3.47%至426.99美元[yfinance @ 最新]，AAPL涨0.53%至312.51美元[yfinance @ 最新]。</p><p>戴尔未来增长需看AI服务器订单持续性，当前估值偏高。数据未验证其他细节。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com/article/2026-05-29-dell-downgrade" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">market_signal</span>
+        <span class="dot">·</span>
+        <span>MarketWatch Top</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">估值过高市场闪现罕见买入信号</h2>
+      <p class="story-dek">Overvalued stock market flashes a rare buy signal as timers flee.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>市场广度指标显示投资者恐慌性离场，逆向买入信号出现。但整体估值偏高，标普500指数数据未验证。</p><p>科技龙头仍受资金青睐，MSFT涨3.47%至426.99美元[yfinance @ 最新]，AMZN涨0.79%至274.00美元[yfinance @ 最新]，TSLA涨0.40%至442.10美元[yfinance @ 最新]。</p><p>历史规律表明此类信号后短期反弹概率大，但长期仍需基本面支撑。建议控制仓位。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.marketwatch.com/story/2026-05-29-buy-signal" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">semiconductor</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">新思科技盘整阶段或告终</h2>
+      <p class="story-dek">Synopsys may be ending its consolidation phase as chip design demand rebounds.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>新思科技（SNPS）股价数据未验证，但半导体设计软件需求回升。相关芯片股NVDA涨0.78%至214.25美元[yfinance @ 最新]，AMD涨4.55美元至518.09美元[yfinance @ 最新]。</p><p>行业整合中，EDA工具龙头地位稳固。竞争对手Cadence数据未验证。</p><p>新思科技估值已高，但若AI芯片设计需求持续，仍有上行空间。建议等待回调机会。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com/article/2026-05-29-synopsys-consolidation" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T00:00:00Z</span>
+      </div>
+    </article>
+    
+  </div>
+  
+  <div class="panel " data-cat="my_stocks">
+    <div class="panel-head">
+      <div class="panel-title">马股 · Bursa Malaysia</div>
+      <div class="panel-count">10 stories</div>
+    </div>
+
+    
+
+    
+    <article class="story lead">
+      <div class="story-meta">
+        <span class="tag-my_stocks">stocks</span>
+        <span class="dot">·</span>
+        <span>NST</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">IOI集团季度业绩</h2>
+      <p class="story-dek">公司第三季盈利数据未验证</p>
+
+      
+
+      
+      <div class="data-card my_stocks">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>数据来源未提供具体数字。</p><p>IOI集团季度业绩数据未验证。</p><p>建议参考官方财报。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.nst.com.my/story/0" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T17:00:00+08:00</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-my_stocks">market</span>
+        <span class="dot">·</span>
+        <span>NST</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">马股周五收低</h2>
+      <p class="story-dek">马股延续跌势，整体市场广度正面</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>马股周五收低，延续跌势。</p><p>尽管中东地缘政治紧张缓解，市场仍承压。</p><p>整体交投情绪偏谨慎，没有具体数字可验证。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.nst.com.my/story/1" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T17:00:00+08:00</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-my_stocks">markets</span>
+        <span class="dot">·</span>
+        <span>FMT Business</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">华尔街期货持稳等待中东协议</h2>
+      <p class="story-dek">投资者关注地缘政治及通胀数据</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美国股指期货周五持稳。</p><p>投资者关注中东停火进展及通胀数据。</p><p>市场情绪谨慎，具体数据未验证。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.freemalaysiatoday.com/story/2" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T17:00:00+08:00</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-my_stocks">currencies</span>
+        <span class="dot">·</span>
+        <span>NST</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">马币兑美元收高</h2>
+      <p class="story-dek">马币因风险情绪回升而走强</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>马币兑美元周五收高。</p><p>受霍尔木兹海峡可能重开消息提振。</p><p>具体涨幅数据未验证。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.nst.com.my/story/3" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T17:00:00+08:00</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-my_stocks">stocks</span>
+        <span class="dot">·</span>
+        <span>NST</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Guan Chong首季净利数据未验证</h2>
+      <p class="story-dek">公司首季净利增长，但具体数字未在数据源中</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Guan Chong首季净利增长。</p><p>具体增长幅度数据未验证。</p><p>建议参考公司官方公告。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.nst.com.my/story/4" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T17:00:00+08:00</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-my_stocks">politics</span>
+        <span class="dot">·</span>
+        <span>FMT Business</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">贝森特称美国经济安全曾沉睡</h2>
+      <p class="story-dek">美国财长贝森特批评前任政策</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美国财长贝森特表示美国经济安全处于休眠状态。</p><p>特朗普政策正逆转数十年失误。</p><p>具体数据未验证。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.freemalaysiatoday.com/story/5" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T17:00:00+08:00</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-my_stocks">currencies</span>
+        <span class="dot">·</span>
+        <span>NST</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">日本汇市干预支出数据未验证</h2>
+      <p class="story-dek">日本央行上月干预汇市规模未知</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>日本央行上月干预汇市。</p><p>具体支出金额数据未验证。</p><p>官方数据未在数据源中提供。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.nst.com.my/story/6" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T17:00:00+08:00</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-my_stocks">ipo</span>
+        <span class="dot">·</span>
+        <span>FMT Business</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Big Caring集团拟IPO募资数据未验证</h2>
+      <p class="story-dek">药房连锁Big Caring计划上市</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Big Caring集团拟通过IPO募集资金。</p><p>具体金额数据未验证。</p><p>部分资金将用于偿还债务。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.freemalaysiatoday.com/story/7" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T17:00:00+08:00</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-my_stocks">stocks</span>
+        <span class="dot">·</span>
+        <span>NST</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">IJM Corp子公司售沙巴产业</h2>
+      <p class="story-dek">IJM Properties以RM47.5万出售土地及建筑</p>
+
+      
+
+      
+      <div class="data-card my_stocks">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>IJM Corp间接子公司IJM Properties签署买卖协议。</p><p>出售沙巴产业，价格数据未验证。</p><p>买家为Econsave关联公司。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.nst.com.my/story/8" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T17:00:00+08:00</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-my_stocks">stocks</span>
+        <span class="dot">·</span>
+        <span>NST</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">MTT Shipping订购两艘集装箱船</h2>
+      <p class="story-dek">芜湖造船厂获MTT订单总价数据未验证</p>
+
+      
+
+      
+      <div class="data-card my_stocks">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>MTT Shipping间接子公司订购两艘3300TEU集装箱船。</p><p>总价数据未验证。</p><p>芜湖造船厂负责建造。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.nst.com.my/story/9" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T17:00:00+08:00</span>
+      </div>
+    </article>
+    
+  </div>
+  
+  <div class="panel " data-cat="ai">
+    <div class="panel-head">
+      <div class="panel-title">AI · 人工智能</div>
+      <div class="panel-count">10 stories</div>
+    </div>
+
+    
+
+    
+    <article class="story lead">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Simon Willison</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Anthropic营收创新高</h2>
+      <p class="story-dek">H轮融资规模数据未验证</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Anthropic发布H轮融资公告，最引人注目的是其营收数据未验证。</p><p>公司表示自上次融资以来增长迅速，但具体数字数据未验证。</p><p>本轮融资将用于扩展AI能力与安全研究。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.anthropic.com/news/series-h" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Simon Willison</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Claude Opus 4.8发布：小幅改进</h2>
+      <p class="story-dek">Anthropic推出新一代模型</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Anthropic发布Claude Opus 4.8模型，官方称其性能有微小但实质性的提升。</p><p>用户测试显示在编码、推理等任务上表现更佳。</p><p>该模型已通过API对开发者开放。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.anthropic.com/news/claude-opus-4-8" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Arxiv ML</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">LLM评审的人类对齐与可游戏性研究</h2>
+      <p class="story-dek">论文审视LLM生成科学评论的潜在偏差</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>新论文指出LLM生成的论文评审正在被大型会议试用，但需要评估其对齐和可游戏性。</p><p>研究发现现有LLM评审易受提示工程影响，存在一致性风险。</p><p>作者呼吁制定更严格的部署规范。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://arxiv.org/abs/2605.28897" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Arxiv ML</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">认知类别Transformer：类别论偏置语言建模</h2>
+      <p class="story-dek">CCT架构结合认知科学与范畴论</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>CCT模型在GPT-2基础上引入类别论归纳偏置，参数量数据未验证。</p><p>实验表明其在逻辑推理和组合泛化任务上有提升。</p><p>该工作为语言模型注入结构化认知先验提供新方向。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://arxiv.org/abs/2605.28864" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Simon Willison</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">llm-anthropic 0.25.1发布</h2>
+      <p class="story-dek">支持最新Claude Opus 4.8</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>插件新版本增加对Anthropic最新模型的支持。</p><p>用户可通过命令行直接调用Claude Opus 4.8进行文本生成。</p><p>修复了之前版本中的一些连接问题。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://github.com/simonw/llm-anthropic/releases/tag/0.25.1" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Simon Willison</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">datasette 1.0a31发布</h2>
+      <p class="story-dek">两个全新功能增强了可扩展性</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Datasette发布重要alpha版本，引入两个核心新特性。</p><p>新功能包括插件化的数据导出管道和更灵活的UI定制。</p><p>此版本标志着向1.0稳定版迈出重要一步。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://github.com/simonw/datasette/releases/tag/1.0a31" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Arxiv ML</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">行为诱导镜像近端时间差分学习</h2>
+      <p class="story-dek">加速离策略预测的新方法</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>论文提出BIMP-TD算法，在离策略时间差分学习中引入镜像近端优化。</p><p>理论分析证明其收敛速度优于传统梯度TD方法。</p><p>在多个基准任务上验证了加速效果。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://arxiv.org/abs/2605.28849" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Arxiv ML</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">行为感知辅助修正离策略TD</h2>
+      <p class="story-dek">稳定离策略时间差分学习</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>BAAC-TD方法通过行为感知辅助校正来稳定离策略学习。</p><p>与TDC相比，在方差和偏差之间取得了更优平衡。</p><p>大量实验证明了其在连续控制任务中的有效性。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://arxiv.org/abs/2605.28855" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Arxiv ML</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">URIEL：选择性可持续测井新方法</h2>
+      <p class="story-dek">利用空中机器人实现热带森林精细采伐</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>论文提出URIEL框架，结合航空机器人进行选择性采伐和后期培育。</p><p>旨在减少传统砍伐对热带雨林的破坏，降低碳损失。</p><p>系统通过高精度定位与自主作业实现可持续森林管理。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://arxiv.org/abs/2605.28883" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Simon Willison</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">markdown-svg-renderer工具</h2>
+      <p class="story-dek">自定义Markdown渲染，支持SVG输出</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>新工具可渲染Markdown为SVG图像，特别优化了技术文档显示。</p><p>支持代码块高亮、数学公式和自定义样式。</p><p>适用于制作美观的截图、文档预览等场景。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://tools.simonwillison.net/markdown-svg-renderer" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T00:00:00Z</span>
+      </div>
+    </article>
+    
+  </div>
+  
+  <div class="panel " data-cat="macro">
+    <div class="panel-head">
+      <div class="panel-title">宏观 · Macro</div>
+      <div class="panel-count">10 stories</div>
+    </div>
+
+    
+
+    
+    <article class="story lead">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">油价因霍尔木兹海峡有望重开下跌</h2>
+      <p class="story-dek">布伦特原油创2020年以来最大月度跌幅，因美伊接近达成协议</p>
+
+      
+
+      
+      <div class="data-card macro">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>布伦特原油价格下跌，因市场预期霍尔木兹海峡可能重新开放，缓解供应担忧。FT原油价格报8.04美元，跌幅0.37美元，成交量66,828手[FT @ 2026-05-29]。</p><p>这是自2020年以来最大的月度跌幅，因美伊谈判取得进展。美国官员表示，双方接近达成延长停火协议，但尚未最终敲定[FT World @ 2026-05-29]。</p><p>特朗普政府希望协议即将达成，此前双方曾交火。副总统万斯称美伊‘非常接近’但‘尚未达成’协议[BBC World @ 2026-05-29]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/content/oil-prices-fall-strait-of-hormuz" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">俄罗斯无人机击中罗马尼亚公寓楼</h2>
+      <p class="story-dek">北约和布加勒斯特谴责‘鲁莽’升级，两人在加拉茨受伤</p>
+
+      
+
+      
+      <div class="data-card macro">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>俄罗斯无人机击中罗马尼亚加拉茨市一栋公寓楼，造成两人受伤。北约股价报40.9美元，上涨2.01美元，成交量63,731手[NATO @ 2026-05-29]。</p><p>北约和罗马尼亚总统谴责此次袭击为‘鲁莽’升级，要求‘坚定、协调和适当的回应’[CNBC Politics @ 2026-05-29]。</p><p>北约秘书长表示，联盟‘准备保卫每一寸盟国领土’，此前俄罗斯无人机击中北约成员国罗马尼亚[CNBC Politics @ 2026-05-29]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/content/russian-drone-romania" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">华盛顿接近达成延长伊朗停火协议</h2>
+      <p class="story-dek">特朗普政府希望协议即将达成，此前双方交火</p>
+
+      
+
+      
+      <div class="data-card macro">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>美国官员表示，华盛顿接近与伊朗达成延长停火协议。BBC股价报43.7美元，上涨0.32美元，成交量2,700手[BBC @ 2026-05-29]。</p><p>美国官员此前告诉BBC，延长停火框架已达成，待特朗普和伊朗领导层批准[BBC World @ 2026-05-29]。</p><p>副总统万斯称美伊‘非常接近’但‘尚未达成’协议，特朗普政府希望协议即将达成[BBC World @ 2026-05-29]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/content/washington-iran-ceasefire-deal" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>BBC World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">万斯称美伊‘非常接近’但未达成协议</h2>
+      <p class="story-dek">美国官员称延长停火框架已达成，待批准</p>
+
+      
+
+      
+      <div class="data-card macro">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>美国副总统万斯表示，美伊‘非常接近’达成协议，但‘尚未达成’。BBC股价报43.7美元，上涨0.32美元，成交量2,700手[BBC @ 2026-05-29]。</p><p>美国官员此前告诉BBC，延长停火框架已达成，待特朗普和伊朗领导层批准[BBC World @ 2026-05-29]。</p><p>特朗普政府希望协议即将达成，此前双方曾交火。油价因霍尔木兹海峡有望重开下跌[FT World @ 2026-05-29]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.bbc.com/news/us-iran-deal-vance" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>CNBC Politics</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">北约称准备保卫盟国领土</h2>
+      <p class="story-dek">俄罗斯无人机击中罗马尼亚后，北约秘书长发表声明</p>
+
+      
+
+      
+      <div class="data-card macro">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>北约秘书长表示，联盟‘准备保卫每一寸盟国领土’，此前俄罗斯无人机击中北约成员国罗马尼亚。北约股价报40.9美元，上涨2.01美元，成交量63,731手[NATO @ 2026-05-29]。</p><p>罗马尼亚总统称此次袭击要求‘坚定、协调和适当的回应’，两人在加拉茨受伤[CNBC Politics @ 2026-05-29]。</p><p>北约和布加勒斯特谴责此次升级为‘鲁莽’，俄罗斯无人机击中公寓楼[FT World @ 2026-05-29]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/politics/nato-chief-ready-defend" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">法国经济一季度萎缩0.1%</h2>
+      <p class="story-dek">意外下降，因国内需求疲软和出口下滑</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>法国经济在2026年第一季度意外萎缩0.1%，因国内需求疲软和出口下滑[FT World @ 2026-05-29]。</p><p>数据未验证：具体GDP数据未在&lt;live_data&gt;中提供。</p><p>经济学家警告，人口结构将使生活‘越来越糟’，财政压力将制约货币政策[FT World @ 2026-05-29]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/content/french-economy-contracts-q1" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>CNBC Politics</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">特朗普对阿曼的言论引发关注</h2>
+      <p class="story-dek">特朗普政府威胁制裁和军事行动，针对长期盟友阿曼</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>特朗普政府对阿曼发出制裁和军事行动威胁，阿曼是长期盟友和密切安全伙伴[CNBC Politics @ 2026-05-29]。</p><p>数据未验证：阿曼相关资产价格未在&lt;live_data&gt;中提供。</p><p>阿曼被称为‘中东瑞士’，特朗普的言论将其推入聚光灯下[CNBC Politics @ 2026-05-29]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/politics/trump-oman-outburst" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">古德哈特：人口结构将使生活恶化</h2>
+      <p class="story-dek">著名经济学家警告财政压力将制约独立货币政策</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>经济学家查尔斯·古德哈特警告，人口结构将使生活‘越来越糟’，财政压力将制约独立货币政策[FT World @ 2026-05-29]。</p><p>数据未验证：古德哈特言论未在&lt;live_data&gt;中提供具体数据。</p><p>法国经济一季度萎缩0.1%，因国内需求疲软和出口下滑[FT World @ 2026-05-29]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/content/charles-goodhart-demography" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">俄罗斯在乌克兰战争超支280亿美元</h2>
+      <p class="story-dek">财政部要求冻结其他领域支出，冲突成本上升</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>俄罗斯在乌克兰战争超支280亿美元，财政部要求冻结其他领域支出[FT World @ 2026-05-29]。</p><p>数据未验证：具体超支数据未在&lt;live_data&gt;中提供。</p><p>美伊接近延长停火，蓝色起源火箭测试中爆炸[FT World @ 2026-05-29]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/content/russia-overspend-ukraine-war" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">俄罗斯在乌克兰战争超支280亿美元</h2>
+      <p class="story-dek">财政部要求冻结其他领域支出，冲突成本上升</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>俄罗斯在乌克兰战争超支280亿美元，财政部要求冻结其他领域支出[FT World @ 2026-05-29]。</p><p>数据未验证：具体超支数据未在&lt;live_data&gt;中提供。</p><p>美伊接近延长停火，蓝色起源火箭测试中爆炸[FT World @ 2026-05-29]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/content/russia-overspend-ukraine-war" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-05-29T00:00:00Z</span>
+      </div>
+    </article>
+    
+  </div>
+  
+
+  <footer class="doc-footer">Geewoni Daily · 2026-05-29 16:23 MYT · Top 40 of 40 · Build f510</footer>
+</div>
+
+<script>
+  const tabs = document.querySelectorAll('.tab');
+  const panels = document.querySelectorAll('.panel');
+  tabs.forEach(tab => {
+    tab.onclick = () => {
+      const cat = tab.dataset.cat;
+      tabs.forEach(t => t.classList.toggle('active', t === tab));
+      panels.forEach(p => p.classList.toggle('active', p.dataset.cat === cat));
+      window.scrollTo({ top: 0 });
+    };
+  });
+
+  const datePick = document.getElementById('datePick');
+  const dateText = document.getElementById('dateText');
+  const weekdays = ['周日','周一','周二','周三','周四','周五','周六'];
+  function fmt(d){ const dt=new Date(d+'T00:00:00'); return `${dt.getMonth()+1}月${dt.getDate()}日 ${weekdays[dt.getDay()]}`; }
+  datePick.onchange = () => { window.location = '/' + datePick.value + '/'; };
+
+  function shift(days){
+    const cur = new Date(datePick.value + 'T00:00:00');
+    cur.setDate(cur.getDate() + days);
+    const iso = cur.toISOString().slice(0,10);
+    window.location = '/' + iso + '/';
+  }
+  document.getElementById('prevDay').onclick = () => shift(-1);
+  const nextBtn = document.getElementById('nextDay');
+  if (!nextBtn.disabled) nextBtn.onclick = () => shift(1);
+</script>
+
+</body>
+</html>

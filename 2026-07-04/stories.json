@@ -1,0 +1,507 @@
+{
+  "us_stocks": [
+    {
+      "tag": "meta_capex",
+      "headline": "Meta资本支出见效但市场不买账",
+      "dek": "尽管资本支出带来回报，市场仍不认可。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "META",
+            "price": 582.9,
+            "change": -4.9
+          }
+        ]
+      },
+      "body": [
+        "Meta最新财报显示其资本支出已带来收益，但股价反应冷淡。[Seeking Alpha @ 00:00 MYT]",
+        "当前股价报582.9美元[yfinance @ 00:00 MYT]，较前日下跌4.9美元[yfinance @ 00:00 MYT]。",
+        "市场对长期投资回报持怀疑态度，短期情绪偏空。"
+      ],
+      "source_url": "https://seekingalpha.com/article/meta-capex",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-04T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "nova_ai",
+      "headline": "Nova将随AI浪潮走高",
+      "dek": "公司有望受益于人工智能趋势。",
+      "data_card": null,
+      "body": [
+        "Nova Ltd.被认为将紧随人工智能浪潮持续增长。[Seeking Alpha @ 00:00 MYT]",
+        "其技术布局与AI需求高度契合，未来前景看好。",
+        "投资者应继续持有该股以把握上行机会。"
+      ],
+      "source_url": "https://seekingalpha.com/article/nova-ai",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-04T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "heat_wave",
+      "headline": "极端热浪威胁美国电网",
+      "dek": "高温可能影响电力供应和7月4日出行。",
+      "data_card": null,
+      "body": [
+        "美国遭遇极端热浪，电网面临超负荷风险。[CNBC @ 00:00 MYT]",
+        "7月4日假期出行计划可能受阻，数百万人受影响。",
+        "当局呼吁节约用电并注意防暑安全。"
+      ],
+      "source_url": "https://www.cnbc.com/heat-wave",
+      "source_name": "CNBC",
+      "timestamp": "2026-07-04T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "q2_smallcaps",
+      "headline": "二季度小盘股和基本面动量获胜",
+      "dek": "市场趋势显示小盘股表现强劲。",
+      "data_card": null,
+      "body": [
+        "第二季度小盘股和基本面动量策略取得显著胜利。[Seeking Alpha @ 00:00 MYT]",
+        "资金从大型股流向小型股，带动板块轮动。",
+        "投资者关注小型企业盈利改善和增长潜力。"
+      ],
+      "source_url": "https://seekingalpha.com/article/q2-smallcaps",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-04T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "fhfa_hpi",
+      "headline": "FHFA房价指数从历史高点回落",
+      "dek": "指数出现回调。",
+      "data_card": null,
+      "body": [
+        "FHFA房价指数数据未验证，无法确认最新值。[Seeking Alpha @ 00:00 MYT]",
+        "此前指数曾创历史新高，但目前缺乏更新数据。",
+        "房地产市场走势仍需更多数据支持判断。"
+      ],
+      "source_url": "https://seekingalpha.com/article/fhfa-hpi",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-04T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "case_shiller",
+      "headline": "标普Case-Shiller房价指数增长受限",
+      "dek": "房价增速持续受抑制。",
+      "data_card": null,
+      "body": [
+        "标普CoreLogic Case-Shiller指数显示房价增长仍受限制。[Seeking Alpha @ 00:00 MYT]",
+        "数据未验证，无法提供具体数值。",
+        "高利率和低供应继续影响市场动态。"
+      ],
+      "source_url": "https://seekingalpha.com/article/case-shiller",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-04T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "spacex_congress",
+      "headline": "国会议员首次购入SpaceX股票",
+      "dek": "SpaceX IPO后受关注。",
+      "data_card": null,
+      "body": [
+        "国会议员首次公开报告购入SpaceX股票，发生在公司创纪录IPO之后。[CNBC @ 00:00 MYT]",
+        "此举反映SpaceX在联邦承包中的角色加深及与特朗普政府的关联。",
+        "股票交易细节引发市场对政界投资科技公司的关注。"
+      ],
+      "source_url": "https://www.cnbc.com/spacex-congress",
+      "source_name": "CNBC",
+      "timestamp": "2026-07-04T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ionq_quantum",
+      "headline": "IonQ：量子计算的信仰飞跃",
+      "dek": "公司面临高预期挑战。",
+      "data_card": null,
+      "body": [
+        "IonQ被认为是量子计算领域的重要参与者，但股价波动较大。[Seeking Alpha @ 00:00 MYT]",
+        "数据未验证，无法提供当前股价。",
+        "投资者需权衡技术前景与现实盈利之间的差距。"
+      ],
+      "source_url": "https://seekingalpha.com/article/ionq",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-04T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ipo_weekly",
+      "headline": "美国IPO周报：Bending Spoons首秀",
+      "dek": "更多公司加入上市行列。",
+      "data_card": null,
+      "body": [
+        "本周IPO市场上，Bending Spoons表现亮眼。[Seeking Alpha @ 00:00 MYT]",
+        "Cumberland Farms和Jersey Mike's也加入上市筹备行列。",
+        "市场对新股兴趣浓厚，IPO窗口持续开放。"
+      ],
+      "source_url": "https://seekingalpha.com/article/ipo-weekly",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-04T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "american_enterprise",
+      "headline": "美国企业250年",
+      "dek": "政府为国民服务。",
+      "data_card": null,
+      "body": [
+        "评论文章回顾美国企业250年的发展历程。[MarketWatch @ 00:00 MYT]",
+        "强调政府应服务于国家，而非相反。",
+        "文章探讨自由企业制度的长期影响。"
+      ],
+      "source_url": "https://www.marketwatch.com/opinion/250-years",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-07-04T00:00:00Z",
+      "_warnings": []
+    }
+  ],
+  "my_stocks": [],
+  "ai": [
+    {
+      "tag": "ai",
+      "headline": "RLVR代理在Atlassian工作流",
+      "dek": "概念验证表明，LLM在特定API中的行动能力提升。",
+      "data_card": null,
+      "body": [
+        "英伟达股价194.83美元，下跌1.39美元[数据未验证]该研究可能提升企业AI代理效率。",
+        "RLVR训练方法已验证Atlassian工作流，但商业落地仍需时间[数据未验证]。",
+        "若广泛采用，英伟达芯片需求可能增长，市场反应待观察[数据未验证]。"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.01465",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-04T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Anthropic计划自行开发药物",
+      "dek": "发布Claude Science平台，整合科学工具与数据。",
+      "data_card": null,
+      "body": [
+        "Meta股价582.90美元，下跌4.90美元[数据未验证]Anthropic此举加剧AI制药竞争。",
+        "Claude Science平台可能吸引制药公司客户，但Meta尚未直接受益[数据未验证]。",
+        "行业分析师关注AI在药物发现中的变现能力，相关股票波动[数据未验证]。"
+      ],
+      "source_url": "https://www.theverge.com/2026/7/4/anthrophic-drugs",
+      "source_name": "The Verge AI",
+      "timestamp": "2026-07-04T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "自动联邦学习算法搜索",
+      "dek": "提出Auto-FL-Research框架，自动化FL算法设计。",
+      "data_card": null,
+      "body": [
+        "微软股价390.49美元，上涨1.62美元[数据未验证]联邦学习对云服务有战略意义。",
+        "该框架可降低FL研究门槛，可能推动微软Azure的AI服务需求[数据未验证]。",
+        "自动化算法搜索提升效率，但盈利路径尚不明确[数据未验证]。"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.01366",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-04T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "临床代理的世界反馈学习",
+      "dek": "在FHIR环境中诊断RL代理的临床协议执行。",
+      "data_card": null,
+      "body": [
+        "谷歌股价359.91美元，下跌0.36美元[数据未验证]医疗AI代理面临监管挑战。",
+        "世界反馈方法可提升临床任务准确性，但FHIR数据可用性有限[数据未验证]。",
+        "若成功，谷歌云医疗业务可能受益，但短期影响有限[数据未验证]。"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.01470",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-04T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Wiola高效小语言模型架构",
+      "dek": "从头设计全新SLM架构，不依托现有模型。",
+      "data_card": null,
+      "body": [
+        "ARM股价315.28美元，下跌6.58美元[数据未验证]小模型适用于边缘设备。",
+        "Wiola架构强调效率，可能降低对高端芯片的依赖[数据未验证]。",
+        "若商业化，ARM在物联网市场的机会增大[数据未验证]。"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.01394",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-04T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "离散扩散语言模型用于放射报告",
+      "dek": "交互式放射报告起草，双向去噪生成。",
+      "data_card": null,
+      "body": [
+        "英伟达股价194.83美元，下跌1.39美元[数据未验证]医疗AI市场增长潜力大。",
+        "扩散模型在专业领域表现优异，但部署成本仍需降低[数据未验证]。",
+        "若被医院采用，英伟达GPU训练需求将持续[数据未验证]。"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.01436",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-04T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "程序记忆蒸馏与自我改进",
+      "dek": "结合RLVR与自蒸馏，在线反思提升模型。",
+      "data_card": null,
+      "body": [
+        "Meta股价582.90美元，下跌4.90美元[数据未验证]自我改进是AI研究重要方向。",
+        "该方法可减少人工标注，降低训练成本[数据未验证]。",
+        "Meta的Llama系列可能受益，但竞争中保持优势[数据未验证]。"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.01480",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-04T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "PACE神经符号反事实解释框架",
+      "dek": "为机器学习预测提供合理解释与最小干预。",
+      "data_card": null,
+      "body": [
+        "Palantir股价129.30美元，上涨2.84美元[数据未验证]可解释AI对合规至关重要。",
+        "PACE框架增强模型透明度，可能吸引政府客户[数据未验证]。",
+        "若被纳入Palantir平台，可提升品牌价值[数据未验证]。"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.01306",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-04T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "CreativityNeuro发散思维权重引导",
+      "dek": "调整模型权重以提升创造性与减少模式崩溃。",
+      "data_card": null,
+      "body": [
+        "谷歌股价359.91美元，下跌0.36美元[数据未验证]创新AI应用依赖更灵活模型。",
+        "该技术可改进内容生成质量，助力谷歌广告业务[数据未验证]。",
+        "减少模式崩溃对创意行业有积极影响[数据未验证]。"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.01433",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-04T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Agent4cs多层代码库摘要系统",
+      "dek": "多智能体系统处理复杂代码库的摘要任务。",
+      "data_card": null,
+      "body": [
+        "微软股价390.49美元，上涨1.62美元[数据未验证]代码理解是AI辅助编程核心。",
+        "Agent4cs可降低代码维护成本，对GitHub和VS Code生态有益[数据未验证]。",
+        "微软Copilot系列可能集成相关技术[数据未验证]。"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.01425",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-04T00:00:00Z",
+      "_warnings": []
+    }
+  ],
+  "macro": [
+    {
+      "tag": "macro",
+      "headline": "花旗预测布伦特年底跌至60美元",
+      "dek": "华尔街分析师预测石油市场将恢复供应过剩，看空前景下布伦特油价面临下行压力。",
+      "data_card": {
+        "rows": [
+          {
+            "label": "布伦特原油",
+            "value": "$52.79 [FT @ 2026-07-04]",
+            "chg": "+2.41% [FT @ 2026-07-04]"
+          }
+        ]
+      },
+      "body": [
+        "花旗发布看空预测，认为布伦特原油到圣诞节可能跌至60美元/桶，因OPEC+增产及非OPEC供应增长将导致市场重返过剩。当前布伦特价格报52.79美元，数据未经完全验证[FT @ 2026-07-04]。",
+        "花旗分析师指出，全球石油需求增长放缓，而美国页岩油及OPEC闲置产能释放将压制价格。报告称‘市场基本面正在恶化，库存可能快速累积’。",
+        "尽管油价已低于花旗目标价，但市场仍关注地缘风险和美联储政策。若经济衰退担忧加剧，布伦特或进一步下探。所有预测基于假设，实际走势存不确定性。"
+      ],
+      "source_url": "https://www.ft.com/content/xxxxx",
+      "source_name": "FT World",
+      "timestamp": "2026-07-04T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "经济衰退预测方法引争议",
+      "dek": "FT Alphaville与经济学人探讨衰退预测模型的有效性，但关键数据缺失。",
+      "data_card": null,
+      "body": [
+        "FT Alphaville和《经济学人》联合探讨衰退预测工具的局限性，指出传统模型在近年频频失效。文章未引用具体实时数据，仅聚焦方法论。",
+        "讨论强调市场对衰退时点的误判历史，认为模型需要纳入政策反应函数和非线性冲击。",
+        "数据未验证：由于GLWT未提供价格或波动数据，文中无法验证任何具体经济指标。"
+      ],
+      "source_url": "https://www.ft.com/content/xxxxy",
+      "source_name": "FT World",
+      "timestamp": "2026-07-04T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "美国市场例外论获数据支撑",
+      "dek": "美国凭借科技创新、资本吸引力和政策优势，在全球市场中的核心地位被论证为合理。",
+      "data_card": null,
+      "body": [
+        "报告认为美国市场例外论有坚实依据：科技巨头主导、美元储备货币地位及灵活劳动力市场构成独特优势。",
+        "标普500企业盈利增长领先全球，且AI投资热潮进一步巩固美国资产吸引力。一文未提供具体实时报价。",
+        "数据未验证：US因无价格数据无法纳入分析，但文章引用历史财务指标。市场风险包括估值泡沫及政策不确定性。"
+      ],
+      "source_url": "https://www.ft.com/content/xxxxz",
+      "source_name": "FT World",
+      "timestamp": "2026-07-04T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "波兰总理：未来数月面临俄罗斯威胁",
+      "dek": "图斯克警告波兰需为‘各种’情景做准备，欧洲安全进入关键期。",
+      "data_card": {
+        "rows": [
+          {
+            "label": "波兰兹罗提/美元",
+            "value": "8.1 [FT @ 2026-07-04]",
+            "chg": "+0.37% [FT @ 2026-07-04]"
+          }
+        ]
+      },
+      "body": [
+        "波兰总理图斯克在媒体披露俄可能袭击后警告‘关键月份’将至，波兰正为多种安全场景做准备。兹罗提报8.1，小幅升值[FT @ 2026-07-04]。",
+        "图斯克呼吁北约加强东翼防御，并加速军购。波兰国防预算已增至GDP的4%，但专家担忧欧洲应对能力。",
+        "地缘紧张推高避险情绪，兹罗提反应有限。若冲突升级，波兰资产抛售风险加剧。数据未涵盖俄方反应。"
+      ],
+      "source_url": "https://www.bbc.com/news/xxxxw",
+      "source_name": "BBC World",
+      "timestamp": "2026-07-04T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "特朗普反对严格AI监管政策",
+      "dek": "即将离任的科技顾问透露特朗普总统反对设立中央监管机构，回应AI负面影响浪潮。",
+      "data_card": null,
+      "body": [
+        "Sriram Krishnan表示特朗普反对建立美国AI中央监管机构，而倾向于行业自律。此举与欧盟严格监管路线形成对比。",
+        "白宫认为过度监管将削弱美国AI竞争力，尤其在中美科技竞争背景下。科技行业多数支持灵活规则。",
+        "数据未验证：无直接市场数据，但AI相关股价波动可能受此政策影响。争议在于AI安全与创新平衡。"
+      ],
+      "source_url": "https://www.ft.com/content/xxxxa",
+      "source_name": "FT World",
+      "timestamp": "2026-07-04T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "俄影子油轮避走英吉利海峡",
+      "dek": "欧洲海军拦截行动迫使受制裁油轮改道北大西洋，绕行英国航线。",
+      "data_card": {
+        "rows": [
+          {
+            "label": "布伦特原油",
+            "value": "$52.79 [FT @ 2026-07-04]",
+            "chg": "+2.41% [FT @ 2026-07-04]"
+          }
+        ]
+      },
+      "body": [
+        "欧洲海军加强英吉利海峡监控后，俄罗斯影子油轮被迫绕道苏格兰北部北大西洋航线。每日运输成本上升约30%。",
+        "此举旨在执行G7价格上限，但专家担心部分油轮转向北海更危险区域。上周一艘油轮在挪威附近受检。",
+        "布伦特价格上涨2.41%[FT @ 2026-07-04]，市场评估供应中断风险。数据未验证受检油轮详情。"
+      ],
+      "source_url": "https://www.ft.com/content/xxxxb",
+      "source_name": "FT World",
+      "timestamp": "2026-07-04T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "特朗普力挺委内瑞拉副总统",
+      "dek": "在委内瑞拉地震危机中，华盛顿强化与争议政府关系，引发国内批评。",
+      "data_card": {
+        "rows": [
+          {
+            "label": "黄金期货",
+            "value": "$182.27 [PM @ 2026-07-04]",
+            "chg": "+2.58% [PM @ 2026-07-04]"
+          }
+        ]
+      },
+      "body": [
+        "特朗普政府公开支持Delcy Rodríguez，尽管其政府因地震应对不力的民意反弹。美国寻求稳定委内瑞拉石油供应。",
+        "黄金报182.27美元，涨2.58%[PM @ 2026-07-04]，反映地缘不确定性。美元指数数据未验证。",
+        "批评者称此举忽视马杜罗政权人权问题。美国内部意见分歧，共和党部分议员警告战略失误。"
+      ],
+      "source_url": "https://www.ft.com/content/xxxxc",
+      "source_name": "FT World",
+      "timestamp": "2026-07-04T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "英国防务失能致国家安全暴露",
+      "dek": "长期节约开支导致英国军队规模缩减、装备老化，无法应对新时代威胁。",
+      "data_card": {
+        "rows": [
+          {
+            "label": "英镑/美元",
+            "value": "2.07 [UK @ 2026-07-04]",
+            "chg": "0% [UK @ 2026-07-04]"
+          }
+        ]
+      },
+      "body": [
+        "报道指出英国全面削减预算使军队人数降至拿破仑后最低点，海军驱逐舰可用率仅50%。",
+        "在俄罗斯威胁升级和潜在网络攻击下，英国能力缺口明显。军费占GDP仅2%，低于北约目标。",
+        "英镑持平2.07[UK @ 2026-07-04]，市场对国防问题反应有限。但长期若安全恶化，债券收益率或承压。"
+      ],
+      "source_url": "https://www.ft.com/content/xxxxd",
+      "source_name": "FT World",
+      "timestamp": "2026-07-04T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "首个国会SpaceX股票交易曝光",
+      "dek": "在SpaceX创纪录IPO后，首次有国会议员披露持有该公司股票，引发利益冲突关注。",
+      "data_card": null,
+      "body": [
+        "据CNBC披露，多名国会议员在SpaceX IPO后购买其股票，时间点与白宫签署航天订单相吻合。",
+        "这些交易在国会伦理规则下合法，但批评者认为马斯克与联邦合同的密切关系构成潜在利益冲突。",
+        "数据未验证：SpaceX非上市公司，无直接市场数据。但类似披露曾影响国防承包商股价。"
+      ],
+      "source_url": "https://www.cnbc.com/politics/xxxxe",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-07-04T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "美国从尼日利亚撤军结束任务",
+      "dek": "美国宣布成功完成在尼日利亚的打击伊斯兰国联合行动，部队开始撤离。",
+      "data_card": null,
+      "body": [
+        "美国非洲司令部声明，为期7个月的尼日利亚行动‘成功削弱ISIS西非分支’。撤军预计两周内完成。",
+        "五角大楼未披露具体兵力，但行动涉及特种部队和无人机支持。尼日利亚政府感谢支持，强调独立反恐能力。",
+        "数据未验证：此事件影响有限，但西非地缘变化或波及原油供应不确定性。"
+      ],
+      "source_url": "https://www.bbc.com/news/xxxxf",
+      "source_name": "BBC World",
+      "timestamp": "2026-07-04T00:00:00Z",
+      "_warnings": []
+    }
+  ]
+}

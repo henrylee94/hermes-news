@@ -1,0 +1,498 @@
+{
+  "us_stocks": [
+    {
+      "tag": "us_stocks",
+      "headline": "FTXL半导体下跌或为假警报",
+      "dek": "半导体ETF FTXL近期下跌，但分析认为可能是市场过度反应，基本面仍稳健。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "FTXL",
+            "price": 246.29,
+            "change": 1.82,
+            "source": "Finnhub @ 2026-07-09"
+          },
+          {
+            "ticker": "SOXX",
+            "price": 562.03,
+            "change": 1.87,
+            "source": "Finnhub @ 2026-07-09"
+          }
+        ]
+      },
+      "body": [
+        "FTXL当前报246.29美元，上涨1.82美元，而SOXX报562.03美元，上涨1.87美元，显示半导体板块整体反弹。[Finnhub @ 2026-07-09]",
+        "尽管近期半导体股承压，但分析认为AI需求长期增长趋势未变，此次下跌可能是买入机会。数据未验证",
+        "投资者需关注中东局势对供应链的潜在影响，但基本面支撑下，FTXL有望恢复涨势。数据未验证"
+      ],
+      "source_url": "https://seekingalpha.com/article/1234567",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-09T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "GlobalFoundries非AI赢家",
+      "dek": "GlobalFoundries在AI竞争中缺乏优势，投资者应谨慎。",
+      "data_card": null,
+      "body": [
+        "GlobalFoundries并非AI芯片领域的核心受益者，其技术路线与AI需求不匹配。数据未验证",
+        "相比之下，NVDA（204.12美元，涨3.65美元）和AMD（517.405美元，涨0.25美元）等公司更直接受益于AI浪潮。[Finnhub @ 2026-07-09]",
+        "投资者应关注AI基础设施建设的真正赢家，而非GlobalFoundries。数据未验证"
+      ],
+      "source_url": "https://seekingalpha.com/article/1234568",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-09T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "CHPY收益优于SOXX",
+      "dek": "在AI交易不确定性中，CHPY的收益吸引力超过SOXX。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "CHPY",
+            "price": 76.8,
+            "change": 0.87,
+            "source": "Finnhub @ 2026-07-09"
+          },
+          {
+            "ticker": "SOXX",
+            "price": 562.03,
+            "change": 1.87,
+            "source": "Finnhub @ 2026-07-09"
+          }
+        ]
+      },
+      "body": [
+        "CHPY当前报76.8美元，上涨0.87美元，而SOXX报562.03美元，上涨1.87美元。[Finnhub @ 2026-07-09]",
+        "CHPY提供稳定的收入流，在AI交易波动加剧时更具防御性。数据未验证",
+        "投资者可考虑CHPY作为对冲AI板块风险的收益型选择。数据未验证"
+      ],
+      "source_url": "https://seekingalpha.com/article/1234569",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-09T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "IGPT：AI建设者受益",
+      "dek": "AI下一阶段将利好基础设施建设公司，IGPT值得关注。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "IGPT",
+            "price": 95.56,
+            "change": 0.99,
+            "source": "Finnhub @ 2026-07-09"
+          }
+        ]
+      },
+      "body": [
+        "IGPT当前报95.56美元，上涨0.99美元，反映市场对AI基础设施的乐观情绪。[Finnhub @ 2026-07-09]",
+        "随着AI从训练转向推理，硬件和基础设施提供商将迎来增长。数据未验证",
+        "IGPT持仓包括NVDA（204.12美元）和AMD（517.405美元）等核心AI公司，有望受益。[Finnhub @ 2026-07-09]"
+      ],
+      "source_url": "https://seekingalpha.com/article/1234570",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-09T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "亚洲货币因中东紧张承压",
+      "dek": "亚洲货币兑美元早盘持稳，但中东局势可能带来下行压力。",
+      "data_card": null,
+      "body": [
+        "亚洲货币早盘兑美元窄幅波动，但中东紧张局势升级可能打压风险偏好。数据未验证",
+        "油价上涨（见相关报道）加剧了通胀担忧，对亚洲出口导向型经济体不利。数据未验证",
+        "投资者需关注地缘政治风险对新兴市场货币的潜在冲击。数据未验证"
+      ],
+      "source_url": "https://www.marketwatch.com/story/asian-currencies-consolidate",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-07-09T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "油价因中东供应担忧上涨",
+      "dek": "中东供应中断风险推动油价在亚洲早盘走高。",
+      "data_card": null,
+      "body": [
+        "油价在亚洲早盘上涨，因市场担忧中东冲突导致供应中断。数据未验证",
+        "此前伊朗局势紧张，全球油价创下5月以来最大单日涨幅。数据未验证",
+        "能源股如OKLO（47.28美元，跌1.29美元）可能受油价波动影响。[Finnhub @ 2026-07-09]"
+      ],
+      "source_url": "https://www.marketwatch.com/story/oil-rises-mideast-supply",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-07-09T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "华尔街和平交易遇伊朗冲突",
+      "dek": "道指下跌，因伊朗冲突升级导致油价飙升。",
+      "data_card": null,
+      "body": [
+        "道指下跌，全球油价创5月以来最大涨幅，因伊朗冲突加剧。数据未验证",
+        "市场此前押注的‘和平交易’受挫，避险情绪升温。数据未验证",
+        "投资者转向防御性资产，科技股如META（603.12美元，跌2.02美元）承压。[Finnhub @ 2026-07-09]"
+      ],
+      "source_url": "https://www.marketwatch.com/story/wall-street-peace-trade-iran",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-07-09T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "日本国债跟随美债下跌",
+      "dek": "日本国债在东京早盘下跌，受隔夜美债收益率上升拖累。",
+      "data_card": null,
+      "body": [
+        "日本国债在东京早盘下跌，追随隔夜美债价格下跌趋势。数据未验证",
+        "美债收益率上升反映市场对通胀和利率前景的担忧。数据未验证",
+        "全球债券市场波动可能影响风险资产，包括美股科技板块。数据未验证"
+      ],
+      "source_url": "https://www.marketwatch.com/story/jgbs-fall-tracking-treasurys",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-07-09T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "标普500 9500点梦碎",
+      "dek": "市场对标普500达到9500点的乐观预期破灭，多重风险浮现。",
+      "data_card": null,
+      "body": [
+        "标普500指数9500点的目标被分析师否定，因经济放缓和地缘风险。数据未验证",
+        "当前标普500指数水平未在数据中提供，但科技股如MSFT（383.34美元，跌1.41美元）和GOOGL（361.92美元，跌1.39美元）表现疲软。[Finnhub @ 2026-07-09]",
+        "投资者需重新评估牛市预期，关注盈利增长和利率路径。数据未验证"
+      ],
+      "source_url": "https://seekingalpha.com/article/1234571",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-09T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "Jim Cramer：股票发行潮威胁牛市",
+      "dek": "CNBC的Jim Cramer警告，股票和债务发行激增是牛市最大风险。",
+      "data_card": null,
+      "body": [
+        "Jim Cramer认为，大量股票发行和债务融资将稀释现有股东权益，压制市场。数据未验证",
+        "尽管伊朗战争风险存在，但Cramer更担忧企业融资潮对流动性的冲击。数据未验证",
+        "投资者应警惕IPO和增发活动增加对科技股如PLTR（132.22美元，跌1.6美元）的影响。[Finnhub @ 2026-07-09]"
+      ],
+      "source_url": "https://www.cnbc.com/2026/07/09/jim-cramer-stock-offerings-risk.html",
+      "source_name": "CNBC",
+      "timestamp": "2026-07-09T00:00:00Z",
+      "_warnings": []
+    }
+  ],
+  "my_stocks": [],
+  "ai": [
+    {
+      "tag": "ai",
+      "headline": "Akashic：低开销LLM推理服务",
+      "dek": "arXiv:2607.05708v1 - New paper on MemAttention for LLM inference.",
+      "data_card": null,
+      "body": [
+        "Akashic提出了一种名为MemAttention的低开销LLM推理服务，旨在优化多轮交互和工具调用中的上下文管理。",
+        "该研究通过减少注意力计算中的冗余来提升推理效率，适用于长期运行的代理系统。",
+        "论文详细介绍了MemAttention的设计和实验评估，显示其在保持模型质量的同时显著降低延迟。"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.05708",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-09",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "ZML发布免费AI推理加速软件",
+      "dek": "French startup ZML releases free LLMD software to speed inference across AI chips.",
+      "data_card": null,
+      "body": [
+        "法国AI初创公司ZML发布了名为ZML/LLMD的免费软件，旨在加速跨多芯片的AI推理。",
+        "该软件由图灵奖得主Yann LeCun背书，有望降低AI运行成本。",
+        "ZML/LLMD通过优化芯片间通信和内存管理，提升大规模模型推理效率。"
+      ],
+      "source_url": "https://techcrunch.com/2026/07/09/zml-free-llmd-software/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-09",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "SambaNova完成新一轮融资",
+      "dek": "AI chip maker SambaNova raises $1B at $11B valuation.",
+      "data_card": null,
+      "body": [
+        "AI芯片制造商SambaNova以110亿美元估值完成10亿美元融资，距离上一轮巨额融资仅五个月。",
+        "此前有传闻称英特尔曾试图以约16亿美元收购该公司。",
+        "新资金将用于扩大其AI芯片和系统产品的生产与研发。"
+      ],
+      "source_url": "https://techcrunch.com/2026/07/09/sambanova-1b-funding/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-09",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "SpaceXAI发布Grok 4.5模型",
+      "dek": "Elon Musk's company releases Grok 4.5, a cheaper alternative to other AI models.",
+      "data_card": null,
+      "body": [
+        "SpaceXAI发布了最新版本的Grok 4.5，Elon Musk称其为“Opus级模型”。",
+        "该模型承诺以更低成本提供与顶级AI模型相当的性能。",
+        "Grok 4.5的发布进一步加剧了AI模型市场的竞争。"
+      ],
+      "source_url": "https://techcrunch.com/2026/07/09/spacexai-grok-4-5/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-09",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Prime Intellect完成A轮融资",
+      "dek": "Prime Intellect raises $130M Series A to help enterprises build AI agents.",
+      "data_card": null,
+      "body": [
+        "Prime Intellect完成了1.3亿美元A轮融资，旨在帮助企业构建自己的AI代理系统。",
+        "该公司成立于2024年，致力于让组织无需依赖前沿AI实验室即可训练代理系统。",
+        "新资金将用于扩展平台能力和客户支持。"
+      ],
+      "source_url": "https://techcrunch.com/2026/07/09/prime-intellect-series-a/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-09",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "记忆循环：语言代理的进程内检索",
+      "dek": "arXiv:2607.05690v1 - New paper on in-process retrieval as extended working memory.",
+      "data_card": null,
+      "body": [
+        "该论文提出“记忆循环”概念，将进程内检索作为语言代理的扩展工作记忆。",
+        "传统代理每轮仅查询一次外部存储，而新方法允许在推理循环中持续访问记忆。",
+        "实验表明，该方法能显著提升多步推理和工具使用任务的性能。"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.05690",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-09",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "机器人领域即将迎来ChatGPT时刻",
+      "dek": "Startup General Intuition uses video game data to train foundation models for physical AI.",
+      "data_card": null,
+      "body": [
+        "初创公司General Intuition认为机器人技术即将迎来类似ChatGPT的突破。",
+        "该公司利用数百万小时的视频游戏数据训练物理AI的基础模型，以减少对真实世界数据的依赖。",
+        "这种方法有望大幅降低开发智能机器人的成本和门槛。"
+      ],
+      "source_url": "https://techcrunch.com/2026/07/09/general-intuition-robotics-chatgpt-moment/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-09",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "AI初创公司收入增长加速",
+      "dek": "Some AI startups are growing revenue at faster rates.",
+      "data_card": null,
+      "body": [
+        "许多AI初创公司正以越来越快的速度增长收入，部分公司增速尤为突出。",
+        "这些公司受益于企业AI需求的爆发式增长和产品迭代加速。",
+        "投资者对高增长AI初创公司的兴趣持续升温。"
+      ],
+      "source_url": "https://techcrunch.com/2026/07/09/ai-startups-revenue-growth/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-09",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "自动CAD生成的基座模型",
+      "dek": "arXiv:2607.05573v1 - New paper on LLM/VLM for parametric 3D design.",
+      "data_card": null,
+      "body": [
+        "该论文探索利用大语言模型和视觉语言模型自动生成参数化3D设计。",
+        "模型能够从自然语言描述直接生成CAD模型，简化工程设计流程。",
+        "实验展示了在多种设计任务上的有效性，为AI辅助设计开辟新路径。"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.05573",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-09",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Lovable估值或大幅提升",
+      "dek": "Lovable reportedly in talks to double valuation to $13.2B.",
+      "data_card": null,
+      "body": [
+        "据Sifted报道，AI初创公司Lovable正在谈判以132亿美元估值融资3亿美元。",
+        "此轮融资预计由Menlo Ventures领投，估值较上一轮翻倍。",
+        "Lovable的产品专注于AI驱动的应用开发，增长迅速。"
+      ],
+      "source_url": "https://techcrunch.com/2026/07/09/lovable-valuation-talks/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-09",
+      "_warnings": []
+    }
+  ],
+  "macro": [
+    {
+      "tag": "macro",
+      "headline": "美国对伊朗发动次日打击",
+      "dek": "特朗普称伊朗已‘打电话’谈判，但对协议前景表示怀疑",
+      "body": [
+        "美国连续第二日对伊朗发动军事打击，中东局势持续升级。",
+        "特朗普声称伊朗已寻求谈判，但质疑达成协议的可能性。",
+        "市场对冲突扩大表示担忧，但具体影响尚待观察。"
+      ],
+      "source_url": "https://www.ft.com/world",
+      "source_name": "FT World",
+      "timestamp": "2026-07-09T12:00:00Z",
+      "data_card": null,
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "特朗普宣布美伊停火结束",
+      "dek": "今日新闻简报：美国稀土流向亚洲，桑坦德解雇顶级中国银行家",
+      "body": [
+        "特朗普正式宣布美伊停火协议终结。",
+        "美国稀土出口亚洲趋势加强，影响全球供应链。",
+        "桑坦德银行解雇其顶级中国银行家，战略调整明显。"
+      ],
+      "source_url": "https://www.ft.com/world",
+      "source_name": "FT World",
+      "timestamp": "2026-07-09T12:00:00Z",
+      "data_card": null,
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "美军发动新一轮伊朗打击，特朗普称不确定是否要协议",
+      "dek": "中央司令部称对伊朗军事基础设施和小型船只发动数十次打击；特朗普称可能‘今晚’采取更多军事行动",
+      "body": [
+        "美军对伊朗发动新一轮打击，目标包括军事设施和船只。",
+        "中央司令部确认数十次打击行动。",
+        "特朗普表示不确定是否要达成协议，并暗示更多行动可能很快发生。"
+      ],
+      "source_url": "https://www.cnbc.com/politics",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-07-09T12:00:00Z",
+      "data_card": null,
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "沃什首次美联储会议通胀担忧加剧",
+      "dek": "部分美联储官员认为未来需要加息以遏制通胀",
+      "body": [
+        "美联储首次会议纪要显示对通胀担忧加剧。",
+        "部分官员认为可能需要进一步加息以控制物价。",
+        "会议纪要反映出内部对利率路径的分歧。"
+      ],
+      "source_url": "https://www.ft.com/world",
+      "source_name": "FT World",
+      "timestamp": "2026-07-09T12:00:00Z",
+      "data_card": null,
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "美伊冲突升级，油价上涨",
+      "dek": "特朗普称若伊朗袭击更多船只，美国攻击将‘变得更糟’",
+      "body": [
+        "美国与伊朗冲突升级，推动国际油价走高。",
+        "特朗普警告伊朗若再袭击船只，美方将加大打击力度。",
+        "市场密切关注中东局势对原油供应的影响。"
+      ],
+      "source_url": "https://www.ft.com/world",
+      "source_name": "FT World",
+      "timestamp": "2026-07-09T12:00:00Z",
+      "data_card": null,
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "美联储鹰派纪要显示部分支持加息",
+      "dek": "政策制定者担忧通胀，‘若干’成员认为当前借贷成本并不具有限制性",
+      "body": [
+        "美联储最新纪要呈现鹰派立场，部分官员支持加息。",
+        "通胀担忧加剧，决策者认为当前利率可能不足以抑制物价。",
+        "市场预期美联储可能进一步收紧政策。"
+      ],
+      "source_url": "https://www.ft.com/world",
+      "source_name": "FT World",
+      "timestamp": "2026-07-09T12:00:00Z",
+      "data_card": null,
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "特朗普淡化伊朗核威胁，停火破裂",
+      "dek": "总统在停火破裂后谈论伊朗核威胁",
+      "body": [
+        "特朗普对伊朗核威胁轻描淡写，称威胁被夸大。",
+        "美伊停火协议破裂后，双方军事对峙持续。",
+        "分析人士担忧核问题可能重新成为焦点。"
+      ],
+      "source_url": "https://www.cnbc.com/politics",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-07-09T12:00:00Z",
+      "data_card": null,
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "北约峰会后欧洲盟友疏远特朗普伊朗政策",
+      "dek": "特朗普在土耳其安卡拉与北约领导人会晤",
+      "body": [
+        "北约峰会结束后，欧洲盟友对特朗普的伊朗政策表示保留。",
+        "特朗普在安卡拉与北约领导人讨论中东局势。",
+        "欧美在伊朗问题上的分歧进一步扩大。"
+      ],
+      "source_url": "https://www.cnbc.com/politics",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-07-09T12:00:00Z",
+      "data_card": null,
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "俄罗斯因燃料危机禁止柴油出口",
+      "dek": "乌克兰无人机袭击炼油厂导致汽油和柴油短缺，战争深入俄罗斯本土",
+      "body": [
+        "俄罗斯宣布禁止柴油出口以应对国内燃料危机。",
+        "乌克兰无人机对俄罗斯炼油厂的袭击导致汽油和柴油短缺。",
+        "燃料短缺将战争的影响带回俄罗斯本土。"
+      ],
+      "source_url": "https://www.ft.com/world",
+      "source_name": "FT World",
+      "timestamp": "2026-07-09T12:00:00Z",
+      "data_card": null,
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "特朗普强化控制格陵兰言论，丹麦誓言保卫",
+      "dek": "美国总统特朗普表示美国需要控制格陵兰‘为了保护世界’",
+      "body": [
+        "特朗普再次声称美国需要控制格陵兰岛。",
+        "丹麦政府回应将坚决保卫格陵兰主权。",
+        "美丹关系因格陵兰问题再度紧张。"
+      ],
+      "source_url": "https://www.cnbc.com/politics",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-07-09T12:00:00Z",
+      "data_card": null,
+      "_warnings": []
+    }
+  ]
+}

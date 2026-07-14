@@ -1,0 +1,459 @@
+{
+  "us_stocks": [
+    {
+      "tag": "us_stocks",
+      "headline": "日本5月出口增速创三年新高",
+      "dek": "日本5月出口增速创2022年11月以来最快，受汽车和芯片需求提振。",
+      "data_card": null,
+      "body": [
+        "日本财务省数据显示，5月出口同比增长数据未验证，超过市场预期。",
+        "汽车和半导体需求是主要推动力，对美国和欧洲出口表现强劲。",
+        "对中国出口也实现增长，但增速有所放缓。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-06-17T08:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "Anthropic关闭Fable推动开源AI",
+      "dek": "Anthropic关闭Fable项目可能助推开源AI发展，但许多热门模型来自中国。",
+      "data_card": null,
+      "body": [
+        "Anthropic宣布关闭其Fable项目，该决定被广泛视为开源AI的重要转折点。",
+        "目前多数热门开源模型由中国企业开发，包括深度求索等。",
+        "专家认为，开源社区的活跃度将因这一事件进一步分化。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-06-17T08:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "亚洲货币等待沃什美联储决议",
+      "dek": "亚洲货币对美元持稳，等待由主席凯文·沃什领导的美联储首次决策。",
+      "data_card": null,
+      "body": [
+        "亚洲货币在美联储决议前窄幅波动，市场等待沃什主席的首个利率决定。",
+        "美元指数在连续走低后企稳，亚洲各央行保持观望。",
+        "分析师预计，FOMC将维持当前利率路径不变。"
+      ],
+      "source_url": "https://www.marketwatch.com",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-06-17T08:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "GRID：人工智能需要电力而非芯片",
+      "dek": "清洁电网基础设施ETF GRID受益于AI电力需求增长。",
+      "data_card": null,
+      "body": [
+        "AI数据中心对电力的巨大需求正在转化为电网基础设施的投资机会。",
+        "GRID ETF聚焦智能电网和清洁能源技术，有望从中受益。",
+        "投资者应关注电力供应瓶颈对AI发展的影响。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-17T08:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "印度暂时禁止Telegram引发争议",
+      "dek": "印度以防范考试作弊为由临时限制Telegram，Telegram创始人杜罗夫批评此举惩罚数据未验证用户。",
+      "data_card": null,
+      "body": [
+        "印度政府基于防止大规模作弊的考虑，临时封锁了Telegram服务，影响范围数据未验证。",
+        "Telegram创始人杜罗夫谴责这一决定，称其不公正地惩罚了数据未验证用户。",
+        "此事引发关于数字权利和执法边界的广泛讨论。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-06-17T08:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "日本国债期货跟随美债上涨",
+      "dek": "JGB期货早盘上涨，追随隔夜美国国债市场涨势。",
+      "data_card": null,
+      "body": [
+        "日本国债期货在东京早盘交易中走高，受美国国债收益率下滑带动。",
+        "市场对全球经济增长前景的担忧推动了避险需求。",
+        "日本央行近期政策保持不变，收益率曲线控制继续实施。"
+      ],
+      "source_url": "https://www.marketwatch.com",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-06-17T08:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "XRP：最根深蒂固的加密支付网络",
+      "dek": "分析认为XRP是加密领域最根深蒂固的支付网络。",
+      "data_card": null,
+      "body": [
+        "XRP凭借其快速低成本的跨境支付能力，在金融机构中拥有广泛采用。",
+        "与多家银行和支付处理商的合作关系使其网络效应深厚。",
+        "监管不确定性仍是XRP面临的最大挑战。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-17T08:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "Rubrik举办分析师/投资者日活动",
+      "dek": "Rubrik公司举办分析师和投资者日活动，幻灯片展示最新动态。",
+      "data_card": null,
+      "body": [
+        "Rubrik在分析师/投资者日上展示了其在数据安全领域的最新进展。",
+        "公司管理层阐述了增长战略和市场份额扩张计划。",
+        "投资者对Rubrik的云端数据管理业务表现出一致乐观。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-17T08:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "WSJ美元指数走低",
+      "dek": "WSJ美元指数连续两日下跌，报数据未验证。",
+      "data_card": null,
+      "body": [
+        "WSJ美元指数下跌数据未验证，延续前一日跌势。",
+        "美元兑主要货币普遍走软，市场关注美联储政策动向。",
+        "分析师认为，美元短期可能继续承压。"
+      ],
+      "source_url": "https://www.marketwatch.com",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-06-17T08:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "司法部协助xAI驳回NAACP诉讼",
+      "dek": "美国司法部请求法院驳回NAACP对马斯克旗下xAI提起的空气污染诉讼。",
+      "data_card": null,
+      "body": [
+        "美国司法部向密西西比联邦法院提交请求，要求驳回NAACP的诉讼。",
+        "该诉讼指控xAI（现归SpaceX所有）违反清洁空气法。",
+        "司法部认为原告缺乏诉讼资格，案件应被撤销。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-06-17T08:00:00Z",
+      "_warnings": []
+    }
+  ],
+  "my_stocks": [],
+  "ai": [
+    {
+      "tag": "ai",
+      "headline": "数据中心快速上线：柔性方案",
+      "dek": "MIT Tech Review报道，通过柔性设计加速数据中心部署，应对AI算力需求激增。",
+      "data_card": null,
+      "body": [
+        "MIT Tech Review报道，在英格兰与德国足球赛半场紧张平局时，数百万英国人叹息并采取常见行动，但文章核心是探讨如何通过柔性设计加速数据中心上线，以满足AI算力需求。",
+        "文章指出，传统数据中心建设周期长，而柔性方案（如模块化、预制组件）可缩短部署时间，提升效率。",
+        "具体数据未在摘要中提供，但强调柔性架构对快速响应AI工作负载增长至关重要。数据未验证 [MIT Tech Review @ 2026-06-17]"
+      ],
+      "source_url": "https://www.technologyreview.com/",
+      "source_name": "MIT Tech Review",
+      "timestamp": "2026-06-17T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "OSGuard：计算机代理安全基准",
+      "dek": "arXiv新论文提出OSGuard基准，评估计算机使用代理的安全性，超越任务成功率。",
+      "data_card": null,
+      "body": [
+        "arXiv:2606.15034v1发布OSGuard基准，用于评估计算机使用代理的安全性，强调任务成功可能掩盖失败模式。",
+        "该基准测试代理在桌面和网页任务中的安全行为，旨在发现潜在风险，如权限滥用或意外操作。",
+        "具体评估指标和结果未在摘要中详述，但论文提出更全面的安全评估框架。数据未验证 [Arxiv ML @ 2026-06-17]"
+      ],
+      "source_url": "https://arxiv.org/abs/2606.15034",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-06-17T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Qwen3.6-27B：本地编码模型",
+      "dek": "Georgi Gerganov在Hacker News上称赞Qwen3.6-27B是强大的本地编码模型。",
+      "data_card": null,
+      "body": [
+        "Georgi Gerganov在Hacker News评论中100%证实Qwen3.6-27B是本地编码任务的强大模型。",
+        "该模型在过去一个月中表现出色，适合开发者本地部署，无需依赖云端API。",
+        "具体性能数据未提供，但强调其编码能力。数据未验证 [Simon Willison @ 2026-06-17]"
+      ],
+      "source_url": "https://news.ycombinator.com/item?id=48555993#48557304",
+      "source_name": "Simon Willison",
+      "timestamp": "2026-06-17T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "ChatGPT市场份额首次跌破50%",
+      "dek": "TechCrunch报道，ChatGPT月活超11亿，但份额下滑，Gemini和Claude紧随其后。",
+      "data_card": null,
+      "body": [
+        "TechCrunch报道，ChatGPT市场份额首次跌破50%，但仍以超过11亿月活用户保持全球最受欢迎AI助手地位。",
+        "Gemini以6.62亿月活用户排名第二，Claude以2.45亿月活用户位列第三。",
+        "数据来自TechCrunch报道，但未提供具体来源时间。数据未验证 [TechCrunch AI @ 2026-06-17]"
+      ],
+      "source_url": "https://techcrunch.com/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-17T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "LLM输出解释：好定义与挑战",
+      "dek": "arXiv论文探讨如何定义好的解释，并分析解释LLM输出的哲学与AI挑战。",
+      "data_card": null,
+      "body": [
+        "arXiv:2606.14838v1论文重新审视长期哲学辩论：如何定义好的解释，并在AI输出背景下找到新兴趣。",
+        "论文分析解释LLM输出的挑战，包括可理解性、忠实性和用户信任等问题。",
+        "具体定义和解决方案未在摘要中详述，但提出框架性讨论。数据未验证 [Arxiv ML @ 2026-06-17]"
+      ],
+      "source_url": "https://arxiv.org/abs/2606.14838",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-06-17T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "AI代理间信任：形成与恢复",
+      "dek": "arXiv论文研究语言模型代理团队中的信任形成、破裂与恢复，用于多代理治理。",
+      "data_card": null,
+      "body": [
+        "arXiv:2606.14923v1论文指出，语言模型代理在团队中需决定信任队友的程度，但缺乏标准测量方法。",
+        "论文提出测量信任形成、破裂和恢复的框架，对多代理系统治理有重要意义。",
+        "具体实验和结果未在摘要中提供，但强调信任动态对协作的影响。数据未验证 [Arxiv ML @ 2026-06-17]"
+      ],
+      "source_url": "https://arxiv.org/abs/2606.14923",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-06-17T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Metric Match：评估LLM裁判可靠性",
+      "dek": "arXiv论文提出子集选择方法Metric Match，评估LLM裁判在文本生成中的可靠性。",
+      "data_card": null,
+      "body": [
+        "arXiv:2606.15029v1论文提出Metric Match方法，通过子集选择评估LLM裁判在开放文本生成中的可靠性。",
+        "该方法旨在减少对昂贵人工评估的依赖，同时提高LLM裁判的准确性。",
+        "具体评估指标和性能未在摘要中详述，但提出改进可靠性的新途径。数据未验证 [Arxiv ML @ 2026-06-17]"
+      ],
+      "source_url": "https://arxiv.org/abs/2606.15029",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-06-17T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "高通新芯片：更强智能眼镜",
+      "dek": "The Verge报道，高通发布Snapdragon Reality Elite芯片，推动下一代XR设备升级。",
+      "data_card": null,
+      "body": [
+        "The Verge报道，高通发布Snapdragon Reality Elite芯片，旨在升级智能眼镜等XR设备的性能。",
+        "该芯片针对下一代XR设备设计，提升处理能力和能效，但具体规格未在摘要中详述。",
+        "智能眼镜仍属新兴品类，高通正努力推动其发展。数据未验证 [The Verge AI @ 2026-06-17]"
+      ],
+      "source_url": "https://www.theverge.com/",
+      "source_name": "The Verge AI",
+      "timestamp": "2026-06-17T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Probably融资900万美元：可靠AI",
+      "dek": "TechCrunch报道，Probably获900万美元融资，旨在构建防幻觉、高准确度的AI系统。",
+      "data_card": null,
+      "body": [
+        "TechCrunch报道，Probably公司筹集900万美元，用于开发更可靠的AI，防止幻觉和事实错误。",
+        "该公司目标是实现与确定性系统相当的准确性，减少AI输出中的错误。",
+        "具体融资细节和产品路线图未在摘要中提供。数据未验证 [TechCrunch AI @ 2026-06-17]"
+      ],
+      "source_url": "https://techcrunch.com/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-17T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "关系结构因果模型：AI环境建模",
+      "dek": "arXiv论文提出关系结构因果模型，支持干预和反事实推理，增强AI环境理解。",
+      "data_card": null,
+      "body": [
+        "arXiv:2606.14892v1论文指出，AI需具备因果模型以支持干预和反事实推理，关系结构因果模型应运而生。",
+        "该模型旨在捕捉环境中的关系结构，提升AI在复杂场景中的推理能力。",
+        "具体实现和实验未在摘要中详述，但强调因果建模对AI的重要性。数据未验证 [Arxiv ML @ 2026-06-17]"
+      ],
+      "source_url": "https://arxiv.org/abs/2606.14892",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-06-17T00:00:00Z",
+      "_warnings": []
+    }
+  ],
+  "macro": [
+    {
+      "tag": "macro",
+      "headline": "油价跌破80美元，霍尔木兹海峡有望复航",
+      "dek": "交易员押注伊朗局势缓和，原油价格承压下行。",
+      "data_card": null,
+      "body": [
+        "国际油价跌破每桶80美元，市场预期霍尔木兹海峡的航运将逐步恢复。[FT World @ 原始时间]",
+        "交易员认为伊朗与美国的停火协议可能缓解供应中断风险，推动油价走低。[FT World @ 原始时间]",
+        "数据未验证：具体油价跌幅及交易量未在实时数据中提供。"
+      ],
+      "source_url": "https://www.ft.com/content/example-oil-below-80",
+      "source_name": "FT World",
+      "timestamp": "2026-06-17T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "特朗普信任美联储主席沃什",
+      "dek": "新主席沃什本周料维持利率不变，但长期改革空间打开。",
+      "data_card": null,
+      "body": [
+        "美联储主席凯文·沃什预计本周维持利率稳定，特朗普的信任赋予他推进长期变革的空间。[CNBC Politics @ 原始时间]",
+        "数据未验证：具体利率决策及市场反应未在实时数据中提供。",
+        "沃什的政策方向可能影响美元及全球资本流动，但细节尚待确认。"
+      ],
+      "source_url": "https://www.cnbc.com/2026/06/17/trump-trusts-fed-chair-kevin-warsh.html",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-06-17T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "宝马下调利润指引，伊朗战争冲击中国市场",
+      "dek": "预计2026年汽车部门营业利润率降至1-3%，远低于此前预期。",
+      "data_card": null,
+      "body": [
+        "宝马因伊朗战争及中国市场挑战下调利润指引，预计2026年汽车部门营业利润率仅为1-3%。[FT World @ 原始时间]",
+        "数据未验证：具体财务数据及股价影响未在实时数据中提供。",
+        "伊朗冲突加剧供应链不确定性，宝马在华销售前景承压。"
+      ],
+      "source_url": "https://www.ft.com/content/example-bmw-profit-guidance",
+      "source_name": "FT World",
+      "timestamp": "2026-06-17T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "全球债券峰会：资产类别正在重新排序",
+      "dek": "FT全球债券峰会探讨市场结构性变化。",
+      "data_card": null,
+      "body": [
+        "FT全球债券峰会指出，债券资产类别正在经历重新排序。[FT World @ 原始时间]",
+        "数据未验证：具体收益率变动及投资策略未在实时数据中提供。",
+        "投资者需关注利率环境变化对债券配置的影响。"
+      ],
+      "source_url": "https://www.ft.com/content/example-bond-summit",
+      "source_name": "FT World",
+      "timestamp": "2026-06-17T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "特朗普暗示将向国会提交伊朗协议细节",
+      "dek": "周日宣布的和平协议在国会遭遇冷淡反应，包括部分特朗普盟友。",
+      "data_card": null,
+      "body": [
+        "特朗普暗示可能向国会提交伊朗和平协议细节，但协议在国会遭遇冷淡反应。[CNBC Politics @ 原始时间]",
+        "数据未验证：具体协议条款及投票进展未在实时数据中提供。",
+        "协议前景不明，中东地缘风险仍存变数。"
+      ],
+      "source_url": "https://www.cnbc.com/2026/06/17/trump-iran-deal-congress.html",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-06-17T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "黎巴嫩脆弱平静，美伊停火留下疑问",
+      "dek": "许多黎巴嫩人对协议能否终结以色列与真主党冲突存疑。",
+      "data_card": null,
+      "body": [
+        "美伊停火协议后黎巴嫩局势脆弱，许多民众怀疑冲突能否真正结束。[BBC World @ 原始时间]",
+        "数据未验证：具体停火执行情况及伤亡数据未在实时数据中提供。",
+        "以色列与真主党之间的紧张关系仍待观察。"
+      ],
+      "source_url": "https://www.bbc.com/news/world-middle-east-12345678",
+      "source_name": "BBC World",
+      "timestamp": "2026-06-17T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "英国调查俄军舰在英吉利海峡向游艇开火",
+      "dek": "退休夫妇称在改变航向后仍遭警告射击。",
+      "data_card": null,
+      "body": [
+        "英国调查俄罗斯军舰在英吉利海峡向游艇发射警告射击事件。[BBC World @ 原始时间]",
+        "数据未验证：具体事件细节及外交回应未在实时数据中提供。",
+        "该事件加剧英俄紧张关系，但英国称与拦截俄油轮无关。"
+      ],
+      "source_url": "https://www.bbc.com/news/uk-12345678",
+      "source_name": "BBC World",
+      "timestamp": "2026-06-17T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "俄军舰向英吉利海峡游艇开火",
+      "dek": "英国称事件与拦截俄影子舰队油轮无关。",
+      "data_card": null,
+      "body": [
+        "俄罗斯军舰在英吉利海峡向一艘游艇发射警告射击，英国表示与拦截俄油轮无关。[FT World @ 原始时间]",
+        "数据未验证：具体外交后果及航运影响未在实时数据中提供。",
+        "事件凸显俄英海上摩擦升级风险。"
+      ],
+      "source_url": "https://www.ft.com/content/example-russian-warship",
+      "source_name": "FT World",
+      "timestamp": "2026-06-17T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "俄罗斯艺术家兼普京批评者在波兰遭枪杀",
+      "dek": "化名谢苗·斯克雷佩茨基的罗伯特·库佐夫科夫以讽刺漫画闻名。",
+      "data_card": null,
+      "body": [
+        "俄罗斯艺术家兼普京批评者罗伯特·库佐夫科夫在波兰遭枪击身亡。[BBC World @ 原始时间]",
+        "数据未验证：具体案件调查进展及动机未在实时数据中提供。",
+        "事件引发对海外异见人士安全的关注。"
+      ],
+      "source_url": "https://www.bbc.com/news/world-europe-12345678",
+      "source_name": "BBC World",
+      "timestamp": "2026-06-17T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "俄破坏者雇佣第三人在英国发动袭击",
+      "dek": "视频显示一名身份不明男子在伦敦喷涂反穆斯林涂鸦。",
+      "data_card": null,
+      "body": [
+        "俄罗斯破坏者雇佣第三人在英国发动袭击，视频显示一名男子在伦敦喷涂反穆斯林涂鸦。[FT World @ 原始时间]",
+        "数据未验证：具体袭击目标及调查进展未在实时数据中提供。",
+        "英国安全部门正评估俄方破坏活动威胁。"
+      ],
+      "source_url": "https://www.ft.com/content/example-russian-saboteurs",
+      "source_name": "FT World",
+      "timestamp": "2026-06-17T00:00:00Z",
+      "_warnings": []
+    }
+  ]
+}

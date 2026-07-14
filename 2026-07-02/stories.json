@@ -1,0 +1,476 @@
+{
+  "us_stocks": [
+    {
+      "tag": "宏观",
+      "headline": "ADP就业报告：6月就业增长",
+      "dek": "报告显示6月私人部门就业增加，但具体数字未验证。ADP股价上涨5.26美元至235.73美元[Finnhub @ 00:00 MYT]。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "ADP",
+            "price": 235.73,
+            "change": 5.26
+          }
+        ]
+      },
+      "body": [
+        "ADP发布6月全国就业报告，显示私人部门就业增长，但具体数字未验证[Seeking Alpha @ 00:00 MYT]。报告通常被视为非农就业的前瞻指标。",
+        "ADP公司股价当日上涨5.26美元，收于235.73美元[Finnhub @ 00:00 MYT]，反映市场对就业数据的解读。",
+        "投资者关注后续非农报告，以确认劳动力市场趋势。数据未验证前需谨慎。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-02 00:00:00",
+      "_warnings": []
+    },
+    {
+      "tag": "宏观",
+      "headline": "职位空缺上升",
+      "dek": "最新数据显示职位空缺增加，但具体数值未验证。市场关注劳动力需求变化。",
+      "data_card": null,
+      "body": [
+        "据Seeking Alpha报道，美国职位空缺数据上升，但具体数字未验证[Seeking Alpha @ 00:00 MYT]。",
+        "劳动力市场紧张状况可能影响美联储政策路径。数据未验证前市场保持观望。",
+        "投资者需关注后续JOLTS报告以确认趋势。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-02 00:00:00",
+      "_warnings": []
+    },
+    {
+      "tag": "科技",
+      "headline": "AI物理极限：稀缺创造机会",
+      "dek": "文章探讨AI发展面临的物理限制，以及由此产生的投资机会。相关芯片股表现分化。",
+      "data_card": null,
+      "body": [
+        "文章指出AI算力需求面临物理极限，稀缺性可能推动特定领域投资。英伟达股价下跌1.25美元至197.58美元[Finnhub @ 00:00 MYT]，AMD下跌6.89美元至540.88美元[Finnhub @ 00:00 MYT]。",
+        "博通下跌2.23美元至369.34美元[Finnhub @ 00:00 MYT]，而美光下跌10.57美元至1032.28美元[Finnhub @ 00:00 MYT]，芯片股整体承压。",
+        "投资者可关注能源效率、新材料等受益于稀缺的领域。数据未验证。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-02 00:00:00",
+      "_warnings": []
+    },
+    {
+      "tag": "策略",
+      "headline": "Cramer建议利用市场轮动",
+      "dek": "CNBC的Jim Cramer表示投资者应利用最新市场轮动买入错过的赢家股。",
+      "data_card": null,
+      "body": [
+        "Jim Cramer在CNBC节目中表示，周三的市场轮动为投资者提供了买入机会，建议关注此前错过的强势股[CNBC @ 00:00 MYT]。",
+        "例如，Palantir上涨7.77美元至125.73美元[Finnhub @ 00:00 MYT]，SoFi上涨2.84美元至18.44美元[Finnhub @ 00:00 MYT]，表现突出。",
+        "Cramer提醒投资者不要追高，而是利用回调建仓。具体策略需结合个人风险偏好。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-07-02 00:00:00",
+      "_warnings": []
+    },
+    {
+      "tag": "债券",
+      "headline": "日本国债走低，跟随美债",
+      "dek": "日本国债在东京早盘小幅下跌，追随隔夜美债收益率下行。",
+      "data_card": null,
+      "body": [
+        "日本国债在东京早盘交易中走低，追随隔夜美国国债收益率下跌[MarketWatch @ 00:00 MYT]。",
+        "市场关注日本央行政策动向。具体收益率变动数据未验证。",
+        "美债收益率下行可能反映市场对经济前景的担忧。"
+      ],
+      "source_url": "https://www.marketwatch.com",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-07-02 00:00:00",
+      "_warnings": []
+    },
+    {
+      "tag": "商品",
+      "headline": "油价下跌，供应增加",
+      "dek": "亚洲早盘油价下跌，因供应增加且中东紧张局势缓解。",
+      "data_card": null,
+      "body": [
+        "国际油价在亚洲早盘下跌，因供应增加和中东紧张局势缓解[MarketWatch @ 00:00 MYT]。",
+        "具体价格变动数据未验证。市场关注OPEC+产量决策。",
+        "能源股可能承压，但需等待更多数据。"
+      ],
+      "source_url": "https://www.marketwatch.com",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-07-02 00:00:00",
+      "_warnings": []
+    },
+    {
+      "tag": "个股",
+      "headline": "德州仪器：估值偏高，上涨空间有限",
+      "dek": "文章认为德州仪器估值昂贵，上行空间有限，建议持有。",
+      "data_card": null,
+      "body": [
+        "Seeking Alpha文章指出德州仪器当前估值偏高，未来上涨空间有限[Seeking Alpha @ 00:00 MYT]。",
+        "公司股价数据未验证。投资者需关注半导体行业周期。",
+        "建议持有观望，等待更佳入场点。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-02 00:00:00",
+      "_warnings": []
+    },
+    {
+      "tag": "商品",
+      "headline": "黄金上涨，央行言论支撑",
+      "dek": "亚洲早盘黄金上涨，央行官员偏鸽派言论及经济数据提供支撑。",
+      "data_card": null,
+      "body": [
+        "黄金在亚洲早盘上涨，受央行官员偏鸽派言论和经济数据提振[MarketWatch @ 00:00 MYT]。",
+        "具体金价变动数据未验证。ANZ Research认为央行言论支撑金价。",
+        "投资者关注后续通胀数据对金价的影响。"
+      ],
+      "source_url": "https://www.marketwatch.com",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-07-02 00:00:00",
+      "_warnings": []
+    },
+    {
+      "tag": "个股",
+      "headline": "瓦莱罗能源：炼油繁荣可超越伊朗战争",
+      "dek": "文章认为瓦莱罗能源的炼油业务繁荣期可能持续，即使伊朗战争结束。",
+      "data_card": null,
+      "body": [
+        "Seeking Alpha文章认为瓦莱罗能源的炼油业务繁荣可能持续，超越伊朗战争影响[Seeking Alpha @ 00:00 MYT]。",
+        "公司股价数据未验证。炼油利润率保持高位。",
+        "投资者需关注地缘政治风险对能源市场的影响。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-02 00:00:00",
+      "_warnings": []
+    },
+    {
+      "tag": "行业",
+      "headline": "美国汽车业面临USMCA不确定性",
+      "dek": "若USMCA贸易协议未延期，美国汽车行业将面临更大不确定性，尤其是原产地规则问题。",
+      "data_card": null,
+      "body": [
+        "CNBC报道，若USMCA贸易协议未获延期，美国汽车行业将面临更大不确定性，特别是原产地规则[CNBC @ 00:00 MYT]。",
+        "特斯拉股价上涨1.12美元至425.30美元[Finnhub @ 00:00 MYT]，但行业整体前景不明。",
+        "汽车制造商呼吁政府尽快解决协议延期问题，以避免供应链中断。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-07-02 00:00:00",
+      "_warnings": []
+    }
+  ],
+  "my_stocks": [],
+  "ai": [
+    {
+      "tag": "ai",
+      "headline": "Meta拟构建AI云业务挑战AWS",
+      "dek": "Meta plans to sell AI compute access, competing with AWS and Google Cloud.",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "META",
+            "price": 612.91,
+            "change": 8.81,
+            "volume": "N/A"
+          }
+        ]
+      },
+      "body": [
+        "Meta is developing a cloud infrastructure business to monetize excess AI compute capacity.",
+        "The move would pit Meta against major cloud providers like Amazon Web Services and Google Cloud.",
+        "Meta's AI models, such as Llama, could be offered as part of the cloud services."
+      ],
+      "source_url": "https://techcrunch.com/2026/07/02/meta-ai-cloud-compute/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-02 10:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "特朗普解除Anthropic模型限制",
+      "dek": "Trump administration drops restrictions on Anthropic's Mythos and Fable models.",
+      "data_card": null,
+      "body": [
+        "The Trump administration's AI policy remains erratic, leaving industry unclear on future rules.",
+        "Anthropic's Mythos and Fable models were previously subject to export controls.",
+        "The move signals a potential shift in U.S. AI governance approach."
+      ],
+      "source_url": "https://techcrunch.com/2026/07/02/trump-anthropic-models/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-02 10:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "推理模型早退策略成本研究",
+      "dek": "arXiv:2606.30852: A cost-aware study of early exits in reasoning models.",
+      "data_card": null,
+      "body": [
+        "The paper investigates when learned stopping rules improve over simple baselines in reasoning models.",
+        "Different instances require varying amounts of computation, making early exit strategies beneficial.",
+        "The study provides insights into cost-efficient inference for large language models."
+      ],
+      "source_url": "https://arxiv.org/abs/2606.30852",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-02 10:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Cloudflare要求AI公司为内容付费",
+      "dek": "Cloudflare gives AI companies until Sept 15 to separate crawlers or risk blockage.",
+      "data_card": null,
+      "body": [
+        "Cloudflare's new policy targets AI firms using publisher content for training and agents.",
+        "AI companies must differentiate between search crawlers and AI training crawlers by September 15.",
+        "Non-compliant companies may be blocked by default on many publisher sites."
+      ],
+      "source_url": "https://techcrunch.com/2026/07/02/cloudflare-ai-publishers/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-02 10:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "反馈如何驱动交互式改进？",
+      "dek": "arXiv:2606.30774: Study on when natural-language feedback improves beyond repeated attempts.",
+      "data_card": null,
+      "body": [
+        "The research examines the marginal benefit of feedback in multi-turn language agent settings.",
+        "Findings show feedback can drive improvement beyond what is achieved by repeated attempts alone.",
+        "The work has implications for interactive AI systems and human-in-the-loop learning."
+      ],
+      "source_url": "https://arxiv.org/abs/2606.30774",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-02 10:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "对比反思迭代提示优化",
+      "dek": "arXiv:2606.30840: Contrastive reflection for iterative prompt optimization in LLMs.",
+      "data_card": null,
+      "body": [
+        "LLM agents increasingly act as judges for information retrieval evaluation.",
+        "The method uses contrastive reflection to iteratively improve prompts for better retrieval.",
+        "This approach aims to reduce bias and improve consistency in LLM-based judgments."
+      ],
+      "source_url": "https://arxiv.org/abs/2606.30840",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-02 10:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "HASTE：分层技能累积ML工程",
+      "dek": "arXiv:2606.30911: Hierarchical accumulation of skills for transfer-efficient ML engineering.",
+      "data_card": null,
+      "body": [
+        "HASTE addresses the waste of compute in ML engineering by reusing discovered techniques.",
+        "The hierarchical multi-agent system avoids cold starts by accumulating skills across tasks.",
+        "This approach promises significant efficiency gains in machine learning development pipelines."
+      ],
+      "source_url": "https://arxiv.org/abs/2606.30911",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-02 10:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "RoPoLL：鲁棒LLM评委小组",
+      "dek": "arXiv:2606.30931: Robust Panel of LLM Judges for consensus evaluation.",
+      "data_card": null,
+      "body": [
+        "The LLM Jury approach uses a panel of evaluators to report consensus scores.",
+        "RoPoLL improves robustness over single-judge evaluation in LLM assessment.",
+        "The method addresses groupthink and bias in LLM-based evaluation."
+      ],
+      "source_url": "https://arxiv.org/abs/2606.30931",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-02 10:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "AI模型陷入群体思维如何突破",
+      "dek": "Startup aims to break LLMs out of groupthink, like always choosing 7 in random number game.",
+      "data_card": null,
+      "body": [
+        "LLMs often produce repetitive outputs, e.g., always selecting 7 as a random number.",
+        "A new startup is developing methods to introduce diversity in LLM responses.",
+        "The approach could improve creativity and reduce bias in AI-generated content."
+      ],
+      "source_url": "https://www.technologyreview.com/2026/07/02/llm-groupthink-startup/",
+      "source_name": "MIT Technology Review",
+      "timestamp": "2026-07-02 10:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Venice AI以隐私优先平台获65M融资",
+      "dek": "Venice AI becomes a unicorn with $65M Series A, profitable with $70M annual revenue.",
+      "data_card": null,
+      "body": [
+        "Venice AI's privacy-first AI platform has achieved profitability with over $70M in run-rate revenue.",
+        "The $65M Series A funding values the company at over $1 billion, making it a unicorn.",
+        "CEO Erik Voorhees highlights strong demand for privacy-focused AI solutions."
+      ],
+      "source_url": "https://techcrunch.com/2026/07/02/venice-ai-unicorn-series-a/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-02 10:00 MYT",
+      "_warnings": []
+    }
+  ],
+  "macro": [
+    {
+      "tag": "macro",
+      "headline": "美国阻止北美贸易协定长期续签",
+      "dek": "US blocks 16-year North America trade deal renewal, triggering annual rolling reviews",
+      "data_card": null,
+      "body": [
+        "美国决定不续签为期16年的北美贸易协定，转而采用年度滚动审查机制。",
+        "此举将影响美国与加拿大和墨西哥的贸易关系，引发市场不确定性。",
+        "BBC报道称，这一决定可能重新定义北美经济一体化格局。"
+      ],
+      "source_url": "https://www.bbc.com/news",
+      "source_name": "BBC World",
+      "timestamp": "2026-07-02 12:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "美国不续签USMCA",
+      "dek": "President Donald Trump's 'primary' issue with USMCA centers on America's trade deficits with Canada and Mexico, a senior administration official said.",
+      "data_card": null,
+      "body": [
+        "美国政府宣布不再续签《美墨加协定》（USMCA），为与加拿大和墨西哥的新谈判打开大门。",
+        "一名高级官员表示，特朗普总统的主要关切是美国对加墨两国的贸易逆差。",
+        "CNBC政治频道报道称，此举可能引发新一轮北美贸易谈判。"
+      ],
+      "source_url": "https://www.cnbc.com/politics",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-07-02 12:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "美国不续签特朗普贸易协定",
+      "dek": "Washington will instead hold annual reviews on terms of commerce with its biggest trading partners",
+      "data_card": null,
+      "body": [
+        "美国选择不续签特朗普时期与墨西哥和加拿大达成的贸易协定，改为每年审查商业条款。",
+        "这一决定意味着美国与其最大贸易伙伴的贸易关系将进入不稳定期。",
+        "FT世界版报道称，年度审查机制可能增加企业规划难度。"
+      ],
+      "source_url": "https://www.ft.com/world",
+      "source_name": "FT World",
+      "timestamp": "2026-07-02 12:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "世行将逐步停止对华贷款",
+      "dek": "Decision from global development institution follows years of pressure from the Trump administration",
+      "data_card": null,
+      "body": [
+        "世界银行决定逐步停止向中国提供贷款，结束数十年的合作。",
+        "此举是在特朗普政府多年施压后做出的，反映了中美经济关系的转变。",
+        "FT世界版报道称，中国作为世界银行借款国的角色将发生根本变化。"
+      ],
+      "source_url": "https://www.ft.com/world",
+      "source_name": "FT World",
+      "timestamp": "2026-07-02 12:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "巨额收购推动交易额创纪录2.8万亿美元",
+      "dek": "Companies and investors turn to M&A as they adjust to economic shifts driven by the rise of AI",
+      "data_card": null,
+      "body": [
+        "全球并购交易额达到创纪录的2.8万亿美元，主要由大型收购推动。",
+        "企业和投资者通过并购来适应人工智能崛起带来的经济变革。",
+        "FT世界版报道称，这一趋势反映了市场对结构性变化的积极调整。"
+      ],
+      "source_url": "https://www.ft.com/world",
+      "source_name": "FT World",
+      "timestamp": "2026-07-02 12:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "最高法院制约特朗普但强化总统权力",
+      "dek": "Despite losses on tariffs and birthright citizenship, the executive has emerged stronger",
+      "data_card": null,
+      "body": [
+        "美国最高法院在关税和出生公民权问题上否决了特朗普，但总体上扩大了总统权力。",
+        "裁决结果使行政分支在多个领域获得更大自主权，尽管在具体政策上受挫。",
+        "FT世界版分析称，最高法院的判决重塑了总统与国会之间的权力平衡。"
+      ],
+      "source_url": "https://www.ft.com/world",
+      "source_name": "FT World",
+      "timestamp": "2026-07-02 12:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "白宫加速推进AI模型标准计划",
+      "dek": "Guidance to be announced as soon as next week after government intervention in Anthropic and OpenAI rollouts",
+      "data_card": null,
+      "body": [
+        "白宫加快制定人工智能模型标准，预计最快下周公布指导意见。",
+        "此前政府干预了Anthropic和OpenAI的产品发布，促使监管框架加速成型。",
+        "FT世界版报道称，此举旨在平衡AI创新与安全风险。"
+      ],
+      "source_url": "https://www.ft.com/world",
+      "source_name": "FT World",
+      "timestamp": "2026-07-02 12:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "千禧年和Point72因对冲基金反弹获利",
+      "dek": "Izzy Englander and Steve Cohen’s firms post double-digit returns in first half of year",
+      "data_card": null,
+      "body": [
+        "Millennium Management和Point72 Asset Management在2026年上半年实现两位数回报。",
+        "对冲基金行业从伊朗战争引发的波动中反弹，主要基金表现强劲。",
+        "FT世界版报道称，Izzy Englander和Steve Cohen的公司领跑行业复苏。"
+      ],
+      "source_url": "https://www.ft.com/world",
+      "source_name": "FT World",
+      "timestamp": "2026-07-02 12:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "KNDS因估值过高推迟IPO",
+      "dek": "Franco-German tank maker says it will wait for ‘more favourable’ market conditions",
+      "data_card": null,
+      "body": [
+        "法德坦克制造商KNDS因投资者对超过120亿欧元估值犹豫，决定推迟首次公开募股。",
+        "公司表示将等待“更有利”的市场条件再重启IPO计划。",
+        "FT世界版报道称，当前市场环境对高估值新股发行不利。"
+      ],
+      "source_url": "https://www.ft.com/world",
+      "source_name": "FT World",
+      "timestamp": "2026-07-02 12:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "泽连斯基敦促欧盟制裁俄铝厂",
+      "dek": "Call on the opening day of Dublin’s EU presidency adds to pressure over Aughinish Alumina smelter",
+      "data_card": null,
+      "body": [
+        "乌克兰总统泽连斯基在都柏林欧盟主席国开幕日呼吁欧盟制裁俄罗斯所有的氧化铝厂。",
+        "位于爱尔兰的Aughinish Alumina冶炼厂成为焦点，面临更大政治压力。",
+        "FT世界版报道称，此举可能加剧欧盟与俄罗斯的经济对抗。"
+      ],
+      "source_url": "https://www.ft.com/world",
+      "source_name": "FT World",
+      "timestamp": "2026-07-02 12:00 MYT",
+      "_warnings": []
+    }
+  ]
+}

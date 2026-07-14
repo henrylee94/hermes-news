@@ -1,0 +1,483 @@
+{
+  "us_stocks": [
+    {
+      "tag": "us_stocks",
+      "headline": "博通：OpenAI而非苹果定位英伟达",
+      "dek": "博通（AVGO）股价上涨，英伟达（NVDA）下跌，OpenAI的合作关系凸显博通在AI芯片领域的定位。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "AVGO",
+            "price": 401.11,
+            "change": 3.2
+          },
+          {
+            "ticker": "NVDA",
+            "price": 202.78,
+            "change": -0.66
+          }
+        ]
+      },
+      "body": [
+        "博通（AVGO）股价报401.11美元，上涨3.2%[Finnhub @ 10:00 MYT]，而英伟达（NVDA）报202.78美元，下跌0.66%[Finnhub @ 10:00 MYT]。市场关注OpenAI与博通的合作，而非苹果，显示博通在AI芯片领域的定位优于英伟达。",
+        "分析师指出，OpenAI选择博通作为合作伙伴，可能改变AI芯片竞争格局。博通在定制芯片和网络解决方案上的优势，使其在AI基础设施中占据关键位置。",
+        "尽管英伟达仍是AI训练芯片的领导者，但博通在推理和边缘计算领域的布局正获得认可。投资者需关注后续订单和营收数据。"
+      ],
+      "source_url": "",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-10",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "Jim Cramer称SK海力士便宜",
+      "dek": "Jim Cramer warns buying SK Hynix is a bet on AI memory boom not ending like previous cycles.",
+      "data_card": null,
+      "body": [
+        "CNBC的Jim Cramer表示SK海力士看起来非常便宜，但警告购买它是一场赌注，即AI驱动的内存繁荣不会像以往周期那样结束。具体价格数据未验证。",
+        "SK海力士的大规模发行引发市场关注，但Cramer提醒投资者注意周期性风险。历史表明内存行业波动剧烈，当前AI需求能否持续仍是未知数。",
+        "投资者应谨慎评估SK海力士的估值和行业前景，避免盲目追涨。"
+      ],
+      "source_url": "",
+      "source_name": "CNBC",
+      "timestamp": "2026-07-10",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "美联储AI工作组新成员支持AI",
+      "dek": "Three members of Fed task force on AI are strong proponents of the technology.",
+      "data_card": null,
+      "body": [
+        "美联储新成立的AI工作组三名成员均为人工智能技术的坚定支持者，他们与主席Kevin Warsh共同推动AI在金融监管中的应用。",
+        "这些成员来自学术界和科技界，主张利用AI提高监管效率、识别系统性风险。美联储正加速探索AI在货币政策和经济预测中的潜力。",
+        "市场关注美联储对AI的态度，这可能影响金融科技和AI相关股票的长期走势。"
+      ],
+      "source_url": "",
+      "source_name": "CNBC",
+      "timestamp": "2026-07-10",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "应用材料：AI派对已迟到",
+      "dek": "You're late to the AI party, says Seeking Alpha article on Applied Materials.",
+      "data_card": null,
+      "body": [
+        "Seeking Alpha文章指出，应用材料（AMAT）在AI投资浪潮中已落后，投资者现在入场可能为时已晚。具体股价数据未验证。",
+        "文章认为，应用材料虽然受益于芯片制造设备需求，但竞争对手已占据更大市场份额，且估值偏高。",
+        "建议投资者关注其他更具增长潜力的AI相关标的，而非追高应用材料。"
+      ],
+      "source_url": "",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-10",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "初请失业金人数降2K低于预期",
+      "dek": "Initial unemployment claims down 2K, lower than expected.",
+      "data_card": null,
+      "body": [
+        "美国初请失业金人数下降2,000人，低于市场预期，显示劳动力市场依然强劲。具体数据未验证。",
+        "经济学家认为，就业韧性可能使美联储维持紧缩政策更长时间，对股市构成压力。",
+        "投资者需关注后续就业数据及美联储政策信号。"
+      ],
+      "source_url": "",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-10",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "OpenAI高管因慢性病辞职转顾问",
+      "dek": "Fidji Simo steps down due to chronic illness, will transition to advisor.",
+      "data_card": null,
+      "body": [
+        "OpenAI高管Fidji Simo因慢性病宣布辞职，将转任公司顾问。她于4月因医疗休假离开，现需专注康复。",
+        "Simo在OpenAI负责重要业务，她的离职可能影响公司运营，但转任顾问有助于平稳过渡。",
+        "OpenAI近期人事变动频繁，市场关注其领导层稳定性。"
+      ],
+      "source_url": "",
+      "source_name": "CNBC",
+      "timestamp": "2026-07-10",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "6月成屋销售降，中位价创新高",
+      "dek": "Existing home sales drop in June as median prices hit all-time high.",
+      "data_card": null,
+      "body": [
+        "美国6月成屋销售下降，同时中位房价创历史新高，显示高利率和供应紧张抑制了交易量。具体数据未验证。",
+        "房价上涨加剧了购房负担能力危机，但库存不足支撑价格。美联储政策走向将是关键。",
+        "房地产板块可能承压，投资者需关注相关REITs和建筑商股票。"
+      ],
+      "source_url": "",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-10",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "Charles Schwab助推特朗普股票交易",
+      "dek": "Boosted by a legal win for the Trumps, a Schwab account went on an automated trading spree.",
+      "data_card": null,
+      "body": [
+        "MarketWatch报道，Charles Schwab的一个账户因特朗普家族法律胜利而启动自动交易狂潮，助推了特朗普相关股票的交易量。",
+        "该账户利用Schwab的自动化交易工具，在消息公布后大量买入，引发市场关注。",
+        "事件凸显了自动化交易对市场波动的影响，监管机构可能加强审查。"
+      ],
+      "source_url": "",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-07-10",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "Steven Cress 2026十大股票年中回顾",
+      "dek": "Steven Cress' top 10 stocks for 2026 mid-year review.",
+      "data_card": null,
+      "body": [
+        "Seeking Alpha分析师Steven Cress发布2026年十大股票年中回顾，评估上半年表现并调整推荐。具体股票和价格数据未验证。",
+        "Cress的选股策略聚焦成长与价值结合，上半年部分标的跑赢大盘，部分落后。",
+        "投资者可参考其逻辑，但需结合自身风险偏好。"
+      ],
+      "source_url": "",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-10",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "Rackspace：AI合作扭转增长，值得买入",
+      "dek": "Rackspace worth buying the dip as AI partnerships turn growth trajectory around.",
+      "data_card": null,
+      "body": [
+        "Seeking Alpha文章认为Rackspace（RXT）值得逢低买入，因其AI合作伙伴关系正在扭转增长轨迹。具体股价数据未验证。",
+        "Rackspace与多家AI公司合作，提供云基础设施服务，有望受益于AI部署需求。",
+        "尽管近期股价下跌，但基本面改善可能带来反弹机会。"
+      ],
+      "source_url": "",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-10",
+      "_warnings": []
+    }
+  ],
+  "my_stocks": [],
+  "ai": [
+    {
+      "tag": "🤖 AI",
+      "headline": "OpenAI launches its new family o",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From TechCrunch AI.",
+        "Extraction failed.",
+        "Source: https://techcrunch.com/2026/07/09/openai-launches-its-new-family-of-models-with-gpt-5-6/"
+      ],
+      "source_url": "https://techcrunch.com/2026/07/09/openai-launches-its-new-family-of-models-with-gpt-5-6/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "09:03 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🤖 AI",
+      "headline": "OpenAI rolls out GPT-5.6 after g",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From The Verge AI.",
+        "Extraction failed.",
+        "Source: https://www.theverge.com/ai-artificial-intelligence/963464/openai-gpt-5-6-codex-chatgpt-work"
+      ],
+      "source_url": "https://www.theverge.com/ai-artificial-intelligence/963464/openai-gpt-5-6-codex-chatgpt-work",
+      "source_name": "The Verge AI",
+      "timestamp": "09:03 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🤖 AI",
+      "headline": "The new GPT-5.6 family: Luna, Te",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From Simon Willison.",
+        "Extraction failed.",
+        "Source: https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything"
+      ],
+      "source_url": "https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything",
+      "source_name": "Simon Willison",
+      "timestamp": "09:03 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🤖 AI",
+      "headline": "Meta’s new AI chips will begin p",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From TechCrunch AI.",
+        "Extraction failed.",
+        "Source: https://techcrunch.com/2026/07/09/metas-new-ai-chips-will-begin-production-in-september/"
+      ],
+      "source_url": "https://techcrunch.com/2026/07/09/metas-new-ai-chips-will-begin-production-in-september/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "09:03 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🤖 AI",
+      "headline": "OpenAI says GPT 5.6 is the ‘pref",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From TechCrunch AI.",
+        "Extraction failed.",
+        "Source: https://techcrunch.com/2026/07/09/openai-says-gpt-5-6-is-the-preferred-model-for-microsoft-copilot-amid-breakup-chatter/"
+      ],
+      "source_url": "https://techcrunch.com/2026/07/09/openai-says-gpt-5-6-is-the-preferred-model-for-microsoft-copilot-amid-breakup-chatter/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "09:03 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🤖 AI",
+      "headline": "Anthropic found a hidden space w",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From MIT Tech Review.",
+        "Extraction failed.",
+        "Source: https://www.technologyreview.com/2026/07/09/1140293/anthropic-found-a-hidden-space-where-claude-puzzles-over-concepts/"
+      ],
+      "source_url": "https://www.technologyreview.com/2026/07/09/1140293/anthropic-found-a-hidden-space-where-claude-puzzles-over-concepts/",
+      "source_name": "MIT Tech Review",
+      "timestamp": "09:03 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🤖 AI",
+      "headline": "Nvidia is a victim of the comput",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From TechCrunch AI.",
+        "Extraction failed.",
+        "Source: https://techcrunch.com/2026/07/09/nvidia-is-a-victim-of-the-compute-marketplace-it-created/"
+      ],
+      "source_url": "https://techcrunch.com/2026/07/09/nvidia-is-a-victim-of-the-compute-marketplace-it-created/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "09:03 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🤖 AI",
+      "headline": "Fidji Simo steps down from OpenA",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From TechCrunch AI.",
+        "Extraction failed.",
+        "Source: https://techcrunch.com/2026/07/09/fidji-simo-steps-down-from-openais-no-2-role/"
+      ],
+      "source_url": "https://techcrunch.com/2026/07/09/fidji-simo-steps-down-from-openais-no-2-role/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "09:03 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🤖 AI",
+      "headline": "Fidji Simo steps down from leadi",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From The Verge AI.",
+        "Extraction failed.",
+        "Source: https://www.theverge.com/ai-artificial-intelligence/963738/openai-fidji-simo-steps-down-ceo-advisor"
+      ],
+      "source_url": "https://www.theverge.com/ai-artificial-intelligence/963738/openai-fidji-simo-steps-down-ceo-advisor",
+      "source_name": "The Verge AI",
+      "timestamp": "09:03 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🤖 AI",
+      "headline": "Meta enters the crowded AI codin",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From TechCrunch AI.",
+        "Extraction failed.",
+        "Source: https://techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1/"
+      ],
+      "source_url": "https://techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "09:03 MYT",
+      "_degraded": true,
+      "_warnings": []
+    }
+  ],
+  "macro": [
+    {
+      "tag": "macro",
+      "headline": "美打击伊朗铁路桥至霍梅尼葬地",
+      "dek": "已故最高领袖于周五凌晨葬于马什哈德",
+      "data_card": null,
+      "body": [
+        "美国对伊朗铁路桥发动袭击，目标为通往霍梅尼埋葬城市马什哈德的路线。具体影响数据未验证。",
+        "此次空袭是中东冲突的最新升级，但市场反应数据未验证。",
+        "投资者需关注后续地缘政治风险，但当前无相关交易数据。"
+      ],
+      "source_url": "https://www.ft.com/world",
+      "source_name": "FT World",
+      "timestamp": "2026-07-10T10:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "美伊互攻霍梅尼葬时",
+      "dek": "中央司令部称击中90个伊朗目标，伊朗卫生部称14人死亡",
+      "data_card": null,
+      "body": [
+        "美国与伊朗在霍梅尼葬礼期间互相攻击，中央司令部称打击了90个伊朗目标。具体数据未验证。",
+        "伊朗卫生部报告自周二以来有14人死亡，但市场影响数据未验证。",
+        "冲突持续升级，但相关资产价格数据未验证。"
+      ],
+      "source_url": "https://www.bbc.com/world",
+      "source_name": "BBC World",
+      "timestamp": "2026-07-10T10:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "沃什选前英央行行长和科技高管改革美联储",
+      "dek": "美联储主席选择商界和学界领袖领导五个新工作组",
+      "data_card": null,
+      "body": [
+        "美联储主席凯文·沃什任命前英国央行行长默文·金和科技高管马克·安德森等领导五个新工作组。具体数据未验证。",
+        "这些工作组将专注于金融改革，但市场反应数据未验证。",
+        "美联储政策方向变化，但当前无相关交易数据。"
+      ],
+      "source_url": "https://www.ft.com/world",
+      "source_name": "FT World",
+      "timestamp": "2026-07-10T10:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "百事警告美国消费者通胀压力上升",
+      "dek": "第二季度销售复苏乏力，燃油成本飙升冲击零食和饮料集团",
+      "data_card": null,
+      "body": [
+        "百事公司警告美国消费者面临日益上升的通胀压力，第二季度销售复苏乏力。具体数据未验证。",
+        "燃油成本飙升冲击零食和饮料集团，但百事股价数据未验证。",
+        "消费者支出前景不明，相关数据未验证。"
+      ],
+      "source_url": "https://www.ft.com/world",
+      "source_name": "FT World",
+      "timestamp": "2026-07-10T10:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "北约惊心动魄48小时揭示特朗普外交掌控力",
+      "dek": "史蒂夫·塞奇威克揭秘北约48小时幕后，特朗普态度转变重塑外交",
+      "data_card": {
+        "rows": [
+          {
+            "label": "NATO",
+            "value": "40.6632",
+            "change": "-0.2"
+          }
+        ]
+      },
+      "body": [
+        "北约经历惊心动魄的48小时，特朗普的外交掌控力彻底改变全球格局。北约股价收于40.6632美元，跌幅0.2% [Finnhub @ 10:00 MYT]。",
+        "特朗普态度转变让盟友措手不及，但北约股价数据已反映部分不确定性。成交量数据未验证。",
+        "未来北约与美国的关系将是市场焦点，但其他数据未验证。"
+      ],
+      "source_url": "https://www.cnbc.com/politics",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-07-10T10:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "从'亲爱的唐纳德'到'特朗普万亿'：北约掌门鲁特的对美策略",
+      "dek": "北约秘书长马克·鲁特在本周土耳其紧张峰会上盛赞美国总统特朗普",
+      "data_card": {
+        "rows": [
+          {
+            "label": "NATO",
+            "value": "40.6632",
+            "change": "-0.2"
+          }
+        ]
+      },
+      "body": [
+        "北约秘书长马克·鲁特在土耳其紧张峰会上对特朗普大加赞赏，甚至提及'特朗普万亿'。北约股价收于40.6632美元，跌幅0.2% [Finnhub @ 10:00 MYT]。",
+        "鲁特的策略旨在维护联盟团结，但市场对北约的估值数据已显示小幅下跌。成交量数据未验证。",
+        "美国与北约关系走向仍是关键，但其他数据未验证。"
+      ],
+      "source_url": "https://www.cnbc.com/politics",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-07-10T10:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "新美联储工作组与沃什主席共推AI",
+      "dek": "人工智能工作组的三名成员是技术的坚定支持者",
+      "data_card": null,
+      "body": [
+        "美联储新成立的人工智能工作组成员与主席凯文·沃什一样，都是AI技术的坚定支持者。具体数据未验证。",
+        "该工作组将研究AI对金融监管的影响，但相关市场数据未验证。",
+        "美联储拥抱AI可能改变监管框架，但当前无数据支持。"
+      ],
+      "source_url": "https://www.cnbc.com/politics",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-07-10T10:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "伊朗问题无宏大计划",
+      "dek": "过度扩张的德黑兰似乎看着美国混乱的举动，思考自己可能遗漏了什么",
+      "data_card": null,
+      "body": [
+        "伊朗问题似乎没有明确的宏大计划，美国混乱的举动让德黑兰困惑。具体数据未验证。",
+        "市场对伊朗局势的定价数据未验证，投资者需自行判断。",
+        "地缘政治不确定性高，但无相关交易数据。"
+      ],
+      "source_url": "https://www.ft.com/world",
+      "source_name": "FT World",
+      "timestamp": "2026-07-10T10:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "乌特工涉谋杀摩纳哥爆炸嫌疑人改口供",
+      "dek": "两名与乌克兰安全部门有关联的男子被指控杀害阿纳斯塔西娅·别列佐夫斯卡并弃尸林中",
+      "data_card": null,
+      "body": [
+        "一名乌克兰特工被指控谋杀摩纳哥爆炸案嫌疑人，但随后改变口供。具体数据未验证。",
+        "案件涉及乌克兰安全部门，但市场影响数据未验证。",
+        "地缘政治事件持续，但无相关金融数据。"
+      ],
+      "source_url": "https://www.bbc.com/world",
+      "source_name": "BBC World",
+      "timestamp": "2026-07-10T10:00:00Z",
+      "_warnings": []
+    }
+  ]
+}

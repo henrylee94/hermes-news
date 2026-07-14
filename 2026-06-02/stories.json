@@ -1,0 +1,526 @@
+{
+  "us_stocks": [
+    {
+      "tag": "macroeconomics",
+      "headline": "美国ISM制造业PMI创2022年5月新高",
+      "dek": "数据未验证",
+      "data_card": null,
+      "body": [
+        "ISM制造业PMI数据未在<live_data>中提供，因此无法引用具体数值。",
+        "该数据若属实，可能反映出美国制造业活动持续扩张的趋势。",
+        "数据未验证，投资者需谨慎参考其他来源以确认实际数据。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "数据未验证",
+      "_warnings": []
+    },
+    {
+      "tag": "macroeconomics",
+      "headline": "美伊谈判不确定性令亚太股市承压",
+      "dek": "亚太股市周二开盘走低，投资者关注美伊和平谈判的不确定性。",
+      "data_card": null,
+      "body": [
+        "亚太市场周二开盘表现不一，因美国与伊朗和平谈判前景的不确定性打压市场情绪。",
+        "日本国债（JGB）早盘价格小幅下跌，投资者转向中东局势发展。",
+        "原油价格在早盘交易中小幅上涨，因特朗普试图平息以色列与真主党的冲突。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-06-02 08:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "equity",
+      "headline": "美光：市场份额成最大隐忧",
+      "dek": "文章质疑内存超级周期的观点，认为市场份额损失才是最值得关注的问题。",
+      "data_card": {
+        "rows": [
+          {
+            "symbol": "MU",
+            "price": 1035.5,
+            "change": 6.64
+          }
+        ]
+      },
+      "body": [
+        "美光股价当前报1035.5美元，上涨6.64美元，但文章认为其市场份额面临挑战更值得关注。",
+        "内存超级周期的观点可能过度乐观，市场份额下滑才是长期隐忧。",
+        "数据未验证，投资者需自行评估美光在行业内的竞争地位。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "数据未验证",
+      "_warnings": []
+    },
+    {
+      "tag": "fixed_income",
+      "headline": "日本国债因中东局势下跌",
+      "dek": "日本国债价格在东京早盘交易中走低，因投资者权衡中东地缘政治风险。",
+      "data_card": null,
+      "body": [
+        "日本国债（JGB）价格在周二早盘小幅下跌，市场焦点转向中东发展。",
+        "投资者对中东不确定性保持警惕，避险情绪影响债券市场。",
+        "数据未验证，具体收益率变化未在<live_data>中提供。"
+      ],
+      "source_url": "https://www.marketwatch.com",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-06-02 08:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "commodities",
+      "headline": "原油小幅走高；特朗普寻求平息冲突",
+      "dek": "原油价格在早盘交易中上涨，因美国总统特朗普试图遏制以色列与真主党的冲突。",
+      "data_card": null,
+      "body": [
+        "原油期货在早盘交易中小幅走高，受中东冲突可能缓解的预期推动。",
+        "特朗普周一表示将努力平息以色列与真主党之间的敌对行动。",
+        "数据未验证，具体石油价格数据未在<live_data>中提供。"
+      ],
+      "source_url": "https://www.marketwatch.com",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-06-02 08:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "equity",
+      "headline": "知名做空者安德鲁·莱夫特被判欺诈罪",
+      "dek": "洛杉矶联邦陪审团认定莱夫特以不诚实的意见欺骗其他投资者，以操纵股价。",
+      "data_card": null,
+      "body": [
+        "知名做空者安德鲁·莱夫特被洛杉矶联邦陪审团判定犯有欺诈罪。",
+        "他因发布不诚实的股票意见以谋取私利而被定罪。",
+        "该案件凸显监管机构对市场操纵行为的打击力度。"
+      ],
+      "source_url": "https://www.marketwatch.com",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-06-02 08:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "commodities",
+      "headline": "黄金夹在两大叙事之间",
+      "dek": "黄金价格早盘小幅走低，分析师认为其偏向下行风险。",
+      "data_card": null,
+      "body": [
+        "黄金价格在早盘交易中小幅下跌，受两种对立力量影响。",
+        "FOREX.com表示黄金的总体走势依然略微偏向下行。",
+        "数据未验证，具体黄金价格未在<live_data>中提供。"
+      ],
+      "source_url": "https://www.marketwatch.com",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-06-02 08:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "macroeconomics",
+      "headline": "利率观点：粘性环境",
+      "dek": "数据未验证",
+      "data_card": null,
+      "body": [
+        "该文章讨论了当前债券市场的粘性通胀环境及其对利率的影响。",
+        "具体数据未在<live_data>中提供，无法验证分析细节。",
+        "投资者需关注美联储政策路径的潜在变化。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "数据未验证",
+      "_warnings": []
+    },
+    {
+      "tag": "policy",
+      "headline": "特朗普政府拟取消司法部18亿美元基金",
+      "dek": "报道称特朗普政府计划取消DOJ的18亿美元“法律战”基金，引发政治争论。",
+      "data_card": null,
+      "body": [
+        "据报道，特朗普政府计划取消司法部（DOJ）的18亿美元“法律战”基金。",
+        "参议院民主党领袖舒默表示他将推动共和党投票废除该“贿赂基金”。",
+        "数据未验证，具体立法进展未在<live_data>中提供。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-06-02 08:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "technology",
+      "headline": "中国公司学习离开英伟达建设",
+      "dek": "中国企业正积极寻找英伟达以外的替代方案，以建立自给自足的系统。",
+      "data_card": null,
+      "body": [
+        "中国公司正越来越多地寻求英伟达替代品，以实现技术自主。",
+        "尽管自身技术仍处于早期阶段，但自给自足的努力正在加速。",
+        "英伟达股价当前报224.36美元，上涨6.26美元，但中国市场替代趋势可能影响其长期前景。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-06-02 08:00 MYT",
+      "_warnings": []
+    }
+  ],
+  "my_stocks": [],
+  "ai": [
+    {
+      "tag": "ai",
+      "headline": "Alphabet计划筹资800亿建设AI",
+      "dek": "Alphabet宣布计划通过发行债券等方式筹集800亿美元，用于扩大AI基础设施，以满足企业和消费者对AI解决方案的强劲需求。",
+      "data_card": null,
+      "body": [
+        "Alphabet在声明中表示，公司正经历来自企业和消费者对AI解决方案和服务的强劲需求，其水平已超过现有供应能力。为应对这一需求，Alphabet计划筹集800亿美元用于AI建设。[TechCrunch AI @ 未提供时间]",
+        "该筹资计划旨在扩大AI基础设施，包括数据中心和计算资源，以支持谷歌云和Gemini等AI产品的增长。Alphabet未提供具体时间表，但强调此举将确保公司能够满足未来需求。[TechCrunch AI @ 未提供时间]",
+        "市场对此反应不一，Alphabet股价（GOOGL）当前报376.37美元，下跌1.04美元，跌幅0.28%。[yfinance @ 未提供时间]"
+      ],
+      "source_url": "https://techcrunch.com/2026/06/02/alphabet-plans-to-raise-80b-to-pay-for-ai-buildout/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-02T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Anthropic正式提交IPO申请",
+      "dek": "Anthropic已向美国证券交易委员会提交IPO文件，成为AI领域首家冲刺公开上市的主要公司，领先于OpenAI。",
+      "data_card": null,
+      "body": [
+        "经过数月关于OpenAI或Anthropic谁将率先IPO的猜测，Anthropic于周一达到关键里程碑：向美国证券交易委员会提交了启动IPO流程的文件。[The Verge AI @ 未提供时间]",
+        "Anthropic曾被视为大型语言模型新兴领域的黑马，如今已成为AI巨头，拥有顶级企业客户。IPO将为其提供更多资金以扩大AI研发和市场拓展。[TechCrunch AI @ 未提供时间]",
+        "Anthropic的IPO申请标志着AI行业资本化的重要一步，但具体估值和上市时间尚未披露。市场关注其能否在竞争激烈的AI领域持续增长。[The Verge AI @ 未提供时间]"
+      ],
+      "source_url": "https://www.theverge.com/ai/2026/6/2/anthropic-files-to-go-public",
+      "source_name": "The Verge AI",
+      "timestamp": "2026-06-02T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "英伟达进军2000亿CPU市场",
+      "dek": "英伟达与微软、戴尔、惠普合作推出AI代理PC，旨在抢占2000亿美元CPU市场，通过AI代理技术为大众提供安全、易用的解决方案。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "NVDA",
+            "price": 224.36,
+            "change": 6.26,
+            "change_percent": 2.87
+          },
+          {
+            "ticker": "MSFT",
+            "price": 460.52,
+            "change": 2.28,
+            "change_percent": 0.5
+          },
+          {
+            "ticker": "HP",
+            "price": 39.23,
+            "change": 2.83,
+            "change_percent": 7.78
+          }
+        ]
+      },
+      "body": [
+        "英伟达宣布与微软、戴尔和惠普合作，推出基于AI代理的PC产品，旨在挑战2000亿美元的CPU市场。如果英伟达成功将AI代理以安全、易用的方式带给大众，这将是重大突破。[TechCrunch AI @ 未提供时间]",
+        "英伟达股价（NVDA）当前报224.36美元，上涨6.26美元，涨幅2.87%。微软（MSFT）报460.52美元，上涨2.28美元，涨幅0.50%。惠普（HP）报39.23美元，上涨2.83美元，涨幅7.78%。[yfinance @ 未提供时间]",
+        "该合作将英伟达的AI芯片与微软的软件、戴尔和惠普的硬件整合，打造新一代AI PC。分析人士认为，这可能是Windows的M1时刻，但预计成本高昂。[The Verge AI @ 未提供时间]"
+      ],
+      "source_url": "https://techcrunch.com/2026/06/02/nvidia-chases-200b-cpu-market-with-ai-agent-pcs-from-microsoft-dell-and-hp/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-02T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Anthropic提交IPO申请",
+      "dek": "Anthropic正式向美国证券交易委员会提交IPO文件，成为AI领域首家冲刺公开上市的主要公司，领先于OpenAI。",
+      "data_card": null,
+      "body": [
+        "Anthropic，如今已成为AI巨头并拥有顶级企业客户，曾被视为大型语言模型新兴世界的黑马。公司于周一提交了IPO文件。[TechCrunch AI @ 未提供时间]",
+        "经过数月关于OpenAI或Anthropic谁将率先IPO的猜测，Anthropic达到了关键里程碑。IPO将为其提供更多资金以扩大AI研发和市场拓展。[TechCrunch AI @ 未提供时间]",
+        "Anthropic的IPO申请标志着AI行业资本化的重要一步，但具体估值和上市时间尚未披露。市场关注其能否在竞争激烈的AI领域持续增长。[TechCrunch AI @ 未提供时间]"
+      ],
+      "source_url": "https://techcrunch.com/2026/06/02/anthropic-files-to-go-public/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-02T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Import AI 459：AI监管与风险",
+      "dek": "本期Import AI探讨AI监管的困难、蛋白质折叠模型的规模定律以及AI系统灭绝风险的定价问题。",
+      "data_card": null,
+      "body": [
+        "Import AI第459期讨论了AI监管的复杂性，指出随着AI能力提升，确保其安全可控的挑战日益增大。文章还涉及蛋白质折叠模型的规模定律，以及如何为AI系统的灭绝风险定价。[Import AI @ 未提供时间]",
+        "该新闻简报由Jack Clark撰写，内容涵盖AI领域的最新进展和关键问题。本期特别关注AI风险管理和长期影响。[Import AI @ 未提供时间]",
+        "数据未验证：具体数据和来源未在<live_data>中提供，因此无法引用具体数字。建议读者参考原文获取详细信息。[Import AI @ 未提供时间]"
+      ],
+      "source_url": "https://jack-clark.net/2026/06/02/import-ai-459-ai-oversight-is-difficult-scaling-laws-for-protein-folding-models-and-pricing-the-extinction-risk-of-ai-systems/",
+      "source_name": "Import AI",
+      "timestamp": "2026-06-02T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Gemini新AI代理表现惊艳",
+      "dek": "谷歌的24/7 AI代理Gemini Spark在演示中表现出色，但用户需权衡其财务成本和隐私权衡。",
+      "data_card": null,
+      "body": [
+        "谷歌的新24/7 AI代理Gemini Spark在代表用户执行任务方面表现出色，几乎与谷歌的演示一样好。但作者对其财务成本和潜在隐私权衡表示担忧。[The Verge AI @ 未提供时间]",
+        "谷歌向作者提供了Gemini Spark的早期访问权限，展示了其在自动化日常任务方面的能力。然而，该服务可能涉及较高的订阅费用和数据收集。[The Verge AI @ 未提供时间]",
+        "数据未验证：具体价格和隐私细节未在<live_data>中提供，因此无法引用具体数字。建议读者参考原文获取详细信息。[The Verge AI @ 未提供时间]"
+      ],
+      "source_url": "https://www.theverge.com/ai/2026/6/2/gemini-new-ai-agent-is-about-as-good-as-googles-demo",
+      "source_name": "The Verge AI",
+      "timestamp": "2026-06-02T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "微软Build大会将推新AI模型",
+      "dek": "微软将在旧金山举行的Build大会上发布新AI模型和Windows改进，旨在赢回开发者。",
+      "data_card": null,
+      "body": [
+        "微软本周将前往旧金山，在Build大会上发布新AI模型和Windows改进，旨在赢回开发者。作者自微软称其为专业开发者大会以来就一直参加Build。[The Verge AI @ 未提供时间]",
+        "此次大会预计将展示微软在AI领域的最新进展，包括与OpenAI的合作成果以及Windows系统的AI集成。微软股价（MSFT）当前报460.52美元，上涨2.28美元，涨幅0.50%。[yfinance @ 未提供时间]",
+        "数据未验证：具体AI模型细节和Windows改进内容未在<live_data>中提供，因此无法引用具体数字。建议读者关注大会后续报道。[The Verge AI @ 未提供时间]"
+      ],
+      "source_url": "https://www.theverge.com/ai/2026/6/2/microsoft-to-unveil-new-ai-models-and-windows-improvements-at-build",
+      "source_name": "The Verge AI",
+      "timestamp": "2026-06-02T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "2026年5月新闻简报",
+      "dek": "Simon Willison发布2026年5月赞助者专属新闻简报，涵盖AI和开源领域的最新动态。",
+      "data_card": null,
+      "body": [
+        "Simon Willison刚刚发布了5月赞助者专属新闻简报。如果您是赞助者（或现在开始赞助），可以阅读该简报。[Simon Willison @ 未提供时间]",
+        "该简报通常涵盖AI、开源软件和开发者工具的最新进展。具体内容仅对赞助者开放。[Simon Willison @ 未提供时间]",
+        "数据未验证：具体内容未在<live_data>中提供，因此无法引用具体数字。建议读者通过赞助获取完整简报。[Simon Willison @ 未提供时间]"
+      ],
+      "source_url": "https://simonwillison.net/2026/Jun/2/may-2026-newsletter/",
+      "source_name": "Simon Willison",
+      "timestamp": "2026-06-02T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "英伟达RTX Spark或成Windows M1时刻",
+      "dek": "英伟达进军消费级笔记本芯片市场，RTX Spark有望成为Windows的M1时刻，但预计成本高昂。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "NVDA",
+            "price": 224.36,
+            "change": 6.26,
+            "change_percent": 2.87
+          }
+        ]
+      },
+      "body": [
+        "英伟达宣布进军消费级笔记本芯片市场，推出RTX Spark。苹果已证明基于Arm的芯片可以表现出色且能效高，英伟达此举可能成为Windows的M1时刻。[The Verge AI @ 未提供时间]",
+        "英伟达股价（NVDA）当前报224.36美元，上涨6.26美元，涨幅2.87%。RTX Spark预计将集成AI加速功能，但成本可能较高。[yfinance @ 未提供时间]",
+        "数据未验证：具体价格和性能细节未在<live_data>中提供，因此无法引用具体数字。建议读者关注英伟达官方发布。[The Verge AI @ 未提供时间]"
+      ],
+      "source_url": "https://www.theverge.com/ai/2026/6/2/this-could-be-windows-m1-moment-but-expect-it-to-cost-a-ton",
+      "source_name": "The Verge AI",
+      "timestamp": "2026-06-02T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "佛罗里达州起诉OpenAI和奥特曼",
+      "dek": "佛罗里达州就暴力事件起诉OpenAI和Sam Altman，指控ChatGPT在佛罗里达州立大学枪击案中扮演角色。",
+      "data_card": null,
+      "body": [
+        "佛罗里达州对OpenAI及其CEO Sam Altman提起诉讼，这是首例此类诉讼。案件部分涉及去年佛罗里达州立大学枪击案，以及ChatGPT被指控在其中扮演的角色。[TechCrunch AI @ 未提供时间]",
+        "该诉讼指控OpenAI未能防止其AI产品被用于暴力行为，要求赔偿并加强安全措施。OpenAI尚未正式回应。[TechCrunch AI @ 未提供时间]",
+        "数据未验证：具体诉讼细节和赔偿金额未在<live_data>中提供，因此无法引用具体数字。建议读者关注法律进展。[TechCrunch AI @ 未提供时间]"
+      ],
+      "source_url": "https://techcrunch.com/2026/06/02/florida-sues-openai-sam-altman-in-first-of-its-kind-lawsuit-over-violent-incidents/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-02T00:00:00Z",
+      "_warnings": []
+    }
+  ],
+  "macro": [
+    {
+      "tag": "story0",
+      "headline": "鲍文：特朗普需结束战争但伊朗不退让",
+      "dek": "Under pressure from the polls and Gulf allies, the White House is pushing for a deal but Iran wants concessions.",
+      "body": [
+        "白宫在民调和海湾盟友压力下推动协议。",
+        "伊朗要求让步，谈判陷入僵局。",
+        "鲍文分析特朗普面临战争结束的压力。"
+      ],
+      "data_card": null,
+      "source_url": "https://www.bbc.com/news",
+      "source_name": "BBC World",
+      "timestamp": "2026-06-02T14:30:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "story1",
+      "headline": "特朗普称不在乎伊朗谈判是否结束",
+      "dek": "President Trump spoke with CNBC's Eamon Javers about the latest with the Iran war.",
+      "body": [
+        "特朗普在接受CNBC采访时表示不在乎谈判是否结束。",
+        "他强调美国立场，伊朗必须让步。",
+        "分析人士认为这可能影响中东局势。"
+      ],
+      "data_card": null,
+      "source_url": "https://www.cnbc.com/politics",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-06-02T14:30:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "story2",
+      "headline": "黎巴嫩称真主党同意互停攻击以色列",
+      "dek": "Hours after the pause was announced, the Israeli military said it had intercepted projectiles fired from Lebanon.",
+      "body": [
+        "黎巴嫩宣布真主党同意与以色列互停攻击。",
+        "但以色列军方称拦截了来自黎巴嫩的发射物。",
+        "停火协议面临挑战。"
+      ],
+      "data_card": null,
+      "source_url": "https://www.bbc.com/news",
+      "source_name": "BBC World",
+      "timestamp": "2026-06-02T14:30:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "story3",
+      "headline": "特朗普称以色列与真主党同意停火",
+      "dek": "President’s comments come after Tehran said it was suspending peace talks with the US, sending oil prices higher.",
+      "body": [
+        "特朗普声称以色列和真主党已同意停火。",
+        "此前伊朗暂停与美国和谈，油价上涨。",
+        "市场对中东局势反应敏感。"
+      ],
+      "data_card": null,
+      "source_url": "https://www.ft.com/world",
+      "source_name": "FT World",
+      "timestamp": "2026-06-02T14:30:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "story4",
+      "headline": "中国房地产市场可能进一步下跌",
+      "dek": "To make real estate attractive for investors, prices must go lower.",
+      "body": [
+        "分析认为中国房价必须进一步下跌才能吸引投资者。",
+        "市场调整尚未结束。",
+        "政策可能继续放松以刺激需求。"
+      ],
+      "data_card": null,
+      "source_url": "https://www.ft.com/world",
+      "source_name": "FT World",
+      "timestamp": "2026-06-02T14:30:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "story5",
+      "headline": "英国财相称重返欧盟不可避免",
+      "dek": "Lord Spencer Livermore said Brexit has caused the nation the loss of between 6% and 8% of GDP.",
+      "body": [
+        "英国财相表示英国重返欧盟是不可避免的。",
+        "脱欧导致GDP损失6%至8% [数据未验证]。",
+        "该言论引发政治争论。"
+      ],
+      "data_card": null,
+      "source_url": "https://www.ft.com/world",
+      "source_name": "FT World",
+      "timestamp": "2026-06-02T14:30:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "story6",
+      "headline": "谷歌母公司售800亿美元股票注资AI",
+      "dek": "Landmark fundraising plans include $10bn private placement to Berkshire Hathaway.",
+      "body": [
+        "谷歌母公司Alphabet计划出售800亿美元股票筹集资金 [数据未验证]。",
+        "其中100亿美元将通过私募向伯克希尔·哈撒韦发行 [数据未验证]。",
+        "资金将用于人工智能领域的投资。"
+      ],
+      "data_card": {
+        "rows": [
+          {
+            "name": "Alphabet",
+            "price": "数据未验证",
+            "chg": "数据未验证"
+          }
+        ]
+      },
+      "source_url": "https://www.ft.com/world",
+      "source_name": "FT World",
+      "timestamp": "2026-06-02T14:30:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "story7",
+      "headline": "特朗普政府计划取消司法部18亿基金",
+      "dek": "Senate Democratic Leader Chuck Schumer said he was launching an effort to kill 'slush fund' by forcing Republicans to vote on it.",
+      "body": [
+        "特朗普政府计划取消司法部18亿美元基金 [数据未验证]。",
+        "参议院民主党领袖舒默推动共和党投票废除该基金。",
+        "该基金被称为“法律战”资金。"
+      ],
+      "data_card": {
+        "rows": [
+          {
+            "name": "DOJ",
+            "price": "数据未验证",
+            "chg": "数据未验证"
+          }
+        ]
+      },
+      "source_url": "https://www.cnbc.com/politics",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-06-02T14:30:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "story8",
+      "headline": "特朗普取消18亿反武器化基金",
+      "dek": "Legal challenges and pushback from Republican lawmakers prompt U-turn from the US president.",
+      "body": [
+        "特朗普取消18亿美元反武器化基金 [数据未验证]。",
+        "法律挑战和共和党议员的反对促使总统转变立场。",
+        "此举标志政策逆转。"
+      ],
+      "data_card": null,
+      "source_url": "https://www.ft.com/world",
+      "source_name": "FT World",
+      "timestamp": "2026-06-02T14:30:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "story9",
+      "headline": "软银超越丰田成日本最大公司",
+      "dek": "Also in today’s newsletter: Iran suspends peace talks with US, and China’s last frontier.",
+      "body": [
+        "软银市值超越丰田，成为日本最大上市公司。",
+        "伊朗暂停与美国和谈，地缘政治风险上升。",
+        "中国最后的前沿领域开放发展。"
+      ],
+      "data_card": {
+        "rows": [
+          {
+            "name": "SoftBank",
+            "price": "数据未验证",
+            "chg": "数据未验证"
+          },
+          {
+            "name": "Toyota",
+            "price": "数据未验证",
+            "chg": "数据未验证"
+          }
+        ]
+      },
+      "source_url": "https://www.ft.com/world",
+      "source_name": "FT World",
+      "timestamp": "2026-06-02T14:30:00+08:00",
+      "_warnings": []
+    }
+  ]
+}

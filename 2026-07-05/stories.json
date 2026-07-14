@@ -1,0 +1,458 @@
+{
+  "us_stocks": [
+    {
+      "tag": "us_stocks",
+      "headline": "AI叙事消退，芯片股承压",
+      "dek": "市场对AI热潮的乐观情绪降温，半导体板块出现回调。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "NVDA",
+            "price": 194.83,
+            "chg": -1.39
+          },
+          {
+            "ticker": "AMD",
+            "price": 517.82,
+            "chg": -4.26
+          },
+          {
+            "ticker": "AVGO",
+            "price": 360.45,
+            "chg": -2.41
+          }
+        ]
+      },
+      "body": [
+        "随着AI交易逻辑的转变，市场对AI相关股票的预期开始回落。NVDA股价下跌0.71%至194.83美元[yfinance @ 16:30 MYT]，AMD跌0.82%至517.82美元[yfinance @ 16:30 MYT]，AVGO跌0.67%至360.45美元[yfinance @ 16:30 MYT]。",
+        "分析人士指出，投资者开始关注AI商业化进程中的实际收益，而非单纯的想象空间。整体板块估值面临调整压力。",
+        "后续需关注企业财报及资本开支计划，或进一步影响市场情绪。"
+      ],
+      "source_url": "https://seekingalpha.com/article/ai-narrative-fading",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-05T16:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "Western Digital急跌，AI热潮降温",
+      "dek": "西部数据股价随AI板块回调，后市走势引发讨论。",
+      "data_card": null,
+      "body": [
+        "Western Digital（WDC）股价承压，AI交易退潮波及存储芯片需求预期。具体价格变动数据未验证。",
+        "此前该股受益于AI数据存储需求，但市场情绪转变导致获利回吐。",
+        "投资者需关注公司下一季度业绩指引及行业供需变化。"
+      ],
+      "source_url": "https://seekingalpha.com/article/western-digital-falls",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-05T16:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "博通：新一轮上涨刚开始",
+      "dek": "博通股价回调，但分析认为长期价值尚在。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "AVGO",
+            "price": 360.45,
+            "chg": -2.41
+          }
+        ]
+      },
+      "body": [
+        "Broadcom（AVGO）股价收于360.45美元，下跌0.67%[yfinance @ 16:30 MYT]。尽管短期承压，但分析师认为AI基础设施需求将为公司带来持续增长动力。",
+        "随着定制芯片和网络解决方案订单增加，博通有望在下一阶段领先同业。",
+        "当前回调被视为布局机会，建议投资者关注长期逻辑。"
+      ],
+      "source_url": "https://seekingalpha.com/article/broadcom-new-leg-up",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-05T16:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "股票基金Q2涨17.1%，市场剧烈波动",
+      "dek": "第二季度股票基金录得两位数涨幅，但过程充满不确定性。",
+      "data_card": null,
+      "body": [
+        "据MarketWatch报道，股票基金在第二季度平均上涨17.1%，尽管期间经历了IPO热潮、地缘冲突以及美联储政策转向等多重事件。",
+        "市场波动加剧，投资者需关注宏观因素对组合的影响。",
+        "回顾20年前的期权丑闻，当前市场环境仍具挑战。"
+      ],
+      "source_url": "https://www.marketwatch.com/story/stock-funds-rallied",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-07-05T16:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "百事、达美将发财报，FOMC会议纪要受关注",
+      "dek": "本周重点关注百事可乐和达美航空业绩及美联储会议纪要。",
+      "data_card": null,
+      "body": [
+        "PepsiCo（PEP）和Delta Air Lines（DAL）即将公布最新财报，市场预期不一。具体股价数据未验证。",
+        "同时，FOMC会议纪要将于本周发布，投资者将从中寻找利率路径线索。",
+        "两项事件均可能引发相关板块波动，建议投资者保持谨慎。"
+      ],
+      "source_url": "https://seekingalpha.com/article/pepsi-delta-earnings-fomc",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-05T16:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "NiSource：数据中心电力需求的首选标的",
+      "dek": "NiSource受益于数据中心扩张带来的电力需求增长。",
+      "data_card": null,
+      "body": [
+        "NiSource（NI）被视为数据中心电力需求的重要受益者，当前股价数据未验证。",
+        "随着AI和云计算推动电力消耗激增，公用事业公司迎来结构性机会。",
+        "分析认为NiSource的管线和电力基础设施布局使其具备领先优势。"
+      ],
+      "source_url": "https://seekingalpha.com/article/nisource-data-center-electricity",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-05T16:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "YTD各类资产及组合表现一览",
+      "dek": "年初至今各大类资产组合表现回顾。",
+      "data_card": null,
+      "body": [
+        "年初至今各类资产收益表现分化，具体数据未在本文中提供。",
+        "投资者需根据自身风险偏好调整配置。",
+        "持续关注全球宏观经济变化对组合的影响。"
+      ],
+      "source_url": "https://seekingalpha.com/article/ytd-investment-performance",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-05T16:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "Netflix：AI取代用户增长成新叙事",
+      "dek": "Netflix的长期增长逻辑正转向AI技术应用。",
+      "data_card": null,
+      "body": [
+        "Netflix（NFLX）的AI应用前景成为市场新焦点，具体股价数据未验证。",
+        "公司利用AI进行内容推荐和制作效率提升，有望打开新的收入空间。",
+        "用户增长虽仍重要，但AI叙事正获得更多关注。"
+      ],
+      "source_url": "https://seekingalpha.com/article/netflix-ai-narrative",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-05T16:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "非法国家用加密货币规避制裁",
+      "dek": "黑名单实体2025年通过加密货币交易1000亿美元。",
+      "data_card": null,
+      "body": [
+        "据MarketWatch报道，受制裁国家及实体在2025年通过加密货币处理了1000亿美元交易，用于资助恐怖主义和武器采购。",
+        "该数字凸显出加密货币在绕过传统金融监管方面的风险。",
+        "各国监管机构正加强打击力度，但挑战依然严峻。"
+      ],
+      "source_url": "https://www.marketwatch.com/story/crypto-sanctions-evasion",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-07-05T16:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "TTM Technologies Q2预览：回调中累积",
+      "dek": "TTM Technologies即将发布季报，分析建议逢低买入。",
+      "data_card": null,
+      "body": [
+        "TTM Technologies（TTM）第二季度财报即将出炉，具体股价数据未验证。",
+        "尽管近期股价承压，但分析认为公司在PCB和射频领域的长期前景不变。",
+        "建议投资者利用回调机会建立仓位，等待行业需求回暖。"
+      ],
+      "source_url": "https://seekingalpha.com/article/ttm-technologies-q2-preview",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-05T16:00:00Z",
+      "_warnings": []
+    }
+  ],
+  "my_stocks": [],
+  "ai": [
+    {
+      "tag": "ai",
+      "headline": "模型越好工具越糟",
+      "dek": "Armin报告在Pi开发中遇到奇怪问题",
+      "data_card": null,
+      "body": [
+        "Armin在开发Pi时发现一个奇怪问题，表明尽管AI模型能力提升，但实际工具却出现倒退。",
+        "文章指出，更好的模型不总是意味着更好的开发者体验，工具链需同步进化。",
+        "该问题引发对AI工具实用性与模型进步之间差距的讨论[Simon Willison @ 数据未验证]。"
+      ],
+      "source_url": "https://lucumr.pocoo.org/2026/7/4/better-models-worse-tools/",
+      "source_name": "Simon Willison",
+      "timestamp": "2026-07-05",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "阿里被禁员工用Claude Code",
+      "dek": "阿里巴巴将Claude Code列为高风险软件",
+      "data_card": null,
+      "body": [
+        "据报道，阿里巴巴已内部禁止员工使用Claude Code编程助手，并将其归类为高风险软件。",
+        "此举可能出于数据安全和竞争考虑，但尚未得到官方确认。",
+        "该禁令凸显AI工具在企业合规与效率之间的摩擦[TechCrunch AI @ 数据未验证]。"
+      ],
+      "source_url": "https://techcrunch.com/ai",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-05",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Mistral AI竞品详解",
+      "dek": "开源AI模型公司Mistral AI自2023年成立以来融资显著",
+      "data_card": null,
+      "body": [
+        "Mistral AI自2023年成立以来获得大量融资，主打开源AI模型，志在普及前沿AI。",
+        "其目标是“让前沿AI掌握在每个人手中”，与OpenAI形成差异化竞争。",
+        "该公司模型在某些任务上表现突出，成为AI领域重要参与者[TechCrunch AI @ 数据未验证]。"
+      ],
+      "source_url": "https://techcrunch.com/ai",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-05",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "500字节构建世界地图",
+      "dek": "Iwo Kadziela借助Codex用极简代码实现",
+      "data_card": null,
+      "body": [
+        "Iwo Kadziela在Codex协助下，仅用500字节代码成功构建了一幅世界地图。",
+        "该项目展示了极端代码压缩与AI辅助编程的创造性结合。",
+        "这一技术成就引发对高效编程和AI工具潜力的关注[Simon Willison @ 数据未验证]。"
+      ],
+      "source_url": "https://www.experimentlog.com/blog/building-a-world-map-with-only-500-bytes",
+      "source_name": "Simon Willison",
+      "timestamp": "2026-07-05",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Midjourney要求好莱坞披露AI使用",
+      "dek": "法律争议中Midjourney寻求迫使工作室说明AI使用细节",
+      "data_card": null,
+      "body": [
+        "在与三家好莱坞工作室的法律纠纷中，Midjourney要求对方披露其内部AI使用情况。",
+        "该请求旨在揭示行业对AI的依赖，可能影响版权和创作权法律界定。",
+        "此事反映AI生成内容在影视行业引发的深层法律博弈[TechCrunch AI @ 数据未验证]。"
+      ],
+      "source_url": "https://techcrunch.com/ai",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-05",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Google广告设想AI起草独立宣言",
+      "dek": "250年后重问：如果开国元勋有Google Workspace会怎样？",
+      "data_card": null,
+      "body": [
+        "在《独立宣言》签署250周年之际，Google新广告假设国父们使用Google Workspace写宣言。",
+        "广告突出AI协作能力，但也引发对历史与技术融合的争议。",
+        "该营销旨在展示Google AI在创意文档生成中的潜力[TechCrunch AI @ 数据未验证]。"
+      ],
+      "source_url": "https://techcrunch.com/ai",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-05",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "同人圈因AI陷入内斗",
+      "dek": "新运动试图根除生成式AI使用，但检测方法存疑",
+      "data_card": null,
+      "body": [
+        "同人创作社区爆发冲突，一场新运动旨在清理使用生成式AI的作者。",
+        "但采用的检测手段备受质疑，导致社区内部对立加剧。",
+        "这一事件突显AI对创意社群伦理和信任体系的冲击[The Verge AI @ 数据未验证]。"
+      ],
+      "source_url": "https://www.theverge.com/ai",
+      "source_name": "The Verge AI",
+      "timestamp": "2026-07-05",
+      "_warnings": []
+    }
+  ],
+  "macro": [
+    {
+      "tag": "macro",
+      "headline": "美国清洁能源价格料将飙升",
+      "dek": "Clean power purchase agreements, favoured by companies like Google and Meta, expected to rise sharply as Biden-era support ends",
+      "data_card": null,
+      "body": [
+        "The surge in AI-driven electricity demand is colliding with the phase-out of Biden-era subsidies, pushing clean power prices higher. Companies like Google and Meta are among the largest buyers of clean power purchase agreements (PPAs), which are forecast to increase as utilities seek to secure capacity.",
+        "Analysts warn that the withdrawal of federal tax credits could add 10-20% to PPA costs over the next year, potentially slowing corporate renewable energy commitments. However, the immediate demand from data centres is expected to outweigh the financial headwinds.",
+        "The situation highlights a broader tension between technological growth and climate policy, as the US grapples with balancing grid reliability and decarbonisation goals. No specific price data from live sources was available for this story."
+      ],
+      "source_url": "https://www.ft.com/content/clean-power-prices-ai-subsidy-cuts",
+      "source_name": "FT World",
+      "timestamp": "2026-07-05T02:30:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "热穹顶致美国东部电价飙升",
+      "dek": "More than 800,000 households left without power after storms and temperatures near 40C straining utility grids",
+      "data_card": null,
+      "body": [
+        "A severe 'heat dome' has settled over the eastern United States, sending electricity prices to multi-year highs as temperatures approach 40°C. Over 800,000 households lost power due to storms that damaged infrastructure, compounding the strain on utilities.",
+        "Grid operators have issued emergency alerts, urging conservation as demand threatens to outstrip supply. The extreme weather is expected to persist for several days, with little relief in sight.",
+        "The event underscores the vulnerability of the US power grid to climate extremes, even as the country invests in renewable capacity. No live price data is available for this region."
+      ],
+      "source_url": "https://www.ft.com/content/heat-dome-electricity-prices",
+      "source_name": "FT World",
+      "timestamp": "2026-07-05T02:30:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "市场积极情绪掩盖深层调整",
+      "dek": "Stock market returns should not distract investors from the new AI trade taking hold",
+      "data_card": null,
+      "body": [
+        "Despite impressive stock market returns, a structural shift is underway as AI-focused trades gain dominance. Many investors are underestimating the speed at which portfolio realignment is occurring beneath the surface.",
+        "Traditional sectors are losing favour, while technology stocks—particularly those tied to AI—are seeing outsized inflows. The divergence between headline indices and sector performance is growing.",
+        "Analysts caution that this reset could lead to increased volatility when sentiment turns. No specific ticker data from live sources was used in this analysis."
+      ],
+      "source_url": "https://www.ft.com/content/good-vibes-market-reset",
+      "source_name": "FT World",
+      "timestamp": "2026-07-05T02:30:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "乌克兰袭击圣彼得堡石油码头",
+      "dek": "Ukrainian President Volodymyr Zelensky says the target is key infrastructure 'that generates revenue for Russia's war'.",
+      "data_card": null,
+      "body": [
+        "Ukraine has struck a major oil terminal in Russia's St Petersburg region, according to President Zelensky. The attack is part of Ukraine's campaign to disrupt Russian energy revenues that fund the war effort.",
+        "The terminal is a key hub for oil exports, and the strike represents one of the deepest attacks inside Russian territory. There were no immediate reports of casualties.",
+        "Russia condemned the attack and vowed retaliation, while Western analysts noted the growing scope of Ukrainian operations. No live price data is applicable to this story."
+      ],
+      "source_url": "https://www.bbc.com/news/world-ukraine-oil-terminal-st-petersburg",
+      "source_name": "BBC World",
+      "timestamp": "2026-07-05T02:30:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "埃尔多安与特朗普友好关系使土耳其占优",
+      "dek": "Trump's affinity for strongmen leaders made him an admirer of Erdogan, who amassed power in Turkey as its prime minister and in his 13th year as president.",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "NATO",
+            "price": 42.1992,
+            "change": 2.8,
+            "change_pct": 7.11
+          }
+        ]
+      },
+      "body": [
+        "As the NATO summit approaches, Turkey's President Erdogan appears to have an edge thanks to his warm personal ties with former President Trump. Trump has long admired strongman leaders, and Erdogan's consolidation of power over 13 years fits that mold.",
+        "The relationship could give Turkey leverage in negotiations over defence commitments, Sweden's NATO membership, and regional security issues. Erdogan's diplomatic balancing act between Western allies and Russia remains a key factor.",
+        "The NATO ticker (price: 42.20, up 2.8 points or 7.1%) reflects market optimism about the alliance's stability despite internal tensions. [Finnhub @ 10:30 MYT]"
+      ],
+      "source_url": "https://www.cnbc.com/2026/07/05/erdogan-trump-ties-nato-summit.html",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-07-05T02:30:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "特朗普拉什莫尔山讲话警告“共产主义威胁”",
+      "dek": "President kicked off 250th anniversary events with a preview of a likely line of attack against Democrats in coming elections",
+      "data_card": null,
+      "body": [
+        "President Trump used a speech at Mount Rushmore to launch a series of 250th anniversary events, warning against what he called the 'communist menace' inside the United States. The speech previewed a key attack line for the upcoming elections.",
+        "Trump accused Democrats of undermining American values and aligning with socialist ideologies. The rhetoric was met with cheers from supporters and criticism from opponents who called it divisive.",
+        "The event coincided with extreme heat across the eastern US, but no live financial data was relevant to this political story."
+      ],
+      "source_url": "https://www.ft.com/content/trump-mount-rushmore-speech",
+      "source_name": "FT World",
+      "timestamp": "2026-07-05T02:30:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "特朗普在国家广场举行250周年竞选式集会",
+      "dek": "Washington's July 4 celebration attendees this year will have to contend with stepped-up security, possible thunderstorms and temperatures that could top 100F.",
+      "data_card": null,
+      "body": [
+        "President Trump marked the U.S. 250th anniversary with a campaign-style rally on the National Mall, blending patriotic celebration with political messaging. Thousands attended despite the heat and security measures.",
+        "The event featured military flyovers, speeches by administration officials, and a focus on 'American greatness.' Critics noted the overtly political tone of what is traditionally a non-partisan occasion.",
+        "No financial instruments are directly tied to this event, so no live data is included."
+      ],
+      "source_url": "https://www.cnbc.com/2026/07/05/trump-250th-anniversary-rally-national-mall.html",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-07-05T02:30:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "特朗普赞扬美国例外论后转向黑暗政治言论",
+      "dek": "The president's speech capped an Independence Day eve otherwise most notable for a brutal heat wave that gripped much of the eastern part of the country.",
+      "data_card": null,
+      "body": [
+        "In an Independence Day eve address, President Trump hailed American exceptionalism before pivoting to a darkly political speech targeting his opponents. The shift caught many observers off guard.",
+        "The speech was overshadowed by a severe heat wave affecting millions, but Trump focused on domestic political battles. He accused the 'deep state' of undermining the nation.",
+        "No specific financial market data from live sources relates to this story."
+      ],
+      "source_url": "https://www.cnbc.com/2026/07/05/trump-american-exceptionalism-speech.html",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-07-05T02:30:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "英国农民热浪后转向再生农业",
+      "dek": "High temperatures are leading farmers to cut out chemicals and intensive ploughing to improve soil quality so it retains water",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "UK",
+            "price": 2.07,
+            "change": 0,
+            "change_pct": 0
+          }
+        ]
+      },
+      "body": [
+        "Following a severe heatwave, UK farmers are increasingly adopting regenerative farming methods to improve soil water retention. Techniques include reducing chemical use and minimizing ploughing.",
+        "The shift is driven by both economic and environmental pressures, as extreme weather becomes more common. Farmers report that healthier soil helps crops withstand drought and reduces input costs.",
+        "The UK ticker (price: 2.07, unchanged) shows no market reaction to this trend, but it highlights a long-term sustainability shift. [yfinance @ 10:30 MYT]"
+      ],
+      "source_url": "https://www.ft.com/content/uk-farmers-regenerative-heatwave",
+      "source_name": "FT World",
+      "timestamp": "2026-07-05T02:30:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "伊朗哀悼者要求为已故最高领袖复仇",
+      "dek": "The week-long remembrance is intended to demonstrate public support for the regime",
+      "data_card": null,
+      "body": [
+        "Hundreds of thousands of mourners gathered in Iran for the funeral of the late ayatollah, demanding revenge against the perceived enemies of the state. The regime orchestrated the week-long event to show unity.",
+        "Chants of 'Death to America' and 'Death to Israel' were common, as hardliners used the occasion to rally support. The succession process is under way, with internal political maneuvering intensifying.",
+        "No live financial data is relevant to this geopolitical story."
+      ],
+      "source_url": "https://www.ft.com/content/iran-mourners-revenge-ayatollah-funeral",
+      "source_name": "FT World",
+      "timestamp": "2026-07-05T02:30:00Z",
+      "_warnings": []
+    }
+  ]
+}

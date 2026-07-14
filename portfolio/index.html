@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Henry Lee — Backend Team Lead</title>
+  <meta name="description" content="I design and ship the systems behind a 300k+ DAU real-money transaction platform — from legacy monolith to modern microservices, from requirement to production." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Henry Lee — Backend Team Lead" />
+  <meta property="og:description" content="I design and ship the systems behind a 300k+ DAU real-money transaction platform — from legacy monolith to modern microservices, from requirement to production." />
+  <meta property="og:image" content="assets/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Henry Lee — Backend Team Lead" />
+  <meta name="twitter:description" content="I design and ship the systems behind a 300k+ DAU real-money transaction platform — from legacy monolith to modern microservices, from requirement to production." />
+  <meta name="twitter:image" content="assets/og-image.png" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <script>
+    (function () {
+      var theme = localStorage.getItem('theme') || 'dark';
+      var lang  = localStorage.getItem('lang')  || 'en';
+      document.documentElement.dataset.theme = theme;
+      document.documentElement.lang = lang;
+    }());
+  </script>
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       TOPBAR
+  ══════════════════════════════════════════════════════ -->
+  <header class="topbar" role="banner">
+    <div class="topbar-inner">
+
+      <!-- Brand / logo -->
+      <a href="#hero" class="topbar-logo" aria-label="Henry Lee — Back to top">&lt;H/&gt;</a>
+
+      <!-- Desktop nav -->
+      <nav class="topbar-nav" aria-label="Primary navigation">
+        <a href="#work"       data-i18n="nav.work">Work</a>
+        <a href="#how"        data-i18n="nav.how">How I Think</a>
+        <a href="#demos"      data-i18n="nav.demos">Demos</a>
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#skills"     data-i18n="nav.skills">Skills</a>
+        <a href="#contact"    data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <!-- Actions: theme, lang, resume, hamburger -->
+      <div class="topbar-actions">
+        <button
+          class="topbar-btn"
+          data-action="toggle-theme"
+          aria-label="Switch to light mode"
+          title="Toggle theme"
+        >☀</button>
+
+        <button
+          class="topbar-btn"
+          data-action="toggle-lang"
+          aria-label="Switch to Chinese"
+          title="Toggle language"
+        >中</button>
+
+        <a
+          href="resume.pdf"
+          download="henry-resume.pdf"
+          class="topbar-resume"
+          data-i18n="nav.resume"
+          aria-label="Download Resume PDF"
+        >Resume ↓</a>
+
+        <button
+          class="topbar-hamburger"
+          data-action="toggle-menu"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <!-- Mobile nav drawer -->
+      <nav class="topbar-mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+        <a href="#work"       data-i18n="nav.work">Work</a>
+        <a href="#how"        data-i18n="nav.how">How I Think</a>
+        <a href="#demos"      data-i18n="nav.demos">Demos</a>
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#skills"     data-i18n="nav.skills">Skills</a>
+        <a href="#contact"    data-i18n="nav.contact">Contact</a>
+        <a href="resume.pdf" download="henry-resume.pdf" class="topbar-resume" data-i18n="nav.resume">Resume ↓</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ══════════════════════════════════════════════════════
+         HERO
+    ══════════════════════════════════════════════════════ -->
+    <section id="hero" class="section">
+      <div class="container hero-inner">
+
+        <p class="hero-prompt" aria-hidden="true">~/portfolio $</p>
+
+        <h1 class="hero-name"><span class="hero-line">Henry</span><br><span class="hero-line">Lee</span></h1>
+
+        <p class="hero-role" data-i18n="hero.tagline">
+          Backend Team Lead
+        </p>
+
+        <p class="hero-positioning" data-i18n="hero.positioning">
+          I design and ship the systems behind a 300k+ DAU real-money transaction platform — from legacy monolith to modern microservices, from requirement to production.
+        </p>
+
+        <div class="hero-stats" role="status" aria-live="polite">
+          <span class="hero-stat">7 years</span>
+          <span class="hero-stat">50k → 300k+ DAU</span>
+          <span class="hero-stat">8.4M audited workflows/day</span>
+          <span class="hero-stat">12–14M records/day ingested</span>
+        </div>
+
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-primary" data-i18n="hero.ctaContact">
+            Get in touch
+          </a>
+          <a href="resume.pdf" download="henry-resume.pdf" class="btn btn-ghost" data-i18n="hero.ctaResume">
+            Download Resume
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         SIGNATURE WORK
+    ══════════════════════════════════════════════════════ -->
+    <section id="work" class="section">
+      <div class="container">
+        <p class="section-label" aria-hidden="true">01 — signature work</p>
+        <h2 class="section-heading" data-i18n="sig.heading">Signature Work</h2>
+
+        <article class="case" data-case="1">
+          <p class="case-label">Case 01</p>
+          <h3 class="case-title">Workflow backbone — 8.4M audited workflows a day</h3>
+          <div class="case-grid">
+            <div class="case-beats">
+              <div class="case-beat"><h4>Situation</h4><p>Every money-moving action on the platform — withdrawal, top-up, reward, configuration change — must pass one audited create → review → approve → execute lifecycle. The legacy implementation was tightly coupled inside a monolith; every consumer re-implemented its own wiring.</p></div>
+              <div class="case-beat"><h4>Constraint</h4><p>This is the platform's single point of trust: production processes ~8.4M workflow records a day, and a duplicate execution means real money moved twice.</p></div>
+              <div class="case-beat"><h4>Approach</h4><p>Rebuilt it as a gRPC microservice orchestrated by Temporal: one generic durable workflow runs every request type, with human review modeled as signals (30-day timeout guards) and business extension points as child-workflow slots. Idempotency is structural — the workflow ID doubles as the creation key, so a retried step returns the existing record instead of creating twice. Integration became a published SDK: any service registers an executor with one import; adding a new request type is a self-service CI form, not a queue on my desk. 100+ SDK releases, SemVer-disciplined.</p></div>
+              <div class="case-beat case-beat-outcome"><h4>Outcome</h4><p>8.4M records/day in production. Duplicate execution is prevented by construction rather than caught after the fact. New-type integration went from a 30-to-60-minute, person-dependent process to two-minute self-service.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="case" data-case="2">
+          <p class="case-label">Case 02</p>
+          <h3 class="case-title">Scaling a platform 50k → 300k+ users</h3>
+          <div class="case-grid">
+            <div class="case-beats">
+              <div class="case-beat"><h4>Situation</h4><p>Over four years the platform grew 6×. Old patterns failed in production more than once as limits were hit — a counter document in the database serialized every ID; notification fan-out stalled under load.</p></div>
+              <div class="case-beat"><h4>Constraint</h4><p>No rewrite budget, no downtime allowance — every fix had to land inside a weekly release train, live, with users on.</p></div>
+              <div class="case-beat"><h4>Approach</h4><p>Root-caused each bottleneck to its mechanism, then replaced the mechanism, not the symptom: ID generation moved from a database counter to atomic Redis INCR — cut over with a +1-billion offset so old and new ranges could never collide; notification fan-out moved to Redis pub/sub (shipped, reverted on a production surprise, re-landed hardened); blocking full-set scans replaced with cursor-based SSCAN; a leaking in-memory config cache rebuilt with a 15-minute refresh cycle.</p></div>
+              <div class="case-beat case-beat-outcome"><h4>Outcome</h4><p>The platform sustains 300k+ DAU without the old failure modes. The patterns introduced (cache-aside, atomic counters, pub/sub fan-out) became house standards for modules built after.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="case" data-case="3">
+          <p class="case-label">Case 03</p>
+          <h3 class="case-title">Real-time support platform — from zero to clean handoff</h3>
+          <div class="case-grid">
+            <div class="case-beats">
+              <div class="case-beat"><h4>Situation</h4><p>The company needed AI-assisted customer conversations with human takeover — and had just decided on a new microservices stack no one had shipped to production yet. I was handed both problems at once.</p></div>
+              <div class="case-beat"><h4>Constraint</h4><p>Solo start; NestJS, gRPC, Temporal, Pulsar and Matrix — all new to me at once; the outcome would decide whether the company's migration was viable.</p></div>
+              <div class="case-beat"><h4>Approach</h4><p>Self-hosted Matrix/Synapse as the message transport (the framework was the CTO's call; the data model and flows were mine), then built everything it doesn't have: an agent-routing queue encoding status > load > wait-time into a single Redis sorted-set score (three numeric bands: 1e18 status, 1e15 active-chat count, millisecond timestamp tie-break — assignment is O(1) at the queue head); a mini back-office so agents see a user's records, history and permissions in one screen instead of switching systems; AI answers first — designed to absorb the repetitive ~70% of inquiries — with a 10-second race guard that hands the chat to a human whenever the model stalls or errors. Concurrency was the war: a read-modify-write race on scores was rebuilt as atomic increments — and when production revealed the Redis cluster wouldn't take MULTI, the fix was degraded the same day to pure atomic ops; duplicate agent invites under concurrent messages were fenced with per-room locks.</p></div>
+              <div class="case-beat case-beat-outcome"><h4>Outcome</h4><p>First production service on the new stack — the pattern reference (config via Vault, contract-first gRPC, structured logging, graceful shutdown) that later services copied. Grew the team to two, handed the service to a maintenance team, later to the AI team. It now runs as a standalone multi-channel middleware.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="case" data-case="4">
+          <p class="case-label">Case 04</p>
+          <h3 class="case-title">Cross-stack mission pipeline — three languages, exactly-once</h3>
+          <div class="case-grid">
+            <div class="case-beats">
+              <div class="case-beat"><h4>Situation</h4><p>Marketing wanted automatic, time-boxed missions for users close to their next loyalty tier: detect them in real time, run a 7-day window, grant the upgrade instantly on success.</p></div>
+              <div class="case-beat"><h4>Constraint</h4><p>The reward path is money-adjacent: a duplicate grant is a real loss, and events arrive at least-once from both the stream and the workflow engine — two independent sources of duplicates.</p></div>
+              <div class="case-beat"><h4>Approach</h4><p>Built the chain end-to-end across four services in three languages — the boundaries followed the platform's existing seams (the streaming platform, the workflow engine, the reward facade), composing proven engines instead of building new ones: a Java/Flink job filters the event stream and computes entry-anchored goals from a lookup table; a Rust + Temporal engine runs one durable workflow per user; a NestJS facade grants through the existing upgrade path — zero changes to legacy systems. Exactly-once is layered: an atomic claims ledger (one chance per user, tier, month) gates enrollment, and a human-readable idempotency key (`mission:user:tier:month`) gates the grant — debuggable at a glance in production. Thresholds live in exactly one place; producers broadcast unconditionally, so no cross-repo value coupling.</p></div>
+              <div class="case-beat case-beat-outcome"><h4>Outcome</h4><p>Verified end-to-end against real traffic in the pre-production lane; funnel metrics at every stage. The architecture — detect / orchestrate / grant with single-owner config — is the template for the next mission types.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="case case-card" data-case="5">
+          <p class="case-label">Case 05</p>
+          <h3 class="case-title">Transaction-record ingestion — 12–14M records a day from 10+ sources</h3>
+          <div class="case-grid">
+            <div class="case-beats">
+              <div class="case-beat"><h4>Situation</h4><p>Every balance change a user sees must be complete, ordered, and fast to query — but records originate from 10+ heterogeneous sources that disagree on shape, timing, and delivery guarantees: ~8.4M/day through the audited workflow path, the rest streaming directly from providers and internal systems.</p></div>
+              <div class="case-beat"><h4>Design</h4><p>Split storage by read pattern: hot recent history on the OLTP store with covering indexes; long-window analytics offloaded to a columnar layer fed by the ingestion pipeline; source-specific shapes normalized at the boundary, with per-source caching and channel-aware routing.</p></div>
+              <div class="case-beat case-beat-outcome"><h4>Outcome</h4><p>12–14M records/day ingested and queryable; recent-history reads stay fast while analytical queries stopped competing with production traffic.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="case case-card" data-case="6">
+          <p class="case-label">Case 06</p>
+          <h3 class="case-title">Crypto payment rails — two years, three wallet protocols</h3>
+          <div class="case-grid">
+            <div class="case-beats">
+              <div class="case-beat"><h4>Situation</h4><p>The platform needed cryptocurrency deposits and withdrawals alongside fiat — conversion at every transaction boundary, on a platform where some third-party providers couldn't hold crypto at all.</p></div>
+              <div class="case-beat"><h4>Design</h4><p>Drove the money-side across two years as one of a two-engineer pair (alongside the team's assistant lead): wallet protocol integrations (OMNI, ERC-20, TRC-20), conversion embedded at transfer boundaries, provider capability as per-provider configuration — and exact-decimal handling at the wallet edges, where rounding errors become real discrepancies.</p></div>
+              <div class="case-beat case-beat-outcome"><h4>Outcome</h4><p>Crypto rails went live across every money flow; later currencies reused the same config-driven paths instead of re-opening them.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="case case-card" data-case="7">
+          <p class="case-label">Case 07</p>
+          <h3 class="case-title">Reporting engine &amp; regulatory delivery</h3>
+          <div class="case-grid">
+            <div class="case-beats">
+              <div class="case-beat"><h4>Situation</h4><p>Before a BI team existed, operations, partners, and management all needed data — and later, a regulator needed daily filings in exact formats: millions of rows per day, hard deadline, aggregated over long windows on the production database.</p></div>
+              <div class="case-beat"><h4>Design</h4><p>Built the platform's general-purpose reporting layer on a precompute + recompute dual track: an independent settlement process streams per-user transaction flows to workers in batches, landing daily summaries; ad-hoc queries run tuned aggregation pipelines. Rewrote the scheduler for reliable 2-day recompute windows. For regulatory delivery, built the filing pipeline: million-row-per-file slicing, append-based FTP upload, stream batches tuned until multi-million-row days fit the window.</p></div>
+              <div class="case-beat case-beat-outcome"><h4>Outcome</h4><p>The platform had a working BI function before it had a BI team — the formal team later built on these foundations. Regulatory filings shipped on schedule at million-row scale; 140+ reporting changes over six years.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         HOW I THINK
+    ══════════════════════════════════════════════════════ -->
+    <section id="how" class="section">
+      <div class="container">
+        <p class="section-label" aria-hidden="true">02 — how i think</p>
+        <h2 class="section-heading" data-i18n="how.heading">How I Think</h2>
+        <p class="section-intro">Principles first, tasks second. These are the questions I ask before anything gets built.</p>
+        <div class="principles">
+          <div class="principle"><span class="principle-num" aria-hidden="true">P1</span>
+            <h3 data-i18n="how.p1.title">Price the risk before pricing the work.</h3><p data-i18n="how.p1.proof">The first question is never "how long will it take" — it's "what breaks if this is wrong, and who feels it?" Failure cost decides engineering rigor: money-path modules get idempotency by design, staged rollouts and pre-launch index reviews; a cosmetic feature gets speed instead.</p><p class="principle-example"><em>Example: our workflow backbone carries every money-moving action — so retries are idempotent by construction and shutdowns drain in-flight work before the pod dies.</em></p></div>
+          <div class="principle"><span class="principle-num" aria-hidden="true">P2</span>
+            <h3 data-i18n="how.p2.title">Design for the next change, not this delivery.</h3><p data-i18n="how.p2.proof">Requirements on this platform change weekly. In every design review I ask which parts business will want to tune later — those become configuration, not code. A feature request should become an ops change, not a deploy.</p><p class="principle-example"><em>Example: when we added a new settlement currency, provider compatibility was config per provider — incompatible ones toggled off, rollout reversible by a flag.</em></p></div>
+          <div class="principle"><span class="principle-num" aria-hidden="true">P3</span>
+            <h3 data-i18n="how.p3.title">Decompose by ownership, not by ticket.</h3><p data-i18n="how.p3.proof">Big goals get split along module boundaries with explicit contracts — proto first, then parallel build. Each engineer owns one domain end-to-end; one floating engineer absorbs surges. People grow by owning, not by taking tasks.</p><p class="principle-example"><em>Example: a cross-cutting feature landed across five repositories in one day because the contracts were split before anyone wrote code.</em></p></div>
+          <div class="principle"><span class="principle-num" aria-hidden="true">P4</span>
+            <h3 data-i18n="how.p4.title">Decide with evidence, commit with a rollback.</h3><p data-i18n="how.p4.proof">Big technical choices get benchmarks and POCs, not opinions — and every migration ships with an escape hatch. If we can't measure it or can't undo it, we're not ready to decide.</p><p class="principle-example"><em>Example: an OLAP store evaluation ran 30 queries × 50 rounds across three engines; when JSON-path performance failed the bar, we flattened the schema to remove the weakness — then re-measured.</em></p></div>
+          <div class="principle"><span class="principle-num" aria-hidden="true">P5</span>
+            <h3 data-i18n="how.p5.title">Turn work into leverage.</h3><p data-i18n="how.p5.proof">A bug fixed is a cost; a bug turned into a playbook or a bot is an asset. Anything done twice becomes a tool: integration SDKs, incident playbooks, an AI diagnosis bot the whole team runs.</p><p class="principle-example"><em>Example: one silent contract-mismatch incident became a 7-step tracing playbook; recurring production triage became our AI "Bug Doctor" wired into MCP and Lark.</em></p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         DEMOS
+    ══════════════════════════════════════════════════════ -->
+    <section id="demos" class="section">
+      <div class="container">
+        <p class="section-label" aria-hidden="true">03 — demos &amp; tooling</p>
+        <h2 class="section-heading" data-i18n="demos.heading">Demos &amp; Tooling</h2>
+        <div class="demo-showcase">
+          <article class="demo-row">
+            <a class="demo-media" href="javascript:void(0)" aria-label="AI-native SDLC">
+              <svg viewBox="0 0 480 300" data-demo-anim="pipeline" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+                <text class="dp-label" x="20" y="34">PRD → proposal → contracts → SDK → dev → verify</text>
+                <g class="dp-node">
+                  <rect x="20" y="128" width="80" height="46" rx="4"/>
+                  <text x="60" y="156" text-anchor="middle">PRD</text>
+                </g>
+                <g class="dp-node">
+                  <rect x="120" y="128" width="80" height="46" rx="4"/>
+                  <text x="160" y="156" text-anchor="middle">Proposal</text>
+                </g>
+                <g class="dp-node">
+                  <rect x="220" y="128" width="80" height="46" rx="4"/>
+                  <text x="260" y="156" text-anchor="middle">Contracts</text>
+                </g>
+                <g class="dp-node" id="dp1-pulsar">
+                  <rect x="320" y="128" width="80" height="46" rx="4"/>
+                  <text x="360" y="156" text-anchor="middle">SDK</text>
+                </g>
+                <g class="dp-node dp-node-sm">
+                  <rect x="20" y="220" width="80" height="28" rx="4"/>
+                  <text x="60" y="238" text-anchor="middle">Dev</text>
+                </g>
+                <g class="dp-node dp-node-sm">
+                  <rect x="120" y="220" width="80" height="28" rx="4"/>
+                  <text x="160" y="238" text-anchor="middle">Verify</text>
+                </g>
+                <line class="dp-wire" x1="100" y1="151" x2="120" y2="151"/>
+                <line class="dp-wire" x1="200" y1="151" x2="220" y2="151"/>
+                <line class="dp-wire" x1="300" y1="151" x2="320" y2="151"/>
+                <line class="dp-wire" x1="360" y1="174" x2="260" y2="220"/>
+                <line class="dp-wire" x1="260" y1="220" x2="200" y2="220"/>
+                <g id="dp1-w0"><circle class="dp-dot" cx="60" cy="151" r="5"/></g>
+                <g id="dp1-w1"><circle class="dp-dot" cx="160" cy="151" r="5"/></g>
+                <g id="dp1-w2"><circle class="dp-dot" cx="260" cy="151" r="5"/></g>
+                <g id="dp1-f0"><circle class="dp-dot" cx="360" cy="151" r="5"/></g>
+                <g id="dp1-f1"><circle class="dp-dot" cx="260" cy="220" r="5"/></g>
+                <g id="dp1-f2"><circle class="dp-dot" cx="160" cy="220" r="5"/></g>
+                <text class="dp-label" id="dp1-rate" x="20" y="282">human approval at every gate · AI never commits</text>
+              </svg>
+            </a>
+            <div class="demo-info">
+              <span class="demo-num" aria-hidden="true">D1</span>
+              <h3>AI-native SDLC</h3>
+              <p>A 10-step artifact pipeline (PRD → proposal → contracts → SDK → tasks → dev → verify) where every gated artifact needs human approval and AI never commits. Role-based review (PM / lead / engineer / QA perspectives), per-task tech specs, persistent cross-session memory. Measured: 75M+ tokens saved across 42k+ tool invocations by a token-optimizing proxy. The honest economics: AI compresses the zero-to-eighty stretch — a two-day build becomes a two-hour first draft — while humans own the last twenty and the discernment to catch what it got wrong.</p>
+              <ul class="demo-stack" aria-label="Tech stack">
+                <li>Artifact Pipeline</li><li>Role-based Review</li><li>TDD</li>
+              </ul>
+            </div>
+          </article>
+          <article class="demo-row">
+            <a class="demo-media" href="javascript:void(0)" aria-label="Bug Doctor">
+              <svg viewBox="0 0 480 300" data-demo-anim="chat" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+                <circle class="dp-chrome" cx="26" cy="24" r="5"/>
+                <circle class="dp-chrome" cx="44" cy="24" r="5"/>
+                <circle class="dp-chrome" cx="62" cy="24" r="5"/>
+                <text class="dp-chrome-title" x="240" y="29" text-anchor="middle">#incidents</text>
+                <line class="dp-wire" x1="0" y1="44" x2="480" y2="44"/>
+                <g id="dp2-user" class="dp-bubble dp-bubble-user">
+                  <rect x="238" y="64" width="218" height="40" rx="10"/>
+                  <text x="347" y="89" text-anchor="middle">error in proposal service</text>
+                </g>
+                <g id="dp2-typing">
+                  <rect class="dp-bubble-bot-bg" x="24" y="122" width="66" height="36" rx="10"/>
+                  <circle class="dp-tdot" cx="44" cy="140" r="4"/>
+                  <circle class="dp-tdot" cx="57" cy="140" r="4"/>
+                  <circle class="dp-tdot" cx="70" cy="140" r="4"/>
+                </g>
+                <g id="dp2-bot" class="dp-bubble dp-bubble-bot">
+                  <rect x="24" y="122" width="286" height="40" rx="10"/>
+                  <text x="167" y="147" text-anchor="middle">trace: PR #268 · grpc timeout</text>
+                </g>
+                <g id="dp2-bot2" class="dp-bubble dp-bubble-bot">
+                  <rect x="24" y="176" width="300" height="38" rx="10"/>
+                  <text x="174" y="200" text-anchor="middle">✓ root cause: vault key cache expired</text>
+                </g>
+                <g id="dp2-user2" class="dp-bubble dp-bubble-user">
+                  <rect x="290" y="232" width="166" height="38" rx="10"/>
+                  <text x="373" y="256" text-anchor="middle">/deploy fix</text>
+                </g>
+              </svg>
+            </a>
+            <div class="demo-info">
+              <span class="demo-num" aria-hidden="true">D2</span>
+              <h3>Bug Doctor</h3>
+              <p>Team-built AI incident diagnoser living in Lark: symptoms in, trace-backed hypotheses out — reading production logs over MCP and code across every repo, frontend and backend. The real work was making the system diagnosable first: standardized errors, trace IDs through every hop, names that tell you what broke. The bot is the payoff; the discipline is the design.</p>
+              <ul class="demo-stack" aria-label="Tech stack">
+                <li>Lark Bot</li><li>MCP</li><li>Standardized Tracing</li>
+              </ul>
+            </div>
+          </article>
+          <article class="demo-row">
+            <a class="demo-media" href="javascript:void(0)" aria-label="Event Schema Registry">
+              <svg viewBox="0 0 480 300" data-demo-anim="workflow" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+                <text class="dp-label" x="20" y="34">JSON Schema → codegen → multi-language SDK</text>
+                <g class="dp-node">
+                  <rect x="20" y="100" width="140" height="46" rx="4"/>
+                  <text x="90" y="128" text-anchor="middle">JSON Schema</text>
+                </g>
+                <g class="dp-node">
+                  <rect x="190" y="100" width="100" height="46" rx="4"/>
+                  <text x="240" y="128" text-anchor="middle">codegen</text>
+                </g>
+                <g class="dp-node dp-node-sm">
+                  <rect x="340" y="40" width="110" height="28" rx="4"/>
+                  <text x="395" y="58" text-anchor="middle">Node SDK</text>
+                </g>
+                <g class="dp-node dp-node-sm">
+                  <rect x="340" y="90" width="110" height="28" rx="4"/>
+                  <text x="395" y="108" text-anchor="middle">Java SDK</text>
+                </g>
+                <g class="dp-node dp-node-sm">
+                  <rect x="340" y="140" width="110" height="28" rx="4"/>
+                  <text x="395" y="158" text-anchor="middle">Rust SDK</text>
+                </g>
+                <line class="dp-wire" x1="160" y1="123" x2="190" y2="123"/>
+                <line class="dp-wire" x1="290" y1="110" x2="340" y2="54"/>
+                <line class="dp-wire" x1="290" y1="123" x2="340" y2="104"/>
+                <line class="dp-wire" x1="290" y1="136" x2="340" y2="154"/>
+                <g id="dp1-w0"><circle class="dp-dot" cx="160" cy="123" r="5"/></g>
+                <g id="dp1-w1"><circle class="dp-dot" cx="290" cy="123" r="5"/></g>
+                <g id="dp1-f0"><circle class="dp-dot" cx="340" cy="104" r="5"/></g>
+                <text class="dp-label" x="20" y="282">schema is the source of truth — producers and consumers can't drift</text>
+              </svg>
+            </a>
+            <div class="demo-info">
+              <span class="demo-num" aria-hidden="true">D3</span>
+              <h3>Event Schema Registry</h3>
+              <p>JSON-Schema-first event contracts with multi-language SDK codegen (Node, Java, Rust) — producers and consumers can't drift because the schema is the source of truth.</p>
+              <ul class="demo-stack" aria-label="Tech stack">
+                <li>JSON Schema</li><li>Codegen</li><li>Multi-language SDK</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         EXPERIENCE
+    ══════════════════════════════════════════════════════ -->
+    <section id="experience" class="section">
+      <div class="container">
+        <p class="section-label" aria-hidden="true">04 — experience</p>
+        <h2 class="section-heading" data-i18n="experience.heading">Experience</h2>
+        <div class="xp-list">
+          <article class="xp-item">
+            <div class="xp-meta" data-i18n="experience.role1.meta">2026 – present · Alor Setar, Malaysia</div>
+            <div>
+              <h3 class="xp-title" data-i18n="experience.role1.title">Team Lead, Backend Platform</h3>
+              <div class="xp-company" data-i18n="experience.role1.company">SN Soft Sdn Bhd</div>
+              <p class="xp-summary" data-i18n="experience.role1.summary">1 senior + 3 mid engineers across four module domains, dual-stack (legacy monolith + microservices) plus third-party provider integration. Architecture gatekeeper for cross-team requirements; grow engineers through ownership and calibrated challenges — three juniors grown to the point of running an entire production platform themselves, requirements negotiation included. One engineer floats to wherever the pressure is — the same seat I grew up in.</p>
+            </div>
+          </article>
+          <article class="xp-item">
+            <div class="xp-meta" data-i18n="experience.role2.meta">Dec 2019 – 2026 · 7 years · Malaysia</div>
+            <div>
+              <h3 class="xp-title" data-i18n="experience.role2.title">Backend Engineer → Acting Tech Lead</h3>
+              <div class="xp-company" data-i18n="experience.role2.company">SN Soft Sdn Bhd</div>
+              <p class="xp-summary" data-i18n="experience.role2.summary">Seven years, 2,000+ merged PRs, from full-stack on the legacy platform to pioneering the new stack. Highlights beyond the case studies: hardened withdrawal flows (dual-pending prevention, cancellable states, auto-review conditions), C2C order matching grafted onto the workflow state machine (50+ PRs in two months), session security (IP-bound tokens), and provider WebSocket integrations with heartbeat keep-alives.</p>
+            </div>
+          </article>
+          <article class="xp-item">
+            <div class="xp-meta" data-i18n="experience.role3.meta">2018 – 2019 · Malaysia</div>
+            <div>
+              <h3 class="xp-title" data-i18n="experience.role3.title">Mobile Engineer</h3>
+              <div class="xp-company" data-i18n="experience.role3.company">Hitachi Ebworx</div>
+              <p class="xp-summary" data-i18n="experience.role3.summary">Insurance point-of-sale hybrid app; automated the daily QA deployment.</p>
+            </div>
+          </article>
+        </div><!-- /xp-list -->
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         SKILLS
+    ══════════════════════════════════════════════════════ -->
+    <section id="skills" class="section">
+      <div class="container">
+        <p class="section-label" aria-hidden="true">05 — skills</p>
+        <h2 class="section-heading" data-i18n="skills.heading">Skills</h2>
+        <div class="tiers">
+          <div class="tier"><h3 data-i18n="skills.tier1">Core (ships daily)</h3><p class="tier-list" data-i18n="skills.tier1list">TypeScript · NestJS · gRPC / proto-first contracts · MongoDB (aggregation, indexing, Atlas Search) · Redis (data-structure design, cluster) · Temporal · Apache Pulsar · Jest + Testcontainers (real databases, not mocks)</p></div>
+          <div class="tier"><h3 data-i18n="skills.tier2">Working</h3><p class="tier-list" data-i18n="skills.tier2list">Java (Flink streaming jobs) · Rust (one full service — Temporal SDK, tonic/prost — pre-production) · Apache Flink (DataStream + SQL, managed) · ClickHouse · Hologres · PostgreSQL · HashiCorp Vault · OpenTelemetry · LangChain / LLM app development</p></div>
+          <div class="tier"><h3 data-i18n="skills.tier3">Familiar</h3><p class="tier-list" data-i18n="skills.tier3list">Kafka · Node/Express legacy patterns · Socket.io / Matrix · AngularJS-era stack · Docker · GitHub Actions · Alibaba Cloud (application level)</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════
+         CONTACT
+    ══════════════════════════════════════════════════════ -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact-inner">
+
+          <p class="section-label" aria-hidden="true">06 — contact</p>
+          <h2 class="section-heading" data-i18n="contact.heading">Get in touch</h2>
+
+          <p class="contact-tagline" data-i18n="contact.tagline">
+            henrylee_xhfc@hotmail.com · +60 19-413 3366
+          </p>
+
+          <div class="contact-links">
+            <a href="mailto:henrylee_xhfc@hotmail.com" class="btn btn-primary" aria-label="Send email to henrylee_xhfc@hotmail.com">
+              Email ↗
+            </a>
+
+            <span class="btn btn-ghost btn-disabled" aria-label="LinkedIn — link pending">
+              LinkedIn 〔pending〕
+            </span>
+
+            <span class="btn btn-ghost btn-disabled" aria-label="GitHub — link pending">
+              GitHub 〔pending〕
+            </span>
+
+            <a
+              href="resume.pdf"
+              download="henry-resume.pdf"
+              class="btn btn-ghost"
+              data-i18n="contact.resumeBtn"
+              aria-label="Download Resume PDF"
+            >
+              Resume ↓
+            </a>
+          </div>
+
+          <p class="contact-location">Alor Setar, Malaysia · UTC+8 · remote-ready</p>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="container">
+      <p class="footer-copy" data-i18n="contact.copyright">
+        © 2026 Henry Lee
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js" defer></script>
+  <script src="js/main.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/animations.js" defer></script>
+
+</body>
+</html>

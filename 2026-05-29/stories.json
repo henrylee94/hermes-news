@@ -1,0 +1,736 @@
+{
+  "us_stocks": [
+    {
+      "tag": "chip_sector",
+      "headline": "芯片板块暴涨后展望",
+      "dek": "After a massive rally, the chip sector faces a potential pullback. Key stocks show mixed signals.",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "NVDA",
+            "price": 214.25,
+            "change": 0.78
+          },
+          {
+            "ticker": "AMD",
+            "price": 518.09,
+            "change": 4.55
+          },
+          {
+            "ticker": "INTC",
+            "price": 120.89,
+            "change": -0.72
+          },
+          {
+            "ticker": "MU",
+            "price": 923.52,
+            "change": -0.53
+          }
+        ]
+      },
+      "body": [
+        "芯片板块近期涨势惊人，但NVDA股价仅报214.25美元[yfinance @ 最新]，涨幅0.78%，显示动能减弱。AMD表现强劲，收于518.09美元[yfinance @ 最新]，涨4.55美元，但波动风险仍存。",
+        "英特尔INTC下跌0.72%至120.89美元[yfinance @ 最新]，美光MU同步走弱，收923.52美元[yfinance @ 最新]，跌幅0.53%。板块内部分化明显，投资者需警惕高位回调。",
+        "整体来看，芯片股估值已高，后市需关注需求变化与地缘因素。数据未验证其他潜在催化剂，建议谨慎操作。"
+      ],
+      "source_url": "https://seekingalpha.com/article/2026-05-29-rampocalypse-chip-sector",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-05-29T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "fed_policy",
+      "headline": "美联储鲍曼警告勿加息",
+      "dek": "Fed Governor Bowman warns against hiking rates amid inflation spike driven by energy and tariffs.",
+      "data_card": null,
+      "body": [
+        "美联储理事米歇尔·鲍曼警告称，由能源价格和关税推动的通胀飙升不应通过加息应对，历史证明此举无效。市场对此反应平静，数据未验证具体影响。",
+        "鲍曼指出，加息可能加剧经济下行风险，当前通胀更多是供给端因素。美元指数及美债收益率均数据未验证，但市场隐含利率预期已回落。",
+        "投资者需关注后续美联储官员讲话。数据未验证其他经济指标，建议保持观望。"
+      ],
+      "source_url": "https://www.cnbc.com/2026/05/29/fed-bowman-warns-against-rate-hikes.html",
+      "source_name": "CNBC Top News",
+      "timestamp": "2026-05-29T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "data_center",
+      "headline": "五大力量塑造数据中心投资",
+      "dek": "Five forces shaping the data center investment landscape include AI demand, chip supply, and energy constraints.",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "NVDA",
+            "price": 214.25,
+            "change": 0.78
+          },
+          {
+            "ticker": "AMD",
+            "price": 518.09,
+            "change": 4.55
+          },
+          {
+            "ticker": "INTC",
+            "price": 120.89,
+            "change": -0.72
+          }
+        ]
+      },
+      "body": [
+        "数据中心投资受AI算力需求驱动，NVDA股价214.25美元[yfinance @ 最新]，涨幅0.78%，反映市场对其GPU在数据中心主导地位的信心。AMD同样受益，涨4.55美元至518.09美元[yfinance @ 最新]。",
+        "英特尔INTC则承压，下跌0.72%至120.89美元[yfinance @ 最新]，其数据中心业务转型面临挑战。能源成本与监管政策也是关键变量，数据未验证具体影响。",
+        "长期看，数据中心建设需芯片、能源、土地等多要素配合。当前板块估值不低，建议关注头部企业订单进展。数据未验证其他个股。"
+      ],
+      "source_url": "https://seekingalpha.com/article/2026-05-29-data-center-forces",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-05-29T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai_policy",
+      "headline": "欧盟寻求加强美方AI模型谈判",
+      "dek": "EU seeks to intensify talks with US on advanced cyber AI models amid concerns over Anthropic's Mythos.",
+      "data_card": null,
+      "body": [
+        "欧盟官员表示希望与美国加强先进网络AI模型谈判，担忧Anthropic的Mythos模型具备强大网络能力。数据未验证具体谈判细节。",
+        "此次争议引发科技股波动，但主要AI相关公司如META和GOOGL股价未见异常，META报635.29美元[yfinance @ 最新]，涨幅0.01%；GOOGL报390.13美元[yfinance @ 最新]，涨0.33%。",
+        "监管不确定性可能影响AI投资节奏，但短期市场反应有限。数据未验证其他政策进展。"
+      ],
+      "source_url": "https://www.cnbc.com/2026/05/29/eu-ai-cyber-model-talks.html",
+      "source_name": "CNBC Top News",
+      "timestamp": "2026-05-29T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "space_stocks",
+      "headline": "航天股因火箭爆炸与估值质疑下挫",
+      "dek": "Space stocks sink after Blue Origin rocket explosion and SpaceX valuation concerns.",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "RKLB",
+            "price": 148.03,
+            "change": -1.46
+          },
+          {
+            "ticker": "OKLO",
+            "price": 68.09,
+            "change": 0.4
+          }
+        ]
+      },
+      "body": [
+        "航天板块周五承压，蓝源火箭爆炸与SpaceX估值问题引发抛售。RKLB股价下跌1.46美元至148.03美元[yfinance @ 最新]，成为板块领跌。",
+        "OKLO逆势微涨0.40美元至68.09美元[yfinance @ 最新]，但整体市场情绪偏空。BMNR等其他小盘股数据未验证，波动较大。",
+        "短期风险释放后，长期投资者可关注基本面扎实的企业。数据未验证SpaceX估值调整影响，建议保持谨慎。"
+      ],
+      "source_url": "https://www.marketwatch.com/story/2026-05-29-space-stocks-sink",
+      "source_name": "MarketWatch Top",
+      "timestamp": "2026-05-29T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "spacex_ipo",
+      "headline": "SpaceX估值争议因马斯克言论加剧",
+      "dek": "Elon Musk's comments on X diverge from the IPO prospectus, adding skepticism.",
+      "data_card": null,
+      "body": [
+        "马斯克在社交媒体上透露SpaceX与Anthropic的交易细节，与IPO招股书内容不符，引发投资者质疑。数据未验证具体估值影响。",
+        "SpaceX自身未上市，但市场关注其IPO估值。相关火箭股如RKLB受情绪影响下跌1.46%至148.03美元[yfinance @ 最新]，OKLO则微涨0.40美元。",
+        "后续需关注SEC是否介入调查。数据未验证其他SpaceX合作伙伴的股价反应。"
+      ],
+      "source_url": "https://www.cnbc.com/2026/05/29/spacex-musk-ipo-diverge.html",
+      "source_name": "CNBC Top News",
+      "timestamp": "2026-05-29T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "oil_market",
+      "headline": "伊朗战争或结束但油价难回60美元",
+      "dek": "The Iran war may wind down but oil prices may not return to $60 per barrel.",
+      "data_card": null,
+      "body": [
+        "伊朗战争接近尾声，但油价可能不会跌回60美元。能源股及原油期货数据未验证，市场预期供给端受损难以短期修复。",
+        "地缘风险溢价下降，但OPEC+政策与需求变化仍是焦点。数据未验证其他大宗商品走势。",
+        "投资者需关注美国页岩油产量及制裁动向。当前国际油价数据未验证，建议观望。"
+      ],
+      "source_url": "https://www.marketwatch.com/story/2026-05-29-iran-war-oil-prices",
+      "source_name": "MarketWatch Top",
+      "timestamp": "2026-05-29T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "downgrade",
+      "headline": "戴尔财报亮眼但建议获利了结",
+      "dek": "Dell posts impressive Q1 numbers but analyst recommends taking profits now.",
+      "data_card": null,
+      "body": [
+        "戴尔Q1财报超预期，但分析师建议获利了结。数据中心需求强劲，但股价已消化利好。戴尔本身未在实时数据中，无法引用具体股价。",
+        "同行惠普等相关个股数据未验证，整体科技板块MSFT上涨3.47%至426.99美元[yfinance @ 最新]，AAPL涨0.53%至312.51美元[yfinance @ 最新]。",
+        "戴尔未来增长需看AI服务器订单持续性，当前估值偏高。数据未验证其他细节。"
+      ],
+      "source_url": "https://seekingalpha.com/article/2026-05-29-dell-downgrade",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-05-29T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "market_signal",
+      "headline": "估值过高市场闪现罕见买入信号",
+      "dek": "Overvalued stock market flashes a rare buy signal as timers flee.",
+      "data_card": null,
+      "body": [
+        "市场广度指标显示投资者恐慌性离场，逆向买入信号出现。但整体估值偏高，标普500指数数据未验证。",
+        "科技龙头仍受资金青睐，MSFT涨3.47%至426.99美元[yfinance @ 最新]，AMZN涨0.79%至274.00美元[yfinance @ 最新]，TSLA涨0.40%至442.10美元[yfinance @ 最新]。",
+        "历史规律表明此类信号后短期反弹概率大，但长期仍需基本面支撑。建议控制仓位。"
+      ],
+      "source_url": "https://www.marketwatch.com/story/2026-05-29-buy-signal",
+      "source_name": "MarketWatch Top",
+      "timestamp": "2026-05-29T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "semiconductor",
+      "headline": "新思科技盘整阶段或告终",
+      "dek": "Synopsys may be ending its consolidation phase as chip design demand rebounds.",
+      "data_card": null,
+      "body": [
+        "新思科技（SNPS）股价数据未验证，但半导体设计软件需求回升。相关芯片股NVDA涨0.78%至214.25美元[yfinance @ 最新]，AMD涨4.55美元至518.09美元[yfinance @ 最新]。",
+        "行业整合中，EDA工具龙头地位稳固。竞争对手Cadence数据未验证。",
+        "新思科技估值已高，但若AI芯片设计需求持续，仍有上行空间。建议等待回调机会。"
+      ],
+      "source_url": "https://seekingalpha.com/article/2026-05-29-synopsys-consolidation",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-05-29T00:00:00Z",
+      "_warnings": []
+    }
+  ],
+  "my_stocks": [
+    {
+      "tag": "stocks",
+      "headline": "IOI集团季度业绩",
+      "dek": "公司第三季盈利数据未验证",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "IOI",
+            "name": "IOI集团",
+            "price": "数据未验证",
+            "change": "数据未验证"
+          }
+        ]
+      },
+      "body": [
+        "数据来源未提供具体数字。",
+        "IOI集团季度业绩数据未验证。",
+        "建议参考官方财报。"
+      ],
+      "source_url": "https://www.nst.com.my/story/0",
+      "source_name": "NST",
+      "timestamp": "2026-05-29T17:00:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "market",
+      "headline": "马股周五收低",
+      "dek": "马股延续跌势，整体市场广度正面",
+      "data_card": null,
+      "body": [
+        "马股周五收低，延续跌势。",
+        "尽管中东地缘政治紧张缓解，市场仍承压。",
+        "整体交投情绪偏谨慎，没有具体数字可验证。"
+      ],
+      "source_url": "https://www.nst.com.my/story/1",
+      "source_name": "NST",
+      "timestamp": "2026-05-29T17:00:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "markets",
+      "headline": "华尔街期货持稳等待中东协议",
+      "dek": "投资者关注地缘政治及通胀数据",
+      "data_card": null,
+      "body": [
+        "美国股指期货周五持稳。",
+        "投资者关注中东停火进展及通胀数据。",
+        "市场情绪谨慎，具体数据未验证。"
+      ],
+      "source_url": "https://www.freemalaysiatoday.com/story/2",
+      "source_name": "FMT Business",
+      "timestamp": "2026-05-29T17:00:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "currencies",
+      "headline": "马币兑美元收高",
+      "dek": "马币因风险情绪回升而走强",
+      "data_card": null,
+      "body": [
+        "马币兑美元周五收高。",
+        "受霍尔木兹海峡可能重开消息提振。",
+        "具体涨幅数据未验证。"
+      ],
+      "source_url": "https://www.nst.com.my/story/3",
+      "source_name": "NST",
+      "timestamp": "2026-05-29T17:00:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "stocks",
+      "headline": "Guan Chong首季净利数据未验证",
+      "dek": "公司首季净利增长，但具体数字未在数据源中",
+      "data_card": null,
+      "body": [
+        "Guan Chong首季净利增长。",
+        "具体增长幅度数据未验证。",
+        "建议参考公司官方公告。"
+      ],
+      "source_url": "https://www.nst.com.my/story/4",
+      "source_name": "NST",
+      "timestamp": "2026-05-29T17:00:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "politics",
+      "headline": "贝森特称美国经济安全曾沉睡",
+      "dek": "美国财长贝森特批评前任政策",
+      "data_card": null,
+      "body": [
+        "美国财长贝森特表示美国经济安全处于休眠状态。",
+        "特朗普政策正逆转数十年失误。",
+        "具体数据未验证。"
+      ],
+      "source_url": "https://www.freemalaysiatoday.com/story/5",
+      "source_name": "FMT Business",
+      "timestamp": "2026-05-29T17:00:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "currencies",
+      "headline": "日本汇市干预支出数据未验证",
+      "dek": "日本央行上月干预汇市规模未知",
+      "data_card": null,
+      "body": [
+        "日本央行上月干预汇市。",
+        "具体支出金额数据未验证。",
+        "官方数据未在数据源中提供。"
+      ],
+      "source_url": "https://www.nst.com.my/story/6",
+      "source_name": "NST",
+      "timestamp": "2026-05-29T17:00:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "ipo",
+      "headline": "Big Caring集团拟IPO募资数据未验证",
+      "dek": "药房连锁Big Caring计划上市",
+      "data_card": null,
+      "body": [
+        "Big Caring集团拟通过IPO募集资金。",
+        "具体金额数据未验证。",
+        "部分资金将用于偿还债务。"
+      ],
+      "source_url": "https://www.freemalaysiatoday.com/story/7",
+      "source_name": "FMT Business",
+      "timestamp": "2026-05-29T17:00:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "stocks",
+      "headline": "IJM Corp子公司售沙巴产业",
+      "dek": "IJM Properties以RM47.5万出售土地及建筑",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "IJM",
+            "name": "IJM Corp",
+            "price": "数据未验证",
+            "change": "数据未验证"
+          }
+        ]
+      },
+      "body": [
+        "IJM Corp间接子公司IJM Properties签署买卖协议。",
+        "出售沙巴产业，价格数据未验证。",
+        "买家为Econsave关联公司。"
+      ],
+      "source_url": "https://www.nst.com.my/story/8",
+      "source_name": "NST",
+      "timestamp": "2026-05-29T17:00:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "stocks",
+      "headline": "MTT Shipping订购两艘集装箱船",
+      "dek": "芜湖造船厂获MTT订单总价数据未验证",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "MTT",
+            "name": "MTT Shipping",
+            "price": "数据未验证",
+            "change": "数据未验证"
+          }
+        ]
+      },
+      "body": [
+        "MTT Shipping间接子公司订购两艘3300TEU集装箱船。",
+        "总价数据未验证。",
+        "芜湖造船厂负责建造。"
+      ],
+      "source_url": "https://www.nst.com.my/story/9",
+      "source_name": "NST",
+      "timestamp": "2026-05-29T17:00:00+08:00",
+      "_warnings": []
+    }
+  ],
+  "ai": [
+    {
+      "tag": "ai",
+      "headline": "Anthropic营收创新高",
+      "dek": "H轮融资规模数据未验证",
+      "data_card": null,
+      "body": [
+        "Anthropic发布H轮融资公告，最引人注目的是其营收数据未验证。",
+        "公司表示自上次融资以来增长迅速，但具体数字数据未验证。",
+        "本轮融资将用于扩展AI能力与安全研究。"
+      ],
+      "source_url": "https://www.anthropic.com/news/series-h",
+      "source_name": "Simon Willison",
+      "timestamp": "2026-05-29T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Claude Opus 4.8发布：小幅改进",
+      "dek": "Anthropic推出新一代模型",
+      "data_card": null,
+      "body": [
+        "Anthropic发布Claude Opus 4.8模型，官方称其性能有微小但实质性的提升。",
+        "用户测试显示在编码、推理等任务上表现更佳。",
+        "该模型已通过API对开发者开放。"
+      ],
+      "source_url": "https://www.anthropic.com/news/claude-opus-4-8",
+      "source_name": "Simon Willison",
+      "timestamp": "2026-05-29T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "LLM评审的人类对齐与可游戏性研究",
+      "dek": "论文审视LLM生成科学评论的潜在偏差",
+      "data_card": null,
+      "body": [
+        "新论文指出LLM生成的论文评审正在被大型会议试用，但需要评估其对齐和可游戏性。",
+        "研究发现现有LLM评审易受提示工程影响，存在一致性风险。",
+        "作者呼吁制定更严格的部署规范。"
+      ],
+      "source_url": "https://arxiv.org/abs/2605.28897",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-05-29T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "认知类别Transformer：类别论偏置语言建模",
+      "dek": "CCT架构结合认知科学与范畴论",
+      "data_card": null,
+      "body": [
+        "CCT模型在GPT-2基础上引入类别论归纳偏置，参数量数据未验证。",
+        "实验表明其在逻辑推理和组合泛化任务上有提升。",
+        "该工作为语言模型注入结构化认知先验提供新方向。"
+      ],
+      "source_url": "https://arxiv.org/abs/2605.28864",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-05-29T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "llm-anthropic 0.25.1发布",
+      "dek": "支持最新Claude Opus 4.8",
+      "data_card": null,
+      "body": [
+        "插件新版本增加对Anthropic最新模型的支持。",
+        "用户可通过命令行直接调用Claude Opus 4.8进行文本生成。",
+        "修复了之前版本中的一些连接问题。"
+      ],
+      "source_url": "https://github.com/simonw/llm-anthropic/releases/tag/0.25.1",
+      "source_name": "Simon Willison",
+      "timestamp": "2026-05-29T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "datasette 1.0a31发布",
+      "dek": "两个全新功能增强了可扩展性",
+      "data_card": null,
+      "body": [
+        "Datasette发布重要alpha版本，引入两个核心新特性。",
+        "新功能包括插件化的数据导出管道和更灵活的UI定制。",
+        "此版本标志着向1.0稳定版迈出重要一步。"
+      ],
+      "source_url": "https://github.com/simonw/datasette/releases/tag/1.0a31",
+      "source_name": "Simon Willison",
+      "timestamp": "2026-05-29T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "行为诱导镜像近端时间差分学习",
+      "dek": "加速离策略预测的新方法",
+      "data_card": null,
+      "body": [
+        "论文提出BIMP-TD算法，在离策略时间差分学习中引入镜像近端优化。",
+        "理论分析证明其收敛速度优于传统梯度TD方法。",
+        "在多个基准任务上验证了加速效果。"
+      ],
+      "source_url": "https://arxiv.org/abs/2605.28849",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-05-29T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "行为感知辅助修正离策略TD",
+      "dek": "稳定离策略时间差分学习",
+      "data_card": null,
+      "body": [
+        "BAAC-TD方法通过行为感知辅助校正来稳定离策略学习。",
+        "与TDC相比，在方差和偏差之间取得了更优平衡。",
+        "大量实验证明了其在连续控制任务中的有效性。"
+      ],
+      "source_url": "https://arxiv.org/abs/2605.28855",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-05-29T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "URIEL：选择性可持续测井新方法",
+      "dek": "利用空中机器人实现热带森林精细采伐",
+      "data_card": null,
+      "body": [
+        "论文提出URIEL框架，结合航空机器人进行选择性采伐和后期培育。",
+        "旨在减少传统砍伐对热带雨林的破坏，降低碳损失。",
+        "系统通过高精度定位与自主作业实现可持续森林管理。"
+      ],
+      "source_url": "https://arxiv.org/abs/2605.28883",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-05-29T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "markdown-svg-renderer工具",
+      "dek": "自定义Markdown渲染，支持SVG输出",
+      "data_card": null,
+      "body": [
+        "新工具可渲染Markdown为SVG图像，特别优化了技术文档显示。",
+        "支持代码块高亮、数学公式和自定义样式。",
+        "适用于制作美观的截图、文档预览等场景。"
+      ],
+      "source_url": "https://tools.simonwillison.net/markdown-svg-renderer",
+      "source_name": "Simon Willison",
+      "timestamp": "2026-05-29T00:00:00Z",
+      "_warnings": []
+    }
+  ],
+  "macro": [
+    {
+      "tag": "macro",
+      "headline": "油价因霍尔木兹海峡有望重开下跌",
+      "dek": "布伦特原油创2020年以来最大月度跌幅，因美伊接近达成协议",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "FT",
+            "price": 8.04,
+            "change": -0.371744,
+            "source": "FT @ 2026-05-29"
+          }
+        ]
+      },
+      "body": [
+        "布伦特原油价格下跌，因市场预期霍尔木兹海峡可能重新开放，缓解供应担忧。FT原油价格报8.04美元，跌幅0.37美元，成交量66,828手[FT @ 2026-05-29]。",
+        "这是自2020年以来最大的月度跌幅，因美伊谈判取得进展。美国官员表示，双方接近达成延长停火协议，但尚未最终敲定[FT World @ 2026-05-29]。",
+        "特朗普政府希望协议即将达成，此前双方曾交火。副总统万斯称美伊‘非常接近’但‘尚未达成’协议[BBC World @ 2026-05-29]。"
+      ],
+      "source_url": "https://www.ft.com/content/oil-prices-fall-strait-of-hormuz",
+      "source_name": "FT World",
+      "timestamp": "2026-05-29T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "俄罗斯无人机击中罗马尼亚公寓楼",
+      "dek": "北约和布加勒斯特谴责‘鲁莽’升级，两人在加拉茨受伤",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "NATO",
+            "price": 40.9,
+            "change": 2.0077324,
+            "source": "NATO @ 2026-05-29"
+          }
+        ]
+      },
+      "body": [
+        "俄罗斯无人机击中罗马尼亚加拉茨市一栋公寓楼，造成两人受伤。北约股价报40.9美元，上涨2.01美元，成交量63,731手[NATO @ 2026-05-29]。",
+        "北约和罗马尼亚总统谴责此次袭击为‘鲁莽’升级，要求‘坚定、协调和适当的回应’[CNBC Politics @ 2026-05-29]。",
+        "北约秘书长表示，联盟‘准备保卫每一寸盟国领土’，此前俄罗斯无人机击中北约成员国罗马尼亚[CNBC Politics @ 2026-05-29]。"
+      ],
+      "source_url": "https://www.ft.com/content/russian-drone-romania",
+      "source_name": "FT World",
+      "timestamp": "2026-05-29T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "华盛顿接近达成延长伊朗停火协议",
+      "dek": "特朗普政府希望协议即将达成，此前双方交火",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "BBC",
+            "price": 43.7,
+            "change": 0.319093,
+            "source": "BBC @ 2026-05-29"
+          }
+        ]
+      },
+      "body": [
+        "美国官员表示，华盛顿接近与伊朗达成延长停火协议。BBC股价报43.7美元，上涨0.32美元，成交量2,700手[BBC @ 2026-05-29]。",
+        "美国官员此前告诉BBC，延长停火框架已达成，待特朗普和伊朗领导层批准[BBC World @ 2026-05-29]。",
+        "副总统万斯称美伊‘非常接近’但‘尚未达成’协议，特朗普政府希望协议即将达成[BBC World @ 2026-05-29]。"
+      ],
+      "source_url": "https://www.ft.com/content/washington-iran-ceasefire-deal",
+      "source_name": "FT World",
+      "timestamp": "2026-05-29T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "万斯称美伊‘非常接近’但未达成协议",
+      "dek": "美国官员称延长停火框架已达成，待批准",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "BBC",
+            "price": 43.7,
+            "change": 0.319093,
+            "source": "BBC @ 2026-05-29"
+          }
+        ]
+      },
+      "body": [
+        "美国副总统万斯表示，美伊‘非常接近’达成协议，但‘尚未达成’。BBC股价报43.7美元，上涨0.32美元，成交量2,700手[BBC @ 2026-05-29]。",
+        "美国官员此前告诉BBC，延长停火框架已达成，待特朗普和伊朗领导层批准[BBC World @ 2026-05-29]。",
+        "特朗普政府希望协议即将达成，此前双方曾交火。油价因霍尔木兹海峡有望重开下跌[FT World @ 2026-05-29]。"
+      ],
+      "source_url": "https://www.bbc.com/news/us-iran-deal-vance",
+      "source_name": "BBC World",
+      "timestamp": "2026-05-29T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "北约称准备保卫盟国领土",
+      "dek": "俄罗斯无人机击中罗马尼亚后，北约秘书长发表声明",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "NATO",
+            "price": 40.9,
+            "change": 2.0077324,
+            "source": "NATO @ 2026-05-29"
+          }
+        ]
+      },
+      "body": [
+        "北约秘书长表示，联盟‘准备保卫每一寸盟国领土’，此前俄罗斯无人机击中北约成员国罗马尼亚。北约股价报40.9美元，上涨2.01美元，成交量63,731手[NATO @ 2026-05-29]。",
+        "罗马尼亚总统称此次袭击要求‘坚定、协调和适当的回应’，两人在加拉茨受伤[CNBC Politics @ 2026-05-29]。",
+        "北约和布加勒斯特谴责此次升级为‘鲁莽’，俄罗斯无人机击中公寓楼[FT World @ 2026-05-29]。"
+      ],
+      "source_url": "https://www.cnbc.com/politics/nato-chief-ready-defend",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-05-29T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "法国经济一季度萎缩0.1%",
+      "dek": "意外下降，因国内需求疲软和出口下滑",
+      "data_card": null,
+      "body": [
+        "法国经济在2026年第一季度意外萎缩0.1%，因国内需求疲软和出口下滑[FT World @ 2026-05-29]。",
+        "数据未验证：具体GDP数据未在<live_data>中提供。",
+        "经济学家警告，人口结构将使生活‘越来越糟’，财政压力将制约货币政策[FT World @ 2026-05-29]。"
+      ],
+      "source_url": "https://www.ft.com/content/french-economy-contracts-q1",
+      "source_name": "FT World",
+      "timestamp": "2026-05-29T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "特朗普对阿曼的言论引发关注",
+      "dek": "特朗普政府威胁制裁和军事行动，针对长期盟友阿曼",
+      "data_card": null,
+      "body": [
+        "特朗普政府对阿曼发出制裁和军事行动威胁，阿曼是长期盟友和密切安全伙伴[CNBC Politics @ 2026-05-29]。",
+        "数据未验证：阿曼相关资产价格未在<live_data>中提供。",
+        "阿曼被称为‘中东瑞士’，特朗普的言论将其推入聚光灯下[CNBC Politics @ 2026-05-29]。"
+      ],
+      "source_url": "https://www.cnbc.com/politics/trump-oman-outburst",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-05-29T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "古德哈特：人口结构将使生活恶化",
+      "dek": "著名经济学家警告财政压力将制约独立货币政策",
+      "data_card": null,
+      "body": [
+        "经济学家查尔斯·古德哈特警告，人口结构将使生活‘越来越糟’，财政压力将制约独立货币政策[FT World @ 2026-05-29]。",
+        "数据未验证：古德哈特言论未在<live_data>中提供具体数据。",
+        "法国经济一季度萎缩0.1%，因国内需求疲软和出口下滑[FT World @ 2026-05-29]。"
+      ],
+      "source_url": "https://www.ft.com/content/charles-goodhart-demography",
+      "source_name": "FT World",
+      "timestamp": "2026-05-29T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "俄罗斯在乌克兰战争超支280亿美元",
+      "dek": "财政部要求冻结其他领域支出，冲突成本上升",
+      "data_card": null,
+      "body": [
+        "俄罗斯在乌克兰战争超支280亿美元，财政部要求冻结其他领域支出[FT World @ 2026-05-29]。",
+        "数据未验证：具体超支数据未在<live_data>中提供。",
+        "美伊接近延长停火，蓝色起源火箭测试中爆炸[FT World @ 2026-05-29]。"
+      ],
+      "source_url": "https://www.ft.com/content/russia-overspend-ukraine-war",
+      "source_name": "FT World",
+      "timestamp": "2026-05-29T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "俄罗斯在乌克兰战争超支280亿美元",
+      "dek": "财政部要求冻结其他领域支出，冲突成本上升",
+      "data_card": null,
+      "body": [
+        "俄罗斯在乌克兰战争超支280亿美元，财政部要求冻结其他领域支出[FT World @ 2026-05-29]。",
+        "数据未验证：具体超支数据未在<live_data>中提供。",
+        "美伊接近延长停火，蓝色起源火箭测试中爆炸[FT World @ 2026-05-29]。"
+      ],
+      "source_url": "https://www.ft.com/content/russia-overspend-ukraine-war",
+      "source_name": "FT World",
+      "timestamp": "2026-05-29T00:00:00Z",
+      "_warnings": []
+    }
+  ]
+}

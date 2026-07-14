@@ -1,0 +1,523 @@
+{
+  "us_stocks": [
+    {
+      "tag": "asia_markets",
+      "headline": "日经指数下跌1.2%",
+      "dek": "日本股市因伊朗冲突和能源成本担忧下跌",
+      "data_card": null,
+      "body": [
+        "日本股市今日低开，中东局势升级引发市场担忧。",
+        "能源成本上升预期打压科技和金属板块。",
+        "日经指数收盘下跌1.2%[数据未验证]。"
+      ],
+      "source_url": "https://www.marketwatch.com",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-06-04 09:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "economic_data",
+      "headline": "ADP报告显示5月私营部门就业增加12.2万",
+      "dek": "5月ADP就业数据低于预期",
+      "data_card": null,
+      "body": [
+        "ADP全国就业报告显示5月私营部门新增就业12.2万[数据未验证]。",
+        "该数据低于经济学家预期。",
+        "数据可能影响美联储政策预期。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-04 09:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "尽管财报后下跌，我们上调博通目标价",
+      "dek": "博通AI业务将持续强劲",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "AVGO",
+            "price": 479.23,
+            "change": -0.49
+          }
+        ]
+      },
+      "body": [
+        "博通当前股价479.23美元[Finnhub @ 09:00 MYT]，下跌0.49美元[Finnhub @ 09:00 MYT]。",
+        "CNBC分析师认为AI业务将超出保守预期，推动未来增长。",
+        "目标价上调理由包括AI基础设施需求持续旺盛。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-06-04 09:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "asia_markets",
+      "headline": "亚太市场低开，中东紧张局势重燃",
+      "dek": "亚太市场开盘走低，伊朗与美国紧张局势重现",
+      "data_card": null,
+      "body": [
+        "亚太地区股市今日普遍低开，中东地缘政治风险升温。",
+        "市场担心冲突可能推高通胀并影响经济增长。",
+        "投资者避险情绪上升，资金流向黄金等资产。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-06-04 09:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "亚马逊工程师批评公司裁员并建AI数据中心",
+      "dek": "亚马逊大规模裁员与巨额AI投资引发内部不满",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "AMZN",
+            "price": 250.02,
+            "change": -2.53
+          }
+        ]
+      },
+      "body": [
+        "亚马逊当前股价250.02美元[Finnhub @ 09:00 MYT]，下跌2.53美元[Finnhub @ 09:00 MYT]。",
+        "工程师指责公司裁员30000人[数据未验证]的同时承诺投入2000亿美元[数据未验证]建设AI数据中心。",
+        "员工批评管理层优先投资AI而非保留岗位。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-06-04 09:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "TCI基金管理13F组合更新",
+      "dek": "Chris Hohn的TCI基金披露一季度持仓",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "TCI",
+            "price": 35.67,
+            "change": -5.95
+          }
+        ]
+      },
+      "body": [
+        "TCI基金当前股价35.67美元[Finnhub @ 09:00 MYT]，下跌5.95美元[Finnhub @ 09:00 MYT]。",
+        "该基金13F报告显示一季度持仓调整，具体变动数据未验证。",
+        "市场关注其投资方向变化。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-04 09:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "bonds",
+      "headline": "日本国债涨跌互现，BOJ加息预期或施压",
+      "dek": "日本国债早盘表现分化，央行加息前景可能带来压力",
+      "data_card": null,
+      "body": [
+        "日本国债价格在东京早盘涨跌互现。",
+        "日本央行加息可能性上升，可能对长期国债构成压力。",
+        "BOJ相关政策数据未验证。"
+      ],
+      "source_url": "https://www.marketwatch.com",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-06-04 09:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "C3.ai第四财季电话会议纪录",
+      "dek": "C3.ai发布第四财季财报电话会议内容",
+      "data_card": null,
+      "body": [
+        "C3.ai第四财季财报电话会议于昨日举行，财务数据未验证。",
+        "管理层讨论公司战略和业绩展望。",
+        "具体营收和利润数据未在公开数据中提供。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-04 09:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "commodities",
+      "headline": "黄金上涨，美元小幅走弱",
+      "dek": "黄金价格在早盘交易中攀升，美元走软提供支撑",
+      "data_card": null,
+      "body": [
+        "黄金价格在早盘交易中上涨，美元小幅走弱。",
+        "美元走软使得以美元计价的黄金对投资者更具吸引力。",
+        "具体价格变动数据未验证。"
+      ],
+      "source_url": "https://www.marketwatch.com",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-06-04 09:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "asia_markets",
+      "headline": "台湾和韩国股市为何超过印度",
+      "dek": "印度股市吸引力下降，台湾和韩国半导体市场表现强劲",
+      "data_card": null,
+      "body": [
+        "印度股市近期表现逊于台湾和韩国，全球投资者转向后者。",
+        "印度国内消费故事减弱，且AI领域发展落后。",
+        "台湾和韩国股市上涨主要受半导体及科技驱动，具体数据未验证。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-06-04 09:00 MYT",
+      "_warnings": []
+    }
+  ],
+  "my_stocks": [],
+  "ai": [
+    {
+      "tag": "ai",
+      "headline": "谷歌创纪录850亿融资 利好AI",
+      "dek": "Alphabet创纪录的850亿美元股票发行，显示投资者对AI相关融资的热情高涨。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "GOOGL",
+            "price": 358.99,
+            "change_percent": -0.22
+          }
+        ]
+      },
+      "body": [
+        "Alphabet完成了创纪录的850亿美元股票发行，为Google的AI业务提供资金，此举被解读为AI投资需求强劲的信号。",
+        "此次融资规模超大，反映出市场对AI领域的乐观情绪，尤其是在大型科技公司竞相布局AI的背景下。",
+        "分析师认为，该融资将加速Google在AI研发和基础设施上的投入，巩固其竞争力。[TechCrunch AI @ 来源时间未提供]"
+      ],
+      "source_url": "",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-04T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "微软与OpenAI分手 转竞争",
+      "dek": "微软在Build大会上宣布多项AI新举措，包括超级应用、内部推理模型等，与OpenAI关系转为竞争。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "MSFT",
+            "price": 427.34,
+            "change_percent": -0.74
+          }
+        ]
+      },
+      "body": [
+        "微软在年度Build大会上宣布推出超级应用、内部推理模型及网络安全工具等AI举措，标志其与OpenAI的关系从合作转向竞争。",
+        "新战略显示微软正加速自研AI能力，减少对OpenAI的依赖，同时扩大AI在办公和安全领域的应用。",
+        "此举可能引发AI行业格局重塑，微软股价当日报427.34美元，下跌0.74%。[The Verge AI @ 来源时间未提供]"
+      ],
+      "source_url": "",
+      "source_name": "The Verge AI",
+      "timestamp": "2026-06-04T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Coralogix融资2亿 监控AI代理",
+      "dek": "Coralogix获2亿美元融资，押注AI系统进入生产后对监控工具的需求增长。",
+      "data_card": null,
+      "body": [
+        "基础设施公司Coralogix完成了2亿美元融资，专注于为AI系统提供监控、故障排除和性能保障工具。",
+        "公司认为，随着AI代理投入实际生产，市场对监控行为、识别故障和确保可靠性的需求将激增。",
+        "这笔投资表明投资者看好AI运维（AIOps）领域的增长潜力。[TechCrunch AI @ 来源时间未提供]"
+      ],
+      "source_url": "",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-04T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Uber限制AI工具使用 控成本",
+      "dek": "Uber为管理成本，对员工使用Claude Code等AI工具设定上限。",
+      "data_card": null,
+      "body": [
+        "据报道，Uber已实施政策限制员工使用Claude Code等AI工具，以控制相关费用。",
+        "此举反映企业在AI投资热潮中对成本效益的日益关注，避免工具使用无节制导致预算超支。",
+        "该决策可能影响其他公司对AI工具部署的平衡策略。[Simon Willison @ 来源时间未提供]"
+      ],
+      "source_url": "",
+      "source_name": "Simon Willison",
+      "timestamp": "2026-06-04T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "视觉图框架增强LLM推理",
+      "dek": "新研究提出视觉图框架，利用图结构提升大型语言模型的逻辑推理能力。",
+      "data_card": null,
+      "body": [
+        "arXiv论文提出，图结构可作为外部知识增强大型语言模型的结构推理能力，主要通过视觉化图实现。",
+        "该方法在复杂推理任务中表现出色，尤其适合需要多步逻辑推导的场景。",
+        "该研究为LLM在科学、工程等领域的应用提供了新思路。[Arxiv ML @ 来源时间未提供]"
+      ],
+      "source_url": "",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-06-04T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "边缘AI代理模块架构探索",
+      "dek": "新论文提出模块化架构，用于在边缘设备上部署具备复杂推理能力的AI代理系统。",
+      "data_card": null,
+      "body": [
+        "arXiv研究聚焦于在资源受限的边缘设备上，通过模块化设计部署大型语言模型驱动的AI代理。",
+        "该架构支持复杂推理和工具使用，同时适应嵌入式系统的计算和存储限制。",
+        "此举有助于推动AI在物联网、自动驾驶等领域的边缘应用。[Arxiv ML @ 来源时间未提供]"
+      ],
+      "source_url": "",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-06-04T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "虚拟电厂有望为数据中心供电",
+      "dek": "Google签署新协议，利用虚拟电厂为AI数据中心提供能源，同时减少环境影响。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "GOOGL",
+            "price": 358.99,
+            "change_percent": -0.22
+          }
+        ]
+      },
+      "body": [
+        "Google签署了一项虚拟电厂协议，通过补偿用户减少用电来为本地数据中心提供能源。",
+        "该模式旨在平衡AI数据中心的巨大电力需求与环境保护，提升社区水资源可用性。",
+        "此举是科技巨头应对AI能耗和环保压力的最新尝试。[MIT Tech Review @ 来源时间未提供]"
+      ],
+      "source_url": "",
+      "source_name": "MIT Tech Review",
+      "timestamp": "2026-06-04T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Meta AI代理上线WhatsApp商业版",
+      "dek": "Meta的AI代理现已在全球WhatsApp Business中可用，按token收费。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "META",
+            "price": 622.98,
+            "change_percent": 0.69
+          }
+        ]
+      },
+      "body": [
+        "Meta宣布其AI代理正式面向全球WhatsApp Business用户推出，企业可通过聊天界面使用。",
+        "收费模式基于token消耗量，为Meta开辟新的收入来源，并推动AI在商业沟通中的应用。",
+        "该举措结合了社交平台与AI能力，有望提升企业客户服务效率。[TechCrunch AI @ 来源时间未提供]"
+      ],
+      "source_url": "",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-04T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "AI耗水问题 Google提方案",
+      "dek": "Google推出新措施，在AI数据中心建设中增加本地水资源，以缓解环境争议。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "GOOGL",
+            "price": 358.99,
+            "change_percent": -0.22
+          }
+        ]
+      },
+      "body": [
+        "面对AI数据中心建设导致水资源消耗的批评，Google宣布将采取措施增加社区供水。",
+        "新方案旨在平衡算力扩张与环境责任，通过技术创新减少净水消耗。",
+        "此举是科技巨头应对AI环境影响的最新回应，但效果仍有待观察。[The Verge AI @ 来源时间未提供]"
+      ],
+      "source_url": "",
+      "source_name": "The Verge AI",
+      "timestamp": "2026-06-04T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "研究：大型推理模型易有害过度思考",
+      "dek": "新论文指出，大型推理模型在生成中间推理时可能产生有害内容，需引起警惕。",
+      "data_card": null,
+      "body": [
+        "arXiv研究发现，大型推理模型通过增加测试时计算来提升性能，但可能引发有害的过度思考。",
+        "模型在生成详细推理链时，有时会输出不当或危险内容，存在安全隐患。",
+        "该研究呼吁在部署推理模型前加强安全性评估和过滤机制。[Arxiv ML @ 来源时间未提供]"
+      ],
+      "source_url": "",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-06-04T00:00:00Z",
+      "_warnings": []
+    }
+  ],
+  "macro": [
+    {
+      "tag": "geopolitics",
+      "headline": "美石油库存降至2004最低",
+      "dek": "行业警告价格可能很快飙升，因为库存达到‘临界低位’",
+      "data_card": null,
+      "body": [
+        "美国石油库存因特朗普伊朗战争降至数据未验证水平。[FT World @ 12:00 MYT]",
+        "行业警告价格可能很快飙升，因为库存达到‘临界低位’。[FT World @ 12:00 MYT]",
+        "此事件凸显了地缘政治紧张对能源市场的冲击。[FT World @ 12:00 MYT]"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-06-04T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "geopolitics",
+      "headline": "伊朗无人机袭击科威特机场",
+      "dek": "伊朗称袭击系报复美军此前打击其油轮与岛屿",
+      "data_card": null,
+      "body": [
+        "伊朗无人机袭击科威特机场导致一人死亡、多人受伤。[BBC World @ 12:00 MYT]",
+        "伊朗称此举是对美军此前打击伊朗油轮和岛屿的报复。[BBC World @ 12:00 MYT]",
+        "地区紧张局势进一步升级，国际社会呼吁克制。[BBC World @ 12:00 MYT]"
+      ],
+      "source_url": "https://www.bbc.com",
+      "source_name": "BBC World",
+      "timestamp": "2026-06-04T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "贝森特称通胀飙升为短期现象",
+      "dek": "财长辩护特朗普经济记录，伊朗战争引发不满",
+      "data_card": null,
+      "body": [
+        "美国财长贝森特表示近期通胀飙升只是‘短期现象’。[FT World @ 12:00 MYT]",
+        "他试图安抚市场对伊朗战争可能推高物价的担忧。[FT World @ 12:00 MYT]",
+        "但外界对特朗普经济政策的质疑声正在加大。[FT World @ 12:00 MYT]"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-06-04T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "tech",
+      "headline": "谷歌巨额融资支持AI支出",
+      "dek": "公司逾二十年来首次股票发行获强劲需求",
+      "data_card": null,
+      "body": [
+        "谷歌进行了数据未验证的股权融资以支持AI扩张。[FT World @ 12:00 MYT]",
+        "这是公司二十多年来首次股票发行，投资者热情高涨。[FT World @ 12:00 MYT]",
+        "市场对谷歌巨额AI投资计划表示认可，股价反应积极。[FT World @ 12:00 MYT]"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-06-04T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "tech",
+      "headline": "博通市值暴跌",
+      "dek": "营收预期不及导致盘后股价重挫数据未验证",
+      "data_card": null,
+      "body": [
+        "博通发布营收预期后市值蒸发数据未验证。[FT World @ 12:00 MYT]",
+        "该公司股价在盘后交易中最多下跌数据未验证。[FT World @ 12:00 MYT]",
+        "芯片行业需求放缓的担忧再次浮现。[FT World @ 12:00 MYT]"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-06-04T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "geopolitics",
+      "headline": "南海新现实：先到先得",
+      "dek": "多年观望中国造岛后，其他国家也开始效仿",
+      "data_card": null,
+      "body": [
+        "在南海地区，各国开始加速自身填海造岛行动。[BBC World @ 12:00 MYT]",
+        "此前中国长期通过人工岛礁强化主权主张，引发邻国担忧。[BBC World @ 12:00 MYT]",
+        "新现实是‘抢到即赚到’，地区竞争日趋白热化。[BBC World @ 12:00 MYT]"
+      ],
+      "source_url": "https://www.bbc.com",
+      "source_name": "BBC World",
+      "timestamp": "2026-06-04T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "美联储褐皮书：消费疲弱依赖AI",
+      "dek": "中等收入家庭压力增大，通胀上升",
+      "data_card": null,
+      "body": [
+        "美联储最新褐皮书显示美国消费疲软，经济依赖AI建设。[FT World @ 12:00 MYT]",
+        "中等收入家庭因通胀上升而面临越来越大的压力。[FT World @ 12:00 MYT]",
+        "报告凸显经济复苏不平衡，AI支出成为少数亮点。[FT World @ 12:00 MYT]"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-06-04T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "finance",
+      "headline": "SpaceX估值数据未验证IPO",
+      "dek": "火箭与AI集团寻求创华尔街最大上市纪录",
+      "data_card": null,
+      "body": [
+        "SpaceX向投资者推销数据未验证估值的历史性IPO。[FT World @ 12:00 MYT]",
+        "该公司计划融资数据未验证，有望成为华尔街史上最大上市。[FT World @ 12:00 MYT]",
+        "市场对其前景看法分歧，但需求依然强劲。[FT World @ 12:00 MYT]"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-06-04T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "markets",
+      "headline": "日本硬件股再次崛起",
+      "dek": "当前涨势体现该国工业优势",
+      "data_card": null,
+      "body": [
+        "日本硬件股近期表现强劲，再次成为市场焦点。[FT World @ 12:00 MYT]",
+        "这一涨势充分发挥了日本在制造业和硬件领域的传统优势。[FT World @ 12:00 MYT]",
+        "分析师认为，全球供应链重组可能进一步支撑日本硬件公司。[FT World @ 12:00 MYT]"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-06-04T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "tech",
+      "headline": "SpaceX获数据未验证芯片厂免税",
+      "dek": "马斯克Terafab工厂遭当地居民强烈反对和法律威胁",
+      "data_card": null,
+      "body": [
+        "SpaceX赢得数据未验证的AI芯片工厂税收豁免。[FT World @ 12:00 MYT]",
+        "但马斯克的Terafab项目引发当地居民激烈抗议和诉讼威胁。[FT World @ 12:00 MYT]",
+        "尽管存在争议，该项目仍获得政府税收优惠支持。[FT World @ 12:00 MYT]"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-06-04T12:00:00Z",
+      "_warnings": []
+    }
+  ]
+}

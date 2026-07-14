@@ -1,0 +1,402 @@
+{
+  "us_stocks": [
+    {
+      "tag": "nvda_ai_infra",
+      "headline": "英伟达AI基建股值得买入",
+      "dek": "英伟达支持的AI基础设施公司成为市场焦点",
+      "data_card": null,
+      "body": [
+        "英伟达（NVDA）当前股价192.53美元，下跌1.64% [实时数据 @ 14:30 MYT]。",
+        "该公司投资的AI基础设施项目获得市场关注。",
+        "投资者可考虑相关标的，但需注意风险。"
+      ],
+      "source_url": "https://finance.yahoo.com",
+      "source_name": "Yahoo Finance",
+      "timestamp": "2026-06-29 14:30 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "firmus_nvda_deal",
+      "headline": "Firmus与英伟达达成AI访问协议",
+      "dek": "澳大利亚公司Firmus Technologies与英伟达签署AI合作",
+      "data_card": null,
+      "body": [
+        "英伟达（NVDA）当前股价192.53美元，下跌1.64% [实时数据 @ 14:30 MYT]。",
+        "该协议将扩大AI应用场景，Firmus受益。",
+        "英伟达在AI领域的合作伙伴网络持续扩展。"
+      ],
+      "source_url": "https://finance.yahoo.com",
+      "source_name": "Yahoo Finance",
+      "timestamp": "2026-06-29 14:30 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "hp_downgrade",
+      "headline": "惠普评级下调(内存上涨)",
+      "dek": "惠普因内存成本上升被降级",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "HP",
+            "price": 33.8,
+            "change": -0.62
+          }
+        ]
+      },
+      "body": [
+        "惠普（HP）当前股价33.80美元，下跌0.62美元 [实时数据 @ 14:30 MYT]。",
+        "内存成本上涨导致业绩预期下调。",
+        "该股评级从买入下调至观望。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-29 14:30 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "wall_street_brunch_payrolls",
+      "headline": "华尔街早午餐：就业数据提前",
+      "dek": "就业报告提前一天发布影响市场",
+      "data_card": null,
+      "body": [
+        "市场关注就业数据提前发布的影响。",
+        "强劲就业可能改变货币政策预期。",
+        "投资者需警惕市场波动。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-29 14:30 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "cerebras_below_ipo",
+      "headline": "Cerebras低于IPO价具吸引力",
+      "dek": "Cerebras股价跌至IPO价格下方",
+      "data_card": null,
+      "body": [
+        "Cerebras股价低于IPO发行价。",
+        "估值回调可能带来机会。",
+        "该公司在AI芯片领域具备竞争力。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-29 14:30 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "strong_jobs_report",
+      "headline": "强就业报告或改变市场格局",
+      "dek": "就业数据若强劲将影响市场走向",
+      "data_card": null,
+      "body": [
+        "强劲就业报告可能引发利率预期调整。",
+        "市场风格或从成长转向价值。",
+        "投资者需重新评估配置策略。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-29 14:30 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "applied_optoelectronics",
+      "headline": "应用光电：产能需求增长路径",
+      "dek": "应用光电公司产能与需求持续增长",
+      "data_card": null,
+      "body": [
+        "应用光电受益于AI数据中心需求。",
+        "公司产能扩张计划明确。",
+        "未来营收有望达数十亿美元。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-29 14:30 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "three_things_this_week",
+      "headline": "本周关注三大市场事件",
+      "dek": "就业报告、耐克财报及拆分完成",
+      "data_card": null,
+      "body": [
+        "本周焦点：美国就业报告。",
+        "耐克即将发布财报。",
+        "长期拆分交易即将完成。"
+      ],
+      "source_url": "https://cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-06-29 14:30 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "ai_power_winner",
+      "headline": "AI电力超级周期赢家：NextEra或Vistra",
+      "dek": "两家公司谁将成为AI电力需求最大受益者",
+      "data_card": null,
+      "body": [
+        "AI数据中心电力需求激增。",
+        "NextEra Energy与Vistra均布局清洁能源。",
+        "两者竞争超级周期赢家地位。"
+      ],
+      "source_url": "https://finance.yahoo.com",
+      "source_name": "Yahoo Finance",
+      "timestamp": "2026-06-29 14:30 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "dividend_stocks_steady_rates",
+      "headline": "新美联储主席维持利率下买入股息股",
+      "dek": "在利率不变背景下推荐两只股息股",
+      "data_card": null,
+      "body": [
+        "新任美联储主席Kevin Warsh保持利率稳定。",
+        "高股息股票吸引力凸显。",
+        "推荐的两只股票具备稳定派息能力。"
+      ],
+      "source_url": "https://finance.yahoo.com",
+      "source_name": "Yahoo Finance",
+      "timestamp": "2026-06-29 14:30 MYT",
+      "_warnings": []
+    }
+  ],
+  "my_stocks": [],
+  "ai": [
+    {
+      "tag": "ai",
+      "headline": "美光或成下一个英伟达？华尔街力捧",
+      "dek": "华尔街投资者热衷寻找下一个AI赢家，认为美光具备潜力。",
+      "data_card": null,
+      "body": [
+        "华尔街投资者正在积极寻找下一家类似英伟达的AI相关上市公司，并将目光锁定在美光科技上，认为其有望成为AI领域的下一个赢家。",
+        "美光作为美国内存制造商，其产品在AI数据中心和边缘计算中需求旺盛，市场对其增长前景持乐观态度。",
+        "然而，该预测基于市场分析和历史表现，具体股价和业绩数据未在本次数据更新中提供。数据未验证"
+      ],
+      "source_url": "https://techcrunch.com",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-29T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "软银CEO质疑马斯克轨道数据中心",
+      "dek": "马斯克关于轨道数据中心的远景未获普遍认可。",
+      "data_card": null,
+      "body": [
+        "软银首席执行官并非唯一对马斯克的轨道数据中心愿景提出疑问的人，多位业界人士对此持保留态度。",
+        "马斯克的轨道数据中心概念旨在通过太空部署计算资源，但面临技术、成本和监管等多重挑战。",
+        "目前该话题仅涉及概念讨论，无相关上市公司股价或财务数据提供。数据未验证"
+      ],
+      "source_url": "https://techcrunch.com",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-29T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "苹果Vision Pro高管据报将跳槽OpenAI",
+      "dek": "负责Vision Pro的苹果副总裁保罗·米德将加盟OpenAI硬件团队。",
+      "data_card": null,
+      "body": [
+        "据知情人士透露，苹果负责Vision Pro头显的副总裁保罗·米德正计划离开公司，加入OpenAI的硬件团队。",
+        "此举可能对苹果增强现实战略产生重大影响，并增强OpenAI在硬件领域的研发能力。",
+        "目前无相关公司股价在本次数据中出现，无法验证具体数据。数据未验证"
+      ],
+      "source_url": "https://techcrunch.com",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-29T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "检方用ChatGPT日志指控帕利塞兹火灾嫌犯",
+      "dek": "检方在2025年新年火灾案中利用聊天机器人日志作为证据。",
+      "data_card": null,
+      "body": [
+        "在2025年新年爆发并成为洛杉矶历史上最致命山火之一的帕利塞兹火灾案件中，检方将ChatGPT对话日志作为关键证据。",
+        "被告乔纳森·林德克内希特面临纵火指控，检方通过AI生成的日志追踪其行动和意图。",
+        "该案件涉及AI在司法中的应用，不针对具体上市公司，故无相关数据。数据未验证"
+      ],
+      "source_url": "https://www.theverge.com",
+      "source_name": "The Verge AI",
+      "timestamp": "2026-06-29T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "阿特伍德称AI问题在于垃圾进垃圾出",
+      "dek": "《使女的故事》作者玛格丽特·阿特伍德评论AI局限性。",
+      "data_card": null,
+      "body": [
+        "著名作家玛格丽特·阿特伍德在葡萄牙波尔图巴比伦文学文化节上接受采访，指出AI的核心问题是“垃圾进，垃圾出”。",
+        "她强调，AI的输出质量完全依赖于输入数据的质量，若基础数据有缺陷，结果必然失真。",
+        "此评论为文学领域观点分享，无股市相关数据，故不涉及具体公司。数据未验证"
+      ],
+      "source_url": "https://www.theverge.com",
+      "source_name": "The Verge AI",
+      "timestamp": "2026-06-29T12:00:00Z",
+      "_warnings": []
+    }
+  ],
+  "macro": [
+    {
+      "tag": "🌐 宏观",
+      "headline": "Mines will hold back Strait of H",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From FT World.",
+        "Extraction failed.",
+        "Source: https://www.ft.com/content/a0739198-318c-4ae8-9953-ba88201edc45"
+      ],
+      "source_url": "https://www.ft.com/content/a0739198-318c-4ae8-9953-ba88201edc45",
+      "source_name": "FT World",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🌐 宏观",
+      "headline": "US and Iran exchange strikes as ",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From FT World.",
+        "Extraction failed.",
+        "Source: https://www.ft.com/content/5f4cd16c-fa4a-4806-94ce-84df6f51ecc0"
+      ],
+      "source_url": "https://www.ft.com/content/5f4cd16c-fa4a-4806-94ce-84df6f51ecc0",
+      "source_name": "FT World",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🌐 宏观",
+      "headline": "US and Iran exchange strikes and",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From BBC World.",
+        "Extraction failed.",
+        "Source: https://www.bbc.co.uk/news/articles/cdxdwkgqgq0o?at_medium=RSS&at_campaign=rss"
+      ],
+      "source_url": "https://www.bbc.co.uk/news/articles/cdxdwkgqgq0o?at_medium=RSS&at_campaign=rss",
+      "source_name": "BBC World",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🌐 宏观",
+      "headline": "Ukraine’s vibe shift is bad news",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From FT World.",
+        "Extraction failed.",
+        "Source: https://www.ft.com/content/b21b4c57-b403-4748-8b4d-945f5efa9863"
+      ],
+      "source_url": "https://www.ft.com/content/b21b4c57-b403-4748-8b4d-945f5efa9863",
+      "source_name": "FT World",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🌐 宏观",
+      "headline": "AI ‘exuberance’ risks ending in ",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From FT World.",
+        "Extraction failed.",
+        "Source: https://www.ft.com/content/e81ce414-e4bd-4e8c-bac7-94f7bf17def4"
+      ],
+      "source_url": "https://www.ft.com/content/e81ce414-e4bd-4e8c-bac7-94f7bf17def4",
+      "source_name": "FT World",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🌐 宏观",
+      "headline": "Are AI stocks headed for further",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From FT World.",
+        "Extraction failed.",
+        "Source: https://www.ft.com/content/bc8ce24b-b6ed-4e2d-a628-69f30751ce9e"
+      ],
+      "source_url": "https://www.ft.com/content/bc8ce24b-b6ed-4e2d-a628-69f30751ce9e",
+      "source_name": "FT World",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🌐 宏观",
+      "headline": "Spanish import hub urges EU to d",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From FT World.",
+        "Extraction failed.",
+        "Source: https://www.ft.com/content/8606fc3c-6576-4ab2-8d28-9e8a46515a2c"
+      ],
+      "source_url": "https://www.ft.com/content/8606fc3c-6576-4ab2-8d28-9e8a46515a2c",
+      "source_name": "FT World",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🌐 宏观",
+      "headline": "Overseas pension funds rethink i",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From FT World.",
+        "Extraction failed.",
+        "Source: https://www.ft.com/content/95068ff9-5aea-4c3a-af65-a7f72a303a73"
+      ],
+      "source_url": "https://www.ft.com/content/95068ff9-5aea-4c3a-af65-a7f72a303a73",
+      "source_name": "FT World",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🌐 宏观",
+      "headline": "Google caps Meta’s Gemini use as",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From FT World.",
+        "Extraction failed.",
+        "Source: https://www.ft.com/content/c5d52f72-71ef-40bc-bad3-61afdba8b378"
+      ],
+      "source_url": "https://www.ft.com/content/c5d52f72-71ef-40bc-bad3-61afdba8b378",
+      "source_name": "FT World",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🌐 宏观",
+      "headline": "Germany’s important pension refo",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From FT World.",
+        "Extraction failed.",
+        "Source: https://www.ft.com/content/5f8f0047-3264-4742-be44-2af5812e449a"
+      ],
+      "source_url": "https://www.ft.com/content/5f8f0047-3264-4742-be44-2af5812e449a",
+      "source_name": "FT World",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    }
+  ]
+}

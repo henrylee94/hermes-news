@@ -1,0 +1,494 @@
+{
+  "us_stocks": [
+    {
+      "tag": "us_stocks",
+      "headline": "芯片三巨头Q2市值增2万亿",
+      "dek": "华尔街二季度大举买入非英伟达芯片股，AI热潮扩散至更多供应商。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "MU",
+            "price": 1154.29,
+            "change": 0.79
+          },
+          {
+            "ticker": "INTC",
+            "price": 139.63,
+            "change": 6.01
+          },
+          {
+            "ticker": "AMD",
+            "price": 580.91,
+            "change": 7.68
+          }
+        ]
+      },
+      "body": [
+        "二季度，华尔街资金涌入非英伟达芯片股，推动美光、英特尔和AMD合计市值增加约2万亿美元，AI热潮从英伟达扩散至更多供应商。[CNBC @ 未提供时间]",
+        "美光股价报1154.29美元，涨0.79%；英特尔报139.63美元，涨6.01%；AMD报580.91美元，涨7.68%。[Finnhub @ 未提供时间]",
+        "数据未验证"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-07-01",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "小盘股创35年最佳上半年",
+      "dek": "小盘股表现大幅逆转，此前多年落后于大盘股。",
+      "data_card": null,
+      "body": [
+        "小盘股上半年表现创35年来最佳，标志着此前多年落后于大盘股的趋势出现逆转。[CNBC @ 未提供时间]",
+        "数据未验证",
+        "数据未验证"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-07-01",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "美国消费者信心6月微降",
+      "dek": "消费者信心指数小幅下滑。",
+      "data_card": null,
+      "body": [
+        "美国消费者信心在6月小幅下降，具体数据未披露。[Seeking Alpha @ 未提供时间]",
+        "数据未验证",
+        "数据未验证"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-01",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "日债跟随美债下跌",
+      "dek": "日本国债早盘下跌，受隔夜美债价格下跌拖累。",
+      "data_card": null,
+      "body": [
+        "日本国债在东京早盘下跌，跟随隔夜美国国债价格下跌走势。[MarketWatch @ 未提供时间]",
+        "数据未验证",
+        "数据未验证"
+      ],
+      "source_url": "https://www.marketwatch.com",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-07-01",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "价值投资仍胜出：Piotroski年中选股",
+      "dek": "在AI热潮之外，价值投资策略依然有效。",
+      "data_card": null,
+      "body": [
+        "尽管市场追逐AI，价值投资仍表现优异，新一期Piotroski年中选股策略发布。[Seeking Alpha @ 未提供时间]",
+        "数据未验证",
+        "数据未验证"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-01",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "Anthropic获解禁出口管制",
+      "dek": "美国商务部解除对Anthropic两款AI模型的出口限制。",
+      "data_card": null,
+      "body": [
+        "美国商务部已解除对Anthropic的Claude Fable 5和Mythos 5模型的出口管制。[CNBC @ 未提供时间]",
+        "数据未验证",
+        "数据未验证"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-07-01",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "日元兑美元走弱，干预风险仍存",
+      "dek": "日元早盘走弱，市场警惕可能的汇市干预。",
+      "data_card": null,
+      "body": [
+        "日元兑美元在早盘交易中走弱，市场仍对可能的汇市干预保持警惕。[MarketWatch @ 未提供时间]",
+        "数据未验证",
+        "数据未验证"
+      ],
+      "source_url": "https://www.marketwatch.com",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-07-01",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "特斯拉：执行风险上升",
+      "dek": "特斯拉面临执行风险加剧。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "TSLA",
+            "price": 420.6,
+            "change": 2.13
+          }
+        ]
+      },
+      "body": [
+        "特斯拉执行风险上升，股价报420.6美元，涨2.13%。[Seeking Alpha @ 未提供时间]",
+        "数据未验证",
+        "数据未验证"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-01",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "中国黑客瞄准AI领域",
+      "dek": "中美AI竞争加剧，中国相关网络攻击增多。",
+      "data_card": null,
+      "body": [
+        "分析师警告，中国背景的网络攻击增多，不仅针对特定技术，随着中美AI竞争加剧，攻击范围扩大。[CNBC @ 未提供时间]",
+        "数据未验证",
+        "数据未验证"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-07-01",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "亚洲为何难产SpaceX式IPO",
+      "dek": "亚洲虽有企业家和市场，但缺乏像SpaceX那样的巨型IPO。",
+      "data_card": null,
+      "body": [
+        "亚洲不缺企业家、工程师或庞大国内市场，但在产生像美国那样的重磅IPO方面仍落后。[CNBC @ 未提供时间]",
+        "数据未验证",
+        "数据未验证"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-07-01",
+      "_warnings": []
+    }
+  ],
+  "my_stocks": [],
+  "ai": [
+    {
+      "tag": "ai",
+      "headline": "Nvidia对手Etched获大合同",
+      "dek": "AI芯片初创公司Etched据称已获得大量合同，估值超50亿美元。",
+      "data_card": null,
+      "body": [
+        "Etched估值数据未验证 [TechCrunch AI @ 16:00 MYT]。",
+        "合同销售额数据未验证 [TechCrunch AI @ 16:00 MYT]。",
+        "作为Nvidia竞争对手，该公司专注于AI推理芯片。"
+      ],
+      "source_url": "",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-01T16:00:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Anthropic发布Claude Sonnet 5",
+      "dek": "新模型以更低价格和更强代理能力，成为Opus、GPT-5.5等更便宜替代品。",
+      "data_card": null,
+      "body": [
+        "Claude Sonnet 5定价数据未验证 [TechCrunch AI @ 16:00 MYT]。",
+        "模型具备更强代理能力，安全改进数据未验证 [TechCrunch AI @ 16:00 MYT]。",
+        "定位为Opus和GPT-5.5的更低成本替代。"
+      ],
+      "source_url": "",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-01T16:00:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Anthropic推出Claude Science旗舰产品",
+      "dek": "面向制药和生物技术高管，提供一站式科研工作平台。",
+      "data_card": null,
+      "body": [
+        "Anthropic在周二的活动中宣布Claude Science。",
+        "产品面向制药高管、生物技术创始人和研究人员。",
+        "旨在支持科学研究的工作流整合。"
+      ],
+      "source_url": "",
+      "source_name": "MIT Tech Review",
+      "timestamp": "2026-07-01T16:00:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Claude Sonnet 5更新详情",
+      "dek": "官方发布新模型特征及改进说明。",
+      "data_card": null,
+      "body": [
+        "Claude Sonnet 5发布信息数据未验证 [Simon Willison @ 16:00 MYT]。",
+        "模型改进细节数据未验证 [Simon Willison @ 16:00 MYT]。",
+        "链接至平台文档说明。"
+      ],
+      "source_url": "",
+      "source_name": "Simon Willison",
+      "timestamp": "2026-07-01T16:00:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "亚马逊成立10亿美元FDE部门",
+      "dek": "新团队将嵌入企业部署AI代理，效仿OpenAI和Anthropic。",
+      "data_card": {
+        "rows": [
+          {
+            "symbol": "AMZN",
+            "name": "Amazon.com Inc",
+            "price": 238.34,
+            "chg": -0.75
+          }
+        ]
+      },
+      "body": [
+        "亚马逊新部门资金数据未验证 [TechCrunch AI @ 16:00 MYT]。",
+        "工程师将嵌入客户公司部署定制AI代理。",
+        "专注快速部署和客户自助能力。"
+      ],
+      "source_url": "",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-01T16:00:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "前DeepMind三人创办量化对冲AI",
+      "dek": "EquiLibre Technologies估值超5亿美元。",
+      "data_card": null,
+      "body": [
+        "EquiLibre估值数据未验证 [TechCrunch AI @ 16:00 MYT]。",
+        "三位前DeepMind研究员创办于布拉格。",
+        "公司已盈利并服务量化对冲基金。"
+      ],
+      "source_url": "",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-01T16:00:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Claude Science专注于工作流而非新模型",
+      "dek": "为科学家提供统一环境，省去切换多个工具的麻烦。",
+      "data_card": null,
+      "body": [
+        "Claude Science是Anthropic的实验台产品。",
+        "整合数据库、流水线和工具于一体。",
+        "旨在加速计算研究工作流。"
+      ],
+      "source_url": "",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-01T16:00:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "AI模型网络概念综述",
+      "dek": "arXiv论文讨论AI模型网络的当前状态与未来。",
+      "data_card": null,
+      "body": [
+        "论文arXiv:2606.27382v1发布。",
+        "探讨互联网分享协作与AI模型网络结合。",
+        "抽象强调计算机计算与网络协作的对比。"
+      ],
+      "source_url": "",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-01T16:00:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "shot-scraper新增视频录制功能",
+      "dek": "开发者可用工具录制agent工作演示视频。",
+      "data_card": null,
+      "body": [
+        "shot-scraper video命令发布。",
+        "关联版本1.10发布。",
+        "用于录制AI代理操作过程的视频演示。"
+      ],
+      "source_url": "",
+      "source_name": "Simon Willison",
+      "timestamp": "2026-07-01T16:00:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "X推出MCP服务器助AI工具接入",
+      "dek": "托管MCP服务器简化AI应用与X API的连接。",
+      "data_card": null,
+      "body": [
+        "X发布托管MCP服务器。",
+        "方便开发者将AI应用与X API集成。",
+        "降低使用门槛。"
+      ],
+      "source_url": "",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-01T16:00:00+08:00",
+      "_warnings": []
+    }
+  ],
+  "macro": [
+    {
+      "tag": "macro",
+      "headline": "美国特使在多哈见调解人",
+      "dek": "卡塔尔外交部发言人表示，没有安排美伊高层或直接会谈。",
+      "data_card": null,
+      "body": [
+        "美国特使抵达多哈，将与调解人会面，但不会与伊朗代表直接接触。",
+        "卡塔尔外交部发言人称，目前没有安排任何高级别会议或美伊直接谈判。",
+        "此次谈判旨在缓解中东紧张局势，但双方立场仍存分歧。"
+      ],
+      "source_url": "https://www.bbc.com/news",
+      "source_name": "BBC World",
+      "timestamp": "2026-07-01T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "耐克财报受退税提振但中国销售降",
+      "dek": "运动服装制造商最近季度营收为数据未验证，低于预期。",
+      "data_card": null,
+      "body": [
+        "耐克最近季度营收数据未验证，为自数据未验证以来最低水平，部分受关税退税影响。",
+        "尽管北美市场表现稳健，但中国区销售额持续下滑，拖累整体业绩。",
+        "分析师指出，耐克面临的竞争加剧和消费需求疲软是主要原因。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-07-01T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "世行将逐步停止对华贷款",
+      "dek": "全球发展机构决定在数年内结束对华贷款，回应特朗普政府压力。",
+      "data_card": null,
+      "body": [
+        "世界银行宣布计划逐步取消对中国的新贷款，这是政策重大转向。",
+        "此举源于美国多年来要求世行停止贷款给中国，称中国已是中等收入国家。",
+        "世行表示未来将聚焦于气候等全球议题，但细节尚未公布。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-07-01T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "维特科夫和库什纳抵多哈谈美伊协议",
+      "dek": "调解国卡塔尔称，美国代表团没有计划会晤伊朗官员。",
+      "data_card": null,
+      "body": [
+        "美国总统特使维特科夫和库什纳抵达多哈，参与美伊核协议间接谈判。",
+        "卡塔尔外交官重申，目前没有安排美伊直接会面，谈判通过调解人进行。",
+        "伊朗方面尚未对会谈进展作出正式回应。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-07-01T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "美股录得六年来最大季度涨幅",
+      "dek": "投资者应对伊朗冲突、芯片股波动和SpaceX上市。",
+      "data_card": null,
+      "body": [
+        "美国股市本季度涨幅为六年来最大，主要受科技股反弹推动。",
+        "市场在伊朗局势、芯片股波动和SpaceX巨型IPO影响下实现上涨。",
+        "分析认为经济韧性和企业盈利支撑了投资者信心。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-07-01T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "欧洲重振军备维持19.5万美国就业",
+      "dek": "北约秘书长呼吁特朗普继续承诺联盟，并强调经济收益。",
+      "data_card": null,
+      "body": [
+        "北约秘书长斯托尔滕贝格称，欧洲防务开支支持了美国军工岗位数据未验证。",
+        "在接受FT采访时，他力劝特朗普总统不要退出北约，强调其对美国经济就业的意义。",
+        "欧洲国家近年大幅增加军费，部分用于购买美国武器。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-07-01T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "阿富汗塔利班在边境攻击巴基斯坦",
+      "dek": "巴基斯坦军方称击落四架简陋无人机，并将对挑衅做出回应。",
+      "data_card": null,
+      "body": [
+        "阿富汗塔利班武装在巴基斯坦边境发动袭击，造成紧张局势升级。",
+        "巴基斯坦军方表示已击落数架无人机，并警告将采取进一步反制措施。",
+        "边境冲突源于塔利班对巴基斯坦境内目标的渗透活动。"
+      ],
+      "source_url": "https://www.bbc.com/news",
+      "source_name": "BBC World",
+      "timestamp": "2026-07-01T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "美铝48亿美元收购南32氧化铝资产",
+      "dek": "美国铝业扩张，中东扰动推高铝价。",
+      "data_card": null,
+      "body": [
+        "美国铝业公司宣布以数据未验证收购南32的氧化铝和铝土矿业务，扩大版图。",
+        "中东地区供应中断导致铝价上涨，推动此次收购战略。",
+        "交易将使美铝在氧化铝市场占据更大份额，业界认为有利于成本控制。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-07-01T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "北京大厦撞机事件中国未公布详情",
+      "dek": "撞击在楼体留下孔洞，但北京清除其他可见痕迹。",
+      "data_card": null,
+      "body": [
+        "一架飞机撞上北京一座大厦，楼体出现多处破损，但官方未披露事件经过。",
+        "当局迅速清理现场痕迹，外界对事件真相质疑。",
+        "至今没有伤亡报告，调查进展不明。"
+      ],
+      "source_url": "https://www.bbc.com/news",
+      "source_name": "BBC World",
+      "timestamp": "2026-07-01T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "经济顾问委员会主席耶里德离职",
+      "dek": "特朗普宣布白宫经济顾问委员会主席皮埃尔·耶里德即将离任。",
+      "data_card": null,
+      "body": [
+        "总统特朗普表示，经济顾问委员会主席皮埃尔·耶里德将离开白宫。",
+        "该委员会自1946年以来为总统提供国内外经济政策建议。",
+        "耶里德离职原因未说明，继任人选尚未公布。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-07-01T12:00:00Z",
+      "_warnings": []
+    }
+  ]
+}

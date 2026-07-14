@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>Hermes Daily · 2026-07-04</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;900&family=Noto+Serif+SC:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --bg: #ffffff; --ink: #1d1d1f; --ink-soft: #424245; --ink-light: #86868b;
+    --divider: #d2d2d7; --accent-red: #c8102e; --accent-blue: #0066cc;
+    --accent-amber: #d97706; --accent-green: #00855b; --card-bg: #fafafa;
+    --nav-bg: rgba(255,255,255,0.85);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1a1a1c; --ink: #f5f5f7; --ink-soft: #c7c7cc; --ink-light: #8e8e93;
+      --divider: #38383a; --card-bg: #2c2c2e; --nav-bg: rgba(26,26,28,0.85);
+    }
+  }
+
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: var(--bg); color: var(--ink); line-height: 1.5;
+    -webkit-font-smoothing: antialiased; overflow-x: hidden;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+  .topbar { position: sticky; top: 0; z-index: 100; background: var(--nav-bg); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid var(--divider); }
+  .topbar-inner { max-width: 720px; margin: 0 auto; padding: 11px 24px; display: flex; align-items: center; justify-content: space-between; }
+  .brand { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 900; letter-spacing: -0.5px; }
+
+  .date-picker { display: flex; align-items: center; gap: 8px; }
+  .date-picker button { background: none; border: none; color: var(--ink-light); font-size: 20px; cursor: pointer; padding: 0 2px; line-height: 1; }
+  .date-picker button:hover { color: var(--accent-blue); }
+  .date-picker button:disabled { opacity: 0.25; cursor: default; }
+  .date-display { position: relative; font-size: 13px; font-weight: 600; color: var(--ink); font-variant-numeric: tabular-nums; cursor: pointer; padding: 5px 10px; border-radius: 8px; background: var(--card-bg); display: flex; align-items: center; gap: 6px; }
+  .date-display:hover { color: var(--accent-blue); }
+  .date-display input[type="date"] { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%; }
+  .date-display .cal-icon { font-size: 12px; }
+
+  .tabs { position: sticky; top: 47px; z-index: 99; background: var(--nav-bg); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid var(--divider); }
+  .tabs-inner { max-width: 720px; margin: 0 auto; padding: 0 12px; display: flex; gap: 2px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .tabs-inner::-webkit-scrollbar { display: none; }
+  .tab { flex: 1 0 auto; min-width: 72px; text-align: center; padding: 13px 14px; font-size: 14px; font-weight: 600; color: var(--ink-light); border-bottom: 2.5px solid transparent; cursor: pointer; white-space: nowrap; transition: color .15s, border-color .15s; background: none; font-family: inherit; }
+  .tab.active { color: var(--ink); }
+  .tab[data-cat="us_stocks"].active { border-bottom-color: var(--accent-red); }
+  .tab[data-cat="my_stocks"].active { border-bottom-color: var(--accent-amber); }
+  .tab[data-cat="ai"].active { border-bottom-color: var(--accent-blue); }
+  .tab[data-cat="macro"].active { border-bottom-color: var(--accent-green); }
+  .tab .count { display: inline-block; min-width: 18px; padding: 1px 5px; margin-left: 3px; font-size: 11px; font-weight: 600; border-radius: 9px; background: var(--card-bg); color: var(--ink-light); }
+  .tab.active .count { background: var(--ink); color: var(--bg); }
+
+  .masthead { padding: 28px 0 4px; }
+  .masthead-title { font-family: 'Playfair Display','Noto Serif SC',serif; font-size: 44px; font-weight: 900; letter-spacing: -1px; line-height: 1; }
+  .masthead-sub { font-size: 12px; color: var(--ink-light); margin-top: 8px; text-transform: uppercase; letter-spacing: 1.2px; }
+
+  .panel { display: none; }
+  .panel.active { display: block; animation: fade .25s ease; }
+  @keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+  .panel-head { margin: 32px 0 22px; padding-bottom: 12px; border-bottom: 1px solid var(--divider); display: flex; align-items: baseline; justify-content: space-between; }
+  .panel-title { font-family: 'Playfair Display','Noto Serif SC',serif; font-size: 26px; font-weight: 700; }
+  .panel-count { font-size: 11px; color: var(--ink-light); text-transform: uppercase; letter-spacing: 1.2px; }
+
+  .story { margin-bottom: 40px; padding-bottom: 40px; border-bottom: 1px solid var(--divider); }
+  .story:last-child { border-bottom: none; }
+  .story-meta { display: flex; gap: 10px; align-items: center; font-size: 11px; color: var(--ink-light); text-transform: uppercase; letter-spacing: 1.1px; margin-bottom: 11px; }
+  .story-meta .dot { color: var(--divider); }
+  .tag-us_stocks { color: var(--accent-red); font-weight: 600; }
+  .tag-my_stocks { color: var(--accent-amber); font-weight: 600; }
+  .tag-ai { color: var(--accent-blue); font-weight: 600; }
+  .tag-macro { color: var(--accent-green); font-weight: 600; }
+
+  .story-headline { font-family: 'Playfair Display','Noto Serif SC',serif; font-size: 28px; font-weight: 700; line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 10px; }
+  .story.lead .story-headline { font-size: 34px; }
+  .story-dek { font-size: 16px; color: var(--ink-soft); line-height: 1.55; margin-bottom: 16px; }
+
+  .story-hero { width: 100%; height: 210px; border-radius: 8px; margin-bottom: 16px; display: flex; align-items: center; justify-content: center; color: var(--ink-light); font-size: 11px; letter-spacing: 1px; text-transform: uppercase; overflow: hidden; background: linear-gradient(135deg,#f5f5f7,#e8e8ed 50%,#d8d8df); }
+  .story-hero img { width: 100%; height: 100%; object-fit: cover; }
+
+  .data-card { background: var(--card-bg); border-left: 3px solid var(--accent-red); padding: 13px 17px; margin: 16px 0; border-radius: 0 6px 6px 0; }
+  .data-card.my_stocks { border-left-color: var(--accent-amber); }
+  .data-card.ai { border-left-color: var(--accent-blue); }
+  .data-card.macro { border-left-color: var(--accent-green); }
+  .data-card-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--ink-light); margin-bottom: 7px; }
+  .data-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px; font-size: 14px; }
+  .data-row .num { font-weight: 600; font-variant-numeric: tabular-nums; }
+  .data-row .up { color: var(--accent-red); }
+  .data-row .down { color: #00a35c; }
+  .data-citation { font-size: 10px; color: var(--ink-light); margin-top: 7px; font-style: italic; }
+
+  .story-body p { font-size: 15px; line-height: 1.65; margin-bottom: 13px; }
+  .story-body p:first-of-type::first-letter { font-family: 'Playfair Display',serif; font-size: 36px; font-weight: 900; line-height: 1; color: var(--accent-red); padding-right: 2px; }
+
+  .story-warning { background: #fff3cd; border-left: 3px solid #d97706; padding: 11px 15px; margin: 14px 0; color: #856404; font-size: 13px; border-radius: 0 4px 4px 0; }
+  @media (prefers-color-scheme: dark) { .story-warning { background: #3a2e10; color: #fde68a; } }
+
+  .story-source { margin-top: 18px; padding-top: 13px; border-top: 1px dotted var(--divider); font-size: 12px; color: var(--ink-light); display: flex; justify-content: space-between; align-items: center; }
+  .source-pill { display: inline-flex; align-items: center; padding: 4px 12px; background: var(--card-bg); border-radius: 12px; font-weight: 500; color: var(--ink-soft); text-decoration: none; min-height: 30px; }
+
+  .empty { padding: 60px 20px; text-align: center; color: var(--ink-light); font-size: 14px; }
+  .doc-footer { margin: 48px 0 60px; padding-top: 28px; border-top: 2px solid var(--ink); text-align: center; font-size: 11px; color: var(--ink-light); letter-spacing: 1.5px; text-transform: uppercase; }
+
+  @media (max-width: 640px) {
+    .wrap { padding: 0 18px; }
+    .topbar-inner { padding-left: 18px; padding-right: 18px; }
+    .brand { font-size: 17px; }
+    .date-display { font-size: 12px; }
+    .masthead-title { font-size: 32px; }
+    .tab { font-size: 13px; padding: 12px 12px; min-width: 64px; }
+    .story-headline { font-size: 23px; }
+    .story.lead .story-headline { font-size: 27px; }
+    .story-hero { height: 170px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <span class="brand">Hermes Daily</span>
+    <div class="date-picker">
+      <button id="prevDay" title="前一天">‹</button>
+      <label class="date-display">
+        <span class="cal-icon">📅</span>
+        <span id="dateText">7月4日 周六</span>
+        <input type="date" id="datePick" value="2026-07-04" max="2026-07-04">
+      </label>
+      <button id="nextDay" title="后一天" disabled>›</button>
+    </div>
+  </div>
+</div>
+
+<div class="tabs">
+  <div class="tabs-inner">
+    
+    <button class="tab active" data-cat="us_stocks">🇺🇸 美股<span class="count">10</span></button>
+    
+    <button class="tab " data-cat="my_stocks">🇲🇾 马股<span class="count">0</span></button>
+    
+    <button class="tab " data-cat="ai">🤖 AI<span class="count">10</span></button>
+    
+    <button class="tab " data-cat="macro">🌐 宏观<span class="count">10</span></button>
+    
+  </div>
+</div>
+
+<div class="wrap">
+  <header class="masthead">
+    <div class="masthead-title">Hermes Daily</div>
+    <div class="masthead-sub">2026-07-04 · 周六 · 09:02 MYT · For Henry</div>
+  </header>
+
+  
+  <div class="panel active" data-cat="us_stocks">
+    <div class="panel-head">
+      <div class="panel-title">美股 · US Markets</div>
+      <div class="panel-count">10 stories</div>
+    </div>
+
+    
+
+    
+    <article class="story lead">
+      <div class="story-meta">
+        <span class="tag-us_stocks">meta_capex</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Meta资本支出见效但市场不买账</h2>
+      <p class="story-dek">尽管资本支出带来回报，市场仍不认可。</p>
+
+      
+
+      
+      <div class="data-card us_stocks">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>Meta最新财报显示其资本支出已带来收益，但股价反应冷淡。[Seeking Alpha @ 00:00 MYT]</p><p>当前股价报582.9美元[yfinance @ 00:00 MYT]，较前日下跌4.9美元[yfinance @ 00:00 MYT]。</p><p>市场对长期投资回报持怀疑态度，短期情绪偏空。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com/article/meta-capex" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-04T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">nova_ai</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Nova将随AI浪潮走高</h2>
+      <p class="story-dek">公司有望受益于人工智能趋势。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Nova Ltd.被认为将紧随人工智能浪潮持续增长。[Seeking Alpha @ 00:00 MYT]</p><p>其技术布局与AI需求高度契合，未来前景看好。</p><p>投资者应继续持有该股以把握上行机会。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com/article/nova-ai" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-04T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">heat_wave</span>
+        <span class="dot">·</span>
+        <span>CNBC</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">极端热浪威胁美国电网</h2>
+      <p class="story-dek">高温可能影响电力供应和7月4日出行。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美国遭遇极端热浪，电网面临超负荷风险。[CNBC @ 00:00 MYT]</p><p>7月4日假期出行计划可能受阻，数百万人受影响。</p><p>当局呼吁节约用电并注意防暑安全。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/heat-wave" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-04T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">q2_smallcaps</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">二季度小盘股和基本面动量获胜</h2>
+      <p class="story-dek">市场趋势显示小盘股表现强劲。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>第二季度小盘股和基本面动量策略取得显著胜利。[Seeking Alpha @ 00:00 MYT]</p><p>资金从大型股流向小型股，带动板块轮动。</p><p>投资者关注小型企业盈利改善和增长潜力。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com/article/q2-smallcaps" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-04T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">fhfa_hpi</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">FHFA房价指数从历史高点回落</h2>
+      <p class="story-dek">指数出现回调。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>FHFA房价指数数据未验证，无法确认最新值。[Seeking Alpha @ 00:00 MYT]</p><p>此前指数曾创历史新高，但目前缺乏更新数据。</p><p>房地产市场走势仍需更多数据支持判断。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com/article/fhfa-hpi" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-04T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">case_shiller</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">标普Case-Shiller房价指数增长受限</h2>
+      <p class="story-dek">房价增速持续受抑制。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>标普CoreLogic Case-Shiller指数显示房价增长仍受限制。[Seeking Alpha @ 00:00 MYT]</p><p>数据未验证，无法提供具体数值。</p><p>高利率和低供应继续影响市场动态。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com/article/case-shiller" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-04T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">spacex_congress</span>
+        <span class="dot">·</span>
+        <span>CNBC</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">国会议员首次购入SpaceX股票</h2>
+      <p class="story-dek">SpaceX IPO后受关注。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>国会议员首次公开报告购入SpaceX股票，发生在公司创纪录IPO之后。[CNBC @ 00:00 MYT]</p><p>此举反映SpaceX在联邦承包中的角色加深及与特朗普政府的关联。</p><p>股票交易细节引发市场对政界投资科技公司的关注。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/spacex-congress" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-04T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">ionq_quantum</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">IonQ：量子计算的信仰飞跃</h2>
+      <p class="story-dek">公司面临高预期挑战。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>IonQ被认为是量子计算领域的重要参与者，但股价波动较大。[Seeking Alpha @ 00:00 MYT]</p><p>数据未验证，无法提供当前股价。</p><p>投资者需权衡技术前景与现实盈利之间的差距。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com/article/ionq" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-04T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">ipo_weekly</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">美国IPO周报：Bending Spoons首秀</h2>
+      <p class="story-dek">更多公司加入上市行列。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>本周IPO市场上，Bending Spoons表现亮眼。[Seeking Alpha @ 00:00 MYT]</p><p>Cumberland Farms和Jersey Mike&#39;s也加入上市筹备行列。</p><p>市场对新股兴趣浓厚，IPO窗口持续开放。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com/article/ipo-weekly" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-04T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">american_enterprise</span>
+        <span class="dot">·</span>
+        <span>MarketWatch</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">美国企业250年</h2>
+      <p class="story-dek">政府为国民服务。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>评论文章回顾美国企业250年的发展历程。[MarketWatch @ 00:00 MYT]</p><p>强调政府应服务于国家，而非相反。</p><p>文章探讨自由企业制度的长期影响。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.marketwatch.com/opinion/250-years" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-04T00:00:00Z</span>
+      </div>
+    </article>
+    
+  </div>
+  
+  <div class="panel " data-cat="my_stocks">
+    <div class="panel-head">
+      <div class="panel-title">马股 · Bursa Malaysia</div>
+      <div class="panel-count">0 stories</div>
+    </div>
+
+    
+    <div class="empty">今日暂无 马股 新闻</div>
+    
+
+    
+  </div>
+  
+  <div class="panel " data-cat="ai">
+    <div class="panel-head">
+      <div class="panel-title">AI · 人工智能</div>
+      <div class="panel-count">10 stories</div>
+    </div>
+
+    
+
+    
+    <article class="story lead">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Arxiv ML</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">RLVR代理在Atlassian工作流</h2>
+      <p class="story-dek">概念验证表明，LLM在特定API中的行动能力提升。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>英伟达股价194.83美元，下跌1.39美元[数据未验证]该研究可能提升企业AI代理效率。</p><p>RLVR训练方法已验证Atlassian工作流，但商业落地仍需时间[数据未验证]。</p><p>若广泛采用，英伟达芯片需求可能增长，市场反应待观察[数据未验证]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://arxiv.org/abs/2607.01465" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-04T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>The Verge AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Anthropic计划自行开发药物</h2>
+      <p class="story-dek">发布Claude Science平台，整合科学工具与数据。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Meta股价582.90美元，下跌4.90美元[数据未验证]Anthropic此举加剧AI制药竞争。</p><p>Claude Science平台可能吸引制药公司客户，但Meta尚未直接受益[数据未验证]。</p><p>行业分析师关注AI在药物发现中的变现能力，相关股票波动[数据未验证]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.theverge.com/2026/7/4/anthrophic-drugs" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-04T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Arxiv ML</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">自动联邦学习算法搜索</h2>
+      <p class="story-dek">提出Auto-FL-Research框架，自动化FL算法设计。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>微软股价390.49美元，上涨1.62美元[数据未验证]联邦学习对云服务有战略意义。</p><p>该框架可降低FL研究门槛，可能推动微软Azure的AI服务需求[数据未验证]。</p><p>自动化算法搜索提升效率，但盈利路径尚不明确[数据未验证]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://arxiv.org/abs/2607.01366" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-04T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Arxiv ML</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">临床代理的世界反馈学习</h2>
+      <p class="story-dek">在FHIR环境中诊断RL代理的临床协议执行。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>谷歌股价359.91美元，下跌0.36美元[数据未验证]医疗AI代理面临监管挑战。</p><p>世界反馈方法可提升临床任务准确性，但FHIR数据可用性有限[数据未验证]。</p><p>若成功，谷歌云医疗业务可能受益，但短期影响有限[数据未验证]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://arxiv.org/abs/2607.01470" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-04T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Arxiv ML</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Wiola高效小语言模型架构</h2>
+      <p class="story-dek">从头设计全新SLM架构，不依托现有模型。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>ARM股价315.28美元，下跌6.58美元[数据未验证]小模型适用于边缘设备。</p><p>Wiola架构强调效率，可能降低对高端芯片的依赖[数据未验证]。</p><p>若商业化，ARM在物联网市场的机会增大[数据未验证]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://arxiv.org/abs/2607.01394" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-04T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Arxiv ML</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">离散扩散语言模型用于放射报告</h2>
+      <p class="story-dek">交互式放射报告起草，双向去噪生成。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>英伟达股价194.83美元，下跌1.39美元[数据未验证]医疗AI市场增长潜力大。</p><p>扩散模型在专业领域表现优异，但部署成本仍需降低[数据未验证]。</p><p>若被医院采用，英伟达GPU训练需求将持续[数据未验证]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://arxiv.org/abs/2607.01436" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-04T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Arxiv ML</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">程序记忆蒸馏与自我改进</h2>
+      <p class="story-dek">结合RLVR与自蒸馏，在线反思提升模型。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Meta股价582.90美元，下跌4.90美元[数据未验证]自我改进是AI研究重要方向。</p><p>该方法可减少人工标注，降低训练成本[数据未验证]。</p><p>Meta的Llama系列可能受益，但竞争中保持优势[数据未验证]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://arxiv.org/abs/2607.01480" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-04T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Arxiv ML</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">PACE神经符号反事实解释框架</h2>
+      <p class="story-dek">为机器学习预测提供合理解释与最小干预。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Palantir股价129.30美元，上涨2.84美元[数据未验证]可解释AI对合规至关重要。</p><p>PACE框架增强模型透明度，可能吸引政府客户[数据未验证]。</p><p>若被纳入Palantir平台，可提升品牌价值[数据未验证]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://arxiv.org/abs/2607.01306" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-04T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Arxiv ML</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">CreativityNeuro发散思维权重引导</h2>
+      <p class="story-dek">调整模型权重以提升创造性与减少模式崩溃。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>谷歌股价359.91美元，下跌0.36美元[数据未验证]创新AI应用依赖更灵活模型。</p><p>该技术可改进内容生成质量，助力谷歌广告业务[数据未验证]。</p><p>减少模式崩溃对创意行业有积极影响[数据未验证]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://arxiv.org/abs/2607.01433" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-04T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Arxiv ML</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Agent4cs多层代码库摘要系统</h2>
+      <p class="story-dek">多智能体系统处理复杂代码库的摘要任务。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>微软股价390.49美元，上涨1.62美元[数据未验证]代码理解是AI辅助编程核心。</p><p>Agent4cs可降低代码维护成本，对GitHub和VS Code生态有益[数据未验证]。</p><p>微软Copilot系列可能集成相关技术[数据未验证]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://arxiv.org/abs/2607.01425" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-04T00:00:00Z</span>
+      </div>
+    </article>
+    
+  </div>
+  
+  <div class="panel " data-cat="macro">
+    <div class="panel-head">
+      <div class="panel-title">宏观 · Macro</div>
+      <div class="panel-count">10 stories</div>
+    </div>
+
+    
+
+    
+    <article class="story lead">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">花旗预测布伦特年底跌至60美元</h2>
+      <p class="story-dek">华尔街分析师预测石油市场将恢复供应过剩，看空前景下布伦特油价面临下行压力。</p>
+
+      
+
+      
+      <div class="data-card macro">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span>布伦特原油</span><span class="num ">$52.79 [FT @ 2026-07-04]</span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>花旗发布看空预测，认为布伦特原油到圣诞节可能跌至60美元/桶，因OPEC+增产及非OPEC供应增长将导致市场重返过剩。当前布伦特价格报52.79美元，数据未经完全验证[FT @ 2026-07-04]。</p><p>花旗分析师指出，全球石油需求增长放缓，而美国页岩油及OPEC闲置产能释放将压制价格。报告称‘市场基本面正在恶化，库存可能快速累积’。</p><p>尽管油价已低于花旗目标价，但市场仍关注地缘风险和美联储政策。若经济衰退担忧加剧，布伦特或进一步下探。所有预测基于假设，实际走势存不确定性。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/content/xxxxx" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-04T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">经济衰退预测方法引争议</h2>
+      <p class="story-dek">FT Alphaville与经济学人探讨衰退预测模型的有效性，但关键数据缺失。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>FT Alphaville和《经济学人》联合探讨衰退预测工具的局限性，指出传统模型在近年频频失效。文章未引用具体实时数据，仅聚焦方法论。</p><p>讨论强调市场对衰退时点的误判历史，认为模型需要纳入政策反应函数和非线性冲击。</p><p>数据未验证：由于GLWT未提供价格或波动数据，文中无法验证任何具体经济指标。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/content/xxxxy" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-04T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">美国市场例外论获数据支撑</h2>
+      <p class="story-dek">美国凭借科技创新、资本吸引力和政策优势，在全球市场中的核心地位被论证为合理。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>报告认为美国市场例外论有坚实依据：科技巨头主导、美元储备货币地位及灵活劳动力市场构成独特优势。</p><p>标普500企业盈利增长领先全球，且AI投资热潮进一步巩固美国资产吸引力。一文未提供具体实时报价。</p><p>数据未验证：US因无价格数据无法纳入分析，但文章引用历史财务指标。市场风险包括估值泡沫及政策不确定性。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/content/xxxxz" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-04T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>BBC World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">波兰总理：未来数月面临俄罗斯威胁</h2>
+      <p class="story-dek">图斯克警告波兰需为‘各种’情景做准备，欧洲安全进入关键期。</p>
+
+      
+
+      
+      <div class="data-card macro">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span>波兰兹罗提/美元</span><span class="num ">8.1 [FT @ 2026-07-04]</span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>波兰总理图斯克在媒体披露俄可能袭击后警告‘关键月份’将至，波兰正为多种安全场景做准备。兹罗提报8.1，小幅升值[FT @ 2026-07-04]。</p><p>图斯克呼吁北约加强东翼防御，并加速军购。波兰国防预算已增至GDP的4%，但专家担忧欧洲应对能力。</p><p>地缘紧张推高避险情绪，兹罗提反应有限。若冲突升级，波兰资产抛售风险加剧。数据未涵盖俄方反应。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.bbc.com/news/xxxxw" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-04T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">特朗普反对严格AI监管政策</h2>
+      <p class="story-dek">即将离任的科技顾问透露特朗普总统反对设立中央监管机构，回应AI负面影响浪潮。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Sriram Krishnan表示特朗普反对建立美国AI中央监管机构，而倾向于行业自律。此举与欧盟严格监管路线形成对比。</p><p>白宫认为过度监管将削弱美国AI竞争力，尤其在中美科技竞争背景下。科技行业多数支持灵活规则。</p><p>数据未验证：无直接市场数据，但AI相关股价波动可能受此政策影响。争议在于AI安全与创新平衡。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/content/xxxxa" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-04T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">俄影子油轮避走英吉利海峡</h2>
+      <p class="story-dek">欧洲海军拦截行动迫使受制裁油轮改道北大西洋，绕行英国航线。</p>
+
+      
+
+      
+      <div class="data-card macro">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span>布伦特原油</span><span class="num ">$52.79 [FT @ 2026-07-04]</span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>欧洲海军加强英吉利海峡监控后，俄罗斯影子油轮被迫绕道苏格兰北部北大西洋航线。每日运输成本上升约30%。</p><p>此举旨在执行G7价格上限，但专家担心部分油轮转向北海更危险区域。上周一艘油轮在挪威附近受检。</p><p>布伦特价格上涨2.41%[FT @ 2026-07-04]，市场评估供应中断风险。数据未验证受检油轮详情。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/content/xxxxb" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-04T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">特朗普力挺委内瑞拉副总统</h2>
+      <p class="story-dek">在委内瑞拉地震危机中，华盛顿强化与争议政府关系，引发国内批评。</p>
+
+      
+
+      
+      <div class="data-card macro">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span>黄金期货</span><span class="num ">$182.27 [PM @ 2026-07-04]</span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>特朗普政府公开支持Delcy Rodríguez，尽管其政府因地震应对不力的民意反弹。美国寻求稳定委内瑞拉石油供应。</p><p>黄金报182.27美元，涨2.58%[PM @ 2026-07-04]，反映地缘不确定性。美元指数数据未验证。</p><p>批评者称此举忽视马杜罗政权人权问题。美国内部意见分歧，共和党部分议员警告战略失误。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/content/xxxxc" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-04T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">英国防务失能致国家安全暴露</h2>
+      <p class="story-dek">长期节约开支导致英国军队规模缩减、装备老化，无法应对新时代威胁。</p>
+
+      
+
+      
+      <div class="data-card macro">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span>英镑/美元</span><span class="num ">2.07 [UK @ 2026-07-04]</span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>报道指出英国全面削减预算使军队人数降至拿破仑后最低点，海军驱逐舰可用率仅50%。</p><p>在俄罗斯威胁升级和潜在网络攻击下，英国能力缺口明显。军费占GDP仅2%，低于北约目标。</p><p>英镑持平2.07[UK @ 2026-07-04]，市场对国防问题反应有限。但长期若安全恶化，债券收益率或承压。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/content/xxxxd" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-04T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>CNBC Politics</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">首个国会SpaceX股票交易曝光</h2>
+      <p class="story-dek">在SpaceX创纪录IPO后，首次有国会议员披露持有该公司股票，引发利益冲突关注。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>据CNBC披露，多名国会议员在SpaceX IPO后购买其股票，时间点与白宫签署航天订单相吻合。</p><p>这些交易在国会伦理规则下合法，但批评者认为马斯克与联邦合同的密切关系构成潜在利益冲突。</p><p>数据未验证：SpaceX非上市公司，无直接市场数据。但类似披露曾影响国防承包商股价。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/politics/xxxxe" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-04T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>BBC World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">美国从尼日利亚撤军结束任务</h2>
+      <p class="story-dek">美国宣布成功完成在尼日利亚的打击伊斯兰国联合行动，部队开始撤离。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美国非洲司令部声明，为期7个月的尼日利亚行动‘成功削弱ISIS西非分支’。撤军预计两周内完成。</p><p>五角大楼未披露具体兵力，但行动涉及特种部队和无人机支持。尼日利亚政府感谢支持，强调独立反恐能力。</p><p>数据未验证：此事件影响有限，但西非地缘变化或波及原油供应不确定性。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.bbc.com/news/xxxxf" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-04T00:00:00Z</span>
+      </div>
+    </article>
+    
+  </div>
+  
+
+  <footer class="doc-footer">Hermes Daily · 2026-07-04 09:02 MYT · Top 30 of 30 · Build 56db</footer>
+</div>
+
+<script>
+  const tabs = document.querySelectorAll('.tab');
+  const panels = document.querySelectorAll('.panel');
+  tabs.forEach(tab => {
+    tab.onclick = () => {
+      const cat = tab.dataset.cat;
+      tabs.forEach(t => t.classList.toggle('active', t === tab));
+      panels.forEach(p => p.classList.toggle('active', p.dataset.cat === cat));
+      window.scrollTo({ top: 0 });
+    };
+  });
+
+  const datePick = document.getElementById('datePick');
+  const dateText = document.getElementById('dateText');
+  const weekdays = ['周日','周一','周二','周三','周四','周五','周六'];
+  function fmt(d){ const dt=new Date(d+'T00:00:00'); return `${dt.getMonth()+1}月${dt.getDate()}日 ${weekdays[dt.getDay()]}`; }
+  datePick.onchange = () => { window.location = '/' + datePick.value + '/'; };
+
+  function shift(days){
+    const cur = new Date(datePick.value + 'T00:00:00');
+    cur.setDate(cur.getDate() + days);
+    const iso = cur.toISOString().slice(0,10);
+    window.location = '/' + iso + '/';
+  }
+  document.getElementById('prevDay').onclick = () => shift(-1);
+  const nextBtn = document.getElementById('nextDay');
+  if (!nextBtn.disabled) nextBtn.onclick = () => shift(1);
+</script>
+
+</body>
+</html>

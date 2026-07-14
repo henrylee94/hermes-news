@@ -1,0 +1,438 @@
+{
+  "us_stocks": [
+    {
+      "tag": "us_stocks",
+      "headline": "Rocket Lab空头压力空前",
+      "dek": "看空论点日益强化",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "RKLB",
+            "price": 84.54,
+            "change": 4.77
+          }
+        ]
+      },
+      "body": [
+        "Rocket Lab（RKLB）当前股价84.54美元，上涨4.77%，但空头观点认为其估值过高 [Seeking Alpha @ 数据未验证]。",
+        "市场对太空发射需求的不确定性增加，竞争加剧可能压缩利润率 [Seeking Alpha @ 数据未验证]。",
+        "投资者需关注公司能否持续获得政府及商业合同以支撑增长 [Seeking Alpha @ 数据未验证]。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-28T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "英伟达面临三大威胁",
+      "dek": "风险因素正在积聚",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "NVDA",
+            "price": 192.53,
+            "change": -1.64
+          }
+        ]
+      },
+      "body": [
+        "英伟达（NVDA）股价192.53美元，下跌1.64%，分析师指出三大关键威胁日益明显 [Seeking Alpha @ 数据未验证]。",
+        "竞争对手加速追赶、客户自研芯片趋势以及出口管制可能削弱其市场主导地位 [Seeking Alpha @ 数据未验证]。",
+        "尽管AI需求强劲，但上述风险可能影响长期增长前景 [Seeking Alpha @ 数据未验证]。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-28T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "年中预警：AI超算与信贷风险",
+      "dek": "SpaceX IPO也面临不确定性",
+      "data_card": null,
+      "body": [
+        "年中报告警告AI超大规模计算投资可能过热，私人信贷市场风险上升 [Seeking Alpha @ 数据未验证]。",
+        "SpaceX IPO的估值和时机仍存变数，投资者需谨慎评估 [Seeking Alpha @ 数据未验证]。",
+        "市场波动加剧，建议关注防御性资产配置 [Seeking Alpha @ 数据未验证]。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-28T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "美军袭击伊朗目标",
+      "dek": "油轮遇袭后中东局势升级",
+      "data_card": null,
+      "body": [
+        "美国军方对伊朗目标发动攻击，此前一艘商业油轮在霍尔木兹海峡遭袭 [CNBC @ 数据未验证]。",
+        "此次行动发生在美伊60天停火协议期间，双方正试图达成解决方案 [CNBC @ 数据未验证]。",
+        "地缘政治风险上升可能影响全球能源市场及股市情绪 [CNBC @ 数据未验证]。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-06-28T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "SpaceX快速纳入纳斯达克100",
+      "dek": "ETF买入需求将激增",
+      "data_card": null,
+      "body": [
+        "SpaceX将以快速通道方式加入纳斯达克100指数，成为首批受益于新框架的公司之一 [CNBC @ 数据未验证]。",
+        "此举将引发大量ETF被动买入，推动股价上涨 [CNBC @ 数据未验证]。",
+        "马斯克旗下公司上市进程加速，市场关注其估值和流动性 [CNBC @ 数据未验证]。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-06-28T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "AI交易降温，油价下跌",
+      "dek": "华尔街波动一周回顾",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "MU",
+            "price": 1132.33,
+            "change": -6.69
+          }
+        ]
+      },
+      "body": [
+        "尽管美光（MU）财报亮眼，但股价收跌6.69%至1132.33美元，AI交易整体降温 [CNBC @ 数据未验证]。",
+        "油价下跌有助于缓解通胀压力，但市场仍担忧经济增长放缓 [CNBC @ 数据未验证]。",
+        "本周科技股波动加剧，投资者重新评估AI板块估值 [CNBC @ 数据未验证]。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-06-28T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "股市反弹遭遇新忧虑",
+      "dek": "标普500和纳指全周下跌",
+      "data_card": null,
+      "body": [
+        "标普500和纳斯达克综合指数本周每个交易日均收跌，反弹势头受阻 [MarketWatch @ 数据未验证]。",
+        "新出现的担忧包括通胀粘性、地缘政治风险及企业盈利前景 [MarketWatch @ 数据未验证]。",
+        "市场情绪转向谨慎，投资者寻求避险资产 [MarketWatch @ 数据未验证]。"
+      ],
+      "source_url": "https://www.marketwatch.com",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-06-28T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "高通：免费AI业务",
+      "dek": "AI潜力未被充分定价",
+      "data_card": null,
+      "body": [
+        "高通（QCOM）的AI业务被视为免费附赠价值，市场尚未充分反映其增长潜力 [Seeking Alpha @ 数据未验证]。",
+        "公司在边缘AI和物联网领域的布局可能带来长期收益 [Seeking Alpha @ 数据未验证]。",
+        "投资者需关注其专利授权业务和芯片市场份额变化 [Seeking Alpha @ 数据未验证]。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-28T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "一分钟市场报告：6月27日",
+      "dek": "市场动态速览",
+      "data_card": null,
+      "body": [
+        "2026年6月27日市场报告：主要指数涨跌互现，科技股承压 [Seeking Alpha @ 数据未验证]。",
+        "投资者关注美联储政策动向及经济数据发布 [Seeking Alpha @ 数据未验证]。",
+        "短期波动中建议保持谨慎，关注防御性板块 [Seeking Alpha @ 数据未验证]。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-28T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "意法半导体：转型中，等待回调",
+      "dek": "长期价值需耐心等待",
+      "data_card": null,
+      "body": [
+        "意法半导体（STM）正在进行实质性转型，但当前估值偏高，建议等待回调 [Seeking Alpha @ 数据未验证]。",
+        "公司在汽车和工业芯片领域有优势，但短期需求波动可能影响业绩 [Seeking Alpha @ 数据未验证]。",
+        "长期投资者可关注其技术布局和市场份额变化 [Seeking Alpha @ 数据未验证]。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-28T00:00:00Z",
+      "_warnings": []
+    }
+  ],
+  "my_stocks": [],
+  "ai": [
+    {
+      "tag": "ai",
+      "headline": "亚洲AI初创推出类Mythos模型",
+      "dek": "新模型在亚洲推出，承诺类似Mythos的能力，且无出口禁令风险。美国AI实验室可能永远失去这一巨大市场。",
+      "data_card": null,
+      "body": [
+        "亚洲AI初创公司推出类Mythos模型，旨在规避美国出口禁令。这些模型提供类似Anthropic Mythos的能力，但不受美国限制。",
+        "美国AI实验室可能因出口禁令失去亚洲市场。新模型在亚洲本地开发，无需依赖美国技术。",
+        "此举可能改变全球AI竞争格局。亚洲市场巨大，美国AI公司或面临长期市场份额损失。"
+      ],
+      "source_url": "https://techcrunch.com/ai",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-28T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "特朗普政府授权百家公司用Mythos",
+      "dek": "超过100家公司和政府机构获授权使用Mythos 5，包括其非美国员工。",
+      "data_card": null,
+      "body": [
+        "特朗普政府授权超过100家美国公司和政府机构使用Anthropic的Mythos 5模型。这些机构包括非美国员工。",
+        "此举扩大Mythos 5的使用范围，可能加速AI应用。授权涵盖多个行业，包括科技、金融和国防。",
+        "Mythos 5的广泛使用可能推动AI创新，但也引发隐私和安全担忧。政府未透露具体授权名单。"
+      ],
+      "source_url": "https://techcrunch.com/ai",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-28T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "苹果Vision Pro高管据报将加入OpenAI",
+      "dek": "苹果负责Vision Pro的副总裁Paul Meade据报将离职，加入OpenAI的硬件团队。",
+      "data_card": null,
+      "body": [
+        "苹果Vision Pro负责人Paul Meade据报将离职，加入OpenAI硬件团队。Meade在苹果负责头显开发。",
+        "此举可能影响苹果AR/VR战略。OpenAI正扩展硬件业务，Meade的加入将带来丰富经验。",
+        "苹果未回应此消息。OpenAI硬件团队此前已从苹果、Meta等公司招募多名高管。"
+      ],
+      "source_url": "https://techcrunch.com/ai",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-28T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "软银CEO质疑马斯克轨道数据中心",
+      "dek": "并非所有人都相信马斯克关于轨道数据中心的愿景。软银CEO也提出疑问。",
+      "data_card": null,
+      "body": [
+        "软银CEO孙正义对马斯克的轨道数据中心计划表示质疑。该计划旨在将数据中心送入太空。",
+        "孙正义认为技术可行性和成本效益存疑。其他行业专家也指出延迟和散热问题。",
+        "马斯克此前宣称轨道数据中心可降低延迟。但批评者认为地面数据中心更经济实用。"
+      ],
+      "source_url": "https://techcrunch.com/ai",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-28T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "阿特伍德：AI问题是垃圾进垃圾出",
+      "dek": "《使女的故事》作者玛格丽特·阿特伍德在葡萄牙Babell文学节上表示，AI的核心问题是数据质量。",
+      "data_card": null,
+      "body": [
+        "玛格丽特·阿特伍德在Babell文学节上批评AI的“垃圾进垃圾出”问题。她指出AI输出质量取决于输入数据。",
+        "阿特伍德认为AI可能放大偏见和错误。她呼吁关注数据来源和算法透明度。",
+        "文学节上，阿特伍德还讨论了AI对创意产业的影响。她警告不要过度依赖AI生成内容。"
+      ],
+      "source_url": "https://www.theverge.com/ai",
+      "source_name": "The Verge AI",
+      "timestamp": "2026-06-28T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "最健康创始人患癌后用AI抗争",
+      "dek": "Connor Christou在确诊癌症后，将血液结果、扫描数据、可穿戴设备输出和日记输入Claude，用AI辅助治疗。",
+      "data_card": null,
+      "body": [
+        "Connor Christou，一位以健康著称的创始人，在确诊癌症后利用AI工具Claude分析个人健康数据。他输入了血液结果、扫描数据、可穿戴设备输出和日记。",
+        "AI帮助他识别模式并优化治疗方案。Christou表示AI提供了传统医疗未发现的见解。",
+        "此案例展示了AI在个性化医疗中的潜力。但专家提醒AI不能替代专业医疗建议。"
+      ],
+      "source_url": "https://techcrunch.com/ai",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-28T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "苹果因AI成本涨价引用户不满",
+      "dek": "蒂姆·库克称涨价“不可避免”，16英寸MacBook Pro涨价300美元，11英寸iPad Air从599美元起。",
+      "data_card": null,
+      "body": [
+        "苹果因AI投资成本上涨产品价格。蒂姆·库克表示涨价“不可避免”，并称定价“不可持续”。",
+        "16英寸MacBook Pro涨价300美元，11英寸iPad Air起售价从599美元上调。用户质疑苹果将AI成本转嫁消费者。",
+        "苹果正大力投资AI基础设施。分析师认为涨价可能影响销量，但苹果用户忠诚度较高。"
+      ],
+      "source_url": "https://www.theverge.com/ai",
+      "source_name": "The Verge AI",
+      "timestamp": "2026-06-28T00:00:00Z",
+      "_warnings": []
+    }
+  ],
+  "macro": [
+    {
+      "tag": "macro",
+      "headline": "美国连续第二天打击伊朗",
+      "dek": "Military action in response to Iranian attacks on shipping is a further blow to hopes of sustained ceasefire",
+      "data_card": null,
+      "body": [
+        "US conducted second day of airstrikes against Iranian military assets.",
+        "Strikes follow Iranian attacks on commercial shipping in the Strait of Hormuz.",
+        "Sustained ceasefire hopes diminish as hostilities continue."
+      ],
+      "source_url": "https://www.ft.com/content/us-iran-strikes-day2",
+      "source_name": "FT World",
+      "timestamp": "2026-06-28T10:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "美国打击伊朗指责德黑兰违反停火",
+      "dek": "The attack comes as the United States and Iran are supposed to be engaging in a 60-period of no hostilities as they hold talks to end their war.",
+      "data_card": null,
+      "body": [
+        "Trump accuses Iran of violating ceasefire in the Strait of Hormuz.",
+        "US strikes target Iranian positions as retaliation.",
+        "The 60-day no-hostilities period is now in jeopardy."
+      ],
+      "source_url": "https://www.cnbc.com/politics/us-strikes-iran",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-06-28T10:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "美因伊朗攻击货船发动打击",
+      "dek": "Washington says ‘unwarranted aggression against commercial shipping’ violated ceasefire between adversaries",
+      "data_card": null,
+      "body": [
+        "Iran attacked a container ship in the region.",
+        "US launches airstrikes in retaliation for the attack.",
+        "Washington cites violation of ceasefire as justification."
+      ],
+      "source_url": "https://www.ft.com/content/us-strikes-iran-shipping",
+      "source_name": "FT World",
+      "timestamp": "2026-06-28T10:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "美国打击伊朗回应货船袭击",
+      "dek": "Iran accuses the US of violating their deal and says it struck targets linked to American forces in response.",
+      "data_card": null,
+      "body": [
+        "US military strikes follow attack on cargo ship.",
+        "Iran claims US violated the ceasefire deal.",
+        "Iran retaliates by striking targets linked to American forces."
+      ],
+      "source_url": "https://www.bbc.com/news/us-iran-cargo-ship",
+      "source_name": "BBC World",
+      "timestamp": "2026-06-28T10:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "以色列打击黎巴嫩真主党谴责新协议",
+      "dek": "Strikes have killed at least one person, state media say a day after Lebanon and Israel signed a framework agreement.",
+      "data_card": null,
+      "body": [
+        "Israel conducts airstrikes in southern Lebanon.",
+        "Hezbollah condemns the newly signed framework agreement.",
+        "Strikes cause casualties, with state media reporting fatalities."
+      ],
+      "source_url": "https://www.bbc.com/news/israel-lebanon-strikes",
+      "source_name": "BBC World",
+      "timestamp": "2026-06-28T10:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "德国车企因中国竞争大幅裁员",
+      "dek": "Threat to industrial model of Europe’s largest economy mounts",
+      "data_card": null,
+      "body": [
+        "German carmakers announce historic job cuts.",
+        "Chinese competitors are flooding the market with affordable vehicles.",
+        "The cuts threaten Germany's traditional industrial model."
+      ],
+      "source_url": "https://www.ft.com/content/german-carmakers-job-cuts",
+      "source_name": "FT World",
+      "timestamp": "2026-06-28T10:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "全球芯片股估值昂贵",
+      "dek": "Valuations are high for AI-exposed markets",
+      "data_card": null,
+      "body": [
+        "Chipmaker stocks are trading at elevated valuations globally.",
+        "High prices are driven by exposure to artificial intelligence.",
+        "Investors worry about sustainability of current valuations."
+      ],
+      "source_url": "https://www.ft.com/content/chipmakers-expensive",
+      "source_name": "FT World",
+      "timestamp": "2026-06-28T10:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "波罗的海国家敦促欧盟加速禁止俄油",
+      "dek": "Talks about the phaseout stalled after the closure of the Strait of Hormuz sparked concerns of an energy supply crisis",
+      "data_card": null,
+      "body": [
+        "Baltic states urge the EU to speed up a ban on Russian oil imports.",
+        "Phaseout negotiations stalled due to the Strait of Hormuz closure.",
+        "Concerns about a potential energy supply crisis are rising."
+      ],
+      "source_url": "https://www.ft.com/content/baltic-states-russian-oil-ban",
+      "source_name": "FT World",
+      "timestamp": "2026-06-28T10:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "热浪破纪录德国丹麦捷克",
+      "dek": "An estimated 150 million people are now experiencing temperatures of over 35C across Europe.",
+      "data_card": null,
+      "body": [
+        "A heatwave breaks temperature records in Germany, Denmark, and the Czech Republic.",
+        "Large numbers of people across Europe face extreme heat, with temperatures exceeding 35°C.",
+        "The heatwave is expected to persist, raising health concerns."
+      ],
+      "source_url": "https://www.bbc.com/news/heatwave-europe-records",
+      "source_name": "BBC World",
+      "timestamp": "2026-06-28T10:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "委内瑞拉地震死亡人数上升民众愤怒",
+      "dek": "Country’s US-backed interim leader Delcy Rodríguez accused of failing to provide help for the victims",
+      "data_card": null,
+      "body": [
+        "The earthquake death toll in Venezuela continues to climb.",
+        "Anger grows over the slow government response to the disaster.",
+        "Interim leader Delcy Rodríguez is accused of neglecting victims."
+      ],
+      "source_url": "https://www.ft.com/content/venezuela-earthquake-deaths",
+      "source_name": "FT World",
+      "timestamp": "2026-06-28T10:00:00Z",
+      "_warnings": []
+    }
+  ]
+}

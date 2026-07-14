@@ -1,0 +1,469 @@
+{
+  "us_stocks": [
+    {
+      "tag": "📈 个股",
+      "headline": "SoFi Technologies: Expanding Mar",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From Seeking Alpha.",
+        "Extraction failed.",
+        "Source: https://seekingalpha.com/article/4918639-sofi-technologies-expanding-margins-and-the-moat-fuel-strong-upside?source=feed_all_articles"
+      ],
+      "source_url": "https://seekingalpha.com/article/4918639-sofi-technologies-expanding-margins-and-the-moat-fuel-strong-upside?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "timestamp": "09:05 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "📈 个股",
+      "headline": "Iridium Communications And Rocke",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From Seeking Alpha.",
+        "Extraction failed.",
+        "Source: https://seekingalpha.com/article/4918637-iridium-communications-and-rocket-lab-take-off-to-orbit-together?source=feed_all_articles"
+      ],
+      "source_url": "https://seekingalpha.com/article/4918637-iridium-communications-and-rocket-lab-take-off-to-orbit-together?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "timestamp": "09:05 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "📈 个股",
+      "headline": "AeroVironment soars 19% on earni",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From CNBC.",
+        "Extraction failed.",
+        "Source: https://www.cnbc.com/2026/06/29/aerovironment-stock-soars-on-earnings-beat-backlog-grows-to-1point2b.html"
+      ],
+      "source_url": "https://www.cnbc.com/2026/06/29/aerovironment-stock-soars-on-earnings-beat-backlog-grows-to-1point2b.html",
+      "source_name": "CNBC",
+      "timestamp": "09:05 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "📈 个股",
+      "headline": "What Might The Fed Do With Rates",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From Seeking Alpha.",
+        "Extraction failed.",
+        "Source: https://seekingalpha.com/article/4918642-what-might-the-fed-do-with-rates-after-june-job-report?source=feed_all_articles"
+      ],
+      "source_url": "https://seekingalpha.com/article/4918642-what-might-the-fed-do-with-rates-after-june-job-report?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "timestamp": "09:05 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "📈 个股",
+      "headline": "ProPetro Holding: Hidden Data Ce",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From Seeking Alpha.",
+        "Extraction failed.",
+        "Source: https://seekingalpha.com/article/4918652-propetro-holding-stock-hidden-data-center-bet-getting-traction?source=feed_all_articles"
+      ],
+      "source_url": "https://seekingalpha.com/article/4918652-propetro-holding-stock-hidden-data-center-bet-getting-traction?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "timestamp": "09:05 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "📈 个股",
+      "headline": "Dow Hits Record as Tech Starts W",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From MarketWatch.",
+        "Extraction failed.",
+        "Source: https://www.wsj.com/finance/stocks/dow-hits-record-as-tech-starts-week-strong-f251b661?mod=rss_markets_main"
+      ],
+      "source_url": "https://www.wsj.com/finance/stocks/dow-hits-record-as-tech-starts-week-strong-f251b661?mod=rss_markets_main",
+      "source_name": "MarketWatch",
+      "timestamp": "09:05 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "📈 个股",
+      "headline": "Key Indicators Point To A Strong",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From Seeking Alpha.",
+        "Extraction failed.",
+        "Source: https://seekingalpha.com/article/4918633-key-indicators-point-to-strong-rally?source=feed_all_articles"
+      ],
+      "source_url": "https://seekingalpha.com/article/4918633-key-indicators-point-to-strong-rally?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "timestamp": "09:05 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "📈 个股",
+      "headline": "Dallas Fed Manufacturing: Stable",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From Seeking Alpha.",
+        "Extraction failed.",
+        "Source: https://seekingalpha.com/article/4918653-dallas-fed-manufacturing-stable-business-conditions-in-june?source=feed_all_articles"
+      ],
+      "source_url": "https://seekingalpha.com/article/4918653-dallas-fed-manufacturing-stable-business-conditions-in-june?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "timestamp": "09:05 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "📈 个股",
+      "headline": "Massive Volkswagen Layoffs A Con",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From Seeking Alpha.",
+        "Extraction failed.",
+        "Source: https://seekingalpha.com/article/4918647-massive-volkswagen-layoffs-consequence-expanding-chinese-automotive-invasion?source=feed_all_articles"
+      ],
+      "source_url": "https://seekingalpha.com/article/4918647-massive-volkswagen-layoffs-consequence-expanding-chinese-automotive-invasion?source=feed_all_articles",
+      "source_name": "Seeking Alpha",
+      "timestamp": "09:05 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "📈 个股",
+      "headline": "Oil prices rise as U.S. and Iran",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From CNBC.",
+        "Extraction failed.",
+        "Source: https://www.cnbc.com/2026/06/29/oil-prices-wti-brent-crude-us-iran-strikes-strait-hormuz-talks.html"
+      ],
+      "source_url": "https://www.cnbc.com/2026/06/29/oil-prices-wti-brent-crude-us-iran-strikes-strait-hormuz-talks.html",
+      "source_name": "CNBC",
+      "timestamp": "09:05 MYT",
+      "_degraded": true,
+      "_warnings": []
+    }
+  ],
+  "my_stocks": [],
+  "ai": [
+    {
+      "tag": "ai",
+      "headline": "韩国芯片巨头承诺5500亿美元缓解内存危机",
+      "dek": "全球两大内存芯片制造商宣布建设更多内存实验室晶圆厂，韩国定位为AI技术强国。",
+      "data_card": null,
+      "body": [
+        "韩国两大内存芯片巨头承诺投资超过5500亿美元，以缓解全球‘RAMageddon’内存短缺危机。此举旨在扩大内存实验室晶圆厂产能，巩固韩国在AI芯片领域的领导地位。",
+        "这些投资将用于建设先进内存制造设施，支持AI和高性能计算需求。韩国政府表示，此举将推动国家成为全球AI技术枢纽。",
+        "分析师指出，内存供应紧张可能持续至2027年，韩国巨头的长期投资有助于稳定市场。数据未验证具体投资分配。"
+      ],
+      "source_url": "https://techcrunch.com/2026/06/30/south-korean-tech-giants-commit-over-550b-to-ease-ramageddon/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Import AI 463：自我改进机器人与中国万卡集群",
+      "dek": "本期涵盖自我改进机器人、中国万卡GPU集群及人类时代挽歌。",
+      "data_card": null,
+      "body": [
+        "Import AI 463期报道了自我改进机器人的最新进展，机器人可通过强化学习自主优化技能。同时，中国部署了超过10,000块GPU的集群，用于大规模AI训练。",
+        "文章还包含一篇对人类时代的挽歌式文章，反思AI对就业和社会的影响。这些内容展示了AI技术的快速演进及其社会后果。",
+        "数据未验证具体机器人性能或GPU集群细节。"
+      ],
+      "source_url": "https://jack-clark.net/2026/06/30/import-ai-463-self-improving-robots-a-10k-chinese-gpu-cluster-and-an-elegiac-essay-for-the-human-era/",
+      "source_name": "Import AI",
+      "timestamp": "2026-06-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Anthropic与加州政府达成Claude半价协议",
+      "dek": "Anthropic与加州州长纽森达成协议，允许加州政府以半价使用Claude，联邦政府成为对手。",
+      "data_card": null,
+      "body": [
+        "Anthropic与加州州长纽森达成协议，允许加州政府以半价使用其AI模型Claude。此举加深了Anthropic与加州的关系，同时使联邦政府成为其对手。",
+        "该协议旨在推动AI在公共服务中的应用，包括文档处理和数据分析。Anthropic表示，这将帮助加州节省数百万美元。",
+        "联邦政府此前对Anthropic的监管态度强硬，此次合作可能加剧双方紧张关系。数据未验证具体价格或合同细节。"
+      ],
+      "source_url": "https://techcrunch.com/2026/06/30/anthropic-and-gov-newsom-forge-deal-allowing-california-government-to-use-claude-at-half-price/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Omen AI融资3100万美元优化数据中心冷却",
+      "dek": "Omen AI完成3100万美元A轮融资，用于监控芯片冷却液并防止数据中心细菌爆发。",
+      "data_card": null,
+      "body": [
+        "Omen AI宣布完成3100万美元A轮融资，用于开发数据中心冷却液监控系统。该系统可实时检测细菌爆发，防止设备损坏。",
+        "Omen AI的技术通过传感器和AI算法监控冷却液质量，确保数据中心高效运行。该公司计划将资金用于产品开发和市场扩张。",
+        "数据中心冷却问题日益突出，Omen AI的解决方案有望降低运营成本和停机风险。数据未验证具体融资细节或客户案例。"
+      ],
+      "source_url": "https://techcrunch.com/2026/06/30/omen-ais-plan-to-optimize-data-centers-is-all-wet/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Ornith-1.0：自脚手架LLM代理编码模型",
+      "dek": "Ornith-1.0是一个开源权重模型，支持自脚手架LLM代理编码，采用MIT许可。",
+      "data_card": null,
+      "body": [
+        "Ornith-1.0是一个新的开源权重模型，采用MIT许可，专注于自脚手架LLM代理编码。该模型允许AI自主构建和优化代码结构。",
+        "该模型通过自我改进机制，在编码任务中表现出色，可减少人工干预。开发者可在GitHub上获取模型权重。",
+        "Ornith-1.0的发布为代理编码领域提供了新工具，有望加速软件开发自动化。数据未验证具体性能基准。"
+      ],
+      "source_url": "https://deep-reinforce.com/ornith_1_0.html",
+      "source_name": "Simon Willison",
+      "timestamp": "2026-06-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "AI模型网络：概念、现状与未来",
+      "dek": "论文提出AI模型网络概念，强调共享与协作，超越传统计算。",
+      "data_card": null,
+      "body": [
+        "arXiv:2606.27382v1提出AI模型网络概念，将互联网的共享与协作理念应用于AI模型。该框架旨在促进模型间的互操作性和联合学习。",
+        "论文分析了当前AI模型孤岛问题，并提出了一个去中心化网络架构，支持模型动态组合和知识共享。",
+        "未来方向包括标准化接口和隐私保护机制，以推动AI模型网络的广泛应用。数据未验证具体实现细节。"
+      ],
+      "source_url": "https://arxiv.org/abs/2606.27382",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-06-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "内化未来：世界模型规划的统一代理训练",
+      "dek": "论文提出统一代理训练范式，使LLM代理具备前瞻性规划能力。",
+      "data_card": null,
+      "body": [
+        "arXiv:2606.27483v1提出一种统一代理训练范式，使LLM代理内化未来状态，实现世界模型规划。该方法克服了传统代理的被动反应特性。",
+        "通过将未来预测融入训练过程，代理能在长期任务中做出更优决策。实验显示，该方法在复杂环境中提升了规划效率。",
+        "该研究为构建主动型AI代理提供了新路径，有望应用于机器人、游戏等领域。数据未验证具体性能指标。"
+      ],
+      "source_url": "https://arxiv.org/abs/2606.27483",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-06-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Odyssey：可验证的局部真值保持基础模型",
+      "dek": "论文提出Odyssey范畴框架，用于构建可验证的局部真值保持基础模型。",
+      "data_card": null,
+      "body": [
+        "arXiv:2606.27593v1引入Odyssey范畴框架，通过组合foundries构建可验证的局部真值保持基础模型。该框架确保模型输出在局部范围内一致。",
+        "Odyssey利用范畴论原理，将模型分解为可验证组件，减少错误传播。该方法适用于需要高可靠性的AI应用。",
+        "论文展示了在自然语言处理任务中的初步结果，验证了框架的有效性。数据未验证具体实验数据。"
+      ],
+      "source_url": "https://arxiv.org/abs/2606.27593",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-06-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "基础迭代语言规划：参数化世界模型减少幻觉",
+      "dek": "论文提出参数化世界模型，减少LLM代理中的幻觉传播。",
+      "data_card": null,
+      "body": [
+        "arXiv:2606.27806v1研究两种世界模型：基于代理的LLM API模型和参数化模型。参数化世界模型通过结构化表示减少幻觉传播。",
+        "实验表明，参数化世界模型在长期规划任务中更稳定，错误率显著降低。该方法可提升AI代理在复杂环境中的可靠性。",
+        "该研究为构建更可靠的AI代理提供了理论基础，适用于自动驾驶、机器人等领域。数据未验证具体错误率。"
+      ],
+      "source_url": "https://arxiv.org/abs/2606.27806",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-06-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "人格组成何时影响多代理LLM团队？",
+      "dek": "论文研究人格提示对多代理LLM团队任务结果的影响。",
+      "data_card": null,
+      "body": [
+        "arXiv:2606.27443v1探讨人格提示如何影响多代理LLM团队的协作效果。研究发现，人格组成在特定任务中显著影响团队表现。",
+        "在需要创造力的任务中，多样化人格团队表现更好；而在结构化任务中，一致性人格更优。该发现为设计AI团队提供了指导。",
+        "论文呼吁进一步研究人格与任务类型的匹配，以优化多代理系统。数据未验证具体实验数据。"
+      ],
+      "source_url": "https://arxiv.org/abs/2606.27443",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-06-30T00:00:00Z",
+      "_warnings": []
+    }
+  ],
+  "macro": [
+    {
+      "tag": "macro",
+      "headline": "特朗普提名桑德林为劳工部长",
+      "dek": "总统特朗普在Truth Social上宣布，将提名代理劳工部长基思·桑德林正式担任该职务，需参议院批准。",
+      "data_card": null,
+      "body": [
+        "美国总统特朗普周一在Truth Social上发帖称，将提名代理劳工部长基思·桑德林永久担任该职务，此任命需获得参议院批准。",
+        "桑德林目前担任代理劳工部长，若获确认，将正式领导美国劳工部。",
+        "该消息来自CNBC Politics，具体投票时间尚未公布。"
+      ],
+      "source_url": "https://www.cnbc.com/politics",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-06-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "英国孕产妇护理调查发现系统失灵",
+      "dek": "政府接受任命国家孕产妇和新生儿专员的提议。",
+      "data_card": null,
+      "body": [
+        "一项针对英格兰孕产妇护理的调查发现存在“整体系统失灵”，政府已接受任命国家孕产妇和新生儿专员的提议。",
+        "调查结果揭示了护理中的系统性缺陷，促使政府采取行动改善服务。",
+        "该报道来自FT World，具体改革时间表尚未公布。"
+      ],
+      "source_url": "https://www.ft.com/world",
+      "source_name": "FT World",
+      "timestamp": "2026-06-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "英国监管机构放宽加密规则",
+      "dek": "FCA在收到投诉后，放宽了资本和披露要求。",
+      "data_card": null,
+      "body": [
+        "英国金融行为监管局（FCA）放宽了具有里程碑意义的加密货币规则，降低了资本和披露要求。",
+        "此前，行业投诉称即将出台的数字资产制度过于繁重，FCA因此做出调整。",
+        "该报道来自FT World，新规则的具体实施日期未公布。"
+      ],
+      "source_url": "https://www.ft.com/world",
+      "source_name": "FT World",
+      "timestamp": "2026-06-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "英国儿童零花钱通胀超预期",
+      "dek": "年度调查显示，平均每个孩子每周获得10英镑零花钱。",
+      "data_card": null,
+      "body": [
+        "英国“牙仙”平均支付金额接近5英镑，儿童财务增长超过通胀率。",
+        "年度调查还显示，平均每个孩子每周获得10英镑零花钱，反映了家庭支出趋势。",
+        "该报道来自FT World，具体调查机构未提及。"
+      ],
+      "source_url": "https://www.ft.com/world",
+      "source_name": "FT World",
+      "timestamp": "2026-06-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "中国流亡商人郭文贵被判30年",
+      "dek": "因5.5亿美元欺诈案，郭文贵被判30年监禁。",
+      "data_card": null,
+      "body": [
+        "中国流亡商人郭文贵因5.5亿美元欺诈案被判处30年监禁。",
+        "郭文贵曾逃往美国声称受迫害，后与Maga运动结盟。",
+        "该报道来自FT World，判决已在美国法院作出。"
+      ],
+      "source_url": "https://www.ft.com/world",
+      "source_name": "FT World",
+      "timestamp": "2026-06-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "国防承包商游说阻止回购禁令",
+      "dek": "国防公司及其贸易团体向国会施压，要求不要求五角大楼批准股票回购。",
+      "data_card": null,
+      "body": [
+        "国防公司及其贸易团体正在向国会施压，要求不要求五角大楼批准股票回购。",
+        "行业游说者推动众议院委员会阻止一项禁止国防承包商回购自身股票的禁令。",
+        "该报道来自CNBC Politics，具体投票时间未公布。"
+      ],
+      "source_url": "https://www.cnbc.com/politics",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-06-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "埃塞俄比亚达成10亿美元债券减付协议",
+      "dek": "债券持有人协议是在近年来官方债权人减免80亿美元债务后达成的。",
+      "data_card": null,
+      "body": [
+        "埃塞俄比亚达成协议，削减10亿美元债券的支付金额。",
+        "债券持有人协议是在近年来官方债权人减免80亿美元债务后达成的。",
+        "该报道来自FT World，具体减付条款未公布。"
+      ],
+      "source_url": "https://www.ft.com/world",
+      "source_name": "FT World",
+      "timestamp": "2026-06-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "斯塔默公布50亿英镑无人机国防计划",
+      "dek": "长期拖延的蓝图不太可能结束军方对更多资金的呼吁。",
+      "data_card": null,
+      "body": [
+        "英国首相基尔·斯塔默将公布一项国防计划，拨款50亿英镑用于无人机。",
+        "长期拖延的蓝图不太可能结束军方对更多资金的呼吁。",
+        "该报道来自FT World，具体计划细节未公布。"
+      ],
+      "source_url": "https://www.ft.com/world",
+      "source_name": "FT World",
+      "timestamp": "2026-06-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "超微台湾办公室因芯片走私被查",
+      "dek": "今日新闻：中国因北京坠机停飞轻型飞机，外国投资者担心日本改革倒退。",
+      "data_card": null,
+      "body": [
+        "超微电脑在台湾的办公室因芯片走私调查被突击搜查。",
+        "此外，中国因北京坠机事件停飞轻型飞机，外国投资者担心日本改革倒退。",
+        "该报道来自FT World，具体调查进展未公布。"
+      ],
+      "source_url": "https://www.ft.com/world",
+      "source_name": "FT World",
+      "timestamp": "2026-06-30T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "《星际宝贝》演员死于艾滋病",
+      "dek": "女演员戴维·蔡斯本月在洛杉矶去世，年仅35岁。",
+      "data_card": null,
+      "body": [
+        "《星际宝贝》主演戴维·蔡斯的死因是艾滋病，她本月在洛杉矶去世，年仅35岁。",
+        "蔡斯还曾在恐怖片《午夜凶铃》中从电视里爬出，给观众留下深刻印象。",
+        "该报道来自BBC World，具体死亡日期未公布。"
+      ],
+      "source_url": "https://www.bbc.com/world",
+      "source_name": "BBC World",
+      "timestamp": "2026-06-30T00:00:00Z",
+      "_warnings": []
+    }
+  ]
+}

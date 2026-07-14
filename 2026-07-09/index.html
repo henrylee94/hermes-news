@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>Hermes Daily · 2026-07-09</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;900&family=Noto+Serif+SC:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --bg: #ffffff; --ink: #1d1d1f; --ink-soft: #424245; --ink-light: #86868b;
+    --divider: #d2d2d7; --accent-red: #c8102e; --accent-blue: #0066cc;
+    --accent-amber: #d97706; --accent-green: #00855b; --card-bg: #fafafa;
+    --nav-bg: rgba(255,255,255,0.85);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1a1a1c; --ink: #f5f5f7; --ink-soft: #c7c7cc; --ink-light: #8e8e93;
+      --divider: #38383a; --card-bg: #2c2c2e; --nav-bg: rgba(26,26,28,0.85);
+    }
+  }
+
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: var(--bg); color: var(--ink); line-height: 1.5;
+    -webkit-font-smoothing: antialiased; overflow-x: hidden;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+  .topbar { position: sticky; top: 0; z-index: 100; background: var(--nav-bg); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid var(--divider); }
+  .topbar-inner { max-width: 720px; margin: 0 auto; padding: 11px 24px; display: flex; align-items: center; justify-content: space-between; }
+  .brand { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 900; letter-spacing: -0.5px; }
+
+  .date-picker { display: flex; align-items: center; gap: 8px; }
+  .date-picker button { background: none; border: none; color: var(--ink-light); font-size: 20px; cursor: pointer; padding: 0 2px; line-height: 1; }
+  .date-picker button:hover { color: var(--accent-blue); }
+  .date-picker button:disabled { opacity: 0.25; cursor: default; }
+  .date-display { position: relative; font-size: 13px; font-weight: 600; color: var(--ink); font-variant-numeric: tabular-nums; cursor: pointer; padding: 5px 10px; border-radius: 8px; background: var(--card-bg); display: flex; align-items: center; gap: 6px; }
+  .date-display:hover { color: var(--accent-blue); }
+  .date-display input[type="date"] { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%; }
+  .date-display .cal-icon { font-size: 12px; }
+
+  .tabs { position: sticky; top: 47px; z-index: 99; background: var(--nav-bg); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid var(--divider); }
+  .tabs-inner { max-width: 720px; margin: 0 auto; padding: 0 12px; display: flex; gap: 2px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .tabs-inner::-webkit-scrollbar { display: none; }
+  .tab { flex: 1 0 auto; min-width: 72px; text-align: center; padding: 13px 14px; font-size: 14px; font-weight: 600; color: var(--ink-light); border-bottom: 2.5px solid transparent; cursor: pointer; white-space: nowrap; transition: color .15s, border-color .15s; background: none; font-family: inherit; }
+  .tab.active { color: var(--ink); }
+  .tab[data-cat="us_stocks"].active { border-bottom-color: var(--accent-red); }
+  .tab[data-cat="my_stocks"].active { border-bottom-color: var(--accent-amber); }
+  .tab[data-cat="ai"].active { border-bottom-color: var(--accent-blue); }
+  .tab[data-cat="macro"].active { border-bottom-color: var(--accent-green); }
+  .tab .count { display: inline-block; min-width: 18px; padding: 1px 5px; margin-left: 3px; font-size: 11px; font-weight: 600; border-radius: 9px; background: var(--card-bg); color: var(--ink-light); }
+  .tab.active .count { background: var(--ink); color: var(--bg); }
+
+  .masthead { padding: 28px 0 4px; }
+  .masthead-title { font-family: 'Playfair Display','Noto Serif SC',serif; font-size: 44px; font-weight: 900; letter-spacing: -1px; line-height: 1; }
+  .masthead-sub { font-size: 12px; color: var(--ink-light); margin-top: 8px; text-transform: uppercase; letter-spacing: 1.2px; }
+
+  .panel { display: none; }
+  .panel.active { display: block; animation: fade .25s ease; }
+  @keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+  .panel-head { margin: 32px 0 22px; padding-bottom: 12px; border-bottom: 1px solid var(--divider); display: flex; align-items: baseline; justify-content: space-between; }
+  .panel-title { font-family: 'Playfair Display','Noto Serif SC',serif; font-size: 26px; font-weight: 700; }
+  .panel-count { font-size: 11px; color: var(--ink-light); text-transform: uppercase; letter-spacing: 1.2px; }
+
+  .story { margin-bottom: 40px; padding-bottom: 40px; border-bottom: 1px solid var(--divider); }
+  .story:last-child { border-bottom: none; }
+  .story-meta { display: flex; gap: 10px; align-items: center; font-size: 11px; color: var(--ink-light); text-transform: uppercase; letter-spacing: 1.1px; margin-bottom: 11px; }
+  .story-meta .dot { color: var(--divider); }
+  .tag-us_stocks { color: var(--accent-red); font-weight: 600; }
+  .tag-my_stocks { color: var(--accent-amber); font-weight: 600; }
+  .tag-ai { color: var(--accent-blue); font-weight: 600; }
+  .tag-macro { color: var(--accent-green); font-weight: 600; }
+
+  .story-headline { font-family: 'Playfair Display','Noto Serif SC',serif; font-size: 28px; font-weight: 700; line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 10px; }
+  .story.lead .story-headline { font-size: 34px; }
+  .story-dek { font-size: 16px; color: var(--ink-soft); line-height: 1.55; margin-bottom: 16px; }
+
+  .story-hero { width: 100%; height: 210px; border-radius: 8px; margin-bottom: 16px; display: flex; align-items: center; justify-content: center; color: var(--ink-light); font-size: 11px; letter-spacing: 1px; text-transform: uppercase; overflow: hidden; background: linear-gradient(135deg,#f5f5f7,#e8e8ed 50%,#d8d8df); }
+  .story-hero img { width: 100%; height: 100%; object-fit: cover; }
+
+  .data-card { background: var(--card-bg); border-left: 3px solid var(--accent-red); padding: 13px 17px; margin: 16px 0; border-radius: 0 6px 6px 0; }
+  .data-card.my_stocks { border-left-color: var(--accent-amber); }
+  .data-card.ai { border-left-color: var(--accent-blue); }
+  .data-card.macro { border-left-color: var(--accent-green); }
+  .data-card-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--ink-light); margin-bottom: 7px; }
+  .data-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px; font-size: 14px; }
+  .data-row .num { font-weight: 600; font-variant-numeric: tabular-nums; }
+  .data-row .up { color: var(--accent-red); }
+  .data-row .down { color: #00a35c; }
+  .data-citation { font-size: 10px; color: var(--ink-light); margin-top: 7px; font-style: italic; }
+
+  .story-body p { font-size: 15px; line-height: 1.65; margin-bottom: 13px; }
+  .story-body p:first-of-type::first-letter { font-family: 'Playfair Display',serif; font-size: 36px; font-weight: 900; line-height: 1; color: var(--accent-red); padding-right: 2px; }
+
+  .story-warning { background: #fff3cd; border-left: 3px solid #d97706; padding: 11px 15px; margin: 14px 0; color: #856404; font-size: 13px; border-radius: 0 4px 4px 0; }
+  @media (prefers-color-scheme: dark) { .story-warning { background: #3a2e10; color: #fde68a; } }
+
+  .story-source { margin-top: 18px; padding-top: 13px; border-top: 1px dotted var(--divider); font-size: 12px; color: var(--ink-light); display: flex; justify-content: space-between; align-items: center; }
+  .source-pill { display: inline-flex; align-items: center; padding: 4px 12px; background: var(--card-bg); border-radius: 12px; font-weight: 500; color: var(--ink-soft); text-decoration: none; min-height: 30px; }
+
+  .empty { padding: 60px 20px; text-align: center; color: var(--ink-light); font-size: 14px; }
+  .doc-footer { margin: 48px 0 60px; padding-top: 28px; border-top: 2px solid var(--ink); text-align: center; font-size: 11px; color: var(--ink-light); letter-spacing: 1.5px; text-transform: uppercase; }
+
+  @media (max-width: 640px) {
+    .wrap { padding: 0 18px; }
+    .topbar-inner { padding-left: 18px; padding-right: 18px; }
+    .brand { font-size: 17px; }
+    .date-display { font-size: 12px; }
+    .masthead-title { font-size: 32px; }
+    .tab { font-size: 13px; padding: 12px 12px; min-width: 64px; }
+    .story-headline { font-size: 23px; }
+    .story.lead .story-headline { font-size: 27px; }
+    .story-hero { height: 170px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <span class="brand">Hermes Daily</span>
+    <div class="date-picker">
+      <button id="prevDay" title="前一天">‹</button>
+      <label class="date-display">
+        <span class="cal-icon">📅</span>
+        <span id="dateText">7月9日 周四</span>
+        <input type="date" id="datePick" value="2026-07-09" max="2026-07-09">
+      </label>
+      <button id="nextDay" title="后一天" disabled>›</button>
+    </div>
+  </div>
+</div>
+
+<div class="tabs">
+  <div class="tabs-inner">
+    
+    <button class="tab active" data-cat="us_stocks">🇺🇸 美股<span class="count">10</span></button>
+    
+    <button class="tab " data-cat="my_stocks">🇲🇾 马股<span class="count">0</span></button>
+    
+    <button class="tab " data-cat="ai">🤖 AI<span class="count">10</span></button>
+    
+    <button class="tab " data-cat="macro">🌐 宏观<span class="count">10</span></button>
+    
+  </div>
+</div>
+
+<div class="wrap">
+  <header class="masthead">
+    <div class="masthead-title">Hermes Daily</div>
+    <div class="masthead-sub">2026-07-09 · 周四 · 09:04 MYT · For Henry</div>
+  </header>
+
+  
+  <div class="panel active" data-cat="us_stocks">
+    <div class="panel-head">
+      <div class="panel-title">美股 · US Markets</div>
+      <div class="panel-count">10 stories</div>
+    </div>
+
+    
+
+    
+    <article class="story lead">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">FTXL半导体下跌或为假警报</h2>
+      <p class="story-dek">半导体ETF FTXL近期下跌，但分析认为可能是市场过度反应，基本面仍稳健。</p>
+
+      
+
+      
+      <div class="data-card us_stocks">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>FTXL当前报246.29美元，上涨1.82美元，而SOXX报562.03美元，上涨1.87美元，显示半导体板块整体反弹。[Finnhub @ 2026-07-09]</p><p>尽管近期半导体股承压，但分析认为AI需求长期增长趋势未变，此次下跌可能是买入机会。数据未验证</p><p>投资者需关注中东局势对供应链的潜在影响，但基本面支撑下，FTXL有望恢复涨势。数据未验证</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com/article/1234567" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-09T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">GlobalFoundries非AI赢家</h2>
+      <p class="story-dek">GlobalFoundries在AI竞争中缺乏优势，投资者应谨慎。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>GlobalFoundries并非AI芯片领域的核心受益者，其技术路线与AI需求不匹配。数据未验证</p><p>相比之下，NVDA（204.12美元，涨3.65美元）和AMD（517.405美元，涨0.25美元）等公司更直接受益于AI浪潮。[Finnhub @ 2026-07-09]</p><p>投资者应关注AI基础设施建设的真正赢家，而非GlobalFoundries。数据未验证</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com/article/1234568" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-09T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">CHPY收益优于SOXX</h2>
+      <p class="story-dek">在AI交易不确定性中，CHPY的收益吸引力超过SOXX。</p>
+
+      
+
+      
+      <div class="data-card us_stocks">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>CHPY当前报76.8美元，上涨0.87美元，而SOXX报562.03美元，上涨1.87美元。[Finnhub @ 2026-07-09]</p><p>CHPY提供稳定的收入流，在AI交易波动加剧时更具防御性。数据未验证</p><p>投资者可考虑CHPY作为对冲AI板块风险的收益型选择。数据未验证</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com/article/1234569" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-09T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">IGPT：AI建设者受益</h2>
+      <p class="story-dek">AI下一阶段将利好基础设施建设公司，IGPT值得关注。</p>
+
+      
+
+      
+      <div class="data-card us_stocks">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>IGPT当前报95.56美元，上涨0.99美元，反映市场对AI基础设施的乐观情绪。[Finnhub @ 2026-07-09]</p><p>随着AI从训练转向推理，硬件和基础设施提供商将迎来增长。数据未验证</p><p>IGPT持仓包括NVDA（204.12美元）和AMD（517.405美元）等核心AI公司，有望受益。[Finnhub @ 2026-07-09]</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com/article/1234570" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-09T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>MarketWatch</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">亚洲货币因中东紧张承压</h2>
+      <p class="story-dek">亚洲货币兑美元早盘持稳，但中东局势可能带来下行压力。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>亚洲货币早盘兑美元窄幅波动，但中东紧张局势升级可能打压风险偏好。数据未验证</p><p>油价上涨（见相关报道）加剧了通胀担忧，对亚洲出口导向型经济体不利。数据未验证</p><p>投资者需关注地缘政治风险对新兴市场货币的潜在冲击。数据未验证</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.marketwatch.com/story/asian-currencies-consolidate" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-09T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>MarketWatch</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">油价因中东供应担忧上涨</h2>
+      <p class="story-dek">中东供应中断风险推动油价在亚洲早盘走高。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>油价在亚洲早盘上涨，因市场担忧中东冲突导致供应中断。数据未验证</p><p>此前伊朗局势紧张，全球油价创下5月以来最大单日涨幅。数据未验证</p><p>能源股如OKLO（47.28美元，跌1.29美元）可能受油价波动影响。[Finnhub @ 2026-07-09]</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.marketwatch.com/story/oil-rises-mideast-supply" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-09T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>MarketWatch</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">华尔街和平交易遇伊朗冲突</h2>
+      <p class="story-dek">道指下跌，因伊朗冲突升级导致油价飙升。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>道指下跌，全球油价创5月以来最大涨幅，因伊朗冲突加剧。数据未验证</p><p>市场此前押注的‘和平交易’受挫，避险情绪升温。数据未验证</p><p>投资者转向防御性资产，科技股如META（603.12美元，跌2.02美元）承压。[Finnhub @ 2026-07-09]</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.marketwatch.com/story/wall-street-peace-trade-iran" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-09T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>MarketWatch</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">日本国债跟随美债下跌</h2>
+      <p class="story-dek">日本国债在东京早盘下跌，受隔夜美债收益率上升拖累。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>日本国债在东京早盘下跌，追随隔夜美债价格下跌趋势。数据未验证</p><p>美债收益率上升反映市场对通胀和利率前景的担忧。数据未验证</p><p>全球债券市场波动可能影响风险资产，包括美股科技板块。数据未验证</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.marketwatch.com/story/jgbs-fall-tracking-treasurys" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-09T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">标普500 9500点梦碎</h2>
+      <p class="story-dek">市场对标普500达到9500点的乐观预期破灭，多重风险浮现。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>标普500指数9500点的目标被分析师否定，因经济放缓和地缘风险。数据未验证</p><p>当前标普500指数水平未在数据中提供，但科技股如MSFT（383.34美元，跌1.41美元）和GOOGL（361.92美元，跌1.39美元）表现疲软。[Finnhub @ 2026-07-09]</p><p>投资者需重新评估牛市预期，关注盈利增长和利率路径。数据未验证</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com/article/1234571" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-09T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>CNBC</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Jim Cramer：股票发行潮威胁牛市</h2>
+      <p class="story-dek">CNBC的Jim Cramer警告，股票和债务发行激增是牛市最大风险。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Jim Cramer认为，大量股票发行和债务融资将稀释现有股东权益，压制市场。数据未验证</p><p>尽管伊朗战争风险存在，但Cramer更担忧企业融资潮对流动性的冲击。数据未验证</p><p>投资者应警惕IPO和增发活动增加对科技股如PLTR（132.22美元，跌1.6美元）的影响。[Finnhub @ 2026-07-09]</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/2026/07/09/jim-cramer-stock-offerings-risk.html" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-09T00:00:00Z</span>
+      </div>
+    </article>
+    
+  </div>
+  
+  <div class="panel " data-cat="my_stocks">
+    <div class="panel-head">
+      <div class="panel-title">马股 · Bursa Malaysia</div>
+      <div class="panel-count">0 stories</div>
+    </div>
+
+    
+    <div class="empty">今日暂无 马股 新闻</div>
+    
+
+    
+  </div>
+  
+  <div class="panel " data-cat="ai">
+    <div class="panel-head">
+      <div class="panel-title">AI · 人工智能</div>
+      <div class="panel-count">10 stories</div>
+    </div>
+
+    
+
+    
+    <article class="story lead">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Arxiv ML</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Akashic：低开销LLM推理服务</h2>
+      <p class="story-dek">arXiv:2607.05708v1 - New paper on MemAttention for LLM inference.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Akashic提出了一种名为MemAttention的低开销LLM推理服务，旨在优化多轮交互和工具调用中的上下文管理。</p><p>该研究通过减少注意力计算中的冗余来提升推理效率，适用于长期运行的代理系统。</p><p>论文详细介绍了MemAttention的设计和实验评估，显示其在保持模型质量的同时显著降低延迟。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://arxiv.org/abs/2607.05708" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-09</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">ZML发布免费AI推理加速软件</h2>
+      <p class="story-dek">French startup ZML releases free LLMD software to speed inference across AI chips.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>法国AI初创公司ZML发布了名为ZML/LLMD的免费软件，旨在加速跨多芯片的AI推理。</p><p>该软件由图灵奖得主Yann LeCun背书，有望降低AI运行成本。</p><p>ZML/LLMD通过优化芯片间通信和内存管理，提升大规模模型推理效率。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/2026/07/09/zml-free-llmd-software/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-09</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">SambaNova完成新一轮融资</h2>
+      <p class="story-dek">AI chip maker SambaNova raises $1B at $11B valuation.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>AI芯片制造商SambaNova以110亿美元估值完成10亿美元融资，距离上一轮巨额融资仅五个月。</p><p>此前有传闻称英特尔曾试图以约16亿美元收购该公司。</p><p>新资金将用于扩大其AI芯片和系统产品的生产与研发。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/2026/07/09/sambanova-1b-funding/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-09</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">SpaceXAI发布Grok 4.5模型</h2>
+      <p class="story-dek">Elon Musk&#39;s company releases Grok 4.5, a cheaper alternative to other AI models.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>SpaceXAI发布了最新版本的Grok 4.5，Elon Musk称其为“Opus级模型”。</p><p>该模型承诺以更低成本提供与顶级AI模型相当的性能。</p><p>Grok 4.5的发布进一步加剧了AI模型市场的竞争。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/2026/07/09/spacexai-grok-4-5/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-09</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Prime Intellect完成A轮融资</h2>
+      <p class="story-dek">Prime Intellect raises $130M Series A to help enterprises build AI agents.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Prime Intellect完成了1.3亿美元A轮融资，旨在帮助企业构建自己的AI代理系统。</p><p>该公司成立于2024年，致力于让组织无需依赖前沿AI实验室即可训练代理系统。</p><p>新资金将用于扩展平台能力和客户支持。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/2026/07/09/prime-intellect-series-a/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-09</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Arxiv ML</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">记忆循环：语言代理的进程内检索</h2>
+      <p class="story-dek">arXiv:2607.05690v1 - New paper on in-process retrieval as extended working memory.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>该论文提出“记忆循环”概念，将进程内检索作为语言代理的扩展工作记忆。</p><p>传统代理每轮仅查询一次外部存储，而新方法允许在推理循环中持续访问记忆。</p><p>实验表明，该方法能显著提升多步推理和工具使用任务的性能。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://arxiv.org/abs/2607.05690" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-09</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">机器人领域即将迎来ChatGPT时刻</h2>
+      <p class="story-dek">Startup General Intuition uses video game data to train foundation models for physical AI.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>初创公司General Intuition认为机器人技术即将迎来类似ChatGPT的突破。</p><p>该公司利用数百万小时的视频游戏数据训练物理AI的基础模型，以减少对真实世界数据的依赖。</p><p>这种方法有望大幅降低开发智能机器人的成本和门槛。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/2026/07/09/general-intuition-robotics-chatgpt-moment/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-09</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">AI初创公司收入增长加速</h2>
+      <p class="story-dek">Some AI startups are growing revenue at faster rates.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>许多AI初创公司正以越来越快的速度增长收入，部分公司增速尤为突出。</p><p>这些公司受益于企业AI需求的爆发式增长和产品迭代加速。</p><p>投资者对高增长AI初创公司的兴趣持续升温。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/2026/07/09/ai-startups-revenue-growth/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-09</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Arxiv ML</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">自动CAD生成的基座模型</h2>
+      <p class="story-dek">arXiv:2607.05573v1 - New paper on LLM/VLM for parametric 3D design.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>该论文探索利用大语言模型和视觉语言模型自动生成参数化3D设计。</p><p>模型能够从自然语言描述直接生成CAD模型，简化工程设计流程。</p><p>实验展示了在多种设计任务上的有效性，为AI辅助设计开辟新路径。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://arxiv.org/abs/2607.05573" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-09</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Lovable估值或大幅提升</h2>
+      <p class="story-dek">Lovable reportedly in talks to double valuation to $13.2B.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>据Sifted报道，AI初创公司Lovable正在谈判以132亿美元估值融资3亿美元。</p><p>此轮融资预计由Menlo Ventures领投，估值较上一轮翻倍。</p><p>Lovable的产品专注于AI驱动的应用开发，增长迅速。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/2026/07/09/lovable-valuation-talks/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-09</span>
+      </div>
+    </article>
+    
+  </div>
+  
+  <div class="panel " data-cat="macro">
+    <div class="panel-head">
+      <div class="panel-title">宏观 · Macro</div>
+      <div class="panel-count">10 stories</div>
+    </div>
+
+    
+
+    
+    <article class="story lead">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">美国对伊朗发动次日打击</h2>
+      <p class="story-dek">特朗普称伊朗已‘打电话’谈判，但对协议前景表示怀疑</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美国连续第二日对伊朗发动军事打击，中东局势持续升级。</p><p>特朗普声称伊朗已寻求谈判，但质疑达成协议的可能性。</p><p>市场对冲突扩大表示担忧，但具体影响尚待观察。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/world" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-09T12:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">特朗普宣布美伊停火结束</h2>
+      <p class="story-dek">今日新闻简报：美国稀土流向亚洲，桑坦德解雇顶级中国银行家</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>特朗普正式宣布美伊停火协议终结。</p><p>美国稀土出口亚洲趋势加强，影响全球供应链。</p><p>桑坦德银行解雇其顶级中国银行家，战略调整明显。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/world" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-09T12:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>CNBC Politics</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">美军发动新一轮伊朗打击，特朗普称不确定是否要协议</h2>
+      <p class="story-dek">中央司令部称对伊朗军事基础设施和小型船只发动数十次打击；特朗普称可能‘今晚’采取更多军事行动</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美军对伊朗发动新一轮打击，目标包括军事设施和船只。</p><p>中央司令部确认数十次打击行动。</p><p>特朗普表示不确定是否要达成协议，并暗示更多行动可能很快发生。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/politics" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-09T12:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">沃什首次美联储会议通胀担忧加剧</h2>
+      <p class="story-dek">部分美联储官员认为未来需要加息以遏制通胀</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美联储首次会议纪要显示对通胀担忧加剧。</p><p>部分官员认为可能需要进一步加息以控制物价。</p><p>会议纪要反映出内部对利率路径的分歧。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/world" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-09T12:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">美伊冲突升级，油价上涨</h2>
+      <p class="story-dek">特朗普称若伊朗袭击更多船只，美国攻击将‘变得更糟’</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美国与伊朗冲突升级，推动国际油价走高。</p><p>特朗普警告伊朗若再袭击船只，美方将加大打击力度。</p><p>市场密切关注中东局势对原油供应的影响。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/world" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-09T12:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">美联储鹰派纪要显示部分支持加息</h2>
+      <p class="story-dek">政策制定者担忧通胀，‘若干’成员认为当前借贷成本并不具有限制性</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美联储最新纪要呈现鹰派立场，部分官员支持加息。</p><p>通胀担忧加剧，决策者认为当前利率可能不足以抑制物价。</p><p>市场预期美联储可能进一步收紧政策。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/world" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-09T12:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>CNBC Politics</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">特朗普淡化伊朗核威胁，停火破裂</h2>
+      <p class="story-dek">总统在停火破裂后谈论伊朗核威胁</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>特朗普对伊朗核威胁轻描淡写，称威胁被夸大。</p><p>美伊停火协议破裂后，双方军事对峙持续。</p><p>分析人士担忧核问题可能重新成为焦点。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/politics" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-09T12:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>CNBC Politics</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">北约峰会后欧洲盟友疏远特朗普伊朗政策</h2>
+      <p class="story-dek">特朗普在土耳其安卡拉与北约领导人会晤</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>北约峰会结束后，欧洲盟友对特朗普的伊朗政策表示保留。</p><p>特朗普在安卡拉与北约领导人讨论中东局势。</p><p>欧美在伊朗问题上的分歧进一步扩大。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/politics" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-09T12:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">俄罗斯因燃料危机禁止柴油出口</h2>
+      <p class="story-dek">乌克兰无人机袭击炼油厂导致汽油和柴油短缺，战争深入俄罗斯本土</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>俄罗斯宣布禁止柴油出口以应对国内燃料危机。</p><p>乌克兰无人机对俄罗斯炼油厂的袭击导致汽油和柴油短缺。</p><p>燃料短缺将战争的影响带回俄罗斯本土。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/world" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-09T12:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>CNBC Politics</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">特朗普强化控制格陵兰言论，丹麦誓言保卫</h2>
+      <p class="story-dek">美国总统特朗普表示美国需要控制格陵兰‘为了保护世界’</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>特朗普再次声称美国需要控制格陵兰岛。</p><p>丹麦政府回应将坚决保卫格陵兰主权。</p><p>美丹关系因格陵兰问题再度紧张。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/politics" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-09T12:00:00Z</span>
+      </div>
+    </article>
+    
+  </div>
+  
+
+  <footer class="doc-footer">Hermes Daily · 2026-07-09 09:04 MYT · Top 30 of 30 · Build f270</footer>
+</div>
+
+<script>
+  const tabs = document.querySelectorAll('.tab');
+  const panels = document.querySelectorAll('.panel');
+  tabs.forEach(tab => {
+    tab.onclick = () => {
+      const cat = tab.dataset.cat;
+      tabs.forEach(t => t.classList.toggle('active', t === tab));
+      panels.forEach(p => p.classList.toggle('active', p.dataset.cat === cat));
+      window.scrollTo({ top: 0 });
+    };
+  });
+
+  const datePick = document.getElementById('datePick');
+  const dateText = document.getElementById('dateText');
+  const weekdays = ['周日','周一','周二','周三','周四','周五','周六'];
+  function fmt(d){ const dt=new Date(d+'T00:00:00'); return `${dt.getMonth()+1}月${dt.getDate()}日 ${weekdays[dt.getDay()]}`; }
+  datePick.onchange = () => { window.location = '/' + datePick.value + '/'; };
+
+  function shift(days){
+    const cur = new Date(datePick.value + 'T00:00:00');
+    cur.setDate(cur.getDate() + days);
+    const iso = cur.toISOString().slice(0,10);
+    window.location = '/' + iso + '/';
+  }
+  document.getElementById('prevDay').onclick = () => shift(-1);
+  const nextBtn = document.getElementById('nextDay');
+  if (!nextBtn.disabled) nextBtn.onclick = () => shift(1);
+</script>
+
+</body>
+</html>

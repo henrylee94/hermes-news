@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>Hermes Daily · 2026-07-02</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;900&family=Noto+Serif+SC:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --bg: #ffffff; --ink: #1d1d1f; --ink-soft: #424245; --ink-light: #86868b;
+    --divider: #d2d2d7; --accent-red: #c8102e; --accent-blue: #0066cc;
+    --accent-amber: #d97706; --accent-green: #00855b; --card-bg: #fafafa;
+    --nav-bg: rgba(255,255,255,0.85);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1a1a1c; --ink: #f5f5f7; --ink-soft: #c7c7cc; --ink-light: #8e8e93;
+      --divider: #38383a; --card-bg: #2c2c2e; --nav-bg: rgba(26,26,28,0.85);
+    }
+  }
+
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: var(--bg); color: var(--ink); line-height: 1.5;
+    -webkit-font-smoothing: antialiased; overflow-x: hidden;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+  .topbar { position: sticky; top: 0; z-index: 100; background: var(--nav-bg); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid var(--divider); }
+  .topbar-inner { max-width: 720px; margin: 0 auto; padding: 11px 24px; display: flex; align-items: center; justify-content: space-between; }
+  .brand { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 900; letter-spacing: -0.5px; }
+
+  .date-picker { display: flex; align-items: center; gap: 8px; }
+  .date-picker button { background: none; border: none; color: var(--ink-light); font-size: 20px; cursor: pointer; padding: 0 2px; line-height: 1; }
+  .date-picker button:hover { color: var(--accent-blue); }
+  .date-picker button:disabled { opacity: 0.25; cursor: default; }
+  .date-display { position: relative; font-size: 13px; font-weight: 600; color: var(--ink); font-variant-numeric: tabular-nums; cursor: pointer; padding: 5px 10px; border-radius: 8px; background: var(--card-bg); display: flex; align-items: center; gap: 6px; }
+  .date-display:hover { color: var(--accent-blue); }
+  .date-display input[type="date"] { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%; }
+  .date-display .cal-icon { font-size: 12px; }
+
+  .tabs { position: sticky; top: 47px; z-index: 99; background: var(--nav-bg); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid var(--divider); }
+  .tabs-inner { max-width: 720px; margin: 0 auto; padding: 0 12px; display: flex; gap: 2px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .tabs-inner::-webkit-scrollbar { display: none; }
+  .tab { flex: 1 0 auto; min-width: 72px; text-align: center; padding: 13px 14px; font-size: 14px; font-weight: 600; color: var(--ink-light); border-bottom: 2.5px solid transparent; cursor: pointer; white-space: nowrap; transition: color .15s, border-color .15s; background: none; font-family: inherit; }
+  .tab.active { color: var(--ink); }
+  .tab[data-cat="us_stocks"].active { border-bottom-color: var(--accent-red); }
+  .tab[data-cat="my_stocks"].active { border-bottom-color: var(--accent-amber); }
+  .tab[data-cat="ai"].active { border-bottom-color: var(--accent-blue); }
+  .tab[data-cat="macro"].active { border-bottom-color: var(--accent-green); }
+  .tab .count { display: inline-block; min-width: 18px; padding: 1px 5px; margin-left: 3px; font-size: 11px; font-weight: 600; border-radius: 9px; background: var(--card-bg); color: var(--ink-light); }
+  .tab.active .count { background: var(--ink); color: var(--bg); }
+
+  .masthead { padding: 28px 0 4px; }
+  .masthead-title { font-family: 'Playfair Display','Noto Serif SC',serif; font-size: 44px; font-weight: 900; letter-spacing: -1px; line-height: 1; }
+  .masthead-sub { font-size: 12px; color: var(--ink-light); margin-top: 8px; text-transform: uppercase; letter-spacing: 1.2px; }
+
+  .panel { display: none; }
+  .panel.active { display: block; animation: fade .25s ease; }
+  @keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+  .panel-head { margin: 32px 0 22px; padding-bottom: 12px; border-bottom: 1px solid var(--divider); display: flex; align-items: baseline; justify-content: space-between; }
+  .panel-title { font-family: 'Playfair Display','Noto Serif SC',serif; font-size: 26px; font-weight: 700; }
+  .panel-count { font-size: 11px; color: var(--ink-light); text-transform: uppercase; letter-spacing: 1.2px; }
+
+  .story { margin-bottom: 40px; padding-bottom: 40px; border-bottom: 1px solid var(--divider); }
+  .story:last-child { border-bottom: none; }
+  .story-meta { display: flex; gap: 10px; align-items: center; font-size: 11px; color: var(--ink-light); text-transform: uppercase; letter-spacing: 1.1px; margin-bottom: 11px; }
+  .story-meta .dot { color: var(--divider); }
+  .tag-us_stocks { color: var(--accent-red); font-weight: 600; }
+  .tag-my_stocks { color: var(--accent-amber); font-weight: 600; }
+  .tag-ai { color: var(--accent-blue); font-weight: 600; }
+  .tag-macro { color: var(--accent-green); font-weight: 600; }
+
+  .story-headline { font-family: 'Playfair Display','Noto Serif SC',serif; font-size: 28px; font-weight: 700; line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 10px; }
+  .story.lead .story-headline { font-size: 34px; }
+  .story-dek { font-size: 16px; color: var(--ink-soft); line-height: 1.55; margin-bottom: 16px; }
+
+  .story-hero { width: 100%; height: 210px; border-radius: 8px; margin-bottom: 16px; display: flex; align-items: center; justify-content: center; color: var(--ink-light); font-size: 11px; letter-spacing: 1px; text-transform: uppercase; overflow: hidden; background: linear-gradient(135deg,#f5f5f7,#e8e8ed 50%,#d8d8df); }
+  .story-hero img { width: 100%; height: 100%; object-fit: cover; }
+
+  .data-card { background: var(--card-bg); border-left: 3px solid var(--accent-red); padding: 13px 17px; margin: 16px 0; border-radius: 0 6px 6px 0; }
+  .data-card.my_stocks { border-left-color: var(--accent-amber); }
+  .data-card.ai { border-left-color: var(--accent-blue); }
+  .data-card.macro { border-left-color: var(--accent-green); }
+  .data-card-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--ink-light); margin-bottom: 7px; }
+  .data-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px; font-size: 14px; }
+  .data-row .num { font-weight: 600; font-variant-numeric: tabular-nums; }
+  .data-row .up { color: var(--accent-red); }
+  .data-row .down { color: #00a35c; }
+  .data-citation { font-size: 10px; color: var(--ink-light); margin-top: 7px; font-style: italic; }
+
+  .story-body p { font-size: 15px; line-height: 1.65; margin-bottom: 13px; }
+  .story-body p:first-of-type::first-letter { font-family: 'Playfair Display',serif; font-size: 36px; font-weight: 900; line-height: 1; color: var(--accent-red); padding-right: 2px; }
+
+  .story-warning { background: #fff3cd; border-left: 3px solid #d97706; padding: 11px 15px; margin: 14px 0; color: #856404; font-size: 13px; border-radius: 0 4px 4px 0; }
+  @media (prefers-color-scheme: dark) { .story-warning { background: #3a2e10; color: #fde68a; } }
+
+  .story-source { margin-top: 18px; padding-top: 13px; border-top: 1px dotted var(--divider); font-size: 12px; color: var(--ink-light); display: flex; justify-content: space-between; align-items: center; }
+  .source-pill { display: inline-flex; align-items: center; padding: 4px 12px; background: var(--card-bg); border-radius: 12px; font-weight: 500; color: var(--ink-soft); text-decoration: none; min-height: 30px; }
+
+  .empty { padding: 60px 20px; text-align: center; color: var(--ink-light); font-size: 14px; }
+  .doc-footer { margin: 48px 0 60px; padding-top: 28px; border-top: 2px solid var(--ink); text-align: center; font-size: 11px; color: var(--ink-light); letter-spacing: 1.5px; text-transform: uppercase; }
+
+  @media (max-width: 640px) {
+    .wrap { padding: 0 18px; }
+    .topbar-inner { padding-left: 18px; padding-right: 18px; }
+    .brand { font-size: 17px; }
+    .date-display { font-size: 12px; }
+    .masthead-title { font-size: 32px; }
+    .tab { font-size: 13px; padding: 12px 12px; min-width: 64px; }
+    .story-headline { font-size: 23px; }
+    .story.lead .story-headline { font-size: 27px; }
+    .story-hero { height: 170px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <span class="brand">Hermes Daily</span>
+    <div class="date-picker">
+      <button id="prevDay" title="前一天">‹</button>
+      <label class="date-display">
+        <span class="cal-icon">📅</span>
+        <span id="dateText">7月2日 周四</span>
+        <input type="date" id="datePick" value="2026-07-02" max="2026-07-02">
+      </label>
+      <button id="nextDay" title="后一天" disabled>›</button>
+    </div>
+  </div>
+</div>
+
+<div class="tabs">
+  <div class="tabs-inner">
+    
+    <button class="tab active" data-cat="us_stocks">🇺🇸 美股<span class="count">10</span></button>
+    
+    <button class="tab " data-cat="my_stocks">🇲🇾 马股<span class="count">0</span></button>
+    
+    <button class="tab " data-cat="ai">🤖 AI<span class="count">10</span></button>
+    
+    <button class="tab " data-cat="macro">🌐 宏观<span class="count">10</span></button>
+    
+  </div>
+</div>
+
+<div class="wrap">
+  <header class="masthead">
+    <div class="masthead-title">Hermes Daily</div>
+    <div class="masthead-sub">2026-07-02 · 周四 · 09:02 MYT · For Henry</div>
+  </header>
+
+  
+  <div class="panel active" data-cat="us_stocks">
+    <div class="panel-head">
+      <div class="panel-title">美股 · US Markets</div>
+      <div class="panel-count">10 stories</div>
+    </div>
+
+    
+
+    
+    <article class="story lead">
+      <div class="story-meta">
+        <span class="tag-us_stocks">宏观</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">ADP就业报告：6月就业增长</h2>
+      <p class="story-dek">报告显示6月私人部门就业增加，但具体数字未验证。ADP股价上涨5.26美元至235.73美元[Finnhub @ 00:00 MYT]。</p>
+
+      
+
+      
+      <div class="data-card us_stocks">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>ADP发布6月全国就业报告，显示私人部门就业增长，但具体数字未验证[Seeking Alpha @ 00:00 MYT]。报告通常被视为非农就业的前瞻指标。</p><p>ADP公司股价当日上涨5.26美元，收于235.73美元[Finnhub @ 00:00 MYT]，反映市场对就业数据的解读。</p><p>投资者关注后续非农报告，以确认劳动力市场趋势。数据未验证前需谨慎。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-02 00:00:00</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">宏观</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">职位空缺上升</h2>
+      <p class="story-dek">最新数据显示职位空缺增加，但具体数值未验证。市场关注劳动力需求变化。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>据Seeking Alpha报道，美国职位空缺数据上升，但具体数字未验证[Seeking Alpha @ 00:00 MYT]。</p><p>劳动力市场紧张状况可能影响美联储政策路径。数据未验证前市场保持观望。</p><p>投资者需关注后续JOLTS报告以确认趋势。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-02 00:00:00</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">科技</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">AI物理极限：稀缺创造机会</h2>
+      <p class="story-dek">文章探讨AI发展面临的物理限制，以及由此产生的投资机会。相关芯片股表现分化。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>文章指出AI算力需求面临物理极限，稀缺性可能推动特定领域投资。英伟达股价下跌1.25美元至197.58美元[Finnhub @ 00:00 MYT]，AMD下跌6.89美元至540.88美元[Finnhub @ 00:00 MYT]。</p><p>博通下跌2.23美元至369.34美元[Finnhub @ 00:00 MYT]，而美光下跌10.57美元至1032.28美元[Finnhub @ 00:00 MYT]，芯片股整体承压。</p><p>投资者可关注能源效率、新材料等受益于稀缺的领域。数据未验证。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-02 00:00:00</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">策略</span>
+        <span class="dot">·</span>
+        <span>CNBC</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Cramer建议利用市场轮动</h2>
+      <p class="story-dek">CNBC的Jim Cramer表示投资者应利用最新市场轮动买入错过的赢家股。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Jim Cramer在CNBC节目中表示，周三的市场轮动为投资者提供了买入机会，建议关注此前错过的强势股[CNBC @ 00:00 MYT]。</p><p>例如，Palantir上涨7.77美元至125.73美元[Finnhub @ 00:00 MYT]，SoFi上涨2.84美元至18.44美元[Finnhub @ 00:00 MYT]，表现突出。</p><p>Cramer提醒投资者不要追高，而是利用回调建仓。具体策略需结合个人风险偏好。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-02 00:00:00</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">债券</span>
+        <span class="dot">·</span>
+        <span>MarketWatch</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">日本国债走低，跟随美债</h2>
+      <p class="story-dek">日本国债在东京早盘小幅下跌，追随隔夜美债收益率下行。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>日本国债在东京早盘交易中走低，追随隔夜美国国债收益率下跌[MarketWatch @ 00:00 MYT]。</p><p>市场关注日本央行政策动向。具体收益率变动数据未验证。</p><p>美债收益率下行可能反映市场对经济前景的担忧。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.marketwatch.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-02 00:00:00</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">商品</span>
+        <span class="dot">·</span>
+        <span>MarketWatch</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">油价下跌，供应增加</h2>
+      <p class="story-dek">亚洲早盘油价下跌，因供应增加且中东紧张局势缓解。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>国际油价在亚洲早盘下跌，因供应增加和中东紧张局势缓解[MarketWatch @ 00:00 MYT]。</p><p>具体价格变动数据未验证。市场关注OPEC+产量决策。</p><p>能源股可能承压，但需等待更多数据。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.marketwatch.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-02 00:00:00</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">个股</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">德州仪器：估值偏高，上涨空间有限</h2>
+      <p class="story-dek">文章认为德州仪器估值昂贵，上行空间有限，建议持有。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Seeking Alpha文章指出德州仪器当前估值偏高，未来上涨空间有限[Seeking Alpha @ 00:00 MYT]。</p><p>公司股价数据未验证。投资者需关注半导体行业周期。</p><p>建议持有观望，等待更佳入场点。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-02 00:00:00</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">商品</span>
+        <span class="dot">·</span>
+        <span>MarketWatch</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">黄金上涨，央行言论支撑</h2>
+      <p class="story-dek">亚洲早盘黄金上涨，央行官员偏鸽派言论及经济数据提供支撑。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>黄金在亚洲早盘上涨，受央行官员偏鸽派言论和经济数据提振[MarketWatch @ 00:00 MYT]。</p><p>具体金价变动数据未验证。ANZ Research认为央行言论支撑金价。</p><p>投资者关注后续通胀数据对金价的影响。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.marketwatch.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-02 00:00:00</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">个股</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">瓦莱罗能源：炼油繁荣可超越伊朗战争</h2>
+      <p class="story-dek">文章认为瓦莱罗能源的炼油业务繁荣期可能持续，即使伊朗战争结束。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Seeking Alpha文章认为瓦莱罗能源的炼油业务繁荣可能持续，超越伊朗战争影响[Seeking Alpha @ 00:00 MYT]。</p><p>公司股价数据未验证。炼油利润率保持高位。</p><p>投资者需关注地缘政治风险对能源市场的影响。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-02 00:00:00</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">行业</span>
+        <span class="dot">·</span>
+        <span>CNBC</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">美国汽车业面临USMCA不确定性</h2>
+      <p class="story-dek">若USMCA贸易协议未延期，美国汽车行业将面临更大不确定性，尤其是原产地规则问题。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>CNBC报道，若USMCA贸易协议未获延期，美国汽车行业将面临更大不确定性，特别是原产地规则[CNBC @ 00:00 MYT]。</p><p>特斯拉股价上涨1.12美元至425.30美元[Finnhub @ 00:00 MYT]，但行业整体前景不明。</p><p>汽车制造商呼吁政府尽快解决协议延期问题，以避免供应链中断。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-02 00:00:00</span>
+      </div>
+    </article>
+    
+  </div>
+  
+  <div class="panel " data-cat="my_stocks">
+    <div class="panel-head">
+      <div class="panel-title">马股 · Bursa Malaysia</div>
+      <div class="panel-count">0 stories</div>
+    </div>
+
+    
+    <div class="empty">今日暂无 马股 新闻</div>
+    
+
+    
+  </div>
+  
+  <div class="panel " data-cat="ai">
+    <div class="panel-head">
+      <div class="panel-title">AI · 人工智能</div>
+      <div class="panel-count">10 stories</div>
+    </div>
+
+    
+
+    
+    <article class="story lead">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Meta拟构建AI云业务挑战AWS</h2>
+      <p class="story-dek">Meta plans to sell AI compute access, competing with AWS and Google Cloud.</p>
+
+      
+
+      
+      <div class="data-card ai">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>Meta is developing a cloud infrastructure business to monetize excess AI compute capacity.</p><p>The move would pit Meta against major cloud providers like Amazon Web Services and Google Cloud.</p><p>Meta&#39;s AI models, such as Llama, could be offered as part of the cloud services.</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/2026/07/02/meta-ai-cloud-compute/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-02 10:00 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">特朗普解除Anthropic模型限制</h2>
+      <p class="story-dek">Trump administration drops restrictions on Anthropic&#39;s Mythos and Fable models.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>The Trump administration&#39;s AI policy remains erratic, leaving industry unclear on future rules.</p><p>Anthropic&#39;s Mythos and Fable models were previously subject to export controls.</p><p>The move signals a potential shift in U.S. AI governance approach.</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/2026/07/02/trump-anthropic-models/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-02 10:00 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Arxiv ML</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">推理模型早退策略成本研究</h2>
+      <p class="story-dek">arXiv:2606.30852: A cost-aware study of early exits in reasoning models.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>The paper investigates when learned stopping rules improve over simple baselines in reasoning models.</p><p>Different instances require varying amounts of computation, making early exit strategies beneficial.</p><p>The study provides insights into cost-efficient inference for large language models.</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://arxiv.org/abs/2606.30852" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-02 10:00 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Cloudflare要求AI公司为内容付费</h2>
+      <p class="story-dek">Cloudflare gives AI companies until Sept 15 to separate crawlers or risk blockage.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Cloudflare&#39;s new policy targets AI firms using publisher content for training and agents.</p><p>AI companies must differentiate between search crawlers and AI training crawlers by September 15.</p><p>Non-compliant companies may be blocked by default on many publisher sites.</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/2026/07/02/cloudflare-ai-publishers/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-02 10:00 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Arxiv ML</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">反馈如何驱动交互式改进？</h2>
+      <p class="story-dek">arXiv:2606.30774: Study on when natural-language feedback improves beyond repeated attempts.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>The research examines the marginal benefit of feedback in multi-turn language agent settings.</p><p>Findings show feedback can drive improvement beyond what is achieved by repeated attempts alone.</p><p>The work has implications for interactive AI systems and human-in-the-loop learning.</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://arxiv.org/abs/2606.30774" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-02 10:00 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Arxiv ML</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">对比反思迭代提示优化</h2>
+      <p class="story-dek">arXiv:2606.30840: Contrastive reflection for iterative prompt optimization in LLMs.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>LLM agents increasingly act as judges for information retrieval evaluation.</p><p>The method uses contrastive reflection to iteratively improve prompts for better retrieval.</p><p>This approach aims to reduce bias and improve consistency in LLM-based judgments.</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://arxiv.org/abs/2606.30840" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-02 10:00 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Arxiv ML</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">HASTE：分层技能累积ML工程</h2>
+      <p class="story-dek">arXiv:2606.30911: Hierarchical accumulation of skills for transfer-efficient ML engineering.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>HASTE addresses the waste of compute in ML engineering by reusing discovered techniques.</p><p>The hierarchical multi-agent system avoids cold starts by accumulating skills across tasks.</p><p>This approach promises significant efficiency gains in machine learning development pipelines.</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://arxiv.org/abs/2606.30911" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-02 10:00 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Arxiv ML</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">RoPoLL：鲁棒LLM评委小组</h2>
+      <p class="story-dek">arXiv:2606.30931: Robust Panel of LLM Judges for consensus evaluation.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>The LLM Jury approach uses a panel of evaluators to report consensus scores.</p><p>RoPoLL improves robustness over single-judge evaluation in LLM assessment.</p><p>The method addresses groupthink and bias in LLM-based evaluation.</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://arxiv.org/abs/2606.30931" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-02 10:00 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>MIT Technology Review</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">AI模型陷入群体思维如何突破</h2>
+      <p class="story-dek">Startup aims to break LLMs out of groupthink, like always choosing 7 in random number game.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>LLMs often produce repetitive outputs, e.g., always selecting 7 as a random number.</p><p>A new startup is developing methods to introduce diversity in LLM responses.</p><p>The approach could improve creativity and reduce bias in AI-generated content.</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.technologyreview.com/2026/07/02/llm-groupthink-startup/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-02 10:00 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Venice AI以隐私优先平台获65M融资</h2>
+      <p class="story-dek">Venice AI becomes a unicorn with $65M Series A, profitable with $70M annual revenue.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Venice AI&#39;s privacy-first AI platform has achieved profitability with over $70M in run-rate revenue.</p><p>The $65M Series A funding values the company at over $1 billion, making it a unicorn.</p><p>CEO Erik Voorhees highlights strong demand for privacy-focused AI solutions.</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/2026/07/02/venice-ai-unicorn-series-a/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-02 10:00 MYT</span>
+      </div>
+    </article>
+    
+  </div>
+  
+  <div class="panel " data-cat="macro">
+    <div class="panel-head">
+      <div class="panel-title">宏观 · Macro</div>
+      <div class="panel-count">10 stories</div>
+    </div>
+
+    
+
+    
+    <article class="story lead">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>BBC World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">美国阻止北美贸易协定长期续签</h2>
+      <p class="story-dek">US blocks 16-year North America trade deal renewal, triggering annual rolling reviews</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美国决定不续签为期16年的北美贸易协定，转而采用年度滚动审查机制。</p><p>此举将影响美国与加拿大和墨西哥的贸易关系，引发市场不确定性。</p><p>BBC报道称，这一决定可能重新定义北美经济一体化格局。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.bbc.com/news" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-02 12:00 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>CNBC Politics</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">美国不续签USMCA</h2>
+      <p class="story-dek">President Donald Trump&#39;s &#39;primary&#39; issue with USMCA centers on America&#39;s trade deficits with Canada and Mexico, a senior administration official said.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美国政府宣布不再续签《美墨加协定》（USMCA），为与加拿大和墨西哥的新谈判打开大门。</p><p>一名高级官员表示，特朗普总统的主要关切是美国对加墨两国的贸易逆差。</p><p>CNBC政治频道报道称，此举可能引发新一轮北美贸易谈判。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/politics" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-02 12:00 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">美国不续签特朗普贸易协定</h2>
+      <p class="story-dek">Washington will instead hold annual reviews on terms of commerce with its biggest trading partners</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美国选择不续签特朗普时期与墨西哥和加拿大达成的贸易协定，改为每年审查商业条款。</p><p>这一决定意味着美国与其最大贸易伙伴的贸易关系将进入不稳定期。</p><p>FT世界版报道称，年度审查机制可能增加企业规划难度。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/world" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-02 12:00 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">世行将逐步停止对华贷款</h2>
+      <p class="story-dek">Decision from global development institution follows years of pressure from the Trump administration</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>世界银行决定逐步停止向中国提供贷款，结束数十年的合作。</p><p>此举是在特朗普政府多年施压后做出的，反映了中美经济关系的转变。</p><p>FT世界版报道称，中国作为世界银行借款国的角色将发生根本变化。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/world" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-02 12:00 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">巨额收购推动交易额创纪录2.8万亿美元</h2>
+      <p class="story-dek">Companies and investors turn to M&amp;A as they adjust to economic shifts driven by the rise of AI</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>全球并购交易额达到创纪录的2.8万亿美元，主要由大型收购推动。</p><p>企业和投资者通过并购来适应人工智能崛起带来的经济变革。</p><p>FT世界版报道称，这一趋势反映了市场对结构性变化的积极调整。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/world" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-02 12:00 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">最高法院制约特朗普但强化总统权力</h2>
+      <p class="story-dek">Despite losses on tariffs and birthright citizenship, the executive has emerged stronger</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美国最高法院在关税和出生公民权问题上否决了特朗普，但总体上扩大了总统权力。</p><p>裁决结果使行政分支在多个领域获得更大自主权，尽管在具体政策上受挫。</p><p>FT世界版分析称，最高法院的判决重塑了总统与国会之间的权力平衡。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/world" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-02 12:00 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">白宫加速推进AI模型标准计划</h2>
+      <p class="story-dek">Guidance to be announced as soon as next week after government intervention in Anthropic and OpenAI rollouts</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>白宫加快制定人工智能模型标准，预计最快下周公布指导意见。</p><p>此前政府干预了Anthropic和OpenAI的产品发布，促使监管框架加速成型。</p><p>FT世界版报道称，此举旨在平衡AI创新与安全风险。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/world" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-02 12:00 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">千禧年和Point72因对冲基金反弹获利</h2>
+      <p class="story-dek">Izzy Englander and Steve Cohen’s firms post double-digit returns in first half of year</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Millennium Management和Point72 Asset Management在2026年上半年实现两位数回报。</p><p>对冲基金行业从伊朗战争引发的波动中反弹，主要基金表现强劲。</p><p>FT世界版报道称，Izzy Englander和Steve Cohen的公司领跑行业复苏。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/world" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-02 12:00 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">KNDS因估值过高推迟IPO</h2>
+      <p class="story-dek">Franco-German tank maker says it will wait for ‘more favourable’ market conditions</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>法德坦克制造商KNDS因投资者对超过120亿欧元估值犹豫，决定推迟首次公开募股。</p><p>公司表示将等待“更有利”的市场条件再重启IPO计划。</p><p>FT世界版报道称，当前市场环境对高估值新股发行不利。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/world" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-02 12:00 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">泽连斯基敦促欧盟制裁俄铝厂</h2>
+      <p class="story-dek">Call on the opening day of Dublin’s EU presidency adds to pressure over Aughinish Alumina smelter</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>乌克兰总统泽连斯基在都柏林欧盟主席国开幕日呼吁欧盟制裁俄罗斯所有的氧化铝厂。</p><p>位于爱尔兰的Aughinish Alumina冶炼厂成为焦点，面临更大政治压力。</p><p>FT世界版报道称，此举可能加剧欧盟与俄罗斯的经济对抗。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/world" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-02 12:00 MYT</span>
+      </div>
+    </article>
+    
+  </div>
+  
+
+  <footer class="doc-footer">Hermes Daily · 2026-07-02 09:02 MYT · Top 30 of 30 · Build de51</footer>
+</div>
+
+<script>
+  const tabs = document.querySelectorAll('.tab');
+  const panels = document.querySelectorAll('.panel');
+  tabs.forEach(tab => {
+    tab.onclick = () => {
+      const cat = tab.dataset.cat;
+      tabs.forEach(t => t.classList.toggle('active', t === tab));
+      panels.forEach(p => p.classList.toggle('active', p.dataset.cat === cat));
+      window.scrollTo({ top: 0 });
+    };
+  });
+
+  const datePick = document.getElementById('datePick');
+  const dateText = document.getElementById('dateText');
+  const weekdays = ['周日','周一','周二','周三','周四','周五','周六'];
+  function fmt(d){ const dt=new Date(d+'T00:00:00'); return `${dt.getMonth()+1}月${dt.getDate()}日 ${weekdays[dt.getDay()]}`; }
+  datePick.onchange = () => { window.location = '/' + datePick.value + '/'; };
+
+  function shift(days){
+    const cur = new Date(datePick.value + 'T00:00:00');
+    cur.setDate(cur.getDate() + days);
+    const iso = cur.toISOString().slice(0,10);
+    window.location = '/' + iso + '/';
+  }
+  document.getElementById('prevDay').onclick = () => shift(-1);
+  const nextBtn = document.getElementById('nextDay');
+  if (!nextBtn.disabled) nextBtn.onclick = () => shift(1);
+</script>
+
+</body>
+</html>

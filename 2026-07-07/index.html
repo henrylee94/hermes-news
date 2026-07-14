@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>Hermes Daily · 2026-07-07</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;900&family=Noto+Serif+SC:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --bg: #ffffff; --ink: #1d1d1f; --ink-soft: #424245; --ink-light: #86868b;
+    --divider: #d2d2d7; --accent-red: #c8102e; --accent-blue: #0066cc;
+    --accent-amber: #d97706; --accent-green: #00855b; --card-bg: #fafafa;
+    --nav-bg: rgba(255,255,255,0.85);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1a1a1c; --ink: #f5f5f7; --ink-soft: #c7c7cc; --ink-light: #8e8e93;
+      --divider: #38383a; --card-bg: #2c2c2e; --nav-bg: rgba(26,26,28,0.85);
+    }
+  }
+
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: var(--bg); color: var(--ink); line-height: 1.5;
+    -webkit-font-smoothing: antialiased; overflow-x: hidden;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+  .topbar { position: sticky; top: 0; z-index: 100; background: var(--nav-bg); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid var(--divider); }
+  .topbar-inner { max-width: 720px; margin: 0 auto; padding: 11px 24px; display: flex; align-items: center; justify-content: space-between; }
+  .brand { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 900; letter-spacing: -0.5px; }
+
+  .date-picker { display: flex; align-items: center; gap: 8px; }
+  .date-picker button { background: none; border: none; color: var(--ink-light); font-size: 20px; cursor: pointer; padding: 0 2px; line-height: 1; }
+  .date-picker button:hover { color: var(--accent-blue); }
+  .date-picker button:disabled { opacity: 0.25; cursor: default; }
+  .date-display { position: relative; font-size: 13px; font-weight: 600; color: var(--ink); font-variant-numeric: tabular-nums; cursor: pointer; padding: 5px 10px; border-radius: 8px; background: var(--card-bg); display: flex; align-items: center; gap: 6px; }
+  .date-display:hover { color: var(--accent-blue); }
+  .date-display input[type="date"] { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%; }
+  .date-display .cal-icon { font-size: 12px; }
+
+  .tabs { position: sticky; top: 47px; z-index: 99; background: var(--nav-bg); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid var(--divider); }
+  .tabs-inner { max-width: 720px; margin: 0 auto; padding: 0 12px; display: flex; gap: 2px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .tabs-inner::-webkit-scrollbar { display: none; }
+  .tab { flex: 1 0 auto; min-width: 72px; text-align: center; padding: 13px 14px; font-size: 14px; font-weight: 600; color: var(--ink-light); border-bottom: 2.5px solid transparent; cursor: pointer; white-space: nowrap; transition: color .15s, border-color .15s; background: none; font-family: inherit; }
+  .tab.active { color: var(--ink); }
+  .tab[data-cat="us_stocks"].active { border-bottom-color: var(--accent-red); }
+  .tab[data-cat="my_stocks"].active { border-bottom-color: var(--accent-amber); }
+  .tab[data-cat="ai"].active { border-bottom-color: var(--accent-blue); }
+  .tab[data-cat="macro"].active { border-bottom-color: var(--accent-green); }
+  .tab .count { display: inline-block; min-width: 18px; padding: 1px 5px; margin-left: 3px; font-size: 11px; font-weight: 600; border-radius: 9px; background: var(--card-bg); color: var(--ink-light); }
+  .tab.active .count { background: var(--ink); color: var(--bg); }
+
+  .masthead { padding: 28px 0 4px; }
+  .masthead-title { font-family: 'Playfair Display','Noto Serif SC',serif; font-size: 44px; font-weight: 900; letter-spacing: -1px; line-height: 1; }
+  .masthead-sub { font-size: 12px; color: var(--ink-light); margin-top: 8px; text-transform: uppercase; letter-spacing: 1.2px; }
+
+  .panel { display: none; }
+  .panel.active { display: block; animation: fade .25s ease; }
+  @keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+  .panel-head { margin: 32px 0 22px; padding-bottom: 12px; border-bottom: 1px solid var(--divider); display: flex; align-items: baseline; justify-content: space-between; }
+  .panel-title { font-family: 'Playfair Display','Noto Serif SC',serif; font-size: 26px; font-weight: 700; }
+  .panel-count { font-size: 11px; color: var(--ink-light); text-transform: uppercase; letter-spacing: 1.2px; }
+
+  .story { margin-bottom: 40px; padding-bottom: 40px; border-bottom: 1px solid var(--divider); }
+  .story:last-child { border-bottom: none; }
+  .story-meta { display: flex; gap: 10px; align-items: center; font-size: 11px; color: var(--ink-light); text-transform: uppercase; letter-spacing: 1.1px; margin-bottom: 11px; }
+  .story-meta .dot { color: var(--divider); }
+  .tag-us_stocks { color: var(--accent-red); font-weight: 600; }
+  .tag-my_stocks { color: var(--accent-amber); font-weight: 600; }
+  .tag-ai { color: var(--accent-blue); font-weight: 600; }
+  .tag-macro { color: var(--accent-green); font-weight: 600; }
+
+  .story-headline { font-family: 'Playfair Display','Noto Serif SC',serif; font-size: 28px; font-weight: 700; line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 10px; }
+  .story.lead .story-headline { font-size: 34px; }
+  .story-dek { font-size: 16px; color: var(--ink-soft); line-height: 1.55; margin-bottom: 16px; }
+
+  .story-hero { width: 100%; height: 210px; border-radius: 8px; margin-bottom: 16px; display: flex; align-items: center; justify-content: center; color: var(--ink-light); font-size: 11px; letter-spacing: 1px; text-transform: uppercase; overflow: hidden; background: linear-gradient(135deg,#f5f5f7,#e8e8ed 50%,#d8d8df); }
+  .story-hero img { width: 100%; height: 100%; object-fit: cover; }
+
+  .data-card { background: var(--card-bg); border-left: 3px solid var(--accent-red); padding: 13px 17px; margin: 16px 0; border-radius: 0 6px 6px 0; }
+  .data-card.my_stocks { border-left-color: var(--accent-amber); }
+  .data-card.ai { border-left-color: var(--accent-blue); }
+  .data-card.macro { border-left-color: var(--accent-green); }
+  .data-card-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--ink-light); margin-bottom: 7px; }
+  .data-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px; font-size: 14px; }
+  .data-row .num { font-weight: 600; font-variant-numeric: tabular-nums; }
+  .data-row .up { color: var(--accent-red); }
+  .data-row .down { color: #00a35c; }
+  .data-citation { font-size: 10px; color: var(--ink-light); margin-top: 7px; font-style: italic; }
+
+  .story-body p { font-size: 15px; line-height: 1.65; margin-bottom: 13px; }
+  .story-body p:first-of-type::first-letter { font-family: 'Playfair Display',serif; font-size: 36px; font-weight: 900; line-height: 1; color: var(--accent-red); padding-right: 2px; }
+
+  .story-warning { background: #fff3cd; border-left: 3px solid #d97706; padding: 11px 15px; margin: 14px 0; color: #856404; font-size: 13px; border-radius: 0 4px 4px 0; }
+  @media (prefers-color-scheme: dark) { .story-warning { background: #3a2e10; color: #fde68a; } }
+
+  .story-source { margin-top: 18px; padding-top: 13px; border-top: 1px dotted var(--divider); font-size: 12px; color: var(--ink-light); display: flex; justify-content: space-between; align-items: center; }
+  .source-pill { display: inline-flex; align-items: center; padding: 4px 12px; background: var(--card-bg); border-radius: 12px; font-weight: 500; color: var(--ink-soft); text-decoration: none; min-height: 30px; }
+
+  .empty { padding: 60px 20px; text-align: center; color: var(--ink-light); font-size: 14px; }
+  .doc-footer { margin: 48px 0 60px; padding-top: 28px; border-top: 2px solid var(--ink); text-align: center; font-size: 11px; color: var(--ink-light); letter-spacing: 1.5px; text-transform: uppercase; }
+
+  @media (max-width: 640px) {
+    .wrap { padding: 0 18px; }
+    .topbar-inner { padding-left: 18px; padding-right: 18px; }
+    .brand { font-size: 17px; }
+    .date-display { font-size: 12px; }
+    .masthead-title { font-size: 32px; }
+    .tab { font-size: 13px; padding: 12px 12px; min-width: 64px; }
+    .story-headline { font-size: 23px; }
+    .story.lead .story-headline { font-size: 27px; }
+    .story-hero { height: 170px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <span class="brand">Hermes Daily</span>
+    <div class="date-picker">
+      <button id="prevDay" title="前一天">‹</button>
+      <label class="date-display">
+        <span class="cal-icon">📅</span>
+        <span id="dateText">7月7日 周二</span>
+        <input type="date" id="datePick" value="2026-07-07" max="2026-07-07">
+      </label>
+      <button id="nextDay" title="后一天" disabled>›</button>
+    </div>
+  </div>
+</div>
+
+<div class="tabs">
+  <div class="tabs-inner">
+    
+    <button class="tab active" data-cat="us_stocks">🇺🇸 美股<span class="count">10</span></button>
+    
+    <button class="tab " data-cat="my_stocks">🇲🇾 马股<span class="count">0</span></button>
+    
+    <button class="tab " data-cat="ai">🤖 AI<span class="count">10</span></button>
+    
+    <button class="tab " data-cat="macro">🌐 宏观<span class="count">10</span></button>
+    
+  </div>
+</div>
+
+<div class="wrap">
+  <header class="masthead">
+    <div class="masthead-title">Hermes Daily</div>
+    <div class="masthead-sub">2026-07-07 · 周二 · 09:01 MYT · For Henry</div>
+  </header>
+
+  
+  <div class="panel active" data-cat="us_stocks">
+    <div class="panel-head">
+      <div class="panel-title">美股 · US Markets</div>
+      <div class="panel-count">10 stories</div>
+    </div>
+
+    
+
+    
+    <article class="story lead">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">SOXS对冲半导体策略需谨慎</h2>
+      <p class="story-dek">SOXS作为半导体反向ETF，需结合市场时机与仓位管理，避免长期持有损耗。</p>
+
+      
+
+      
+      <div class="data-card us_stocks">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>SOXS（三倍做空半导体ETF）当前价格4.17美元，日内下跌7.54%，反映市场对半导体板块短期看多情绪 [Finnhub @ 2026-07-07]。</p><p>该ETF适合作为对冲工具，但需注意杠杆ETF的时间衰减特性，仅适合短线操作 [Seeking Alpha @ 2026-07-07]。</p><p>投资者应结合NVDA（195.55美元）、AMD（552.05美元）等成分股走势制定策略，避免单边押注 [Finnhub @ 2026-07-07]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com/article/soxs-hedge-semiconductor" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">DRAM：AI内存瓶颈加剧</h2>
+      <p class="story-dek">AI需求推动DRAM价格飙升，但供应瓶颈或限制涨幅。</p>
+
+      
+
+      
+      <div class="data-card us_stocks">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>DRAM价格报64.76美元，日内上涨6.81%，受AI训练与推理需求激增推动 [Finnhub @ 2026-07-07]。</p><p>三星电子（未上市）二季度利润创纪录，但股价下跌，反映市场对供应过剩的担忧 [CNBC @ 2026-07-07]。</p><p>MU（美光）股价984.75美元，微涨0.94%，显示内存板块整体强势但分化 [Finnhub @ 2026-07-07]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com/article/dram-ai-memory-bottleneck" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>CNBC</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">三星电子利润创新高股价反跌</h2>
+      <p class="story-dek">二季度营业利润同比增145%，但市场担忧内存价格见顶。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>三星电子公布二季度初步利润创历史新高，但股价下跌，因投资者担忧DRAM/NAND价格周期见顶 [CNBC @ 2026-07-07]。</p><p>DRAM价格64.76美元，日内涨6.81%，但三星股价反应显示市场对持续性存疑 [Finnhub @ 2026-07-07]。</p><p>MU（美光）微涨0.94%至984.75美元，内存板块内部分化明显 [Finnhub @ 2026-07-07]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/samsung-electronics-record-profit" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>MarketWatch</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">摩根大通等探索支付网络交易</h2>
+      <p class="story-dek">多家银行拟联合打造新卡网络，以挑战Visa/Mastercard，但内部存分歧。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>摩根大通、美国银行等大型银行正探索组建新卡网络，旨在提高交易手续费收入 [MarketWatch @ 2026-07-07]。</p><p>部分银行高管担忧此举可能引发监管反弹及消费者抵制，内部意见不一 [MarketWatch @ 2026-07-07]。</p><p>Visa（未上市）股价未受影响，但若交易落地，将重塑支付行业格局 [MarketWatch @ 2026-07-07]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.marketwatch.com/story/jpmorgan-bofa-payments-deal" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>CNBC</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">阿里巴巴禁止员工使用Anthropic AI</h2>
+      <p class="story-dek">指控Anthropic Claude Code被用于“蒸馏攻击”，列入高风险软件清单。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>阿里巴巴将Anthropic的Claude Code列入高风险软件清单，禁止员工使用，指控其被用于“蒸馏攻击”窃取模型知识 [CNBC @ 2026-07-07]。</p><p>此举反映中美AI企业竞争加剧，数据安全与知识产权保护成为焦点 [CNBC @ 2026-07-07]。</p><p>Anthropic尚未回应，但事件可能影响其企业客户拓展 [CNBC @ 2026-07-07]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/alibaba-bans-anthropic-ai" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">ISM服务业PMI显示6月持续扩张</h2>
+      <p class="story-dek">ISM服务业PMI数据未提供，但报告称服务业活动继续增长。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>ISM服务业PMI数据未提供，报告称6月服务业活动继续扩张，但增速放缓 [Seeking Alpha @ 2026-07-07]。</p><p>具体数值未在数据源中列出，无法验证 [数据未验证]。</p><p>服务业韧性支撑经济，但市场关注美联储后续政策路径 [Seeking Alpha @ 2026-07-07]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com/article/ism-services-pmi-june" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Visa将挑战转化为机遇</h2>
+      <p class="story-dek">Visa通过技术创新与合作伙伴关系，应对支付行业变革。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Visa正通过区块链、跨境支付等创新应对新兴支付网络挑战 [Seeking Alpha @ 2026-07-07]。</p><p>公司加强与银行合作，巩固其卡网络主导地位 [Seeking Alpha @ 2026-07-07]。</p><p>Visa股价未在数据中提供，但策略调整或影响长期竞争力 [数据未验证]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com/article/visa-disruption-opportunity" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>CNBC</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">微软裁员4800人 Xbox部门重组</h2>
+      <p class="story-dek">微软裁减商业与Xbox部门员工，并计划分拆四个游戏工作室。</p>
+
+      
+
+      
+      <div class="data-card us_stocks">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>微软宣布裁员4800人，主要集中在商业业务与Xbox游戏部门，后者收入持续下滑 [CNBC @ 2026-07-07]。</p><p>公司计划分拆四个游戏工作室，以优化资源配置 [CNBC @ 2026-07-07]。</p><p>MSFT股价报386.74美元，微跌0.96%，市场对重组反应平淡 [Finnhub @ 2026-07-07]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/microsoft-layoffs-xbox" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>MarketWatch</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">金价下跌 市场等待美联储纪要</h2>
+      <p class="story-dek">黄金在亚洲早盘走低，连续上涨后面临回调压力。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>黄金价格在亚洲早盘下跌，因投资者在美联储会议纪要公布前获利了结 [MarketWatch @ 2026-07-07]。</p><p>Hola Prime表示，金价连续上涨后存在回调风险 [MarketWatch @ 2026-07-07]。</p><p>具体金价数据未在数据源中提供 [数据未验证]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.marketwatch.com/story/gold-falls-fed-minutes" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>MarketWatch</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">日元兑美元横盘整理</h2>
+      <p class="story-dek">日元在多重因素影响下窄幅波动，市场等待新催化剂。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>日元兑美元及其他货币在亚洲盘整，因市场消化日本央行政策信号与全球经济数据 [MarketWatch @ 2026-07-07]。</p><p>具体汇率数据未在数据源中提供 [数据未验证]。</p><p>投资者关注美联储纪要及日本央行后续行动 [MarketWatch @ 2026-07-07]。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.marketwatch.com/story/yen-consolidates" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+  </div>
+  
+  <div class="panel " data-cat="my_stocks">
+    <div class="panel-head">
+      <div class="panel-title">马股 · Bursa Malaysia</div>
+      <div class="panel-count">0 stories</div>
+    </div>
+
+    
+    <div class="empty">今日暂无 马股 新闻</div>
+    
+
+    
+  </div>
+  
+  <div class="panel " data-cat="ai">
+    <div class="panel-head">
+      <div class="panel-title">AI · 人工智能</div>
+      <div class="panel-count">10 stories</div>
+    </div>
+
+    
+
+    
+    <article class="story lead">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">SK海力士赴美IPO</h2>
+      <p class="story-dek">AI热潮推动SK海力士美国上市</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>SK海力士借助AI热潮实现增长，即将进行数十亿美元美国IPO，预计本周五上市。</p><p>该公司是内存制造商，与英伟达等AI芯片厂商紧密合作。</p><p>此次IPO将扩大美国投资者对亚洲存储器巨头的直接参与。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/2026/07/07/sk-hynix-ipo/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Import AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Fables编写GPU内核与自动化</h2>
+      <p class="story-dek">Import AI 464期：GPU内核、AI自动化与模拟计算</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>本期Import AI聚焦Fables自动编写GPU内核技术。</p><p>探讨AI自动化如何改变编程范式，以及模拟计算的最新进展。</p><p>内容未涉及具体上市公司数据。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://jack-clark.net/2026/07/07/import-ai-464/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>MIT Tech Review</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">OpenAI家庭投资计划</h2>
+      <p class="story-dek">美国家庭300美元入股OpenAI的讨论</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>OpenAI CEO Sam Altman曾提及美国人投资OpenAI的可能性。</p><p>本文探讨家庭以300美元参与AI公司的设想与影响。</p><p>目前OpenAI尚未上市，无公开股价数据。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.technologyreview.com/2026/07/07/openai-family-investment/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Vercel CEO谈模型与代理分离</h2>
+      <p class="story-dek">Guillermo Rauch强调生产环境中价格/性能权衡</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Vercel CEO Guillermo Rauch表示，生产优化需考虑价格/性能比。</p><p>他主张将模型与AI代理解耦以提升灵活性。</p><p>未引用具体股票价格数据。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/2026/07/07/vercel-model-agent/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">2026年科技公司AI相关裁员</h2>
+      <p class="story-dek">年度盘点：大型科技公司以AI为由的裁员</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>本文按时间倒序列举2026年以AI为因素的重大科技裁员。</p><p>多家企业将AI自动化作为重组理由。</p><p>具体公司未在数据源中提供股价信息。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/2026/07/07/ai-layoffs-2026/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Station F成欧洲AI创业跳板</h2>
+      <p class="story-dek">巴黎创业中心F/ai加速器新一期启动</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Station F由法国亿万富翁Xavier Niel创立，正加强F/ai加速器项目。</p><p>旨在成为欧洲AI初创公司的重要孵化平台。</p><p>该消息不涉及具体上市公司股票。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/2026/07/07/station-f-ai/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>The Verge AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">微软裁员4800人</h2>
+      <p class="story-dek">微软新财年首日裁减约4800名员工</p>
+
+      
+
+      
+      <div class="data-card ai">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>微软在新财年首日宣布裁员约4800人，占全球员工2.1%。</p><p>此次裁员紧随去年9100人削减之后，涉及Xbox和商业销售部门。</p><p>目前微软股价为386.74美元（数据来源：Live Data @ 2026-07-07）。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.theverge.com/2026/07/07/microsoft-layoffs-4800/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>MIT Tech Review</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">韩国芯片员工成婚恋热门</h2>
+      <p class="story-dek">SK海力士等芯片公司员工在韩国婚恋市场走俏</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>35岁的SK海力士经理Baek加入首尔婚介公司Sunoo一年。</p><p>韩国父母焦虑子女婚姻，芯片行业员工因高薪稳定受青睐。</p><p>SK海力士股票数据未在实时数据表中提供。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.technologyreview.com/2026/07/07/korea-chip-workers-marriage/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">微软裁近5000人涉及Xbox</h2>
+      <p class="story-dek">微软裁员约4800人，Xbox和商业销售受冲击</p>
+
+      
+
+      
+      <div class="data-card ai">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>微软周一裁员约4800人，相当于全球员工2.1%，系新一轮AI替代担忧。</p><p>裁员波及Xbox和商业销售部门，引发AI取代人类工作的讨论。</p><p>微软当前股价386.74美元（数据来源：Live Data @ 2026-07-07）。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/2026/07/07/microsoft-layoffs-xbox/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">首次AI勒索攻击仍靠人类</h2>
+      <p class="story-dek">AI代理首次执行勒索攻击，但人类仍不可或缺</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>AI代理首次在真实攻击中执行技术环节，但人类选择目标并设置基础设施。</p><p>这表明AI辅助攻击仍需人类参与决策与准备。</p><p>该事件不直接涉及上市公司股票数据。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/2026/07/07/first-ai-ransomware/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-07T00:00:00Z</span>
+      </div>
+    </article>
+    
+  </div>
+  
+  <div class="panel " data-cat="macro">
+    <div class="panel-head">
+      <div class="panel-title">宏观 · Macro</div>
+      <div class="panel-count">10 stories</div>
+    </div>
+
+    
+
+    
+    <article class="story lead">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">德国借债8000亿欧元重整军备</h2>
+      <p class="story-dek">Chancellor Friedrich Merz’s debt-fuelled spending not seen since German reunification</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>德国总理默茨计划通过举债8000亿欧元进行重整军备，规模为两德统一以来首次。</p><p>这一历史性转变旨在加强德国国防能力，应对地缘政治挑战。</p><p>然而，债务融资策略可能引发财政可持续性担忧，市场反应尚待观察。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-07T06:30:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">美联储官员支持沃什改革前瞻指引</h2>
+      <p class="story-dek">Christopher Waller sides with central bank’s new chair in call for revamping communication to market</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美联储理事沃勒支持新主席沃什对前瞻指引的改革立场，强调市场沟通需更新。</p><p>此举可能改变美联储未来政策信号的传递方式，影响利率预期。</p><p>目前市场仍在评估这一变动对货币政策路径的具体影响。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-07T06:30:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">中国趁油价下跌增加中东石油进口</h2>
+      <p class="story-dek">Move comes as Saudi Arabia cuts pricing on exports to Asia to 6-year low</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>中国利用油价下跌之机加大从中东进口原油，尤其增加沙特采购。</p><p>沙特将面向亚洲的出口价格降至六年低点，刺激了中国买盘。</p><p>这一举动有助于中国降低能源成本，同时增强与中东产油国的合作。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-07T06:30:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>BBC World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">乌克兰称导弹短缺致23人死</h2>
+      <p class="story-dek">President Zelensky says Sunday&#39;s &#39;massive Russian attack&#39; on Kyiv consisted of 68 missiles and 351 strike drones.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>乌克兰总统泽连斯基警告拦截导弹短缺，周日俄罗斯大规模袭击基辅地区导致23人死亡。</p><p>俄方发射68枚导弹和351架攻击无人机，乌方防空系统不堪重负。</p><p>乌克兰呼吁盟友紧急提供更多防空武器以应对持续空袭。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.bbc.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-07T06:30:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">中国向太平洋核禁区试射弹道导弹</h2>
+      <p class="story-dek">Submarine-launched projectile carrying dummy warhead draws condemnation from Japan, Australia and New Zealand</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>中国从潜艇向太平洋核武禁试区发射携带模拟弹头的弹道导弹，引发日本、澳大利亚和新西兰谴责。</p><p>此举被认为违反地区无核化倡议，加剧印太紧张局势。</p><p>中国国防部尚未正式回应，国际社会呼吁保持克制。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-07T06:30:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">equities</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">霍尼韦尔拆分后145亿美元收购Element</h2>
+      <p class="story-dek">Deal will create a leading advanced materials company with a combined enterprise value of roughly $29bn</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>霍尼韦尔分拆后以145亿美元收购Element，合并后企业价值约290亿美元。</p><p>新公司将专注于先进材料领域，有望成为行业领导者。</p><p>该交易是霍尼韦尔战略重组的一部分，旨在提升股东价值。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-07T06:30:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">equities</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">三星连续三季度创纪录盈利</h2>
+      <p class="story-dek">High memory chip prices fuel April to June earnings</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>三星凭借高内存芯片价格实现连续第三个季度创纪录盈利，4月至6月业绩强劲。</p><p>AI需求持续推动存储芯片价格上涨，三星利润大幅增长。</p><p>市场预计下半年需求仍将旺盛，但供应端竞争加剧可能带来压力。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-07T06:30:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">tech</span>
+        <span class="dot">·</span>
+        <span>BBC World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">中国能否复制电动汽车成功于无人出租车？</h2>
+      <p class="story-dek">China&#39;s self-driving car firms have been given a headstart by the country&#39;s EV supply chain as they expand globally.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>中国无人驾驶出租车公司借助成熟的电动汽车供应链在全球扩张，试图复制电动汽车的成功。</p><p>百度、小马智行等企业已在多个城市开展商业运营，但监管和技术挑战犹存。</p><p>分析师认为，低成本供应链和庞大市场是中国企业的核心优势。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.bbc.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-07T06:30:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">equities</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">前OpenAI研究员基金押注SK海力士美国IPO</h2>
+      <p class="story-dek">Situational Awareness joins UK investor Baillie Gifford backing the South Korean memory maker’s American debut</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>前OpenAI研究员创立的Situational Awareness基金与英国Baillie Gifford共同支持SK海力士美国IPO。</p><p>SK海力士作为韩国存储芯片巨头，此次上市备受AI供应链关注。</p><p>市场对SK海力士估值预期较高，但具体发行细节尚未公布。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-07T06:30:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">特朗普委内瑞拉战略的缺陷</h2>
+      <p class="story-dek">The US-backed socialist regime has botched its response to the earthquakes</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>文章指出特朗普政府对委内瑞拉的战略存在根本缺陷，未能有效应对地震危机。</p><p>美国支持的社会主义政权在地震救援中表现拙劣，人道主义局势恶化。</p><p>分析认为，缺乏连贯外交政策使得美国在委内瑞拉的影响力下降。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-07-07T06:30:00Z</span>
+      </div>
+    </article>
+    
+  </div>
+  
+
+  <footer class="doc-footer">Hermes Daily · 2026-07-07 09:01 MYT · Top 30 of 30 · Build 6db9</footer>
+</div>
+
+<script>
+  const tabs = document.querySelectorAll('.tab');
+  const panels = document.querySelectorAll('.panel');
+  tabs.forEach(tab => {
+    tab.onclick = () => {
+      const cat = tab.dataset.cat;
+      tabs.forEach(t => t.classList.toggle('active', t === tab));
+      panels.forEach(p => p.classList.toggle('active', p.dataset.cat === cat));
+      window.scrollTo({ top: 0 });
+    };
+  });
+
+  const datePick = document.getElementById('datePick');
+  const dateText = document.getElementById('dateText');
+  const weekdays = ['周日','周一','周二','周三','周四','周五','周六'];
+  function fmt(d){ const dt=new Date(d+'T00:00:00'); return `${dt.getMonth()+1}月${dt.getDate()}日 ${weekdays[dt.getDay()]}`; }
+  datePick.onchange = () => { window.location = '/' + datePick.value + '/'; };
+
+  function shift(days){
+    const cur = new Date(datePick.value + 'T00:00:00');
+    cur.setDate(cur.getDate() + days);
+    const iso = cur.toISOString().slice(0,10);
+    window.location = '/' + iso + '/';
+  }
+  document.getElementById('prevDay').onclick = () => shift(-1);
+  const nextBtn = document.getElementById('nextDay');
+  if (!nextBtn.disabled) nextBtn.onclick = () => shift(1);
+</script>
+
+</body>
+</html>

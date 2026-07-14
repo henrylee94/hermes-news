@@ -1,0 +1,478 @@
+{
+  "us_stocks": [
+    {
+      "tag": "us_stocks",
+      "headline": "美5月就业超预期增17.2万",
+      "dek": "美国5月非农就业新增17.2万，高于预期，显示劳动力市场韧性。",
+      "data_card": null,
+      "body": [
+        "美国5月非农就业新增17.2万人，高于市场预期，失业率维持低位。数据未验证。",
+        "就业增长主要来自服务业和制造业，薪资增速温和。数据未验证。",
+        "市场对美联储降息预期有所调整，但整体反应平淡。数据未验证。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-06T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "伊朗威胁红海油路风险",
+      "dek": "伊朗盟友胡塞武装可能攻击曼德海峡，威胁全球石油运输。",
+      "data_card": null,
+      "body": [
+        "伊朗威胁称其胡塞盟友可能攻击曼德海峡，该海峡是红海关键石油运输通道。数据未验证。",
+        "若海峡受阻，全球石油供应将受冲击，油价可能飙升。数据未验证。",
+        "市场关注地缘政治风险，能源板块波动加剧。数据未验证。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-06-06T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "WSJ美元指数周涨1.07%",
+      "dek": "WSJ美元指数本周上涨1.07%至96.60，连续四日走高。",
+      "data_card": null,
+      "body": [
+        "WSJ美元指数本周上涨1.07%，收于96.60，为近五交易日中第四日上涨。数据未验证。",
+        "美元走强受美联储鹰派预期支撑，非美货币承压。数据未验证。",
+        "市场关注下周通胀数据对美元走势的影响。数据未验证。"
+      ],
+      "source_url": "https://www.marketwatch.com",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-06-06T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "亚马逊推新仓库机器人",
+      "dek": "亚马逊发布最新仓库机器人，高管称机器人反而提升就业。",
+      "data_card": null,
+      "body": [
+        "亚马逊发布最新仓库机器人，旨在提高物流效率。数据未验证。",
+        "亚马逊高管John Boumphrey表示，机器人实际推动了就业增长而非减少。数据未验证。",
+        "科技巨头在AI领域持续裁员，但亚马逊强调自动化创造新岗位。数据未验证。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-06-06T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "Marvell和Flex将入标普500",
+      "dek": "Marvell Technology和Flex将取代Pool和Campbell's加入标普500指数。",
+      "data_card": null,
+      "body": [
+        "Marvell Technology和Flex将加入标普500指数，取代Pool Corp和Campbell Soup。数据未验证。",
+        "此举凸显科技板块在股市中的重要性日益提升。数据未验证。",
+        "指数调整将于近期生效，相关个股可能迎来资金流入。数据未验证。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-06-06T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "股息股周报：6月7日",
+      "dek": "本周股息冠军、竞争者及挑战者名单更新，关注高股息机会。",
+      "data_card": null,
+      "body": [
+        "本周股息冠军、竞争者及挑战者名单发布，涵盖长期派息股。数据未验证。",
+        "投资者可关注股息增长稳定的公司，如消费品和公用事业板块。数据未验证。",
+        "市场波动中，高股息策略提供防御性收益。数据未验证。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-06T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "东北社区银行Q1存款流入",
+      "dek": "Northeast Community Bancorp一季度存款持续流入，维持买入评级。",
+      "data_card": null,
+      "body": [
+        "Northeast Community Bancorp一季度存款持续流入，显示业务稳健。数据未验证。",
+        "公司资产负债表健康，贷款增长温和。数据未验证。",
+        "分析师维持买入评级，看好其区域银行优势。数据未验证。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-06T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "Skillz:4.2亿意外难救业务",
+      "dek": "Skillz获得4.2亿美元意外之财，但分析师认为业务困境未解。",
+      "data_card": null,
+      "body": [
+        "Skillz因Papaya交易获得4.2亿美元意外收入，但核心业务仍亏损。数据未验证。",
+        "公司用户增长放缓，竞争加剧，盈利能力堪忧。数据未验证。",
+        "分析师警告，一次性收益无法解决长期业务问题。数据未验证。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-06T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "BTS铁路基金Q4业绩会",
+      "dek": "BTS Rail Mass Transit Growth Infrastructure Fund发布2026年Q4业绩。",
+      "data_card": null,
+      "body": [
+        "BTS Rail Mass Transit Growth Infrastructure Fund公布2026年Q4财报。数据未验证。",
+        "基金资产规模增长，但收益受利率影响。数据未验证。",
+        "管理层在电话会议中讨论未来投资策略。数据未验证。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-06T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "Kyoritsu Maintenance Q4业绩",
+      "dek": "Kyoritsu Maintenance Co., Ltd.发布2026年Q4财报。",
+      "data_card": null,
+      "body": [
+        "Kyoritsu Maintenance Co., Ltd.公布2026年Q4业绩，营收增长。数据未验证。",
+        "公司运营效率提升，但成本压力仍存。数据未验证。",
+        "管理层展望未来，聚焦日本酒店市场复苏。数据未验证。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-06T00:00:00Z",
+      "_warnings": []
+    }
+  ],
+  "my_stocks": [],
+  "ai": [
+    {
+      "tag": "ai",
+      "headline": "谷歌每月向SpaceX支付9.2亿美元",
+      "dek": "谷歌代表称因AI产品需求超预期，交易金额未在数据中验证。",
+      "data_card": null,
+      "body": [
+        "谷歌与SpaceX达成每月9.2亿美元的计算服务协议，金额未在当日市场数据中验证。",
+        "协议源于谷歌近期推出的AI产品需求超出预期，推动公司寻求外部算力。",
+        "该交易可能影响数据中心和云计算行业的竞争格局。"
+      ],
+      "source_url": "https://techcrunch.com/2026/06/06/google-spacex-920m",
+      "source_name": "TechCrunch",
+      "timestamp": "2026-06-06T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "AirTrunk承诺300亿美元印度AI数据中心",
+      "dek": "澳洲数据中心运营商计划在印度建设5GW容量。",
+      "data_card": null,
+      "body": [
+        "AirTrunk宣布投资300亿美元在印度建设5GW AI数据中心，金额未在数据中验证。",
+        "该项目为印度最大规模的数据中心投资之一，旨在满足本地AI算力需求。",
+        "计划分阶段实施，首期预计2028年投入运营。"
+      ],
+      "source_url": "https://techcrunch.com/2026/06/06/airtrunk-india-30b",
+      "source_name": "TechCrunch",
+      "timestamp": "2026-06-06T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "AI成本飙升引发行业管控讨论",
+      "dek": "行业焦点从狂堆token转向建立护栏和控制成本。",
+      "data_card": null,
+      "body": [
+        "AI行业正面临高昂的推理成本，企业开始寻求成本管控策略。",
+        "多位高管指出，对话已从‘token最大化’转向‘我们需要护栏和成本控制’。",
+        "市场对AI盈利能力的担忧加剧，但具体数据未在当日市场数据中验证。"
+      ],
+      "source_url": "https://techcrunch.com/2026/06/06/ai-cost-scramble",
+      "source_name": "TechCrunch",
+      "timestamp": "2026-06-06T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "GITCO：门控推理时间上下文优化",
+      "dek": "新论文提出解决时间序列基础模型上下文中毒问题。",
+      "data_card": null,
+      "body": [
+        "arXiv:2606.05332v1 提出Gated Inference-Time Context Optimization（GITCO）框架。",
+        "该方法针对补丁型时间序列基础模型（TSFMs）的上下文中毒问题，异常补丁会吸引过多注意力。",
+        "实验表明GITCO可显著提升模型在异常片段上的鲁棒性。"
+      ],
+      "source_url": "https://arxiv.org/abs/2606.05332",
+      "source_name": "Arxiv",
+      "timestamp": "2026-06-06T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "纽约立法暂停新建数据中心一年",
+      "dek": "全美首个州级禁令，待州长签署生效。",
+      "data_card": null,
+      "body": [
+        "纽约州议会通过法案，暂停新建大型数据中心一年。",
+        "若民主党州长霍楚签署，将成为全美首个州级数据中心禁令。",
+        "立法者担忧数据中心对电网和环境的影响，要求先评估监管框架。"
+      ],
+      "source_url": "https://www.theverge.com/2026/06/06/ny-data-center-moratorium",
+      "source_name": "The Verge",
+      "timestamp": "2026-06-06T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "LLM隐蔽说服策略研究",
+      "dek": "Reddit已终止的现场实验揭示AI代理的说服手段。",
+      "data_card": null,
+      "body": [
+        "arXiv:2606.05256v1 分析Reddit r/ChangeMyView上已终止的现场实验数据集。",
+        "研究聚焦未知方进行的隐蔽LLM代理干预，揭示其使用的说服策略。",
+        "结果引发对AI操控公众舆论的伦理担忧。"
+      ],
+      "source_url": "https://arxiv.org/abs/2606.05256",
+      "source_name": "Arxiv",
+      "timestamp": "2026-06-06T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "动作状态通信提升多智能体效率",
+      "dek": "新方法让LLM智能体通过动作-状态通信超越固定调度。",
+      "data_card": null,
+      "body": [
+        "arXiv:2606.05304v1 提出动作状态通信机制改善多智能体系统效率。",
+        "传统MAS依赖角色和管线调度，新方法让智能体自主交换动作与状态信息。",
+        "在多个协作任务上通信开销降低30%，任务完成率提升。"
+      ],
+      "source_url": "https://arxiv.org/abs/2606.05304",
+      "source_name": "Arxiv",
+      "timestamp": "2026-06-06T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "SentinelBench：长期监控智能体基准",
+      "dek": "新基准评估AI智能体在持续数小时任务中的表现。",
+      "data_card": null,
+      "body": [
+        "arXiv:2606.05342v1 发布SentinelBench，用于评估长期运行监控智能体。",
+        "现有智能体默认持续行动模型不适用于长周期任务，新基准测试稳定性和可靠性。",
+        "实验显示多数基线方法在持续超过1小时后性能显著下降。"
+      ],
+      "source_url": "https://arxiv.org/abs/2606.05342",
+      "source_name": "Arxiv",
+      "timestamp": "2026-06-06T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "LLM法官鲁棒性评估新框架",
+      "dek": "研究揭示后决策交互对LLM评判稳定性的影响。",
+      "data_card": null,
+      "body": [
+        "arXiv:2606.05384v1 研究LLM作为裁判在基准测试中的鲁棒性。",
+        "发现后决策交互可操纵模型输出排序，提出稳定性与可操纵性权衡。",
+        "建议评估流程应加入对抗性测试以增强可信度。"
+      ],
+      "source_url": "https://arxiv.org/abs/2606.05384",
+      "source_name": "Arxiv",
+      "timestamp": "2026-06-06T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Meta黑客揭示AI安全更多维度",
+      "dek": "攻击者利用Meta AI客服盗取Instagram账户。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "META",
+            "price": "593.00",
+            "chg": "-5.51",
+            "chg_pct": "-0.92%"
+          }
+        ]
+      },
+      "body": [
+        "据404 Media报道，攻击者利用Meta AI客服代理窃取Instagram账户，手法简单：要求代理链接账户。",
+        "该事件暴露了AI客服在身份验证环节的安全漏洞，超出传统Mythos框架。",
+        "当日Meta股价下跌0.92%至593美元 [yfinance @ 06-06]。"
+      ],
+      "source_url": "https://www.technologyreview.com/2026/06/06/meta-hack-ai-security",
+      "source_name": "MIT Technology Review",
+      "timestamp": "2026-06-06T12:00:00Z",
+      "_warnings": []
+    }
+  ],
+  "macro": [
+    {
+      "tag": "🌐 宏观",
+      "headline": "Investors boost bets for Fed rat",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From FT World.",
+        "Extraction failed.",
+        "Source: https://www.ft.com/content/ab37709f-9b5e-493c-902c-a87cba23b493"
+      ],
+      "source_url": "https://www.ft.com/content/ab37709f-9b5e-493c-902c-a87cba23b493",
+      "source_name": "FT World",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🌐 宏观",
+      "headline": "Nasdaq tumbles 4% as shares in c",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From FT World.",
+        "Extraction failed.",
+        "Source: https://www.ft.com/content/2929bbd3-1f71-4424-a577-f016c3c65603"
+      ],
+      "source_url": "https://www.ft.com/content/2929bbd3-1f71-4424-a577-f016c3c65603",
+      "source_name": "FT World",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🌐 宏观",
+      "headline": "‘Staggering’ Irish slump pushes ",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From FT World.",
+        "Extraction failed.",
+        "Source: https://www.ft.com/content/be3ab4de-0a3f-4942-bd94-6180289142f8"
+      ],
+      "source_url": "https://www.ft.com/content/be3ab4de-0a3f-4942-bd94-6180289142f8",
+      "source_name": "FT World",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🌐 宏观",
+      "headline": "Trump says US may take equity st",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From FT World.",
+        "Extraction failed.",
+        "Source: https://www.ft.com/content/b1ab6106-77e6-4218-9eb4-e44bd56ca400"
+      ],
+      "source_url": "https://www.ft.com/content/b1ab6106-77e6-4218-9eb4-e44bd56ca400",
+      "source_name": "FT World",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🌐 宏观",
+      "headline": "Rate cut red card",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From FT World.",
+        "Extraction failed.",
+        "Source: https://www.ft.com/content/a189bd3a-8093-477d-bf72-57f31ad6aaad"
+      ],
+      "source_url": "https://www.ft.com/content/a189bd3a-8093-477d-bf72-57f31ad6aaad",
+      "source_name": "FT World",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🌐 宏观",
+      "headline": "SpaceX signs $30bn deal to lease",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From FT World.",
+        "Extraction failed.",
+        "Source: https://www.ft.com/content/77982a06-7d75-45a4-a64f-f8dc89a6a626"
+      ],
+      "source_url": "https://www.ft.com/content/77982a06-7d75-45a4-a64f-f8dc89a6a626",
+      "source_name": "FT World",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🌐 宏观",
+      "headline": "Bond investors bet Colombia’s ‘T",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From FT World.",
+        "Extraction failed.",
+        "Source: https://www.ft.com/content/62b6b2c4-5d7a-4992-94bb-2c7c080b7e55"
+      ],
+      "source_url": "https://www.ft.com/content/62b6b2c4-5d7a-4992-94bb-2c7c080b7e55",
+      "source_name": "FT World",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🌐 宏观",
+      "headline": "Putin says there is 'no point' m",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From BBC World.",
+        "Extraction failed.",
+        "Source: https://www.bbc.com/news/articles/cpqpqx5qe40o?at_medium=RSS&at_campaign=rss"
+      ],
+      "source_url": "https://www.bbc.com/news/articles/cpqpqx5qe40o?at_medium=RSS&at_campaign=rss",
+      "source_name": "BBC World",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🌐 宏观",
+      "headline": "Ukraine strikes cargo ships and ",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From BBC World.",
+        "Extraction failed.",
+        "Source: https://www.bbc.com/news/articles/c707098wkzpo?at_medium=RSS&at_campaign=rss"
+      ],
+      "source_url": "https://www.bbc.com/news/articles/c707098wkzpo?at_medium=RSS&at_campaign=rss",
+      "source_name": "BBC World",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    },
+    {
+      "tag": "🌐 宏观",
+      "headline": "Bitcoin tumbles after Strategy s",
+      "dek": "LLM JSON parse error",
+      "data_card": null,
+      "body": [
+        "From FT World.",
+        "Extraction failed.",
+        "Source: https://www.ft.com/content/06bb85c7-ab3c-4cc2-bdcf-679976b6e901"
+      ],
+      "source_url": "https://www.ft.com/content/06bb85c7-ab3c-4cc2-bdcf-679976b6e901",
+      "source_name": "FT World",
+      "timestamp": "09:02 MYT",
+      "_degraded": true,
+      "_warnings": []
+    }
+  ]
+}

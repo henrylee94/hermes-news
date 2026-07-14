@@ -1,0 +1,399 @@
+{
+  "us_stocks": [
+    {
+      "tag": "us_stocks",
+      "headline": "韩日风险比霍尔木兹更令人担忧",
+      "dek": "地缘政治风险评估",
+      "data_card": null,
+      "body": [
+        "投资者担忧韩国和日本的地缘局势可能比霍尔木兹海峡更令人忧虑。",
+        "霍尔木兹海峡问题虽影响全球能源，但韩日风险被作者视为更大。",
+        "该观点出自Seeking Alpha的分析，具体数据未验证。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-01T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "美中科技拉锯战与创新竞赛",
+      "dek": "科技竞争分析",
+      "data_card": null,
+      "body": [
+        "美中关系持续影响科技行业，双方在创新领域展开激烈竞争。",
+        "市场关注政策变化对科技股的影响，例如半导体和人工智能领域。",
+        "Seeking Alpha文章指出这种拉锯战可能决定未来创新格局。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-01T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "日本债券收益率创40年新高",
+      "dek": "市场担忧预算与首相言论",
+      "data_card": null,
+      "body": [
+        "日本债券收益率升至40年高位，引发市场紧张。",
+        "预算问题以及首相Takaichi的‘红旗’警告加剧了不安情绪。",
+        "具体收益率数据未验证，来自CNBC报道。"
+      ],
+      "source_url": "https://cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-06-01T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "油价因霍尔木兹海峡未开放而上涨",
+      "dek": "供应担忧推升油价",
+      "data_card": null,
+      "body": [
+        "油价上涨，因霍尔木兹海峡重新开放的迹象稀少。",
+        "市场担忧供应中断，推动原油走高。",
+        "具体涨幅数据未验证，来自MarketWatch报道。"
+      ],
+      "source_url": "https://marketwatch.com",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-06-01T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "美伊仍未达成协议 特朗普不急于谈判",
+      "dek": "特朗普威胁更多军事行动",
+      "data_card": null,
+      "body": [
+        "美国与伊朗仍未达成结束战争的协议，特朗普表示不急于谈判。",
+        "特朗普威胁如果谈判破裂将采取进一步军事行动，除非伊朗做出让步。",
+        "CNBC报道称市场密切关注事态发展。"
+      ],
+      "source_url": "https://cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-06-01T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "韩国股市创历史新高 区域走势分化",
+      "dek": "亚太市场涨跌互现",
+      "data_card": null,
+      "body": [
+        "韩国股市周一创出历史新高，受益于科技股走强。",
+        "亚太其他市场涨跌互现，受特朗普对伊朗谈判谨慎态度影响。",
+        "CNBC指出投资者关注美伊谈判进展。"
+      ],
+      "source_url": "https://cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-06-01T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "日本国债下跌 因美伊谈判可能延长",
+      "dek": "债券市场承压",
+      "data_card": null,
+      "body": [
+        "日本国债价格在周一早盘下跌，因迹象显示美伊谈判可能延长。",
+        "谈判拖延增加不确定性，打压债券需求。",
+        "具体跌幅数据未验证，来自MarketWatch报道。"
+      ],
+      "source_url": "https://marketwatch.com",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-06-01T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "18个月新债仅10%被外国购买",
+      "dek": "国际购债比例低",
+      "data_card": null,
+      "body": [
+        "过去18个月新发行的债务中，只有10%被国际国家购买。",
+        "这一比例较低，可能反映全球需求疲软。",
+        "Seeking Alpha指出该数据未验证，需进一步确认。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-01T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "澳元兑美元面临回调风险",
+      "dek": "StoneX警告回调",
+      "data_card": null,
+      "body": [
+        "StoneX表示澳大利亚元兑美元面临回调压力。",
+        "具体回调幅度和触发因素数据未验证。",
+        "投资者需关注全球经济数据和美联储政策。"
+      ],
+      "source_url": "https://marketwatch.com",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-06-01T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "Vertiv投资者会议强化买入评级",
+      "dek": "公司前景看好",
+      "data_card": null,
+      "body": [
+        "Vertiv Holdings的投资者会议巩固了买入评级。",
+        "公司基本面和前景数据未验证。",
+        "Seeking Alpha分析认为该股具有吸引力。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-01T00:00:00Z",
+      "_warnings": []
+    }
+  ],
+  "my_stocks": [],
+  "ai": [
+    {
+      "tag": "ai",
+      "headline": "布洛克维奇瞄准数据中心保密问题",
+      "dek": "环保活动家Erin Brockovich发起新行动，质疑数据中心行业的信息不透明。",
+      "data_card": null,
+      "body": [
+        "环保活动家Erin Brockovich将矛头指向数据中心行业，要求提高信息透明度。她认为，数据中心在选址、能耗和环境影响方面缺乏公开披露，可能对社区造成潜在风险。",
+        "Brockovich以揭露污染问题闻名，此次行动聚焦于AI基础设施扩张中的环境与社会责任。她呼吁监管机构介入，确保数据中心运营商公开关键数据。",
+        "目前，数据中心行业面临能源消耗和碳排放压力，但具体运营细节常被视为商业机密。Brockovich的介入可能推动更严格的披露要求。数据未验证"
+      ],
+      "source_url": "https://techcrunch.com/2026/06/01/erin-brockovich-takes-aim-at-data-center-secrecy/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-01T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "AI精神病症辩论：CEO是否易感？",
+      "dek": "最新一期Equity节目探讨科技CEO是否更容易陷入AI精神病症。",
+      "data_card": null,
+      "body": [
+        "在最新一期Equity节目中，嘉宾们就科技CEO是否‘特别容易陷入AI精神病症’展开激烈辩论。该术语指对AI能力过度乐观或脱离现实的认知偏差。",
+        "支持者认为，CEO们因商业利益和媒体曝光，容易夸大AI进展，导致战略误判。反对者则指出，这种说法缺乏实证，可能低估了AI的真实潜力。",
+        "辩论还涉及AI行业泡沫风险与长期价值创造之间的平衡。数据未验证"
+      ],
+      "source_url": "https://techcrunch.com/2026/06/01/making-sense-of-the-debate-over-ai-psychosis/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-01T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Anthropic收入幻觉：路透观点",
+      "dek": "路透Breakingviews专栏引用Karen Kwok观点，分析Anthropic的营收定义问题。",
+      "data_card": null,
+      "body": [
+        "路透Breakingviews专栏引用Karen Kwok的观点，指出Anthropic对‘年化营收’的定义存在模糊性。该公司将过去28天的收入乘以12.5来推算年化数据，可能夸大实际业绩。",
+        "Kwok认为，这种计算方法忽略了季节性波动和客户留存率，容易造成‘收入幻觉’。投资者需警惕AI初创公司使用非标准指标来吸引融资。",
+        "Anthropic作为AI领域的重要玩家，其营收披露方式引发对行业透明度的讨论。数据未验证"
+      ],
+      "source_url": "https://www.reuters.com/commentary/breakingviews/anthropic-gives-lesson-ai-revenue-hallucination-2026-03-10/",
+      "source_name": "Simon Willison",
+      "timestamp": "2026-03-10T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Datasette 1.0a32发布修复Bug",
+      "dek": "Datasette发布1.0a32版本，修复INSERT...RETURNING相关错误。",
+      "data_card": null,
+      "body": [
+        "Datasette 1.0a32版本已发布，这是一个小型的Bug修复版本。主要修复了INSERT...RETURNING语句在特定场景下的错误。",
+        "该工具是一个用于探索和发布数据的开源Python库，此次更新提升了SQLite数据库操作的稳定性。",
+        "开发者建议用户升级以获取更好的兼容性。数据未验证"
+      ],
+      "source_url": "https://github.com/simonw/datasette/releases/tag/1.0a32",
+      "source_name": "Simon Willison",
+      "timestamp": "2026-06-01T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "取消AI订阅或许是解决方案",
+      "dek": "David Wilson分享取消AI订阅后的16+条反思，引发共鸣。",
+      "data_card": null,
+      "body": [
+        "David Wilson在博客中详细列举了取消AI订阅后的16条以上反思，认为过度依赖AI工具可能带来效率下降和认知负担。",
+        "他指出，AI订阅服务常以‘提升生产力’为卖点，但实际使用中可能分散注意力，甚至导致用户失去独立思考能力。",
+        "Wilson的帖子在技术社区引发讨论，许多人表示有类似体验，并开始重新评估AI工具的价值。数据未验证"
+      ],
+      "source_url": "https://thoughts.hmmz.org/2026-05-31.html",
+      "source_name": "Simon Willison",
+      "timestamp": "2026-05-31T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "AI大麻电子烟：吸一口赚比特币",
+      "dek": "一款声称‘吸一口即赚比特币’的AI大麻电子烟在4/20现身，引发争议。",
+      "data_card": null,
+      "body": [
+        "一款名为‘AI Weed Vape’的产品在4/20（大麻文化节日）通过Slack推广，声称用户每次吸入都能获得比特币奖励。该产品将加密货币挖矿与大麻消费结合，引发监管担忧。",
+        "产品宣传称，电子烟内置AI算法，可根据用户吸食频率调整奖励额度。但专家警告，这可能是营销噱头，且涉及非法药物和金融风险。",
+        "目前，该产品尚未获得任何监管批准，其背后的公司信息也不透明。数据未验证"
+      ],
+      "source_url": "https://www.theverge.com/2026/06/01/ai-weed-vape-bitcoin-crypto",
+      "source_name": "The Verge AI",
+      "timestamp": "2026-06-01T00:00:00Z",
+      "_warnings": []
+    }
+  ],
+  "macro": [
+    {
+      "tag": "宏观",
+      "headline": "美联储与英央行按兵不动",
+      "dek": "美英央行认为暂时无需调整政策",
+      "data_card": null,
+      "body": [
+        "美联储和英国央行在雷克雅未克经济会议上表示当前政策合适。",
+        "AI和能源等因素带来的好处促使他们维持现状。",
+        "市场预期政策将保持不变。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-06-01T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "宏观",
+      "headline": "廉价时代终结",
+      "dek": "过去50年资本、劳动力和能源价格下降，未来50年将截然不同",
+      "data_card": null,
+      "body": [
+        "美国经历了长达50年的资本、劳动力和能源价格下降。",
+        "未来半个世纪这些要素价格将上涨。",
+        "美国经济将面临截然不同的环境。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-06-01T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "宏观",
+      "headline": "特朗普要求修改美伊协议",
+      "dek": "据报道，修改涉及霍尔木兹海峡和高浓缩铀问题",
+      "data_card": null,
+      "body": [
+        "特朗普要求修改美伊协议内容。",
+        "修改涉及霍尔木兹海峡及高浓缩铀移除。",
+        "消息来自美国媒体。"
+      ],
+      "source_url": "https://www.bbc.com",
+      "source_name": "BBC World",
+      "timestamp": "2026-06-01T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "宏观",
+      "headline": "美伊仍未达成协议",
+      "dek": "特朗普称不急于达成协议，并威胁进一步军事行动",
+      "data_card": null,
+      "body": [
+        "美国与伊朗仍未就结束战争达成协议。",
+        "特朗普表示不急于达成，若谈判破裂将采取军事行动。",
+        "美国要求伊朗做出让步。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-06-01T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "宏观",
+      "headline": "以色列占领黎巴嫩城堡",
+      "dek": "内塔尼亚胡称此为对抗真主党的决定性转变，欧洲批评升级",
+      "data_card": null,
+      "body": [
+        "以色列扩大地面攻势，占领黎巴嫩一处战略堡垒。",
+        "内塔尼亚胡称这是对抗真主党的决定性转变。",
+        "欧洲多国政府批评此次升级行动。"
+      ],
+      "source_url": "https://www.bbc.com",
+      "source_name": "BBC World",
+      "timestamp": "2026-06-01T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "宏观",
+      "headline": "美国依赖中国生物科技引担忧",
+      "dek": "随着专利到期，全球药企转向中国寻求合作",
+      "data_card": null,
+      "body": [
+        "全球制药公司越来越多地转向中国。",
+        "畅销药物专利到期促使药企寻求中国合作伙伴。",
+        "美国对中国生物科技的依赖引发国家安全担忧。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-06-01T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "宏观",
+      "headline": "日本防长呼吁与北京对话",
+      "dek": "软银承诺投资750亿欧元建设欧洲最大AI设施，欧盟对摩洛哥中国工业基地担忧",
+      "data_card": null,
+      "body": [
+        "日本防卫大臣呼吁与中国就争端进行对话。",
+        "软银承诺投资750亿欧元建设欧洲最大AI设施。",
+        "欧盟对中国在摩洛哥的工业基地表示担忧。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-06-01T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "宏观",
+      "headline": "缅因州龙虾业反叛或使特朗普失去参议院",
+      "dek": "关税和燃料价格飙升导致渔民和农民重新考虑对特朗普的支持",
+      "data_card": null,
+      "body": [
+        "关税和燃料价格导致龙虾价格飙升。",
+        "缅因州渔民和农民因此重新考虑对特朗普的支持。",
+        "这可能影响中期选举，使特朗普失去参议院。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-06-01T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "宏观",
+      "headline": "华尔街看好美股无视泡沫担忧",
+      "dek": "投资者押注AI相关股票大幅上涨",
+      "data_card": null,
+      "body": [
+        "华尔街投资者和策略师认为美股涨势将持续。",
+        "他们无视市场过热的担忧，押注AI相关股票。",
+        "预计AI相关股票将带来巨大收益。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-06-01T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "宏观",
+      "headline": "巴西监控两名疑似埃博拉患者",
+      "dek": "若确诊将成非洲以外首例",
+      "data_card": null,
+      "body": [
+        "巴西正在监控两名可能感染埃博拉的患者。",
+        "如果确诊，这将是非洲以外首例感染病例。",
+        "疫情起源于刚果民主共和国。"
+      ],
+      "source_url": "https://www.bbc.com",
+      "source_name": "BBC World",
+      "timestamp": "2026-06-01T12:00:00Z",
+      "_warnings": []
+    }
+  ]
+}

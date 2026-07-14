@@ -1,0 +1,502 @@
+{
+  "us_stocks": [
+    {
+      "tag": "us_stocks",
+      "headline": "谷歌资本开支压力大，但AI长期更优",
+      "dek": "GOOGL dips as market weighs CapEx vs AI potential",
+      "data_card": {
+        "title": "Alphabet (GOOGL)",
+        "rows": [
+          {
+            "label": "股价",
+            "value": "$363.31 [yfinance @ 16:30 MYT]"
+          },
+          {
+            "label": "涨跌额",
+            "value": "-$1.42 [yfinance @ 16:30 MYT]"
+          }
+        ]
+      },
+      "body": [
+        "Alphabet股价周一收于363.31美元，下跌1.42美元 [yfinance @ 16:30 MYT]，反映市场对资本支出压力的担忧。分析人士指出，AI基础设施投资虽推高成本，但长期机会更为显著。",
+        "公司持续加大AI领域投入，包括Gemini模型和云服务拓展，预计将在未来2-3年贡献可观收入。资本开支压力被视为短期扰动。",
+        "长期来看，Alphabet在搜索、广告和云计算中的AI整合将巩固其竞争优势。投资者需平衡短期支出与长期增长潜力。"
+      ],
+      "source_url": "https://www.seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-09T16:30:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "五角大楼扩大涉军企业名单",
+      "dek": "Pentagon expands China military-linked firms list to include Alibaba, Baidu",
+      "data_card": null,
+      "body": [
+        "五角大楼发布了扩大后的中国涉军企业名单，新增阿里巴巴和百度等公司，此举可能进一步恶化中美关系。该名单曾在2月短暂公布后被撤回，原因不明。",
+        "特朗普访华前夕发布此名单，被视为对两国关系的一次冲击。此前贸易谈判曾释放暖意。",
+        "市场担忧此举将影响相关公司股价及中美科技合作前景。阿里巴巴和百度暂未就此事作出公开回应。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-06-09T16:30:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "亚洲货币企稳，停火或提振风险偏好",
+      "dek": "Asian currencies consolidate; Iran-Israel ceasefire may support risk appetite",
+      "data_card": null,
+      "body": [
+        "亚洲货币兑美元普遍企稳，此前因贸易不确定性承压。市场关注伊朗与以色列达成的停火协议，可能减弱地缘风险。",
+        "停火消息刺激新兴市场货币波动性下降，投资者情绪有所改善。韩元、人民币等小幅回升。",
+        "若停火持续，风险资产有望获得短期支撑，但亚洲各国央行政策分化仍限制涨幅。"
+      ],
+      "source_url": "https://www.marketwatch.com",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-06-09T16:30:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "油价因供应担忧小幅上涨",
+      "dek": "Oil edges higher amid ongoing supply disruption concerns",
+      "data_card": null,
+      "body": [
+        "国际油价周一早盘小幅走高，市场持续评估供应中断风险。中东地缘局势仍为关键变量。",
+        "OPEC+产量政策不确定性叠加部分地区断供，支撑油价在80美元附近波动。分析师预计短期震荡。",
+        "需求端：夏季驾驶旺季临近，但全球经济放缓压力抑制涨幅。投资者关注本周库存数据。"
+      ],
+      "source_url": "https://www.marketwatch.com",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-06-09T16:30:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "苹果：等待是值得的",
+      "dek": "Apple's price dip reflects short-term pain, long-term AI and services upside",
+      "data_card": {
+        "title": "Apple (AAPL)",
+        "rows": [
+          {
+            "label": "股价",
+            "value": "$301.54 [yfinance @ 16:30 MYT]"
+          },
+          {
+            "label": "涨跌额",
+            "value": "-$1.89 [yfinance @ 16:30 MYT]"
+          }
+        ]
+      },
+      "body": [
+        "苹果股价收于301.54美元，下跌1.89美元 [yfinance @ 16:30 MYT]。市场对消费电子需求放缓保持谨慎，但分析师认为估值已反映悲观预期。",
+        "苹果在AI领域的整合、服务收入增长和生态粘性构成长期优势。即将发布的iPhone升级周期可能提振业绩。",
+        "等待苹果在AR/VR和自动驾驶等新领域的突破，投资者应关注2026年下半年的产品发布。长期持有者目前具有成本优势。"
+      ],
+      "source_url": "https://www.seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-09T16:30:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "穆迪讨论生成式AI战略",
+      "dek": "MCO discusses generative AI strategy and agentic workflow solutions",
+      "data_card": {
+        "title": "Moody's Corporation (MCO)",
+        "rows": [
+          {
+            "label": "股价",
+            "value": "$443.76 [yfinance @ 16:30 MYT]"
+          },
+          {
+            "label": "涨跌额",
+            "value": "-$1.68 [yfinance @ 16:30 MYT]"
+          }
+        ]
+      },
+      "body": [
+        "穆迪公司股价周一收于443.76美元，下跌1.68美元 [yfinance @ 16:30 MYT]。公司在一场投资者会议上介绍了其生成式AI战略。",
+        "MCO正在开发基于AI的智能工作流解决方案，旨在提升客户风险评估和数据分析效率。该战略有望降低运营成本并拓展收入来源。",
+        "尽管短期股价承压，AI转型可能推动穆迪在金融数据服务领域的长期竞争力。市场关注其2026年下半年产品落地进展。"
+      ],
+      "source_url": "https://www.seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-09T16:30:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "特朗普观战NBA决赛遭嘘",
+      "dek": "Trump booed at Madison Square Garden before Knicks and Spurs finals game",
+      "data_card": null,
+      "body": [
+        "特朗普出席纽约麦迪逊广场花园举行的NBA总决赛第三场，到场时遭到部分球迷嘘声。其现场观战被认为可能打扰主场气氛。",
+        "部分尼克斯球迷担心他带来厄运，因为此前特朗普出席体育赛事曾被现场球迷抗议。当晚比赛气氛紧张。",
+        "政治与体育的交织再次成为焦点，但事件对美股市场影响有限，投资者更关注尼克斯的总决赛征程。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-06-09T16:30:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "黄金短期前景看跌",
+      "dek": "Gold’s near-term outlook remains bearish, chart shows",
+      "data_card": null,
+      "body": [
+        "黄金价格近期承压，技术面显示短期前景偏空。FOREX.com分析师指出，日线图形成看跌形态。",
+        "美元走强和美联储鹰派预期压制金价。美债收益率上升削弱黄金吸引力。",
+        "地缘风险虽提供支撑，但技术面弱势可能测试近期低点。投资者需关注本周非农数据及央行购金动态。"
+      ],
+      "source_url": "https://www.marketwatch.com",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-06-09T16:30:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "Allspring多元化收益基金Q1评析",
+      "dek": "Allspring Diversified Income Builder Fund Q1 2026 commentary",
+      "data_card": null,
+      "body": [
+        "Allspring多元化收益基金发布2026年一季度回顾，强调在全球利率环境下的资产配置策略。基金通过多元债券和股息的组合平衡风险。",
+        "一季度市场波动剧烈，基金经理增加了信用债敞口并减持国债久期。收益来源分散至新兴市场债券和高股息股票。",
+        "展望二季度，基金注重防御性，预计维持适度风险偏好。低相关性资产仍是构建稳定现金流的基石。"
+      ],
+      "source_url": "https://www.seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-06-09T16:30:00+08:00",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "Perplexity计划2028年IPO",
+      "dek": "Perplexity plans IPO in 2028 regardless of what happens to Anthropic or OpenAI, CEO tells CNBC",
+      "data_card": null,
+      "body": [
+        "AI搜索初创公司Perplexity CEO Aravind Srinivas接受CNBC采访时表示，公司计划在2028年进行IPO，不受其他AI公司上市进程影响。",
+        "此言背景是AI巨头Anthropic已秘密提交IPO文件。Perplexity强调独立发展路径，估值已超过30亿美元。",
+        "Srinivas认为，AI搜索市场足够大，Perplexity的差异化产品将支撑长期增长。IPO将用于扩张研发和企业客户。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-06-09T16:30:00+08:00",
+      "_warnings": []
+    }
+  ],
+  "my_stocks": [],
+  "ai": [
+    {
+      "tag": "ai",
+      "headline": "OpenAI秘密提交IPO申请",
+      "dek": "OpenAI has confidentially filed for IPO, following Anthropic's move.",
+      "data_card": null,
+      "body": [
+        "OpenAI于周一秘密提交IPO申请，紧随竞争对手Anthropic。",
+        "这一举动标志着两家AI公司之间的上市竞赛加速。",
+        "目前尚无具体定价或时间表细节。"
+      ],
+      "source_url": "https://www.theverge.com/ai",
+      "source_name": "The Verge AI",
+      "timestamp": "2026-06-09T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "OpenAI跟进Anthropic提交IPO",
+      "dek": "OpenAI files confidentially for IPO, ramping up the race with Anthropic.",
+      "data_card": null,
+      "body": [
+        "在Anthropic提交IPO不到一周后，OpenAI也秘密提交上市申请。",
+        "两家AI公司的上市竞争进一步升温。",
+        "市场关注其估值和上市时机。"
+      ],
+      "source_url": "https://techcrunch.com/ai",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-09T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "AI周报：奖励黑客与RSI数据",
+      "dek": "Import AI 460 covers reward hacking society, RSI data from Anthropic, and RL-based racing.",
+      "data_card": null,
+      "body": [
+        "本期Import AI探讨奖励黑客现象及其社会影响。",
+        "Anthropic发布的RSI数据为AI安全研究提供新视角。",
+        "此外，基于强化学习的四轴飞行器竞赛展示了前沿进展。"
+      ],
+      "source_url": "https://jack-clark.net",
+      "source_name": "Import AI",
+      "timestamp": "2026-06-09T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "SafeGene：可重用适配器实现安全对齐",
+      "dek": "arXiv paper proposes reusable adapters for transferable safety alignment in open-weight LLMs.",
+      "data_card": null,
+      "body": [
+        "SafeGene通过可重用适配器解决下游微调削弱安全对齐的问题。",
+        "该方法在多个模型上展示了良好的迁移性。",
+        "研究为开放权重大模型的安全定制提供了新工具。"
+      ],
+      "source_url": "https://arxiv.org/abs/2606.06519",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-06-09T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Lean4Agent：形式化建模验证智能体工作流",
+      "dek": "arXiv paper presents formal modeling and verification for LLM agent workflows.",
+      "data_card": null,
+      "body": [
+        "Lean4Agent利用形式化方法验证多步骤智能体工作流的可靠性。",
+        "该方法增强了LLM在复杂任务中的可信执行能力。",
+        "论文提供了理论框架与初步实验验证。"
+      ],
+      "source_url": "https://arxiv.org/abs/2606.06523",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-06-09T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "NotebookLM升级Gemini 3.5加云计算机",
+      "dek": "Google's NotebookLM gets Gemini 3.5 upgrade with cloud computer and improved source finding.",
+      "data_card": null,
+      "body": [
+        "NotebookLM现已使用Gemini 3.5模型，响应更准确可靠。",
+        "新增云计算机功能，支持更复杂的分析任务。",
+        "源查找功能帮助用户更高效地收集信息。"
+      ],
+      "source_url": "https://www.theverge.com/ai",
+      "source_name": "The Verge AI",
+      "timestamp": "2026-06-09T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "公平性作为对称操作：检测缓解偏见",
+      "dek": "arXiv paper treats fairness as a symmetry operation to detect and mitigate bias.",
+      "data_card": null,
+      "body": [
+        "该研究将公平性定义为对称性操作，形式化偏差。",
+        "通过对称性视角，提出新的偏差检测与缓解方法。",
+        "实验表明该方法在多个社会经济场景中有效。"
+      ],
+      "source_url": "https://arxiv.org/abs/2606.06514",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-06-09T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Apple让用户用AI构建快捷指令工作流",
+      "dek": "Apple's Shortcuts app gets an AI upgrade, allowing users to describe workflows in prompts.",
+      "data_card": null,
+      "body": [
+        "Apple更新Shortcuts应用，集成AI能力。",
+        "用户现在可以用自然语言描述所需工作流。",
+        "AI将自动生成相应的快捷指令。"
+      ],
+      "source_url": "https://techcrunch.com/ai",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-09T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Apple长期期待的AI Siri改革终于到来",
+      "dek": "Apple's long-awaited Siri overhaul turns the assistant into an AI companion.",
+      "data_card": null,
+      "body": [
+        "Apple终于推出全新的AI Siri，从语音助手升级为AI伴侣。",
+        "新Siri能够完成更多任务，提供个性化服务。",
+        "此举是Apple Intelligence战略的重要一步。"
+      ],
+      "source_url": "https://techcrunch.com/ai",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-06-09T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Apple发布Siri AI与新一代苹果智能",
+      "dek": "At WWDC, Apple reveals Siri AI and next-generation Apple Intelligence features.",
+      "data_card": null,
+      "body": [
+        "在WWDC上，Apple展示了全新的Siri AI和更智能的苹果智能功能。",
+        "这些功能包括更个性化的AI体验和更强的隐私保护。",
+        "Apple称这是其AI战略的重大升级。"
+      ],
+      "source_url": "https://www.theverge.com/ai",
+      "source_name": "The Verge AI",
+      "timestamp": "2026-06-09T00:00:00Z",
+      "_warnings": []
+    }
+  ],
+  "macro": [
+    {
+      "tag": "geopolitics",
+      "headline": "伊朗以色列暂停袭击",
+      "dek": "以色列总理称暂缓反击，伊朗武装部队停止军事行动",
+      "data_card": null,
+      "body": [
+        "以色列总理表示国家安全部队正在“此时”保持火力静默",
+        "伊朗武装部队宣布暂停军事行动，但警告若停火再被破坏将报复",
+        "双方均强调此次暂停并非永久停火，局势依然脆弱"
+      ],
+      "source_url": "https://www.bbc.com/news/world",
+      "source_name": "BBC World",
+      "timestamp": "2026-06-09T10:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "markets",
+      "headline": "市场忧虑科技与中东冲突",
+      "dek": "亚洲市场遭科技抛售，油价波动",
+      "data_card": null,
+      "body": [
+        "亚洲股市在科技股领跌下普遍走弱",
+        "伊朗与以色列互袭导致原油价格剧烈波动",
+        "市场对中东局势升级和科技泡沫风险双重担忧"
+      ],
+      "source_url": "https://www.bbc.com/news/world",
+      "source_name": "BBC World",
+      "timestamp": "2026-06-09T10:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "geopolitics",
+      "headline": "中东局势考验特朗普",
+      "dek": "脆弱停火与同盟显示地区不稳定",
+      "body": [
+        "伊朗与以色列的新一轮冲突打破了维持两个月的停火",
+        "分析认为特朗普对中东盟国的控制力正在削弱",
+        "伊朗可能利用此次危机增强自身谈判筹码"
+      ],
+      "source_url": "https://www.bbc.com/news/world",
+      "source_name": "BBC World",
+      "timestamp": "2026-06-09T10:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "policy",
+      "headline": "五角大楼恢复比亚迪黑名单",
+      "dek": "三家公司重新列入中国军事企业清单",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "BYD",
+            "name": "比亚迪",
+            "price": 86.58,
+            "change": -1.47
+          }
+        ]
+      },
+      "body": [
+        "五角大楼将阿里巴巴、百度和比亚迪重新列入中国军事企业黑名单",
+        "这三家公司曾在二月被突然移除，此次恢复引发市场关注",
+        "比亚迪股价数据未验证，但黑名单影响其国际业务"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-06-09T10:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "markets",
+      "headline": "华尔街反弹芯片股回归",
+      "dek": "英特尔和美光领涨，AI股热情重燃",
+      "data_card": null,
+      "body": [
+        "美国股市全面反弹，科技股尤其芯片板块涨幅居前",
+        "英特尔和美光等公司股价大涨，投资者重新涌入AI相关股票",
+        "此前因中东紧张和科技巨头财报担忧导致的抛售暂告段落"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-06-09T10:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "geopolitics",
+      "headline": "特朗普失去对伊朗战争控制？",
+      "dek": "以色列与伊朗导弹互袭，停火两月后破局",
+      "body": [
+        "伊朗和以色列在停火两个月后首次相互发动导弹袭击",
+        "此举显示特朗普此前促成的停火协议极为脆弱",
+        "地区局势失控风险上升，国际社会呼吁克制"
+      ],
+      "source_url": "https://www.bbc.com/news/world",
+      "source_name": "BBC World",
+      "timestamp": "2026-06-09T10:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "finance",
+      "headline": "Apollo黑石为Anthropic融资350亿",
+      "dek": "私人信贷最大交易之一，助力Claude发展",
+      "data_card": null,
+      "body": [
+        "Apollo和Blackstone联合筹集350亿美元芯片融资交易",
+        "资金将用于支持Anthropic的AI模型Claude的研发和训练",
+        "这是私人信贷市场最大规模的融资之一"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-06-09T10:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "technology",
+      "headline": "OpenAI申请IPO估值超万亿美元",
+      "dek": "ChatGPT开发者提交文件",
+      "data_card": null,
+      "body": [
+        "OpenAI已提交IPO申请，预计估值超过1万亿美元",
+        "此举将成为华尔街历史上规模最大的上市之一",
+        "公司正加速商业化进程，AI领域竞争加剧"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-06-09T10:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "finance",
+      "headline": "新加坡打造亚洲贝莱德计划",
+      "dek": "淡马锡目标将Seviora打造成区域最大资管",
+      "data_card": null,
+      "body": [
+        "新加坡淡马锡计划将Seviora培育为亚洲最大的资产管理公司之一",
+        "目标对标贝莱德（BlackRock），强化新加坡金融中心地位",
+        "同时今日华尔街反弹，苹果推出AI版Siri"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-06-09T10:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "finance",
+      "headline": "新加坡为何要创建亚洲贝莱德",
+      "dek": "淡马锡目标将Seviora打造成区域最大资管",
+      "data_card": null,
+      "body": [
+        "淡马锡希望通过Seviora整合旗下资产，扩大管理规模",
+        "目标是在亚洲资产管理领域占据领先地位，类似贝莱德全球影响力",
+        "此举反映新加坡积极提升其在全球金融版图中的地位"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-06-09T10:00:00Z",
+      "_warnings": []
+    }
+  ]
+}

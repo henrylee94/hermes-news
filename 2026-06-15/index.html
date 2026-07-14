@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>Hermes Daily · 2026-06-15</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;900&family=Noto+Serif+SC:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --bg: #ffffff; --ink: #1d1d1f; --ink-soft: #424245; --ink-light: #86868b;
+    --divider: #d2d2d7; --accent-red: #c8102e; --accent-blue: #0066cc;
+    --accent-amber: #d97706; --accent-green: #00855b; --card-bg: #fafafa;
+    --nav-bg: rgba(255,255,255,0.85);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1a1a1c; --ink: #f5f5f7; --ink-soft: #c7c7cc; --ink-light: #8e8e93;
+      --divider: #38383a; --card-bg: #2c2c2e; --nav-bg: rgba(26,26,28,0.85);
+    }
+  }
+
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: var(--bg); color: var(--ink); line-height: 1.5;
+    -webkit-font-smoothing: antialiased; overflow-x: hidden;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+  .topbar { position: sticky; top: 0; z-index: 100; background: var(--nav-bg); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid var(--divider); }
+  .topbar-inner { max-width: 720px; margin: 0 auto; padding: 11px 24px; display: flex; align-items: center; justify-content: space-between; }
+  .brand { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 900; letter-spacing: -0.5px; }
+
+  .date-picker { display: flex; align-items: center; gap: 8px; }
+  .date-picker button { background: none; border: none; color: var(--ink-light); font-size: 20px; cursor: pointer; padding: 0 2px; line-height: 1; }
+  .date-picker button:hover { color: var(--accent-blue); }
+  .date-picker button:disabled { opacity: 0.25; cursor: default; }
+  .date-display { position: relative; font-size: 13px; font-weight: 600; color: var(--ink); font-variant-numeric: tabular-nums; cursor: pointer; padding: 5px 10px; border-radius: 8px; background: var(--card-bg); display: flex; align-items: center; gap: 6px; }
+  .date-display:hover { color: var(--accent-blue); }
+  .date-display input[type="date"] { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%; }
+  .date-display .cal-icon { font-size: 12px; }
+
+  .tabs { position: sticky; top: 47px; z-index: 99; background: var(--nav-bg); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid var(--divider); }
+  .tabs-inner { max-width: 720px; margin: 0 auto; padding: 0 12px; display: flex; gap: 2px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .tabs-inner::-webkit-scrollbar { display: none; }
+  .tab { flex: 1 0 auto; min-width: 72px; text-align: center; padding: 13px 14px; font-size: 14px; font-weight: 600; color: var(--ink-light); border-bottom: 2.5px solid transparent; cursor: pointer; white-space: nowrap; transition: color .15s, border-color .15s; background: none; font-family: inherit; }
+  .tab.active { color: var(--ink); }
+  .tab[data-cat="us_stocks"].active { border-bottom-color: var(--accent-red); }
+  .tab[data-cat="my_stocks"].active { border-bottom-color: var(--accent-amber); }
+  .tab[data-cat="ai"].active { border-bottom-color: var(--accent-blue); }
+  .tab[data-cat="macro"].active { border-bottom-color: var(--accent-green); }
+  .tab .count { display: inline-block; min-width: 18px; padding: 1px 5px; margin-left: 3px; font-size: 11px; font-weight: 600; border-radius: 9px; background: var(--card-bg); color: var(--ink-light); }
+  .tab.active .count { background: var(--ink); color: var(--bg); }
+
+  .masthead { padding: 28px 0 4px; }
+  .masthead-title { font-family: 'Playfair Display','Noto Serif SC',serif; font-size: 44px; font-weight: 900; letter-spacing: -1px; line-height: 1; }
+  .masthead-sub { font-size: 12px; color: var(--ink-light); margin-top: 8px; text-transform: uppercase; letter-spacing: 1.2px; }
+
+  .panel { display: none; }
+  .panel.active { display: block; animation: fade .25s ease; }
+  @keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+  .panel-head { margin: 32px 0 22px; padding-bottom: 12px; border-bottom: 1px solid var(--divider); display: flex; align-items: baseline; justify-content: space-between; }
+  .panel-title { font-family: 'Playfair Display','Noto Serif SC',serif; font-size: 26px; font-weight: 700; }
+  .panel-count { font-size: 11px; color: var(--ink-light); text-transform: uppercase; letter-spacing: 1.2px; }
+
+  .story { margin-bottom: 40px; padding-bottom: 40px; border-bottom: 1px solid var(--divider); }
+  .story:last-child { border-bottom: none; }
+  .story-meta { display: flex; gap: 10px; align-items: center; font-size: 11px; color: var(--ink-light); text-transform: uppercase; letter-spacing: 1.1px; margin-bottom: 11px; }
+  .story-meta .dot { color: var(--divider); }
+  .tag-us_stocks { color: var(--accent-red); font-weight: 600; }
+  .tag-my_stocks { color: var(--accent-amber); font-weight: 600; }
+  .tag-ai { color: var(--accent-blue); font-weight: 600; }
+  .tag-macro { color: var(--accent-green); font-weight: 600; }
+
+  .story-headline { font-family: 'Playfair Display','Noto Serif SC',serif; font-size: 28px; font-weight: 700; line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 10px; }
+  .story.lead .story-headline { font-size: 34px; }
+  .story-dek { font-size: 16px; color: var(--ink-soft); line-height: 1.55; margin-bottom: 16px; }
+
+  .story-hero { width: 100%; height: 210px; border-radius: 8px; margin-bottom: 16px; display: flex; align-items: center; justify-content: center; color: var(--ink-light); font-size: 11px; letter-spacing: 1px; text-transform: uppercase; overflow: hidden; background: linear-gradient(135deg,#f5f5f7,#e8e8ed 50%,#d8d8df); }
+  .story-hero img { width: 100%; height: 100%; object-fit: cover; }
+
+  .data-card { background: var(--card-bg); border-left: 3px solid var(--accent-red); padding: 13px 17px; margin: 16px 0; border-radius: 0 6px 6px 0; }
+  .data-card.my_stocks { border-left-color: var(--accent-amber); }
+  .data-card.ai { border-left-color: var(--accent-blue); }
+  .data-card.macro { border-left-color: var(--accent-green); }
+  .data-card-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--ink-light); margin-bottom: 7px; }
+  .data-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px; font-size: 14px; }
+  .data-row .num { font-weight: 600; font-variant-numeric: tabular-nums; }
+  .data-row .up { color: var(--accent-red); }
+  .data-row .down { color: #00a35c; }
+  .data-citation { font-size: 10px; color: var(--ink-light); margin-top: 7px; font-style: italic; }
+
+  .story-body p { font-size: 15px; line-height: 1.65; margin-bottom: 13px; }
+  .story-body p:first-of-type::first-letter { font-family: 'Playfair Display',serif; font-size: 36px; font-weight: 900; line-height: 1; color: var(--accent-red); padding-right: 2px; }
+
+  .story-warning { background: #fff3cd; border-left: 3px solid #d97706; padding: 11px 15px; margin: 14px 0; color: #856404; font-size: 13px; border-radius: 0 4px 4px 0; }
+  @media (prefers-color-scheme: dark) { .story-warning { background: #3a2e10; color: #fde68a; } }
+
+  .story-source { margin-top: 18px; padding-top: 13px; border-top: 1px dotted var(--divider); font-size: 12px; color: var(--ink-light); display: flex; justify-content: space-between; align-items: center; }
+  .source-pill { display: inline-flex; align-items: center; padding: 4px 12px; background: var(--card-bg); border-radius: 12px; font-weight: 500; color: var(--ink-soft); text-decoration: none; min-height: 30px; }
+
+  .empty { padding: 60px 20px; text-align: center; color: var(--ink-light); font-size: 14px; }
+  .doc-footer { margin: 48px 0 60px; padding-top: 28px; border-top: 2px solid var(--ink); text-align: center; font-size: 11px; color: var(--ink-light); letter-spacing: 1.5px; text-transform: uppercase; }
+
+  @media (max-width: 640px) {
+    .wrap { padding: 0 18px; }
+    .topbar-inner { padding-left: 18px; padding-right: 18px; }
+    .brand { font-size: 17px; }
+    .date-display { font-size: 12px; }
+    .masthead-title { font-size: 32px; }
+    .tab { font-size: 13px; padding: 12px 12px; min-width: 64px; }
+    .story-headline { font-size: 23px; }
+    .story.lead .story-headline { font-size: 27px; }
+    .story-hero { height: 170px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <span class="brand">Hermes Daily</span>
+    <div class="date-picker">
+      <button id="prevDay" title="前一天">‹</button>
+      <label class="date-display">
+        <span class="cal-icon">📅</span>
+        <span id="dateText">6月15日 周一</span>
+        <input type="date" id="datePick" value="2026-06-15" max="2026-06-15">
+      </label>
+      <button id="nextDay" title="后一天" disabled>›</button>
+    </div>
+  </div>
+</div>
+
+<div class="tabs">
+  <div class="tabs-inner">
+    
+    <button class="tab active" data-cat="us_stocks">🇺🇸 美股<span class="count">10</span></button>
+    
+    <button class="tab " data-cat="my_stocks">🇲🇾 马股<span class="count">0</span></button>
+    
+    <button class="tab " data-cat="ai">🤖 AI<span class="count">4</span></button>
+    
+    <button class="tab " data-cat="macro">🌐 宏观<span class="count">3</span></button>
+    
+  </div>
+</div>
+
+<div class="wrap">
+  <header class="masthead">
+    <div class="masthead-title">Hermes Daily</div>
+    <div class="masthead-sub">2026-06-15 · 周一 · 09:03 MYT · For Henry</div>
+  </header>
+
+  
+  <div class="panel active" data-cat="us_stocks">
+    <div class="panel-head">
+      <div class="panel-title">美股 · US Markets</div>
+      <div class="panel-count">10 stories</div>
+    </div>
+
+    
+
+    
+    <article class="story lead">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>CNBC</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">美伊和平协议达成，全球市场关注</h2>
+      <p class="story-dek">经过三个多月谈判，美伊达成和平协议，欧洲考虑解除制裁，呼吁重开霍尔木兹海峡。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>世界领导人欢迎美国与伊朗达成的和平协议，欧洲表示将考虑解除对伊制裁，并呼吁尽快重开霍尔木兹海峡。[CNBC @ 00:00 MYT]</p><p>该协议是在2月底以来断断续续的谈判和交火后达成的，此前多次冲突扰乱了全球能源和大宗商品市场。[CNBC @ 00:00 MYT]</p><p>分析人士认为，若霍尔木兹海峡保持开放，布伦特原油期货年底前可能跌至每桶80美元左右，但前提是海峡不再被关闭。[MarketWatch @ 00:00 MYT]</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/2026/06/15/us-iran-deal-world-leaders-welcome.html" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-15 00:00:00 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>CNBC</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">美伊正式签署和平协议结束战争</h2>
+      <p class="story-dek">特朗普与巴基斯坦表示，美国与伊朗已同意通过和平协议结束冲突。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美国与伊朗达成和平协议，正式结束战争状态。特朗普和巴基斯坦方面均证实了该消息。[CNBC @ 00:00 MYT]</p><p>该协议是在数周华盛顿和德黑兰就冲突走向传递矛盾信号后达成的。[CNBC @ 00:00 MYT]</p><p>此前市场对美伊局势持谨慎态度，协议达成后亚洲货币普遍对美元走强，反映风险偏好改善。[MarketWatch @ 00:00 MYT]</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/2026/06/15/us-iran-peace-deal-trump-pakistan.html" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-15 00:00:00 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>CNBC</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">特朗普赴法参加G7峰会</h2>
+      <p class="story-dek">在与伊朗达成结束战争的协议后，特朗普前往法国参加七国集团峰会。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>特朗普在达成美伊和平协议后，启程前往法国参加G7峰会。[CNBC @ 00:00 MYT]</p><p>G7议程预计将涉及伊朗和平协议，以及仍在东欧持续的俄罗斯对乌克兰战争。[CNBC @ 00:00 MYT]</p><p>市场关注G7是否会就伊朗制裁和能源供应稳定发表进一步声明，这可能影响油价走势。[CNBC @ 00:00 MYT]</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/2026/06/15/trump-g7-summit-france-iran-deal.html" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-15 00:00:00 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>CNBC</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">SpaceX市值突破2万亿美元</h2>
+      <p class="story-dek">马斯克的火箭公司SpaceX在纳斯达克首日交易大涨19%，市值超2万亿美元。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>SpaceX股价在纳斯达克上市首日飙升19%，推动公司市值突破2万亿美元大关。[CNBC @ 00:00 MYT]</p><p>该IPO被认为是人工智能领域一系列公开上市的第一步，可能为初创公司员工带来巨额慈善捐赠。[MarketWatch @ 00:00 MYT]</p><p>有分析建议投资者等待回调后再入场，认为当前估值已充分反映乐观预期。[Seeking Alpha @ 00:00 MYT]</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/2026/06/15/spacex-market-cap-2-trillion-ipo.html" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-15 00:00:00 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">标普500技术面：第二波下跌在即</h2>
+      <p class="story-dek">技术分析指出，标普500指数可能正在酝酿第二波下跌。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>技术分析显示，标普500指数可能正在形成第二波下跌结构，投资者需警惕进一步下行风险。[Seeking Alpha @ 00:00 MYT]</p><p>当前市场情绪与技术指标均暗示调整尚未结束，支撑位可能面临考验。[Seeking Alpha @ 00:00 MYT]</p><p>但具体点位数据未验证，建议结合基本面和其他指标综合判断。[Seeking Alpha @ 00:00 MYT]</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com/article/2026/06/15/sp500-second-leg-lower-technical-analysis.html" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-15 00:00:00 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">SpaceX：建议等待回调再入场</h2>
+      <p class="story-dek">有分析认为SpaceX股价已高，建议投资者等待回调后再考虑买入。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Seeking Alpha分析师指出，SpaceX上市首日大涨后估值偏高，建议等待回调机会。[Seeking Alpha @ 00:00 MYT]</p><p>公司基本面强劲，但当前价格已反映较多乐观预期，短期内可能面临获利回吐压力。[Seeking Alpha @ 00:00 MYT]</p><p>投资者应关注后续财报和订单情况，以判断合理估值水平。[Seeking Alpha @ 00:00 MYT]</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com/article/2026/06/15/spacex-wait-for-pullback.html" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-15 00:00:00 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>MarketWatch</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">亚洲货币因美伊临时和平协议走强</h2>
+      <p class="story-dek">美伊达成临时和平协议后，亚洲货币对美元普遍升值。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>亚洲货币在早盘交易中对美元普遍走强，市场对美伊临时和平协议反应积极。[MarketWatch @ 00:00 MYT]</p><p>协议降低了地缘政治风险，推动投资者转向亚洲资产，从而提振了本地区汇率。[MarketWatch @ 00:00 MYT]</p><p>若局势持续缓和，预计亚洲货币将进一步获得支撑，但具体货币对数据未验证。[MarketWatch @ 00:00 MYT]</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.marketwatch.com/story/asian-currencies-strengthen-us-iran-interim-peace-deal-2026-06-15" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-15 00:00:00 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>MarketWatch</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">布伦特原油年底或跌至80美元</h2>
+      <p class="story-dek">CBA预计若霍尔木兹海峡不再关闭，布伦特原油年底可能跌至每桶80美元。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>澳大利亚联邦银行（CBA）分析指出，如果霍尔木兹海峡不再被关闭，布伦特原油期货年底可能跌至每桶80美元左右。[MarketWatch @ 00:00 MYT]</p><p>该预测基于地缘政治风险消退和供应增加预期，但海峡重新关闭可能改变走势。[MarketWatch @ 00:00 MYT]</p><p>当前原油价格数据未验证，投资者需关注后续OPEC+产量决策和需求变化。[MarketWatch @ 00:00 MYT]</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.marketwatch.com/story/brent-futures-may-fall-to-80-dollar-if-strait-of-hormuz-not-closed-2026-06-15" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-15 00:00:00 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>Yahoo Finance</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">石油高管给美国人传达油价信号</h2>
+      <p class="story-dek">石油高管就汽油价格向美国公众发出直白信息，暗示供应可能趋紧。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>多家石油公司高管在公开场合就美国汽油价格发表直白评论，暗示未来油价可能受到供应端影响。[Yahoo Finance @ 00:00 MYT]</p><p>虽然具体内容未详细披露，但高管言论通常反映行业对供需平衡的预期。[Yahoo Finance @ 00:00 MYT]</p><p>投资者需关注后续官方声明及EIA库存数据，以判断油价方向。[Yahoo Finance @ 00:00 MYT]</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://finance.yahoo.com/news/oil-executives-blunt-message-americans-gas-prices-2026-06-15.html" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-15 00:00:00 MYT</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">us_stocks</span>
+        <span class="dot">·</span>
+        <span>MarketWatch</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">科技IPO浪潮将带来慈善捐赠潮</h2>
+      <p class="story-dek">SpaceX IPO开启一系列AI公司上市，可能带给初创员工巨额慈善捐赠。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>SpaceX的IPO被视为科技行业新一波IPO浪潮的开端，这些AI公司上市可能使员工获得巨额财富，进而用于慈善捐赠。[MarketWatch @ 00:00 MYT]</p><p>此趋势类似此前科技公司上市后的慈善热潮，预计将促进教育和医疗等领域的资助。[MarketWatch @ 00:00 MYT]</p><p>但具体捐赠金额和影响数据未验证，需关注后续实际案例。[MarketWatch @ 00:00 MYT]</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.marketwatch.com/story/tech-ipo-charitable-windfall-2026-06-15" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-15 00:00:00 MYT</span>
+      </div>
+    </article>
+    
+  </div>
+  
+  <div class="panel " data-cat="my_stocks">
+    <div class="panel-head">
+      <div class="panel-title">马股 · Bursa Malaysia</div>
+      <div class="panel-count">0 stories</div>
+    </div>
+
+    
+    <div class="empty">今日暂无 马股 新闻</div>
+    
+
+    
+  </div>
+  
+  <div class="panel " data-cat="ai">
+    <div class="panel-head">
+      <div class="panel-title">AI · 人工智能</div>
+      <div class="panel-count">4 stories</div>
+    </div>
+
+    
+
+    
+    <article class="story lead">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>The Verge AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">中国可能接触Mythos</h2>
+      <p class="story-dek">White House export restrictions on Anthropic&#39;s Mythos due to fears of Chinese access.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>A Semafor report reveals the White House decision was driven by fears that a group linked to China accessed Anthropic&#39;s Mythos model.</p><p>Export restrictions on Anthropic&#39;s Mythos were imposed partly due to concerns over Chinese access.</p><p>The incident highlights growing geopolitical tensions in AI model control.</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.theverge.com/ai" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-15T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">AI公司争相IPO，谁是同伴？</h2>
+      <p class="story-dek">Startups trying to ride the SpaceX IPO wave.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Several AI startups are accelerating their IPO plans to capitalize on market momentum.</p><p>The SpaceX IPO wave is influencing the timing and strategy of these AI companies.</p><p>Investors are watching for which other startups join the public offering race.</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/ai" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-15T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Anthropic暂停模型，印度AI辩论</h2>
+      <p class="story-dek">Tech leaders debate wake-up call for India&#39;s AI ambitions.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>Anthropic suspended access to its new models, sparking debate in India&#39;s tech community.</p><p>Indian tech leaders see this as a wake-up call for domestic AI development and self-reliance.</p><p>The episode raises questions about India&#39;s dependence on foreign AI models and its strategic response.</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/ai" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-15T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Simon Willison</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">AI未取代软件工程师的原因</h2>
+      <p class="story-dek">Arvind Narayanan and Sayash Kapoor argue AI won&#39;t replace software engineers.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>AI tools assist coding but cannot handle complex problem-solving and system design.</p><p>Software engineering requires creativity, debugging, and context that AI lacks.</p><p>The authors conclude that AI will augment rather than replace engineers.</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.normaltech.ai/p/why-ai-hasnt-replaced-software-engineers" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-15T00:00:00Z</span>
+      </div>
+    </article>
+    
+  </div>
+  
+  <div class="panel " data-cat="macro">
+    <div class="panel-head">
+      <div class="panel-title">宏观 · Macro</div>
+      <div class="panel-count">3 stories</div>
+    </div>
+
+    
+
+    
+    <article class="story lead">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>CNBC Politics</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">美伊达成协议重开霍尔木兹海峡</h2>
+      <p class="story-dek">世界领导人欢迎美伊协议，欧洲表示将解除制裁并敦促重开霍尔木兹海峡。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>经过三个多月的断断续续谈判和自2月底以来的战斗，美伊达成协议，全球能源和大宗商品市场因此动荡。协议预计将于周五签署，内容包括重开水道和结束美国对伊朗港口的封锁。[CNBC Politics @ 数据未验证]</p><p>特朗普表示，美伊协议已达成，将重开霍尔木兹海峡并延长停火。同时，中国准备数字支付系统，瑞士选民拒绝将人口上限设为1000万的提案。[FT World @ 数据未验证]</p><p>分析师警告，霍尔木兹海峡的积压可能需要数周才能清理，石油流动恢复缓慢且易受新干扰。[FT World @ 数据未验证]</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/politics/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-15T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">美伊协议细节：停火60天</h2>
+      <p class="story-dek">协议将延长停火60天，重开霍尔木兹海峡并启动核谈判。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美伊协议内容包括延长停火60天、重开霍尔木兹海峡以及启动核谈判。特朗普此前承诺‘无条件投降’，但伊朗伊斯兰共和国生存下来且杠杆增强。[FT World @ 数据未验证]</p><p>特朗普告诉以色列和真主党‘退下’，因为他推动与伊朗达成协议。他预计华盛顿和德黑兰将于周日签署协议重开霍尔木兹海峡。[FT World @ 数据未验证]</p><p>英国首相称拦截俄罗斯影子舰队油轮是‘对俄罗斯的又一打击’，作为打击资助乌克兰战争努力的一部分。[FT World @ 数据未验证]</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/world" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-15T00:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>CNBC Politics</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">以色列袭击黎巴嫩威胁美伊协议</h2>
+      <p class="story-dek">美国与伊朗的和平协议因以色列袭击黎巴嫩而面临风险，特朗普警告不要‘搞砸’。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>一项结束战争并重开霍尔木兹海峡的初步协议原定于本周签署，但以色列袭击黎巴嫩使协议前景不明。特朗普警告各方不要‘搞砸’。[CNBC Politics @ 数据未验证]</p><p>美国和伊朗同意达成和平协议结束战争，特朗普和巴基斯坦均表示确认。协议前几周，华盛顿和德黑兰对冲突轨迹发出混合信号。[CNBC Politics @ 数据未验证]</p><p>特朗普与伊朗达成便利停火，他承诺‘无条件投降’，但伊朗伊斯兰共和国生存下来且杠杆增强。[FT World @ 数据未验证]</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/politics/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-15T00:00:00Z</span>
+      </div>
+    </article>
+    
+  </div>
+  
+
+  <footer class="doc-footer">Hermes Daily · 2026-06-15 09:03 MYT · Top 17 of 17 · Build 0533</footer>
+</div>
+
+<script>
+  const tabs = document.querySelectorAll('.tab');
+  const panels = document.querySelectorAll('.panel');
+  tabs.forEach(tab => {
+    tab.onclick = () => {
+      const cat = tab.dataset.cat;
+      tabs.forEach(t => t.classList.toggle('active', t === tab));
+      panels.forEach(p => p.classList.toggle('active', p.dataset.cat === cat));
+      window.scrollTo({ top: 0 });
+    };
+  });
+
+  const datePick = document.getElementById('datePick');
+  const dateText = document.getElementById('dateText');
+  const weekdays = ['周日','周一','周二','周三','周四','周五','周六'];
+  function fmt(d){ const dt=new Date(d+'T00:00:00'); return `${dt.getMonth()+1}月${dt.getDate()}日 ${weekdays[dt.getDay()]}`; }
+  datePick.onchange = () => { window.location = '/' + datePick.value + '/'; };
+
+  function shift(days){
+    const cur = new Date(datePick.value + 'T00:00:00');
+    cur.setDate(cur.getDate() + days);
+    const iso = cur.toISOString().slice(0,10);
+    window.location = '/' + iso + '/';
+  }
+  document.getElementById('prevDay').onclick = () => shift(-1);
+  const nextBtn = document.getElementById('nextDay');
+  if (!nextBtn.disabled) nextBtn.onclick = () => shift(1);
+</script>
+
+</body>
+</html>

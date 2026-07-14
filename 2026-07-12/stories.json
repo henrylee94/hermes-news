@@ -1,0 +1,483 @@
+{
+  "us_stocks": [
+    {
+      "tag": "us_stocks",
+      "headline": "市场仍低估英伟达下一阶段",
+      "dek": "Seeking Alpha文章指出市场低估Nvidia的AI芯片需求。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "NVDA",
+            "price": 210.96,
+            "change": 4.03
+          }
+        ]
+      },
+      "body": [
+        "Nvidia股价当前为210.96美元，上涨4.03美元[Finnhub @ 2026-07-12]。",
+        "市场可能低估其下一代AI芯片的潜力。",
+        "分析师认为Nvidia仍处于增长初期。"
+      ],
+      "source_url": "",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-12",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "Meta领涨AI芯片股",
+      "dek": "芯片股上周波动但上涨，Meta领涨投资组合。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "META",
+            "price": 669.21,
+            "change": 5.97
+          }
+        ]
+      },
+      "body": [
+        "Meta股价上涨5.97美元至669.21美元[Finnhub @ 2026-07-12]。",
+        "AI芯片股整体表现强劲。",
+        "油价上涨令市场担忧。"
+      ],
+      "source_url": "",
+      "source_name": "CNBC",
+      "timestamp": "2026-07-12",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "特朗普威胁摧毁伊朗",
+      "dek": "特朗普称1000枚导弹已锁定伊朗，若遭暗杀将报复。",
+      "data_card": null,
+      "body": [
+        "特朗普威胁若伊朗试图暗杀他，将摧毁伊朗。",
+        "美国财政部制裁涉嫌资助伊朗的金融家。",
+        "地缘政治风险上升。"
+      ],
+      "source_url": "",
+      "source_name": "CNBC",
+      "timestamp": "2026-07-12",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "Applied Digital下跌不吸引",
+      "dek": "Seeking Alpha认为Applied Digital股价下跌后仍不具吸引力。",
+      "data_card": null,
+      "body": [
+        "Applied Digital股价大幅下跌，但分析师认为估值仍高。",
+        "公司面临竞争压力。",
+        "数据未验证。"
+      ],
+      "source_url": "",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-12",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "SharonAI看好AI需求",
+      "dek": "Seeking Alpha认为SharonAI Holdings受益于AI需求增长。",
+      "data_card": null,
+      "body": [
+        "SharonAI Holdings预计AI需求将持续增长。",
+        "公司合同订单强劲。",
+        "数据未验证。"
+      ],
+      "source_url": "",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-12",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "Rackspace AI云转型缓慢",
+      "dek": "Seeking Alpha指出Rackspace向AI云转型进展缓慢。",
+      "data_card": null,
+      "body": [
+        "Rackspace的AI云业务转型速度低于预期。",
+        "公司面临竞争压力。",
+        "数据未验证。"
+      ],
+      "source_url": "",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-12",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "大型快餐连锁店申请破产",
+      "dek": "一家大型快餐连锁店加盟商申请第11章破产。",
+      "data_card": null,
+      "body": [
+        "一家大型快餐连锁店加盟商申请破产保护。",
+        "行业面临成本压力。",
+        "数据未验证。"
+      ],
+      "source_url": "",
+      "source_name": "Yahoo Finance",
+      "timestamp": "2026-07-12",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "1分钟市场报告7月11日",
+      "dek": "Seeking Alpha发布1分钟市场报告。",
+      "data_card": null,
+      "body": [
+        "市场整体表现波动。",
+        "AI板块领涨。",
+        "数据未验证。"
+      ],
+      "source_url": "",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-12",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "表现不佳交易或带来高回报",
+      "dek": "ETF Action建议增持表现不佳的板块。",
+      "data_card": null,
+      "body": [
+        "ETF Action建议投资者增持落后于AI股的板块。",
+        "这些板块未来六个月可能带来高回报。",
+        "数据未验证。"
+      ],
+      "source_url": "",
+      "source_name": "CNBC",
+      "timestamp": "2026-07-12",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "银行巨头下周公布财报",
+      "dek": "大型银行将公布季度财报。",
+      "data_card": null,
+      "body": [
+        "银行巨头下周将公布财报。",
+        "市场关注盈利情况。",
+        "数据未验证。"
+      ],
+      "source_url": "",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-12",
+      "_warnings": []
+    }
+  ],
+  "my_stocks": [],
+  "ai": [
+    {
+      "tag": "ai",
+      "headline": "OpenAI押注家庭市场",
+      "dek": "ChatGPT招聘产品经理，专为家庭、看护者和老年人设计体验",
+      "data_card": null,
+      "body": [
+        "OpenAI正在招聘一名专门负责家庭体验的产品经理，表明其将ChatGPT推向家庭用户的战略。",
+        "该职位要求候选人设计面向家庭、看护者和老年人的功能，强调安全性和易用性。",
+        "此举显示OpenAI希望扩大用户基础，从个人用户延伸至家庭场景。"
+      ],
+      "source_url": "https://techcrunch.com",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-12 09:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "代理AI与RAG直通核保",
+      "dek": "人工智能开始重塑精算实践，特别是在需要推理非结构化文档的领域。",
+      "data_card": null,
+      "body": [
+        "该论文探讨了人工智能在精算领域的应用，特别是直通核保流程。",
+        "检索增强生成（RAG）模型被用于处理非结构化文档，提升核保效率。",
+        "研究显示，代理AI与RAG结合有望显著改善保险行业的自动化水平。"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.07858",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-12 09:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "LLM医疗推理综述",
+      "dek": "大型语言模型在临床推理和患者护理中展现出潜力。",
+      "data_card": null,
+      "body": [
+        "该综述调查了大型语言模型在医疗领域的应用，重点关注临床推理能力。",
+        "文章分析了LLM在诊断、治疗建议和患者沟通中的表现。",
+        "研究指出，尽管潜力巨大，但仍需解决安全性和可靠性问题。"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.07761",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-12 09:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "上下文图赋能企业代理",
+      "dek": "检索增强生成和代理框架使企业AI更主动。",
+      "data_card": null,
+      "body": [
+        "论文提出上下文图方法，使企业代理从被动响应转向主动预测。",
+        "该方法结合RAG和代理框架，提升企业AI的上下文理解能力。",
+        "实验表明，上下文图能显著提高代理在复杂任务中的表现。"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.07721",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-12 09:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "AI医疗对齐可信标准",
+      "dek": "大型语言模型在心理健康支持中需符合对齐可信性。",
+      "data_card": null,
+      "body": [
+        "论文提出“对齐可信性”新标准，用于评估AI在医疗中的可靠性。",
+        "研究指出，LLM在心理健康领域虽广泛应用，但受注意力经济影响。",
+        "新标准旨在确保AI输出符合临床伦理和患者利益。"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.07766",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-12 09:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Infinity-Parser2技术报告",
+      "dek": "大型多模态模型结合可控数据合成与多任务强化学习。",
+      "data_card": null,
+      "body": [
+        "Infinity-Parser2是一个大型多模态模型，用于增强文档解析能力。",
+        "它采用可控数据合成管道和多任务强化学习进行训练。",
+        "报告显示，该模型在多种解析任务上达到先进水平。"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.07836",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-12 09:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "对抗社会认识论与LLM",
+      "dek": "针对人类与LLM混合群体的对抗性社会认识论框架。",
+      "data_card": null,
+      "body": [
+        "论文提出对抗性社会认识论，用于分析人类与LLM的交互。",
+        "该框架关注公共断言被链式推理支撑的密集交流场景。",
+        "研究旨在提升混合群体中的信息可靠性和决策质量。"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.07760",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-12 09:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "VectorizationLLM智能助手",
+      "dek": "基于Google开源LLM的智能向量化学习助手。",
+      "data_card": null,
+      "body": [
+        "VectorizationLLM是一个专门的大语言模型，基于Google开源权重。",
+        "该模型旨在帮助学生学习和理解向量化概念。",
+        "它提供智能问答和代码示例，提升学习效率。"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.07846",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-12 09:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "sqlite-utils 4.1发布",
+      "dek": "Simon Willison发布sqlite-utils 4.1版本。",
+      "data_card": null,
+      "body": [
+        "sqlite-utils 4.1是自4.0以来的第一个小版本更新。",
+        "该版本修复了若干bug并增加了新功能。",
+        "具体更新内容可在GitHub发布页面查看。"
+      ],
+      "source_url": "https://github.com/simonw/sqlite-utils/releases/tag/4.1",
+      "source_name": "Simon Willison",
+      "timestamp": "2026-07-12 09:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "图神经网络实时手势识别",
+      "dek": "基于表面肌电信号的图神经网络手势识别模型。",
+      "data_card": null,
+      "body": [
+        "论文提出一种图神经网络模型，用于实时手势识别。",
+        "该模型基于表面肌电信号，适用于假肢和增强现实控制。",
+        "实验表明，模型在准确性和实时性上表现优异。"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.07850",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-12 09:00 MYT",
+      "_warnings": []
+    }
+  ],
+  "macro": [
+    {
+      "tag": "macro",
+      "headline": "美国再空袭 伊朗已关闭海峡",
+      "dek": "伊朗革命卫队击中商船，中央司令部称有船员失踪",
+      "data_card": null,
+      "body": [
+        "美国对伊朗发动新空袭，回应此前伊朗封锁霍尔木兹海峡声明。",
+        "一艘塞浦路斯籍商船在通行时遭伊朗革命卫队攻击。",
+        "美军中央司令部确认一名船员在袭击中失踪，搜救进行中。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-07-12T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "美国新空袭 伊朗封锁海峡",
+      "dek": "空袭针对一艘塞浦路斯籍油轮",
+      "data_card": null,
+      "body": [
+        "美国发动新一轮空袭，因伊朗关闭关键航道霍尔木兹海峡。",
+        "遭袭击油轮悬挂塞浦路斯国旗，正通过该水域。",
+        "暂无伤亡报告，区域局势持续紧张。"
+      ],
+      "source_url": "https://www.bbc.com",
+      "source_name": "BBC World",
+      "timestamp": "2026-07-12T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "特朗普威胁摧毁伊朗若其刺杀",
+      "dek": "特朗普称大量导弹已锁定，将打击伊朗",
+      "data_card": null,
+      "body": [
+        "特朗普警告伊朗，若试图刺杀他将遭到毁灭性报复。",
+        "美国财政部还宣布制裁一名涉嫌为伊朗融资的人物。",
+        "中东紧张局势进一步升级，市场关注后续发展。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-07-12T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "特朗普施压美企推动降价",
+      "dek": "批评者担心转向超民粹主义策略，通胀持续",
+      "data_card": null,
+      "body": [
+        "特朗普加大力度要求美国公司降低价格以缓解通胀压力。",
+        "经济政策转向所谓‘超民粹主义剧本’，引发部分人士担忧。",
+        "市场预期未来可能出台更多干预措施。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-07-12T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "特朗普为加美大桥清路",
+      "dek": "总统在声称获得更优交易后放弃反对",
+      "data_card": null,
+      "body": [
+        "特朗普清除障碍，允许拖延已久的加美跨境大桥项目推进。",
+        "他宣称已为美国争取到‘更好的协议’。",
+        "项目价值数十亿美元，将连接加拿大与美国。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-07-12T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "美国住房法案成法无视反对",
+      "dek": "总统曾要求在住房法之前通过选民ID法案",
+      "data_card": null,
+      "body": [
+        "美国标志性住房法案正式生效，旨在降低住房成本并增加供应。",
+        "总统特朗普此前抗议，希望先通过选民身份证立法。",
+        "法案获得跨党派支持，成为法律。"
+      ],
+      "source_url": "https://www.bbc.com",
+      "source_name": "BBC World",
+      "timestamp": "2026-07-12T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "英国通胀不均贫富差距扩大",
+      "dek": "能源冲击中穷人负担最重",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "UK",
+            "price": 2.16,
+            "change": 5.88
+          }
+        ]
+      },
+      "body": [
+        "英国通胀分布不均，UK价格现报2.16[Finnhub @ 12:00 MYT]，较前日上涨5.88%[Finnhub @ 12:00 MYT]。",
+        "能源危机导致低收入家庭承受更大生活成本压力。",
+        "政策制定者面临缓解不平等加剧的挑战。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-07-12T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "中国一周内两个台风登陆",
+      "dek": "大量居民撤离浙江温州",
+      "data_card": null,
+      "body": [
+        "台风再次登陆中国东部，一周内连续第二个台风来袭。",
+        "浙江省温州市附近居民被大规模疏散至安全地带。",
+        "政府启动应急响应，减少人员伤亡和财产损失。"
+      ],
+      "source_url": "https://www.bbc.com",
+      "source_name": "BBC World",
+      "timestamp": "2026-07-12T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "玛丽娜勒庞救赎故事",
+      "dek": "极右翼领袖命运悬而未决，助力其政党",
+      "data_card": null,
+      "body": [
+        "法国极右翼领导人玛丽娜·勒庞的法律案件进入关键阶段。",
+        "悬念未决的判决反而增强了其政党动员能力。",
+        "支持者视之为政治迫害，对手担忧民主价值观受侵蚀。"
+      ],
+      "source_url": "https://www.ft.com",
+      "source_name": "FT World",
+      "timestamp": "2026-07-12T12:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "波兰总理纪念二战受迫害者",
+      "dek": "华沙与基辅数十年争论二战平民死亡事件",
+      "data_card": null,
+      "body": [
+        "波兰总理承诺建造纪念碑，纪念二战期间遭乌克兰民族主义者屠杀的受害者。",
+        "波兰与乌克兰对此历史事件的解读长期存在分歧。",
+        "此举可能对两国关系产生进一步影响。"
+      ],
+      "source_url": "https://www.bbc.com",
+      "source_name": "BBC World",
+      "timestamp": "2026-07-12T12:00:00Z",
+      "_warnings": []
+    }
+  ]
+}

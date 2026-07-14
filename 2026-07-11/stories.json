@@ -1,0 +1,498 @@
+{
+  "us_stocks": [
+    {
+      "tag": "us_stocks",
+      "headline": "AI竞赛转向更便宜智能系统",
+      "dek": "公司开始根据任务、成本和控制选择AI模型，而非仅看排行榜排名。",
+      "data_card": null,
+      "body": [
+        "AI模型选择正从追求更大规模转向更高效、更便宜的系统，企业更关注实际部署成本与任务匹配度。",
+        "这一趋势可能影响芯片需求结构，但具体数据尚未在实时行情中体现。",
+        "市场正在观察NVDA等AI相关公司的后续表现，当前暂无直接价格波动关联。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-07-11 16:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "韩国内存芯片商美国上市引波动",
+      "dek": "主要指数周五小幅上涨，结束波动一周。",
+      "data_card": null,
+      "body": [
+        "韩国内存芯片制造商在美国的首次公开募股（IPO）为市场带来巨大关注，但该公司股票代码未在数据源中提供。",
+        "MU作为美光科技，其股价报979.30美元[Finnhub @ 16:00 MYT]，变化-1.24美元，反映内存板块波动。",
+        "整体市场情绪受此提振，但韩国公司具体股价数据未验证。"
+      ],
+      "source_url": "https://www.marketwatch.com",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-07-11 16:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "特朗普放宽阿联酋出口管制，MGX受益",
+      "dek": "商务部将积极审查涉及MGX的出口，MGX使用与特朗普家族相关的稳定币进行20亿美元投资。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "UAE",
+            "price": 19.47,
+            "change": 0.62
+          },
+          {
+            "ticker": "MGX",
+            "price": 1.27,
+            "change": 0.79
+          }
+        ]
+      },
+      "body": [
+        "特朗普政府放宽对阿联酋的出口管制，MGX公司股价因此大幅上涨，报1.27美元[Finnhub @ 16:00 MYT]，涨幅0.79美元。",
+        "UAE股价同步走高，报19.47美元[Finnhub @ 16:00 MYT]，上涨0.62美元，反映市场对政策松绑的乐观情绪。",
+        "参议员沃伦批评该条款为“腐败”，称其与特朗普家族的企业利益存在关联。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-07-11 16:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "美股小幅走高，芯片商上市稳定市场",
+      "dek": "美国股市在半导体板块数十亿美元股票发行后小幅收高，波动性下降。",
+      "data_card": null,
+      "body": [
+        "美股三大指数周五小幅收高，半导体板块的巨额IPO帮助稳定了市场情绪。",
+        "MU股价报979.30美元[Finnhub @ 16:00 MYT]，下跌1.24美元，但整体板块波动收窄。",
+        "分析师认为，内存芯片制造商的强劲需求为市场提供了支撑。"
+      ],
+      "source_url": "https://www.marketwatch.com",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-07-11 16:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "美联储新主席Kevin Warsh受关注",
+      "dek": "投资者正在评估美联储未来政策路径及新任主席Kevin Warsh的立场。",
+      "data_card": null,
+      "body": [
+        "市场密切关注美联储新主席Kevin Warsh的表态，其政策倾向可能影响利率预期。",
+        "目前无具体利率数据在实时行情中体现，股市窄幅震荡。",
+        "投资者情绪趋于谨慎，等待更多政策信号。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-11 16:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "标普500距历史高点仅一步之遥",
+      "dek": "标普500指数本周接近历史最高收盘位，仅差不到1%。",
+      "data_card": null,
+      "body": [
+        "标普500指数周五收盘微涨，距离历史高点仅一步之遥，但指数具体数值未在实时数据中提供。",
+        "个股方面，大型科技股涨跌互现，NVDA报210.96美元[Finnhub @ 16:00 MYT]，上涨4.03美元。",
+        "市场整体情绪积极，但成交量和波动性均较低。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-11 16:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "SpaceX锁定期对短期表现不利",
+      "dek": "SpaceX锁定期即将到期，可能对股价造成短期压力。",
+      "data_card": null,
+      "body": [
+        "SpaceX尚未上市，因此无实时股价数据。锁定期解除后，早期投资者可能抛售股票。",
+        "相关太空概念股如RKLB报81.04美元[Finnhub @ 16:00 MYT]，下跌1.83美元，但关联性有限。",
+        "投资者需关注SpaceX后续融资及上市计划。"
+      ],
+      "source_url": "https://seekingalpha.com",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-07-11 16:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "WSJ美元指数微跌至97.20",
+      "dek": "WSJ美元指数本周下跌0.02%，连续两日走低。",
+      "data_card": null,
+      "body": [
+        "WSJ美元指数本周下跌0.02%，报97.20，但该指数数据未在实时行情中提供，数据未验证。",
+        "连续两个交易日下跌，反映出市场对美元短期走势的谨慎态度。",
+        "其他货币对方面，无具体数据可供验证。"
+      ],
+      "source_url": "https://www.marketwatch.com",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-07-11 16:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "科技媒体电信：Nvidia等动态",
+      "dek": "市场分析人士对预测市场、Nvidia等话题发表看法。",
+      "data_card": null,
+      "body": [
+        "科技、媒体与电信板块今日录得小幅波动，Nvidia股价报210.96美元[Finnhub @ 16:00 MYT]，上涨4.03美元。",
+        "预测市场相关公司表现活跃，但具体数据未在实时行情中全部体现。",
+        "整体行业趋势向好，投资者关注AI与半导体需求。"
+      ],
+      "source_url": "https://www.marketwatch.com",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-07-11 16:00 MYT",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "苹果起诉OpenAI指控商业秘密盗窃",
+      "dek": "苹果与OpenAI的2024年合作破裂，苹果指控其系统性地窃取商业秘密。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "AAPL",
+            "price": 315.32,
+            "change": -0.28
+          }
+        ]
+      },
+      "body": [
+        "苹果公司正式起诉OpenAI，指控其从合作关系中窃取商业秘密，涉及iPhone操作系统集成。",
+        "苹果股价报315.32美元[Finnhub @ 16:00 MYT]，微跌0.28美元，市场反应相对平淡。",
+        "双方于2024年达成合作，将ChatGPT引入iOS，如今关系破裂，潜在影响尚待观察。"
+      ],
+      "source_url": "https://www.cnbc.com",
+      "source_name": "CNBC",
+      "timestamp": "2026-07-11 16:00 MYT",
+      "_warnings": []
+    }
+  ],
+  "my_stocks": [],
+  "ai": [
+    {
+      "tag": "ai",
+      "headline": "SK海力士在美IPO募资265亿创纪录",
+      "dek": "AI芯片热潮催生华尔街史上最大外国IPO，SK海力士与三星被敦促在美建厂。",
+      "data_card": null,
+      "body": [
+        "SK海力士在美IPO募资265亿美元，创外国公司历史纪录，数据未验证。AI芯片需求推动此次发行，市场关注其产能扩张计划。",
+        "报道称SK海力士与三星均被要求在美国建设新工厂，以增强本土供应链韧性，但具体投资额和时间线未披露。",
+        "此次IPO为美国史上最大外国公司上市，凸显AI硬件领域资本密集度，SK海力士股价未在实时数据中显示。"
+      ],
+      "source_url": "https://techcrunch.com/2026/07/11/sk-hynix-ipo-26-billion/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-11T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "编排设计决定企业代理AI代币经济",
+      "dek": "arXiv:2607.06906v1 提出企业代理AI代币经济由编排设计决定。",
+      "data_card": null,
+      "body": [
+        "论文指出当前代理AI开发依赖‘代币最大化’：通过更长推理链、更多工具调用等消耗代币获取能力。",
+        "作者认为代币经济的设计取决于编排架构，而非单纯模型规模，呼吁建立更高效token策略。",
+        "该研究为企业级AI部署提供了经济学视角，但未涉及具体上市公司或股价影响。"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.06906",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-11T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "AgentLens评测编码代理生产表现",
+      "dek": "arXiv:2607.06624v1 提出基于生产环境评估的AgentLens基准。",
+      "data_card": null,
+      "body": [
+        "AgentLens是面向交互式代码代理的生产评估基准，避免单次成败的二进制判断。",
+        "通过轨迹级评审，该框架可捕捉代理在真实编码任务中的多维度表现。",
+        "当前AI编码代理评测多简化成败结果，此方法可更全面评估代理能力。"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.06624",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-11T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "低成本代理实现ARC-AGI抽象推理",
+      "dek": "arXiv:2607.06764v1 提出成本效益型代理用于ARC-AGI-1抽象推理。",
+      "data_card": null,
+      "body": [
+        "论文对比两类方法：大量测试时计算（进化搜索）与轻量高效方案，后者以更低成本实现相近泛化。",
+        "低成本代理通过优化harness设计，在ARC-AGI-1基准上取得竞争性结果。",
+        "该研究为抽象推理提供实用路径，但未关联具体上市公司或股价。"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.06764",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-11T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Hugging Face强调开源AI重要性",
+      "dek": "Hugging Face CEO Clem Delangue认为开源AI比以往更重要。",
+      "data_card": null,
+      "body": [
+        "Clem Delangue指出开源AI蓬勃发展，Hugging Face已成长AI领域类似GitHub的平台。",
+        "公司用户可共享和下载模型，推动AI民主化，但未透露具体财务数据。",
+        "该言论与开源模型生态扩张趋势一致，但未直接影响上市公司股价。"
+      ],
+      "source_url": "https://techcrunch.com/2026/07/11/hugging-face-open-source-ai/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-11T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "上下文搜索何时有益于推理？",
+      "dek": "arXiv:2607.06720v1 建立反映驱动推理的采样复杂度理论。",
+      "data_card": null,
+      "body": [
+        "研究训练LLM扩展推理使模型具备上下文搜索能力：迭代生成、批评与修正。",
+        "通过采样复杂度理论阐明在何种条件下上下文搜索提升性能。",
+        "该理论为推理增强模型设计提供数学基础，但无直接股价影响。"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.06720",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-11T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Hugging Face CEO谈企业停止租赁AI",
+      "dek": "Hugging Face CEO解释为何企业不再租赁AI服务。",
+      "data_card": null,
+      "body": [
+        "Clem Delangue认为开源AI蓬勃发展，企业倾向自行部署而非租赁封闭模型。",
+        "Hugging Face平台增长反映这一趋势，但具体收入数据未披露。",
+        "该观点与AI基础设施成本下降趋势一致，但未提及具体上市公司。"
+      ],
+      "source_url": "https://techcrunch.com/2026/07/11/hugging-face-ceo-renting-ai/",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-07-11T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "LLM驱动推理用于基于代理建模",
+      "dek": "arXiv:2607.06757v1 将LLM推理能力融入代理建模。",
+      "data_card": null,
+      "body": [
+        "研究发现基于代理模型（ABM）可模拟数百万个体及其互动，但现有方法缺乏LLM式推理。",
+        "该研究将LLM推理能力整合进ABM，提升政策模拟的真实性。",
+        "ABM在政策制定中有潜力，但论文未关联具体公司或股价数据。"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.06757",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-11T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "SageMath增强LLM代理用于数学研究",
+      "dek": "arXiv:2607.06820v1 评估集成SageMath的LLM代理在数学计算中的表现。",
+      "data_card": null,
+      "body": [
+        "论文关注AI在自动形式化和定理证明之外的数学应用，特别是计算机代数系统（CAS）的增强。",
+        "SageMath增强的LLM代理在计算和实验数学任务上表现优于传统方法。",
+        "该研究推动科学计算AI发展，但未涉及具体公司或股价。"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.06820",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-11T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "大规模行为模型模拟零售客户",
+      "dek": "arXiv:2607.06993v1 提出可提示的零售客户数字孪生模型。",
+      "data_card": null,
+      "body": [
+        "论文指出客户行为建模支持推荐与营销，但现有方法仅优化预测精度。",
+        "新模型通过可提示的大规模行为模型（LBM）构建零售客户数字孪生。",
+        "该方法在模拟零售决策时更灵活，但LBM未在实时数据中出现。"
+      ],
+      "source_url": "https://arxiv.org/abs/2607.06993",
+      "source_name": "Arxiv ML",
+      "timestamp": "2026-07-11T00:00:00Z",
+      "_warnings": []
+    }
+  ],
+  "macro": [
+    {
+      "tag": "macro",
+      "headline": "美国放松对阿联酋芯片出口管制",
+      "dek": "海湾国家将获得先进美国技术",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "UAE",
+            "price": 19.47,
+            "change": 0.62,
+            "source": "Finnhub @ 2026-07-11"
+          }
+        ]
+      },
+      "body": [
+        "美国商务部将放宽对阿联酋的先进芯片和无人机出口限制，允许其获得更先进的美国技术。此举被视为加强双边科技合作的一部分。[FT World @ 2026-07-11]",
+        "阿联酋相关资产价格出现波动，UAE报价19.47，上涨0.62。[Finnhub @ 2026-07-11]",
+        "具体实施细节尚未公布，但预计将涵盖人工智能和半导体领域的关键技术。数据未验证"
+      ],
+      "source_url": "https://www.ft.com/content/us-relaxes-export-controls-uae",
+      "source_name": "FT World",
+      "timestamp": "2026-07-11T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "特朗普政府放宽对阿联酋出口管制",
+      "dek": "沃伦抨击‘腐败’条款，涉及MGX与特朗普家族稳定币",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "MGX",
+            "price": 1.27,
+            "change": 0.79,
+            "source": "Finnhub @ 2026-07-11"
+          }
+        ]
+      },
+      "body": [
+        "美国商务部将优先审查涉及MGX的出口申请，该公司曾使用与特朗普家族相关的稳定币进行20亿美元币安投资。此举引发参议员沃伦批评，称其‘腐败’。[CNBC Politics @ 2026-07-11]",
+        "MGX股价上涨0.79至1.27，市场对政策利好反应积极。[Finnhub @ 2026-07-11]",
+        "沃伦要求调查该条款是否涉及利益输送，但白宫未予回应。数据未验证"
+      ],
+      "source_url": "https://www.cnbc.com/politics/trump-uae-export-controls-warren",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-07-11T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "SK海力士美股首日大涨13%",
+      "dek": "韩国存储芯片制造商纳斯达克上市，股价最高触及177美元",
+      "data_card": null,
+      "body": [
+        "SK海力士美国存托股票在纳斯达克首日交易中上涨13%，发行价149美元，盘中最高触及177美元。[FT World @ 2026-07-11]",
+        "此次上市标志着韩国芯片巨头加速全球化布局，但SK相关数据未在实时数据中提供。[FT World @ 2026-07-11]",
+        "分析师指出，AI芯片需求旺盛是推动股价上涨的主要动力。数据未验证"
+      ],
+      "source_url": "https://www.ft.com/content/sk-hynix-nasdaq-debut",
+      "source_name": "FT World",
+      "timestamp": "2026-07-11T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "美国参议员与白宫达成协议收紧对俄制裁",
+      "dek": "特朗普暗示加大对乌克兰支持后出现突破",
+      "data_card": null,
+      "body": [
+        "美国参议员与白宫达成协议，将收紧对俄罗斯的制裁措施。此前特朗普暗示转向更支持乌克兰的立场。[FT World @ 2026-07-11]",
+        "协议细节尚未公布，但预计将涉及金融和能源领域的新限制。[FT World @ 2026-07-11]",
+        "市场反应平淡，相关资产价格未出现明显波动。数据未验证"
+      ],
+      "source_url": "https://www.ft.com/content/us-senators-russia-sanctions-deal",
+      "source_name": "FT World",
+      "timestamp": "2026-07-11T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "投资者抛售长期AI债券",
+      "dek": "大型科技公司借贷潮引发对行业长期盈利能力的怀疑",
+      "data_card": null,
+      "body": [
+        "投资者正在抛售长期AI相关债券，需求减弱反映出对行业长期盈利能力的怀疑。大型科技公司的大规模借贷加剧了市场担忧。[FT World @ 2026-07-11]",
+        "债券收益率上升，但具体数据未在实时数据中提供。[FT World @ 2026-07-11]",
+        "分析师警告，AI投资回报周期可能比预期更长。数据未验证"
+      ],
+      "source_url": "https://www.ft.com/content/investors-sell-ai-debt",
+      "source_name": "FT World",
+      "timestamp": "2026-07-11T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "特朗普称美国同意继续与伊朗谈判",
+      "dek": "呼吁德黑兰宣布停止在霍尔木兹海峡的任何攻击",
+      "data_card": null,
+      "body": [
+        "特朗普表示美国已同意继续与伊朗进行谈判，并呼吁德黑兰宣布停止在霍尔木兹海峡的任何攻击行动。[FT World @ 2026-07-11]",
+        "此举被视为缓解中东紧张局势的信号，但具体进展尚不明朗。[FT World @ 2026-07-11]",
+        "原油市场反应平静，未出现大幅波动。数据未验证"
+      ],
+      "source_url": "https://www.ft.com/content/trump-iran-talks",
+      "source_name": "FT World",
+      "timestamp": "2026-07-11T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "美国派团赴贝鲁特巩固以黎停火",
+      "dek": "黎巴嫩总统呼吁对以色列施压以撤军",
+      "data_card": null,
+      "body": [
+        "美国派遣团队前往贝鲁特，以巩固以色列与真主党之间的停火协议。黎巴嫩总统呼吁国际社会对以色列施压，要求其开始撤军。[FT World @ 2026-07-11]",
+        "停火协议自签署以来面临多次挑战，美国介入旨在稳定局势。[FT World @ 2026-07-11]",
+        "地区安全形势仍不确定，相关资产未受影响。数据未验证"
+      ],
+      "source_url": "https://www.ft.com/content/us-team-beirut-ceasefire",
+      "source_name": "FT World",
+      "timestamp": "2026-07-11T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "英国将加入欧盟600亿欧元对乌贷款计划",
+      "dek": "斯塔默希望以财政承诺向欧洲发出积极信号",
+      "data_card": null,
+      "body": [
+        "英国将签署加入欧盟600亿欧元对乌克兰国防贷款计划。首相斯塔默希望以此向欧洲发出积极信号。[FT World @ 2026-07-11]",
+        "此举标志着英国脱欧后加强与欧洲安全合作的努力。[FT World @ 2026-07-11]",
+        "具体出资细节尚未公布，但预计将分多年落实。数据未验证"
+      ],
+      "source_url": "https://www.ft.com/content/uk-eu-defence-loan-ukraine",
+      "source_name": "FT World",
+      "timestamp": "2026-07-11T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "参议院民主党要求听证特朗普加密资产",
+      "dek": "引用14亿美元特朗普家族加密收入及阿联酋支持的World Liberty Financial股份",
+      "data_card": null,
+      "body": [
+        "参议院民主党要求就特朗普的加密货币持有和外国投资者举行听证会，引用14亿美元的特朗普家族加密收入、未披露投资者以及阿联酋支持的World Liberty Financial股份。[CNBC Politics @ 2026-07-11]",
+        "民主党议员质疑这些投资可能涉及利益冲突和国家安全风险。[CNBC Politics @ 2026-07-11]",
+        "白宫尚未对听证要求作出正式回应。数据未验证"
+      ],
+      "source_url": "https://www.cnbc.com/politics/senate-democrats-trump-crypto-hearings",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-07-11T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "贝佐斯支持的聚变公司首家上市",
+      "dek": "General Fusion的‘蒸汽朋克’技术面临审查",
+      "data_card": null,
+      "body": [
+        "贝佐斯支持的聚变初创公司General Fusion将成为首家上市的聚变能源公司，计划在纳斯达克上市。其‘蒸汽朋克’技术路线受到市场关注。[FT World @ 2026-07-11]",
+        "公司尚未实现商业化，但投资者对其长期潜力抱有期待。[FT World @ 2026-07-11]",
+        "上市细节和估值尚未公布，市场反应待观察。数据未验证"
+      ],
+      "source_url": "https://www.ft.com/content/general-fusion-ipo",
+      "source_name": "FT World",
+      "timestamp": "2026-07-11T00:00:00Z",
+      "_warnings": []
+    }
+  ]
+}

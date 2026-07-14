@@ -1,0 +1,498 @@
+{
+  "us_stocks": [
+    {
+      "tag": "us_stocks",
+      "headline": "FORM大跌4.32%，投资者会议无提振",
+      "dek": "FormFactor在Craig-Hallum投资者会议上的演示未能提振股价，股价下跌4.32%至124.59美元。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "FORM",
+            "price": 124.59,
+            "change": -4.32,
+            "source": "[Seeking Alpha @ 2026-05-31]"
+          }
+        ]
+      },
+      "body": [
+        "FORM股价下跌4.32%至124.59美元，跌幅显著[Seeking Alpha @ 2026-05-31]。",
+        "公司在Craig-Hallum年度投资者会议上进行了幻灯片展示，但未提供具体细节或催化剂，市场反应消极。",
+        "具体会议内容及对公司未来影响尚未公布，投资者需关注后续财报或指引。"
+      ],
+      "source_url": "https://seekingalpha.com/article/example-form-craig-hallum",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-05-31T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "FORM再跌，TD Cowen会议无亮点",
+      "dek": "FormFactor在TD Cowen科技媒体电信会议上展示幻灯片，股价未获支撑，收跌4.32%。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "FORM",
+            "price": 124.59,
+            "change": -4.32,
+            "source": "[Seeking Alpha @ 2026-05-31]"
+          }
+        ]
+      },
+      "body": [
+        "FORM股价下跌4.32%至124.59美元，盘中未见明显反弹[Seeking Alpha @ 2026-05-31]。",
+        "TD Cowen会议上的幻灯片展示未释放重大利好，投资者对半导体设备需求前景存疑。",
+        "市场关注FORM后续订单及行业周期变化，短线风险偏向下行。"
+      ],
+      "source_url": "https://seekingalpha.com/article/example-form-td-cowen",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-05-31T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "NASA ETF受SpaceX IPO预期热炒",
+      "dek": "SpaceX IPO临近，散户涌入NASA ETF，该基金提供直接接触火箭公司的机会，股价跌3.97%至40.17美元。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "NASA",
+            "price": 40.17,
+            "change": -3.97,
+            "source": "[CNBC @ 2026-05-31]"
+          }
+        ]
+      },
+      "body": [
+        "NASA ETF股价下跌3.97%至40.17美元，尽管SpaceX IPO预期火爆，但资金流入已推高估值后回落[CNBC @ 2026-05-31]。",
+        "据CNBC报道，两个月内该ETF吸引了26亿美元资金，散户通过此基金间接获取SpaceX未上市股份。",
+        "分析师警告，若SpaceX上市延迟或估值不及预期，该ETF可能面临回调压力。"
+      ],
+      "source_url": "https://www.cnbc.com/2026/05/31/nasa-etf-spacex-ipo-retail-trade.html",
+      "source_name": "CNBC",
+      "timestamp": "2026-05-31T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "350万人失去食品券福利",
+      "dek": "特朗普法案削减SNAP福利，350万美国人失去食品援助，而通胀压力持续。",
+      "data_card": null,
+      "body": [
+        "数据未验证：受影响人数和法案细节来自CNBC分析，但未在<live_data>中提供。",
+        "分析显示，特朗普的“大而美丽法案”削减了食品券开支，对低收入家庭造成冲击。",
+        "此政策无直接相关上市公司，但可能影响沃尔玛等零售商的销售数据。"
+      ],
+      "source_url": "https://www.cnbc.com/2026/05/31/food-stamp-cuts-trump-bill.html",
+      "source_name": "CNBC",
+      "timestamp": "2026-05-31T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "FFIV股东电话会议，股价微涨",
+      "dek": "F5公司举办股东/分析师电话会议，股价微涨0.01%至383.45美元，市场反应平淡。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "FFIV",
+            "price": 383.45,
+            "change": 0.01,
+            "source": "[Seeking Alpha @ 2026-05-31]"
+          }
+        ]
+      },
+      "body": [
+        "FFIV股价微涨0.01%至383.45美元，电话会议未引发明显波动[Seeking Alpha @ 2026-05-31]。",
+        "会议为幻灯片展示，未披露新战略或财务更新，投资者保持观望。",
+        "FFIV近期缺乏催化剂，股价走势取决于网络市场需求变化。"
+      ],
+      "source_url": "https://seekingalpha.com/article/example-ffiv-call",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-05-31T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "DOJ要求法官回避佐治亚案",
+      "dek": "DOJ寻求法官Eleanor Ross在佐治亚选举案中回避，称其曾受纪律处分。",
+      "data_card": null,
+      "body": [
+        "数据未验证：DOJ行动及法官纪律问题来自CNBC，但<live_data>中无相关数据。",
+        "此案涉及佐治亚州务卿Raffensberger拒绝提供选举记录，DOJ提起诉讼。",
+        "无直接影响上市公司，但可能引发对选举法相关政治风险的关注。"
+      ],
+      "source_url": "https://www.cnbc.com/2026/05/31/doj-georgia-election-judge-recusal.html",
+      "source_name": "CNBC",
+      "timestamp": "2026-05-31T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "DOGE官员涉利益冲突遭调查",
+      "dek": "Josh Gruenbaum被曝在投资Thrive Capital基金同时，参与该公司投资组合的合同讨论。",
+      "data_card": null,
+      "body": [
+        "数据未验证：市场观察报道称Gruenbaum投资Thrive Capital，但其公司股价DOGE无数据。",
+        "此事件引发对政府官员道德规范的质疑，暂未影响具体股价。",
+        "无相关上市公司在<live_data>中，谨慎看待潜在市场影响。"
+      ],
+      "source_url": "https://www.marketwatch.com/story/doge-official-thrive-capital-contracts",
+      "source_name": "MarketWatch",
+      "timestamp": "2026-05-31T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "KF韩国股CEF仍折价交易",
+      "dek": "韩国股票今年翻倍，但KF封闭式基金仍折价，股价跌0.27%至74.7美元。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "KF",
+            "price": 74.7,
+            "change": -0.27,
+            "source": "[Seeking Alpha @ 2026-05-31]"
+          }
+        ]
+      },
+      "body": [
+        "KF股价下跌0.27%至74.7美元，尽管韩国股市今年翻番，该基金仍以折价交易[Seeking Alpha @ 2026-05-31]。",
+        "折价反映了市场对韩国经济前景的谨慎，或者基金流动性、结构性问题。",
+        "投资者需关注折价收敛机会，但短期溢价风险仍存。"
+      ],
+      "source_url": "https://seekingalpha.com/article/example-kf-korean-cef",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-05-31T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "St. Joe公司受宏观逆风影响",
+      "dek": "St. Joe公司因宏观经济阻力而被认为缺乏吸引力，股价数据未提供。",
+      "data_card": null,
+      "body": [
+        "数据未验证：文章提及St. Joe公司受宏观逆风影响，但<live_data>中无此股票数据。",
+        "分析指出，利率上升和房地产需求疲软仍是主要风险。",
+        "无具体股价，该公司可能面临持续下行压力。"
+      ],
+      "source_url": "https://seekingalpha.com/article/example-st-joe-unattractive",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-05-31T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "us_stocks",
+      "headline": "LKQ股价便宜，催化剂可期",
+      "dek": "LKQ公司估值低，且存在潜在催化剂，股价跌0.62%至27.12美元。",
+      "data_card": {
+        "rows": [
+          {
+            "ticker": "LKQ",
+            "price": 27.12,
+            "change": -0.62,
+            "source": "[Seeking Alpha @ 2026-05-31]"
+          }
+        ]
+      },
+      "body": [
+        "LKQ股价下跌0.62%至27.12美元，分析师认为其估值过低，存在上行空间[Seeking Alpha @ 2026-05-31]。",
+        "催化剂可能包括并购、成本削减或行业需求回暖，但具体未披露。",
+        "投资者应密切关注公司基本面变化及其对股价的潜在推动。"
+      ],
+      "source_url": "https://seekingalpha.com/article/example-lkq-cheap",
+      "source_name": "Seeking Alpha",
+      "timestamp": "2026-05-31T00:00:00Z",
+      "_warnings": []
+    }
+  ],
+  "my_stocks": [],
+  "ai": [
+    {
+      "tag": "ai",
+      "headline": "软银投资750亿欧元建法国数据中心",
+      "dek": "软银计划开发运营高达5吉瓦的数据中心容量。",
+      "data_card": null,
+      "body": [
+        "软银宣布投资高达750亿欧元建设法国数据中心。",
+        "目标是在法国开发运营5吉瓦额外容量。",
+        "此举显示软银对AI基础设施的长期押注。"
+      ],
+      "source_url": "https://techcrunch.com",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-05-31T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Anthropic如何跨产品隔离Claude",
+      "dek": "Anthropic分享其跨产品隔离Claude的技术方案。",
+      "data_card": null,
+      "body": [
+        "Anthropic工程团队详细介绍了Claude的沙箱隔离机制。",
+        "该方案确保Claude在不同产品中安全运行。",
+        "文章回应了用户对AI沙箱产品的常见抱怨。"
+      ],
+      "source_url": "https://www.anthropic.com/engineering/how-we-contain-claude",
+      "source_name": "Simon Willison",
+      "timestamp": "2026-05-31T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "GitHub Copilot新计费引发开发者不满",
+      "dek": "GitHub Copilot改用基于token的计费模式，开发者反应强烈。",
+      "data_card": null,
+      "body": [
+        "GitHub Copilot推出基于token的新计费方案。",
+        "开发者认为这标志着Copilot黄金时代的结束。",
+        "新计费模式引发广泛批评和不满。"
+      ],
+      "source_url": "https://techcrunch.com",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-05-31T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "在浏览器中运行Python ASGI应用",
+      "dek": "通过Pyodide和服务工作线程在浏览器中运行Python ASGI应用。",
+      "data_card": null,
+      "body": [
+        "研究项目展示了使用Pyodide在浏览器中运行ASGI应用。",
+        "利用服务工作线程实现持久化运行。",
+        "为Python Web应用在浏览器端运行提供新思路。"
+      ],
+      "source_url": "https://github.com/simonw/research/tree/main/pyodide-asgi-browser#readme",
+      "source_name": "Simon Willison",
+      "timestamp": "2026-05-31T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "创始人押注老式网络获得成功",
+      "dek": "前Meta工程师放弃AI创业，专注传统网站获得回报。",
+      "data_card": null,
+      "body": [
+        "Craig Campbell拒绝AI投资热潮，创建传统网站。",
+        "他的赌注正在获得回报，证明老式网络仍有价值。",
+        "故事反映了对AI泡沫的另一种选择。"
+      ],
+      "source_url": "https://theverge.com",
+      "source_name": "The Verge AI",
+      "timestamp": "2026-05-31T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Meta正在开发AI挂件",
+      "dek": "Meta加大AI硬件投入，据报开发AI挂件设备。",
+      "data_card": null,
+      "body": [
+        "Meta据报正在开发一款AI挂件硬件。",
+        "这是Meta在AI硬件领域的又一重大押注。",
+        "具体功能和发布时间尚未公布。"
+      ],
+      "source_url": "https://techcrunch.com",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-05-31T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Google Gemini Spark助手实测实用",
+      "dek": "Google的24/7 AI助手Gemini Spark在自动化任务中表现实用。",
+      "data_card": null,
+      "body": [
+        "Gemini Spark可自动处理收件箱摘要和本地活动规划。",
+        "但为何Google将其作为独立产品推出尚不明确。",
+        "实测显示该助手在日常任务中确实有用。"
+      ],
+      "source_url": "https://techcrunch.com",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-05-31T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "2026年浏览器大战：Chrome和Safari替代品",
+      "dek": "盘点2026年挑战Chrome和Safari的顶级替代浏览器。",
+      "data_card": null,
+      "body": [
+        "浏览器市场竞争加剧，多款替代浏览器崛起。",
+        "本文汇总了当前最热门的Chrome和Safari替代品。",
+        "这些浏览器在隐私、性能等方面各有特色。"
+      ],
+      "source_url": "https://techcrunch.com",
+      "source_name": "TechCrunch AI",
+      "timestamp": "2026-05-31T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "Daniel Jalkut谈AI：反对者太反对，支持者太支持",
+      "dek": "Daniel Jalkut认为人们对AI的态度两极分化。",
+      "data_card": null,
+      "body": [
+        "Daniel Jalkut表示反对AI的人过于反对，支持者过于支持。",
+        "他认为中间立场被忽视。",
+        "这句话反映了当前AI讨论的极端化现象。"
+      ],
+      "source_url": "https://mastodon.social/@danielpunkass/116639318125898071",
+      "source_name": "Simon Willison",
+      "timestamp": "2026-05-31T00:00:00Z",
+      "_warnings": []
+    },
+    {
+      "tag": "ai",
+      "headline": "AI骗子制造虚假黑人形象推销Shein商品",
+      "dek": "AI生成的虚假黑人形象在TikTok上推销Shein产品。",
+      "data_card": null,
+      "body": [
+        "骗子利用AI生成虚假黑人女性形象进行营销。",
+        "这些视频在TikTok上传播，推销Shein廉价商品。",
+        "揭示了AI在虚假营销中的滥用问题。"
+      ],
+      "source_url": "https://theverge.com",
+      "source_name": "The Verge AI",
+      "timestamp": "2026-05-31T00:00:00Z",
+      "_warnings": []
+    }
+  ],
+  "macro": [
+    {
+      "tag": "macro",
+      "headline": "美议员重申对台支持",
+      "dek": "特朗普称140亿美元对台军售为‘谈判筹码’，但国会成员仍重申支持。",
+      "data_card": null,
+      "body": [
+        "美国总统特朗普将国会批准的140亿美元对台军售称为‘谈判筹码’，但多名国会议员重申对台湾的支持。[CNBC Politics @ 数据未验证]",
+        "特朗普的言论引发外界对美台关系承诺的质疑，但国会成员强调军售已获批准。[CNBC Politics @ 数据未验证]",
+        "分析人士指出，此举可能影响中美关系，但具体影响尚待观察。[CNBC Politics @ 数据未验证]"
+      ],
+      "source_url": "https://www.cnbc.com/politics/",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-05-31",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "特朗普计划上诉关税退款令",
+      "dek": "特朗普政府计划上诉法官命令，允许所有支付无效关税的进口商寻求退款。",
+      "data_card": null,
+      "body": [
+        "特朗普政府表示将上诉一项法官命令，该命令允许所有支付被裁定无效关税的公司寻求退款。[CNBC Politics @ 数据未验证]",
+        "此案涉及此前被法院推翻的关税政策，政府认为退款范围过广。[CNBC Politics @ 数据未验证]",
+        "法律专家预计上诉过程将持续数月，可能影响贸易政策走向。[CNBC Politics @ 数据未验证]"
+      ],
+      "source_url": "https://www.cnbc.com/politics/",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-05-31",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "赫格塞斯称美中关系改善",
+      "dek": "美国防长赫格塞斯表示美中关系‘比过去几年更好’，同时敦促盟友增加国防开支。",
+      "data_card": null,
+      "body": [
+        "美国国防部长赫格塞斯在香格里拉对话会上表示，美中关系‘比过去几年更好’。[FT World @ 数据未验证]",
+        "他同时敦促盟友增加国防开支，以应对中国的‘军事建设’。[FT World @ 数据未验证]",
+        "赫格塞斯的言论被视为美国对华政策缓和的信号，但具体进展不明。[FT World @ 数据未验证]"
+      ],
+      "source_url": "https://www.ft.com/world",
+      "source_name": "FT World",
+      "timestamp": "2026-05-31",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "特朗普伊朗会议未宣布协议",
+      "dek": "特朗普与顾问会面后未宣布对伊朗的‘最终决定’，此前美伊已达成框架协议。",
+      "data_card": null,
+      "body": [
+        "美国总统特朗普与顾问会面后，未宣布对伊朗的‘最终决定’，尽管官员确认美伊已达成框架协议。[BBC World @ 数据未验证]",
+        "特朗普在Truth Social上的声明未明确其条件是否已包含在谈判中的协议内。[CNBC Politics @ 数据未验证]",
+        "分析人士认为，特朗普的‘耐心’策略可能为谈判争取更多时间，但不确定性仍存。[FT World @ 数据未验证]"
+      ],
+      "source_url": "https://www.bbc.com/news/world",
+      "source_name": "BBC World",
+      "timestamp": "2026-05-31",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "赫格塞斯：美国不会背弃亚洲盟友",
+      "dek": "美国防长赫格塞斯在亚洲安全峰会上被问及美国承诺，包括进一步军售。",
+      "data_card": null,
+      "body": [
+        "美国国防部长赫格塞斯在新加坡亚洲安全峰会上表示，美国不会‘背弃’亚洲盟友，但期望盟友增加国防开支。[BBC World @ 数据未验证]",
+        "他被问及美国承诺，包括进一步军售，但未提供具体细节。[BBC World @ 数据未验证]",
+        "赫格塞斯的言论旨在安抚盟友，但强调盟友需承担更多责任。[BBC World @ 数据未验证]"
+      ],
+      "source_url": "https://www.bbc.com/news/world",
+      "source_name": "BBC World",
+      "timestamp": "2026-05-31",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "赫格塞斯：特朗普对伊朗保持耐心",
+      "dek": "美国防长赫格塞斯称特朗普希望达成‘伟大’协议，但警告美国准备重启攻击。",
+      "data_card": null,
+      "body": [
+        "美国国防部长赫格塞斯表示，特朗普总统在追求与伊朗的协议时将继续保持‘耐心’。[FT World @ 数据未验证]",
+        "赫格塞斯称特朗普希望达成‘伟大’协议，但警告美国已准备好重启攻击。[FT World @ 数据未验证]",
+        "这一表态显示美国在伊朗问题上的双重策略，既寻求外交解决，又保留军事选项。[FT World @ 数据未验证]"
+      ],
+      "source_url": "https://www.ft.com/world",
+      "source_name": "FT World",
+      "timestamp": "2026-05-31",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "德国防长：中国错失香格里拉机会",
+      "dek": "德国防长称中国未出席香格里拉对话是‘错失机会’，但低级别对话仍在进行。",
+      "data_card": null,
+      "body": [
+        "德国国防部长在香格里拉对话会上表示，中国未出席是‘错失机会’。[CNBC Politics @ 数据未验证]",
+        "他指出，与中方代表团的低级别对话仍在进行，但更高级别参与会更好。[CNBC Politics @ 数据未验证]",
+        "中国缺席引发外界对其参与地区安全对话意愿的猜测。[CNBC Politics @ 数据未验证]"
+      ],
+      "source_url": "https://www.cnbc.com/politics/",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-05-31",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "伊朗战争结束或加剧美国不平等",
+      "dek": "分析称伊朗战争结束可能开启美国不平等新时代，股市繁荣但消费者承受高能源成本。",
+      "data_card": null,
+      "body": [
+        "分析人士指出，伊朗战争的结束可能只是美国不平等新时代的开始。[CNBC Politics @ 数据未验证]",
+        "股市因战争结束预期而繁荣，但消费者仍承受高能源价格带来的成本。[CNBC Politics @ 数据未验证]",
+        "这一趋势可能加剧美国社会贫富差距，政策制定者需关注分配问题。[CNBC Politics @ 数据未验证]"
+      ],
+      "source_url": "https://www.cnbc.com/politics/",
+      "source_name": "CNBC Politics",
+      "timestamp": "2026-05-31",
+      "_warnings": []
+    },
+    {
+      "tag": "macro",
+      "headline": "美国牛肉价格因牛短缺创新高",
+      "dek": "饲料成本高和干旱导致牛群数量降至60年最低，推动美国牛肉价格创纪录。",
+      "data_card": null,
+      "body": [
+        "历史性的牛短缺推动美国牛肉价格创下纪录新高。[FT World @ 数据未验证]",
+        "高饲料成本和干旱导致牛群数量降至60年来最低水平，而消费者需求依然强劲。[FT World @ 数据未验证]",
+        "分析师预计短期内牛肉价格将继续高企，可能影响消费者支出和通胀。[FT World @ 数据未验证]"
+      ],
+      "source_url": "https://www.ft.com/world",
+      "source_name": "FT World",
+      "timestamp": "2026-05-31",
+      "_warnings": []
+    }
+  ]
+}

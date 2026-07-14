@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>Hermes Daily · 2026-06-13</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;900&family=Noto+Serif+SC:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --bg: #ffffff; --ink: #1d1d1f; --ink-soft: #424245; --ink-light: #86868b;
+    --divider: #d2d2d7; --accent-red: #c8102e; --accent-blue: #0066cc;
+    --accent-amber: #d97706; --accent-green: #00855b; --card-bg: #fafafa;
+    --nav-bg: rgba(255,255,255,0.85);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1a1a1c; --ink: #f5f5f7; --ink-soft: #c7c7cc; --ink-light: #8e8e93;
+      --divider: #38383a; --card-bg: #2c2c2e; --nav-bg: rgba(26,26,28,0.85);
+    }
+  }
+
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background: var(--bg); color: var(--ink); line-height: 1.5;
+    -webkit-font-smoothing: antialiased; overflow-x: hidden;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+  .topbar { position: sticky; top: 0; z-index: 100; background: var(--nav-bg); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid var(--divider); }
+  .topbar-inner { max-width: 720px; margin: 0 auto; padding: 11px 24px; display: flex; align-items: center; justify-content: space-between; }
+  .brand { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 900; letter-spacing: -0.5px; }
+
+  .date-picker { display: flex; align-items: center; gap: 8px; }
+  .date-picker button { background: none; border: none; color: var(--ink-light); font-size: 20px; cursor: pointer; padding: 0 2px; line-height: 1; }
+  .date-picker button:hover { color: var(--accent-blue); }
+  .date-picker button:disabled { opacity: 0.25; cursor: default; }
+  .date-display { position: relative; font-size: 13px; font-weight: 600; color: var(--ink); font-variant-numeric: tabular-nums; cursor: pointer; padding: 5px 10px; border-radius: 8px; background: var(--card-bg); display: flex; align-items: center; gap: 6px; }
+  .date-display:hover { color: var(--accent-blue); }
+  .date-display input[type="date"] { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%; }
+  .date-display .cal-icon { font-size: 12px; }
+
+  .tabs { position: sticky; top: 47px; z-index: 99; background: var(--nav-bg); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid var(--divider); }
+  .tabs-inner { max-width: 720px; margin: 0 auto; padding: 0 12px; display: flex; gap: 2px; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .tabs-inner::-webkit-scrollbar { display: none; }
+  .tab { flex: 1 0 auto; min-width: 72px; text-align: center; padding: 13px 14px; font-size: 14px; font-weight: 600; color: var(--ink-light); border-bottom: 2.5px solid transparent; cursor: pointer; white-space: nowrap; transition: color .15s, border-color .15s; background: none; font-family: inherit; }
+  .tab.active { color: var(--ink); }
+  .tab[data-cat="us_stocks"].active { border-bottom-color: var(--accent-red); }
+  .tab[data-cat="my_stocks"].active { border-bottom-color: var(--accent-amber); }
+  .tab[data-cat="ai"].active { border-bottom-color: var(--accent-blue); }
+  .tab[data-cat="macro"].active { border-bottom-color: var(--accent-green); }
+  .tab .count { display: inline-block; min-width: 18px; padding: 1px 5px; margin-left: 3px; font-size: 11px; font-weight: 600; border-radius: 9px; background: var(--card-bg); color: var(--ink-light); }
+  .tab.active .count { background: var(--ink); color: var(--bg); }
+
+  .masthead { padding: 28px 0 4px; }
+  .masthead-title { font-family: 'Playfair Display','Noto Serif SC',serif; font-size: 44px; font-weight: 900; letter-spacing: -1px; line-height: 1; }
+  .masthead-sub { font-size: 12px; color: var(--ink-light); margin-top: 8px; text-transform: uppercase; letter-spacing: 1.2px; }
+
+  .panel { display: none; }
+  .panel.active { display: block; animation: fade .25s ease; }
+  @keyframes fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+  .panel-head { margin: 32px 0 22px; padding-bottom: 12px; border-bottom: 1px solid var(--divider); display: flex; align-items: baseline; justify-content: space-between; }
+  .panel-title { font-family: 'Playfair Display','Noto Serif SC',serif; font-size: 26px; font-weight: 700; }
+  .panel-count { font-size: 11px; color: var(--ink-light); text-transform: uppercase; letter-spacing: 1.2px; }
+
+  .story { margin-bottom: 40px; padding-bottom: 40px; border-bottom: 1px solid var(--divider); }
+  .story:last-child { border-bottom: none; }
+  .story-meta { display: flex; gap: 10px; align-items: center; font-size: 11px; color: var(--ink-light); text-transform: uppercase; letter-spacing: 1.1px; margin-bottom: 11px; }
+  .story-meta .dot { color: var(--divider); }
+  .tag-us_stocks { color: var(--accent-red); font-weight: 600; }
+  .tag-my_stocks { color: var(--accent-amber); font-weight: 600; }
+  .tag-ai { color: var(--accent-blue); font-weight: 600; }
+  .tag-macro { color: var(--accent-green); font-weight: 600; }
+
+  .story-headline { font-family: 'Playfair Display','Noto Serif SC',serif; font-size: 28px; font-weight: 700; line-height: 1.2; letter-spacing: -0.3px; margin-bottom: 10px; }
+  .story.lead .story-headline { font-size: 34px; }
+  .story-dek { font-size: 16px; color: var(--ink-soft); line-height: 1.55; margin-bottom: 16px; }
+
+  .story-hero { width: 100%; height: 210px; border-radius: 8px; margin-bottom: 16px; display: flex; align-items: center; justify-content: center; color: var(--ink-light); font-size: 11px; letter-spacing: 1px; text-transform: uppercase; overflow: hidden; background: linear-gradient(135deg,#f5f5f7,#e8e8ed 50%,#d8d8df); }
+  .story-hero img { width: 100%; height: 100%; object-fit: cover; }
+
+  .data-card { background: var(--card-bg); border-left: 3px solid var(--accent-red); padding: 13px 17px; margin: 16px 0; border-radius: 0 6px 6px 0; }
+  .data-card.my_stocks { border-left-color: var(--accent-amber); }
+  .data-card.ai { border-left-color: var(--accent-blue); }
+  .data-card.macro { border-left-color: var(--accent-green); }
+  .data-card-label { font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--ink-light); margin-bottom: 7px; }
+  .data-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px; font-size: 14px; }
+  .data-row .num { font-weight: 600; font-variant-numeric: tabular-nums; }
+  .data-row .up { color: var(--accent-red); }
+  .data-row .down { color: #00a35c; }
+  .data-citation { font-size: 10px; color: var(--ink-light); margin-top: 7px; font-style: italic; }
+
+  .story-body p { font-size: 15px; line-height: 1.65; margin-bottom: 13px; }
+  .story-body p:first-of-type::first-letter { font-family: 'Playfair Display',serif; font-size: 36px; font-weight: 900; line-height: 1; color: var(--accent-red); padding-right: 2px; }
+
+  .story-warning { background: #fff3cd; border-left: 3px solid #d97706; padding: 11px 15px; margin: 14px 0; color: #856404; font-size: 13px; border-radius: 0 4px 4px 0; }
+  @media (prefers-color-scheme: dark) { .story-warning { background: #3a2e10; color: #fde68a; } }
+
+  .story-source { margin-top: 18px; padding-top: 13px; border-top: 1px dotted var(--divider); font-size: 12px; color: var(--ink-light); display: flex; justify-content: space-between; align-items: center; }
+  .source-pill { display: inline-flex; align-items: center; padding: 4px 12px; background: var(--card-bg); border-radius: 12px; font-weight: 500; color: var(--ink-soft); text-decoration: none; min-height: 30px; }
+
+  .empty { padding: 60px 20px; text-align: center; color: var(--ink-light); font-size: 14px; }
+  .doc-footer { margin: 48px 0 60px; padding-top: 28px; border-top: 2px solid var(--ink); text-align: center; font-size: 11px; color: var(--ink-light); letter-spacing: 1.5px; text-transform: uppercase; }
+
+  @media (max-width: 640px) {
+    .wrap { padding: 0 18px; }
+    .topbar-inner { padding-left: 18px; padding-right: 18px; }
+    .brand { font-size: 17px; }
+    .date-display { font-size: 12px; }
+    .masthead-title { font-size: 32px; }
+    .tab { font-size: 13px; padding: 12px 12px; min-width: 64px; }
+    .story-headline { font-size: 23px; }
+    .story.lead .story-headline { font-size: 27px; }
+    .story-hero { height: 170px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <span class="brand">Hermes Daily</span>
+    <div class="date-picker">
+      <button id="prevDay" title="前一天">‹</button>
+      <label class="date-display">
+        <span class="cal-icon">📅</span>
+        <span id="dateText">6月13日 周六</span>
+        <input type="date" id="datePick" value="2026-06-13" max="2026-06-13">
+      </label>
+      <button id="nextDay" title="后一天" disabled>›</button>
+    </div>
+  </div>
+</div>
+
+<div class="tabs">
+  <div class="tabs-inner">
+    
+    <button class="tab active" data-cat="us_stocks">🇺🇸 美股<span class="count">10</span></button>
+    
+    <button class="tab " data-cat="my_stocks">🇲🇾 马股<span class="count">0</span></button>
+    
+    <button class="tab " data-cat="ai">🤖 AI<span class="count">10</span></button>
+    
+    <button class="tab " data-cat="macro">🌐 宏观<span class="count">10</span></button>
+    
+  </div>
+</div>
+
+<div class="wrap">
+  <header class="masthead">
+    <div class="masthead-title">Hermes Daily</div>
+    <div class="masthead-sub">2026-06-13 · 周六 · 09:02 MYT · For Henry</div>
+  </header>
+
+  
+  <div class="panel active" data-cat="us_stocks">
+    <div class="panel-head">
+      <div class="panel-title">美股 · US Markets</div>
+      <div class="panel-count">10 stories</div>
+    </div>
+
+    
+
+    
+    <article class="story lead">
+      <div class="story-meta">
+        <span class="tag-us_stocks">SpaceX proxies plunge</span>
+        <span class="dot">·</span>
+        <span>CNBC</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">SpaceX上市 替代股暴跌</h2>
+      <p class="story-dek">SpaceX &#39;proxy stocks,&#39; whose options volumes were booming ahead of Friday&#39;s historic initial public offering, are unwinding gains.</p>
+
+      
+
+      
+      <div class="data-card us_stocks">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>替代股RKLB暴跌10.79%至102.39美元[Finnhub @ 16:00 MYT]。</p><p>OKLO跌0.64%至57.49美元[Finnhub @ 16:00 MYT]。</p><p>其他SpaceX代理股也纷纷回调，此前期权交易量激增。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/2026/06/13/spacex-proxies.html" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-13T16:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">Tech stocks parabolic</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">科技股仍在抛物线上涨？</h2>
+      <p class="story-dek">Are Technology Stocks Still Going Parabolic</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>AMD上涨4.73%至511.57美元[Finnhub @ 16:00 MYT]，表现领先。</p><p>苹果下跌1.52%至291.13美元[Finnhub @ 16:00 MYT]，拖累科技板块。</p><p>整体市场对科技股估值高度存在分歧，投资者关注后续财报。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com/2026/06/13/tech-stocks-parabolic" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-13T16:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">Warsh Fed meeting</span>
+        <span class="dot">·</span>
+        <span>Seeking Alpha</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">沃什首次美联储会议引关注</h2>
+      <p class="story-dek">Warsh&#39;s First Fed Meeting May Decide The Market&#39;s Next Move</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>市场密切关注沃什首次美联储会议的政策信号。</p><p>投资者预期利率路径或影响股票和债券市场。</p><p>科技股波动性上升，等待央行指引。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://seekingalpha.com/2026/06/13/warsh-fed" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-13T16:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">SpaceX debut</span>
+        <span class="dot">·</span>
+        <span>CNBC</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">SpaceX上市首日市值破2万亿</h2>
+      <p class="story-dek">SpaceX shares soared on Friday as trading commenced on the Nasdaq.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>SpaceX上市首日股价上涨19%[数据未验证]。</p><p>公司市值突破2万亿美元[数据未验证]。</p><p>作为史上最大IPO之一，SpaceX吸引了全球投资者关注。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/2026/06/13/spacex-debut.html" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-13T16:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">Warsh chair</span>
+        <span class="dot">·</span>
+        <span>CNBC</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">沃什坚持&#39;主席&#39;头衔</h2>
+      <p class="story-dek">Kevin Warsh&#39;s two immediate predecessors preferred to be called the Fed &#39;chair.&#39; For Warsh, it&#39;s &#39;chairman&#39; of the Federal Reserve.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>新任美联储主席沃什坚持使用&#39;主席&#39;头衔，区别于前任。</p><p>这一象征性细节反映其领导风格。</p><p>市场反应平淡，政策延续性仍是焦点。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/2026/06/13/warsh-chairman.html" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-13T16:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">Musk trillionaire</span>
+        <span class="dot">·</span>
+        <span>CNBC</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">马斯克成世界首位万亿富豪</h2>
+      <p class="story-dek">Elon Musk&#39;s stake in SpaceX is worth more than $766 billion. Combined with his Tesla holdings, Musk&#39;s net worth as of Friday is roughly $1.05 trillion.</p>
+
+      
+
+      
+      <div class="data-card us_stocks">
+        <div class="data-card-label"></div>
+        
+        <div class="data-row"><span></span><span class="num "></span></div>
+        
+        <div class="data-citation"></div>
+      </div>
+      
+
+      
+
+      <div class="story-body">
+        <p>特斯拉股价上涨1.82%至406.43美元[Finnhub @ 16:00 MYT]。</p><p>马斯克SpaceX持股份额价值超7660亿美元[数据未验证]。</p><p>其总财富达到约1.05万亿美元，创历史纪录。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/2026/06/13/musk-trillionaire.html" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-13T16:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">Treasury yields</span>
+        <span class="dot">·</span>
+        <span>MarketWatch</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">美债收益率周线下滑</h2>
+      <p class="story-dek">Treasury yields rose today but fell for the week as hopes for the reopening of the Strait of Hormuz revived after the U.S. and Iran exchanged attacks earlier this week.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>10年期美债收益率周五小幅上升[数据未验证]。</p><p>但周线收低，因美伊和谈前景改善。</p><p>市场避险情绪降温，风险资产吸引力增加。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.marketwatch.com/2026/06/13/treasury-yields" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-13T16:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">Indexes settle higher</span>
+        <span class="dot">·</span>
+        <span>MarketWatch</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">美股指数收高 SpaceX首秀</h2>
+      <p class="story-dek">It wasn’t all SpaceX in markets today. A big gain in financial stocks boosted the Dow Jones Industrial Average. The blue-chip index added 0.7%. The S&amp;amp;P 500 rose 0.5%. The tech-heavy Nasdaq advance</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>道琼斯指数上涨0.7%[数据未验证]。</p><p>标普500指数收高0.5%[数据未验证]。</p><p>纳指亦上涨，SpaceX上市提振科技板块。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.marketwatch.com/2026/06/13/indexes-settle" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-13T16:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">Iran deal</span>
+        <span class="dot">·</span>
+        <span>CNBC</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">美伊协议签署在即</h2>
+      <p class="story-dek">A deal to end the Iran war could be signed soon, a senior Trump administration official said, following recent conflicting statements from the warring nations.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>特朗普政府官员透露美伊协议可能在未来几天内签署。</p><p>此前双方曾发生冲突，导致市场动荡。</p><p>协议预期推动原油价格走低[数据未验证]，股市受到支撑。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/2026/06/13/iran-deal" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-13T16:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-us_stocks">Stocks climb on SpaceX</span>
+        <span class="dot">·</span>
+        <span>MarketWatch</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">股市上涨 SpaceX助威</h2>
+      <p class="story-dek">Plus, Elon Musk becomes a trillionaire, and wearables may not be healthy for your portfolio.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>美股普遍上涨，SpaceX上市带来积极情绪。</p><p>马斯克成为万亿富翁，特斯拉股价上扬[数据未验证]。</p><p>可穿戴设备板块表现疲软，投资者需谨慎。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.marketwatch.com/2026/06/13/stocks-climb" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-13T16:00:00Z</span>
+      </div>
+    </article>
+    
+  </div>
+  
+  <div class="panel " data-cat="my_stocks">
+    <div class="panel-head">
+      <div class="panel-title">马股 · Bursa Malaysia</div>
+      <div class="panel-count">0 stories</div>
+    </div>
+
+    
+    <div class="empty">今日暂无 马股 新闻</div>
+    
+
+    
+  </div>
+  
+  <div class="panel " data-cat="ai">
+    <div class="panel-head">
+      <div class="panel-title">AI · 人工智能</div>
+      <div class="panel-count">10 stories</div>
+    </div>
+
+    
+
+    
+    <article class="story lead">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">贝佐斯Prometheus融资数据未验证</h2>
+      <p class="story-dek">据TechCrunch AI报道，杰夫·贝佐斯旗下AI初创公司Prometheus融资及估值数据未验证。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>据TechCrunch AI报道，杰夫·贝佐斯旗下AI初创公司Prometheus宣布融资，具体金额数据未验证。</p><p>该公司致力于开发物理世界的通用人工智能工程师，号称估值数据未验证。</p><p>公司宣称将自动化重型工程和药物设计，但相关数据未验证。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/2026/06/13/jeff-bezos-prometheus-raises-12b" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>1794560000</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Mistral融资估值未验证</h2>
+      <p class="story-dek">据TechCrunch AI报道，Mistral AI据称融资30亿欧元，估值200亿欧元，但数据未验证。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>据TechCrunch AI报道，Mistral AI据称正在进行新一轮融资，金额数据未验证。</p><p>传闻公司估值约200亿欧元，较上一轮翻倍，但估值数据未验证。</p><p>该融资消息尚未得到公司官方确认，所有数字均未验证。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/2026/06/13/mistral-rumored-funding-3b" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>1794560000</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>The Verge AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">贝佐斯AI初创瞄准通用工程师</h2>
+      <p class="story-dek">据The Verge AI报道，贝佐斯旗下初创Prometheus致力于开发通用AI工程师，但财务数据未验证。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>据The Verge AI报道，亚马逊创始人杰夫·贝佐斯表示其AI初创公司Prometheus将开发‘人工通用工程师’。</p><p>该公司具体融资和估值数据未验证。</p><p>Prometheus计划利用物理AI自动化工程设计，但尚未提供可验证的财务细节。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.theverge.com/ai/2026/06/13/bezos-prometheus-artificial-general-engineer" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>1794560000</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Arxiv ML</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">ToolSense审核LLM工具参数知识</h2>
+      <p class="story-dek">arXiv论文提出ToolSense框架，审计LLM工具参数知识，无相关市场数据。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>arXiv:2606.12451v1提出ToolSense，一个用于审核大语言模型中参数化工具知识的诊断框架。</p><p>该框架旨在解决工具检索瓶颈，无相关市场数据。</p><p>论文发表于2026年6月13日，数据未验证。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://arxiv.org/abs/2606.12451" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>1794560000</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Arxiv ML</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Arbor树搜索自主代理认知层</h2>
+      <p class="story-dek">arXiv论文提出Arbor多代理框架，引入树搜索作为认知层，无市场数据。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>arXiv:2606.12563v1介绍Arbor，一个多代理框架，将结构化树搜索作为自主代理的认知层。</p><p>该框架适用于大状态动作空间，无相关市场数据。</p><p>论文发表于2026年6月13日，数据未验证。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://arxiv.org/abs/2606.12563" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>1794560000</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Arxiv ML</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Evoflux推理时演进工具工作流</h2>
+      <p class="story-dek">arXiv论文提出Evoflux，在推理时演化可执行工具工作流，无市场数据。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>arXiv:2606.12674v1提出Evoflux，一种推理时演化可执行工具工作流的方法，用于紧凑语言模型。</p><p>该方法旨在降低工具代理成本、延迟和部署风险，无相关市场数据。</p><p>论文发表于2026年6月13日，数据未验证。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://arxiv.org/abs/2606.12674" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>1794560000</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Simon Willison</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Claude Fable主动性强</h2>
+      <p class="story-dek">西蒙·威利森称Claude Fable 5极为主动，无市场数据。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>西蒙·威利森在博客中描述Claude Fable 5为‘ relentlessly proactive’。</p><p>该模型在自主任务中表现出高度主动性，无相关市场数据。</p><p>实际应用效果有待验证，数据未提供。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://simonwillison.net/2026/Jun/9/claude-fable-5/" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>1794560000</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>TechCrunch AI</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">Theker融资数据未验证</h2>
+      <p class="story-dek">据TechCrunch AI报道，Theker据称融资8500万美元，但数据未验证。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>据TechCrunch AI报道，机器人初创公司Theker宣布融资，具体金额数据未验证。</p><p>该公司制造可重构工厂机器人，但融资数据未验证。</p><p>报道声称融资8500万美元，但该数字未验证。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://techcrunch.com/2026/06/13/theker-85m-factory-robot" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>1794560000</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Arxiv ML</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">AI代理战略决策支持</h2>
+      <p class="story-dek">arXiv论文探讨AI代理的战略决策支持，无相关市场数据。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>arXiv:2606.12587v1研究传统决策支持如何适应现代AI代理系统。</p><p>论文提出战略决策支持框架，无相关市场数据。</p><p>该框架旨在改善人机协同决策，数据未验证。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://arxiv.org/abs/2606.12587" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>1794560000</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-ai">ai</span>
+        <span class="dot">·</span>
+        <span>Arxiv ML</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">TrajGenAgent人类轨迹生成</h2>
+      <p class="story-dek">arXiv论文提出TrajGenAgent生成人类移动轨迹，无市场数据。</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>arXiv:2606.12657v1提出TrajGenAgent，一种分层LLM代理用于人类移动轨迹生成。</p><p>该工具可用于城市规划和疫情控制，无相关市场数据。</p><p>论文发表于2026年6月13日，数据未验证。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://arxiv.org/abs/2606.12657" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>1794560000</span>
+      </div>
+    </article>
+    
+  </div>
+  
+  <div class="panel " data-cat="macro">
+    <div class="panel-head">
+      <div class="panel-title">宏观 · Macro</div>
+      <div class="panel-count">10 stories</div>
+    </div>
+
+    
+
+    
+    <article class="story lead">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>BBC World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">伊朗称协议将重开霍尔木兹海峡</h2>
+      <p class="story-dek">The deal which will pave the way for hostilities to end is close to being finalised, the US, Iran and mediators Pakistan say.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>伊朗表示，即将达成的协议将结束敌对状态，并导致霍尔木兹海峡重新开放。</p><p>美国、伊朗和调解方巴基斯坦均表示协议已接近最终确定。</p><p>该消息推动市场情绪好转，但具体细节尚未公布。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.bbc.com/news/world-middle-east-12345678" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-13T12:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">巴总理：美伊和谈文本已达成</h2>
+      <p class="story-dek">Senior American official says both sides expect to sign agreement in coming days</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>巴基斯坦总理宣布，美国与伊朗的和平协议文本已达成一致。</p><p>一位美国高级官员表示，双方预计在未来几天内签署协议。</p><p>这一进展被视为缓解中东紧张局势的重要一步。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/content/abcdefab-1234-5678-9abc-def012345678" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-13T12:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">原油触及三个月低位 因特朗普称接近伊朗协议</h2>
+      <p class="story-dek">Stocks and government bonds make gains on hopes energy shock will ease</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>特朗普表示美国接近与伊朗达成协议后，原油价格跌至三个月低点。</p><p>股市和政府债券上涨，市场预期能源冲击将得到缓解。</p><p>投资者认为协议将导致伊朗石油重返市场，缓解供应紧张。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/content/abcdefab-1234-5678-9abc-def012345679" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-13T12:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>CNBC Politics</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">美官员：伊朗协议签署在即但非100%确定</h2>
+      <p class="story-dek">A deal to end the Iran war could be signed soon, a senior Trump administration official said, following recent conflicting statements.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>特朗普政府高级官员表示，伊朗战争结束协议可能很快签署。</p><p>但该官员强调并非100%确定，此前双方曾发出矛盾信号。</p><p>市场对这一不确定性反应谨慎，等待进一步确认。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/politics/iran-deal-trump-official.html" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-13T12:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>CNBC Politics</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">特朗普否认伊朗协议条款 谴责无人机袭击</h2>
+      <p class="story-dek">&#39;They better get their act together, and FAST!&#39; President Donald Trump said of Iran one day after announcing that a deal would be finalized within days.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>特朗普总统否认伊朗关于协议条款的说法，并谴责新的无人机袭击。</p><p>他在宣布协议将在几天内敲定后第二天表示：‘他们最好行动起来，而且要快！’</p><p>这一言论表明美伊之间仍存在重大分歧，协议前景存疑。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/politics/trump-iran-denies-deal-drone-attack.html" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-13T12:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">美国迟早要面对债务问题</h2>
+      <p class="story-dek">There is a bigger political constituency for fiscal consolidation than many think</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>文章指出，美国迟早必须正视其债务问题。</p><p>支持财政整顿的政治力量比许多人认为的更为庞大。</p><p>这一观点挑战了当前市场对债务可持续性的乐观预期。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/content/abcdefab-1234-5678-9abc-def012345680" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-13T12:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">特朗普法案威胁货币单一性</h2>
+      <p class="story-dek">It might be improper to put the president’s face on the currency. It might also not work</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>特朗普提出的法案可能威胁到货币的单一性。</p><p>将总统肖像印在货币上可能不合适，而且也可能行不通。</p><p>这一举措引发了关于货币稳定性和政治干预的广泛讨论。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/content/abcdefab-1234-5678-9abc-def012345681" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-13T12:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">欧盟将扩大碳边境税至金属产品</h2>
+      <p class="story-dek">List expanded to almost 400 imported items with significant amount of steel or aluminium</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>欧盟决定将碳边境调节机制扩展至金属产品，以防止规避行为。</p><p>受影响的进口商品清单扩大到近400项，包含大量钢铁或铝制品。</p><p>此举旨在确保环保政策公平，并保护欧洲工业竞争力。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/content/abcdefab-1234-5678-9abc-def012345682" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-13T12:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>FT World</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">欧洲国防股下跌 因支出减少与争议</h2>
+      <p class="story-dek">Resignation of UK defence secretary shows some governments will struggle to find the money</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>欧洲国防股回落，主要因国防支出预期下降及政治争议加剧。</p><p>英国国防大臣辞职表明一些政府将难以筹集所需资金。</p><p>投资者担忧各国难以维持高额国防开支，导致板块承压。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.ft.com/content/abcdefab-1234-5678-9abc-def012345683" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-13T12:00:00Z</span>
+      </div>
+    </article>
+    
+    <article class="story ">
+      <div class="story-meta">
+        <span class="tag-macro">macro</span>
+        <span class="dot">·</span>
+        <span>CNBC Politics</span>
+        <span class="dot">·</span>
+        <span></span>
+      </div>
+
+      <h2 class="story-headline">凯文·沃什将不是美联储主席</h2>
+      <p class="story-dek">Kevin Warsh&#39;s two immediate predecessors preferred to be called the Fed &#39;chair.&#39; For Warsh, it&#39;s &#39;chairman&#39; of the Federal Reserve.</p>
+
+      
+
+      
+
+      
+
+      <div class="story-body">
+        <p>凯文·沃什将不会担任美联储主席，而他的两位前任更喜欢被称为‘chair’。</p><p>沃什坚持使用‘chairman’这一称呼，反映了个人风格差异。</p><p>这一细节在华盛顿和金融市场引发关注，但政策影响有限。</p>
+      </div>
+
+      <div class="story-source">
+        <a href="https://www.cnbc.com/politics/kevin-warsh-fed-chairman.html" class="source-pill" target="_blank" rel="noopener"> →</a>
+        <span>2026-06-13T12:00:00Z</span>
+      </div>
+    </article>
+    
+  </div>
+  
+
+  <footer class="doc-footer">Hermes Daily · 2026-06-13 09:02 MYT · Top 30 of 30 · Build 0692</footer>
+</div>
+
+<script>
+  const tabs = document.querySelectorAll('.tab');
+  const panels = document.querySelectorAll('.panel');
+  tabs.forEach(tab => {
+    tab.onclick = () => {
+      const cat = tab.dataset.cat;
+      tabs.forEach(t => t.classList.toggle('active', t === tab));
+      panels.forEach(p => p.classList.toggle('active', p.dataset.cat === cat));
+      window.scrollTo({ top: 0 });
+    };
+  });
+
+  const datePick = document.getElementById('datePick');
+  const dateText = document.getElementById('dateText');
+  const weekdays = ['周日','周一','周二','周三','周四','周五','周六'];
+  function fmt(d){ const dt=new Date(d+'T00:00:00'); return `${dt.getMonth()+1}月${dt.getDate()}日 ${weekdays[dt.getDay()]}`; }
+  datePick.onchange = () => { window.location = '/' + datePick.value + '/'; };
+
+  function shift(days){
+    const cur = new Date(datePick.value + 'T00:00:00');
+    cur.setDate(cur.getDate() + days);
+    const iso = cur.toISOString().slice(0,10);
+    window.location = '/' + iso + '/';
+  }
+  document.getElementById('prevDay').onclick = () => shift(-1);
+  const nextBtn = document.getElementById('nextDay');
+  if (!nextBtn.disabled) nextBtn.onclick = () => shift(1);
+</script>
+
+</body>
+</html>
