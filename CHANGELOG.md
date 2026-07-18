@@ -1,3 +1,12 @@
+#  (2026-07-18)
+
+
+### Features
+
+* add pipeline code, sources config, and template ([a354c53](https://github.com/henrylee94/hermes-news/commit/a354c5356c42fb012f13b64f93cef9e2f35a8b28))
+* initial release — daily news aggregator ([70f0f38](https://github.com/henrylee94/hermes-news/commit/70f0f387ab216f78a87b90b0708d832d243436d4))
+* make LLM endpoint/model/key configurable via env vars ([9051704](https://github.com/henrylee94/hermes-news/commit/9051704763e776008e5535955ebed6472dd95a32))
+* replace LLM pipeline with fetch+render split ([b128c7d](https://github.com/henrylee94/hermes-news/commit/b128c7d9cd3f109182c0b76c785f79c755465769))
 #  (2026-07-14)
 
 
