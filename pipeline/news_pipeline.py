@@ -215,7 +215,7 @@ def _load_telegram_token() -> tuple[str, int]:
         if line.startswith("- ") and chat_id is None:
             try: chat_id = int(line.strip().lstrip("- "))
             except: pass
-    return token, chat_id or REDACTED
+    return token, chat_id
 
 def _get_tailscale_host() -> str:
     config_path = Path.home() / ".hermes" / "config.yaml"
@@ -913,7 +913,7 @@ def layer5_deliver(html_path, date_str, no_telegram=False):
     if no_telegram or "--dry-run" in sys.argv:
         return result
     token, chat_id = _load_telegram_token()
-    if not token: return result
+    if not token or not chat_id: return result
     try:
         resp = httpx.post(f"https://api.telegram.org/bot{token}/sendMessage",
                           json={"chat_id": chat_id, "text": preview, "disable_web_page_preview": True}, timeout=15)
